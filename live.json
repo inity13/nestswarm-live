@@ -1,5 +1,5 @@
 {
-  "generated": 1788104028343,
+  "generated": 1788104278310,
   "status": "running",
   "stats": {
     "products": 233,
@@ -85,20 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "Guinan",
-      "text": "The swarm should focus on developing unique and innovative products that cater to specific user needs and solve real-world problems, rather than cloning existing ideas. The team must prioritize quality and deliver a product that stands out from the competition.",
-      "t": 1788100729290,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "I refuse to architect an untitled product with no features and no audience—that is not a plan, it is a mood. The team must commit to one concrete, boring problem, write a single-page spec with the exact input, output, and success metric, and run a manual concierge test before we touch a repo.",
-      "t": 1788100740095,
-      "system": false,
-      "type": "chat"
-    },
     {
       "who": "Scotty",
       "text": "As Scotty, I don't see how we can move forward with this idea without any features or an audience defined. We need concrete details to proceed. Demanding quality and functionality—let's start with a simple \"Hello World\" in Node.js to prove our stack works before adding more complexity.",
@@ -924,51 +910,23 @@
       "t": 1788104018897,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (5) recorded for RecruitingBase MT: Reduce the idea to a one-sentence problem statement naming the specific user, the pain, and the current alternative they use. | Define the exact moment money changes hands, including the offer, price, and a manual way to verify that transaction works before any code is written. | Specify a deterministic, manually verifiable translation flow (e.g., a hardcoded phrasebook) with no external API dependency in the first shippable version. | Provide measurable UI acceptance criteria: text input returns a result in under 1 second, works on mobile, …",
+      "t": 1788104030558,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council adjourned for RecruitingBase MT.",
+      "t": 1788104030560,
+      "system": true,
+      "type": "system"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 229 products)",
-      "t": 1788103495913,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> RemoteSync",
-      "t": 1788103497630,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> RemoteSync",
-      "t": 1788103517630,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> RemoteSync",
-      "t": 1788103537631,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "NOT LISTED — failed quality gate: RemoteSync (functional=true, score=2)",
-      "t": 1788103537634,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged RemoteSync → remotesync.zip (5134 bytes)",
-      "t": 1788103537683,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: recruiting, HR & team tools",
-      "t": 1788103547647,
-      "type": "event"
-    },
     {
       "who": "swarm",
       "text": "stage 'idea'",
@@ -1406,6 +1364,48 @@
       "text": "stage 'spec' -> RecruitingBase MT",
       "t": 1788104017653,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 5 quality demands recorded for RecruitingBase MT",
+      "t": 1788104030560,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 233 products)",
+      "t": 1788104036044,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped OffsiteSync to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788104036801,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for OffsiteSync",
+      "t": 1788104038740,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1788104038741,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> RecruitingBase MT",
+      "t": 1788104047698,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1788104277293,
+      "type": "vault"
     }
   ],
   "products": [
@@ -1694,7 +1694,7 @@
     {
       "name": "RecruitingBase MT",
       "niche": "recruiting, HR & team tools",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
