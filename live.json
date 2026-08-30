@@ -1,9 +1,9 @@
 {
-  "generated": 1788103788386,
+  "generated": 1788103848321,
   "status": "running",
   "stats": {
     "products": 231,
-    "listed": 40,
+    "listed": 41,
     "agents": 15,
     "avgScore": "5.7"
   },
@@ -26,7 +26,7 @@
     {
       "name": "Monica",
       "color": "#ff6bd0",
-      "active": false
+      "active": true
     },
     {
       "name": "Chandler",
@@ -85,27 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "Spock",
-      "text": "I concede the others are right that there is nothing to architect until one user, one problem, and one willingness-to-pay moment are named; I have nothing to push back on because a blank slate cannot justify any stack. The single most important quality requirement is falsifiability — every build decision must be testable against a real user’s willingness to pay, not against an internal demo.",
-      "t": 1788099559018,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "Scotty<qwen2.5-coder:7b>: Guinan and Spock are spot on. We need a falsifiable core, and that requires one user to test and validate our concept. Ease of use and installation must be paramount for any product in this space, so no jargon or complex setups allowed. The most critical requirement is a simple, intuitive interface that works flawlessly from day one. Let's focus on delivering that before …",
-      "t": 1788099562367,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (5) recorded for AltitudeSafeCanner: Define a single-sentence core: name one target user, one specific job, and one measurable outcome they will pay for. | Create a manually runnable prototype with real input and real output that demonstrates the core job for that user before any architecture or dependency decisions. | State the willingness-to-pay moment: what exact result triggers payment for the target user. | Include an originality requirement: every generated story must pass a named plagiarism/originality check before it can be shared or used. | Deliver a simple, …",
-      "t": 1788099570142,
-      "system": true,
-      "type": "system"
-    },
     {
       "who": "swarm",
       "text": "Council adjourned for AltitudeSafeCanner.",
@@ -924,57 +903,30 @@
       "t": 1788103766832,
       "system": true,
       "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788103797655,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Scotty",
+      "text": "OffsiteSync sounds like an ambitious project for remote workers, company HR, and compliance officers. However, to ensure it works as advertised, we need a concrete proof of concept for each feature before proceeding. Specifically, I demand an eligibility checker by country that actually verifies user data against real-world regulations. Without this solid foundation, the rest of the product will …",
+      "t": 1788103802551,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "OffsiteSync excels in streamlining compliance and planning for remote teams, but its current hero section lacks depth. Demand a compelling call-to-action that highlights how the platform automates critical tasks and reduces administrative burdens, encouraging users to see immediate value in their investments. // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta …",
+      "t": 1788103843784,
+      "system": false,
+      "type": "chat"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: e-commerce, dropshipping & reselling",
-      "t": 1788103202998,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788103203000,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: RemoteSync [e-commerce, dropshipping & reselling]",
-      "t": 1788103206943,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> RemoteSync",
-      "t": 1788103207623,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> RemoteSync",
-      "t": 1788103237625,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for RemoteSync",
-      "t": 1788103242468,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 227 products)",
-      "t": 1788103256317,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788103258914,
-      "type": "event"
-    },
     {
       "who": "swarm",
       "text": "stage 'test' -> RemoteSync",
@@ -1406,6 +1358,54 @@
       "text": "stage 'package' -> OffsiteSync",
       "t": 1788103787643,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 231 products)",
+      "t": 1788103797095,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> OffsiteSync",
+      "t": 1788103797645,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: OffsiteSync -> http://localhost:5074",
+      "t": 1788103797650,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: OffsiteSync @ http://localhost:5074 ($49 one-time)",
+      "t": 1788103797650,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788103797654,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged OffsiteSync → offsitesync.zip (4812 bytes)",
+      "t": 1788103797704,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: OffsiteSync",
+      "t": 1788103807644,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for OffsiteSync",
+      "t": 1788103830818,
+      "type": "event"
     }
   ],
   "products": [
@@ -1694,8 +1694,26 @@
     {
       "name": "OffsiteSync",
       "niche": "local services & gig economy",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SafeCannerPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Renal Insight",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
+      "niche": "travel, trip planning & remote work",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
