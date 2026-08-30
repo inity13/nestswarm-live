@@ -1,5 +1,5 @@
 {
-  "generated": 1788115580177,
+  "generated": 1788115640229,
   "status": "running",
   "stats": {
     "products": 290,
@@ -929,48 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> StateCEPro",
-      "t": 1788114904833,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788114907062,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> StateCEPro",
-      "t": 1788114914832,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 287 products)",
-      "t": 1788114932945,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788114944659,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> StateCEPro",
-      "t": 1788114944833,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 3): [path] fs.readFile(__dirname + '/index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http",
-      "t": 1788114947059,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
       "t": 1788114947078,
       "type": "event"
@@ -1406,6 +1364,48 @@
       "text": "council: 4 quality demands recorded for PersonalForge MT",
       "t": 1788115535546,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 290 products)",
+      "t": 1788115588485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PersonalForge MT",
+      "t": 1788115599452,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788115614484,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PersonalForge MT",
+      "t": 1788115619452,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for PersonalForge MT",
+      "t": 1788115621746,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> PersonalForge MT",
+      "t": 1788115629452,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> PersonalForge MT",
+      "t": 1788115639457,
+      "type": "building"
     }
   ],
   "products": [
@@ -1694,7 +1694,7 @@
     {
       "name": "PersonalForge MT",
       "niche": "personal finance, investing & budgeting",
-      "stage": "spec",
+      "stage": "package",
       "status": "building"
     }
   ],
