@@ -1,5 +1,5 @@
 {
-  "generated": 1788101258704,
+  "generated": 1788101318703,
   "status": "running",
   "stats": {
     "products": 216,
@@ -929,60 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> HealthCompanion MT",
-      "t": 1788100657979,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 1): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788100660206,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 212 products)",
-      "t": 1788100667295,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> HealthCompanion MT",
-      "t": 1788100667977,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 2)",
-      "t": 1788100668513,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> HealthCompanion MT",
-      "t": 1788100677977,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (5 files, node)",
-      "t": 1788100709134,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> HealthCompanion MT",
-      "t": 1788100717976,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 3): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788100720206,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
       "t": 1788100720222,
       "type": "event"
@@ -1406,6 +1352,60 @@
       "text": "stage 'build' -> AltitudeSafeCannerPro",
       "t": 1788101247985,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788101261728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 216 products)",
+      "t": 1788101266477,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> AltitudeSafeCannerPro",
+      "t": 1788101267986,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for AltitudeSafeCannerPro",
+      "t": 1788101270216,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> AltitudeSafeCannerPro",
+      "t": 1788101277986,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> AltitudeSafeCannerPro",
+      "t": 1788101297987,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> AltitudeSafeCannerPro",
+      "t": 1788101317988,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: AltitudeSafeCannerPro (functional=true, score=3)",
+      "t": 1788101317992,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged AltitudeSafeCannerPro → altitudesafecannerpro.zip (4947 bytes)",
+      "t": 1788101318045,
+      "type": "event"
     }
   ],
   "products": [
@@ -1692,10 +1692,28 @@
   ],
   "building": [
     {
-      "name": "AltitudeSafeCannerPro",
-      "niche": "small-business operations & accounting",
-      "stage": "build",
-      "status": "building"
+      "name": "SafeCannerPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Renal Insight",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
+      "niche": "travel, trip planning & remote work",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "BudgetBuddy",
+      "niche": "personal finance & budgeting aids",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
