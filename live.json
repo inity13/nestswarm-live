@@ -1,8 +1,8 @@
 {
-  "generated": 1788123459822,
+  "generated": 1788123519546,
   "status": "running",
   "stats": {
-    "products": 322,
+    "products": 323,
     "listed": 42,
     "agents": 15,
     "avgScore": "5.7"
@@ -929,54 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'build' -> BidBuddy",
-      "t": 1788122838917,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788122859466,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 318 products)",
-      "t": 1788122867161,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> BidBuddy",
-      "t": 1788122868917,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 1): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788122871144,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> BidBuddy",
-      "t": 1788122878919,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (5 files, node)",
-      "t": 1788122904411,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> BidBuddy",
-      "t": 1788122908921,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
       "text": "tests passed for BidBuddy",
       "t": 1788122911146,
       "type": "test"
@@ -1406,6 +1358,54 @@
       "text": "stage 'package' -> QuoteMate",
       "t": 1788123458929,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 322 products)",
+      "t": 1788123468634,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> QuoteMate",
+      "t": 1788123468929,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: QuoteMate (functional=true, score=2)",
+      "t": 1788123468933,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged QuoteMate → quotemate.zip (5332 bytes)",
+      "t": 1788123468995,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: health, fitness & habit tracking",
+      "t": 1788123478950,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788123478950,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: QuoteMasterPro [health, fitness & habit tracking]",
+      "t": 1788123481832,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> QuoteMasterPro",
+      "t": 1788123488929,
+      "type": "building"
     }
   ],
   "products": [
@@ -1692,9 +1692,9 @@
   ],
   "building": [
     {
-      "name": "QuoteMate",
-      "niche": "e-commerce, dropshipping & reselling",
-      "stage": "package",
+      "name": "QuoteMasterPro",
+      "niche": "health, fitness & habit tracking",
+      "stage": "spec",
       "status": "building"
     }
   ],
