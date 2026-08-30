@@ -1,5 +1,5 @@
 {
-  "generated": 1788120629131,
+  "generated": 1788120689211,
   "status": "running",
   "stats": {
     "products": 308,
@@ -85,27 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "Guinan",
-      "text": "We need to address the points raised by Spock and Scotty directly: * **Spock** pointed out that our initial proposal lacked a concrete product with features, audience, and revenue. This is important because our objective is to create unique offerings that people genuinely pay for. * **Scotty** suggested focusing on a simple static website generator. While this is a valid path, it's crucial we …",
-      "t": 1788115070098,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "Scotty is right that a static generator is trivially testable, but that only proves we can ship a tool, not that anyone will pay for it. The single quality requirement is a closed revenue loop: a stranger must be able to buy a defined deliverable through a checkout we control, and we must observe that transaction succeed end-to-end before calling anything shipped.",
-      "t": 1788115078045,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "Alrighty then. Spock is dead on about building a testable static site generator. It’s like building Legos – once you put them together, they either work or they don’t. But Guinan’s point cuts to the chase: **Ease of Use**. The most important requirement for this product is that it must be incredibly easy to set up and use. A non-technical user should be able to drop the files into a directory, …",
-      "t": 1788115082030,
-      "system": false,
-      "type": "chat"
-    },
     {
       "who": "swarm",
       "text": "Council demands (5) recorded for StateCEPro: Write a single-sentence revenue proposition with no placeholders: 'A [specific customer] pays $[amount] to [specific action/outcome].' It must name the niche, approximate price, and exact deliverable. | Provide logged evidence from at least one real non-team prospect who explicitly confirms they would pay the stated amount for that outcome, including date, channel, and direct quote. | Define the MVP acceptance criteria in measurable terms: e.g., a stranger can create an account, publish one item, and reach a Stripe checkout in under 5 minutes, with …",
@@ -924,75 +903,30 @@
       "t": 1788120624888,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "Understood, Scotty here. I concede making this an internal cron job for now, as it fits well into our operational utility framework. However, the most critical quality requirement for shipping this product is **extensive testing** to ensure reliability and accuracy in delivering reports without fail. Without solid tests, we risk missing crucial data or sending incorrect information, which could …",
+      "t": 1788120638469,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (5) recorded for EquityTaxWizard: Run a one-shot dry run that prints the exact report body to stdout and sends a test email to a test address using the shared Gmail OAuth refresh token, proving unattended delivery before any scheduler | Create a skill and template for the report that reads the vault change log (e.g., _INDEX.md and relevant notes modified in the last 6 hours) and summarizes completed actions, decisions, and revenue-re | Implement an idempotent 6-hour scheduler that timestamps each sent report in a log and prevents duplicate or overlapping sends, with automatic …",
+      "t": 1788120653638,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council adjourned for EquityTaxWizard.",
+      "t": 1788120653640,
+      "system": true,
+      "type": "system"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788119933372,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: Equity Tax Wizard [events, community & memberships]",
-      "t": 1788119936953,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> Equity Tax Wizard",
-      "t": 1788119938473,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Equity Tax Wizard",
-      "t": 1788119958474,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 304 products)",
-      "t": 1788119976917,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 6 quality demands recorded for Equity Tax Wizard",
-      "t": 1788119976934,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788119983736,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Equity Tax Wizard",
-      "t": 1788119988474,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for Equity Tax Wizard",
-      "t": 1788119990699,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> Equity Tax Wizard",
-      "t": 1788119998474,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for Equity Tax Wizard",
-      "t": 1788120016103,
-      "type": "event"
-    },
     {
       "who": "swarm",
       "text": "stage 'package' -> Equity Tax Wizard",
@@ -1406,6 +1340,72 @@
       "text": "stage 'build' -> EquityTaxWizard",
       "t": 1788120618495,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788120636213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 308 products)",
+      "t": 1788120636707,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> EquityTaxWizard",
+      "t": 1788120638495,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for EquityTaxWizard",
+      "t": 1788120640723,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> EquityTaxWizard",
+      "t": 1788120648497,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 5 quality demands recorded for EquityTaxWizard",
+      "t": 1788120653640,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> EquityTaxWizard",
+      "t": 1788120668496,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1788120686488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> EquityTaxWizard",
+      "t": 1788120688497,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: EquityTaxWizard (functional=true, score=3)",
+      "t": 1788120688499,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged EquityTaxWizard → equitytaxwizard.zip (4932 bytes)",
+      "t": 1788120688557,
+      "type": "event"
     }
   ],
   "products": [
@@ -1692,10 +1692,28 @@
   ],
   "building": [
     {
-      "name": "EquityTaxWizard",
-      "niche": "parenting & family organizers",
-      "stage": "build",
-      "status": "building"
+      "name": "StateCETrack",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "OffsiteSync",
+      "niche": "local services & gig economy",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SafeCannerPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Renal Insight",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
