@@ -1,5 +1,5 @@
 {
-  "generated": 1788111865536,
+  "generated": 1788111925539,
   "status": "running",
   "stats": {
     "products": 271,
@@ -929,60 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> CEComplianceTrack",
-      "t": 1788110984760,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788110986984,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> CEComplianceTrack",
-      "t": 1788110994760,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 267 products)",
-      "t": 1788111034313,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788111036493,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> CEComplianceTrack",
-      "t": 1788111044761,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] document.getElementById('deadlines').innerHTML += `<li>${course} - ${state}: ${data.deadline}</li>`; ^ SyntaxError: missing ) after argument list at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_synt",
-      "t": 1788111044780,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788111044799,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher exploring: developer productivity tools & services",
-      "t": 1788111054763,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 267 products)",
       "t": 1788111093371,
       "type": "event"
@@ -1406,6 +1352,60 @@
       "text": "vault: synced (5 notes updated)",
       "t": 1788111864641,
       "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 271 products)",
+      "t": 1788111873376,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788111873994,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> StateCEMaster",
+      "t": 1788111874778,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for StateCEMaster",
+      "t": 1788111877006,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> StateCEMaster",
+      "t": 1788111884779,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> StateCEMaster",
+      "t": 1788111904778,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> StateCEMaster",
+      "t": 1788111924779,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: StateCEMaster (functional=true, score=2)",
+      "t": 1788111924783,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged StateCEMaster → statecemaster.zip (4694 bytes)",
+      "t": 1788111924835,
+      "type": "event"
     }
   ],
   "products": [
@@ -1692,10 +1692,28 @@
   ],
   "building": [
     {
-      "name": "StateCEMaster",
+      "name": "OffsiteSync",
+      "niche": "local services & gig economy",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SafeCannerPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Renal Insight",
       "niche": "health, fitness & habit tracking",
-      "stage": "build",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
+      "niche": "travel, trip planning & remote work",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
