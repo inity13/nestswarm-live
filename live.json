@@ -1,8 +1,8 @@
 {
-  "generated": 1788121779554,
+  "generated": 1788121839565,
   "status": "running",
   "stats": {
-    "products": 311,
+    "products": 312,
     "listed": 42,
     "agents": 15,
     "avgScore": "5.7"
@@ -85,27 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "Guinan",
-      "text": "Scotty: I agree on fleshing out the core features and audience for Untitled before proceeding. However, I would also like us to consider a single most important quality requirement this product must meet to ship. Given that revenue is the primary goal of the Swarm Protector, we need to ensure that our product offers real value to users while also generating significant income through its …",
-      "t": 1788116380857,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "You are right that features and audience must be fixed before I can choose a stack, but I disagree that we need a full requirements document—one concrete user with one concrete job is enough to start. The single quality requirement this product must meet is that a non-technical buyer can install and complete that job in under five minutes, with no service we do not control.",
-      "t": 1788116388418,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "I understand your points, folks. Features and audience need clarity before proceeding. The single most important quality requirement for Untitled is that it **must be a fully functional, user-friendly product**. No placeholders or half-baked concepts—let's ship something real that delivers value from day one.",
-      "t": 1788116390958,
-      "system": false,
-      "type": "chat"
-    },
     {
       "who": "swarm",
       "text": "Council demands (6) recorded for EventsCraft MT: Select one named target audience and one concrete recurring task they currently pay to remove or would pay to remove. | Collect and document at least five verbatim replies from real members of that audience confirming the task is painful, describing current workarounds, and indicating willingness to pay. | Write a one-sentence problem statement linking the audience, the task, and the payment trigger. | Define the MVP as a fully functional, self-contained product with no placeholder or half-baked flow; every visible feature must complete an …",
@@ -924,57 +903,30 @@
       "t": 1788121441131,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "I'll concede the UI can be polished, but I won't launch a tax planner that leans on \"trust me\" arithmetic—every ISO AMT, RSU, and ESPP formula must be auditable, deterministic, and edge-case verified, because a product that asks users to trust its math has already lost.",
+      "t": 1788121787455,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (7) recorded for Equity Tax Planner: Ship as a fully static, single-page web app with no backend, no accounts, and no external runtime dependencies; all tax math must be client-side pure, auditable functions. | Implement automated golden-fixture tests that reproduce at least three published IRS or authoritative examples each for ISO AMT, RSU supplemental withholding, and ESPP qualifying/disqualifying disposi | Freeze all tax parameters—federal brackets, AMT exemption and phaseout, supplemental withholding rates, ESPP discount rules—as versioned constants with source citations …",
+      "t": 1788121807610,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council adjourned for Equity Tax Planner.",
+      "t": 1788121807612,
+      "system": true,
+      "type": "system"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 308 products)",
-      "t": 1788120636707,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> EquityTaxWizard",
-      "t": 1788120638495,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for EquityTaxWizard",
-      "t": 1788120640723,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> EquityTaxWizard",
-      "t": 1788120648497,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for EquityTaxWizard",
-      "t": 1788120653640,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> EquityTaxWizard",
-      "t": 1788120668496,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1788120686488,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> EquityTaxWizard",
-      "t": 1788120688497,
-      "type": "building"
-    },
     {
       "who": "swarm",
       "text": "NOT LISTED — failed quality gate: EquityTaxWizard (functional=true, score=3)",
@@ -1394,6 +1346,60 @@
       "text": "local failed for coder (fetch failed) — trying free provider nemotron-3.5-lightning-free",
       "t": 1788121741965,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 311 products)",
+      "t": 1788121787035,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for Equity Tax Planner",
+      "t": 1788121803390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 7 quality demands recorded for Equity Tax Planner",
+      "t": 1788121807612,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> Equity Tax Planner",
+      "t": 1788121808898,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> Equity Tax Planner",
+      "t": 1788121828897,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: Equity Tax Planner (functional=true, score=2)",
+      "t": 1788121828902,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Equity Tax Planner → equity-tax-planner.zip (6130 bytes)",
+      "t": 1788121828999,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: legal, contracts & compliance",
+      "t": 1788121838920,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788121838922,
+      "type": "building"
     }
   ],
   "products": [
@@ -1680,9 +1686,9 @@
   ],
   "building": [
     {
-      "name": "Equity Tax Planner",
-      "niche": "travel, trip planning & remote work",
-      "stage": "design",
+      "name": "Untitled",
+      "niche": "legal, contracts & compliance",
+      "stage": "idea",
       "status": "building"
     }
   ],
