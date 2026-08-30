@@ -1,8 +1,8 @@
 {
-  "generated": 1788105535288,
+  "generated": 1788105595118,
   "status": "running",
   "stats": {
-    "products": 239,
+    "products": 240,
     "listed": 41,
     "agents": 15,
     "avgScore": "5.7"
@@ -929,72 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'spec' -> SyncSquad",
-      "t": 1788104707191,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SyncSquad",
-      "t": 1788104737190,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788104759137,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 236 products)",
-      "t": 1788104765687,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SyncSquad",
-      "t": 1788104767191,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for SyncSquad",
-      "t": 1788104769415,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> SyncSquad",
-      "t": 1788104777194,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> SyncSquad",
-      "t": 1788104797193,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> SyncSquad",
-      "t": 1788104817193,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "NOT LISTED — failed quality gate: SyncSquad (functional=true, score=2)",
-      "t": 1788104817196,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged SyncSquad → syncsquad.zip (5328 bytes)",
-      "t": 1788104817241,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 236 products)",
       "t": 1788104825391,
       "type": "event"
@@ -1406,6 +1340,72 @@
       "text": "stage 'test' -> AccessibleShop",
       "t": 1788105534360,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 2): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
+      "t": 1788105536587,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 239 products)",
+      "t": 1788105543147,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> AccessibleShop",
+      "t": 1788105544362,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788105573074,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> AccessibleShop",
+      "t": 1788105574360,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <h2>Before Fix</h2> ^^^^^^ SyntaxError: missing ) after argument list at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788105574385,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788105574400,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: home, cooking & household helpers",
+      "t": 1788105584375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788105584375,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: Website Accessibility Wizard [home, cooking & household helpers]",
+      "t": 1788105590493,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> Website Accessibility Wizard",
+      "t": 1788105594360,
+      "type": "building"
     }
   ],
   "products": [
@@ -1692,9 +1692,9 @@
   ],
   "building": [
     {
-      "name": "AccessibleShop",
-      "niche": "privacy, security & personal data",
-      "stage": "test",
+      "name": "Website Accessibility Wizard",
+      "niche": "home, cooking & household helpers",
+      "stage": "spec",
       "status": "building"
     }
   ],
