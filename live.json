@@ -1,5 +1,5 @@
 {
-  "generated": 1788106585467,
+  "generated": 1788106645421,
   "status": "running",
   "stats": {
     "products": 245,
@@ -1052,6 +1052,66 @@
       "text": "stage 'spec' -> SiteEase",
       "t": 1788106534647,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788106588366,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 245 products)",
+      "t": 1788106592880,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SiteEase",
+      "t": 1788106594663,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→qwen2.5-coder:7b, light→qwen2.5-coder:3b",
+      "t": 1788106616130,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788106619812,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SiteEase",
+      "t": 1788106624664,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 1): [path] fs.readFile('index.html', 'utf-8', (err, data) => { ^ ReferenceError: fs is not defined at Server.handleRequest ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:12",
+      "t": 1788106626949,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788106633522,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SiteEase",
+      "t": 1788106634654,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788106644633,
+      "type": "event"
     }
   ],
   "products": [
@@ -1340,7 +1400,7 @@
     {
       "name": "SiteEase",
       "niche": "recruiting, HR & team tools",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
