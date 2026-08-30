@@ -1,5 +1,5 @@
 {
-  "generated": 1788119969483,
+  "generated": 1788120029302,
   "status": "running",
   "stats": {
     "products": 304,
@@ -85,20 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "Spock",
-      "text": "They are right that an unnamed product with no features and no audience cannot be architected; that is triage, not evasion. I push back only on one point: once those three facts exist, the default should be a single self-contained Node app, and the one quality requirement that gates shipping is that a non-technical buyer can install, run, and verify a real revenue action in under five minutes …",
-      "t": 1788114411724,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "I appreciate your input and agree that a clear name, features, and audience are essential for any product. However, before we proceed, let's ensure the product has a single most important quality requirement: it must be **fully functional** and ready to use right out of the box, with no placeholders or unfinished aspects. Once it meets this criteria, we can confidently move forward.",
-      "t": 1788114414810,
-      "system": false,
-      "type": "chat"
-    },
     {
       "who": "swarm",
       "text": "Council demands (6) recorded for SocialLens MT: Define a product name and a one-sentence value proposition that names a specific paying user segment and the single outcome they pay for. | Specify at least 3 concrete product features with acceptance criteria (Given/When/Then) that must pass before shipping. | Provide evidence of target audience and willingness to pay, such as one validated customer interview, waitlist signup, or pre-order. | Deliver a fully functional out-of-the-box product with zero placeholders, no unfinished features, and no TODO or mock UI states. | Include a runnable …",
@@ -924,57 +910,23 @@
       "t": 1788119959861,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (6) recorded for Equity Tax Wizard: Define one concrete audience segment with a measurable profile, such as non-technical small-business owners who currently use spreadsheet charts and have no SQL or Python experience. | Specify a single core user story with explicit input, expected output, and success measure: e.g., a user uploads a CSV of up to 10MB or 10k rows and receives a correct, readable bar or line chart reco | Provide one manual acceptance test with pass/fail criteria: a first-time user with no instructions must upload sample data and verify the generated chart …",
+      "t": 1788119976932,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council adjourned for Equity Tax Wizard.",
+      "t": 1788119976934,
+      "system": true,
+      "type": "system"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "idea duplicate (StateCETracker); re-ideating in a fresh niche",
-      "t": 1788119054717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ideator produced no usable name — generated \"SmallBase MT\"",
-      "t": 1788119054717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ideator could not find a valid non-duplicate idea; proceeding with SmallBase MT",
-      "t": 1788119054717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> SmallBase MT",
-      "t": 1788119058459,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 301 products)",
-      "t": 1788119076755,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmallBase MT",
-      "t": 1788119118458,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (5 notes updated)",
-      "t": 1788119128417,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788119130407,
-      "type": "event"
-    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 301 products)",
@@ -1406,6 +1358,54 @@
       "text": "stage 'build' -> Equity Tax Wizard",
       "t": 1788119958474,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 304 products)",
+      "t": 1788119976917,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 6 quality demands recorded for Equity Tax Wizard",
+      "t": 1788119976934,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788119983736,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Equity Tax Wizard",
+      "t": 1788119988474,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for Equity Tax Wizard",
+      "t": 1788119990699,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> Equity Tax Wizard",
+      "t": 1788119998474,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for Equity Tax Wizard",
+      "t": 1788120016103,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> Equity Tax Wizard",
+      "t": 1788120018474,
+      "type": "building"
     }
   ],
   "products": [
@@ -1694,7 +1694,7 @@
     {
       "name": "Equity Tax Wizard",
       "niche": "events, community & memberships",
-      "stage": "build",
+      "stage": "package",
       "status": "building"
     }
   ],
