@@ -44,14 +44,21 @@ function render() {
     nodesEl.appendChild(el);
   });
 
-  // chat
+  const TYPES = {
+  listed:'#37d39b', polished:'#2dd4bf', building:'#00e5ff', ideated:'#b98cff', test:'#22d3ee',
+  security:'#ff5c7a', launch:'#ff2ec4', meeting:'#7b5cff', scout:'#a3e635', trending:'#ffb454',
+  vault:'#7b5cff', bench:'#facc15', cap:'#facc15', chat:'', event:'#5f7194'
+};
+
+// chat
   const chatEl = $('#chat'); chatEl.innerHTML = '';
-  (data.chat || []).slice(0, 120).forEach((m) => {
+  (data.chat || []).slice(0, 150).forEach((m) => {
     const d = document.createElement('div'); d.className='msg ' + (m.system ? 'system':'');
     const a = (data.agents || []).find(x=>x.name===m.who);
-    const color = a ? a.color : '#5f7194';
+    const color = a ? a.color : (m.type && TYPES[m.type] ? TYPES[m.type] : '#5f7194');
     const time = m.t ? new Date(m.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : '';
-    d.innerHTML = `<div><span class="who" style="color:${color}">${esc(m.who)}</span><span class="t">${time}</span></div><div class="txt">${esc(m.text)}</div>`;
+    const badge = m.type && m.type !== 'chat' ? `<span class="badge" style="color:${TYPES[m.type]||'#5f7194'};border-color:${TYPES[m.type]||'#5f7194'}">${m.type}</span>` : '';
+    d.innerHTML = `<div><span class="who" style="color:${color}">${esc(m.who)}</span>${badge}<span class="t">${time}</span></div><div class="txt">${esc(m.text)}</div>`;
     chatEl.appendChild(d);
   });
   if (!chatEl.children.length) chatEl.innerHTML = '<div class="msg system"><div class="txt">Awaiting first transmissions…</div></div>';
