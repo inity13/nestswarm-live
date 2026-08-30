@@ -1,11 +1,11 @@
 {
-  "generated": 1788127537716,
+  "generated": 1788127597701,
   "status": "running",
   "stats": {
-    "products": 341,
-    "listed": 42,
+    "products": 342,
+    "listed": 27,
     "agents": 15,
-    "avgScore": "5.7"
+    "avgScore": "6.3"
   },
   "agents": [
     {
@@ -85,13 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "swarm",
-      "text": "Council adjourned for QuoteMate Pro.",
-      "t": 1788123090341,
-      "system": true,
-      "type": "system"
-    },
     {
       "who": "swarm",
       "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
@@ -924,39 +917,16 @@
       "t": 1788127482858,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "Meeting actions executed: paused new builds (focus mode); archived 15 products below score 6; marketed the top product",
+      "t": 1788127579522,
+      "system": true,
+      "type": "system"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 7 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788126450610,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 339 products)",
-      "t": 1788126465821,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 8 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788126478383,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 9 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788126502394,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq needs email verification — reading inbox",
-      "t": 1788126504905,
-      "type": "event"
-    },
     {
       "who": "swarm",
       "text": "stage 'package' -> QuoteMaster Pro",
@@ -1406,6 +1376,36 @@
       "text": "packaged Short Tool Name → short-tool-name.zip (9363 bytes)",
       "t": 1788127536985,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 341 products)",
+      "t": 1788127545958,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1788127546961,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788127546961,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "team meeting complete — direction: Revenue-first consolidation: freeze breadth, harden the single most checkout-ready listed product, and prove a real paid transaction before any new build. · plan: pause_builds, archive_below, market_top",
+      "t": 1788127579347,
+      "type": "meeting"
+    },
+    {
+      "who": "swarm",
+      "text": "meeting actions taken: paused new builds (focus mode); archived 15 products below score 6; marketed the top product",
+      "t": 1788127579522,
+      "type": "event"
     }
   ],
   "products": [
@@ -1607,7 +1607,7 @@
     },
     {
       "name": "JSON Forge",
-      "status": "listed",
+      "status": "archived",
       "niche": "travel, trip planning & remote work",
       "price": 4.99,
       "score": 5
@@ -1642,49 +1642,49 @@
     },
     {
       "name": "FinanceFlow",
-      "status": "listed",
+      "status": "archived",
       "niche": "AI & automation utilities",
       "price": 19.99,
       "score": 5
     },
     {
       "name": "Prodigy AI Tutor",
-      "status": "listed",
+      "status": "archived",
       "niche": "study, learning & memory aids",
       "price": 19.99,
       "score": 5
     },
     {
       "name": "EquiVestTaxOpt",
-      "status": "listed",
+      "status": "archived",
       "niche": "home, cooking & household helpers",
       "price": 24.99,
       "score": 5
     },
     {
       "name": "MemoryMaster",
-      "status": "listed",
+      "status": "archived",
       "niche": "study, learning & memory aids",
       "price": 19.99,
       "score": 5
     },
     {
       "name": "BudgetMaster",
-      "status": "listed",
+      "status": "archived",
       "niche": "small-business operations helpers",
       "price": 19,
       "score": 5
     },
     {
       "name": "MindFit Coach",
-      "status": "listed",
+      "status": "archived",
       "niche": "health, fitness & habit trackers",
       "price": 19,
       "score": 5
     },
     {
       "name": "MealMate",
-      "status": "listed",
+      "status": "archived",
       "niche": "home, cooking & household helpers",
       "price": 19.95,
       "score": 5
@@ -1692,28 +1692,10 @@
   ],
   "building": [
     {
-      "name": "StateCETrack",
-      "niche": "recruiting, HR & team tools",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "OffsiteSync",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "SafeCannerPro",
-      "niche": "real estate, renting & property",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "Renal Insight",
-      "niche": "health, fitness & habit tracking",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "Untitled",
+      "niche": "events, community & memberships",
+      "stage": "idea",
+      "status": "building"
     }
   ],
   "nodes": [
