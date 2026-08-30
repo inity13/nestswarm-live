@@ -1,5 +1,5 @@
 {
-  "generated": 1788114025463,
+  "generated": 1788114085526,
   "status": "running",
   "stats": {
     "products": 281,
@@ -929,60 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788113425762,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 279 products)",
-      "t": 1788113434103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> StateCETrack",
-      "t": 1788113434802,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788113472269,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> StateCETrack",
-      "t": 1788113474803,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.handleRequest ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125",
-      "t": 1788113477034,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> StateCETrack",
-      "t": 1788113484803,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 279 products)",
-      "t": 1788113492944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788113502433,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "stage 'test' -> StateCETrack",
       "t": 1788113504804,
       "type": "building"
@@ -1406,6 +1352,60 @@
       "text": "stage 'build' -> StateCEComplianceTracker",
       "t": 1788114014814,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788114026419,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 281 products)",
+      "t": 1788114033443,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> StateCEComplianceTracker",
+      "t": 1788114034814,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for StateCEComplianceTracker",
+      "t": 1788114037040,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> StateCEComplianceTracker",
+      "t": 1788114044814,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> StateCEComplianceTracker",
+      "t": 1788114064815,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> StateCEComplianceTracker",
+      "t": 1788114084815,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: StateCEComplianceTracker (functional=true, score=2)",
+      "t": 1788114084818,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged StateCEComplianceTracker → statececompliancetracker.zip (4555 bytes)",
+      "t": 1788114084874,
+      "type": "event"
     }
   ],
   "products": [
@@ -1692,10 +1692,28 @@
   ],
   "building": [
     {
-      "name": "StateCEComplianceTracker",
-      "niche": "freelancers & solopreneurs",
-      "stage": "build",
-      "status": "building"
+      "name": "StateCETrack",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "OffsiteSync",
+      "niche": "local services & gig economy",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SafeCannerPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Renal Insight",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
