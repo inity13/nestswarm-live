@@ -1,8 +1,8 @@
 {
-  "generated": 1788111745498,
+  "generated": 1788111805542,
   "status": "running",
   "stats": {
-    "products": 270,
+    "products": 271,
     "listed": 41,
     "agents": 15,
     "avgScore": "5.7"
@@ -929,54 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'spec' -> CEComplianceTrack",
-      "t": 1788110834800,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 267 products)",
-      "t": 1788110854070,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> CEComplianceTrack",
-      "t": 1788110874833,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "local failed for coder (ollama http 500: {\"error\":\"model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details\"}) — trying free provider ling-3.0-flash-fin-free",
-      "t": 1788110875130,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 267 products)",
-      "t": 1788110912858,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788110944783,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> CEComplianceTrack",
-      "t": 1788110954761,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 1): [path] fs.readFile(__dirname + '/index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http",
-      "t": 1788110957034,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "stage 'build' -> CEComplianceTrack",
       "t": 1788110964758,
       "type": "building"
@@ -1406,6 +1358,54 @@
       "text": "stage 'package' -> StateCEMaster",
       "t": 1788111734776,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 270 products)",
+      "t": 1788111753249,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> StateCEMaster",
+      "t": 1788111754777,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: StateCEMaster (functional=true, score=2)",
+      "t": 1788111754781,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged StateCEMaster → statecemaster.zip (6175 bytes)",
+      "t": 1788111754836,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: health, fitness & habit tracking",
+      "t": 1788111764792,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788111764793,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: StateCEMaster [health, fitness & habit tracking]",
+      "t": 1788111767829,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> StateCEMaster",
+      "t": 1788111774777,
+      "type": "building"
     }
   ],
   "products": [
@@ -1693,8 +1693,8 @@
   "building": [
     {
       "name": "StateCEMaster",
-      "niche": "AI & automation utilities",
-      "stage": "package",
+      "niche": "health, fitness & habit tracking",
+      "stage": "spec",
       "status": "building"
     }
   ],
