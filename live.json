@@ -1,8 +1,8 @@
 {
-  "generated": 1788113005448,
+  "generated": 1788113065462,
   "status": "running",
   "stats": {
-    "products": 276,
+    "products": 277,
     "listed": 41,
     "agents": 15,
     "avgScore": "5.7"
@@ -929,66 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "stage 'list' -> StateCEMaster",
-      "t": 1788112174782,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "NOT LISTED — failed quality gate: StateCEMaster (functional=true, score=2)",
-      "t": 1788112174786,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged StateCEMaster → statecemaster.zip (5857 bytes)",
-      "t": 1788112174834,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: small-business operations & accounting",
-      "t": 1788112184801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788112184801,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: StateCEPro [small-business operations & accounting]",
-      "t": 1788112187768,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> StateCEPro",
-      "t": 1788112194785,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 273 products)",
-      "t": 1788112233536,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> StateCEPro",
-      "t": 1788112244788,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788112275621,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "stage 'build' -> StateCEPro",
       "t": 1788112284785,
       "type": "building"
@@ -1406,6 +1346,66 @@
       "text": "stage 'build' -> StateComplianceHub",
       "t": 1788112974794,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 276 products)",
+      "t": 1788113013957,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (6 files, node)",
+      "t": 1788113044268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> StateComplianceHub",
+      "t": 1788113044796,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 3): [path] fs.readFile('./index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125",
+      "t": 1788113047025,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788113047046,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: AI & automation utilities",
+      "t": 1788113054816,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788113054816,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: StateCETrack [AI & automation utilities]",
+      "t": 1788113057949,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (5 notes updated)",
+      "t": 1788113064640,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> StateCETrack",
+      "t": 1788113064797,
+      "type": "building"
     }
   ],
   "products": [
@@ -1692,9 +1692,9 @@
   ],
   "building": [
     {
-      "name": "StateComplianceHub",
-      "niche": "education, tutoring & courses",
-      "stage": "build",
+      "name": "StateCETrack",
+      "niche": "AI & automation utilities",
+      "stage": "spec",
       "status": "building"
     }
   ],
