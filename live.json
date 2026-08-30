@@ -1,5 +1,5 @@
 {
-  "generated": 1788115837309,
+  "generated": 1788116129467,
   "status": "running",
   "stats": {
     "products": 291,
@@ -929,48 +929,6 @@
   "events": [
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788115176269,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> StateCEPro",
-      "t": 1788115184839,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 1): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788115187157,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> StateCEPro",
-      "t": 1788115194838,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788115224565,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> StateCEPro",
-      "t": 1788115224838,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): [path] fs.readFile('index.html', 'utf8', (err, data) => { ^ ReferenceError: fs is not defined at Server.<anonymous> ([path] at Server.emit (node:events:508:28) at parserOnIncoming (node:_http_server:1210:12) at HTTPParser.parserOnHeadersComplete (node:_http_common:125:1",
-      "t": 1788115227065,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 288 products)",
       "t": 1788115233453,
       "type": "event"
@@ -1406,6 +1364,48 @@
       "text": "stage 'build' -> HomeCompanion MT",
       "t": 1788115729533,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788115841527,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 291 products)",
+      "t": 1788115845069,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HomeCompanion MT",
+      "t": 1788115845317,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for HomeCompanion MT",
+      "t": 1788115847726,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> HomeCompanion MT",
+      "t": 1788115855340,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1788116128502,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "local failed for designer (ollama http 500: {\"error\":\"model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details\"}) — trying free provider nemotron-3.5-lightning-free",
+      "t": 1788116128525,
+      "type": "event"
     }
   ],
   "products": [
@@ -1694,7 +1694,7 @@
     {
       "name": "HomeCompanion MT",
       "niche": "home, cooking & household helpers",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
