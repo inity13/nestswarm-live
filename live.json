@@ -1,9 +1,9 @@
 {
-  "generated": 1788098739020,
+  "generated": 1788098798724,
   "status": "running",
   "stats": {
     "products": 199,
-    "listed": 39,
+    "listed": 40,
     "agents": 15,
     "avgScore": "5.7"
   },
@@ -26,17 +26,17 @@
     {
       "name": "Monica",
       "color": "#ff6bd0",
-      "active": false
+      "active": true
     },
     {
       "name": "Chandler",
       "color": "#b98cff",
-      "active": false
+      "active": true
     },
     {
       "name": "Data",
       "color": "#ff8f6b",
-      "active": false
+      "active": true
     },
     {
       "name": "Worf",
@@ -85,41 +85,6 @@
     }
   ],
   "chat": [
-    {
-      "who": "swarm",
-      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
-      "t": 1788095118052,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "Guinan",
-      "text": "**Guinan:** The swarm should focus on unique products that genuinely serve real people’s needs, differing from existing offerings by providing innovative solutions or fresh perspectives. We must set a high quality bar for all proposals to ensure they stand out in a crowded market and provide tangible value. **Demand:** Ensure all future product ideas include at least one feature that sets them …",
-      "t": 1788095125647,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "Without a defined problem, audience, or feature set, there is nothing to architect and any stack choice would be theater. I demand the team produce a single sentence naming the exact user, the exact pain, and the exact thing they will pay for before we discuss a single file or service.",
-      "t": 1788095131418,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "The swarm needs to define a clear problem, audience, and feature set for \"Untitled\" to ensure it can be built as a working product. Demand that the team provide a detailed specification or use case that outlines what problem the product aims to solve and who will benefit from it. Once these are clearly defined, we can move forward with development.",
-      "t": 1788095137727,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Guinan: I agree that focusing on unique products is crucial. However, \"another\" variant of an existing product doesn't align with our mandate. Let's define a clear problem and audience for \"Untitled.\" What makes it truly original?",
-      "t": 1788095139309,
-      "system": false,
-      "type": "chat"
-    },
     {
       "who": "Spock",
       "text": "You are right that without a named buyer, problem, and feature the architecture is fiction, and I will not invent a stack for an empty box. But I push back on uniqueness: novelty is not a shipping requirement, and a boring proven problem with paying users beats a clever one with none. The single quality requirement that matters first is demonstrable willingness to pay for a specific offer, …",
@@ -924,63 +889,44 @@
       "t": 1788098333342,
       "system": true,
       "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788098757958,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Scotty",
+      "text": "SafeCannerPro sounds like a niche but valuable tool for home cooks and DIY enthusiasts. However, to ensure it works as intended, the team must deliver a fully functional pH calculator that accurately checks water bath and pressure canning pH levels for various pickles, salsas, and sauces. The current list lacks concrete proof of this feature, so I demand a working demo of the pH checker before …",
+      "t": 1788098760016,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "SafeCannerPro aligns well with my desire to create user-friendly, aesthetically pleasing tools that cater to home cooks and DIY enthusiasts. A concrete demand from the team would be to ensure a seamless, responsive design that prioritizes clarity and functionality above all else.",
+      "t": 1788098764680,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Chandler",
+      "text": "SafeCannerPro offers a comprehensive, user-friendly solution for home cooks and DIY enthusiasts looking to preserve their food safely, with features that align perfectly with my desire to create intuitive, visually appealing tools. The team must demonstrate a commitment to quality by thoroughly testing the altitude-adjusted processing time calculator to ensure accurate results.",
+      "t": 1788098775954,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "The concept is useful only if every calculation is provably aligned with USDA and NCHFP published tables, because one wrong processing time or pH recommendation can cause botulism and expose the owner to liability. I demand a locked, traceable test suite that cites the exact source table and version for every algorithm, including edge cases like low-acid tomatoes, altitude above 10,000 feet, and …",
+      "t": 1788098783939,
+      "system": false,
+      "type": "chat"
     }
   ],
   "events": [
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788097743548,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> AltitudeCannerPro",
-      "t": 1788097752837,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for AltitudeCannerPro",
-      "t": 1788097755751,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1788097766496,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788097779656,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> AltitudeCannerPro",
-      "t": 1788097782838,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for AltitudeCannerPro",
-      "t": 1788097785065,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 195 products)",
-      "t": 1788097792196,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> AltitudeCannerPro",
-      "t": 1788097792838,
-      "type": "building"
-    },
     {
       "who": "swarm",
       "text": "designer improved UI for AltitudeCannerPro",
@@ -1406,6 +1352,60 @@
       "text": "cloud failed for critic (The operation was aborted due to timeout) — using local qwen2.5-coder:7b",
       "t": 1788098737971,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788098742878,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 199 products)",
+      "t": 1788098747213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> SafeCannerPro",
+      "t": 1788098757939,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SafeCannerPro -> http://localhost:5034",
+      "t": 1788098757949,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: SafeCannerPro @ http://localhost:5034 ($29.99 one-time)",
+      "t": 1788098757949,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788098757956,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SafeCannerPro → safecannerpro.zip (5663 bytes)",
+      "t": 1788098758072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: SafeCannerPro",
+      "t": 1788098767934,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for SafeCannerPro",
+      "t": 1788098773375,
+      "type": "event"
     }
   ],
   "products": [
@@ -1694,8 +1694,26 @@
     {
       "name": "SafeCannerPro",
       "niche": "real estate, renting & property",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Renal Insight",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
+      "niche": "travel, trip planning & remote work",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "BudgetBuddy",
+      "niche": "personal finance & budgeting aids",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
