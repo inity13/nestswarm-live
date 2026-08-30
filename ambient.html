@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NESTSWARM · Ambient</title>
+<style>
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:#030409; overflow:hidden; }
+  canvas { position:fixed; inset:0; display:block; }
+  .grain { position:fixed; inset:0; z-index:2; pointer-events:none; mix-blend-mode:overlay;
+    background:repeating-linear-gradient(to bottom, rgba(255,255,255,.02) 0 1px, transparent 1px 3px); }
+  .top { position:fixed; top:16px; left:50%; transform:translateX(-50%); z-index:5;
+    text-align:center; font-family:ui-sans-serif,system-ui,sans-serif; }
+  .top .title { font-weight:800; letter-spacing:4px; font-size:15px; color:#d6e4ff; }
+  .top .title b { color:#00e5ff; }
+  .top .sub { font-size:10px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-top:2px; }
+  .nav { position:fixed; top:16px; right:16px; z-index:6; font-family:ui-sans-serif,system-ui,sans-serif;
+    font-size:11px; color:#00e5ff; text-decoration:none; letter-spacing:1px; border:1px solid rgba(0,229,255,.3);
+    padding:6px 12px; border-radius:999px; }
+  .nav:hover { text-shadow:0 0 8px #00e5ff; }
+  .ribbon { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); z-index:5;
+    width:min(720px, 92vw); text-align:center; font-family:ui-monospace,Menlo,Consolas,monospace; }
+  .ribbon .who { font-weight:800; letter-spacing:.5px; }
+  .ribbon .txt { color:#c3d2f0; font-size:13px; margin-top:4px; line-height:1.5; word-break:break-word;
+    text-shadow:0 0 12px rgba(0,0,0,.8); }
+  .ribbon .meta { font-size:10px; color:#5f7194; letter-spacing:2px; text-transform:uppercase; margin-bottom:4px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="grain"></div>
+<div class="top">
+  <div class="title">◈ NESTSWARM <b>·</b> AMBIENT</div>
+  <div class="sub" id="status">…</div>
+</div>
+<a class="nav" href="index.html">← dashboard</a>
+<div class="ribbon">
+  <div class="meta" id="meta">transmission</div>
+  <div><span class="who" id="who"></span></div>
+  <div class="txt" id="txt"></div>
+</div>
+<script src="ambient.js"></script>
+</body>
+</html>
