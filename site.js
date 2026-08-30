@@ -62,23 +62,29 @@ function render() {
     nodesEl.appendChild(el);
   });
 
-  // chat — showcase agent interactions
+  // chat — real agent conversation (bubbles)
   const chatEl = $('#chat'); chatEl.innerHTML = '';
-  (data.chat || []).slice(0, 150).forEach((m, idx) => {
+  (data.chat || []).slice(0, 120).forEach((m, idx) => {
     const d = document.createElement('div'); d.className='msg ' + (m.system ? 'system':'agent');
     const role = m.system ? null : NAME_TO_ROLE[m.who];
-    const color = (data.agents||[]).find(a=>a.name===m.who)?.color || (TYPES[m.type]||'#5f7194');
+    const color = (data.agents||[]).find(a=>a.name===m.who)?.color || '#5f7194';
     const time = m.t ? new Date(m.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : '';
-    const badge = (m.type && m.type !== 'chat')
-      ? `<span class="badge" style="color:${TYPES[m.type]||'#5f7194'};border-color:${TYPES[m.type]||'#5f7194'}">${m.type}</span>` : '';
     const roleTag = role ? `<span class="role">${role}</span>` : '';
-    const av = `<span class="ava" style="background:${color};color:${color}"></span>`;
-    const newest = idx < 3 ? ' newest' : '';
-    d.innerHTML = `<div class="head">${av}<span class="who" style="color:${color}">${esc(m.who)}</span>${roleTag}${badge}<span class="t">${time}</span></div><div class="txt">${esc(m.text)}</div>`;
-    if (newest) d.classList.add('newest');
+    const av = `<span class="ava" style="background:${color};color:${color}">${(m.who||'?')[0]}</span>`;
+    d.innerHTML = `<div class="head">${av}<span class="who" style="color:${color}">${esc(m.who)}</span>${roleTag}<span class="t">${time}</span></div><div class="txt">${esc(m.text)}</div>`;
     chatEl.appendChild(d);
   });
-  if (!chatEl.children.length) chatEl.innerHTML = '<div class="msg system"><div class="txt">Awaiting first transmissions…</div></div>';
+  if (!chatEl.children.length) chatEl.innerHTML = '<div class="msg system"><div class="txt">No conversation yet — agents convene when building & reviewing products.</div></div>';
+
+  // events — compact activity stream
+  const evEl = $('#events'); evEl.innerHTML = '';
+  (data.events || []).forEach((m) => {
+    const d = document.createElement('div'); d.className='ev';
+    const c = TYPES[m.type] || '#5f7194';
+    d.innerHTML = `<i style="background:${c};box-shadow:0 0 6px ${c}"></i><span>${esc(m.text)}</span>`;
+    evEl.appendChild(d);
+  });
+  if (!evEl.children.length) evEl.innerHTML = '<div class="ev"><span>idle…</span></div>';
 
   // now building / recent output
   const b = $('#building'); b.innerHTML = '';
