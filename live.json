@@ -1,11 +1,11 @@
 {
-  "generated": 1788092384209,
+  "generated": 1788092444267,
   "status": "running",
   "stats": {
     "products": 167,
-    "listed": 38,
+    "listed": 39,
     "agents": 15,
-    "avgScore": "5.8"
+    "avgScore": "5.7"
   },
   "agents": [
     {
@@ -21,7 +21,7 @@
     {
       "name": "Scotty",
       "color": "#ffb454",
-      "active": false
+      "active": true
     },
     {
       "name": "Monica",
@@ -84,7 +84,22 @@
       "active": false
     }
   ],
-  "chat": [],
+  "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788092403579,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Scotty",
+      "text": "Renal Insight has potential but needs a robust nutritional database for accurate calculations. Demand a comprehensive food database and unit tests to ensure all calculations are reliable before proceeding. Without this, the app risks providing unreliable advice.",
+      "t": 1788092419208,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "events": [
     {
       "who": "swarm",
@@ -175,6 +190,66 @@
       "text": "stage 'package' -> Renal Insight",
       "t": 1788092383473,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped EquiVestTaxOpt to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788092389202,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 1 distribution action(s) this pass",
+      "t": 1788092389205,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (0 chat lines, 167 products)",
+      "t": 1788092389265,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> Renal Insight",
+      "t": 1788092403475,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: Renal Insight -> http://localhost:4990",
+      "t": 1788092403484,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: Renal Insight @ http://localhost:4990 ($199 one-time)",
+      "t": 1788092403484,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788092403577,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Renal Insight → renal-insight.zip (4738 bytes)",
+      "t": 1788092403629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: Renal Insight",
+      "t": 1788092413474,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→qwen2.5-coder:7b, light→qwen2.5-coder:7b",
+      "t": 1788092439356,
+      "type": "bench"
     }
   ],
   "products": [
@@ -463,8 +538,26 @@
     {
       "name": "Renal Insight",
       "niche": "health, fitness & habit tracking",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
+      "niche": "travel, trip planning & remote work",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "BudgetBuddy",
+      "niche": "personal finance & budgeting aids",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Personalized Wealth Navigator",
+      "niche": "events, community & memberships",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
