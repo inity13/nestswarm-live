@@ -85,8 +85,6 @@ function $(s){ return document.querySelector(s); }
 function brain() {
   const c = $('#brain'); const ctx = c.getContext('2d');
   let w,h, cx, cy;
-  const agents = data.agents || [];
-  const agPos = [];
   function resize(){ w=c.width=innerWidth; h=c.height=innerHeight; cx=w*0.62; cy=h*0.5; }
   resize(); addEventListener('resize', resize);
 
@@ -100,9 +98,10 @@ function brain() {
     return { x: cx + Math.cos(ang)*Math.min(w,h)*0.30, y: cy + Math.sin(ang)*Math.min(w,h)*0.30, color: NODES[i].color };
   }
   function agPos(i, t) {
-    const ang = (i / Math.max(agents.length,1)) * Math.PI*2 + t*0.0005;
+    const list = data.agents || [];
+    const ang = (i / Math.max(list.length,1)) * Math.PI*2 + t*0.0005;
     const r = Math.min(w,h)*0.13;
-    return { x: cx + Math.cos(ang)*r, y: cy + Math.sin(ang)*r, color: agents[i].color };
+    return { x: cx + Math.cos(ang)*r, y: cy + Math.sin(ang)*r, color: list[i].color };
   }
 
   let spawnAcc = 0;
@@ -134,7 +133,7 @@ function brain() {
     });
 
     // agents orbit + active flash
-    agents.forEach((a,i) => {
+    (data.agents || []).forEach((a,i) => {
       const p = agPos(i,t);
       const active = a.active;
       ctx.fillStyle=a.color; ctx.shadowBlur= active?22:8; ctx.shadowColor=a.color;
