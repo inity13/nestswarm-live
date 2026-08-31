@@ -43,16 +43,20 @@ let feed = [];
 function buildFeed() {
   const conv = (data.chat||[]).map(m => ({ who:m.who, text:m.text, t:m.t, color: (data.agents||[]).find(a=>a.name===m.who)?.color || '#5f7194', type:m.system?'system':'chat' }));
   const evs = (data.events||[]).map(m => ({ who:'swarm', text:m.text, t:m.t, color: TYPES[m.type]||'#5f7194', type:m.type||'event' }));
-  feed = conv.concat(evs).sort((a,b)=>(b.t||0)-(a.t||0)).slice(0,40);
+  // Prefer the live window (last 90s) if there is recent activity, else full feed.
+  const live = (data.recent||[]).map(m => ({ who:m.who, text:m.text, t:m.t, color: (data.agents||[]).find(a=>a.name===m.who)?.color || TYPES[m.type] || '#5f7194', type:m.type }));
+  feed = (live.length ? live : conv.concat(evs)).sort((a,b)=>(b.t||0)-(a.t||0)).slice(0,40);
 }
 let ribbonIdx = 0;
 setInterval(() => {
   if (!feed.length) return;
-  const m = feed[Math.floor(Math.random()*Math.min(feed.length, 20))];
-  $('#who').textContent = m.who + (m.type && m.type !== 'chat' ? ' · ' + m.type : '');
+  // cycle newest → oldest in order, so the ribbon reads like a live transcript
+  const m = feed[ribbonIdx % Math.min(feed.length, 20)];
+  ribbonIdx = (ribbonIdx + 1) % Math.min(feed.length, 20);
+  $('#who').textContent = m.who + (m.type && m.type !== 'chat' && m.type !== 'system' ? ' · ' + m.type : '');
   $('#who').style.color = m.color;
   $('#txt').textContent = m.text;
-  $('#meta').textContent = 'transmission · ' + new Date(m.t).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  $('#meta').textContent = (m.type && m.type !== 'chat' ? 'activity' : 'agent') + ' · ' + new Date(m.t).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
 }, 3500);
 
 // ---------------- cinematic brain ----------------
@@ -139,6 +143,31 @@ function brain() {
       ctx.beginPath(); ctx.arc(p.x,p.y,r,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
       if(a.active){ ctx.strokeStyle=hexA(a.color,0.6); ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc(p.x,p.y,r+4+Math.sin(t/280)*2,0,Math.PI*2); ctx.stroke(); burst(p); }
       if(lay.fagent>0){ ctx.fillStyle=hexA(a.color, a.active?1:0.55); ctx.font='9px ui-monospace,Menlo,monospace'; ctx.textAlign='center'; ctx.fillText(a.name, p.x, p.y+(p.y>cy?16:-11)); }
+
+      // live activity speech label — the agent's ACTUAL recent message, so the
+      // animation reflects real work instead of theatre.
+      if (a.active && a.last && a.last.text) {
+        const age = Date.now() - a.last.t;
+        const alpha = Math.max(0.25, Math.min(1, 1 - age / 90000));
+        const raw = String(a.last.text);
+        const label = raw.length > 44 ? raw.slice(0, 44) + '…' : raw;
+        ctx.font = '10px ui-monospace,Menlo,monospace';
+        const wl = ctx.measureText(label).width + 16;
+        const hl = 18;
+        const bx = p.x - wl / 2;
+        const by = p.y < cy ? p.y + 20 : p.y - 38;
+        const lx = Math.max(6, Math.min(w - wl - 6, bx));
+        const ly = Math.max(6, Math.min(h - hl - 6, by));
+        ctx.fillStyle = hexA('#04060c', 0.88 * alpha);
+        ctx.strokeStyle = hexA(a.color, 0.75 * alpha);
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(lx, ly, wl, hl, 6); else ctx.rect(lx, ly, wl, hl);
+        ctx.fill(); ctx.stroke();
+        ctx.fillStyle = hexA(a.color, alpha);
+        ctx.textAlign = 'left';
+        ctx.fillText(label, lx + 8, ly + 13);
+      }
     });
 
     // conversation edges
