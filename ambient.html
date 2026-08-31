@@ -6,21 +6,23 @@
 <title>NESTSWARM · Ambient</title>
 <style>
   * { box-sizing:border-box; }
-  html,body { margin:0; height:100%; background:#030409; overflow:hidden; }
-  canvas { position:fixed; inset:0; display:block; }
-  .grain { position:fixed; inset:0; z-index:2; pointer-events:none; mix-blend-mode:overlay;
+  html,body { margin:0; min-height:100%; background:#030409; }
+  body { font-family:ui-sans-serif,system-ui,sans-serif; }
+
+  /* hero: the brain — clickable heads + thinking labels */
+  .hero { position:relative; height:80vh; min-height:460px; }
+  #c { position:absolute; inset:0; width:100%; height:100%; display:block; }
+  .grain { position:absolute; inset:0; z-index:2; pointer-events:none; mix-blend-mode:overlay;
     background:repeating-linear-gradient(to bottom, rgba(255,255,255,.02) 0 1px, transparent 1px 3px); }
-  .top { position:fixed; top:16px; left:50%; transform:translateX(-50%); z-index:5;
-    text-align:center; font-family:ui-sans-serif,system-ui,sans-serif; }
+  .top { position:absolute; top:16px; left:50%; transform:translateX(-50%); z-index:5; text-align:center; }
   .top .title { font-weight:800; letter-spacing:4px; font-size:15px; color:#d6e4ff; }
   .top .title b { color:#00e5ff; }
   .top .sub { font-size:10px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-top:2px; }
-  .nav { position:fixed; top:16px; right:16px; z-index:6; font-family:ui-sans-serif,system-ui,sans-serif;
-    font-size:11px; color:#00e5ff; text-decoration:none; letter-spacing:1px; border:1px solid rgba(0,229,255,.3);
-    padding:6px 12px; border-radius:999px; }
+  .nav { position:absolute; top:16px; right:16px; z-index:6; font-size:11px; color:#00e5ff; text-decoration:none;
+    letter-spacing:1px; border:1px solid rgba(0,229,255,.3); padding:6px 12px; border-radius:999px; }
   .nav:hover { text-shadow:0 0 8px #00e5ff; }
 
-  .ribbon { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); z-index:5;
+  .ribbon { position:absolute; left:50%; bottom:16px; transform:translateX(-50%); z-index:5;
     width:min(720px, 92vw); text-align:center; font-family:ui-monospace,Menlo,Consolas,monospace; cursor:pointer; }
   .ribbon:hover .txt { color:#fff; }
   .ribbon .who { font-weight:800; letter-spacing:.5px; }
@@ -28,28 +30,7 @@
     text-shadow:0 0 12px rgba(0,0,0,.8); }
   .ribbon .meta { font-size:10px; color:#5f7194; letter-spacing:2px; text-transform:uppercase; margin-bottom:4px; }
 
-  /* floating HUD panels — left (metrics) and right (agents) */
-  .hud-left { position:fixed; left:14px; top:50%; transform:translateY(-50%); z-index:5;
-    display:flex; flex-direction:column; gap:10px; width:196px; }
-  .hud-right { position:fixed; right:14px; top:14px; z-index:5; width:168px; }
-  .hud-mod { padding:9px 11px; border-radius:12px; background:rgba(6,10,20,.55); border:1px solid rgba(0,229,255,.14); backdrop-filter:blur(6px); }
-  .hm-title { font-size:9px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-bottom:7px; font-family:ui-monospace,Menlo,Consolas,monospace; }
-  .neural { height:7px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(123,92,255,.3); overflow:hidden; }
-  .neural i { display:block; height:100%; width:8%; background:linear-gradient(90deg,#7b5cff,#ff2ec4); box-shadow:0 0 12px rgba(123,92,255,.8); transition:width .5s; }
-  .hostload { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; line-height:1.6; }
-  .hostload b { color:#00e5ff; }
-
-  .agentmatrix { display:flex; flex-direction:column; gap:3px; max-height:54vh; overflow-y:auto; }
-  .am-row { display:flex; align-items:center; gap:7px; padding:3px 6px; border-radius:7px; cursor:pointer;
-    font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; border:1px solid transparent; }
-  .am-row:hover { background:rgba(0,229,255,.06); border-color:rgba(0,229,255,.15); }
-  .am-row img, .am-row .dot { width:14px; height:14px; border-radius:50%; flex-shrink:0; object-fit:cover; }
-  .am-row .dot { display:inline-block; box-shadow:0 0 6px currentColor; }
-  .am-row.live { color:#e6eefc; }
-  .am-row.live .dot, .am-row.live img { animation:blink .7s infinite; }
-  .am-row .am-act { margin-left:auto; font-size:8.5px; color:#5f7194; }
-
-  .controls { position:fixed; left:16px; bottom:18px; z-index:6; display:flex; align-items:center; gap:10px;
+  .controls { position:absolute; left:16px; bottom:16px; z-index:6; display:flex; align-items:center; gap:10px;
     font-family:ui-monospace,Menlo,monospace; }
   .controls button { width:34px; height:34px; border-radius:50%; border:1px solid rgba(0,229,255,.4);
     background:rgba(5,8,15,.6); color:#00e5ff; cursor:pointer; font-size:12px; }
@@ -58,8 +39,28 @@
   .controls input[type=range] { width:84px; accent-color:#00e5ff; }
   .ctrl-hint { font-size:9px; color:#5f7194; }
 
+  /* HUD panels — normal document flow, below the hero (scrollable, no overlap) */
+  .hud-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px;
+    max-width:1000px; margin:0 auto; padding:22px 18px 40px; }
+  .hud-mod { padding:13px 15px; border-radius:14px; background:rgba(6,10,20,.62); border:1px solid rgba(0,229,255,.14); backdrop-filter:blur(6px); }
+  .hm-title { font-size:9px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-bottom:9px;
+    font-family:ui-monospace,Menlo,Consolas,monospace; }
+  .neural { height:8px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(123,92,255,.3); overflow:hidden; }
+  .neural i { display:block; height:100%; width:8%; background:linear-gradient(90deg,#7b5cff,#ff2ec4); box-shadow:0 0 12px rgba(123,92,255,.8); transition:width .5s; }
+  .hostload { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; color:#9fb2d8; line-height:1.7; }
+  .hostload b { color:#00e5ff; }
+  .agentmatrix { display:flex; flex-wrap:wrap; gap:6px; }
+  .am-row { display:inline-flex; align-items:center; gap:6px; padding:3px 8px; border-radius:999px; cursor:pointer;
+    font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8;
+    border:1px solid rgba(0,229,255,.12); background:rgba(5,8,15,.4); }
+  .am-row:hover { border-color:rgba(0,229,255,.4); color:#e6eefc; }
+  .am-row img, .am-row .dot { width:14px; height:14px; border-radius:50%; flex-shrink:0; object-fit:cover; }
+  .am-row .dot { display:inline-block; box-shadow:0 0 6px currentColor; }
+  .am-row.live { color:#e6eefc; border-color:rgba(0,229,255,.35); }
+  .am-row.live .dot, .am-row.live img { animation:blink .7s infinite; }
+
   .info { position:fixed; z-index:7; min-width:240px; max-width:340px; padding:14px 16px; border-radius:14px;
-    background:rgba(6,10,20,.92); border:1px solid rgba(0,229,255,.3); box-shadow:0 8px 40px rgba(0,0,0,.6);
+    background:rgba(6,10,20,.94); border:1px solid rgba(0,229,255,.3); box-shadow:0 8px 40px rgba(0,0,0,.6);
     font-family:ui-monospace,Menlo,Consolas,monospace; color:#d6e4ff; backdrop-filter:blur(8px); }
   .info .i-name { font-weight:800; font-size:15px; letter-spacing:.5px; }
   .info .i-avatar { width:46px; height:46px; border-radius:50%; float:left; margin:0 10px 8px 0; box-shadow:0 0 0 2px rgba(0,229,255,.2); }
@@ -70,56 +71,54 @@
   .info .i-close { float:right; cursor:pointer; color:#5f7194; }
   .info .i-close:hover { color:#ff5c7a; }
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:.3;} }
-  @media(max-width:768px){ .ctrl-hint{ display:none; } .info{ max-width:85vw; } .hud-right{ display:none; } }
+  @media(max-width:768px){ .hero{ height:62vh; min-height:400px; } .ctrl-hint{ display:none; } .info{ max-width:85vw; } }
 </style>
 </head>
 <body>
-<canvas id="c"></canvas>
-<div class="grain"></div>
-<div class="top">
-  <div class="title">◈ NESTSWARM <b>·</b> AMBIENT</div>
-  <div class="sub" id="status">…</div>
+<div class="hero">
+  <canvas id="c"></canvas>
+  <div class="grain"></div>
+  <div class="top">
+    <div class="title">◈ NESTSWARM <b>·</b> AMBIENT</div>
+    <div class="sub" id="status">…</div>
+  </div>
+  <a class="nav" href="index.html">← dashboard</a>
+  <div class="controls">
+    <div class="flow">
+      <label for="intensity">flow</label>
+      <input id="intensity" type="range" min="0.2" max="2" step="0.1" value="1" title="flow intensity — animation speed & energy (visual only, does not affect the swarm)" />
+    </div>
+    <button id="pauseBtn" title="pause / resume">❚❚</button>
+    <span class="ctrl-hint">click a head to inspect · space = pause</span>
+  </div>
+  <div class="ribbon" id="ribbon">
+    <div class="meta" id="meta">transmission</div>
+    <div><span class="who" id="who"></span></div>
+    <div class="txt" id="txt"></div>
+  </div>
 </div>
-<a class="nav" href="index.html">← dashboard</a>
 
-<div class="hud-left">
+<main class="hud-grid">
   <div class="hud-mod">
     <div class="hm-title">EVENT THROUGHPUT</div>
-    <canvas id="spark" width="180" height="46"></canvas>
+    <canvas id="spark" width="240" height="54"></canvas>
   </div>
   <div class="hud-mod">
     <div class="hm-title">NEURAL LOAD</div>
     <div class="neural"><i id="neuralFill"></i></div>
+    <div class="hostload" style="margin-top:8px" id="neuralText">…</div>
   </div>
   <div class="hud-mod">
     <div class="hm-title">HOST LOAD</div>
     <div id="hostLoad" class="hostload">…</div>
   </div>
-</div>
-
-<div class="hud-right">
   <div class="hud-mod">
     <div class="hm-title">AGENT MATRIX</div>
     <div id="agentMatrix" class="agentmatrix"></div>
   </div>
-</div>
-
-<div class="controls">
-  <div class="flow">
-    <label for="intensity">flow</label>
-    <input id="intensity" type="range" min="0.2" max="2" step="0.1" value="1" title="flow intensity — animation speed & energy (visual only, does not affect the swarm)" />
-  </div>
-  <button id="pauseBtn" title="pause / resume">❚❚</button>
-  <span class="ctrl-hint">click an agent / node to inspect · space = pause</span>
-</div>
+</main>
 
 <div id="info" class="info" style="display:none"></div>
-
-<div class="ribbon" id="ribbon">
-  <div class="meta" id="meta">transmission</div>
-  <div><span class="who" id="who"></span></div>
-  <div class="txt" id="txt"></div>
-</div>
 <script src="ambient.js"></script>
 </body>
 </html>
