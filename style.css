@@ -52,7 +52,7 @@ main { position:relative; z-index:5; display:grid; grid-template-columns:280px 1
 .chatpanel { max-height:78vh; display:flex; flex-direction:column; }
 .chat { overflow-y:auto; display:flex; flex-direction:column; gap:8px; padding-right:2px; }
 .msg { display:flex; gap:9px; padding:9px 11px; border-radius:14px; background:rgba(9,14,26,.72); border:1px solid rgba(0,229,255,.10); animation:fadein .4s ease both; }
-.msg .ava { width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; flex-shrink:0; }
+.msg .ava { width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; flex-shrink:0; object-fit:cover; box-shadow:0 0 0 2px rgba(0,229,255,.15); }
 .msg .body { flex:1; min-width:0; }
 .msg .meta { display:flex; align-items:baseline; gap:7px; line-height:1.25; }
 .msg .who { font-weight:800; letter-spacing:.5px; font-size:12.5px; }
