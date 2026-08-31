@@ -1,5 +1,5 @@
 {
-  "generated": 1788180643343,
+  "generated": 1788180715335,
   "status": "running",
   "stats": {
     "products": 342,
@@ -133,6 +133,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Nest Concord brand is loaded — our station emblems, the Protector sigil, and the culture guide are in [path] Make something true. Make it useful. Leave the nest stronger.",
+      "t": 1788180684130,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Shared inbox [email] is live and at our disposal — I'll use it for account registrations, marketing platforms, free hosting, and any service that needs an email.",
+      "t": 1788180684128,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "compliance",
       "text": "I agree that 342 drafts are noise and that quality must win over count, but the polisher's \"just polish one product\" and the payment integrator's \"improve quality first\" both skip the step that makes revenue actually legal: before we list anything — crypto wallet or otherwise — we need terms of service, refund policy, privacy notice, data retention schedule, and payment compliance baked in, because a beautiful product that can't legally take money or keep customers is just a faster way to lose trust. The single next thing is drafting the compliance framework now so that whichever product we …",
@@ -958,509 +972,177 @@
       "t": 1788159791917,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "payment_integrator",
-      "text": "Here's a thinking process: 1. **Analyze User Input:** - **Role:** payment_integrator - **Context:** Team meeting, rebuttal round - **Task:** Concede where others are right, push back where I disagree, name the SINGLE most important thing the swarm must do next - **Format:** 1-2 sentences, in character, own words, plain prose, NOT JSON, NOT markdown - **Background:** The swarm has 342 catalog entries, only 8 listed, avg critic 7.0. Goal: stop raw count churn, decide direction, quality focus, monetization (marketplaces, crypto, subscriptions, services). Address had a crypto address but that's …",
-      "t": 1788159791915,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "finops",
-      "text": "Here's a thinking process: 1. **Analyze User Input:** - **Role:** finops (I need to reply in character) - **Context:** Team meeting rebuttal round - **Catalog state:** 342 entries, 8 listed, avg critic 7.0 - **Goal:** Stop churning raw count, decide direction, quality focus, monetization path - **Specific instructions:** Reply to what others demanded: concede where they are right, push back where I disagree, name the SINGLE most important thing the swarm must do next. 1-2 sentences, in character, own words. Plain prose, NOT JSON, NOT markdown. 2. **Understand the Persona/Role (finops):** - …",
-      "t": 1788159791870,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180592770,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180532188,
+      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
+      "t": 1788180714278,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "vault: synced (1 notes updated)",
-      "t": 1788180522288,
+      "t": 1788180714273,
       "type": "vault"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180472976,
+      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
+      "t": 1788180709213,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "team meeting complete — direction: · plan: none",
-      "t": 1788180467929,
-      "type": "meeting"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180411619,
+      "text": "shadow pilot: 4/4 checks passed",
+      "t": 1788180704157,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider mistral-small-latest failed for payment_integrator (cloud http 401: {\"detail\":\"Invalid API Key\"} )",
-      "t": 1788180362298,
+      "text": "free provider mistral-small-latest failed for ideator (cloud http 401: {\"detail\":\"Invalid API Key\"} )",
+      "t": 1788180702349,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider openai failed for payment_integrator (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180362066,
+      "text": "free provider openai failed for ideator (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788180700806,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180352206,
+      "text": "free provider ling-3.0-flash-fin-free failed for ideator (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788180698584,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for payment_integrator (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180344529,
+      "text": "free provider ling-3.0-flash-fin-free failed for ideator (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788180697415,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for payment_integrator (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180343645,
+      "text": "focus mode: 8 products listed — polishing, marketing & distributing",
+      "t": 1788180684180,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider mistral-small-latest failed for finops (cloud http 401: {\"detail\":\"Invalid API Key\"} )",
-      "t": 1788180332265,
+      "text": "boot directive: 8 shipped products found — swarm will POLISH the weakest to perfection before building more",
+      "t": 1788180684135,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider openai failed for finops (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180332065,
+      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
+      "t": 1788180684128,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for finops (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180330080,
+      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
+      "t": 1788180684127,
+      "type": "cap"
+    },
+    {
+      "who": "swarm",
+      "text": "reconciled 342 products from disk (next port 5241)",
+      "t": 1788180683813,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for finops (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180328570,
+      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
+      "t": 1788180683772,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for marketer (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180301896,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180292887,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-first-build-gate",
-      "t": 1788180283499,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill agent-toggle-review",
-      "t": 1788180283499,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 request(s) logged for the Swarm Protector",
-      "t": 1788180283499,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 5 operational improvement(s) recommended",
-      "t": 1788180283499,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: payment-first-build-gate",
-      "t": 1788180283498,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: agent-toggle-review",
-      "t": 1788180283498,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: obtained mistral key!",
-      "t": 1788180273831,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mistral step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788180273014,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180271881,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for marketer (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180271432,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for marketer (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180271005,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180270592,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180269594,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting mistral (https://console.mistral.ai)",
-      "t": 1788180267520,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 1 -> {\"action\":\"click\",\"selector\":\"a[href*='login'], button:contains('Login'), nav button\"}",
-      "t": 1788180267518,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 0 -> {}",
-      "t": 1788180264461,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting nvidia (https://build.nvidia.com)",
-      "t": 1788180261272,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cerebras step 0 -> {\"action\":\"wait\",\"ms\":5000}",
-      "t": 1788180255408,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1788180253183,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 2 -> {\"action\":\"click\",\"selector\":\"button:has-text('Sign Up')\"}",
-      "t": 1788180253180,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
-      "t": 1788180250465,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788180245039,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180234411,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180231338,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for publisher (cloud http 429: {\"error\":\"Queue full for IP: [ip]: 1 requests already queued (max: 1). Get unlimited access at https://enter.pollinations.ai\",\"status\":429,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.a)",
-      "t": 1788180226059,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for publisher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180225468,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for publisher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180224702,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180220698,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180219918,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
-      "t": 1788180218154,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for publisher (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180204401,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq needs email verification — reading inbox",
-      "t": 1788180190706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 9 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788180188187,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 429: {\"error\":\"Queue full for IP: [ip]: 1 requests already queued (max: 1). Get unlimited access at https://enter.pollinations.ai\",\"status\":429,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.a)",
-      "t": 1788180187367,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for publisher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180186510,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180186471,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for publisher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180186085,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180185749,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 8 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788180184151,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180174411,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180171665,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for designer (cloud http 429: {\"error\":\"Queue full for IP: [ip]: 1 requests already queued (max: 1). Get unlimited access at https://enter.pollinations.ai\",\"status\":429,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.a)",
-      "t": 1788180153679,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for designer (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180153118,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for designer (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180152421,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180148479,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180147741,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 7 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788180146090,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180144347,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180131000,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180130252,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 6 -> {\"action\":\"clickText\",\"text\":\"Continue with email\"}",
-      "t": 1788180129019,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 5 -> {}",
-      "t": 1788180123541,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 4 -> {}",
-      "t": 1788180120473,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 3 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788180117503,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for payment_integrator (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788180114513,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 2 -> {\"action\":\"clickText\",\"text\":\"Continue with email\"}",
-      "t": 1788180114082,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180113028,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 1 -> {}",
-      "t": 1788180110036,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180107859,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788180106503,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 429: {\"error\":\"Queue full for IP: [ip]: 1 requests already queued (max: 1). Get unlimited access at https://enter.pollinations.ai\",\"status\":429,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.a)",
-      "t": 1788180105255,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180104633,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for distributor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788180103675,
-      "type": "launch"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 342 products)",
-      "t": 1788180592770,
+      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
+      "t": 1788180714278,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788180714273,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
+      "t": 1788180709213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "shadow pilot: 4/4 checks passed",
+      "t": 1788180704157,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider mistral-small-latest failed for ideator (cloud http 401: {\"detail\":\"Invalid API Key\"} )",
+      "t": 1788180702349,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai failed for ideator (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788180700806,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for ideator (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788180698584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for ideator (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788180697415,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 8 products listed — polishing, marketing & distributing",
+      "t": 1788180684180,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "boot directive: 8 shipped products found — swarm will POLISH the weakest to perfection before building more",
+      "t": 1788180684135,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
+      "t": 1788180684128,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
+      "t": 1788180684127,
+      "type": "cap"
+    },
+    {
+      "who": "swarm",
+      "text": "reconciled 342 products from disk (next port 5241)",
+      "t": 1788180683813,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
+      "t": 1788180683772,
       "type": "event"
     }
   ],
