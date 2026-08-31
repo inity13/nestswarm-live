@@ -20,8 +20,7 @@
     padding:6px 12px; border-radius:999px; }
   .nav:hover { text-shadow:0 0 8px #00e5ff; }
 
-  /* ribbon — live transmission, floats above the bottom bar */
-  .ribbon { position:fixed; left:50%; bottom:132px; transform:translateX(-50%); z-index:5;
+  .ribbon { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); z-index:5;
     width:min(720px, 92vw); text-align:center; font-family:ui-monospace,Menlo,Consolas,monospace; cursor:pointer; }
   .ribbon:hover .txt { color:#fff; }
   .ribbon .who { font-weight:800; letter-spacing:.5px; }
@@ -29,30 +28,29 @@
     text-shadow:0 0 12px rgba(0,0,0,.8); }
   .ribbon .meta { font-size:10px; color:#5f7194; letter-spacing:2px; text-transform:uppercase; margin-bottom:4px; }
 
-  /* bottom HUD bar — all modules + controls in one sleek row */
-  .bottombar { position:fixed; left:0; right:0; bottom:0; z-index:5; display:flex; align-items:stretch;
-    justify-content:center; gap:12px; padding:12px 16px; flex-wrap:wrap;
-    background:linear-gradient(to top, rgba(3,4,9,.92), rgba(3,4,9,.35), rgba(3,4,9,0)); }
-  .hud-mod { padding:9px 13px; border-radius:12px; background:rgba(6,10,20,.62); border:1px solid rgba(0,229,255,.14);
-    backdrop-filter:blur(6px); display:flex; flex-direction:column; justify-content:center; }
-  .hm-title { font-size:8.5px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-bottom:6px;
-    font-family:ui-monospace,Menlo,Consolas,monospace; }
-  .neural { width:110px; height:7px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(123,92,255,.3); overflow:hidden; }
+  /* floating HUD panels — left (metrics) and right (agents) */
+  .hud-left { position:fixed; left:14px; top:50%; transform:translateY(-50%); z-index:5;
+    display:flex; flex-direction:column; gap:10px; width:196px; }
+  .hud-right { position:fixed; right:14px; top:14px; z-index:5; width:168px; }
+  .hud-mod { padding:9px 11px; border-radius:12px; background:rgba(6,10,20,.55); border:1px solid rgba(0,229,255,.14); backdrop-filter:blur(6px); }
+  .hm-title { font-size:9px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-bottom:7px; font-family:ui-monospace,Menlo,Consolas,monospace; }
+  .neural { height:7px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(123,92,255,.3); overflow:hidden; }
   .neural i { display:block; height:100%; width:8%; background:linear-gradient(90deg,#7b5cff,#ff2ec4); box-shadow:0 0 12px rgba(123,92,255,.8); transition:width .5s; }
-  .hostload { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; line-height:1.5; white-space:nowrap; }
+  .hostload { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; line-height:1.6; }
   .hostload b { color:#00e5ff; }
-  .agentchips { display:flex; flex-wrap:wrap; gap:4px; max-width:460px; align-content:center; }
-  .chip { display:inline-flex; align-items:center; gap:5px; padding:2px 8px; border-radius:999px;
-    font-family:ui-monospace,Menlo,Consolas,monospace; font-size:9.5px; color:#9fb2d8;
-    border:1px solid rgba(0,229,255,.12); cursor:pointer; background:rgba(5,8,15,.4); }
-  .chip:hover { border-color:rgba(0,229,255,.4); color:#e6eefc; }
-  .chip i { width:6px; height:6px; border-radius:50%; box-shadow:0 0 6px currentColor; }
-  .chip img { width:14px; height:14px; border-radius:50%; object-fit:cover; flex-shrink:0; }
-  .chip.live { color:#e6eefc; border-color:rgba(0,229,255,.35); }
-  .chip.live i { animation:blink .7s infinite; }
 
-  /* controls */
-  .controls { display:flex; align-items:center; gap:8px; }
+  .agentmatrix { display:flex; flex-direction:column; gap:3px; max-height:54vh; overflow-y:auto; }
+  .am-row { display:flex; align-items:center; gap:7px; padding:3px 6px; border-radius:7px; cursor:pointer;
+    font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; border:1px solid transparent; }
+  .am-row:hover { background:rgba(0,229,255,.06); border-color:rgba(0,229,255,.15); }
+  .am-row img, .am-row .dot { width:14px; height:14px; border-radius:50%; flex-shrink:0; object-fit:cover; }
+  .am-row .dot { display:inline-block; box-shadow:0 0 6px currentColor; }
+  .am-row.live { color:#e6eefc; }
+  .am-row.live .dot, .am-row.live img { animation:blink .7s infinite; }
+  .am-row .am-act { margin-left:auto; font-size:8.5px; color:#5f7194; }
+
+  .controls { position:fixed; left:16px; bottom:18px; z-index:6; display:flex; align-items:center; gap:10px;
+    font-family:ui-monospace,Menlo,monospace; }
   .controls button { width:34px; height:34px; border-radius:50%; border:1px solid rgba(0,229,255,.4);
     background:rgba(5,8,15,.6); color:#00e5ff; cursor:pointer; font-size:12px; }
   .controls .flow { display:flex; flex-direction:column; align-items:center; gap:1px; }
@@ -60,7 +58,6 @@
   .controls input[type=range] { width:84px; accent-color:#00e5ff; }
   .ctrl-hint { font-size:9px; color:#5f7194; }
 
-  /* info card (click to inspect) */
   .info { position:fixed; z-index:7; min-width:240px; max-width:340px; padding:14px 16px; border-radius:14px;
     background:rgba(6,10,20,.92); border:1px solid rgba(0,229,255,.3); box-shadow:0 8px 40px rgba(0,0,0,.6);
     font-family:ui-monospace,Menlo,Consolas,monospace; color:#d6e4ff; backdrop-filter:blur(8px); }
@@ -73,11 +70,7 @@
   .info .i-close { float:right; cursor:pointer; color:#5f7194; }
   .info .i-close:hover { color:#ff5c7a; }
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:.3;} }
-  @media(max-width:768px){
-    .ctrl-hint{ display:none; } .info{ max-width:85vw; }
-    .ribbon{ bottom:200px; }
-    .agentchips{ max-width:92vw; }
-  }
+  @media(max-width:768px){ .ctrl-hint{ display:none; } .info{ max-width:85vw; } .hud-right{ display:none; } }
 </style>
 </head>
 <body>
@@ -89,16 +82,10 @@
 </div>
 <a class="nav" href="index.html">← dashboard</a>
 
-<div class="ribbon" id="ribbon">
-  <div class="meta" id="meta">transmission</div>
-  <div><span class="who" id="who"></span></div>
-  <div class="txt" id="txt"></div>
-</div>
-
-<div class="bottombar">
+<div class="hud-left">
   <div class="hud-mod">
-    <div class="hm-title">THROUGHPUT</div>
-    <canvas id="spark" width="120" height="40"></canvas>
+    <div class="hm-title">EVENT THROUGHPUT</div>
+    <canvas id="spark" width="180" height="46"></canvas>
   </div>
   <div class="hud-mod">
     <div class="hm-title">NEURAL LOAD</div>
@@ -108,21 +95,31 @@
     <div class="hm-title">HOST LOAD</div>
     <div id="hostLoad" class="hostload">…</div>
   </div>
+</div>
+
+<div class="hud-right">
   <div class="hud-mod">
-    <div class="hm-title">AGENTS</div>
-    <div id="agentMatrix" class="agentchips"></div>
-  </div>
-  <div class="hud-mod controls">
-    <div class="flow">
-      <label for="intensity">flow</label>
-      <input id="intensity" type="range" min="0.2" max="2" step="0.1" value="1" title="flow intensity — animation speed & energy (visual only, does not affect the swarm)" />
-    </div>
-    <button id="pauseBtn" title="pause / resume">❚❚</button>
-    <span class="ctrl-hint">click an agent / node to inspect · space = pause</span>
+    <div class="hm-title">AGENT MATRIX</div>
+    <div id="agentMatrix" class="agentmatrix"></div>
   </div>
 </div>
 
+<div class="controls">
+  <div class="flow">
+    <label for="intensity">flow</label>
+    <input id="intensity" type="range" min="0.2" max="2" step="0.1" value="1" title="flow intensity — animation speed & energy (visual only, does not affect the swarm)" />
+  </div>
+  <button id="pauseBtn" title="pause / resume">❚❚</button>
+  <span class="ctrl-hint">click an agent / node to inspect · space = pause</span>
+</div>
+
 <div id="info" class="info" style="display:none"></div>
+
+<div class="ribbon" id="ribbon">
+  <div class="meta" id="meta">transmission</div>
+  <div><span class="who" id="who"></span></div>
+  <div class="txt" id="txt"></div>
+</div>
 <script src="ambient.js"></script>
 </body>
 </html>
