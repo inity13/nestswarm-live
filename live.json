@@ -1,5 +1,5 @@
 {
-  "generated": 1788183978827,
+  "generated": 1788184038512,
   "status": "running",
   "stats": {
     "products": 345,
@@ -65,7 +65,7 @@
     {
       "name": "Worf",
       "color": "#ff6b6b",
-      "active": true,
+      "active": false,
       "last": {
         "text": "This is only worth a polished release if the error panel gives line, column, and a caret u",
         "t": 1788183890321
@@ -83,7 +83,7 @@
     {
       "name": "Joey",
       "color": "#f472b6",
-      "active": true,
+      "active": false,
       "last": {
         "text": "This is a trust product, not a utility — developers have fifty tabs of formatters that pho",
         "t": 1788183940365
@@ -98,10 +98,10 @@
     {
       "name": "Quark",
       "color": "#a3e635",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Conceded: 342 private repos burning compute on paid models is latinum down the drain, and ",
-        "t": 1788181515817
+        "text": "This ships as a static site on Cloudflare Pages or GitHub Pages for zero hosting cost — th",
+        "t": 1788183986803
       }
     },
     {
@@ -142,6 +142,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Quark",
+      "text": "This ships as a static site on Cloudflare Pages or GitHub Pages for zero hosting cost — the only spend that matters is distribution. Prove you can get 10,000 monthly visits without paid ads before a single line of code lands in the repo.",
+      "t": 1788183986803,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Joey",
       "text": "This is a trust product, not a utility — developers have fifty tabs of formatters that phone home, and they'll switch only when the error experience feels like a senior engineer pointing at the exact line instead of a red squiggly line. Ship a 30-second screen recording of the error panel handling a real nested payload with a missing comma, a trailing comma, and a type mismatch so I can write launch copy around what it actually does, not what we hope it does.",
@@ -974,16 +981,21 @@
       "t": 1788166624767,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "Before I commit to a stance, I need to verify the facts in the vault — a launcher who ships on an unverified build is a liar with a deploy key. Let me pull the relevant notes. <tool_call>Read <arg_key>file_path</arg_key> <arg_value>[path] </tool_call> <tool_call>Read <arg_key>file_path</arg_key> <arg_value>[path] </tool_call> <tool_call>Read <arg_key>file_path</arg_key> <arg_value>[path] </tool_call>",
-      "t": 1788166624765,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LedgerLock",
+      "t": 1788183997664,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788183989790,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> LedgerLock",
@@ -1451,21 +1463,28 @@
       "text": "keyhunter: nvidia step 9 -> {}",
       "t": 1788182177171,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788182154018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788182127353,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LedgerLock",
+      "t": 1788183997664,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788183989790,
+      "type": "event"
+    },
+    {
+      "who": "Quark",
+      "text": "This ships as a static site on Cloudflare Pages or GitHub Pages for zero hosting cost — the only spend that matters is distribution. Prove you can get 10,000 monthly visits without paid ads before a single line of code lands in the repo.",
+      "t": 1788183986803,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> LedgerLock",
@@ -1477,68 +1496,6 @@
       "text": "ideated: LedgerLock [small-business operations & accounting]",
       "t": 1788183961166,
       "type": "ideated"
-    },
-    {
-      "who": "Joey",
-      "text": "This is a trust product, not a utility — developers have fifty tabs of formatters that phone home, and they'll switch only when the error experience feels like a senior engineer pointing at the exact line instead of a red squiggly line. Ship a 30-second screen recording of the error panel handling a real nested payload with a missing comma, a trailing comma, and a type mismatch so I can write launch copy around what it actually does, not what we hope it does.",
-      "t": 1788183940365,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
-      "t": 1788183927932,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788183912584,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for JSON Forge",
-      "t": 1788183912583,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: small-business operations & accounting",
-      "t": 1788183907662,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788183907662,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for JSON Forge: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788183907343,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council demands satisfied for JSON Forge",
-      "t": 1788183907343,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged JSON Forge → json-forge.zip (11752 bytes)",
-      "t": 1788183907331,
-      "type": "event"
-    },
-    {
-      "who": "Worf",
-      "text": "This is only worth a polished release if the error panel gives line, column, and a caret under the offending token, not a browser's vague \"position 47\" message. I demand a differential test suite against JSON.parse on at least 50 malformed and Unicode edge cases, and the UI must highlight the exact failure point before we call it shipped.",
-      "t": 1788183890321,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1921,7 +1878,7 @@
     {
       "name": "LedgerLock",
       "niche": "small-business operations & accounting",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
