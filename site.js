@@ -123,10 +123,14 @@ function render() {
       d.innerHTML = `<div class="sys-line">${esc(m.text)}</div>`;
     } else {
       const role = NAME_TO_ROLE[m.who] || '';
-      const color = (data.agents||[]).find(a=>a.name===m.who)?.color || '#5f7194';
+      const agent = (data.agents||[]).find(a=>a.name===m.who);
+      const color = agent?.color || '#5f7194';
       const time = relTime(m.t);
+      const ava = agent && agent.avatar
+        ? `<img class="ava" src="${agent.avatar}" alt="${esc(m.who)}">`
+        : `<div class="ava" style="background:${color};color:#04060c">${esc((m.who||'?')[0])}</div>`;
       d.innerHTML =
-        `<div class="ava" style="background:${color};color:#04060c">${esc((m.who||'?')[0])}</div>` +
+        `${ava}` +
         `<div class="body">` +
           `<div class="meta"><span class="who" style="color:${color}">${esc(m.who)}</span>${role ? `<span class="role">${role}</span>` : ''}<span class="t">${time}</span></div>` +
           `<div class="txt">${esc(m.text)}</div>` +
