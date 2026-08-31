@@ -1,5 +1,5 @@
 {
-  "generated": 1788199886148,
+  "generated": 1788199946120,
   "status": "running",
   "stats": {
     "products": 364,
@@ -986,6 +986,66 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor: 6 operational improvement(s) recommended",
+      "t": 1788199927788,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 3 request(s) logged for the Swarm Protector",
+      "t": 1788199927732,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added recovery_engineer (Mines rejected builds for fixable high-revenue candidates and iterates them to listing readiness)",
+      "t": 1788199927683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill rejected-build-salvage",
+      "t": 1788199927683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill operation-review-trigger",
+      "t": 1788199927683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: rejected-build-salvage",
+      "t": 1788199927682,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: operation-review-trigger",
+      "t": 1788199927682,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 1 -> {\"action\":\"clickText\",\"text\":\"Signup\"}",
+      "t": 1788199914884,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {}",
+      "t": 1788199903624,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 364 products)",
+      "t": 1788199894964,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
       "t": 1788199874503,
       "type": "event"
@@ -1204,6 +1264,66 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "conductor: 6 operational improvement(s) recommended",
+      "t": 1788199927788,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 3 request(s) logged for the Swarm Protector",
+      "t": 1788199927732,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added recovery_engineer (Mines rejected builds for fixable high-revenue candidates and iterates them to listing readiness)",
+      "t": 1788199927683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill rejected-build-salvage",
+      "t": 1788199927683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill operation-review-trigger",
+      "t": 1788199927683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: rejected-build-salvage",
+      "t": 1788199927682,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: operation-review-trigger",
+      "t": 1788199927682,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 1 -> {\"action\":\"clickText\",\"text\":\"Signup\"}",
+      "t": 1788199914884,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {}",
+      "t": 1788199903624,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 364 products)",
+      "t": 1788199894964,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
       "t": 1788199874503,
       "type": "event"
@@ -1213,30 +1333,6 @@
       "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"<css>\",\"value\":\"<text>\"}",
       "t": 1788199874501,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Epoch",
-      "t": 1788199839950,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 364 products)",
-      "t": 1788199834334,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Gumroad (marketplace)",
-      "t": 1788199825220,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> Epoch",
-      "t": 1788199799939,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1326,7 +1422,7 @@
     },
     {
       "name": "Reusable skills",
-      "desc": "32 skill(s) in the refinery"
+      "desc": "34 skill(s) in the refinery"
     },
     {
       "name": "buyer-intent-mining",
@@ -1363,6 +1459,14 @@
     {
       "name": "offload-limit-failover",
       "desc": "Detect provider rate limits and fail over to local model without losing work"
+    },
+    {
+      "name": "rejected-build-salvage",
+      "desc": "Cluster rejected builds by failure reason and recover the top fixable revenue candidates"
+    },
+    {
+      "name": "operation-review-trigger",
+      "desc": "Run operation review when reject rate exceeds 80% or listed products stall below 10"
     }
   ],
   "ledger": {
@@ -1400,22 +1504,22 @@
     0,
     0,
     0,
-    0,
     7,
     7,
     6,
     7,
     6,
     8,
-    6
+    6,
+    14
   ],
   "load": {
     "loadavg": [
-      1,
-      1.11,
-      1.24
+      0.89,
+      1.06,
+      1.21
     ],
-    "ramPct": 59,
+    "ramPct": 58,
     "cpus": 12
   },
   "products": [
