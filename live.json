@@ -1,5 +1,5 @@
 {
-  "generated": 1788191516885,
+  "generated": 1788191576997,
   "status": "running",
   "stats": {
     "products": 352,
@@ -986,6 +986,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> Citation Compass",
+      "t": 1788191566207,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "local model deepseek-r1:8b failed for designer (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (9663 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":9663,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788191545542,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider mistral-small-latest failed for designer (cloud http 401: {\"detail\":\"Invalid API Key\"} )",
+      "t": 1788191536569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788191536569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> Citation Compass",
+      "t": 1788191536195,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for Citation Compass",
+      "t": 1788191528486,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Citation Compass",
+      "t": 1788191526182,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 352 products)",
+      "t": 1788191525033,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (1 files, static)",
       "t": 1788191516462,
       "type": "event"
@@ -1415,79 +1463,61 @@
       "text": "keyhunter: groq step 3 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
       "t": 1788190981316,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788190980165,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788190978998,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788190977489,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788190975813,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 351 products)",
-      "t": 1788190926439,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788190925700,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788190912943,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788190887999,
-      "type": "launch"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788191516462,
+      "text": "stage 'package' -> Citation Compass",
+      "t": 1788191566207,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "local model deepseek-r1:8b failed for designer (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (9663 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":9663,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788191545542,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider mistral-small-latest failed for designer (cloud http 401: {\"detail\":\"Invalid API Key\"} )",
+      "t": 1788191536569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788191536569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> Citation Compass",
+      "t": 1788191536195,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for Citation Compass",
+      "t": 1788191528486,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Citation Compass",
+      "t": 1788191526182,
+      "type": "building"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 352 products)",
-      "t": 1788191466126,
+      "t": 1788191525033,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: model deepseek-r1:8b not found",
-      "t": 1788191432399,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — model deepseek-r1:8b not found",
-      "t": 1788191432399,
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788191516462,
       "type": "event"
     }
   ],
@@ -1903,7 +1933,7 @@
     {
       "name": "Citation Compass",
       "niche": "writing, copy & content creation",
-      "stage": "test",
+      "stage": "package",
       "status": "building"
     }
   ],
