@@ -1,5 +1,5 @@
 {
-  "generated": 1788185570220,
+  "generated": 1788185629820,
   "status": "running",
   "stats": {
     "products": 347,
@@ -986,6 +986,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788185629048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "local model deepseek-r1:8b failed for designer (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (5237 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":5237,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788185613861,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788185613781,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> HorizonSync",
+      "t": 1788185609049,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for HorizonSync",
+      "t": 1788185601308,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HorizonSync",
+      "t": 1788185599052,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788185598711,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788185581949,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 347 products)",
+      "t": 1788185581500,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
       "t": 1788185540077,
       "type": "launch"
@@ -1084,33 +1138,63 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788185540077,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788185629048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "local model deepseek-r1:8b failed for designer (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (5237 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":5237,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788185613861,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788185613781,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> HorizonSync",
+      "t": 1788185609049,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for HorizonSync",
+      "t": 1788185601308,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HorizonSync",
+      "t": 1788185599052,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788185598711,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788185581949,
       "type": "launch"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 347 products)",
-      "t": 1788185519167,
+      "t": 1788185581500,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 1 free providers live (pollinations) · 0 zen free models",
-      "t": 1788185503582,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 346 products with flags, 1 with high-severity findings",
-      "t": 1788185494318,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 347 products)",
-      "t": 1788185490233,
-      "type": "event"
+      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788185540077,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1505,7 +1589,7 @@
     {
       "name": "HorizonSync",
       "niche": "recruiting, HR & team tools",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
