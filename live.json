@@ -1,5 +1,5 @@
 {
-  "generated": 1788184518402,
+  "generated": 1788184578436,
   "status": "running",
   "stats": {
     "products": 345,
@@ -83,7 +83,7 @@
     {
       "name": "Joey",
       "color": "#f472b6",
-      "active": true,
+      "active": false,
       "last": {
         "text": "You're right that \"local-only\" is a contract we sign in CSP headers and the error panel is",
         "t": 1788184437256
@@ -98,7 +98,7 @@
     {
       "name": "Quark",
       "color": "#a3e635",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They're right that CSP headers and a line-column-context error panel are the only moat thi",
         "t": 1788184485186
@@ -107,10 +107,10 @@
     {
       "name": "Sentinel",
       "color": "#22d3ee",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The \"fully local\" claim is only as strong as the Content Security Policy enforcing it — wi",
-        "t": 1788184135981
+        "text": "You are right that \"local-only\" is a contract written in CSP headers and that the error pa",
+        "t": 1788184559086
       }
     },
     {
@@ -142,6 +142,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "You are right that \"local-only\" is a contract written in CSP headers and that the error panel must surface line, column, and surrounding context instantly — anything less breaks the trust this product sells. The single non-negotiable requirement: a strict Content Security Policy that forbids all network egress and inline scripts, paired with a validated error renderer that proves line, column, and snippet accuracy against a curated malformed-JSON test suite before any user sees it.",
+      "t": 1788184559086,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Quark",
       "text": "They're right that CSP headers and a line-column-context error panel are the only moat this tool has — skip either and you're just another tab in the graveyard. But demanding a paid transaction before launch on a free local utility is backwards Ferengi logic: this ships free, builds the email list, and the checkout comes later when we've got something worth charging for.",
@@ -974,16 +981,45 @@
       "t": 1788166624786,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "Worf: The critic and polisher are absolutely correct; we have a catalog of half-formed ideas that generate no revenue. The single most important thing the swarm must do next is **prioritize quality over quantity**, focusing on building a small number of high-quality, well-tested products before expanding our portfolio. We cannot afford to compromise security or risk exposure due to vulnerabilities.",
-      "t": 1788166624785,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "researcher exploring: personal finance, investing & budgeting",
+      "t": 1788184537559,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788184528624,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788184527696,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] const server = http.createServer(async (req, res) => { ^ SyntaxError: Identifier 'server' has already been declared at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788184527668,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LedgerLock",
+      "t": 1788184527563,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788184522756,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
@@ -1427,64 +1463,51 @@
       "text": "designer improved UI for ChronoFlow",
       "t": 1788182701887,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182666858,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182608580,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider nemotron-3-ultra-free failed for designer (The operation was aborted due to timeout)",
-      "t": 1788182578862,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788182562043,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2754MB free)",
-      "t": 1788182562042,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182547826,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "Quark",
-      "text": "They're right that CSP headers and a line-column-context error panel are the only moat this tool has — skip either and you're just another tab in the graveyard. But demanding a paid transaction before launch on a free local utility is backwards Ferengi logic: this ships free, builds the email list, and the checkout comes later when we've got something worth charging for.",
-      "t": 1788184485186,
+      "who": "Sentinel",
+      "text": "You are right that \"local-only\" is a contract written in CSP headers and that the error panel must surface line, column, and surrounding context instantly — anything less breaks the trust this product sells. The single non-negotiable requirement: a strict Content Security Policy that forbids all network egress and inline scripts, paired with a validated error renderer that proves line, column, and snippet accuracy against a curated malformed-JSON test suite before any user sees it.",
+      "t": 1788184559086,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
-      "t": 1788184467292,
+      "text": "researcher exploring: personal finance, investing & budgeting",
+      "t": 1788184537559,
       "type": "event"
     },
     {
-      "who": "Joey",
-      "text": "You're right that \"local-only\" is a contract we sign in CSP headers and the error panel is our only real edge — but you're wrong that privacy doesn't sell; developers *pay* for tools that never phone home when their logs contain keys. Ship when the error panel surfaces line, column, and a readable snippet in under 50ms — that's the demo that closes the tab.",
-      "t": 1788184437256,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788184528624,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788184527696,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] const server = http.createServer(async (req, res) => { ^ SyntaxError: Identifier 'server' has already been declared at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788184527668,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LedgerLock",
+      "t": 1788184527563,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788184522756,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1865,10 +1888,28 @@
   ],
   "building": [
     {
-      "name": "LedgerLock",
-      "niche": "small-business operations & accounting",
-      "stage": "build",
-      "status": "building"
+      "name": "JSON Forge",
+      "niche": "crypto, web3 & trading",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "StateCETrack",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "MindfulMeditate",
+      "niche": "health, fitness & habit trackers",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Mindful Move",
+      "niche": "health, fitness & habit trackers",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
