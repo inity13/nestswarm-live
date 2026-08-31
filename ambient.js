@@ -58,6 +58,7 @@ async function load() {
   try { const r = await fetch('live.json?t=' + Date.now()); data = await r.json(); } catch {}
   $('#status').textContent = (data.status || '…') + ' · ' + (data.stats.products||0) + ' products · ' + (data.stats.listed||0) + ' listed';
   buildFeed();
+  loadAvatars();
   renderHUD();
 }
 
@@ -248,10 +249,20 @@ function brain() {
         ctx.strokeStyle=hexA(a.color, hl?0.4:0.12); ctx.lineWidth= hl?1.4:0.7; ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(sp.x,sp.y); ctx.stroke();
         if(!paused && a.active && Math.random()>0.96) spawn(p,sp,a.color,1.2);
       });
-      const r = a.active ? 6.5 : 4.5;
-      ctx.fillStyle=a.color; ctx.shadowBlur= (a.active||hl)?26:10; ctx.shadowColor=a.color;
-      ctx.beginPath(); ctx.arc(p.x,p.y,r,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
-      if(a.active){ ctx.strokeStyle=hexA(a.color,0.6); ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc(p.x,p.y,r+4+Math.sin(now/280)*2,0,Math.PI*2); ctx.stroke(); if(!paused) burst(p); }
+      const size = (a.active || hl) ? 18 : 13;
+      const img = avatarImgs[a.name];
+      if (img && img.complete && img.naturalWidth) {
+        ctx.save();
+        ctx.beginPath(); ctx.arc(p.x, p.y, size / 2, 0, Math.PI * 2); ctx.closePath(); ctx.clip();
+        ctx.drawImage(img, p.x - size / 2, p.y - size / 2, size, size);
+        ctx.restore();
+        ctx.strokeStyle = hexA(a.color, (a.active || hl) ? 0.9 : 0.4); ctx.lineWidth = (a.active || hl) ? 1.6 : 1;
+        ctx.beginPath(); ctx.arc(p.x, p.y, size / 2, 0, Math.PI * 2); ctx.stroke();
+      } else {
+        ctx.fillStyle = a.color; ctx.shadowBlur = (a.active || hl) ? 26 : 10; ctx.shadowColor = a.color;
+        ctx.beginPath(); ctx.arc(p.x, p.y, size / 2, 0, Math.PI * 2); ctx.fill(); ctx.shadowBlur = 0;
+      }
+      if(a.active){ ctx.strokeStyle=hexA(a.color,0.6); ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc(p.x,p.y,size/2+4+Math.sin(now/280)*2,0,Math.PI*2); ctx.stroke(); if(!paused) burst(p); }
       if(lay.fagent>0){ ctx.fillStyle=hexA(a.color, a.active?1:0.55); ctx.font='9px ui-monospace,Menlo,monospace'; ctx.textAlign='center'; ctx.fillText(a.name, p.x, p.y+(p.y>cy?16:-11)); }
 
       if (a.active && a.last && a.last.text) {
@@ -297,7 +308,7 @@ function brain() {
 /* ---------- pointer + controls ---------- */
 function pick(x, y) {
   const near = (px, py) => Math.hypot(px - x, py - y) < 22;
-  for (const a of hit.agents) if (near(a.x, a.y)) return { type: 'agent', ...a, r: 6 };
+  for (const a of hit.agents) if (near(a.x, a.y)) return { type: 'agent', ...a, r: 12 };
   for (const n of hit.nodes) if (near(n.x, n.y)) return { type: 'node', ...n, r: 8 };
   return null;
 }
