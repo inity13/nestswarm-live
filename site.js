@@ -104,6 +104,17 @@ function render() {
   });
   if (!b.children.length) b.innerHTML = '<div class="msg"><div class="txt">Idle — between ideas.</div></div>';
 
+  // capabilities showcase (passive)
+  const capsEl = $('#caps');
+  if (capsEl) {
+    capsEl.innerHTML = '';
+    (data.capabilities || []).forEach((c) => {
+      const d = document.createElement('div'); d.className='cap';
+      d.innerHTML = `<b>${esc(c.name)}</b><span>${esc(c.desc)}</span>`;
+      capsEl.appendChild(d);
+    });
+  }
+
   const tk = $('#ticker'); tk.innerHTML = '';
   const items = (data.products || []).map(p=>`${esc(p.name)} — ${esc(p.niche||'')} · ${esc(p.status)}`).join('  ✦  ');
   tk.innerHTML = items ? (items + '  ✦  ' + items) : 'no products yet';
