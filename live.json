@@ -1,5 +1,5 @@
 {
-  "generated": 1788201512952,
+  "generated": 1788201572936,
   "status": "running",
   "stats": {
     "products": 367,
@@ -11,7 +11,7 @@
     {
       "name": "Guinan",
       "color": "#6c8cff",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They're absolutely right that a product can't launch on \"untitled\" alone — without directi",
         "t": 1788201423877
@@ -20,7 +20,7 @@
     {
       "name": "Spock",
       "color": "#37d39b",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They are right that an empty product has no architecture, and I will not pretend otherwise",
         "t": 1788201429954
@@ -29,7 +29,7 @@
     {
       "name": "Scotty",
       "color": "#ffb454",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They're right that I won't code a blank page, but the answer isn't more product philosophy",
         "t": 1788201437040
@@ -986,6 +986,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'test' -> Short Tool Name",
+      "t": 1788201572174,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788201572060,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 367 products)",
+      "t": 1788201521838,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 367 products)",
       "t": 1788201463637,
       "type": "event"
@@ -1445,65 +1463,26 @@
       "text": "keyhunter: openrouter step 8 -> {\"action\":\"type\",\"selector\":\"#emailAddress-field\",\"value\":\"[email]\"}",
       "t": 1788200162466,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 7 -> {\"action\":\"type\",\"selector\":\"#emailAddress-field\",\"value\":\"[email]\"}",
-      "t": 1788200139961,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 364 products)",
-      "t": 1788200134508,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788200125341,
-      "type": "vault"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 367 products)",
-      "t": 1788201463637,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 4 quality demands recorded for Short Tool Name",
-      "t": 1788201445412,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "They're right that I won't code a blank page, but the answer isn't more product philosophy — it's a one-line spec with a real user and a real job. The single quality requirement is that a non-technical user can go from install to a completed, useful result in under five minutes without reading a manual.",
-      "t": 1788201437040,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Short Tool Name",
-      "t": 1788201432140,
+      "text": "stage 'test' -> Short Tool Name",
+      "t": 1788201572174,
       "type": "building"
     },
     {
-      "who": "Spock",
-      "text": "They are right that an empty product has no architecture, and I will not pretend otherwise. The one quality requirement that must be met before shipping anything is verifiability: each feature must map to a concrete, testable success condition, or it does not enter the plan.",
-      "t": 1788201429954,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "coder produced a functional build (1 files, static)",
+      "t": 1788201572060,
+      "type": "event"
     },
     {
-      "who": "Guinan",
-      "text": "They're absolutely right that a product can't launch on \"untitled\" alone — without direction, it's just potential gathering dust. I'd push back that the blank state is fine so long as we quickly anchor to a real, paying problem; the single most important quality this must meet to ship is a verified audience willing to pay for the solution.",
-      "t": 1788201423877,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 367 products)",
+      "t": 1788201521838,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1653,7 +1632,6 @@
     "priority": "The single highest-scoring existing listed product nearest to verified payment; if none qualifies, the minimal tool with the clearest buyer pain and simplest checkout path."
   },
   "throughput": [
-    9,
     5,
     6,
     14,
@@ -1682,13 +1660,14 @@
     4,
     10,
     11,
-    1
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      0.27,
-      0.28,
-      0.36
+      0.1,
+      0.23,
+      0.34
     ],
     "ramPct": 45,
     "cpus": 12
@@ -1979,7 +1958,7 @@
     {
       "name": "Short Tool Name",
       "niche": "e-commerce, dropshipping & reselling",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
