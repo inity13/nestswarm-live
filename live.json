@@ -1,8 +1,8 @@
 {
-  "generated": 1788211644999,
+  "generated": 1788211834420,
   "status": "running",
   "stats": {
-    "products": 376,
+    "products": 377,
     "listed": 2,
     "agents": 15,
     "avgScore": "5.0"
@@ -1001,6 +1001,96 @@
   "events": [
     {
       "who": "swarm",
+      "text": "askSwarm cloud path failed (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — falling back to local/free brain",
+      "t": 1788211834217,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (1009 chars)",
+      "t": 1788211833652,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788211785346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788211785346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788211784935,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: freelancers & solopreneurs",
+      "t": 1788211784934,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (857 chars)",
+      "t": 1788211784824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788211745114,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788211745113,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788211745113,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot failed for conductor (copilot http 401: unauthorized: AuthenticateToken authentication failed ) — falling through",
+      "t": 1788211744645,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788211744173,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788211744086,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 376 products)",
+      "t": 1788211669886,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788211663845,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "offload check: desktop limited (resets 3:50am)",
       "t": 1788211611994,
       "type": "event"
@@ -1388,103 +1478,73 @@
       "text": "keyhunter: nvidia step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788210406525,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for coder (chatgpt script failed (exit 1): <3>WSL (81703) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling to local",
-      "t": 1788210406511,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788210396482,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for coder (desktop limited until 3:50:00 AM) — falling through",
-      "t": 1788210396482,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Persona Key",
-      "t": 1788210395964,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Lemon Squeezy step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788210391752,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788210391457,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: paused new builds (focus mode); polished the weakest product; marketed the top product",
-      "t": 1788210390988,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "no product available to polish",
-      "t": 1788210390986,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "team meeting complete — direction: one strategic direction · plan: polish_weakest, market_top, pause_builds",
-      "t": 1788210390985,
-      "type": "meeting"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Lemon Squeezy step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788210387907,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788210387149,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Insufficient balance for cloud services. Please manage your billing to resolve this issue.",
-      "t": 1788210375947,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: Insufficient balance for cloud services. Please manage your billing to resolve this issue.",
-      "t": 1788210375947,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for architect (chatgpt script failed (exit 1): <3>WSL (81458) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling to local",
-      "t": 1788210375940,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788210365915,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "offload check: desktop limited (resets 3:50am)",
-      "t": 1788211611994,
+      "text": "askSwarm cloud path failed (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — falling back to local/free brain",
+      "t": 1788211834217,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (1009 chars)",
+      "t": 1788211833652,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788211785346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788211785346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788211784935,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: freelancers & solopreneurs",
+      "t": 1788211784934,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (857 chars)",
+      "t": 1788211784824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788211745114,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788211745113,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788211745113,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot failed for conductor (copilot http 401: unauthorized: AuthenticateToken authentication failed ) — falling through",
+      "t": 1788211744645,
       "type": "event"
     }
   ],
@@ -1531,7 +1591,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 32×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 34×"
     },
     {
       "name": "GitHub Copilot",
@@ -1644,43 +1704,43 @@
   },
   "throughput": [
     9,
-    25,
+    5,
     10,
+    7,
+    7,
+    37,
     9,
-    0,
-    15,
-    7,
-    7,
-    24,
-    22,
     3,
     19,
     8,
     9,
-    4,
-    7,
+    6,
+    5,
     7,
     0,
     1,
     0,
     0,
     6,
-    4,
+    6,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
     2,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1
+    6,
+    9
   ],
   "load": {
     "loadavg": [
-      0.84,
-      0.42,
-      0.87
+      0.47,
+      0.5,
+      0.82
     ],
-    "ramPct": 21,
+    "ramPct": 32,
     "cpus": 12
   },
   "products": [
@@ -1967,16 +2027,10 @@
   ],
   "building": [
     {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "StateCETrack",
-      "niche": "recruiting, HR & team tools",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "Untitled",
+      "niche": "freelancers & solopreneurs",
+      "stage": "idea",
+      "status": "building"
     }
   ],
   "nodes": [
