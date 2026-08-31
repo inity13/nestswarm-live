@@ -38,7 +38,24 @@
   .info .i-line { margin-top:5px; padding-top:5px; border-top:1px solid rgba(0,229,255,.1); font-size:11px; color:#9fb2d8; }
   .info .i-close { float:right; cursor:pointer; color:#5f7194; }
   .info .i-close:hover { color:#ff5c7a; }
-  @media(max-width:768px){ .ctrl-hint{ display:none; } .info{ max-width:85vw; } }
+  @media(max-width:768px){ .ctrl-hint{ display:none; } .info{ max-width:85vw; } .hud-right{ display:none; } }
+  /* HUD panels */
+  .hud-left { position:fixed; left:14px; top:50%; transform:translateY(-50%); z-index:5; display:flex; flex-direction:column; gap:10px; width:196px; }
+  .hud-right { position:fixed; right:14px; top:14px; z-index:5; width:170px; }
+  .hud-mod { padding:9px 11px; border-radius:12px; background:rgba(6,10,20,.55); border:1px solid rgba(0,229,255,.14); backdrop-filter:blur(6px); }
+  .hm-title { font-size:9px; letter-spacing:2px; color:#5f7194; text-transform:uppercase; margin-bottom:7px; font-family:ui-monospace,Menlo,Consolas,monospace; }
+  .neural { height:7px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(123,92,255,.3); overflow:hidden; }
+  .neural i { display:block; height:100%; width:8%; background:linear-gradient(90deg,var(--violet,#7b5cff),var(--magenta,#ff2ec4)); box-shadow:0 0 12px rgba(123,92,255,.8); transition:width .5s; }
+  .hostload { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; line-height:1.6; }
+  .hostload b { color:#00e5ff; }
+  .agentmatrix { display:flex; flex-direction:column; gap:3px; max-height:46vh; overflow:hidden; }
+  .am-row { display:flex; align-items:center; gap:7px; padding:3px 6px; border-radius:7px; cursor:pointer; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10px; color:#9fb2d8; border:1px solid transparent; }
+  .am-row:hover { background:rgba(0,229,255,.06); border-color:rgba(0,229,255,.15); }
+  .am-row i { width:7px; height:7px; border-radius:50%; flex-shrink:0; box-shadow:0 0 6px currentColor; }
+  .am-row.live { color:#e6eefc; }
+  .am-row.live i { animation:blink .7s infinite; }
+  .am-row .am-act { margin-left:auto; font-size:8.5px; color:#5f7194; }
+  @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:.3;} }
   .ribbon .who { font-weight:800; letter-spacing:.5px; }
   .ribbon .txt { color:#c3d2f0; font-size:13px; margin-top:4px; line-height:1.5; word-break:break-word;
     text-shadow:0 0 12px rgba(0,0,0,.8); }
@@ -53,6 +70,26 @@
   <div class="sub" id="status">…</div>
 </div>
 <a class="nav" href="index.html">← dashboard</a>
+<div class="hud-left">
+  <div class="hud-mod">
+    <div class="hm-title">EVENT THROUGHPUT</div>
+    <canvas id="spark" width="180" height="46"></canvas>
+  </div>
+  <div class="hud-mod">
+    <div class="hm-title">NEURAL LOAD</div>
+    <div class="neural"><i id="neuralFill"></i></div>
+  </div>
+  <div class="hud-mod">
+    <div class="hm-title">HOST LOAD</div>
+    <div id="hostLoad" class="hostload">…</div>
+  </div>
+</div>
+<div class="hud-right">
+  <div class="hud-mod agentsmod">
+    <div class="hm-title">AGENT MATRIX</div>
+    <div id="agentMatrix" class="agentmatrix"></div>
+  </div>
+</div>
 <div class="controls">
   <button id="pauseBtn" title="pause / resume">❚❚</button>
   <input id="intensity" type="range" min="0.2" max="2" step="0.1" value="1" title="intensity" />
