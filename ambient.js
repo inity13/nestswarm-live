@@ -73,7 +73,7 @@ function renderHUD() {
     (data.agents || []).forEach((a) => {
       const chip = document.createElement('span');
       chip.className = 'chip' + (a.active ? ' live' : '');
-      chip.innerHTML = `<i style="background:${a.color};color:${a.color}"></i>${esc(a.name)}`;
+      chip.innerHTML = (a.avatar ? `<img src="${a.avatar}" alt="">` : `<i style="background:${a.color};color:${a.color}"></i>`) + esc(a.name);
       chip.onclick = (e) => showInfo(agentInfo(a), e.clientX + 12, e.clientY + 12);
       am.appendChild(chip);
     });
@@ -143,7 +143,8 @@ function agentInfo(a) {
   const station = STATIONS[role] || '';
   const lines = (data.chat||[]).filter(m => !m.system && m.who === a.name).slice(0, 3)
     .map(m => `· ${m.text.slice(0, 90)}`).join('<br>');
-  return `<div class="i-name" style="color:${a.color}">${esc(a.name)}</div>` +
+  const av = a.avatar ? `<img class="i-avatar" src="${a.avatar}" alt="">` : '';
+  return `${av}<div class="i-name" style="color:${a.color}">${esc(a.name)}</div>` +
     `<div class="i-role">${role}${a.active ? ' · ACTIVE' : ''}</div>` +
     `<div class="i-station">◆ ${station}</div>` +
     `<div class="i-body">${a.last && a.last.text ? esc(a.last.text) : 'no recent transmission'}</div>` +
