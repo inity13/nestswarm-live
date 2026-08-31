@@ -71,11 +71,11 @@ function renderHUD() {
   if (am) {
     am.innerHTML = '';
     (data.agents || []).forEach((a) => {
-      const row = document.createElement('div');
-      row.className = 'am-row' + (a.active ? ' live' : '');
-      row.innerHTML = `<i style="background:${a.color};color:${a.color}"></i><span>${esc(a.name)}</span><span class="am-act">${a.active ? '●' : '·'}</span>`;
-      row.onclick = (e) => showInfo(agentInfo(a), e.clientX + 12, e.clientY + 12);
-      am.appendChild(row);
+      const chip = document.createElement('span');
+      chip.className = 'chip' + (a.active ? ' live' : '');
+      chip.innerHTML = `<i style="background:${a.color};color:${a.color}"></i>${esc(a.name)}`;
+      chip.onclick = (e) => showInfo(agentInfo(a), e.clientX + 12, e.clientY + 12);
+      am.appendChild(chip);
     });
   }
   const activeCount = (data.agents || []).filter((a) => a.active).length;
