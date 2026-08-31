@@ -159,10 +159,21 @@ function nodeInfo(n) {
 }
 
 /* ---------- brain ---------- */
+// Preloaded agent avatar images, drawn as clickable "heads" on the brain.
+const avatarImgs = {};
+function loadAvatars() {
+  (data.agents || []).forEach((a) => {
+    if (!a.avatar || avatarImgs[a.name]) return;
+    const img = new Image();
+    img.src = a.avatar;
+    avatarImgs[a.name] = img;
+  });
+}
+
 function brain() {
   const c = $('#c'); const ctx = c.getContext('2d');
   let w,h;
-  function resize(){ w=c.width=innerWidth; h=c.height=innerHeight; }
+  function resize(){ w=c.width=c.parentElement.clientWidth; h=c.height=c.parentElement.clientHeight; }
   resize(); addEventListener('resize', resize);
 
   const particles = [];
