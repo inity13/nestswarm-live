@@ -58,6 +58,53 @@ async function load() {
   try { const r = await fetch('live.json?t=' + Date.now()); data = await r.json(); } catch {}
   $('#status').textContent = (data.status || '…') + ' · ' + (data.stats.products||0) + ' products · ' + (data.stats.listed||0) + ' listed';
   buildFeed();
+  renderHUD();
+}
+
+/* ---------- HUD: throughput sparkline, neural load, host load, agent matrix ---------- */
+function renderHUD() {
+  const hl = data.load;
+  if (hl) {
+    $('#hostLoad').innerHTML = `load <b>${hl.loadavg && hl.loadavg[0] != null ? hl.loadavg[0] : '—'}</b><br>ram <b>${hl.ramPct}%</b> · <b>${hl.cpus}</b> cpu`;
+  }
+  const am = $('#agentMatrix');
+  if (am) {
+    am.innerHTML = '';
+    (data.agents || []).forEach((a) => {
+      const row = document.createElement('div');
+      row.className = 'am-row' + (a.active ? ' live' : '');
+      row.innerHTML = `<i style="background:${a.color};color:${a.color}"></i><span>${esc(a.name)}</span><span class="am-act">${a.active ? '●' : '·'}</span>`;
+      row.onclick = (e) => showInfo(agentInfo(a), e.clientX + 12, e.clientY + 12);
+      am.appendChild(row);
+    });
+  }
+  const activeCount = (data.agents || []).filter((a) => a.active).length;
+  const total = Math.max((data.agents || []).length, 1);
+  const pct = Math.min(100, Math.round((activeCount / total) * 100) + Math.min(60, (data.recent || []).length * 3));
+  $('#neuralFill').style.width = pct + '%';
+}
+
+function drawSpark() {
+  const c = $('#spark'); if (!c) return;
+  const ctx = c.getContext('2d');
+  const W = c.width, H = c.height;
+  (function loop() {
+    const series = data.throughput || [];
+    const max = Math.max(4, ...series);
+    ctx.clearRect(0, 0, W, H);
+    if (series.length) {
+      ctx.beginPath();
+      const step = W / Math.max(series.length - 1, 1);
+      series.forEach((v, i) => { const y = H - (v / max) * (H - 6) - 3; i ? ctx.lineTo(i * step, y) : ctx.moveTo(i * step, y); });
+      const g = ctx.createLinearGradient(0, 0, W, 0);
+      g.addColorStop(0, '#7b5cff'); g.addColorStop(1, '#00e5ff');
+      ctx.strokeStyle = g; ctx.lineWidth = 1.6; ctx.shadowBlur = 8; ctx.shadowColor = '#00e5ff';
+      ctx.stroke(); ctx.shadowBlur = 0;
+      ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.closePath();
+      ctx.fillStyle = 'rgba(0,229,255,0.10)'; ctx.fill();
+    }
+    requestAnimationFrame(loop);
+  })();
 }
 
 /* ---------- ribbon ---------- */
@@ -282,4 +329,5 @@ $('#ribbon').addEventListener('click', () => {
 
 load();
 setInterval(load, 30000);
+drawSpark();
 brain();
