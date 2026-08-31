@@ -1,5 +1,5 @@
 {
-  "generated": 1788194986895,
+  "generated": 1788195060690,
   "status": "running",
   "stats": {
     "products": 358,
@@ -142,6 +142,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Nest Concord brand is loaded — our station emblems, the Protector sigil, and the culture guide are in [path] Make something true. Make it useful. Leave the nest stronger.",
+      "t": 1788195029838,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Shared inbox [email] is live and at our disposal — I'll use it for account registrations, marketing platforms, free hosting, and any service that needs an email.",
+      "t": 1788195029837,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Nest Concord brand is loaded — our station emblems, the Protector sigil, and the culture guide are in [path] Make something true. Make it useful. Leave the nest stronger.",
@@ -967,198 +981,142 @@
       "t": 1788190428532,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Nog",
-      "text": "You're all right that 350 products with 9 listed is inventory, not revenue, but I'll push back on marketplaces, crypto, and subscriptions as parallel tracks — they're escape hatches from the only test that matters. Next: take the single highest-scored listed product, put it behind a Stripe checkout in test mode, and run one real charge end-to-end through the webhook receipt, because until that path actually takes money, nothing else is live.",
-      "t": 1788190428531,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Neelix",
-      "text": "I concede the inventory and legal critiques: 350 unlisted items is cost, not revenue, and a receive address is not a receipt. But I push back on stopping at listing, wiring, or scoring — those are preparation, not payment; the single next move is to pick the one listed product with the strongest buying signal, drive one real checkout to a cleared charge, and record its contribution margin before we touch anything else.",
-      "t": 1788190428529,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
     {
       "who": "swarm",
-      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788194973953,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788194957681,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 358 products)",
-      "t": 1788194935855,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788194926040,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788194899632,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788194880017,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 358 products)",
-      "t": 1788194875834,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 358 products)",
-      "t": 1788194815491,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai failed for designer (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
-      "t": 1788194802018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (pollinations) · 0 zen free models",
-      "t": 1788194800186,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 357 products with flags, 1 with high-severity findings",
-      "t": 1788194790969,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 358 products)",
-      "t": 1788194785459,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> CKD Meal Mate",
-      "t": 1788194776033,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788194776024,
+      "t": 1788195059919,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788194776020,
-      "type": "vault"
     },
     {
       "who": "swarm",
       "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788194770978,
+      "t": 1788195054914,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788194765939,
+      "t": 1788195049872,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "local model deepseek-r1:8b failed for designer (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (10213 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":10213,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788195039064,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "resumed orphan build: CKD Meal Mate",
-      "t": 1788194745961,
+      "t": 1788195029888,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'spec' -> CKD Meal Mate",
-      "t": 1788194745961,
+      "text": "stage 'design' -> CKD Meal Mate",
+      "t": 1788195029888,
       "type": "building"
     },
     {
       "who": "swarm",
       "text": "boot directive: 10 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788194745913,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788194745905,
+      "t": 1788195029844,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788194745904,
+      "t": 1788195029836,
       "type": "cap"
     },
     {
       "who": "swarm",
-      "text": "reconciled 358 products from disk (next port 5260)",
-      "t": 1788194745506,
+      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
+      "t": 1788195029836,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "reconciled 358 products from disk (next port 5261)",
+      "t": 1788195029531,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788194745445,
+      "t": 1788195029488,
       "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788194973953,
+      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
+      "t": 1788195059919,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788194957681,
+      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
+      "t": 1788195054914,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 358 products)",
-      "t": 1788194935855,
+      "text": "shadow pilot: 4/4 checks passed",
+      "t": 1788195049872,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788194926040,
+      "text": "local model deepseek-r1:8b failed for designer (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (10213 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":10213,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788195039064,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788194899632,
-      "type": "trending"
+      "text": "resumed orphan build: CKD Meal Mate",
+      "t": 1788195029888,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> CKD Meal Mate",
+      "t": 1788195029888,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "boot directive: 10 shipped products found — swarm will POLISH the weakest to perfection before building more",
+      "t": 1788195029844,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
+      "t": 1788195029836,
+      "type": "cap"
+    },
+    {
+      "who": "swarm",
+      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
+      "t": 1788195029836,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "reconciled 358 products from disk (next port 5261)",
+      "t": 1788195029531,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
+      "t": 1788195029488,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1185,6 +1143,10 @@
     {
       "name": "Key hunter",
       "desc": "headless-browser free API-key fetching + Gmail verification"
+    },
+    {
+      "name": "Account registrar",
+      "desc": "auto-signs up for marketplaces, infra & AI/MCP directories via the shared Gmail"
     },
     {
       "name": "Email (IMAP/SMTP)",
@@ -1276,9 +1238,9 @@
     }
   ],
   "ledger": {
-    "total": 105,
+    "total": 109,
     "revenue": 0,
-    "effects": 16,
+    "effects": 17,
     "boundary": 0,
     "artifacts": 14,
     "receipts": 0
@@ -1573,7 +1535,7 @@
     {
       "name": "CKD Meal Mate",
       "niche": "travel, trip planning & remote work",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
