@@ -62,19 +62,27 @@ function render() {
     nodesEl.appendChild(el);
   });
 
-  // chat — real agent conversation (bubbles)
+  // chat — real agent conversation (chat bubbles)
   const chatEl = $('#chat'); chatEl.innerHTML = '';
-  (data.chat || []).slice(0, 120).forEach((m, idx) => {
-    const d = document.createElement('div'); d.className='msg ' + (m.system ? 'system':'agent');
-    const role = m.system ? null : NAME_TO_ROLE[m.who];
-    const color = (data.agents||[]).find(a=>a.name===m.who)?.color || '#5f7194';
-    const time = m.t ? new Date(m.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : '';
-    const roleTag = role ? `<span class="role">${role}</span>` : '';
-    const av = `<span class="ava" style="background:${color};color:${color}">${(m.who||'?')[0]}</span>`;
-    d.innerHTML = `<div class="head">${av}<span class="who" style="color:${color}">${esc(m.who)}</span>${roleTag}<span class="t">${time}</span></div><div class="txt">${esc(m.text)}</div>`;
+  (data.chat || []).slice(0, 120).forEach((m) => {
+    const d = document.createElement('div');
+    d.className = 'msg ' + (m.system ? 'system' : 'agent');
+    if (m.system) {
+      d.innerHTML = `<div class="sys-line">${esc(m.text)}</div>`;
+    } else {
+      const role = NAME_TO_ROLE[m.who] || '';
+      const color = (data.agents||[]).find(a=>a.name===m.who)?.color || '#5f7194';
+      const time = m.t ? new Date(m.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : '';
+      d.innerHTML =
+        `<div class="ava" style="background:${color};color:#04060c">${esc((m.who||'?')[0])}</div>` +
+        `<div class="body">` +
+          `<div class="meta"><span class="who" style="color:${color}">${esc(m.who)}</span>${role ? `<span class="role">${role}</span>` : ''}<span class="t">${time}</span></div>` +
+          `<div class="txt">${esc(m.text)}</div>` +
+        `</div>`;
+    }
     chatEl.appendChild(d);
   });
-  if (!chatEl.children.length) chatEl.innerHTML = '<div class="msg system"><div class="txt">No conversation yet — agents convene when building & reviewing products.</div></div>';
+  if (!chatEl.children.length) chatEl.innerHTML = '<div class="msg system"><div class="sys-line">No conversation yet — agents convene when building & reviewing products.</div></div>';
 
   // events — compact activity stream
   const evEl = $('#events'); evEl.innerHTML = '';
