@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>NESTSWARM · Live Brain</title>
-<link rel="stylesheet" href="style.css?v=mthb56qk" />
+<title>Nest Concord · Live Brain</title>
+<link rel="stylesheet" href="style.css?v=mthb6hbf" />
 </head>
 <body>
 <canvas id="brain"></canvas>
@@ -14,8 +14,8 @@
   <div class="brand">
     <span class="logo">◈</span>
     <div>
-      <div class="title">NESTSWARM <span class="accent">·</span> LIVE</div>
-      <div class="sub">an autonomous swarm building & selling products — watch it think</div>
+      <div class="title">NEST CONCORD <span class="accent">·</span> LIVE</div>
+      <div class="sub">an autonomous swarm building & selling — watch it think · <i>make something true, make it useful, leave the nest stronger</i></div>
     </div>
   </div>
   <div class="hud-right">
@@ -25,6 +25,11 @@
   </div>
 </header>
 
+<div class="mission" id="mission" style="display:none">
+  <span class="mission-dot"></span>
+  <span id="missionText">…</span>
+</div>
+
 <main>
   <section class="left">
     <div class="panel stats">
@@ -32,6 +37,14 @@
       <div class="stat"><b id="sListed">0</b><span>listed</span></div>
       <div class="stat"><b id="sAgents">0</b><span>agents</span></div>
       <div class="stat"><b id="sScore">-</b><span>avg score</span></div>
+    </div>
+    <div class="panel ledger">
+      <div class="panel-h">// LEDGER</div>
+      <div class="ledger-grid">
+        <div class="lg"><b id="lgRevenue">$0</b><span>revenue</span></div>
+        <div class="lg"><b id="lgEffects">0</b><span>effects</span></div>
+        <div class="lg"><b id="lgBoundary">0</b><span>boundary blocks</span></div>
+      </div>
     </div>
     <div class="panel eventspanel">
       <div class="panel-h">// ACTIVITY</div>
@@ -47,10 +60,9 @@
   </section>
 
   <section class="right">
-    <div class="panel legend">
-      <div class="panel-h">// THE BRAIN</div>
-      <div id="nodes" class="nodes"></div>
-      <p class="hint">Particle flow between the swarm core and its nodes — Vault, GitHub, Internet, models, and payment rails. Read-only; this swarm cannot be controlled from here.</p>
+    <div class="panel featured">
+      <div class="panel-h">// FEATURED</div>
+      <div id="featured" class="featured"></div>
     </div>
     <div class="panel feed">
       <div class="panel-h">// NOW BUILDING</div>
@@ -60,17 +72,19 @@
       <div class="panel-h">// CAPABILITIES</div>
       <div id="caps" class="caps"></div>
     </div>
-    <div class="ticker-wrap">
-      <div id="ticker" class="ticker"></div>
+    <div class="panel legend">
+      <div class="panel-h">// THE BRAIN</div>
+      <div id="nodes" class="nodes"></div>
+      <p class="hint">Particle flow between the swarm core and its nodes — Vault, GitHub, Internet, models, and payment rails. Read-only; this swarm cannot be controlled from here.</p>
     </div>
   </section>
 </main>
 
 <footer>
-  <span>NESTSWARM is a fully passive public view — no interaction, no secrets, no source.</span>
+  <span>Nest Concord is a fully passive public view — no interaction, no secrets, no source.</span>
   <span id="updated"></span>
 </footer>
 
-<script src="site.js?v=mthb56qk"></script>
+<script src="site.js?v=mthb6hbf"></script>
 </body>
 </html>
