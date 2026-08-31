@@ -1,5 +1,5 @@
 {
-  "generated": 1788184278640,
+  "generated": 1788184339157,
   "status": "running",
   "stats": {
     "products": 345,
@@ -29,10 +29,10 @@
     {
       "name": "Scotty",
       "color": "#ffb454",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The \"exact error location\" spec is the one piece that a single JSON.parse call cannot sati",
-        "t": 1788183720378
+        "text": "They're right that \"local only\" is a contract, not a slogan — I'll enforce it with CSP and",
+        "t": 1788184305026
       }
     },
     {
@@ -125,7 +125,7 @@
     {
       "name": "O'Brien",
       "color": "#7b5cff",
-      "active": true,
+      "active": false,
       "last": {
         "text": "The \"exact error location\" claim needs a test suite that proves line, column, and characte",
         "t": 1788184226700
@@ -142,6 +142,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "They're right that \"local only\" is a contract, not a slogan — I'll enforce it with CSP and no external calls, and the error locator gets a test suite before it earns the label. But a Stripe checkout at list stage is premature; the single requirement is that malformed JSON reports the exact line, column, and offending snippet — without that, we're just another pretty-printer.",
+      "t": 1788184305026,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Tasha",
+      "text": "I’ll clear this product only if “fully local, no uploads” is treated as a binding privacy claim, not marketing. Before any launch, the team must ship a strict Content Security Policy with connect-src 'none', publish a plain-language privacy notice stating zero data collection and zero retention, and show a clean browser network log proving no external request fires on any sample or user input.",
+      "t": 1788184292893,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Nog",
       "text": "I won't call checkout live for a purely local JSON formatter until we run a real Stripe test-mode charge against an actual priced capability, not a tip jar, and the webhook flips entitlement without manual steps. If the only honest revenue path is donations, then this isn't a product yet — it's a jar with a logo.",
@@ -967,23 +981,33 @@
       "t": 1788166624776,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "I'll concede the obvious: yes, 342 unbuilt ideas generate zero revenue, so quality and execution win over catalog size. But I push back on building a marketplace first — a platform nobody has actually paid to use is just scaffolding over empty air. The single most important thing we do next is pick the highest-scoring product from that list, ship it fully working with real payments wired in, and prove people will hand over money before we waste a single hour on distribution infrastructure.",
-      "t": 1788166624775,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "The critic, the polisher, and the ideator are all correct: 342 half-formed ideas averaging a 7.0 critic score is not an inventory, it is a liability, and the swarm must stop mistaking volume for progress. The single most important thing we do next is pick the one highest-rated product from that catalog, build it with the simplest stack that ships, and put it in front of a real buyer with a real payment link this week — everything else, including marketplaces and crypto rails, is noise until we have one proven transaction.",
-      "t": 1788166624773,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788184337685,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LedgerLock",
+      "t": 1788184327790,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788184318293,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788184287212,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
@@ -1439,33 +1463,47 @@
       "text": "tests passed for ChronoFlow",
       "t": 1788182319521,
       "type": "test"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788184337685,
+      "type": "vault"
     },
     {
       "who": "swarm",
-      "text": "stage 'test' -> ChronoFlow",
-      "t": 1788182317279,
+      "text": "stage 'build' -> LedgerLock",
+      "t": 1788184327790,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788182315701,
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788184318293,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182307161,
-      "type": "event"
+      "who": "Scotty",
+      "text": "They're right that \"local only\" is a contract, not a slogan — I'll enforce it with CSP and no external calls, and the error locator gets a test suite before it earns the label. But a Stripe checkout at list stage is premature; the single requirement is that malformed JSON reports the exact line, column, and offending snippet — without that, we're just another pretty-printer.",
+      "t": 1788184305026,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Tasha",
+      "text": "I’ll clear this product only if “fully local, no uploads” is treated as a binding privacy claim, not marketing. Before any launch, the team must ship a strict Content Security Policy with connect-src 'none', publish a plain-language privacy notice stating zero data collection and zero retention, and show a clean browser network log proving no external request fires on any sample or user input.",
+      "t": 1788184292893,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182247256,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788184287212,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "Nog",
       "text": "I won't call checkout live for a purely local JSON formatter until we run a real Stripe test-mode charge against an actual priced capability, not a tip jar, and the webhook flips entitlement without manual steps. If the only honest revenue path is donations, then this isn't a product yet — it's a jar with a logo.",
@@ -1477,19 +1515,6 @@
       "who": "Neelix",
       "text": "Until this tool has a Stripe checkout with at least one recorded paid transaction, I won’t call it a product — it’s a cost center. The team must define a paid tier or donation flow and produce a real receipt before committing any spend beyond free static hosting.",
       "t": 1788184267769,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
-      "t": 1788184227466,
-      "type": "event"
-    },
-    {
-      "who": "O'Brien",
-      "text": "The \"exact error location\" claim needs a test suite that proves line, column, and character offsets match real parser output across malformed edge cases — without that evidence this is just another pretty-printer. I need a green CI run on the production build before I publish anything.",
-      "t": 1788184226700,
       "system": false,
       "type": "chat"
     }
