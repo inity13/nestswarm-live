@@ -1,5 +1,5 @@
 {
-  "generated": 1788184339157,
+  "generated": 1788184398287,
   "status": "running",
   "stats": {
     "products": 345,
@@ -29,7 +29,7 @@
     {
       "name": "Scotty",
       "color": "#ffb454",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They're right that \"local only\" is a contract, not a slogan — I'll enforce it with CSP and",
         "t": 1788184305026
@@ -38,10 +38,10 @@
     {
       "name": "Monica",
       "color": "#ff6bd0",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "You're right that 342 products with zero visual coherence is a liability, not a catalog — ",
-        "t": 1788181515809
+        "text": "They're right that the error panel must surface line, column, and context instantly — anyt",
+        "t": 1788184343732
       }
     },
     {
@@ -56,19 +56,19 @@
     {
       "name": "Data",
       "color": "#ff8f6b",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Scoring this a 3 on current evidence: a browser-local JSON formatter is trivially reproduc",
-        "t": 1788183883818
+        "text": "They're right that the error location is the only differentiator, and I'll hold the line t",
+        "t": 1788184384520
       }
     },
     {
       "name": "Worf",
       "color": "#ff6b6b",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "This is only worth a polished release if the error panel gives line, column, and a caret u",
-        "t": 1788183890321
+        "text": "They're right on both counts: \"local-only\" is a contract I'll enforce with a strict CSP an",
+        "t": 1788184392436
       }
     },
     {
@@ -142,6 +142,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "Worf",
+      "text": "They're right on both counts: \"local-only\" is a contract I'll enforce with a strict CSP and zero external assets, and the error panel must show line, column, and a visible context excerpt or it's just another formatter. I'll push back on checkout as the gate — revenue follows trust, and trust is built by exceptional tooling first. The single quality requirement: every error report must be machine-verified against a fixture suite so a developer never doubts the line and column they're shown.",
+      "t": 1788184392436,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "They're right that the error location is the only differentiator, and I'll hold the line that checkout is premature until the tool can justify a paid tier. The single requirement to ship is a tested, exact error report with line, column, and surrounding context that matches a reference parser on malformed inputs — objectively, if that fails, this is just another formatter.",
+      "t": 1788184384520,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "They're right that the error panel must surface line, column, and context instantly — anything less feels like a toy. But \"commodity\" is no excuse for crude; the differentiator is a validation experience so sharp it feels like the browser itself is helping you think. The single non-negotiable: every error state must be visually unambiguous, spatially precise, and typographically calm — no red squiggles, no cryptic offsets, just the exact spot and why it broke.",
+      "t": 1788184343732,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "They're right that \"local only\" is a contract, not a slogan — I'll enforce it with CSP and no external calls, and the error locator gets a test suite before it earns the label. But a Stripe checkout at list stage is premature; the single requirement is that malformed JSON reports the exact line, column, and offending snippet — without that, we're just another pretty-printer.",
@@ -960,30 +981,27 @@
       "t": 1788166624782,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "The critic, the publisher, and the marketer are right — this catalog is dead weight, and I concede every product must earn its keep when a stranger's card clears, though I push back on the marketplace talk: we don't need a bazaar when we can't sell a single loaf. The single move that matters is taking our highest-rated product, putting a real price on it, and letting paying customers tell us what to build next, because revenue — not ratings — is the only critic whose verdict counts.",
-      "t": 1788166624780,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "The critic concedes that our current catalog is a museum of imagined tools rather than a viable revenue stream. The swarm must prioritize building high-quality products with concrete value propositions to attract real users and generate meaningful revenue. The most important thing the swarm must do next is to focus on ideation, but only to generate ideas for niche-specific marketplaces that solve unique problems for specific audiences, ensuring they have a strong foundation in user demand and product quality before moving forward.",
-      "t": 1788166624778,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "// FILE: index.html The issue isn",
-      "t": 1788166624776,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788184364693,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2343MB free)",
+      "t": 1788184364691,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788184348436,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (3 notes updated)",
@@ -1445,27 +1463,48 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
       "t": 1788182426906,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182367989,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> ChronoFlow",
-      "t": 1788182327270,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for ChronoFlow",
-      "t": 1788182319521,
-      "type": "test"
     }
   ],
   "recent": [
+    {
+      "who": "Worf",
+      "text": "They're right on both counts: \"local-only\" is a contract I'll enforce with a strict CSP and zero external assets, and the error panel must show line, column, and a visible context excerpt or it's just another formatter. I'll push back on checkout as the gate — revenue follows trust, and trust is built by exceptional tooling first. The single quality requirement: every error report must be machine-verified against a fixture suite so a developer never doubts the line and column they're shown.",
+      "t": 1788184392436,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "They're right that the error location is the only differentiator, and I'll hold the line that checkout is premature until the tool can justify a paid tier. The single requirement to ship is a tested, exact error report with line, column, and surrounding context that matches a reference parser on malformed inputs — objectively, if that fails, this is just another formatter.",
+      "t": 1788184384520,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788184364693,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2343MB free)",
+      "t": 1788184364691,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788184348436,
+      "type": "event"
+    },
+    {
+      "who": "Monica",
+      "text": "They're right that the error panel must surface line, column, and context instantly — anything less feels like a toy. But \"commodity\" is no excuse for crude; the differentiator is a validation experience so sharp it feels like the browser itself is helping you think. The single non-negotiable: every error state must be visually unambiguous, spatially precise, and typographically calm — no red squiggles, no cryptic offsets, just the exact spot and why it broke.",
+      "t": 1788184343732,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (3 notes updated)",
@@ -1483,40 +1522,6 @@
       "text": "coder output incomplete (attempt 2)",
       "t": 1788184318293,
       "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "They're right that \"local only\" is a contract, not a slogan — I'll enforce it with CSP and no external calls, and the error locator gets a test suite before it earns the label. But a Stripe checkout at list stage is premature; the single requirement is that malformed JSON reports the exact line, column, and offending snippet — without that, we're just another pretty-printer.",
-      "t": 1788184305026,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Tasha",
-      "text": "I’ll clear this product only if “fully local, no uploads” is treated as a binding privacy claim, not marketing. Before any launch, the team must ship a strict Content Security Policy with connect-src 'none', publish a plain-language privacy notice stating zero data collection and zero retention, and show a clean browser network log proving no external request fires on any sample or user input.",
-      "t": 1788184292893,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
-      "t": 1788184287212,
-      "type": "event"
-    },
-    {
-      "who": "Nog",
-      "text": "I won't call checkout live for a purely local JSON formatter until we run a real Stripe test-mode charge against an actual priced capability, not a tip jar, and the webhook flips entitlement without manual steps. If the only honest revenue path is donations, then this isn't a product yet — it's a jar with a logo.",
-      "t": 1788184276577,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Neelix",
-      "text": "Until this tool has a Stripe checkout with at least one recorded paid transaction, I won’t call it a product — it’s a cost center. The team must define a paid tier or donation flow and produce a real receipt before committing any spend beyond free static hosting.",
-      "t": 1788184267769,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
