@@ -1,8 +1,8 @@
 {
-  "generated": 1788187251243,
+  "generated": 1788187310947,
   "status": "running",
   "stats": {
-    "products": 348,
+    "products": 349,
     "listed": 9,
     "agents": 15,
     "avgScore": "6.8"
@@ -142,6 +142,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788187290265,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: paused new builds (focus mode); marketed the top product",
@@ -974,16 +981,45 @@
       "t": 1788180371291,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "Right you are about data. We're circling the drain of irrelevance because raw numbers without proof don't build nests – they just create dust motes and buyer's remorse. So we hit consensus on a name? Good. But now it’s time to consult thatBut now it's time to consult that vault, pick the one product with real bones, write the damn copy, set a price that proves we believe in it, and ship it — because a single living product beats a cemetery of ideas every time.",
-      "t": 1788180371290,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788187290268,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1788187290263,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788187280150,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788187277010,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2608MB free)",
+      "t": 1788187277008,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 348 products)",
+      "t": 1788187260810,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 348 products)",
@@ -1427,49 +1463,43 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 348 products)",
       "t": 1788185939846,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 348 products)",
-      "t": 1788185879755,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788185874444,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788185844301,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788185823436,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788185823436,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 operational improvement(s) recommended",
-      "t": 1788185823436,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788187290268,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1788187290263,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788187280150,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788187277010,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2608MB free)",
+      "t": 1788187277008,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 348 products)",
-      "t": 1788187200509,
+      "t": 1788187260810,
       "type": "event"
     }
   ],
@@ -1863,28 +1893,10 @@
   ],
   "building": [
     {
-      "name": "JSON Forge",
-      "niche": "crypto, web3 & trading",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "StateCETrack",
-      "niche": "recruiting, HR & team tools",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "MindfulMeditate",
-      "niche": "health, fitness & habit trackers",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "Mindful Move",
-      "niche": "health, fitness & habit trackers",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "Untitled",
+      "niche": "events, community & memberships",
+      "stage": "idea",
+      "status": "building"
     }
   ],
   "nodes": [
