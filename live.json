@@ -1,8 +1,8 @@
 {
-  "generated": 1788213224450,
+  "generated": 1788213404477,
   "status": "running",
   "stats": {
-    "products": 377,
+    "products": 378,
     "listed": 2,
     "agents": 15,
     "avgScore": "5.0"
@@ -157,6 +157,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788213353796,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: paused new builds (focus mode); polished the weakest product; marketed the top product",
@@ -989,16 +996,117 @@
       "t": 1788206066061,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Here's a thinking process: 1. **Analyze the User and Context:** - **Role:** Ideator, call sign \"Guinan\" - **Task:** Reply in the \"rebuttal round\" of a team meeting - **Constraints:** - 1-2 sentences - In character (Guinan: warm, wise, uncannily good at reading needs, aphoristic observations) - YOUR OWN words - Plain prose, NOT JSON, NOT markdown - Must concede where others are right, push back where I disagree, and name the SINGLE most important thing the swarm must do next - **Context Summary:** Team meeting about a catalog of 369 products (1 listed, rest unvalidated). Various roles took …",
-      "t": 1788206066059,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788213353799,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: health, fitness & habit tracking",
+      "t": 1788213353796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for researcher (79 chars)",
+      "t": 1788213353728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher returned no usable brief — skipping",
+      "t": 1788213353728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for researcher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788213323815,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for researcher (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788213323815,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (171 chars)",
+      "t": 1788213323811,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788213281155,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788213281155,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite error: The operation was aborted due to timeout",
+      "t": 1788213280703,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for researcher (1639 chars)",
+      "t": 1788213280698,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for researcher (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788213229406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788213229405,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for researcher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788213229404,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider pollinations; disabled provider mistral; disabled provider gemini",
+      "t": 1788213226046,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788213226045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788213226041,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider pollinations",
+      "t": 1788213226038,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "chatgpt fallback failed for conductor (chatgpt script failed (exit ETIMEDOUT): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — falling to local",
@@ -1370,121 +1478,49 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788212004235,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> AutomationFlow MT",
-      "t": 1788212003693,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideator produced no usable name — generated \"AutomationFlow MT\"",
-      "t": 1788212001692,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ideator could not find a valid non-duplicate idea; proceeding with AutomationFlow MT",
-      "t": 1788212001692,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 377 products)",
-      "t": 1788211859379,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "askSwarm cloud path failed (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — falling back to local/free brain",
-      "t": 1788211834217,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for conductor (1009 chars)",
-      "t": 1788211833652,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788211785346,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
-      "t": 1788211785346,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788211784935,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: freelancers & solopreneurs",
-      "t": 1788211784934,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for conductor (857 chars)",
-      "t": 1788211784824,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 3:50:00 AM) — falling through",
-      "t": 1788211745114,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788211745113,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788211745113,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot failed for conductor (copilot http 401: unauthorized: AuthenticateToken authentication failed ) — falling through",
-      "t": 1788211744645,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788211744173,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788211744086,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 376 products)",
-      "t": 1788211669886,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt script failed (exit ETIMEDOUT): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — falling to local",
-      "t": 1788213223689,
+      "text": "stage 'idea'",
+      "t": 1788213353799,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: health, fitness & habit tracking",
+      "t": 1788213353796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for researcher (79 chars)",
+      "t": 1788213353728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher returned no usable brief — skipping",
+      "t": 1788213353728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for researcher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788213323815,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for researcher (desktop limited until 3:50:00 AM) — falling through",
+      "t": 1788213323815,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (171 chars)",
+      "t": 1788213323811,
       "type": "event"
     }
   ],
@@ -1531,7 +1567,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 41×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 44×"
     },
     {
       "name": "GitHub Copilot",
@@ -1643,9 +1679,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
-    1,
-    0,
     2,
     1,
     6,
@@ -1672,15 +1705,18 @@
     0,
     0,
     0,
-    1
+    1,
+    13,
+    4,
+    5
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.24,
-      0.52
+      1.6,
+      0.63,
+      0.61
     ],
-    "ramPct": 31,
+    "ramPct": 35,
     "cpus": 12
   },
   "products": [
@@ -1967,16 +2003,10 @@
   ],
   "building": [
     {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "StateCETrack",
-      "niche": "recruiting, HR & team tools",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "Untitled",
+      "niche": "health, fitness & habit tracking",
+      "stage": "idea",
+      "status": "building"
     }
   ],
   "nodes": [
