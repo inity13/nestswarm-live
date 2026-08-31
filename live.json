@@ -1,5 +1,5 @@
 {
-  "generated": 1788196111367,
+  "generated": 1788196171469,
   "status": "running",
   "stats": {
     "products": 360,
@@ -11,7 +11,7 @@
     {
       "name": "Guinan",
       "color": "#6c8cff",
-      "active": true,
+      "active": false,
       "last": {
         "text": "Alright, consider it",
         "t": 1788196046787
@@ -22,8 +22,8 @@
       "color": "#37d39b",
       "active": true,
       "last": {
-        "text": "There is nothing to architect in an untitled idea with no defined features or audience, so",
-        "t": 1788196053830
+        "text": "They are correct that no stack can be selected until a feature exists, but that absence is",
+        "t": 1788196110721
       }
     },
     {
@@ -31,8 +31,8 @@
       "color": "#ffb454",
       "active": true,
       "last": {
-        "text": "There is no product to code yet — just a blank file with a working title, and I won’t fake",
-        "t": 1788196059343
+        "text": "Spock’s right that I can’t pick a stack or write a line until there’s an actual feature an",
+        "t": 1788196148029
       }
     },
     {
@@ -142,6 +142,34 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for CryptoPilot MT.",
+      "t": 1788196153525,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (4) recorded for CryptoPilot MT: Produce a one-page spec naming the exact target user, the single job they will pay for, and one measurable success metric testable within one week. | Define one concrete, testable feature: the named user, the exact input they give, and the exact output they receive. | Commit to a single-file, locally runnable deliverable. | Ship only when a non-technical user can install it and get real output from real input on their first click in under five minutes, with no tutorial, documentation, or support ticket.",
+      "t": 1788196153521,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Scotty",
+      "text": "Spock’s right that I can’t pick a stack or write a line until there’s an actual feature and audience, and Guinan’s “consider it” is not a spec I can build against. But I’ll push back on one thing: we don’t need an architecture to name the only quality bar that matters — this ships when a non-technical user installs it and gets real output from real input on their first click, without a tutorial or a support ticket.",
+      "t": 1788196148029,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "They are correct that no stack can be selected until a feature exists, but that absence is itself a design constraint: we commit now to a single-file, locally runnable deliverable. The one quality requirement this product must meet to ship is verifiability — a stranger must be able to install it and demonstrate the core value in under five minutes without reading documentation.",
+      "t": 1788196110721,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "There is no product to code yet — just a blank file with a working title, and I won’t fake a launch screen for that. Give me one concrete, testable feature: a named user, the exact input they give, and the exact output they get, or I’m not building anything.",
@@ -953,37 +981,51 @@
       "t": 1788192539724,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "// FILE: index.html We need to elevate this interface from functional but uninspired, Scotty. It demands polished typography, deliberate spacing hierarchy — not just visual appeal, but intentional breathing room that reflects the seriousness of retirement planning. My demand is clear: redesign every element with purposeful whitespace and refined typographic tics (serifs in body text? appropriate weight/spacing on buttons?), ensuring readability at all glance angles. RECORD this designer imperative in the vault immediately.",
-      "t": 1788192475546,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "This is buildable as a fully client-side static app, but \"AI insights\" must not be a black box — every recommendation has to trace to a visible, verifiable formula. I demand the team hand me exact current-year IRS and SSA rules for RMDs, IRMAA tiers, and spousal/bridge claiming with source links before I write a line of code, and I will ship an automated test sheet that proves the calculator against those fixtures.",
-      "t": 1788192465635,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
-      "t": 1788192456757,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for JobFlow Planner.",
-      "t": 1788191716690,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoPilot MT",
+      "t": 1788196170678,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 4 quality demands recorded for CryptoPilot MT",
+      "t": 1788196153525,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CryptoPilot MT",
+      "t": 1788196130662,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: CryptoPilot MT [crypto, web3 & trading]",
+      "t": 1788196127841,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 360 products)",
+      "t": 1788196119794,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model deepseek-r1:8b not found",
+      "t": 1788196113943,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — model deepseek-r1:8b not found",
+      "t": 1788196113943,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 360 products)",
@@ -1421,75 +1463,62 @@
       "text": "registrar: Gumroad step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1788195657997,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788195656942,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 359 products)",
-      "t": 1788195641269,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788195640674,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Gumroad step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788195639800,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788195638736,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> Creator Deal Compass",
-      "t": 1788195630364,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788195630264,
-      "type": "vault"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 360 products)",
-      "t": 1788196060743,
+      "text": "stage 'build' -> CryptoPilot MT",
+      "t": 1788196170678,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 4 quality demands recorded for CryptoPilot MT",
+      "t": 1788196153525,
       "type": "event"
     },
     {
       "who": "Scotty",
-      "text": "There is no product to code yet — just a blank file with a working title, and I won’t fake a launch screen for that. Give me one concrete, testable feature: a named user, the exact input they give, and the exact output they get, or I’m not building anything.",
-      "t": 1788196059343,
+      "text": "Spock’s right that I can’t pick a stack or write a line until there’s an actual feature and audience, and Guinan’s “consider it” is not a spec I can build against. But I’ll push back on one thing: we don’t need an architecture to name the only quality bar that matters — this ships when a non-technical user installs it and gets real output from real input on their first click, without a tutorial or a support ticket.",
+      "t": 1788196148029,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CryptoPilot MT",
+      "t": 1788196130662,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: CryptoPilot MT [crypto, web3 & trading]",
+      "t": 1788196127841,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 360 products)",
+      "t": 1788196119794,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model deepseek-r1:8b not found",
+      "t": 1788196113943,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — model deepseek-r1:8b not found",
+      "t": 1788196113943,
+      "type": "event"
     },
     {
       "who": "Spock",
-      "text": "There is nothing to architect in an untitled idea with no defined features or audience, so I will not endorse any stack, timeline, or revenue assumption until the product is made concrete. Before any build, the team must produce a one-page spec that names the exact user, the single job they will pay for, and one measurable success metric we can test within a week.",
-      "t": 1788196053830,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Alright, consider it",
-      "t": 1788196046787,
+      "text": "They are correct that no stack can be selected until a feature exists, but that absence is itself a design constraint: we commit now to a single-file, locally runnable deliverable. The one quality requirement this product must meet to ship is verifiability — a stranger must be able to install it and demonstrate the core value in under five minutes without reading documentation.",
+      "t": 1788196110721,
       "system": false,
       "type": "chat"
     }
@@ -1912,9 +1941,9 @@
   ],
   "building": [
     {
-      "name": "Untitled",
+      "name": "CryptoPilot MT",
       "niche": "crypto, web3 & trading",
-      "stage": "idea",
+      "stage": "build",
       "status": "building"
     }
   ],
