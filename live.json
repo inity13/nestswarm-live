@@ -1,5 +1,5 @@
 {
-  "generated": 1788183918424,
+  "generated": 1788183978827,
   "status": "running",
   "stats": {
     "products": 345,
@@ -47,7 +47,7 @@
     {
       "name": "Chandler",
       "color": "#b98cff",
-      "active": true,
+      "active": false,
       "last": {
         "text": "This is a commodity tool drowning in free alternatives — the \"local-only\" privacy angle wo",
         "t": 1788183873424
@@ -56,7 +56,7 @@
     {
       "name": "Data",
       "color": "#ff8f6b",
-      "active": true,
+      "active": false,
       "last": {
         "text": "Scoring this a 3 on current evidence: a browser-local JSON formatter is trivially reproduc",
         "t": 1788183883818
@@ -83,10 +83,10 @@
     {
       "name": "Joey",
       "color": "#f472b6",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We have 342 products and eight listings — that's not a pipeline, that's a graveyard with a",
-        "t": 1788181515794
+        "text": "This is a trust product, not a utility — developers have fifty tabs of formatters that pho",
+        "t": 1788183940365
       }
     },
     {
@@ -142,6 +142,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Joey",
+      "text": "This is a trust product, not a utility — developers have fifty tabs of formatters that phone home, and they'll switch only when the error experience feels like a senior engineer pointing at the exact line instead of a red squiggly line. Ship a 30-second screen recording of the error panel handling a real nested payload with a missing comma, a trailing comma, and a type mismatch so I can write launch copy around what it actually does, not what we hope it does.",
+      "t": 1788183940365,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Worf",
       "text": "This is only worth a polished release if the error panel gives line, column, and a caret under the offending token, not a browser's vague \"position 47\" message. I demand a differential test suite against JSON.parse on at least 50 malformed and Unicode edge cases, and the UI must highlight the exact failure point before we call it shipped.",
@@ -974,16 +981,27 @@
       "t": 1788166624765,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "Checking the vault before I speak — need to see what security posture we're actually working with. ``` cat [path] ``` ``` cat [path] ``` ``` cat [path] ``` ``` ls [path] ``` ``` cat [path] 2>/dev/null | head -200 ``` Now let me check what's actually been shipped and what vulnerabilities might exist: ``` find [path] -name \"*.env\" -o -name \".env*\" 2>/dev/null | head -20 ``` ``` find [path] -name \"package.json\" -o -name \"requirements.txt\" -o -name \"Gemfile\" 2>/dev/null | head -20 ``` ``` ls [path] 2>/dev/null && cat …",
-      "t": 1788166624764,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> LedgerLock",
+      "t": 1788183967659,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: LedgerLock [small-business operations & accounting]",
+      "t": 1788183961166,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788183927932,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launcher: 3 distribution action(s) this pass",
@@ -1445,27 +1463,34 @@
       "text": "keyhunter: nvidia step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788182127353,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182126915,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788182099639,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 343 products)",
-      "t": 1788182066721,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> LedgerLock",
+      "t": 1788183967659,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: LedgerLock [small-business operations & accounting]",
+      "t": 1788183961166,
+      "type": "ideated"
+    },
+    {
+      "who": "Joey",
+      "text": "This is a trust product, not a utility — developers have fifty tabs of formatters that phone home, and they'll switch only when the error experience feels like a senior engineer pointing at the exact line instead of a red squiggly line. Ship a 30-second screen recording of the error panel handling a real nested payload with a missing comma, a trailing comma, and a type mismatch so I can write launch copy around what it actually does, not what we hope it does.",
+      "t": 1788183940365,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 345 products)",
+      "t": 1788183927932,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launcher: 3 distribution action(s) this pass",
@@ -1514,32 +1539,6 @@
       "t": 1788183890321,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "Scoring this a 3 on current evidence: a browser-local JSON formatter is trivially reproducible, and \"no uploads\" is a claim, not a differentiator. Before another line of code, produce a side-by-side benchmark against jsonformatter.org and jq play using a 50MB file and a malformed input with nested quotes and unicode escapes, and prove JSON Forge catches or handles at least one case both competitors objectively miss.",
-      "t": 1788183883818,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "This is a commodity tool drowning in free alternatives — the \"local-only\" privacy angle won't carry a price tag for developers who already have this in their editor, browser, or a bookmarked site. Prove me wrong by showing a feature that saves a senior engineer 10+ minutes per week that they can't get from VS Code, Chrome DevTools, or a free web tool — then we'll talk pricing.",
-      "t": 1788183873424,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 344 products)",
-      "t": 1788183869389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped JSON Forge to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788183867633,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1920,9 +1919,9 @@
   ],
   "building": [
     {
-      "name": "Untitled",
+      "name": "LedgerLock",
       "niche": "small-business operations & accounting",
-      "stage": "idea",
+      "stage": "spec",
       "status": "building"
     }
   ],
