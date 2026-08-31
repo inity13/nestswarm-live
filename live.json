@@ -1,5 +1,5 @@
 {
-  "generated": 1788200426404,
+  "generated": 1788200486338,
   "status": "running",
   "stats": {
     "products": 365,
@@ -11,7 +11,7 @@
     {
       "name": "Guinan",
       "color": "#6c8cff",
-      "active": true,
+      "active": false,
       "last": {
         "text": "You're right that an idea with no problem and no user is merely noise, but I disagree that",
         "t": 1788200370509
@@ -20,7 +20,7 @@
     {
       "name": "Spock",
       "color": "#37d39b",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They are right that I cannot specify a stack for a product with no user, no feature, and n",
         "t": 1788200379173
@@ -29,7 +29,7 @@
     {
       "name": "Scotty",
       "color": "#ffb454",
-      "active": true,
+      "active": false,
       "last": {
         "text": "They're right that \"Untitled\" is a blank page, not a product — I can't test a vacuum. The ",
         "t": 1788200387100
@@ -986,6 +986,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "tests passed for Short Tool Name",
+      "t": 1788200482424,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Short Tool Name",
+      "t": 1788200480188,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788200470868,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 365 products)",
+      "t": 1788200435437,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "council: 5 quality demands recorded for Short Tool Name",
       "t": 1788200396184,
       "type": "event"
@@ -1439,83 +1463,32 @@
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1788199605645,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 363 products)",
-      "t": 1788199594539,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (pollinations) · 2 zen free models",
-      "t": 1788199576384,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 362 products with flags, 1 with high-severity findings",
-      "t": 1788199570140,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 363 products)",
-      "t": 1788199564185,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "council: 5 quality demands recorded for Short Tool Name",
-      "t": 1788200396184,
+      "text": "tests passed for Short Tool Name",
+      "t": 1788200482424,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Short Tool Name",
+      "t": 1788200480188,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788200470868,
       "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "They're right that \"Untitled\" is a blank page, not a product — I can't test a vacuum. The single non-negotiable before I write a line of code is that the shipped thing turns a real input into a real output for one identifiable user; anything less is a toy, and I don't ship toys.",
-      "t": 1788200387100,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "They are right that I cannot specify a stack for a product with no user, no feature, and no observable output; I will not pretend otherwise. My only pushback is that the missing name and brand are irrelevant — the single quality requirement this product must meet is one concrete, testable interaction where a real user gets a result they would actually pay for.",
-      "t": 1788200379173,
-      "system": false,
-      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 365 products)",
-      "t": 1788200374907,
+      "t": 1788200435437,
       "type": "event"
-    },
-    {
-      "who": "Guinan",
-      "text": "You're right that an idea with no problem and no user is merely noise, but I disagree that \"untitled\" means lost—it can honestly signal we're still hunting for the real problem. The single quality this must earn to ship is a clear, defensible reason for existing, because without it nothing else matters.",
-      "t": 1788200370509,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Short Tool Name",
-      "t": 1788200370149,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> Short Tool Name",
-      "t": 1788200350138,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: Short Tool Name [writing, copy & content creation]",
-      "t": 1788200347623,
-      "type": "ideated"
     }
   ],
   "capabilities": [
@@ -1678,7 +1651,6 @@
     0,
     0,
     0,
-    0,
     7,
     7,
     6,
@@ -1694,13 +1666,14 @@
     16,
     12,
     7,
-    9
+    9,
+    5
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.33,
-      0.77
+      0.05,
+      0.27,
+      0.72
     ],
     "ramPct": 45,
     "cpus": 12
@@ -1991,7 +1964,7 @@
     {
       "name": "Short Tool Name",
       "niche": "writing, copy & content creation",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
