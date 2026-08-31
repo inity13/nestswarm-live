@@ -43,15 +43,67 @@ async function load() {
   if (window.__brain) window.__brain.reindex();
 }
 
+function relTime(t) {
+  if (!t) return '';
+  const s = Math.floor((Date.now() - t) / 1000);
+  if (s < 60) return 'now';
+  if (s < 3600) return Math.floor(s / 60) + 'm ago';
+  if (s < 86400) return Math.floor(s / 3600) + 'h ago';
+  return new Date(t).toLocaleDateString([], { month: 'short', day: 'numeric' });
+}
+
+function animateNum(el, target) {
+  const cur = parseFloat(el.textContent.replace(/[^0-9.\-]/g, '')) || 0;
+  if (cur === target) { el.textContent = target; return; }
+  const t0 = performance.now();
+  const dur = 500;
+  const fmt = (v) => (Number.isInteger(target) ? Math.round(v) : v.toFixed(1));
+  (function tick(now) {
+    const k = Math.min(1, (now - t0) / dur);
+    el.textContent = fmt(cur + (target - cur) * k);
+    if (k < 1) requestAnimationFrame(tick);
+    else { el.textContent = target; el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump'); }
+  })(t0);
+}
+
 function render() {
   const st = data.stats || {};
-  $('#sProducts').textContent = st.products ?? 0;
-  $('#sListed').textContent = st.listed ?? 0;
-  $('#sAgents').textContent = st.agents ?? 0;
-  $('#sScore').textContent = st.avgScore ?? '-';
+  animateNum($('#sProducts'), st.products ?? 0);
+  animateNum($('#sListed'), st.listed ?? 0);
+  animateNum($('#sAgents'), st.agents ?? 0);
+  const scoreEl = $('#sScore');
+  const scoreTxt = st.avgScore ?? '-';
+  if (scoreTxt !== '-' && !isNaN(scoreTxt)) animateNum(scoreEl, parseFloat(scoreTxt)); else scoreEl.textContent = scoreTxt;
   const pill = $('#pill');
   pill.textContent = (data.status || 'idle');
   pill.className = 'pill ' + (data.status === 'running' ? 'running' : data.status);
+
+  // mission banner
+  const mEl = $('#mission'); const mText = $('#missionText');
+  const mt = data.meeting;
+  if (mt && (mt.direction || mt.priority)) {
+    mEl.style.display = '';
+    mText.textContent = `mission: ${mt.direction || ''}${mt.priority ? ' · priority: ' + mt.priority : ''}`;
+  } else {
+    mEl.style.display = 'none';
+  }
+
+  // ledger
+  const led = data.ledger || {};
+  animateNum($('#lgRevenue'), led.revenue ?? 0);
+  animateNum($('#lgEffects'), led.effects ?? 0);
+  animateNum($('#lgBoundary'), led.boundary ?? 0);
+
+  // featured product (highest-scored listed)
+  const fe = $('#featured');
+  const best = (data.products || []).filter((p) => p.status === 'listed').sort((a, b) => (b.score || 0) - (a.score || 0))[0];
+  if (best) {
+    fe.innerHTML =
+      `<div class="ft-score" style="color:${best.score >= 7 ? '#37d39b' : best.score >= 5 ? '#00e5ff' : '#ffb454'}">${best.score ?? '-'}</div>` +
+      `<div class="ft-body"><div class="ft-name">${esc(best.name)}</div><div class="ft-meta">${esc(best.niche || '')} · $${best.price || 0}</div></div>`;
+  } else {
+    fe.innerHTML = '<div class="ft-empty">no listed product yet</div>';
+  }
 
   // node legend with agent→service connection hints
   const nodesEl = $('#nodes'); nodesEl.innerHTML = '';
@@ -72,7 +124,7 @@ function render() {
     } else {
       const role = NAME_TO_ROLE[m.who] || '';
       const color = (data.agents||[]).find(a=>a.name===m.who)?.color || '#5f7194';
-      const time = m.t ? new Date(m.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : '';
+      const time = relTime(m.t);
       d.innerHTML =
         `<div class="ava" style="background:${color};color:#04060c">${esc((m.who||'?')[0])}</div>` +
         `<div class="body">` +
