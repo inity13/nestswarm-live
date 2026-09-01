@@ -1,5 +1,5 @@
 {
-  "generated": 1788303559934,
+  "generated": 1788303739961,
   "status": "running",
   "stats": {
     "products": 502,
@@ -1001,6 +1001,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 7 products listed — polishing, marketing & distributing",
+      "t": 1788303606627,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for ... — skipping",
+      "t": 1788303603865,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 502 products)",
+      "t": 1788303597043,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for conductor (631 chars)",
+      "t": 1788303596621,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "local model deepseek-r1:8b failed for polisher (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (6264 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":6264,\\\"n_ctx\\\":4096}}\"})",
+      "t": 1788303569706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788303569706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: ...",
+      "t": 1788303569214,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for StateCETrack — skipping",
+      "t": 1788303560421,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 502 products)",
       "t": 1788303406205,
       "type": "event"
@@ -1430,54 +1478,6 @@
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1788302670844,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 0 -> {\"action\":\"clickText\",\"text\":\"Create an Account\"}",
-      "t": 1788302668479,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Gumroad needs email verification — reading inbox",
-      "t": 1788302666151,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Gumroad step 11 -> {\"action\":\"type\",\"selector\":\"#identifierId\",\"value\":\"[email]\"}",
-      "t": 1788302666149,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting nvidia (https://build.nvidia.com)",
-      "t": 1788302665659,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1788302664726,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"click\",\"selector\":\"button:has-text('Sign Up')\"}",
-      "t": 1788302664724,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 0 -> {}",
-      "t": 1788302661539,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SocialPal MT",
-      "t": 1788302660596,
-      "type": "building"
     }
   ],
   "recent": [],
@@ -1520,7 +1520,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 2×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 3×"
     },
     {
       "name": "ChatGPT",
@@ -1640,10 +1640,7 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    0,
-    0,
-    0,
-    14,
+    10,
     14,
     6,
     6,
@@ -1669,15 +1666,18 @@
     3,
     1,
     0,
+    0,
+    11,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      3.46,
-      2.64,
-      1.75
+      0.18,
+      1.45,
+      1.44
     ],
-    "ramPct": 59,
+    "ramPct": 29,
     "cpus": 12
   },
   "brain": {
@@ -1727,7 +1727,7 @@
         "tier": "free"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "qwen2.5-coder:3b",
         "tier": "local"
       },
       "marketer": {
