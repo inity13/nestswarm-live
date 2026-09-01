@@ -15,7 +15,7 @@ const NODE_DESC = {
   vault: 'Obsidian knowledge vault — products, research, decisions, brand assets.',
   github: 'Private product repos + the public passive site (nestswarm-live).',
   internet: 'Web research, GitHub trending scans, bounty discovery.',
-  models: 'Model routing — deepseek-pro → free Zen → local (OOM-safe ladder).',
+  models: 'Free-first model routing — free providers (Gemini, Zen, Pollinations) → local Ollama → paid/Copilot reserved for extreme cases only.',
   telegram: 'Owner notifications + remote control.',
   payments: 'Stripe checkout + self-hosted x402 crypto invoices.',
   mcp: 'MCP endpoint so external agents can discover & drive the swarm.'
@@ -83,6 +83,35 @@ function renderHUD() {
   const total = Math.max((data.agents || []).length, 1);
   const pct = Math.min(100, Math.round((activeCount / total) * 100) + Math.min(60, (data.recent || []).length * 3));
   $('#neuralFill').style.width = pct + '%';
+  renderModelBrain();
+}
+
+/* ---------- model brain: free-first routing, public-safe (names only) ---------- */
+const ROLE_ORDER = ['ideator','architect','coder','designer','critic','polisher','researcher','conductor'];
+function renderModelBrain() {
+  const el = $('#modelBrain'); if (!el) return;
+  const b = data.brain || {};
+  const active = b.active || {};
+  const rows = ROLE_ORDER.filter((r) => active[r]);
+  // Fall back to the free stack if no role has answered yet this window.
+  if (!rows.length) {
+    const free = (b.free || []);
+    el.innerHTML = free.length
+      ? `<div class="mb-row mb-free"><span class="mb-role">free stack</span><span class="mb-model"><i class="mb-dot"></i>${esc(free.join(' · '))}</span></div>`
+      : '<div class="mb-row"><span class="mb-role">idle</span><span class="mb-model">warming up…</span></div>';
+  } else {
+    el.innerHTML = rows.map((r) => {
+      const m = active[r];
+      return `<div class="mb-row mb-${m.tier||'local'}"><span class="mb-role">${esc(r)}</span><span class="mb-model"><i class="mb-dot"></i>${esc(m.model)}</span></div>`;
+    }).join('');
+  }
+  el.innerHTML += `<div class="mb-legend"><span><i style="background:#00e5ff"></i>free</span><span><i style="background:#37d39b"></i>local</span><span><i style="background:#ff5c7a"></i>extreme</span></div>`;
+  const pt = $('#postureTag'); if (pt && b.posture) pt.textContent = 'free-first';
+  // cap progress
+  const cap = b.cap || {};
+  const capText = $('#capText'), capFill = $('#capFill');
+  if (capText) capText.textContent = `${cap.listed || 0} / ${cap.cap || 0}`;
+  if (capFill) capFill.style.width = (cap.cap ? Math.min(100, Math.round((cap.listed / cap.cap) * 100)) : 0) + '%';
 }
 
 function drawSpark() {
