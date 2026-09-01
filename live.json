@@ -1,9 +1,9 @@
 {
-  "generated": 1788299943429,
+  "generated": 1788300093427,
   "status": "running",
   "stats": {
     "products": 500,
-    "listed": 5,
+    "listed": 6,
     "agents": 15,
     "avgScore": "4.7"
   },
@@ -157,6 +157,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788300076823,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Nest Concord brand is loaded — our station emblems, the Protector sigil, and the culture guide are in [path] Make something true. Make it useful. Leave the nest stronger.",
@@ -989,16 +996,81 @@
       "t": 1788285905269,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Alright, let's define this thing properly. Product: **StorySpark** (call sign Guinan) Position: StorySpark isn't just *ideas*, it is the mechanism by which your specific lived",
-      "t": 1788285805555,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788300092614,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: Short Tool Name",
+      "t": 1788300086801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Short Tool Name → short-tool-name.zip (4687 bytes)",
+      "t": 1788300076997,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788300076820,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: Short Tool Name @ http://localhost:5289 ($27 one-time)",
+      "t": 1788300076803,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: Short Tool Name -> http://localhost:5289",
+      "t": 1788300076802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> Short Tool Name",
+      "t": 1788300076793,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788299989203,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 500 products)",
+      "t": 1788299976098,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> Short Tool Name",
+      "t": 1788299972607,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (pollinations) · 3 zen free models",
+      "t": 1788299962665,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 383 products with flags, 1 with high-severity findings",
+      "t": 1788299957585,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1069,69 +1141,45 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788299942590,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788300092614,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788299942585,
+      "text": "polishing existing product: Short Tool Name",
+      "t": 1788300086801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Short Tool Name → short-tool-name.zip (4687 bytes)",
+      "t": 1788300076997,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788300076820,
       "type": "vault"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788299937609,
+      "text": "LISTED: Short Tool Name @ http://localhost:5289 ($27 one-time)",
+      "t": 1788300076803,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: Short Tool Name -> http://localhost:5289",
+      "t": 1788300076802,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788299932568,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "resumed orphan build: Short Tool Name",
-      "t": 1788299912603,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> Short Tool Name",
-      "t": 1788299912603,
+      "text": "stage 'list' -> Short Tool Name",
+      "t": 1788300076793,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 5 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788299912564,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788299912552,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788299912552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 500 products from disk (next port 5290)",
-      "t": 1788299912218,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788299912166,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1281,11 +1329,11 @@
     }
   ],
   "ledger": {
-    "total": 207,
+    "total": 208,
     "revenue": 0,
     "effects": 39,
     "boundary": 0,
-    "artifacts": 35,
+    "artifacts": 36,
     "receipts": 0
   },
   "meeting": {
@@ -1319,30 +1367,50 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    11
+    7,
+    8,
+    4,
+    9
   ],
   "load": {
     "loadavg": [
-      0.61,
-      0.72,
-      0.87
+      0.57,
+      0.87,
+      0.92
     ],
-    "ramPct": 24,
+    "ramPct": 36,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "designer": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "publisher": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "ideator": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "critic": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "security": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      }
+    },
     "free": [
       "nemotron-3.5-lightning-free",
-      "openai",
-      "gemini-flash-latest"
+      "openai"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 5,
+      "listed": 6,
       "cap": 20
     }
   },
@@ -1712,12 +1780,6 @@
   ],
   "building": [
     {
-      "name": "Short Tool Name",
-      "niche": "writing, copy & content creation",
-      "stage": "design",
-      "status": "building"
-    },
-    {
       "name": "TestCraft",
       "niche": "AI & automation utilities",
       "stage": "spec",
@@ -1744,6 +1806,12 @@
     {
       "name": "Career Path Navigator",
       "niche": "study, learning & memory aids",
+      "stage": "spec",
+      "status": "rejected"
+    },
+    {
+      "name": "Keystone",
+      "niche": "developer productivity tools & services",
       "stage": "spec",
       "status": "rejected"
     }
