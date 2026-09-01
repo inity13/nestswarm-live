@@ -1,5 +1,5 @@
 {
-  "generated": 1788237809711,
+  "generated": 1788237989672,
   "status": "running",
   "stats": {
     "products": 415,
@@ -1001,6 +1001,90 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788237958136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portals so paid agents can resume work.; disabled provider gemini",
+      "t": 1788237958136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portals so paid agents can resume work.",
+      "t": 1788237958135,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237931283,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (5 notes updated)",
+      "t": 1788237930804,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788237930794,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> RegAgent",
+      "t": 1788237927464,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for RegAgent",
+      "t": 1788237919715,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> RegAgent",
+      "t": 1788237917463,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, python)",
+      "t": 1788237916805,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 415 products)",
+      "t": 1788237834093,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237824197,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788237823694,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237823693,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
       "t": 1788237700289,
       "type": "event"
@@ -1394,93 +1478,70 @@
       "text": "stage 'build' -> LocalLoyalty",
       "t": 1788237116451,
       "type": "building"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: requested owner: Cloud agents (conductor, architect, coder) failing with 401 CreditsError: Insufficient balance on OpenAI API. Add credits at https://platform.openai.com/account/billing to restore cloud model access.",
-      "t": 1788237116448,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788237958136,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud agents (conductor, architect, coder) failing with 401 CreditsError: Insufficient balance on OpenAI API. Add credits at https://platform.openai.com/account/billing to restore cloud model access.",
-      "t": 1788237116448,
+      "text": "self-heal complete: 2 fix(es) — requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portals so paid agents can resume work.; disabled provider gemini",
+      "t": 1788237958136,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite error: The operation was aborted due to timeout",
-      "t": 1788237116444,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for coder (997 chars)",
-      "t": 1788237116415,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 2)",
-      "t": 1788237116415,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> LocalLoyalty",
-      "t": 1788237089124,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 1)",
-      "t": 1788237081041,
+      "text": "self-heal: requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portals so paid agents can resume work.",
+      "t": 1788237958135,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237068903,
+      "t": 1788237931283,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237068699,
-      "type": "event"
+      "text": "vault: synced (5 notes updated)",
+      "t": 1788237930804,
+      "type": "vault"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788237068699,
+      "t": 1788237930794,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236979628,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> LocalLoyalty",
-      "t": 1788236979110,
+      "text": "stage 'design' -> RegAgent",
+      "t": 1788237927464,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236959596,
-      "type": "event"
+      "text": "tests passed for RegAgent",
+      "t": 1788237919715,
+      "type": "test"
     },
     {
       "who": "swarm",
-      "text": "stage 'spec' -> LocalLoyalty",
-      "t": 1788236959104,
+      "text": "stage 'test' -> RegAgent",
+      "t": 1788237917463,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, python)",
+      "t": 1788237916805,
+      "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1640,9 +1701,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
-    14,
-    10,
     6,
     8,
     6,
@@ -1669,15 +1727,18 @@
     0,
     1,
     4,
-    0
+    0,
+    5,
+    5,
+    7
   ],
   "load": {
     "loadavg": [
+      0.14,
       0.24,
-      0.3,
-      0.75
+      0.65
     ],
-    "ramPct": 46,
+    "ramPct": 48,
     "cpus": 12
   },
   "products": [
@@ -1966,7 +2027,7 @@
     {
       "name": "RegAgent",
       "niche": "legal, contracts & compliance",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     },
     {
