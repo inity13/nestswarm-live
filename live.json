@@ -1,5 +1,5 @@
 {
-  "generated": 1788298542017,
+  "generated": 1788298692072,
   "status": "running",
   "stats": {
     "products": 499,
@@ -1001,6 +1001,72 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788298691209,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (4 files, node)",
+      "t": 1788298686492,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788298640047,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai failed for launcher (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788298630479,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for launcher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788298629755,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for launcher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788298629055,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788298587741,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (pollinations) · 1 zen free models",
+      "t": 1788298581689,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 499 products)",
+      "t": 1788298573888,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 381 products with flags, 1 with high-severity findings",
+      "t": 1788298556209,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Clarity Navigator",
+      "t": 1788298551215,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788298541210,
       "type": "event"
@@ -1063,63 +1129,39 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788298541210,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788298691209,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788298536230,
+      "text": "coder produced a functional build (4 files, node)",
+      "t": 1788298686492,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788298531197,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788298640047,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "resumed orphan build: Clarity Navigator",
-      "t": 1788298511225,
-      "type": "event"
+      "text": "free provider openai failed for launcher (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788298630479,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "stage 'spec' -> Clarity Navigator",
-      "t": 1788298511225,
-      "type": "building"
+      "text": "free provider ling-3.0-flash-fin-free failed for launcher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788298629755,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "boot directive: 5 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788298511188,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788298511176,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788298511176,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 499 products from disk (next port 5284)",
-      "t": 1788298510875,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788298510813,
-      "type": "event"
+      "text": "free provider ling-3.0-flash-fin-free failed for launcher (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788298629055,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1307,18 +1349,18 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    11
+    7,
+    12,
+    14,
+    5
   ],
   "load": {
     "loadavg": [
-      0.66,
-      0.76,
-      0.75
+      2.62,
+      1.49,
+      1.02
     ],
-    "ramPct": 24,
+    "ramPct": 40,
     "cpus": 12
   },
   "products": [
@@ -1607,7 +1649,7 @@
     {
       "name": "Clarity Navigator",
       "niche": "freelancers & solopreneurs",
-      "stage": "spec",
+      "stage": "test",
       "status": "building"
     },
     {
