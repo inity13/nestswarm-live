@@ -112,6 +112,17 @@ function renderModelBrain() {
   const capText = $('#capText'), capFill = $('#capFill');
   if (capText) capText.textContent = `${cap.listed || 0} / ${cap.cap || 0}`;
   if (capFill) capFill.style.width = (cap.cap ? Math.min(100, Math.round((cap.listed / cap.cap) * 100)) : 0) + '%';
+  // revenue surface (public-safe: names + active flag only)
+  const rev = data.revenue;
+  const rc = $('#revCount'), rs = $('#revSurface');
+  if (rev && rs) {
+    if (rc) rc.textContent = (rev.active || 0) + '/' + (rev.total || 0);
+    rs.innerHTML = (rev.channels || []).map((c) => {
+      const cls = c.active ? 'on' : (c.captcha ? 'wall' : '');
+      const mark = c.active ? '● ' : (c.captcha ? '🔒 ' : '○ ');
+      return `<span class="revpill ${cls}" title="${esc(c.kind)}">${mark}${esc(c.name)}</span>`;
+    }).join('');
+  }
 }
 
 function drawSpark() {
