@@ -1,5 +1,5 @@
 {
-  "generated": 1788303199891,
+  "generated": 1788303379941,
   "status": "running",
   "stats": {
     "products": 502,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "polishing existing product: StateCETrack",
+      "t": 1788303349186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for JSON Forge — skipping",
+      "t": 1788303340697,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 502 products)",
+      "t": 1788303225487,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (3 notes updated)",
       "t": 1788303199165,
       "type": "vault"
@@ -1460,55 +1478,19 @@
       "text": "syntax fail (attempt 1): [path] }); SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788302660177,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 502 products)",
-      "t": 1788302658222,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
-      "t": 1788302658142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Gumroad step 10 -> {\"action\":\"type\",\"selector\":\"#identifierId\",\"value\":\"[email]\"}",
-      "t": 1788302658046,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788303199165,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788303199103,
+      "text": "polishing existing product: StateCETrack",
+      "t": 1788303349186,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788303170147,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polishing existing product: JSON Forge",
-      "t": 1788303126936,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for ClipRoute — skipping",
-      "t": 1788303119566,
+      "text": "polisher returned no usable files for JSON Forge — skipping",
+      "t": 1788303340697,
       "type": "event"
     }
   ],
@@ -1677,9 +1659,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     14,
     14,
     6,
@@ -1689,8 +1668,8 @@
     0,
     0,
     3,
-    50,
-    10,
+    52,
+    8,
     21,
     44,
     40,
@@ -1700,15 +1679,18 @@
     1,
     7,
     6,
-    4
+    4,
+    1,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      2.6,
-      1.12,
-      1.04
+      3.14,
+      2.08,
+      1.43
     ],
-    "ramPct": 39,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -1758,8 +1740,8 @@
         "tier": "free"
       },
       "polisher": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "marketer": {
         "model": "ling-3.0-flash-fin-free",
