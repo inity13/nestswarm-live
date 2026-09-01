@@ -1,5 +1,5 @@
 {
-  "generated": 1788298729775,
+  "generated": 1788298879374,
   "status": "running",
   "stats": {
     "products": 499,
@@ -1001,6 +1001,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788298878455,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788298876891,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788298853537,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 499 products)",
+      "t": 1788298758673,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 382 products with flags, 2 with high-severity findings",
+      "t": 1788298743459,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 2 zen free models",
+      "t": 1788298741324,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788298728524,
       "type": "event"
@@ -1075,75 +1111,21 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788298728524,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788298878455,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788298723481,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788298876891,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788298718445,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Clarity Navigator",
-      "t": 1788298708450,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 1): bad response: 404 len=224",
-      "t": 1788298700724,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Clarity Navigator",
-      "t": 1788298698464,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "resumed orphan build: Clarity Navigator",
-      "t": 1788298698463,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 5 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788298698438,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788298698419,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788298698419,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 499 products from disk (next port 5285)",
-      "t": 1788298698098,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788298698033,
-      "type": "event"
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788298853537,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1331,18 +1313,18 @@
     0,
     0,
     0,
+    7,
+    8,
     0,
-    0,
-    0,
-    12
+    6
   ],
   "load": {
     "loadavg": [
-      2.31,
-      1.52,
-      1.05
+      2.74,
+      2.1,
+      1.34
     ],
-    "ramPct": 34,
+    "ramPct": 42,
     "cpus": 12
   },
   "products": [
