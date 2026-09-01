@@ -1,5 +1,5 @@
 {
-  "generated": 1788237629634,
+  "generated": 1788237809711,
   "status": "running",
   "stats": {
     "products": 415,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237700289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237700088,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788237700088,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 415 products)",
+      "t": 1788237654592,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
       "t": 1788237537869,
       "type": "event"
@@ -1454,30 +1478,6 @@
       "text": "stage 'spec' -> LocalLoyalty",
       "t": 1788236959104,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (pollinations, gemini) · 3 zen free models",
-      "t": 1788236956139,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: LocalLoyalty [pet care & ownership]",
-      "t": 1788236955502,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite error: The operation was aborted due to timeout",
-      "t": 1788236939092,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (1246 chars)",
-      "t": 1788236939089,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1640,9 +1640,6 @@
     "priority": ""
   },
   "throughput": [
-    9,
-    15,
-    10,
     0,
     14,
     10,
@@ -1669,15 +1666,18 @@
     0,
     7,
     4,
+    0,
+    1,
+    4,
     0
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.39,
-      0.88
+      0.24,
+      0.3,
+      0.75
     ],
-    "ramPct": 37,
+    "ramPct": 46,
     "cpus": 12
   },
   "products": [
