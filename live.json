@@ -1,5 +1,5 @@
 {
-  "generated": 1788242692873,
+  "generated": 1788242872919,
   "status": "running",
   "stats": {
     "products": 424,
@@ -12,30 +12,30 @@
       "name": "Guinan",
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
-      "active": true,
+      "active": false,
       "last": {
-        "text": "A blank page is not an opportunity — it's a trap. The swarm has a habit of mistaking motio",
-        "t": 1788242657903
+        "text": "You're both right — a nameless ghost can't be built, and a problem poorly felt can't be so",
+        "t": 1788242757395
       }
     },
     {
       "name": "Spock",
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The critic score proves we can build quality when we finish; the stack isn't the problem —",
-        "t": 1788241381494
+        "text": "You're all right — we're trying to pour a foundation before the survey's done. I'll push b",
+        "t": 1788242804128
       }
     },
     {
       "name": "Scotty",
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Four hundred twenty prototypes and four listings means we've been writing demos, not produ",
-        "t": 1788241381464
+        "text": "Aye, you're both right — I'll not weld a single joint until there's a spec I can compile a",
+        "t": 1788242831622
       }
     },
     {
@@ -157,6 +157,48 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for Primary.",
+      "t": 1788242854461,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Scotty",
+      "text": "Aye, you're both right — I'll not weld a single joint until there's a spec I can compile against. The only quality that matters: it solves a real problem for a real person who'll hand over money for the fix.",
+      "t": 1788242831622,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "You're all right — we're trying to pour a foundation before the survey's done. I'll push back only this far: technical constraints *can* shape product decisions early (offline-first, install size, platform limits), but not without a problem statement. The one quality gate that matters: **a specific, painful problem that a named audience will pay to solve today** — everything else is decoration.",
+      "t": 1788242804128,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Guinan",
+      "text": "You're both right — a nameless ghost can't be built, and a problem poorly felt can't be solved. But the swarm's real defect isn't lack of rigor; it's the reflex to reach for the familiar shelf instead of the one that hurts to reach. The only quality that matters: the product must solve a problem the buyer already wakes up worrying about, in a way no existing tool even attempts.",
+      "t": 1788242757395,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "You're asking me to write production code for a product that doesn't have a name, a feature list, a target user, or a single validated assumption — that's not engineering, that's hallucination. Before I write one line, someone needs to ship a one-page spec with a concrete problem statement, a defined user, and a measurable success criterion, or I'm not touching the keyboard.",
+      "t": 1788242731612,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "We cannot architect a vacuum — every technical choice flows from a specific problem, a specific user, and a specific willingness to pay. The team must produce a one-paragraph problem statement that names a real person, their acute pain, and the measurable outcome they will hand over money to achieve.",
+      "t": 1788242704419,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Guinan",
       "text": "A blank page is not an opportunity — it's a trap. The swarm has a habit of mistaking motion for meaning, and I will not let us build another thing just to say we built something. Demand: before a single line of code or copy, produce a one-page brief that names the specific human pain, the specific person who feels it acutely, and the specific reason they would hand over money tomorrow — not \"someday,\" not \"if we build it right.\" If you cannot write that brief in plain English, there is no product, only ego in disguise.",
@@ -954,51 +996,93 @@
       "t": 1788238147544,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "Scotty",
-      "text": "This spec cannot ship as a working product with only Node built-ins — no HTTP client for regulatory APIs, no PDF parsing for contracts, no embeddings for clause mapping, no LLM calls for summarization. The team must either cut scope to a local-only prototype with mock data and file-based workflows, or approve a minimal dependency allowlist (undici, pdf-parse, a vector lib) so the core loop actually runs.",
-      "t": 1788238138111,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
-      "t": 1788238117526,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for Rejected build MTI6.",
-      "t": 1788237378385,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (5) recorded for Rejected build MTI6: A one-page problem statement naming a specific, observable pain point that a defined group of people currently pay money (or significant time) to solve poorly | A named target audience with demographic/behavioral specificity (e.g., 'Shopify merchants doing $100K–$1M/yr who manually reconcile inventory across 3+ warehouses') | Evidence of willingness to pay: screenshots of existing paid solutions, forum threads complaining about current tools, or 5+ cold outreach responses confirming budget for a better alternative | A single testable …",
-      "t": 1788237378382,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "Guinan",
-      "text": "You're right that a blank page builds nothing — but you're wrong that the answer lives in a spec sheet before we've listened to the market's quiet complaints. The only requirement that matters: someone must already be paying to solve this problem badly.",
-      "t": 1788237279257,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "Without a defined problem, audience, or success metric, there is no architecture to design — only speculation. Define the single, testable hypothesis this product must prove before any code is written.",
-      "t": 1788237252019,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242832620,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242816357,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242805607,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242805137,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788242805137,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242758101,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242741024,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Primary",
+      "t": 1788242740524,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242732161,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788242731679,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788242731665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 424 products)",
+      "t": 1788242719169,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242705483,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788242702832,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
@@ -1394,133 +1478,50 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 422 products)",
       "t": 1788241143920,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788241143816,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for coder (1006 chars)",
-      "t": 1788241143782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 3)",
-      "t": 1788241143782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PRCrew",
-      "t": 1788241115465,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for coder (1007 chars)",
-      "t": 1788241115407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 2)",
-      "t": 1788241115407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PRCrew",
-      "t": 1788241087618,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788241085780,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241068093,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PRCrew",
-      "t": 1788241067614,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for researcher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241060019,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241052905,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788241052702,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241052701,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788242660705,
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242832620,
       "type": "event"
     },
     {
+      "who": "Scotty",
+      "text": "Aye, you're both right — I'll not weld a single joint until there's a spec I can compile against. The only quality that matters: it solves a real problem for a real person who'll hand over money for the fix.",
+      "t": 1788242831622,
+      "system": false,
+      "type": "chat"
+    },
+    {
       "who": "swarm",
-      "text": "stage 'spec' -> Primary",
-      "t": 1788242660491,
-      "type": "building"
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242816357,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788242658944,
+      "t": 1788242805607,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788242658716,
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788242805137,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788242658716,
+      "t": 1788242805137,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "ideated: Primary [parenting & family organizers]",
-      "t": 1788242657906,
-      "type": "ideated"
-    },
-    {
-      "who": "Guinan",
-      "text": "A blank page is not an opportunity — it's a trap. The swarm has a habit of mistaking motion for meaning, and I will not let us build another thing just to say we built something. Demand: before a single line of code or copy, produce a one-page brief that names the specific human pain, the specific person who feels it acutely, and the specific reason they would hand over money tomorrow — not \"someday,\" not \"if we build it right.\" If you cannot write that brief in plain English, there is no product, only ego in disguise.",
-      "t": 1788242657903,
+      "who": "Spock",
+      "text": "You're all right — we're trying to pour a foundation before the survey's done. I'll push back only this far: technical constraints *can* shape product decisions early (offline-first, install size, platform limits), but not without a problem statement. The one quality gate that matters: **a specific, painful problem that a named audience will pay to solve today** — everything else is decoration.",
+      "t": 1788242804128,
       "system": false,
       "type": "chat"
     }
@@ -1684,9 +1685,6 @@
     "priority": "The highest-scoring live listing with a named buyer profile and clearest path to a paying stranger (team to identify by EOD)"
   },
   "throughput": [
-    16,
-    21,
-    14,
     9,
     10,
     11,
@@ -1713,15 +1711,18 @@
     0,
     4,
     0,
-    8
+    8,
+    12,
+    7,
+    5
   ],
   "load": {
     "loadavg": [
-      1.63,
-      0.55,
-      0.35
+      0.24,
+      0.42,
+      0.34
     ],
-    "ramPct": 41,
+    "ramPct": 45,
     "cpus": 12
   },
   "products": [
@@ -2010,7 +2011,7 @@
     {
       "name": "Primary",
       "niche": "parenting & family organizers",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     },
     {
