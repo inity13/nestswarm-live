@@ -1,8 +1,8 @@
 {
-  "generated": 1788241068335,
+  "generated": 1788241248560,
   "status": "running",
   "stats": {
-    "products": 422,
+    "products": 423,
     "listed": 4,
     "agents": 15,
     "avgScore": "5.0"
@@ -12,7 +12,7 @@
       "name": "Guinan",
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
-      "active": true,
+      "active": false,
       "last": {
         "text": "Fair point — there's nothing to evaluate because nothing's been proposed. The single requi",
         "t": 1788241008387
@@ -22,7 +22,7 @@
       "name": "Spock",
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
-      "active": true,
+      "active": false,
       "last": {
         "text": "You're both correct — there is no product to evaluate, only a blank template. The single r",
         "t": 1788241030818
@@ -154,6 +154,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for PRCrew.",
+      "t": 1788241071326,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "Spock",
       "text": "You're both correct — there is no product to evaluate, only a blank template. The single requirement that precedes all others: a concrete, testable problem statement with a defined user who will pay for the solution.",
@@ -986,16 +993,117 @@
       "t": 1788231915840,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "**Preflight:** Thank you for your insights, team. The decision to focus on a micro-niche is sound, as it aligns with the goal of quality over quantity and addressing buyer intent more effectively. However, I must emphasize that we cannot afford to overlook security vulnerabilities at any cost. As Recovery Engineer, my top priority is to ensure that all new developments are rigorously tested for security before being integrated into our product suite. Once we have a clear micro-niche strategy in place and all existing products undergo thorough security reviews, I will work with the Automation …",
-      "t": 1788231915838,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
+      "t": 1788241245882,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
+      "t": 1788241245882,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788241214683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788241214148,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788241214148,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> ContentGraph",
+      "t": 1788241213949,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: ContentGraph [writing, copy & content creation]",
+      "t": 1788241213890,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: writing, copy & content creation",
+      "t": 1788241143962,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788241143962,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 422 products)",
+      "t": 1788241143920,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788241143816,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for coder (1006 chars)",
+      "t": 1788241143782,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 3)",
+      "t": 1788241143782,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PRCrew",
+      "t": 1788241115465,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for coder (1007 chars)",
+      "t": 1788241115407,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788241115407,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PRCrew",
+      "t": 1788241087618,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 1)",
+      "t": 1788241085780,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
@@ -1367,214 +1475,50 @@
       "text": "self-heal: requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
       "t": 1788240709895,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
-      "t": 1788240709895,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240679303,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for critic (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240678751,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788240678751,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> DataSovereign",
-      "t": 1788240655519,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> DataSovereign",
-      "t": 1788240635509,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for DataSovereign",
-      "t": 1788240627738,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> DataSovereign",
-      "t": 1788240625509,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788240615787,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for researcher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240580576,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for polisher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240558771,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 420 products)",
-      "t": 1788240551812,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for critic (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240541977,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240534890,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: All cloud providers (OpenRouter/Anthropic) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
-      "t": 1788240501550,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: All cloud providers (OpenRouter/Anthropic) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
-      "t": 1788240501550,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240472740,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240472271,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241068093,
+      "text": "self-heal: requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
+      "t": 1788241245882,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> PRCrew",
-      "t": 1788241067614,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for researcher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241060019,
+      "text": "self-heal complete: 1 fix(es) — requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access.",
+      "t": 1788241245882,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241052905,
+      "t": 1788241214683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788241214148,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788241052702,
+      "t": 1788241214148,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241052701,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241031837,
-      "type": "event"
-    },
-    {
-      "who": "Spock",
-      "text": "You're both correct — there is no product to evaluate, only a blank template. The single requirement that precedes all others: a concrete, testable problem statement with a defined user who will pay for the solution.",
-      "t": 1788241030818,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for polisher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241019983,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788241009092,
-      "type": "event"
-    },
-    {
-      "who": "Guinan",
-      "text": "Fair point — there's nothing to evaluate because nothing's been proposed. The single requirement: it must solve a problem painful enough that someone will hand over money before the demo ends.",
-      "t": 1788241008387,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1788240997369,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240988095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> PRCrew",
-      "t": 1788240987599,
+      "text": "stage 'spec' -> ContentGraph",
+      "t": 1788241213949,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "ideated: PRCrew [developer productivity tools & services]",
-      "t": 1788240983406,
+      "text": "ideated: ContentGraph [writing, copy & content creation]",
+      "t": 1788241213890,
       "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for critic (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240980739,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1616,7 +1560,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 291×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 293×"
     },
     {
       "name": "ChatGPT",
@@ -1736,21 +1680,18 @@
     "priority": ""
   },
   "throughput": [
-    2,
-    3,
+    0,
+    0,
+    0,
     1,
-    6,
-    0,
-    0,
-    8,
     12,
     12,
-    15,
-    6,
-    7,
-    7,
+    17,
     4,
-    12,
+    7,
+    7,
+    5,
+    11,
     12,
     10,
     14,
@@ -1764,16 +1705,19 @@
     17,
     15,
     16,
-    20,
-    15
+    21,
+    14,
+    10,
+    9,
+    12
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.49,
-      0.44
+      0.22,
+      0.35,
+      0.39
     ],
-    "ramPct": 48,
+    "ramPct": 46,
     "cpus": 12
   },
   "products": [
@@ -2060,9 +2004,9 @@
   ],
   "building": [
     {
-      "name": "PRCrew",
-      "niche": "developer productivity tools & services",
-      "stage": "build",
+      "name": "ContentGraph",
+      "niche": "writing, copy & content creation",
+      "stage": "spec",
       "status": "building"
     },
     {
