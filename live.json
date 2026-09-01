@@ -1,9 +1,9 @@
 {
-  "generated": 1788239610384,
+  "generated": 1788239790027,
   "status": "running",
   "stats": {
     "products": 418,
-    "listed": 3,
+    "listed": 4,
     "agents": 15,
     "avgScore": "5.0"
   },
@@ -42,10 +42,10 @@
       "name": "Monica",
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "You're right that trust is the product — but I'll die on the hill that trust is earned thr",
-        "t": 1788238608316
+        "text": "This product lives in two worlds: a quiet desktop for planning and a vibrating van cockpit",
+        "t": 1788239782893
       }
     },
     {
@@ -157,6 +157,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "This product lives in two worlds: a quiet desktop for planning and a vibrating van cockpit where sunlight glares, hands are damp, and the next appointment starts in four minutes. Every screen must survive the van test — if the route optimizer's tap targets shrink below 48px or the pet vault's vaccination badge disappears in glare, the groomer fails and we fail. I demand a daylight-in-van usability pass on the mobile route and pet-profile views before a single line of production CSS ships.",
+      "t": 1788239782893,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788239728416,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for ClipRoute.",
@@ -982,23 +996,123 @@
       "t": 1788231915775,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "Scotty",
-      "text": "*Moonlit chat? Upgrade Youareoutoffreemessagesuntil8:50AM earch a micro-niche p Research a micro-niche p e will pay for Topic se e will pay for. Topic se NLY the JSON object no NLY the JSON object no hess opt I helpers EXISTING P G PRODUCTS (avoid thes RODUCTS (avoid these): peo ted build MTIO, Re. *AHLW P ple wil pay for. ple will pay for. PASTED PASTED PASTED PASTED PASTED ng impossibleundertheconstraints,andrefusestoship anythingthatdoesnot e run. Discussionsofar(summaries—neverrestate themverbatim): Guinan<deepseek-r1:8b>:Alrightthen-we need somethingthat*doesn't ng …",
-      "t": 1788231849671,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "*Moonlit chat? Upgrade Youareoutoffreemessagesuntil8:50AM Research a micro-niche p earch a micro-niche p not valId JSON. Output O e will pay for Topic se e will pay for. Topic se NLY the JSON object no NLY the JSON object no , cooking & hous ess opt :o1, pu I helpers EXISTING P G PRODUCTS (avoid thes RODUCTS (avoid these): peo ted build MTIO, Re. *AHLW P ple wil pay for. ple will pay for. PASTED PASTED PASTED PASTED PASTED ng idea. e Your operating stance: Demands simplicity and testability above all.Will reject theSIMPLESTstackthatcan actuallyship andbeverified. ng …",
-      "t": 1788231784215,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launcher: shipped ClipRoute to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788239767544,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Cloud providers returning 401 CreditsError (insufficient balance) for all agents. Free providers (pollinations, mistral, gemini) already disabled. Nemotron-3-ultra-free is enabled. Please add credits to cloud provider accounts or configure alternative paid provider keys.",
+      "t": 1788239767210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud providers returning 401 CreditsError (insufficient balance) for all agents. Free providers (pollinations, mistral, gemini) already disabled. Nemotron-3-ultra-free is enabled. Please add credits to cloud provider accounts or configure alternative paid provider keys.",
+      "t": 1788239767210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for polisher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239738930,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: ClipRoute",
+      "t": 1788239738410,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239731308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788239731100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239729049,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged ClipRoute → cliproute.zip (18670 bytes)",
+      "t": 1788239728569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788239728415,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: ClipRoute @ http://localhost:5276 ($4.99 one-time)",
+      "t": 1788239728406,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: ClipRoute -> http://localhost:5276",
+      "t": 1788239728405,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> ClipRoute",
+      "t": 1788239728399,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239680971,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for critic (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239680459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788239680459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> ClipRoute",
+      "t": 1788239658384,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for ClipRoute",
+      "t": 1788239657285,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 418 products)",
+      "t": 1788239634736,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> ClipRoute",
@@ -1364,123 +1478,95 @@
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
       "t": 1788238531414,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "Monica",
+      "text": "This product lives in two worlds: a quiet desktop for planning and a vibrating van cockpit where sunlight glares, hands are damp, and the next appointment starts in four minutes. Every screen must survive the van test — if the route optimizer's tap targets shrink below 48px or the pet vault's vaccination badge disappears in glare, the groomer fails and we fail. I demand a daylight-in-van usability pass on the mobile route and pet-profile views before a single line of production CSS ships.",
+      "t": 1788239782893,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (5 notes updated)",
-      "t": 1788238530912,
+      "text": "launcher: shipped ClipRoute to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788239767544,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Cloud providers returning 401 CreditsError (insufficient balance) for all agents. Free providers (pollinations, mistral, gemini) already disabled. Nemotron-3-ultra-free is enabled. Please add credits to cloud provider accounts or configure alternative paid provider keys.",
+      "t": 1788239767210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud providers returning 401 CreditsError (insufficient balance) for all agents. Free providers (pollinations, mistral, gemini) already disabled. Nemotron-3-ultra-free is enabled. Please add credits to cloud provider accounts or configure alternative paid provider keys.",
+      "t": 1788239767210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for polisher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239738930,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: ClipRoute",
+      "t": 1788239738410,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239731308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788239731100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788239729049,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged ClipRoute → cliproute.zip (18670 bytes)",
+      "t": 1788239728569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788239728415,
       "type": "vault"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788238530899,
+      "text": "LISTED: ClipRoute @ http://localhost:5276 ($4.99 one-time)",
+      "t": 1788239728406,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: ClipRoute -> http://localhost:5276",
+      "t": 1788239728405,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788238524538,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788238524325,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788238524325,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788238437625,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Cloud provider (OpenAI) returning 401 CreditsError: Insufficient balance for all agents (architect, conductor, coder, critic, polisher). Please add credits/billing at https://platform.openai.com/account/billing or switch default provider to a free model (nemotron-3-ultra-free is currently enabled).",
-      "t": 1788238382501,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud provider (OpenAI) returning 401 CreditsError: Insufficient balance for all agents (architect, conductor, coder, critic, polisher). Please add credits/billing at https://platform.openai.com/account/billing or switch default provider to a free model (nemotron-3-ultra-free is currently enabled).",
-      "t": 1788238382501,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 417 products)",
-      "t": 1788238373618,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788238359081,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788238358618,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788238358618,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> BreedWise",
-      "t": 1788238358155,
+      "text": "stage 'list' -> ClipRoute",
+      "t": 1788239728399,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788238341313,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for RegAgent",
-      "t": 1788238341312,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788238328656,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> BreedWise",
-      "t": 1788238328150,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped RegAgent to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788238327135,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: BreedWise [pet care & ownership]",
-      "t": 1788238324967,
-      "type": "ideated"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1628,11 +1714,11 @@
     }
   ],
   "ledger": {
-    "total": 173,
+    "total": 175,
     "revenue": 0,
-    "effects": 31,
+    "effects": 32,
     "boundary": 0,
-    "artifacts": 31,
+    "artifacts": 32,
     "receipts": 0
   },
   "meeting": {
@@ -1640,14 +1726,11 @@
     "priority": ""
   },
   "throughput": [
-    5,
-    5,
-    7,
     2,
     7,
     20,
-    21,
-    17,
+    20,
+    18,
     16,
     10,
     3,
@@ -1669,15 +1752,18 @@
     4,
     6,
     0,
-    0
+    0,
+    4,
+    12,
+    11
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.35,
+      0.69,
+      0.43,
       0.47
     ],
-    "ramPct": 48,
+    "ramPct": 53,
     "cpus": 12
   },
   "products": [
@@ -1878,6 +1964,13 @@
       "score": 6
     },
     {
+      "name": "ClipRoute",
+      "status": "listed",
+      "niche": "events, community & memberships",
+      "price": 4.99,
+      "score": 5
+    },
+    {
       "name": "JSON Forge",
       "status": "listed",
       "niche": "local services & gig economy",
@@ -1953,22 +2046,9 @@
       "niche": "study, learning & memory aids",
       "price": 19.99,
       "score": 5
-    },
-    {
-      "name": "BudgetMaster",
-      "status": "archived",
-      "niche": "small-business operations helpers",
-      "price": 19,
-      "score": 5
     }
   ],
   "building": [
-    {
-      "name": "ClipRoute",
-      "niche": "events, community & memberships",
-      "stage": "design",
-      "status": "building"
-    },
     {
       "name": "Rejected build MTI5",
       "niche": "legal, contracts & compliance",
@@ -1996,6 +2076,12 @@
     {
       "name": "Rejected build MTHY",
       "niche": "pet care & ownership",
+      "stage": "spec",
+      "status": "rejected"
+    },
+    {
+      "name": "Crosswalk",
+      "niche": "social media, creators & influencer tools",
       "stage": "spec",
       "status": "rejected"
     }
