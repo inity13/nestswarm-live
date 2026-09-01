@@ -1,5 +1,5 @@
 {
-  "generated": 1788245486366,
+  "generated": 1788245666429,
   "status": "running",
   "stats": {
     "products": 428,
@@ -129,7 +129,7 @@
       "name": "LaForge",
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
-      "active": true,
+      "active": false,
       "last": {
         "text": "Here's a thinking process: 1. **Analyze User Input:** - **Role:** \"LaForge\" (the distribut",
         "t": 1788245458055
@@ -141,8 +141,8 @@
       "avatar": "avatars/obrien.svg",
       "active": false,
       "last": {
-        "text": "This product has a compelling vision but the gap between \"list of features\" and \"working p",
-        "t": 1788243787762
+        "text": "The ingestion pipeline is undeniably treacherous, and the graveyard of universal inboxes p",
+        "t": 1788245524975
       }
     },
     {
@@ -157,6 +157,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "O'Brien",
+      "text": "The ingestion pipeline is undeniably treacherous, and the graveyard of universal inboxes proves that ambition without focus sinks fast — but we don't need perfection on day one, only a credible, low-error core that earns trust before the habit fades. The single quality this product must earn to ship is visible reliability: every extracted action item and deadline must be visibly, verifiably accurate, because if the family brain loses credibility, it becomes a liability overnight.",
+      "t": 1788245524975,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "Here's a thinking process: 1. **Analyze User Input:** - **Role:** \"LaForge\" (the distributor) - **Context:** Product is a family operations platform with AI inbox, family brain, predictive load forecasting, targeting primary caregivers. Current stage: \"list\" (meaning listed/defined, but not live). - **Task:** Reply to previous discussion points, concede where others are right, push back where I disagree, and name the SINGLE most important quality requirement this product must meet to ship. 1-2 sentences, in character, own words, plain prose, no JSON/markdown/preamble. - …",
@@ -989,16 +996,45 @@
       "t": 1788239101352,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "The ingestion pipeline will fracture and inference costs will hemorrhage — conceded — but those are engineering problems with known mitigations (cached diffs, scoped models, human-in-the-loop gates), not existential flaws; the liability surface of auto-redlines is real and we'll scope playbooks to \"suggested amendments requiring counsel review\" rather than executable changes. The single non-negotiable: every clause-to-regulation mapping must carry a traceable evidence chain (source excerpt, effective date, jurisdiction, confidence score) so a human reviewer can verify or reject it in seconds …",
-      "t": 1788239072297,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788245657602,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788245657104,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for critic (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788245657103,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> Short Tool Name",
+      "t": 1788245573589,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for Short Tool Name",
+      "t": 1788245569187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 428 products)",
+      "t": 1788245512354,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
@@ -1442,51 +1478,26 @@
       "text": "coder output incomplete (attempt 1)",
       "t": 1788244530835,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
-      "t": 1788244512536,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for polisher (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788244469187,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788244468366,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "offload check: desktop limited",
-      "t": 1788244456867,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop free-tier limit reached (skipping until then)",
-      "t": 1788244456266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788244441135,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "LaForge",
-      "text": "Here's a thinking process: 1. **Analyze User Input:** - **Role:** \"LaForge\" (the distributor) - **Context:** Product is a family operations platform with AI inbox, family brain, predictive load forecasting, targeting primary caregivers. Current stage: \"list\" (meaning listed/defined, but not live). - **Task:** Reply to previous discussion points, concede where others are right, push back where I disagree, and name the SINGLE most important quality requirement this product must meet to ship. 1-2 sentences, in character, own words, plain prose, no JSON/markdown/preamble. - …",
-      "t": 1788245458055,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788245657602,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788245657104,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for critic (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788245657103,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1648,9 +1659,6 @@
     "priority": "The highest-scoring live listing with a named buyer profile and clearest path to a paying stranger (team to identify by EOD)"
   },
   "throughput": [
-    2,
-    9,
-    9,
     7,
     11,
     11,
@@ -1677,13 +1685,16 @@
     5,
     12,
     4,
-    1
+    1,
+    2,
+    3,
+    4
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.17,
-      0.21
+      0.13,
+      0.13,
+      0.18
     ],
     "ramPct": 42,
     "cpus": 12
@@ -1974,7 +1985,7 @@
     {
       "name": "Short Tool Name",
       "niche": "developer productivity tools & services",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     },
     {
