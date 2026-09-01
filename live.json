@@ -1,8 +1,8 @@
 {
-  "generated": 1788237269847,
+  "generated": 1788237449618,
   "status": "running",
   "stats": {
-    "products": 414,
+    "products": 415,
     "listed": 2,
     "agents": 15,
     "avgScore": "5.0"
@@ -12,17 +12,17 @@
       "name": "Guinan",
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
-      "active": true,
+      "active": false,
       "last": {
-        "text": "We cannot evaluate a blank page — give me a specific problem, a named audience who feels i",
-        "t": 1788237237985
+        "text": "You're right that a blank page builds nothing — but you're wrong that the answer lives in ",
+        "t": 1788237279257
       }
     },
     {
       "name": "Spock",
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
-      "active": true,
+      "active": false,
       "last": {
         "text": "Without a defined problem, audience, or success metric, there is no architecture to design",
         "t": 1788237252019
@@ -157,6 +157,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for Rejected build MTI6.",
+      "t": 1788237378385,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (5) recorded for Rejected build MTI6: A one-page problem statement naming a specific, observable pain point that a defined group of people currently pay money (or significant time) to solve poorly | A named target audience with demographic/behavioral specificity (e.g., 'Shopify merchants doing $100K–$1M/yr who manually reconcile inventory across 3+ warehouses') | Evidence of willingness to pay: screenshots of existing paid solutions, forum threads complaining about current tools, or 5+ cold outreach responses confirming budget for a better alternative | A single testable …",
+      "t": 1788237378382,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Guinan",
+      "text": "You're right that a blank page builds nothing — but you're wrong that the answer lives in a spec sheet before we've listened to the market's quiet complaints. The only requirement that matters: someone must already be paying to solve this problem badly.",
+      "t": 1788237279257,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Spock",
       "text": "Without a defined problem, audience, or success metric, there is no architecture to design — only speculation. Define the single, testable hypothesis this product must prove before any code is written.",
@@ -975,30 +996,159 @@
       "t": 1788224653363,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "Scotty",
-      "text": "米 Moonlit chat? Upgrade You are out of freemessages until 8:50 AM ng run. e Discussion so far (summaries — never restate them verbatim): Guinan<deepseek-r1:8b>: Spock<deepseek-v4-pro>:Architect'sstanceonuntitledproductProduct: ng Untitled-.Features:Audience:Curren ng Scotty<deepseek-v4-pro>:UntitledproductdevelopmentstanceProduct: ct Untitled-.Features:Audience:Current Guinan<deepseek-r1:8b>:OkayScotty,whileSpock'ssystematicanalysisis usefulandyourpractical ener Spock<deepseek-v4-pro>:米Moonlitchat?ngUpgrade ng Youareoutoffreemessagesuntil8:50AMeDiscussionsofar( …",
-      "t": 1788224623013,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "米 Moonlit chat? ng Upgrade Youareoutoffreemessagesuntil8:50AM e Discussionsofar(summaries—neverrestate themverbatim): Guinan<deepseek-r1:8b>: Spock<deepseek-v4-pro>:Architect'sstanceonuntitledproductProduct: ng Untitled-.Features:Audience:Curren ng Scotty<deepseek-v4-pro>:UntitledproductdevelopmentstanceProduct: ct Untitled-.Features:Audience:Current Guinan<deepseek-r1:8b>:OkayScotty,whileSpock'ssystematicanalysisis useful andyourpracticalener ng You are the architect,speakingagain.Reply towhattheothers demanded: SINGLE most important quality requirement this product must meet to ship.1-2 ire …",
-      "t": 1788224555292,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Okay Scotty, while Spock's systematic analysis is useful and your practical energy necessary, let's avoid simply layering features onto familiar territory. The key here isn't *just* making a Alright. While Spock's systematic approach provides valuable structure, let me caution against rushing implementation without ensuring profound originality first. We must deeply consider",
-      "t": 1788224528705,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
+      "t": 1788237383796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
+      "t": 1788237383796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 5 quality demands recorded for Rejected build MTI6",
+      "t": 1788237378385,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237358151,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237357881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788237357645,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237357644,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: legal, contracts & compliance",
+      "t": 1788237357373,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788237357373,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788237357269,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for coder (972 chars)",
+      "t": 1788237357250,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 3)",
+      "t": 1788237357250,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Kinwise",
+      "t": 1788237330755,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (7 notes updated)",
+      "t": 1788237330747,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788237330694,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for coder (975 chars)",
+      "t": 1788237330670,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788237330670,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Kinwise",
+      "t": 1788237304454,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 1)",
+      "t": 1788237296969,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 414 products)",
+      "t": 1788237294187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237292632,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237284926,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Kinwise",
+      "t": 1788237284454,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237279973,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788237277600,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "conductor: 8 operational improvement(s) recommended",
@@ -1328,297 +1478,25 @@
       "text": "Claude Desktop responded for conductor (1272 chars)",
       "t": 1788236788410,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236761388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (1254 chars)",
-      "t": 1788236761386,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236733077,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: social media, creators & influencer tools",
-      "t": 1788236732637,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788236732637,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite error: The operation was aborted due to timeout",
-      "t": 1788236732614,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788236732614,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788236732462,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for coder (975 chars)",
-      "t": 1788236732429,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 3)",
-      "t": 1788236732429,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> TravelGenie MT",
-      "t": 1788236706326,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "model qwen2.5-coder:7b ready",
-      "t": 1788236706309,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u001b[K pulling 60e05f210007: 100% ▕██████████████████▏ 4.7 GB \u001b[K pulling 66b9ea09bd5b: 100% ▕██████████████████▏ 68 B \u001b[K pulling 1e65450c3067: 100% ▕██████████████████▏ 1.6 KB \u001b[K pulling …",
-      "t": 1788236706297,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788236706294,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788236706231,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 2)",
-      "t": 1788236706202,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for coder (997 chars)",
-      "t": 1788236706201,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> TravelGenie MT",
-      "t": 1788236679159,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "model qwen2.5-coder:7b not found — pulling automatically",
-      "t": 1788236679149,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (1254 chars)",
-      "t": 1788236679145,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (fetch failed) — trying free tiers",
-      "t": 1788236652578,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for coder (1035 chars)",
-      "t": 1788236652545,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788236652545,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236624914,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> TravelGenie MT",
-      "t": 1788236624716,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "conductor: 8 operational improvement(s) recommended",
-      "t": 1788237260702,
+      "text": "self-heal: requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
+      "t": 1788237383796,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor: 5 request(s) logged for the Swarm Protector",
-      "t": 1788237260653,
+      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
+      "t": 1788237383796,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788237260587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor removed payment_integrator (Stripe integration unavailable; agent idle without payment infrastructure)",
-      "t": 1788237260587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor removed finops (Zero revenue to manage; reactivate when Stripe live)",
-      "t": 1788237260587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor removed compliance (No products shipping; premature overhead)",
-      "t": 1788237260587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788237260587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237253111,
-      "type": "event"
-    },
-    {
-      "who": "Spock",
-      "text": "Without a defined problem, audience, or success metric, there is no architecture to design — only speculation. Define the single, testable hypothesis this product must prove before any code is written.",
-      "t": 1788237252019,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: All cloud agents (architect, coder, conductor, researcher) failing with CreditsError: Insufficient balance. Owner must add credits to the cloud provider account (likely OpenRouter) to restore paid model access.",
-      "t": 1788237246341,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: All cloud agents (architect, coder, conductor, researcher) failing with CreditsError: Insufficient balance. Owner must add credits to the cloud provider account (likely OpenRouter) to restore paid model access.",
-      "t": 1788237246341,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237244639,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> Kinwise",
-      "t": 1788237244440,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237241514,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237238799,
-      "type": "event"
-    },
-    {
-      "who": "Guinan",
-      "text": "We cannot evaluate a blank page — give me a specific problem, a named audience who feels it acutely, and a solution that doesn't rhyme with anything already in the vault. Bring me a one-pager that proves someone will pay for it before we write a single line of code.",
-      "t": 1788237237985,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: Kinwise [parenting & family organizers]",
-      "t": 1788237235834,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237211599,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788237211083,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788237211083,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788237210608,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: parenting & family organizers",
-      "t": 1788237210602,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher brief: Research Paper Active Recall & Synthesis for Academics (willingness: high) — 4 tool ideas",
-      "t": 1788237210546,
+      "text": "council: 5 quality demands recorded for Rejected build MTI6",
+      "t": 1788237378385,
       "type": "event"
     }
   ],
@@ -1661,7 +1539,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 283×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 285×"
     },
     {
       "name": "ChatGPT",
@@ -1781,9 +1659,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    8,
-    3,
     3,
     3,
     10,
@@ -1805,20 +1680,23 @@
     14,
     5,
     8,
-    9,
-    2,
+    8,
+    3,
     6,
     15,
     2,
-    28
+    28,
+    12,
+    23,
+    0
   ],
   "load": {
     "loadavg": [
-      0.5,
-      0.78,
-      1.18
+      0.15,
+      0.6,
+      1.04
     ],
-    "ramPct": 39,
+    "ramPct": 42,
     "cpus": 12
   },
   "products": [
@@ -2105,9 +1983,9 @@
   ],
   "building": [
     {
-      "name": "Kinwise",
-      "niche": "parenting & family organizers",
-      "stage": "spec",
+      "name": "Untitled",
+      "niche": "legal, contracts & compliance",
+      "stage": "idea",
       "status": "building"
     },
     {
