@@ -59,6 +59,29 @@
   .am-row.live { color:#e6eefc; border-color:rgba(0,229,255,.35); }
   .am-row.live .dot, .am-row.live img { animation:blink .7s infinite; }
 
+  /* model brain panel */
+  .hud-brain { grid-column: span 2; }
+  @media(max-width:520px){ .hud-brain { grid-column: span 1; } }
+  .modelbrain { display:flex; flex-direction:column; gap:5px; }
+  .mb-row { display:flex; align-items:center; justify-content:space-between; gap:8px;
+    font-family:ui-monospace,Menlo,Consolas,monospace; font-size:10.5px; padding:3px 8px; border-radius:7px;
+    background:rgba(5,8,15,.5); border:1px solid rgba(0,229,255,.08); }
+  .mb-row .mb-role { color:#9fb2d8; letter-spacing:.5px; }
+  .mb-row .mb-model { display:inline-flex; align-items:center; gap:6px; }
+  .mb-dot { width:7px; height:7px; border-radius:50%; box-shadow:0 0 7px currentColor; flex-shrink:0; }
+  .mb-free .mb-model { color:#00e5ff; } .mb-free .mb-dot { color:#00e5ff; background:#00e5ff; }
+  .mb-local .mb-model { color:#37d39b; } .mb-local .mb-dot { color:#37d39b; background:#37d39b; }
+  .mb-extreme .mb-model { color:#ff5c7a; } .mb-extreme .mb-dot { color:#ff5c7a; background:#ff5c7a; }
+  .mb-legend { display:flex; gap:12px; margin-top:6px; font-size:9px; letter-spacing:1px; color:#5f7194; text-transform:uppercase; }
+  .mb-legend span { display:inline-flex; align-items:center; gap:4px; }
+  .mb-legend i { width:6px; height:6px; border-radius:50%; }
+  .capwrap { margin-top:10px; }
+  .capwrap .caprow { display:flex; justify-content:space-between; font-family:ui-monospace,Menlo,monospace;
+    font-size:9px; letter-spacing:1.5px; color:#5f7194; text-transform:uppercase; margin-bottom:4px; }
+  .capwrap .caprow b { color:#00e5ff; }
+  .capbar { height:7px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(0,229,255,.2); overflow:hidden; }
+  .capbar i { display:block; height:100%; width:0%; background:linear-gradient(90deg,#00e5ff,#37d39b); box-shadow:0 0 10px rgba(0,229,255,.7); transition:width .6s; }
+
   .info { position:fixed; z-index:7; min-width:240px; max-width:340px; padding:14px 16px; border-radius:14px;
     background:rgba(6,10,20,.94); border:1px solid rgba(0,229,255,.3); box-shadow:0 8px 40px rgba(0,0,0,.6);
     font-family:ui-monospace,Menlo,Consolas,monospace; color:#d6e4ff; backdrop-filter:blur(8px); }
@@ -99,6 +122,14 @@
 </div>
 
 <main class="hud-grid">
+  <div class="hud-mod hud-brain">
+    <div class="hm-title">MODEL BRAIN · <span id="postureTag" style="color:#00e5ff">free-first</span></div>
+    <div id="modelBrain" class="modelbrain">…</div>
+    <div class="capwrap" title="products listed vs catalog cap — at the cap the swarm stops building and switches to selling">
+      <div class="caprow"><span>CATALOG</span><b id="capText">0 / 0</b></div>
+      <div class="capbar"><i id="capFill"></i></div>
+    </div>
+  </div>
   <div class="hud-mod">
     <div class="hm-title">EVENT THROUGHPUT</div>
     <canvas id="spark" width="240" height="54"></canvas>
