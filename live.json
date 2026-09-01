@@ -1,5 +1,5 @@
 {
-  "generated": 1788242152742,
+  "generated": 1788242332771,
   "status": "running",
   "stats": {
     "products": 423,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: requested owner: OpenCode cloud credits exhausted (HTTP 401 CreditsError). Add balance at https://opencode.ai/billing to restore cloud agents (coder, conductor).",
+      "t": 1788242193361,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: OpenCode cloud credits exhausted (HTTP 401 CreditsError). Add balance at https://opencode.ai/billing to restore cloud agents (coder, conductor).",
+      "t": 1788242193361,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 423 products)",
+      "t": 1788242176208,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
       "t": 1788242133042,
       "type": "event"
@@ -1460,64 +1478,9 @@
       "text": "self-heal complete: 1 fix(es) — requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access. Free provider nemotron-3-ultra-free remains enabled as fallback.",
       "t": 1788240963989,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: All cloud providers (OpenRouter/Anthropic/etc.) returning 401 CreditsError — insufficient balance. Please add credits to the cloud provider accounts to restore paid model access. Free provider nemotron-3-ultra-free remains enabled as fallback.",
-      "t": 1788240963988,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240955294,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788240937009,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788242133042,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788242132560,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788242132560,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot failed for conductor (copilot http 401: unauthorized: AuthenticateToken authentication failed ) — falling through",
-      "t": 1788242131986,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788242131545,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788242131537,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1677,9 +1640,6 @@
     "priority": "The highest-scoring live listing with a named buyer profile and clearest path to a paying stranger (team to identify by EOD)"
   },
   "throughput": [
-    9,
-    10,
-    8,
     11,
     9,
     14,
@@ -1706,15 +1666,18 @@
     0,
     1,
     0,
-    6
+    6,
+    5,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.18,
+      0.28,
+      0.21,
       0.25
     ],
-    "ramPct": 33,
+    "ramPct": 34,
     "cpus": 12
   },
   "products": [
