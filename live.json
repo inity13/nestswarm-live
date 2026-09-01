@@ -1,5 +1,5 @@
 {
-  "generated": 1788237449618,
+  "generated": 1788237629634,
   "status": "running",
   "stats": {
     "products": 415,
@@ -1001,6 +1001,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "cloud failed for coder (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237537869,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> RegAgent",
+      "t": 1788237537400,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237498437,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "cloud failed for architect (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
+      "t": 1788237497911,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788237497911,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> RegAgent",
+      "t": 1788237497393,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: RegAgent [legal, contracts & compliance]",
+      "t": 1788237491887,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 415 products)",
+      "t": 1788237476537,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
       "t": 1788237383796,
       "type": "event"
@@ -1430,76 +1478,9 @@
       "text": "Claude Desktop responded for conductor (1246 chars)",
       "t": 1788236939089,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236909040,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1788236908801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (1352 chars)",
-      "t": 1788236908800,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788236879709,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "cloud failed for conductor (cloud http 401: {\"type\":\"error\",\"error\":{\"type\":\"CreditsError\",\"message\":\"Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KW9D9TKK8EV0N1C4X03331CZ/billing\"}}) — trying free tiers",
-      "t": 1788236879707,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788236820543,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788236811350,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (1272 chars)",
-      "t": 1788236788410,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
-      "t": 1788237383796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: Cloud providers (OpenAI/Anthropic) returning 401 Insufficient Balance. Please add credits at the provider billing portal so paid agents can resume. Free providers (gemini, nemotron-3-ultra-free) are currently handling load.",
-      "t": 1788237383796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for Rejected build MTI6",
-      "t": 1788237378385,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1659,9 +1640,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    3,
-    10,
     9,
     15,
     10,
@@ -1688,15 +1666,18 @@
     28,
     12,
     23,
+    0,
+    7,
+    4,
     0
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.6,
-      1.04
+      0.14,
+      0.39,
+      0.88
     ],
-    "ramPct": 42,
+    "ramPct": 37,
     "cpus": 12
   },
   "products": [
@@ -1983,9 +1964,9 @@
   ],
   "building": [
     {
-      "name": "Untitled",
+      "name": "RegAgent",
       "niche": "legal, contracts & compliance",
-      "stage": "idea",
+      "stage": "build",
       "status": "building"
     },
     {
