@@ -1,5 +1,5 @@
 {
-  "generated": 1788304640025,
+  "generated": 1788304820050,
   "status": "running",
   "stats": {
     "products": 503,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'test' -> CryptoGuard Sentinel",
+      "t": 1788304714244,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788304713665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 503 products)",
+      "t": 1788304666274,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> CryptoGuard Sentinel",
       "t": 1788304584221,
       "type": "building"
@@ -1460,46 +1478,9 @@
       "text": "keyhunter: gemini step 1 -> {\"action\":\"type\",\"selector\":\"#identifierId\",\"value\":\"[email]\"}",
       "t": 1788302747379,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Lemon Squeezy step 2 -> {\"action\":\"type\",\"selector\":\"#business_name\",\"value\":\"nestswarm\"}",
-      "t": 1788302747012,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini step 0 -> {\"action\":\"type\",\"selector\":\"#identifierId\",\"value\":\"[email]\"}",
-      "t": 1788302744996,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: obtained mistral key!",
-      "t": 1788302742456,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> CryptoGuard Sentinel",
-      "t": 1788304584221,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for architect (631 chars)",
-      "t": 1788304584159,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> CryptoGuard Sentinel",
-      "t": 1788304557381,
-      "type": "building"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1659,9 +1640,6 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    14,
-    12,
-    1,
     7,
     6,
     4,
@@ -1688,15 +1666,18 @@
     0,
     4,
     4,
-    3
+    3,
+    1,
+    3,
+    0
   ],
   "load": {
     "loadavg": [
-      1.59,
-      0.73,
-      0.82
+      3.17,
+      1.86,
+      1.24
     ],
-    "ramPct": 45,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1726,8 +1707,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "github_researcher": {
         "model": "ling-3.0-flash-fin-free",
@@ -2153,7 +2134,7 @@
     {
       "name": "CryptoGuard Sentinel",
       "niche": "privacy, security & personal data",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     },
     {
