@@ -1,5 +1,5 @@
 {
-  "generated": 1788311186122,
+  "generated": 1788311366089,
   "status": "running",
   "stats": {
     "products": 510,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> LegalPal MT",
+      "t": 1788311248959,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code>const http = require('http'); ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788311247831,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 510 products)",
+      "t": 1788311211759,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LegalPal MT",
+      "t": 1788311198954,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (4 files, node)",
+      "t": 1788311197250,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1788311089338,
       "type": "bench"
@@ -1448,36 +1478,6 @@
       "text": "vault: synced (2 notes updated)",
       "t": 1788308639841,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: EducationDesk MT -> http://localhost:5295",
-      "t": 1788308639831,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "LISTED: EducationDesk MT @ http://localhost:5295 ($4.99 one-time)",
-      "t": 1788308639831,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> EducationDesk MT",
-      "t": 1788308639824,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788308639821,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788308639743,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1640,9 +1640,6 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    3,
-    4,
-    2,
     1,
     5,
     1,
@@ -1669,15 +1666,18 @@
     0,
     2,
     1,
+    0,
+    4,
+    3,
     0
   ],
   "load": {
     "loadavg": [
-      0.4,
-      0.43,
-      0.61
+      0.15,
+      0.29,
+      0.52
     ],
-    "ramPct": 39,
+    "ramPct": 41,
     "cpus": 12
   },
   "brain": {
