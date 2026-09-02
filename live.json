@@ -1,5 +1,5 @@
 {
-  "generated": 1788358824990,
+  "generated": 1788359005150,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1788358981201,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788358981087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788358981087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 4 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788358977300,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 3 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788358937420,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788358898945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788358870913,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788358855909,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788358843286,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788358824175,
       "type": "event"
@@ -1147,51 +1201,33 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788358824175,
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1788358981201,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788358791588,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 1/13 channels active · 4 new discovered",
-      "t": 1788358787692,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue: queued GitHub Sponsors (alternative platform) for account acquisition",
-      "t": 1788358787691,
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788358981087,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "revenue: queued Freelancer for account acquisition",
-      "t": 1788358787691,
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788358981087,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "revenue: queued Dev.to for account acquisition",
-      "t": 1788358787690,
+      "text": "keyhunter: groq step 4 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788358977300,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "revenue: queued Hashnode for account acquisition",
-      "t": 1788358787690,
+      "text": "keyhunter: groq step 3 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788358937420,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788358777670,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1349,7 +1385,7 @@
     }
   ],
   "ledger": {
-    "total": 283,
+    "total": 290,
     "revenue": 0,
     "effects": 56,
     "boundary": 0,
@@ -1384,21 +1420,21 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     8,
+    5,
+    11,
+    6,
     5,
     11
   ],
   "load": {
     "loadavg": [
-      1.71,
-      1.41,
-      1.21
+      2.33,
+      1.67,
+      1.33
     ],
-    "ramPct": 37,
+    "ramPct": 16,
     "cpus": 12
   },
   "brain": {
@@ -1428,6 +1464,22 @@
         "tier": "local"
       },
       "github_researcher": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "deepseek-r1:8b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "deepseek-r1:8b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "conductor": {
         "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
