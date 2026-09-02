@@ -1,5 +1,5 @@
 {
-  "generated": 1788359185468,
+  "generated": 1788359365377,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,102 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788359290004,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral-small-latest",
+      "t": 1788359278172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model gemini-flash-latest not found",
+      "t": 1788359278172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — provider ling-3.0-flash-fin-free not found; disabled provider mistral-small-latest; model gemini-flash-latest not found",
+      "t": 1788359278172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788359278168,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai failed for conductor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788359260142,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788359259390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for preflight (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788359259197,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for preflight (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788359258450,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788359258450,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788359255536,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model openai not found",
+      "t": 1788359255536,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — provider ling-3.0-flash-fin-free not found; model openai not found",
+      "t": 1788359255536,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788359244242,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788359244214,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788359220676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "bounty scout: 5 eligible task card(s) (Algora)",
       "t": 1788359044052,
       "type": "scout"
@@ -1210,7 +1306,38 @@
       "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788359290004,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral-small-latest",
+      "t": 1788359278172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model gemini-flash-latest not found",
+      "t": 1788359278172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — provider ling-3.0-flash-fin-free not found; disabled provider mistral-small-latest; model gemini-flash-latest not found",
+      "t": 1788359278172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788359278168,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1395,9 +1522,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     8,
     5,
@@ -1407,15 +1531,18 @@
     11,
     5,
     1,
+    3,
+    6,
+    19,
     3
   ],
   "load": {
     "loadavg": [
-      1.76,
-      1.77,
-      1.43
+      2.26,
+      1.84,
+      1.51
     ],
-    "ramPct": 20,
+    "ramPct": 27,
     "cpus": 12
   },
   "brain": {
@@ -1475,12 +1602,29 @@
       "scout": {
         "model": "qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "launcher": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
-    "free": [
-      "ling-3.0-flash-fin-free",
-      "openai"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 3,
