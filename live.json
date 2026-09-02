@@ -1,5 +1,5 @@
 {
-  "generated": 1788359005150,
+  "generated": 1788359185468,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "bounty scout: 5 eligible task card(s) (Algora)",
+      "t": 1788359044052,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788359038801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "conductor: 2 operational improvement(s) recommended",
       "t": 1788358981201,
       "type": "event"
@@ -1198,38 +1210,7 @@
       "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "conductor: 2 operational improvement(s) recommended",
-      "t": 1788358981201,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788358981087,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788358981087,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 4 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788358977300,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 3 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788358937420,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1385,7 +1366,7 @@
     }
   ],
   "ledger": {
-    "total": 290,
+    "total": 294,
     "revenue": 0,
     "effects": 56,
     "boundary": 0,
@@ -1417,24 +1398,24 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     8,
     5,
     11,
     6,
     5,
-    11
+    11,
+    5,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      2.33,
-      1.67,
-      1.33
+      1.76,
+      1.77,
+      1.43
     ],
-    "ramPct": 16,
+    "ramPct": 20,
     "cpus": 12
   },
   "brain": {
@@ -1480,6 +1461,18 @@
         "tier": "local"
       },
       "conductor": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "deepseek-r1:8b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "deepseek-r1:8b",
+        "tier": "local"
+      },
+      "scout": {
         "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
