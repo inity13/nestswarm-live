@@ -1,5 +1,5 @@
 {
-  "generated": 1788311546066,
+  "generated": 1788311726180,
   "status": "running",
   "stats": {
     "products": 510,
@@ -1001,6 +1001,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'design' -> LegalPal MT",
+      "t": 1788311629015,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for LegalPal MT",
+      "t": 1788311621259,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LegalPal MT",
+      "t": 1788311619016,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788311613094,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788311613093,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for LegalPal MT is stuck (attempt 2) — trying a stronger model",
+      "t": 1788311579007,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LegalPal MT",
+      "t": 1788311579006,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 510 products)",
+      "t": 1788311572246,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788311569113,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 510 products)",
       "t": 1788311393426,
       "type": "event"
@@ -1424,60 +1478,6 @@
       "text": "new build started (ideating) — niche: study, learning & memory aids",
       "t": 1788308809798,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788308809798,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for EducationDesk MT exited (null)",
-      "t": 1788308809268,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: EducationDesk MT -> http://localhost:5295",
-      "t": 1788308809211,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: EducationDesk MT (pass #1)",
-      "t": 1788308809211,
-      "type": "polished"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped EducationDesk MT to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788308808202,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged EducationDesk MT → educationdesk-mt.zip (10866 bytes)",
-      "t": 1788308806995,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 508 products)",
-      "t": 1788308690892,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polishing existing product: EducationDesk MT",
-      "t": 1788308649746,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged EducationDesk MT → educationdesk-mt.zip (6726 bytes)",
-      "t": 1788308640050,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1528,7 +1528,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 4×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 5×"
     },
     {
       "name": "Shared memory",
@@ -1640,9 +1640,6 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    5,
-    5,
-    0,
     8,
     1,
     6,
@@ -1669,13 +1666,16 @@
     0,
     1,
     0,
+    0,
+    5,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.29,
-      0.48
+      0.26,
+      0.28,
+      0.44
     ],
     "ramPct": 42,
     "cpus": 12
@@ -1707,8 +1707,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "github_researcher": {
         "model": "nemotron-3.5-lightning-free",
@@ -2138,7 +2138,7 @@
     {
       "name": "LegalPal MT",
       "niche": "legal, contracts & compliance",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     },
     {
