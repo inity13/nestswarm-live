@@ -1,5 +1,5 @@
 {
-  "generated": 1788316767005,
+  "generated": 1788316946858,
   "status": "running",
   "stats": {
     "products": 513,
@@ -62,7 +62,7 @@
       "name": "Data",
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
-      "active": true,
+      "active": false,
       "last": {
         "text": "口 plan Save 17% Pro plan Pro annual EUR 180.00 Pro annual 180.00 Billed yearly Subtotal 18",
         "t": 1788316683726
@@ -72,7 +72,7 @@
       "name": "Worf",
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
-      "active": true,
+      "active": false,
       "last": {
         "text": "FreelancerLens Pro: For Prospecting Personalized Talent.",
         "t": 1788316743963
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PetFlow MT",
+      "t": 1788316823756,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 1)",
+      "t": 1788316814172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 513 products)",
+      "t": 1788316790784,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "Claude Desktop responded for critic (631 chars)",
       "t": 1788316683726,
       "type": "event"
@@ -1460,48 +1478,9 @@
       "text": "stage 'build' -> FreelancersLens MT",
       "t": 1788314909596,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): [path] [code] ^ ReferenceError: code is not defined at Object.<anonymous> ([path] at Module._compile (node:internal/modules/cjs/loader:1812:14) at Object..js (node:internal/modules/cjs/loader:1943:10) at Module.load (node:internal/modules/cjs/loader:1533:32) at Module._load (node:in",
-      "t": 1788314901829,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> FreelancersLens MT",
-      "t": 1788314899596,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788314890546,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "Worf",
-      "text": "FreelancerLens Pro: For Prospecting Personalized Talent.",
-      "t": 1788316743963,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "口 plan Save 17% Pro plan Pro annual EUR 180.00 Pro annual 180.00 Billed yearly Subtotal 180.00 Tax 45.90 Total due today 225.90 Yoursubscriptionwillauto-renewon9/2/2027.You i will becharged 180.00/year+tax. YouagreethatAnthropicwill chargeyourcard inthe amount above nowandonarecurringannual basis until you cancel in accordance with our terms,including by exercisingyourrighttocancelyoursubscriptionwithin14 days fromthe date ofsubscription.lfyou cancel within those14days,eligibleserswill receiveaprorated refund.Youcan cancel atanytimeinyouraccount settings. Subscribe andPay VAT number …",
-      "t": 1788316683726,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for critic (631 chars)",
-      "t": 1788316683726,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1662,9 +1641,6 @@
   },
   "throughput": [
     2,
-    0,
-    4,
-    2,
     7,
     2,
     5,
@@ -1690,13 +1666,16 @@
     5,
     8,
     6,
-    1
+    1,
+    4,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      3.23,
-      2.29,
-      1.1
+      2.65,
+      2.6,
+      1.44
     ],
     "ramPct": 50,
     "cpus": 12
@@ -1728,8 +1707,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "github_researcher": {
         "model": "nemotron-3.5-lightning-free",
