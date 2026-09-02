@@ -1,5 +1,5 @@
 {
-  "generated": 1788380474947,
+  "generated": 1788380624896,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,66 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788380624123,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788380599766,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for architect (desktop limited until 11:23:46 PM) — trying ChatGPT/free",
+      "t": 1788380580149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for architect (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788380580149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop limited until 11:23:46 PM) — trying ChatGPT/free",
+      "t": 1788380564965,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "offload check: desktop limited",
+      "t": 1788380538993,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788380517310,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788380505775,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 61 products with flags, 0 with high-severity findings",
+      "t": 1788380489130,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 3 zen free models",
+      "t": 1788380477416,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788380474153,
       "type": "event"
@@ -1063,62 +1123,38 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788380474153,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788380624123,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788380469160,
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788380599766,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for architect (desktop limited until 11:23:46 PM) — trying ChatGPT/free",
+      "t": 1788380580149,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788380464129,
+      "text": "flagship: ChatGPT unavailable for architect (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788380580149,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: polishing flagship ClipRoute (score 5/8, pass 2/8)",
-      "t": 1788380444155,
+      "text": "flagship: Claude unavailable for researcher (desktop limited until 11:23:46 PM) — trying ChatGPT/free",
+      "t": 1788380564965,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper)",
-      "t": 1788380444130,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 3 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788380444124,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788380444114,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788380444114,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 61 products from disk (next port 5309)",
-      "t": 1788380443833,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788380443825,
+      "text": "offload check: desktop limited",
+      "t": 1788380538993,
       "type": "event"
     }
   ],
@@ -1315,24 +1351,35 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    10
+    7,
+    5,
+    3,
+    7
   ],
   "load": {
     "loadavg": [
-      0.69,
-      0.96,
-      0.76
+      0.51,
+      0.86,
+      0.77
     ],
-    "ramPct": 24,
+    "ramPct": 42,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "ideator": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "distributor": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      }
+    },
     "free": [
-      "openai"
+      "nemotron-3.5-lightning-free",
+      "openai",
+      "gemini-flash-latest"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
