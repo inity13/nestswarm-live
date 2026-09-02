@@ -1,5 +1,5 @@
 {
-  "generated": 1788327136111,
+  "generated": 1788327286089,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788327285347,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788327180095,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788327160669,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 61 products with flags, 0 with high-severity findings",
+      "t": 1788327150319,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (pollinations) · 2 zen free models",
+      "t": 1788327146093,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788327135322,
       "type": "event"
@@ -1069,68 +1099,8 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788327135322,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788327135320,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788327130350,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788327125310,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: ClipRoute is polished, marketed & LIVE but CANNOT SELL — no Stripe key. Add it to open checkout, then it ships.",
-      "t": 1788327105343,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper)",
-      "t": 1788327105313,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 3 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788327105306,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788327105294,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788327105294,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 61 products from disk (next port 5309)",
-      "t": 1788327104982,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788327104969,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788327285347,
       "type": "event"
     }
   ],
@@ -1319,26 +1289,34 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    11
+    7,
+    7,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      1.35,
-      0.93,
-      2.12
+      0.37,
+      0.8,
+      1.9
     ],
-    "ramPct": 24,
+    "ramPct": 35,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "ideator": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "security": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      }
+    },
     "free": [
       "nemotron-3.5-lightning-free",
-      "openai",
-      "gemini-flash-latest"
+      "openai"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
