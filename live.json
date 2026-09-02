@@ -1,5 +1,5 @@
 {
-  "generated": 1788365851459,
+  "generated": 1788366031332,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788365889710,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai failed for conductor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788365887137,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788365886490,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788365885777,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788365885331,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 1 zen free models",
+      "t": 1788365885330,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788365878843,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788365855474,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788365855474,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788365702386,
       "type": "event"
@@ -1424,60 +1478,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788359038801,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 operational improvement(s) recommended",
-      "t": 1788358981201,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788358981087,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788358981087,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 4 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788358977300,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 3 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788358937420,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788358898945,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788358870913,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788358855909,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788358843286,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1648,9 +1648,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
-    0,
-    0,
     1,
     0,
     0,
@@ -1676,16 +1673,19 @@
     0,
     0,
     1,
+    0,
+    0,
+    11,
     0,
     0
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.07,
-      0.07
+      0.2,
+      0.31,
+      0.17
     ],
-    "ramPct": 27,
+    "ramPct": 32,
     "cpus": 12
   },
   "brain": {
@@ -1731,8 +1731,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "polisher": {
         "model": "deepseek-r1:8b",
@@ -1767,7 +1767,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 3,
