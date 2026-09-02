@@ -1,5 +1,5 @@
 {
-  "generated": 1788381525018,
+  "generated": 1788381704966,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788381644159,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788381553968,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788381371975,
       "type": "event"
@@ -1390,7 +1402,14 @@
       "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788381644159,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1566,17 +1585,14 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     5,
     4,
     6,
     9,
     8,
-    11,
-    17,
+    10,
+    18,
     4,
     19,
     12,
@@ -1587,13 +1603,16 @@
     1,
     1,
     2,
+    1,
+    2,
+    1,
     1
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.1,
-      0.32
+      0.02,
+      0.06,
+      0.26
     ],
     "ramPct": 33,
     "cpus": 12
@@ -1657,6 +1676,10 @@
         "tier": "free"
       },
       "launcher": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "automation_operator": {
         "model": "nemotron-3.5-lightning-free",
         "tier": "free"
       }
