@@ -1,8 +1,8 @@
 {
-  "generated": 1788320063032,
+  "generated": 1788320232624,
   "status": "running",
   "stats": {
-    "products": 516,
+    "products": 517,
     "listed": 13,
     "agents": 15,
     "avgScore": "4.7"
@@ -34,18 +34,18 @@
       "avatar": "avatars/scotty.svg",
       "active": false,
       "last": {
-        "text": "Okay, we're clearly building something foundational here – no features or audience defined",
-        "t": 1788319795474
+        "text": "// FILE: app.js const express = require('express'); const bodyParser = require('body-parse",
+        "t": 1788320065697
       }
     },
     {
       "name": "Monica",
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: index.html The redesign must elevate user experience from functional to sophistic",
-        "t": 1788319378739
+        "text": "Okay, let's break down what we need: 1. **Data Collection**: Collect data from multiple so",
+        "t": 1788320213793
       }
     },
     {
@@ -157,6 +157,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "Okay, let's break down what we need: 1. **Data Collection**: Collect data from multiple sources (public or private) about potential tenants - social media activity, public records, etc. 2. **Privacy Compliance**: - GDPR compliant for EU users. matching criteria should be based on publicly available information only if it's legally allowed and ethically sound to use without consent issues (like age, education level from LinkedIn or GitHub profile) — I understand the ethical implications when using public data like social media activity. We must ensure that we are not scraping private profiles …",
+      "t": 1788320213793,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const express = require('express'); const bodyParser = require('body-parser'); const cors = require('cors'); const app = express(); app.use(cors()); app.use(bodyParser.json()); let leaseData = []; let tenantProfiles = []; app.post('/api/ingestLease', (req, res) => { const newLease = req.body; leaseData.push(newLease); saveToLocalStorage('leaseData'); res.status(200",
+      "t": 1788320065697,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "demand_validator",
       "text": "ApartmentMatchScore has real potential but needs a strong, intuitive user interface to stand out. Demand a minimum of 30 hours dedicated to UI/UX design and prototyping before proceeding with development.",
@@ -982,23 +996,33 @@
       "t": 1788315753027,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "FreelancersLens MT is currently a name without substance—no features, no audience, stuck at \"list\" stage, and that offends the code. The team must immediately wire a single, functional core feature with a defined user persona and a working demo, or the product remains an embarrassment of emptiness.",
-      "t": 1788315726123,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "FreelancersLens MT is currently a ghost: no features, no audience, \"list\" is not a stage, it's a placeholder — objectively a 0/10 on value and 0/10 on viability. The team must immediately define a single, concrete problem for a specific freelancer subtype and either ship a minimal working tool that solves it or present verified evidence of paying users; without that, this is just a name, not a product.",
-      "t": 1788315683156,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: small-business operations & accounting",
+      "t": 1788320212704,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788320212704,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for ApartmentMatchScore — skipping",
+      "t": 1788320211955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 516 products)",
+      "t": 1788320087298,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (4 notes updated)",
@@ -1454,73 +1478,32 @@
       "text": "stage 'idea'",
       "t": 1788318206623,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for PetFlow MT — skipping",
-      "t": 1788318202654,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788318196578,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "local model deepseek-r1:8b failed for polisher (ollama http 400: {\"error\":\"{\\\"error\\\":{\\\"code\\\":400,\\\"message\\\":\\\"request (4942 tokens) exceeds the available context size (4096 tokens), try increasing it\\\",\\\"type\\\":\\\"exceed_context_size_error\\\",\\\"n_prompt_tokens\\\":4942,\\\"n_ctx\\\":4096}}\"})",
-      "t": 1788318169501,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788318169501,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788320062700,
-      "type": "vault"
+      "who": "Monica",
+      "text": "Okay, let's break down what we need: 1. **Data Collection**: Collect data from multiple sources (public or private) about potential tenants - social media activity, public records, etc. 2. **Privacy Compliance**: - GDPR compliant for EU users. matching criteria should be based on publicly available information only if it's legally allowed and ethically sound to use without consent issues (like age, education level from LinkedIn or GitHub profile) — I understand the ethical implications when using public data like social media activity. We must ensure that we are not scraping private profiles …",
+      "t": 1788320213793,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788320051842,
+      "text": "new build started (ideating) — niche: small-business operations & accounting",
+      "t": 1788320212704,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788320022188,
-      "type": "event"
+      "text": "stage 'idea'",
+      "t": 1788320212704,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "polishing existing product: ApartmentMatchScore",
-      "t": 1788319985379,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788319983812,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788319983772,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788319983765,
+      "text": "polisher returned no usable files for ApartmentMatchScore — skipping",
+      "t": 1788320211955,
       "type": "event"
     }
   ],
@@ -1683,44 +1666,44 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    7,
-    3,
+    1,
     1,
     1,
     1,
     4,
     1,
+    4,
+    2,
+    6,
+    9,
+    3,
+    0,
+    5,
+    10,
+    3,
+    9,
+    8,
+    2,
     1,
     5,
+    11,
+    5,
     1,
-    9,
-    6,
-    3,
     2,
-    3,
-    10,
-    3,
-    10,
-    8,
-    1,
-    3,
-    3,
-    13,
-    3,
-    1,
-    3,
-    1,
+    2,
     16,
-    4
+    3,
+    3,
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      3.9,
-      3.52,
-      3.07
+      4.01,
+      3.69,
+      3.21
     ],
-    "ramPct": 45,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1750,8 +1733,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "github_researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2175,6 +2158,12 @@
   ],
   "building": [
     {
+      "name": "Untitled",
+      "niche": "small-business operations & accounting",
+      "stage": "idea",
+      "status": "building"
+    },
+    {
       "name": "TestCraft",
       "niche": "AI & automation utilities",
       "stage": "spec",
@@ -2201,12 +2190,6 @@
     {
       "name": "Career Path Navigator",
       "niche": "study, learning & memory aids",
-      "stage": "spec",
-      "status": "rejected"
-    },
-    {
-      "name": "Keystone",
-      "niche": "developer productivity tools & services",
       "stage": "spec",
       "status": "rejected"
     }
