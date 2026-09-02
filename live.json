@@ -1,5 +1,5 @@
 {
-  "generated": 1788338376279,
+  "generated": 1788338581201,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "Claude Desktop responded for architect (942 chars)",
+      "t": 1788338580269,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788338536020,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788338402117,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "Claude Desktop responded for researcher (1073 chars)",
       "t": 1788338303147,
       "type": "event"
@@ -1460,32 +1478,20 @@
       "text": "registrar: registering itch.io (marketplace)",
       "t": 1788328174013,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Ko-fi (marketplace)",
-      "t": 1788328173066,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Payhip (marketplace)",
-      "t": 1788328172118,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Lemon Squeezy step 6 -> {\"action\":\"type\",\"selector\":\"<css>\",\"value\":\"<text>\"}",
-      "t": 1788328172116,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "Claude Desktop responded for researcher (1073 chars)",
-      "t": 1788338303147,
+      "text": "Claude Desktop responded for architect (942 chars)",
+      "t": 1788338580269,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788338536020,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1527,7 +1533,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 6×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 7×"
     },
     {
       "name": "ChatGPT",
@@ -1647,7 +1653,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1667,24 +1672,25 @@
     0,
     1,
     0,
-    0,
     1,
-    0,
     3,
     2,
     1,
+    2,
+    2,
+    2,
     3,
-    1,
+    5,
     3,
-    2
+    4
   ],
   "load": {
     "loadavg": [
-      2.06,
-      1.41,
-      0.72
+      2.6,
+      1.86,
+      1.03
     ],
-    "ramPct": 20,
+    "ramPct": 27,
     "cpus": 12
   },
   "brain": {
@@ -1694,12 +1700,12 @@
         "tier": "local"
       },
       "security": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "github_researcher": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "architect": {
         "model": "claude-desktop(free)",
@@ -1710,8 +1716,8 @@
         "tier": "free"
       },
       "distributor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "coder": {
         "model": "deepseek-r1:8b",
@@ -1746,24 +1752,24 @@
         "tier": "local"
       },
       "launcher": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "automation_operator": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "preflight": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "recovery_engineer": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "demand_validator": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [],
