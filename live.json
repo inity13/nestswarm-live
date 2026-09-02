@@ -1,9 +1,9 @@
 {
-  "generated": 1788322122554,
+  "generated": 1788322302594,
   "status": "running",
   "stats": {
     "products": 518,
-    "listed": 13,
+    "listed": 14,
     "agents": 15,
     "avgScore": "4.7"
   },
@@ -32,10 +32,10 @@
       "name": "Scotty",
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: scotty.js // FILE: scotty.js ```javascript const express = require('express",
-        "t": 1788321240500
+        "text": "Alright team. We're building a health",
+        "t": 1788322277694
       }
     },
     {
@@ -157,6 +157,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "Alright team. We're building a health",
+      "t": 1788322277694,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788322164413,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for Habitus Reshape.",
@@ -982,23 +996,63 @@
       "t": 1788315890805,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "Here's a thinking process: 1. **Analyze User Input:** - User is acting as the \"Designer\" call sign \"Monica\". - They want me to reply in a team meeting rebuttal round. - Guidelines: - Concede where others are right, push back where I disagree. - Name the SINGLE most important thing the swarm must do next. - 1-2 sentences. - In character, my own words. - Plain prose, NOT JSON, NOT markdown. - Context: Team meeting about a catalog of 511 products, only 10 listed, avg critic 4.7. Goal: stop churning raw count, decide direction, quality focus, and how to take money (marketplaces, crypto, …",
-      "t": 1788315890803,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "Here's a thinking process: 1. **Analyze User Input:** - User is acting as the \"Coder\" (call sign \"Scotty\") in a team meeting/rebuttal round. - They want me to reply in character, 1-2 sentences, plain prose, NOT JSON, NOT markdown. - I need to concede where others are right, push back where I disagree, and name the SINGLE most important thing the swarm must do next. - The context involves a catalog of 511 products, only 10 listed, avg critic 4.7, a crypto address, and goals around stopping raw count churn, focusing on quality, and taking money. - Previous discussion summaries are provided, but …",
-      "t": 1788315890802,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "polishing existing product: Habitus Reshape",
+      "t": 1788322174273,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Habitus Reshape → habitus-reshape.zip (9772 bytes)",
+      "t": 1788322164658,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 518 products)",
+      "t": 1788322164653,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788322164412,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: Habitus Reshape -> http://localhost:5305",
+      "t": 1788322164283,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: Habitus Reshape @ http://localhost:5305 ($4.99 one-time)",
+      "t": 1788322164283,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> Habitus Reshape",
+      "t": 1788322164274,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for critic (631 chars)",
+      "t": 1788322164219,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> Habitus Reshape",
+      "t": 1788322124025,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "designer improved UI for Habitus Reshape",
@@ -1424,68 +1478,15 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788320022188,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polishing existing product: ApartmentMatchScore",
-      "t": 1788319985379,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788319983812,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788319983772,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788319983765,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for RealEstateConnectPro is stuck (attempt 2) — trying a stronger model",
-      "t": 1788319955381,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> RealEstateConnectPro",
-      "t": 1788319955374,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 2)",
-      "t": 1788319951533,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 516 products)",
-      "t": 1788319887541,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788319825327,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "swarm",
-      "text": "designer improved UI for Habitus Reshape",
-      "t": 1788322116362,
-      "type": "event"
+      "who": "Scotty",
+      "text": "Alright team. We're building a health",
+      "t": 1788322277694,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1527,7 +1528,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 86×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 87×"
     },
     {
       "name": "ChatGPT",
@@ -1635,11 +1636,11 @@
     }
   ],
   "ledger": {
-    "total": 258,
+    "total": 259,
     "revenue": 0,
     "effects": 50,
     "boundary": 0,
-    "artifacts": 48,
+    "artifacts": 49,
     "receipts": 0
   },
   "meeting": {
@@ -1647,9 +1648,6 @@
     "priority": ""
   },
   "throughput": [
-    7,
-    1,
-    1,
     1,
     3,
     6,
@@ -1676,15 +1674,18 @@
     0,
     11,
     3,
-    2
+    2,
+    12,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      3.45,
-      8.34,
-      6.99
+      3.49,
+      5.93,
+      6.26
     ],
-    "ramPct": 60,
+    "ramPct": 78,
     "cpus": 12
   },
   "brain": {
@@ -1714,8 +1715,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "github_researcher": {
         "model": "qwen2.5-coder:7b",
@@ -1769,7 +1770,7 @@
     "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 13,
+      "listed": 14,
       "cap": 20
     }
   },
@@ -2139,12 +2140,6 @@
   ],
   "building": [
     {
-      "name": "Habitus Reshape",
-      "niche": "health, fitness & habit tracking",
-      "stage": "package",
-      "status": "building"
-    },
-    {
       "name": "TestCraft",
       "niche": "AI & automation utilities",
       "stage": "spec",
@@ -2171,6 +2166,12 @@
     {
       "name": "Career Path Navigator",
       "niche": "study, learning & memory aids",
+      "stage": "spec",
+      "status": "rejected"
+    },
+    {
+      "name": "Keystone",
+      "niche": "developer productivity tools & services",
       "stage": "spec",
       "status": "rejected"
     }
