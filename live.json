@@ -1,5 +1,5 @@
 {
-  "generated": 1788328186257,
+  "generated": 1788328366324,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788328211025,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: gemini step 0 -> {\"action\":\"type\",\"selector\":\"#identifierId\",\"value\":\"[email]\"}",
       "t": 1788328176819,
       "type": "event"
@@ -1462,56 +1468,7 @@
       "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini step 0 -> {\"action\":\"type\",\"selector\":\"#identifierId\",\"value\":\"[email]\"}",
-      "t": 1788328176819,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering itch.io (marketplace)",
-      "t": 1788328174013,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Ko-fi (marketplace)",
-      "t": 1788328173066,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Payhip (marketplace)",
-      "t": 1788328172118,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Lemon Squeezy step 6 -> {\"action\":\"type\",\"selector\":\"<css>\",\"value\":\"<text>\"}",
-      "t": 1788328172116,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: obtained mistral key!",
-      "t": 1788328160501,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting gemini (https://aistudio.google.com/apikey)",
-      "t": 1788328160501,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mistral step 0 -> {}",
-      "t": 1788328159695,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1679,9 +1636,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     7,
     1,
@@ -1700,13 +1654,16 @@
     11,
     7,
     3,
-    12
+    12,
+    2,
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.21,
-      0.8
+      0,
+      0.11,
+      0.66
     ],
     "ramPct": 34,
     "cpus": 12
@@ -1774,6 +1731,18 @@
         "tier": "free"
       },
       "automation_operator": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "preflight": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "recovery_engineer": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
+      },
+      "demand_validator": {
         "model": "nemotron-3.5-lightning-free",
         "tier": "free"
       }
