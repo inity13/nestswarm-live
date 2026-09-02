@@ -1,9 +1,9 @@
 {
-  "generated": 1788319142885,
+  "generated": 1788319323003,
   "status": "running",
   "stats": {
-    "products": 515,
-    "listed": 12,
+    "products": 516,
+    "listed": 13,
     "agents": 15,
     "avgScore": "4.7"
   },
@@ -157,6 +157,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788319242362,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788319232476,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for PetFlow MT.",
@@ -982,23 +996,81 @@
       "t": 1788313427356,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "The critics are right: LegalPal MT as listed is indeed a featureless ghost with no audience or stage, and that's a hard stop for launch. I push back that the name alone isn't the obstacle—a concrete, revenue-pathable problem-solution fit is the single most important quality requirement this product must meet to ship.",
-      "t": 1788313393724,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "They're right that LegalPal MT is currently a ghost—no features, no audience, no stage—but I push back that the name alone isn't the barrier; the product must have one concrete, payable solution for a specific legal buyer before it ever ships.",
-      "t": 1788313361001,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788319242364,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: education, tutoring & courses",
+      "t": 1788319242362,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged ApartmentMatchScore → apartmentmatchscore.zip (7978 bytes)",
+      "t": 1788319232658,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788319232474,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: ApartmentMatchScore -> http://localhost:5302",
+      "t": 1788319232348,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: ApartmentMatchScore @ http://localhost:5302 ($4.99 one-time)",
+      "t": 1788319232348,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> ApartmentMatchScore",
+      "t": 1788319232336,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788319232329,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for critic (2221 chars)",
+      "t": 1788319232268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for critic (desktop script failed (exit 1): <3>WSL (53834) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling through",
+      "t": 1788319187102,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 515 products)",
+      "t": 1788319167347,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> ApartmentMatchScore",
+      "t": 1788319160608,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "Claude Desktop responded for conductor (631 chars)",
@@ -1406,93 +1478,20 @@
       "text": "coder produced a functional build (3 files, node)",
       "t": 1788317548675,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 514 products)",
-      "t": 1788317522832,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped PetFlow MT to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788317495044,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for architect (631 chars)",
-      "t": 1788317455784,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788317426611,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> MarketWise Insight Hub",
-      "t": 1788317397333,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→deepseek-r1:8b (gauntlet-gated)",
-      "t": 1788317397322,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for architect (631 chars)",
-      "t": 1788317397267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> MarketWise Insight Hub",
-      "t": 1788317368786,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: MarketWise Insight Hub [crypto, web3 & trading]",
-      "t": 1788317361282,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 514 products)",
-      "t": 1788317344848,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "marketer produced a kit for PetFlow MT",
-      "t": 1788317341782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788317318769,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788319090587,
-      "type": "event"
+      "text": "stage 'idea'",
+      "t": 1788319242364,
+      "type": "building"
     },
     {
-      "who": "demand_validator",
-      "text": "PetFlow MT requires a polished, professional landing page to resonate with its busy pet owners. The most critical quality requirement is an engaging and intuitive interface that showcases the product's value proposition clearly and persuasively.",
-      "t": 1788319060665,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: education, tutoring & courses",
+      "t": 1788319242362,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1538,7 +1537,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 3×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 4×"
     },
     {
       "name": "GitHub Copilot",
@@ -1642,11 +1641,11 @@
     }
   ],
   "ledger": {
-    "total": 255,
+    "total": 256,
     "revenue": 0,
     "effects": 49,
     "boundary": 0,
-    "artifacts": 46,
+    "artifacts": 47,
     "receipts": 0
   },
   "meeting": {
@@ -1654,9 +1653,6 @@
     "priority": ""
   },
   "throughput": [
-    11,
-    4,
-    2,
     8,
     5,
     4,
@@ -1683,15 +1679,18 @@
     5,
     10,
     1,
+    2,
+    5,
+    10,
     2
   ],
   "load": {
     "loadavg": [
-      3.23,
-      2.94,
-      2.72
+      3.6,
+      2.93,
+      2.74
     ],
-    "ramPct": 41,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1721,8 +1720,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "github_researcher": {
         "model": "qwen2.5-coder:7b",
@@ -1737,7 +1736,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "claude-desktop(free)",
+        "model": "chatgpt(free)",
         "tier": "free"
       },
       "polisher": {
@@ -1776,7 +1775,7 @@
     "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 12,
+      "listed": 13,
       "cap": 20
     }
   },
@@ -2146,9 +2145,9 @@
   ],
   "building": [
     {
-      "name": "ApartmentMatchScore",
-      "niche": "real estate, renting & property",
-      "stage": "design",
+      "name": "Untitled",
+      "niche": "education, tutoring & courses",
+      "stage": "idea",
       "status": "building"
     },
     {
