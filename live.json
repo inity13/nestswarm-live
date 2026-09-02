@@ -1,9 +1,9 @@
 {
-  "generated": 1788315146660,
+  "generated": 1788315326736,
   "status": "running",
   "stats": {
     "products": 512,
-    "listed": 10,
+    "listed": 11,
     "agents": 15,
     "avgScore": "4.7"
   },
@@ -154,6 +154,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788315219667,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for Untitled.",
@@ -986,16 +993,57 @@
       "t": 1788305759861,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for PawTrace.",
-      "t": 1788305736197,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launcher: shipped FreelancersLens MT to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788315313755,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "polishing existing product: FreelancersLens MT",
+      "t": 1788315229644,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged FreelancersLens MT → freelancerslens-mt.zip (9001 bytes)",
+      "t": 1788315219839,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788315219665,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: FreelancersLens MT -> http://localhost:5299",
+      "t": 1788315219651,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: FreelancersLens MT @ http://localhost:5299 ($49 one-time)",
+      "t": 1788315219651,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> FreelancersLens MT",
+      "t": 1788315219644,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 512 products)",
+      "t": 1788315172342,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> FreelancersLens MT",
@@ -1385,50 +1433,14 @@
       "text": "idea duplicate (<real specific product name>); re-ideating in a fresh niche",
       "t": 1788312425921,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (<real specific product name>); re-ideating in a fresh niche",
-      "t": 1788312299024,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 511 products)",
-      "t": 1788312291414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "marketer produced a kit for LegalPal MT",
-      "t": 1788312281079,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for LegalPal MT",
-      "t": 1788312266672,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788312266672,
-      "type": "launch"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "stage 'package' -> FreelancersLens MT",
-      "t": 1788315119633,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for FreelancersLens MT",
-      "t": 1788315119580,
-      "type": "event"
+      "text": "launcher: shipped FreelancersLens MT to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788315313755,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1578,11 +1590,11 @@
     }
   ],
   "ledger": {
-    "total": 250,
+    "total": 252,
     "revenue": 0,
-    "effects": 47,
+    "effects": 48,
     "boundary": 0,
-    "artifacts": 43,
+    "artifacts": 44,
     "receipts": 0
   },
   "meeting": {
@@ -1590,9 +1602,6 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    7,
-    6,
-    1,
     1,
     3,
     4,
@@ -1619,15 +1628,18 @@
     8,
     2,
     0,
-    4
+    4,
+    2,
+    7,
+    2
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.15,
-      0.16
+      0.03,
+      0.09,
+      0.13
     ],
-    "ramPct": 40,
+    "ramPct": 39,
     "cpus": 12
   },
   "brain": {
@@ -1716,7 +1728,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 10,
+      "listed": 11,
       "cap": 20
     }
   },
@@ -2086,12 +2098,6 @@
   ],
   "building": [
     {
-      "name": "FreelancersLens MT",
-      "niche": "freelancers & solopreneurs",
-      "stage": "package",
-      "status": "building"
-    },
-    {
       "name": "TestCraft",
       "niche": "AI & automation utilities",
       "stage": "spec",
@@ -2118,6 +2124,12 @@
     {
       "name": "Career Path Navigator",
       "niche": "study, learning & memory aids",
+      "stage": "spec",
+      "status": "rejected"
+    },
+    {
+      "name": "Keystone",
+      "niche": "developer productivity tools & services",
       "stage": "spec",
       "status": "rejected"
     }
