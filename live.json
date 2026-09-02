@@ -1,5 +1,5 @@
 {
-  "generated": 1788307192360,
+  "generated": 1788307372353,
   "status": "running",
   "stats": {
     "products": 506,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> Creator Content Curator",
+      "t": 1788307321632,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 1): bad response: 500 len=46",
+      "t": 1788307313941,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Creator Content Curator",
+      "t": 1788307311628,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788307302459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 506 products)",
+      "t": 1788307219127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "Claude Desktop responded for conductor (631 chars)",
       "t": 1788307191607,
       "type": "event"
@@ -1448,43 +1478,31 @@
       "text": "local model deepseek-r1:8b failed for coder (ollama http 500: {\"error\":\"connection refused\"})",
       "t": 1788305398055,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "local model deepseek-r1:8b failed for ideator (ollama http 500: {\"error\":\"model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details\"})",
-      "t": 1788305398054,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "local model deepseek-r1:8b failed for marketer (ollama http 500: {\"error\":\"connection refused\"})",
-      "t": 1788305398053,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788305398020,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788305370700,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "local model deepseek-r1:8b failed for ideator (ollama http 500: {\"error\":\"connection refused\"})",
-      "t": 1788305370699,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "Claude Desktop responded for conductor (631 chars)",
-      "t": 1788307191607,
+      "text": "stage 'build' -> Creator Content Curator",
+      "t": 1788307321632,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 1): bad response: 500 len=46",
+      "t": 1788307313941,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Creator Content Curator",
+      "t": 1788307311628,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788307302459,
       "type": "event"
     }
   ],
@@ -1647,11 +1665,8 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    15,
-    8,
-    3,
-    12,
-    6,
+    11,
+    7,
     5,
     3,
     4,
@@ -1676,15 +1691,18 @@
     5,
     8,
     3,
-    3
+    3,
+    1,
+    3,
+    2
   ],
   "load": {
     "loadavg": [
-      2.36,
-      2.26,
-      2.37
+      3.41,
+      2.67,
+      2.51
     ],
-    "ramPct": 65,
+    "ramPct": 78,
     "cpus": 12
   },
   "brain": {
