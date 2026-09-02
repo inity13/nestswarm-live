@@ -1,5 +1,5 @@
 {
-  "generated": 1788307732557,
+  "generated": 1788307912410,
   "status": "running",
   "stats": {
     "products": 507,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PrivacyGuard Pro",
+      "t": 1788307847093,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788307838426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PrivacyGuard Pro",
+      "t": 1788307807088,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 1)",
+      "t": 1788307802835,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 507 products)",
+      "t": 1788307764675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 507 products)",
       "t": 1788307597312,
       "type": "event"
@@ -1448,39 +1478,22 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788305674346,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> PawTrace",
-      "t": 1788305660678,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "Claude Desktop responded for architect (631 chars)",
-      "t": 1788305660668,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 504 products)",
-      "t": 1788305631794,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for PawTrace",
-      "t": 1788305630039,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PawTrace",
-      "t": 1788305627742,
-      "type": "building"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PrivacyGuard Pro",
+      "t": 1788307847093,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788307838426,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1640,9 +1653,6 @@
     "priority": "The single product with the sharpest buyer in sight — likely one of the tools or templates already sitting in the vault with the strongest critic validation — shipped as a private, self-hosted download with Stripe checkout we own."
   },
   "throughput": [
-    9,
-    0,
-    1,
     2,
     4,
     6,
@@ -1669,15 +1679,18 @@
     11,
     7,
     0,
+    0,
+    1,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      3.32,
-      2.99,
-      2.72
+      3.36,
+      3.22,
+      2.87
     ],
-    "ramPct": 52,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1707,8 +1720,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "github_researcher": {
         "model": "qwen2.5-coder:7b",
