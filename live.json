@@ -1,5 +1,5 @@
 {
-  "generated": 1788341986574,
+  "generated": 1788342166634,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "Claude Desktop responded for conductor (1226 chars)",
+      "t": 1788342165201,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788342107537,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788342011844,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788341990010,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "ChatGPT responded for conductor (1896 chars)",
       "t": 1788341985793,
       "type": "event"
@@ -1454,43 +1478,19 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788335689891,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788335510956,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788335330339,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788335150714,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788334970086,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "ChatGPT responded for conductor (1896 chars)",
-      "t": 1788341985793,
+      "text": "Claude Desktop responded for conductor (1226 chars)",
+      "t": 1788342165201,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit 4): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_desktop] prompt submitted; waiting for reply [drive_desktop] timed out waiting for reply ) — falling through",
-      "t": 1788341947154,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788342107537,
       "type": "event"
     }
   ],
@@ -1533,7 +1533,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 15×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 16×"
     },
     {
       "name": "ChatGPT",
@@ -1672,9 +1672,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     4,
     0,
     8,
@@ -1682,15 +1679,18 @@
     0,
     0,
     0,
+    3,
+    2,
+    0,
     3
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.3,
-      0.21
+      0.35,
+      0.31,
+      0.23
     ],
-    "ramPct": 45,
+    "ramPct": 44,
     "cpus": 12
   },
   "brain": {
@@ -1724,7 +1724,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "chatgpt(free)",
+        "model": "claude-desktop(free)",
         "tier": "free"
       },
       "designer": {
