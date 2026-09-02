@@ -1,5 +1,5 @@
 {
-  "generated": 1788316406801,
+  "generated": 1788316586881,
   "status": "running",
   "stats": {
     "products": 513,
@@ -34,8 +34,8 @@
       "avatar": "avatars/scotty.svg",
       "active": false,
       "last": {
-        "text": "Here's a thinking process: 1. **Analyze User Input:** - User is acting as the \"Coder\" (cal",
-        "t": 1788315890802
+        "text": "Here's a thinking process: 1. **Analyze the User's Request:** - **Role:** Coder, call sign",
+        "t": 1788316460139
       }
     },
     {
@@ -157,6 +157,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "Here's a thinking process: 1. **Analyze the User's Request:** - **Role:** Coder, call sign \"Scotty\" - **Task:** Respond to previous \"discussion\" summaries from other agents (Nemotron variants, Worf, Chandler, Data, etc.) - **Specific Instructions:** - Concede where they are right - Push back where I disagree - Name the SINGLE most important quality requirement this product must meet to ship - 1-2 sentences, in character, my own words - Plain prose - no JSON, no markdown, no preamble - **Context:** The product is \"FreelancersLens MT\" - currently at stage \"list\", no audience, no features. …",
+      "t": 1788316460139,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "demand_validator",
       "text": "FreelancersLens MT is a nameless shell with zero audience, zero features, and zero revenue signal—listing it as \"list\" is not a stage, it's a gap. The team must produce 5 signed freelancer pilot commitments or pre-payments before any development begins.",
@@ -989,16 +996,177 @@
       "t": 1788309240190,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "EducationDesk MT should prioritize user experience and intuitive design to retain audience interest. Demand a detailed content audit and wireframe updates to enhance usability within the next sprint.",
-      "t": 1788309199287,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PetFlow MT",
+      "t": 1788316546732,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 1 product ideas, 1 optimizations",
+      "t": 1788316546724,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for architect (631 chars)",
+      "t": 1788316546669,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> PetFlow MT",
+      "t": 1788316517392,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideator could not find a valid non-duplicate idea; proceeding with PetFlow MT",
+      "t": 1788316511095,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ideator produced no usable name — generated \"PetFlow MT\"",
+      "t": 1788316511094,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788316502067,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for conductor (631 chars)",
+      "t": 1788316497381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1788316497381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 513 products)",
+      "t": 1788316460135,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788316460131,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 1/9 channels active · 0 new discovered",
+      "t": 1788316451507,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for researcher (631 chars)",
+      "t": 1788316451506,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider pollinations",
+      "t": 1788316419867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788316419867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider pollinations; disabled provider gemini",
+      "t": 1788316419867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for distributor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788316419703,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai failed for distributor (cloud http 402: {\"error\":\"402 Payment Required\",\"status\":402,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.ai for better performance and access to all the latest models. Anonymous requests to text.pollinations.a)",
+      "t": 1788316415620,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai failed for conductor (cloud http 429: {\"error\":\"Queue full for IP: [ip]: 1 requests already queued (max: 1). Get unlimited access at https://enter.pollinations.ai\",\"status\":429,\"deprecation_notice\":\"NOTE: The Pollinations legacy text API is being deprecated for authenticated users. Please migrate to https://enter.pollinations.a)",
+      "t": 1788316415563,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider mimo-v2.5-free failed for conductor (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Error from provider (Console): Rate limit exceeded. Please try again later.\"}})",
+      "t": 1788316414970,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider mimo-v2.5-free failed for distributor (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Error from provider (Console): Rate limit exceeded. Please try again later.\"}})",
+      "t": 1788316414699,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider big-pickle failed for conductor (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Error from provider (Console): Rate limit exceeded. Please try again later.\"}})",
+      "t": 1788316414698,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider big-pickle failed for distributor (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Error from provider (Console): Rate limit exceeded. Please try again later.\"}})",
+      "t": 1788316414420,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider big-pickle failed for distributor (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Error from provider (Console): Rate limit exceeded. Please try again later.\"}})",
+      "t": 1788316414121,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider big-pickle failed for conductor (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Error from provider (Console): Rate limit exceeded. Please try again later.\"}})",
+      "t": 1788316414045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788316413464,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 2 zen free models",
+      "t": 1788316411309,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788316411309,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "idea duplicate (<a real specific product name>); re-ideating in a fresh niche",
@@ -1310,163 +1478,61 @@
       "text": "ideator could not find a valid non-duplicate idea; proceeding with FreelancersLens MT",
       "t": 1788314484967,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (...); re-ideating in a fresh niche",
-      "t": 1788314484966,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 512 products)",
-      "t": 1788314451252,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 512 products)",
-      "t": 1788314269785,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (...); re-ideating in a fresh niche",
-      "t": 1788314214281,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (<a real specific product name>); re-ideating in a fresh niche",
-      "t": 1788314106765,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 3 quality demands recorded for Untitled",
-      "t": 1788314093539,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 512 products)",
-      "t": 1788314091126,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788314049403,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (<real specific product name>); re-ideating in a fresh niche",
-      "t": 1788313985850,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 512 products)",
-      "t": 1788313911199,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788313759424,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: recruiting, HR & team tools",
-      "t": 1788313759420,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already shipped (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788313749924,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788313749891,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788313749891,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 511 products)",
-      "t": 1788313731244,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Larderly",
-      "t": 1788313719382,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for Larderly is stuck (attempt 2) — trying a stronger model",
-      "t": 1788313719382,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788313709404,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Larderly",
-      "t": 1788313709381,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788313706389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 511 products)",
-      "t": 1788313550547,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788313449324,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Larderly",
-      "t": 1788313429327,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788313427900,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "idea duplicate (<a real specific product name>); re-ideating in a fresh niche",
-      "t": 1788316405325,
+      "text": "stage 'build' -> PetFlow MT",
+      "t": 1788316546732,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 1 product ideas, 1 optimizations",
+      "t": 1788316546724,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for architect (631 chars)",
+      "t": 1788316546669,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> PetFlow MT",
+      "t": 1788316517392,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideator could not find a valid non-duplicate idea; proceeding with PetFlow MT",
+      "t": 1788316511095,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ideator produced no usable name — generated \"PetFlow MT\"",
+      "t": 1788316511094,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788316502067,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "Claude Desktop responded for conductor (631 chars)",
+      "t": 1788316497381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1788316497381,
       "type": "event"
     }
   ],
@@ -1509,7 +1575,7 @@
     },
     {
       "name": "Claude Desktop",
-      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 40×"
+      "desc": "free Claude heavy-thinking via Windows RPA bridge · used 43×"
     },
     {
       "name": "ChatGPT",
@@ -1629,9 +1695,6 @@
     "priority": ""
   },
   "throughput": [
-    2,
-    3,
-    5,
     1,
     5,
     8,
@@ -1658,15 +1721,18 @@
     2,
     4,
     1,
-    2
+    2,
+    23,
+    9,
+    5
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.24,
-      0.16
+      2.93,
+      1.2,
+      0.53
     ],
-    "ramPct": 30,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -1676,7 +1742,7 @@
         "tier": "free"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
+        "model": "claude-desktop(free)",
         "tier": "free"
       },
       "conductor": {
@@ -1704,8 +1770,8 @@
         "tier": "free"
       },
       "designer": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "publisher": {
         "model": "nemotron-3.5-lightning-free",
@@ -1748,10 +1814,7 @@
         "tier": "free"
       }
     },
-    "free": [
-      "openai",
-      "gemini-flash-latest"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 11,
@@ -2124,9 +2187,9 @@
   ],
   "building": [
     {
-      "name": "Untitled",
+      "name": "PetFlow MT",
       "niche": "pet care & ownership",
-      "stage": "idea",
+      "stage": "build",
       "status": "building"
     },
     {
