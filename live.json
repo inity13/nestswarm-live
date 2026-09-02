@@ -1,5 +1,5 @@
 {
-  "generated": 1788388365389,
+  "generated": 1788388545579,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider pollinations",
+      "t": 1788388433193,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788388433193,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider pollinations; disabled provider gemini",
+      "t": 1788388433193,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788388391739,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788388244484,
       "type": "event"
@@ -1454,30 +1478,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788380832233,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1788380810190,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 7 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788380805267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
-      "t": 1788380804986,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq step 6 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
-      "t": 1788380787132,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1663,9 +1663,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     5,
     0,
     0,
@@ -1677,13 +1674,16 @@
     0,
     2,
     0,
+    0,
+    1,
+    4,
     0
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.07,
-      0.08
+      0,
+      0.03,
+      0.06
     ],
     "ramPct": 34,
     "cpus": 12
@@ -1768,9 +1768,7 @@
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free",
-      "openai",
-      "gemini-flash-latest"
+      "nemotron-3.5-lightning-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
