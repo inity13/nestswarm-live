@@ -1,5 +1,5 @@
 {
-  "generated": 1788431607533,
+  "generated": 1788431637785,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1138,60 +1138,6 @@
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1788431567217,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> TaskMaster Pro",
-      "t": 1788431547267,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for TaskMaster Pro is stuck (attempt 2) — trying a stronger model",
-      "t": 1788431547267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "resumed orphan build: TaskMaster Pro",
-      "t": 1788431547266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788431547214,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 3 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788431547201,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788431547187,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788431547186,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 62 products from disk (next port 5313)",
-      "t": 1788431546912,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788431546896,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1421,14 +1367,14 @@
     0,
     0,
     0,
-    9,
-    12
+    14,
+    11
   ],
   "load": {
     "loadavg": [
-      2.34,
-      1.38,
-      1.08
+      2.55,
+      1.52,
+      1.14
     ],
     "ramPct": 45,
     "cpus": 12
@@ -1453,6 +1399,22 @@
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2026,7 +1988,7 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
     "selfHostedInferencePct": 100,
