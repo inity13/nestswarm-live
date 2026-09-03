@@ -333,6 +333,38 @@ function brain() {
 }
 
 setInterval(()=>{ $('#clock').textContent = new Date().toLocaleTimeString(); }, 1000);
+
+// Sanitized compute-fleet panel. Self-contained: creates its own card on first
+// run (so no index.html edit is strictly required) and shows only aliased,
+// non-identifying data emitted by buildFleet() on the Core.
+function renderFleet(fleet) {
+  let card = document.getElementById('fleetCard');
+  if (!fleet || !fleet.total) { if (card) card.style.display = 'none'; return; }
+  if (!card) {
+    card = document.createElement('div');
+    card.id = 'fleetCard';
+    card.style.cssText = 'margin:16px 0;padding:14px 16px;border:1px solid rgba(0,229,255,.25);border-radius:12px;background:rgba(8,14,26,.6);';
+    // Anchor near the ledger if present, else append to body.
+    const anchor = document.getElementById('lgRevenue');
+    const host = (anchor && anchor.closest('section,div,.card')) || document.body;
+    host.parentNode ? host.parentNode.insertBefore(card, host.nextSibling) : document.body.appendChild(card);
+  }
+  card.style.display = '';
+  const dot = (s) => s === 'online' ? '#37d39b' : (s === 'degraded' ? '#ffb454' : '#ff6b6b');
+  const nodes = (fleet.nodes || []).map((n) =>
+    `<div style="display:flex;align-items:center;gap:8px;font-size:12px;padding:3px 0">
+       <span style="width:8px;height:8px;border-radius:50%;background:${dot(n.status)};display:inline-block"></span>
+       <b style="color:#d6e4ff">${esc(n.alias)}</b>
+       <span style="color:#7d92b8">${esc(n.gpu || 'GPU')}${n.vramGb ? ' · ' + n.vramGb + 'GB' : ''}</span>
+       ${n.busy ? '<span style="color:#00e5ff">▶ working</span>' : '<span style="color:#7d92b8">idle</span>'}
+     </div>`).join('');
+  card.innerHTML =
+    `<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+       <h3 style="margin:0;font-size:14px;color:#00e5ff">◈ Compute Fleet</h3>
+       <span style="font-size:12px;color:#7d92b8">${fleet.online}/${fleet.total} online · ${fleet.selfHostedInferencePct}% self-hosted inference</span>
+     </div>${nodes}`;
+}
+
 load();
 setInterval(load, 30000);
 brain();
