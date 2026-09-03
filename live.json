@@ -1,5 +1,5 @@
 {
-  "generated": 1788432286778,
+  "generated": 1788432331798,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788432318039,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788432313482,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: listing prepared for TaskMaster Pro",
       "t": 1788432262679,
       "type": "launch"
@@ -1129,6 +1141,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788432318039,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788432313482,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: listing prepared for TaskMaster Pro",
       "t": 1788432262679,
       "type": "launch"
@@ -1179,36 +1203,6 @@
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788432254068,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 62 products with flags, 0 with high-severity findings",
-      "t": 1788432241311,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 0 free providers live (none) · 2 zen free models",
-      "t": 1788432239034,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788432226316,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788432221345,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788432216309,
       "type": "event"
     }
   ],
@@ -1438,17 +1432,17 @@
     0,
     0,
     0,
-    0,
-    11,
-    15
+    8,
+    18,
+    3
   ],
   "load": {
     "loadavg": [
-      1.41,
-      2.04,
-      1.77
+      1.82,
+      2.05,
+      1.79
     ],
-    "ramPct": 48,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1470,6 +1464,10 @@
         "tier": "local"
       },
       "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -2064,7 +2062,7 @@
         "busy": false
       }
     ],
-    "selfHostedInferencePct": 80,
+    "selfHostedInferencePct": 83,
     "jobsProcessed": 7
   }
 }
