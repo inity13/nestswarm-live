@@ -1,5 +1,5 @@
 {
-  "generated": 1788440086300,
+  "generated": 1788440131384,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788440105974,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
       "t": 1788440074637,
       "type": "event"
@@ -1207,6 +1213,12 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788440105974,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
       "t": 1788440074637,
       "type": "event"
@@ -1228,36 +1240,6 @@
       "text": "scout: 0 free providers live (none) · 1 zen free models",
       "t": 1788440051582,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 63 products with flags, 0 with high-severity findings",
-      "t": 1788440040811,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788440025838,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788440025834,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788440020838,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788440015799,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1494,17 +1476,17 @@
     0,
     0,
     0,
-    0,
-    12,
-    15
+    7,
+    16,
+    8
   ],
   "load": {
     "loadavg": [
-      2.11,
-      1.64,
-      1.5
+      2.13,
+      1.7,
+      1.52
     ],
-    "ramPct": 48,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1526,7 +1508,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
@@ -1546,11 +1528,15 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
