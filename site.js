@@ -94,6 +94,9 @@ function render() {
   animateNum($('#lgEffects'), led.effects ?? 0);
   animateNum($('#lgBoundary'), led.boundary ?? 0);
 
+  // compute fleet (sanitized multi-node summary — aliases only, no ips/hosts)
+  renderFleet(data.fleet);
+
   // featured product (highest-scored listed)
   const fe = $('#featured');
   const best = (data.products || []).filter((p) => p.status === 'listed').sort((a, b) => (b.score || 0) - (a.score || 0))[0];
