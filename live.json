@@ -1,5 +1,5 @@
 {
-  "generated": 1788436034819,
+  "generated": 1788436064931,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: qwen — queued for key hunter",
+      "t": 1788436041605,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: stabilityai — queued for key hunter",
+      "t": 1788436041605,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1788436041488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788436031519,
       "type": "event"
@@ -1087,6 +1105,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: qwen — queued for key hunter",
+      "t": 1788436041605,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: stabilityai — queued for key hunter",
+      "t": 1788436041605,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1788436041488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788436031519,
       "type": "event"
@@ -1119,54 +1155,6 @@
       "who": "swarm",
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1788435994464,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "resumed orphan build: CaseCraft",
-      "t": 1788435974562,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> CaseCraft",
-      "t": 1788435974562,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788435974471,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 4 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788435974457,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788435974429,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788435974429,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 63 products from disk (next port 5313)",
-      "t": 1788435974191,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788435974174,
       "type": "event"
     }
   ],
@@ -1397,22 +1385,42 @@
     0,
     0,
     0,
-    8,
-    7
+    11,
+    12
   ],
   "load": {
     "loadavg": [
-      2.11,
-      1.2,
-      1.02
+      2.33,
+      1.35,
+      1.07
     ],
-    "ramPct": 48,
+    "ramPct": 46,
     "cpus": 12
   },
   "brain": {
     "active": {
       "security": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
