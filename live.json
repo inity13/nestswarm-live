@@ -1,5 +1,5 @@
 {
-  "generated": 1788440473433,
+  "generated": 1788440502798,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788440501578,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 1 zen free models",
+      "t": 1788440498438,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 63 products with flags, 0 with high-severity findings",
+      "t": 1788440487534,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788440472560,
       "type": "event"
@@ -1175,6 +1193,24 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788440501578,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 1 zen free models",
+      "t": 1788440498438,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 63 products with flags, 0 with high-severity findings",
+      "t": 1788440487534,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1477,16 +1513,16 @@
     0,
     0,
     0,
-    0,
-    14
+    7,
+    12
   ],
   "load": {
     "loadavg": [
-      1.7,
-      1.91,
-      1.66
+      2.34,
+      2.03,
+      1.71
     ],
-    "ramPct": 43,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1501,6 +1537,14 @@
       },
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2077,7 +2121,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
