@@ -1,5 +1,5 @@
 {
-  "generated": 1788432080836,
+  "generated": 1788432126136,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788432125369,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3411MB free)",
+      "t": 1788432104556,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788432104556,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788432090558,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788432070989,
       "type": "launch"
@@ -1171,6 +1195,30 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788432125369,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3411MB free)",
+      "t": 1788432104556,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788432104556,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788432090558,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788432070989,
       "type": "launch"
@@ -1186,48 +1234,6 @@
       "text": "designer improved UI for TaskMaster Pro",
       "t": 1788432052199,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: modelscope — queued for key hunter",
-      "t": 1788432010216,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788432010216,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1788432009923,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1788432009923,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1788432009923,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
-      "t": 1788432002359,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> TaskMaster Pro",
-      "t": 1788431995380,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1455,18 +1461,18 @@
     0,
     0,
     0,
-    0,
     9,
-    20,
-    6
+    14,
+    10,
+    7
   ],
   "load": {
     "loadavg": [
-      2.89,
-      2.49,
-      1.8
+      2.02,
+      2.33,
+      1.79
     ],
-    "ramPct": 49,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1496,6 +1502,10 @@
         "tier": "local"
       },
       "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -2055,7 +2065,7 @@
           "coding",
           "gpu"
         ],
-        "busy": true
+        "busy": false
       },
       {
         "alias": "GPU-Node-2",
@@ -2073,7 +2083,7 @@
         "busy": false
       }
     ],
-    "selfHostedInferencePct": 86,
+    "selfHostedInferencePct": 88,
     "jobsProcessed": 7
   }
 }
