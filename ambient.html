@@ -58,6 +58,7 @@
   .am-row .dot { display:inline-block; box-shadow:0 0 6px currentColor; }
   .am-row.live { color:#e6eefc; border-color:rgba(0,229,255,.35); }
   .am-row.live .dot, .am-row.live img { animation:blink .7s infinite; }
+  .agentmatrix .chip.dim { opacity:.4; filter:grayscale(.6); }
 
   /* model brain panel */
   .hud-brain { grid-column: span 2; }
@@ -104,6 +105,10 @@
   .info .i-close:hover { color:#ff5c7a; }
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:.3;} }
   @media(max-width:768px){ .hero{ height:62vh; min-height:400px; } .ctrl-hint{ display:none; } .info{ max-width:85vw; } }
+  /* On mobile the bottom-center activity ribbon (92vw) overlaps the bottom-left
+     controls (play/pause + flow slider). Move the controls to the top-left so
+     the flow slider never covers the activity text. */
+  @media(max-width:768px){ .controls{ bottom:auto; top:64px; left:12px; } }
 </style>
 </head>
 <body>
