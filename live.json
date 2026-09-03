@@ -1,5 +1,5 @@
 {
-  "generated": 1788452498246,
+  "generated": 1788452542959,
   "status": "running",
   "stats": {
     "products": 68,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788452523721,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3941MB free)",
+      "t": 1788452523718,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
+      "t": 1788452522519,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
       "t": 1788452339815,
       "type": "event"
@@ -1568,27 +1586,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
       "t": 1788448377947,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788452523721,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "EXTREME elevation: build for CreditWise is stuck (attempt 2) — trying a stronger model",
-      "t": 1788448266263,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3941MB free)",
+      "t": 1788452523718,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> CreditWise",
-      "t": 1788448266262,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788448256289,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
+      "t": 1788452522519,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,7 +1819,6 @@
     "priority": "AI-powered chatbot platform for small businesses (as proposed by Ideator Guinan)"
   },
   "throughput": [
-    3,
     0,
     0,
     1,
@@ -1817,33 +1835,34 @@
     0,
     1,
     1,
-    16,
-    8,
-    1,
+    10,
+    14,
     0,
     1,
-    0,
-    0,
     1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.08,
-      0.09
+      0.34,
+      0.16,
+      0.11
     ],
-    "ramPct": 51,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -2519,10 +2538,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 79
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -2537,9 +2556,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
         "vramPct": 93
       }
     ],
