@@ -73,7 +73,7 @@ function renderHUD() {
     am.innerHTML = '';
     (data.agents || []).forEach((a) => {
       const chip = document.createElement('span');
-      chip.className = 'chip' + (a.active ? ' live' : '');
+      chip.className = 'chip' + (a.active ? ' live' : '') + (a.enabled === false ? ' dim' : '');
       chip.innerHTML = (a.avatar ? `<img src="${a.avatar}" alt="">` : `<i style="background:${a.color};color:${a.color}"></i>`) + esc(a.name);
       chip.onclick = (e) => showInfo(agentInfo(a), e.clientX + 12, e.clientY + 12);
       am.appendChild(chip);
