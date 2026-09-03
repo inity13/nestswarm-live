@@ -1,5 +1,5 @@
 {
-  "generated": 1788435262244,
+  "generated": 1788435307132,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
+      "t": 1788435286158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
+      "t": 1788435263318,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1788435262053,
       "type": "event"
@@ -1466,21 +1478,21 @@
       "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788434531856,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788434531442,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 0 -> {}",
-      "t": 1788434530029,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
+      "t": 1788435286158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
+      "t": 1788435263318,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
@@ -1528,60 +1540,6 @@
       "text": "registrar: Millo step 7 -> {\"action\":\"clickText\",\"text\":\"Privacy policy\"}",
       "t": 1788435217189,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 9 -> {}",
-      "t": 1788435214764,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 6 -> {}",
-      "t": 1788435212889,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"click\",\"selector\":\"button[type=\\\"submit\\\"]\"}",
-      "t": 1788435209242,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788435202120,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia repeated action — forcing submit instead",
-      "t": 1788435202120,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
-      "t": 1788435200875,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788435196460,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 6 -> {\"action\":\"type\",\"selector\":\"input#email\",\"value\":\"[email]\"}",
-      "t": 1788435194835,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "bounty scout: 3 eligible task card(s) (Algora)",
-      "t": 1788435188278,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1793,32 +1751,32 @@
     0,
     0,
     0,
-    0,
-    12,
+    11,
     4,
-    4,
+    5,
     2,
     1,
-    56,
-    67,
-    31,
-    2,
+    41,
+    52,
+    60,
+    3,
     1,
     3,
     2,
-    15,
-    7,
+    14,
+    8,
     0,
     1,
-    10,
-    20,
-    30
+    9,
+    9,
+    40,
+    6
   ],
   "load": {
     "loadavg": [
-      1.02,
-      0.93,
-      1.09
+      1.36,
+      1.08,
+      1.14
     ],
     "ramPct": 70,
     "cpus": 12
@@ -1862,7 +1820,7 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
@@ -2476,7 +2434,7 @@
           "coding",
           "gpu"
         ],
-        "busy": true
+        "busy": false
       },
       {
         "alias": "GPU-Node-2",
@@ -2494,7 +2452,7 @@
         "busy": false
       }
     ],
-    "selfHostedInferencePct": 92,
+    "selfHostedInferencePct": 93,
     "jobsProcessed": 7
   }
 }
