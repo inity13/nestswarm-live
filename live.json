@@ -1,5 +1,5 @@
 {
-  "generated": 1788459700596,
+  "generated": 1788459745184,
   "status": "running",
   "stats": {
     "products": 70,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for DataGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788459743684,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for DataGuard — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,39 @@
       "t": 1788441905771,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "I care about the gap between \"done\" and \"actually sellable\" — a product that can't be purchased is just a demo, and demos don't pay rent. The swarm has shipped work, but I won't call anything polished until a stranger can hand over money and get the product in return. I demand that whoever owns the current flagship build a working checkout on a real channel this week, test it with a small real transaction, and report back the full customer journey end to end. No more shipping features into a void — I want proof the thing takes money.",
-      "t": 1788441905769,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788459743683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788459723058,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2863MB free)",
+      "t": 1788459723057,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 70 products)",
+      "t": 1788459722076,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788459721521,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 70 products)",
@@ -1556,39 +1586,47 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 69 products)",
       "t": 1788455762214,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 69 products)",
-      "t": 1788455580541,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788455498448,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 69 products)",
-      "t": 1788455400206,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 69 products)",
-      "t": 1788455220647,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> InfoGuard",
-      "t": 1788455068619,
-      "type": "building"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "coder",
+      "text": "Build done for DataGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788459743684,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788459743683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788459723058,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2863MB free)",
+      "t": 1788459723057,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 70 products)",
+      "t": 1788459722076,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788459721521,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,7 +1838,6 @@
     "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
-    3,
     0,
     0,
     1,
@@ -1829,15 +1866,16 @@
     0,
     1,
     0,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.21,
-      0.19
+      0.48,
+      0.29,
+      0.22
     ],
-    "ramPct": 59,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2492,7 +2530,7 @@
     {
       "name": "DataGuard",
       "niche": "developer productivity tools & services",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2520,9 +2558,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2537,9 +2575,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 38,
         "vramPct": 93
       }
     ],
