@@ -1,5 +1,5 @@
 {
-  "generated": 1788439475835,
+  "generated": 1788439506217,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1222,48 +1222,6 @@
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1788439435564,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 4 products listed — polishing, marketing & distributing",
-      "t": 1788439415692,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788439415563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 4 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788439415547,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788439415529,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788439415528,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 63 products from disk (next port 5314)",
-      "t": 1788439415246,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788439415228,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1497,16 +1455,16 @@
     0,
     0,
     0,
-    7,
+    12,
     10
   ],
   "load": {
     "loadavg": [
-      3.6,
-      2.1,
-      1.31
+      3.65,
+      2.26,
+      1.38
     ],
-    "ramPct": 48,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -1525,6 +1483,26 @@
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2116,7 +2094,7 @@
         "busy": true
       }
     ],
-    "selfHostedInferencePct": 100,
+    "selfHostedInferencePct": 92,
     "jobsProcessed": 12
   }
 }
