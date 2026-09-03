@@ -1,5 +1,5 @@
 {
-  "generated": 1788436155024,
+  "generated": 1788436200064,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788436196641,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788436177724,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
+      "t": 1788436173471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788436154221,
       "type": "event"
@@ -1129,6 +1147,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788436196641,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788436177724,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
+      "t": 1788436173471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788436154221,
       "type": "event"
@@ -1138,18 +1174,6 @@
       "text": "distributor: 5/5 channels reachable",
       "t": 1788436135622,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/30 channels active · 0 new discovered",
-      "t": 1788436107392,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788436105830,
-      "type": "trending"
     }
   ],
   "capabilities": [
@@ -1377,18 +1401,18 @@
     0,
     0,
     0,
-    8,
-    7,
-    11,
-    13
+    12,
+    12,
+    12,
+    10
   ],
   "load": {
     "loadavg": [
-      1.91,
-      1.44,
-      1.13
+      1.79,
+      1.48,
+      1.16
     ],
-    "ramPct": 54,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1446,6 +1470,10 @@
         "tier": "local"
       },
       "launcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "automation_operator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -2019,7 +2047,7 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
     "selfHostedInferencePct": 100,
