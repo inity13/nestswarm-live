@@ -353,17 +353,19 @@ function pick(x, y) {
   return null;
 }
 const c = $('#c');
+function inspectAt(cx, cy) {
+  const p = pick(cx, cy);
+  if (p) { hideInfo(); showInfo(p.type === 'agent' ? agentInfo(p) : nodeInfo(p), cx + 12, cy + 12); }
+  else hideInfo();
+}
 c.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
-c.addEventListener('click', (e) => {
-  const p = pick(e.clientX, e.clientY);
-  if (p) {
-    hideInfo();
-    const html = p.type === 'agent' ? agentInfo(p) : nodeInfo(p);
-    showInfo(html, e.clientX + 12, e.clientY + 12);
-  } else {
-    hideInfo();
-  }
-});
+c.addEventListener('click', (e) => inspectAt(e.clientX, e.clientY));
+// Touch: tap a head/node to inspect on mobile.
+c.addEventListener('touchstart', (e) => { const t = e.touches[0]; if (t) { mouse.x = t.clientX; mouse.y = t.clientY; } }, { passive: true });
+c.addEventListener('touchend', (e) => {
+  const t = e.changedTouches[0]; if (!t) return;
+  if (pick(t.clientX, t.clientY)) { e.preventDefault(); inspectAt(t.clientX, t.clientY); }
+}, { passive: false });
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space') { e.preventDefault(); togglePause(); }
   if (e.code === 'Escape') hideInfo();
