@@ -1,8 +1,8 @@
 {
-  "generated": 1788428765983,
+  "generated": 1788428945962,
   "status": "running",
   "stats": {
-    "products": 61,
+    "products": 62,
     "listed": 3,
     "agents": 15,
     "avgScore": "4.7"
@@ -1001,6 +1001,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> TaskMaster Pro",
+      "t": 1788428805309,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> TaskMaster Pro",
+      "t": 1788428795310,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788428793659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: TaskMaster Pro [freelancers & solopreneurs]",
+      "t": 1788428788008,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: freelancers & solopreneurs",
+      "t": 1788428785306,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788428785306,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788428775298,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788428611943,
       "type": "event"
@@ -1436,36 +1478,6 @@
       "text": "keyhunter: groq step 0 -> {\"action\":\"fail\",\"reason\":\"Unable to locate navigation link for Groq console.\"}",
       "t": 1788428072783,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788428045338,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
-      "t": 1788428003518,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788427996870,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/30 channels active · 0 new discovered",
-      "t": 1788427996483,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (pollinations, gemini) · 1 zen free models",
-      "t": 1788427926927,
-      "type": "scout"
     }
   ],
   "recent": [],
@@ -1675,9 +1687,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     14,
     8,
@@ -1693,13 +1702,16 @@
     0,
     1,
     0,
+    0,
+    9,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.52,
-      1.22
+      0.19,
+      0.36,
+      1.03
     ],
     "ramPct": 50,
     "cpus": 12
@@ -1707,7 +1719,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -2312,22 +2324,10 @@
   ],
   "building": [
     {
-      "name": "Primary",
-      "niche": "parenting & family organizers",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "ClipRoute",
-      "niche": "events, community & memberships",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "TaskMaster Pro",
+      "niche": "freelancers & solopreneurs",
+      "stage": "build",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2372,6 +2372,6 @@
       }
     ],
     "selfHostedInferencePct": 100,
-    "jobsProcessed": 0
+    "jobsProcessed": 1
   }
 }
