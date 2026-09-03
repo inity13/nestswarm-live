@@ -1,5 +1,5 @@
 {
-  "generated": 1788448221413,
+  "generated": 1788448266410,
   "status": "running",
   "stats": {
     "products": 66,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for CreditWise — 2 files, working node app. Handing off to test.",
+      "t": 1788448253974,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for CreditWise — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,39 @@
       "t": 1788440341760,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "As Guinan, Ideato, I believe we should focus on building a single flagship product that exceeds all expectations in quality and innovation. The swarm’s real strength lies in its ability to deliver exceptional value, so let’s concentrate our efforts on that singular goal. The team must do better at clearly defining the vision for this flagship product and ensuring every aspect of it is thoroughly planned and executed. Let’s establish a clear roadmap and timeline that everyone understands and commits to.",
-      "t": 1788440341758,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for CreditWise is stuck (attempt 2) — trying a stronger model",
+      "t": 1788448266263,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CreditWise",
+      "t": 1788448266262,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788448256289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CreditWise",
+      "t": 1788448256263,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788448253974,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
@@ -1556,39 +1586,46 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
       "t": 1788442976881,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
-      "t": 1788442799437,
+      "text": "EXTREME elevation: build for CreditWise is stuck (attempt 2) — trying a stronger model",
+      "t": 1788448266263,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> DebtMaster",
-      "t": 1788442694515,
+      "text": "stage 'build' -> CreditWise",
+      "t": 1788448266262,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788442685226,
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788448256289,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'test' -> DebtMaster",
-      "t": 1788442674514,
+      "text": "stage 'test' -> CreditWise",
+      "t": 1788448256263,
       "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for CreditWise — 2 files, working node app. Handing off to test.",
+      "t": 1788448253974,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
-      "t": 1788442670932,
+      "t": 1788448253974,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
@@ -1804,10 +1841,9 @@
   },
   "throughput": [
     0,
-    0,
-    7,
+    2,
     12,
-    4,
+    9,
     1,
     0,
     0,
@@ -1832,13 +1868,14 @@
     1,
     0,
     0,
-    1
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.14,
-      0.14
+      0.1,
+      0.12,
+      0.13
     ],
     "ramPct": 53,
     "cpus": 12
@@ -2525,8 +2562,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 85
+        "utilPct": 28,
+        "vramPct": 86
       },
       {
         "alias": "GPU-Node-2",
@@ -2541,13 +2578,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 5,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 96,
-    "jobsProcessed": 22
+    "jobsProcessed": 23
   }
 }
