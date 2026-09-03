@@ -1,5 +1,5 @@
 {
-  "generated": 1788445025576,
+  "generated": 1788445070508,
   "status": "running",
   "stats": {
     "products": 65,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for BotMate — 2 files, working node app. Handing off to test.",
+      "t": 1788445064858,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: BotMate — AI & automation utilities. Let's see if it's worth building.",
@@ -1097,16 +1104,21 @@
       "t": 1788440341726,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "We’ve been chasing quantity, but the swarm’s real strength is in shipping one damn good product that earns money, not just another listing. The goal isn’t to build a catalog — it’s to build a revenue engine. I propose we lock down a single flagship product, finish it, and get it selling before we touch anything new. You must do better: stop listing products in the vault without first defining a clear path to payment. Every idea needs a checkout plan — no more ideas that exist only as concepts. Pick one, ship it, and verify it works. We’re not building an empire — we’re building revenue. …",
-      "t": 1788440341724,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> BotMate",
+      "t": 1788445065257,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788445064857,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 65 products)",
@@ -1574,25 +1586,26 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
       "t": 1788442077143,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Continue\"}",
-      "t": 1788442073815,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia needs email verification — reading inbox",
-      "t": 1788442061994,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 65 products)",
-      "t": 1788444958047,
+      "text": "stage 'test' -> BotMate",
+      "t": 1788445065257,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for BotMate — 2 files, working node app. Handing off to test.",
+      "t": 1788445064858,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788445064857,
       "type": "event"
     }
   ],
@@ -1806,8 +1819,8 @@
     0,
     1,
     0,
-    4,
-    5,
+    6,
+    3,
     0,
     0,
     1,
@@ -1818,27 +1831,27 @@
     0,
     1,
     0,
-    0,
-    2,
+    1,
     10,
-    2,
-    1,
+    3,
     0,
-    0,
-    1,
-    0,
-    1,
     1,
     0,
     0,
     1,
-    0
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.06,
-      0.15
+      0.02,
+      0.05,
+      0.14
     ],
     "ramPct": 55,
     "cpus": 12
@@ -2496,7 +2509,7 @@
     {
       "name": "BotMate",
       "niche": "AI & automation utilities",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2525,8 +2538,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
-        "vramPct": 80
+        "utilPct": 31,
+        "vramPct": 82
       },
       {
         "alias": "GPU-Node-2",
@@ -2541,9 +2554,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
         "vramPct": 93
       }
     ],
