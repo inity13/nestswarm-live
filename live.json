@@ -1,5 +1,5 @@
 {
-  "generated": 1788439551027,
+  "generated": 1788439596492,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788439595621,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 6 optimizations",
+      "t": 1788439565586,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 1 new discovered",
+      "t": 1788439553359,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue: queued Algora for account acquisition",
+      "t": 1788439553357,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788439551718,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788439473172,
       "type": "event"
@@ -1189,15 +1219,33 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
-      "t": 1788439473172,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788439595621,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 0 free providers live (none) · 0 zen free models",
-      "t": 1788439470659,
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 6 optimizations",
+      "t": 1788439565586,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 1 new discovered",
+      "t": 1788439553359,
       "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue: queued Algora for account acquisition",
+      "t": 1788439553357,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788439551718,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1429,18 +1477,18 @@
     0,
     0,
     0,
-    0,
-    8,
+    7,
     10,
-    8
+    8,
+    12
   ],
   "load": {
     "loadavg": [
-      4.61,
-      2.7,
-      1.58
+      2.91,
+      2.53,
+      1.57
     ],
-    "ramPct": 56,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1466,7 +1514,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1490,6 +1538,14 @@
         "tier": "local"
       },
       "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "launcher": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -1506,15 +1562,15 @@
     "active": 2,
     "byKind": {
       "crypto": {
-        "total": 2,
-        "active": 1
-      },
-      "card": {
         "total": 1,
         "active": 1
       },
+      "card": {
+        "total": 2,
+        "active": 1
+      },
       "donation": {
-        "total": 8,
+        "total": 7,
         "active": 0
       },
       "bounty": {
@@ -1538,7 +1594,7 @@
         "active": 0
       },
       "sponsorship": {
-        "total": 3,
+        "total": 4,
         "active": 0
       },
       "other": {
@@ -1685,13 +1741,13 @@
       },
       {
         "name": "Millo",
-        "kind": "donation",
+        "kind": "grant",
         "active": false,
         "captcha": false
       },
       {
         "name": "Ramp",
-        "kind": "crypto",
+        "kind": "card",
         "active": false,
         "captcha": false
       },
@@ -1727,7 +1783,7 @@
       },
       {
         "name": "C3.ai",
-        "kind": "grant",
+        "kind": "sponsorship",
         "active": false,
         "captcha": false
       }
@@ -2079,10 +2135,10 @@
           "python",
           "vision"
         ],
-        "busy": true
+        "busy": false
       }
     ],
-    "selfHostedInferencePct": 95,
+    "selfHostedInferencePct": 96,
     "jobsProcessed": 12
   }
 }
