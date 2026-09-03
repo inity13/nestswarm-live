@@ -1,5 +1,5 @@
 {
-  "generated": 1788451687558,
+  "generated": 1788451732569,
   "status": "running",
   "stats": {
     "products": 67,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for CreditGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788451718455,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for CreditGuard — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,33 @@
       "t": 1788440341773,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "Quantity is a false economy, and I agree we must stop churning products. But focus without direction is aimless—our single flagship must be a tested, revenue-ready offering, not just polished. The swarm’s next act: choose one product, lock in its launch plan, and ship it to real users with working checkout. No more half-finished ideas.",
-      "t": 1788440341770,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788451727458,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788451727449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CreditGuard",
+      "t": 1788451727420,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788451718455,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
@@ -1562,43 +1586,44 @@
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1788447145292,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
-      "t": 1788447117480,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788447095611,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
-      "t": 1788446938859,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
-      "t": 1788446757429,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788451678742,
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788451727458,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 67 products)",
-      "t": 1788451619899,
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788451727449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CreditGuard",
+      "t": 1788451727420,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for CreditGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788451718455,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788451718455,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788451678742,
       "type": "event"
     }
   ],
@@ -1816,8 +1841,8 @@
     0,
     1,
     0,
-    0,
-    7,
+    3,
+    4,
     0,
     0,
     1,
@@ -1829,8 +1854,8 @@
     3,
     0,
     0,
-    1,
-    6,
+    5,
+    2,
     0,
     1,
     0,
@@ -1842,13 +1867,13 @@
     0,
     0,
     1,
-    1
+    6
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.11,
-      0.12
+      0.06,
+      0.09,
+      0.11
     ],
     "ramPct": 51,
     "cpus": 12
@@ -2503,10 +2528,28 @@
   ],
   "building": [
     {
-      "name": "CreditGuard",
+      "name": "TaskMaster Pro",
+      "niche": "freelancers & solopreneurs",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Primary",
+      "niche": "parenting & family organizers",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
       "niche": "local services & gig economy",
-      "stage": "build",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "ClipRoute",
+      "niche": "events, community & memberships",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2534,7 +2577,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 27,
+        "utilPct": 28,
         "vramPct": 50
       },
       {
@@ -2550,8 +2593,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 93
       }
