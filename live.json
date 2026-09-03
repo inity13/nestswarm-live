@@ -1,5 +1,5 @@
 {
-  "generated": 1788434226769,
+  "generated": 1788434271789,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit 1): <3>WSL (84317) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788434267848,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788434259713,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788434251475,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788434202325,
       "type": "event"
@@ -1081,6 +1099,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit 1): <3>WSL (84317) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788434267848,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788434259713,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788434251475,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788434202325,
       "type": "event"
@@ -1090,30 +1126,6 @@
       "text": "scout: 1 free providers live (gemini) · 1 zen free models",
       "t": 1788434190136,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 62 products with flags, 0 with high-severity findings",
-      "t": 1788434181348,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788434166371,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788434161401,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788434156346,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1342,17 +1354,17 @@
     0,
     0,
     0,
-    0,
-    11,
+    7,
+    8,
     4
   ],
   "load": {
     "loadavg": [
-      2.94,
-      2.08,
-      1.48
+      2.07,
+      1.98,
+      1.47
     ],
-    "ramPct": 49,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1362,6 +1374,10 @@
         "tier": "local"
       },
       "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -1939,7 +1955,7 @@
           "coding",
           "gpu"
         ],
-        "busy": true
+        "busy": false
       },
       {
         "alias": "GPU-Node-2",
