@@ -1,5 +1,5 @@
 {
-  "generated": 1788441829495,
+  "generated": 1788441874943,
   "status": "running",
   "stats": {
     "products": 64,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1788441874076,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788441874076,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/37 channels active · 0 new discovered",
+      "t": 1788441840496,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
       "t": 1788441822937,
       "type": "trending"
@@ -1267,6 +1285,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1788441874076,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788441874076,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/37 channels active · 0 new discovered",
+      "t": 1788441840496,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
       "t": 1788441822937,
       "type": "trending"
@@ -1276,78 +1312,6 @@
       "text": "distributor: 5/5 channels reachable",
       "t": 1788441812213,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788441781212,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
-      "t": 1788441781212,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788441781211,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788441779809,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3917MB free)",
-      "t": 1788441779806,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788441765104,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: novitaai — queued for key hunter",
-      "t": 1788441765103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1788441765103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: coherefreetrial — queued for key hunter",
-      "t": 1788441765103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: aidungeonapi — queued for key hunter",
-      "t": 1788441765103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
-      "t": 1788441752984,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (groq) · 0 zen free models",
-      "t": 1788441749235,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1583,18 +1547,18 @@
     0,
     0,
     0,
-    0,
     8,
-    18,
-    26
+    9,
+    29,
+    17
   ],
   "load": {
     "loadavg": [
-      2.69,
-      2.09,
-      1.66
+      1.47,
+      1.84,
+      1.6
     ],
-    "ramPct": 63,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1628,23 +1592,23 @@
         "tier": "local"
       },
       "critic": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "polisher": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "conductor": {
         "model": "ling-3.0-flash-fin-free",
         "tier": "free"
       },
       "researcher": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -1699,7 +1663,7 @@
         "active": 1
       },
       "card": {
-        "total": 3,
+        "total": 1,
         "active": 1
       },
       "donation": {
@@ -1711,7 +1675,7 @@
         "active": 0
       },
       "marketplace": {
-        "total": 5,
+        "total": 7,
         "active": 0
       },
       "subscription": {
@@ -1874,7 +1838,7 @@
       },
       {
         "name": "Millo",
-        "kind": "card",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
@@ -1922,13 +1886,13 @@
       },
       {
         "name": "C3.ai Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
       {
         "name": "Paddle",
-        "kind": "card",
+        "kind": "subscription",
         "active": false,
         "captcha": true
       },
@@ -2277,10 +2241,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 7,
-        "vramPct": 81
+        "busy": true,
+        "warm": false,
+        "utilPct": 40,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2298,10 +2262,10 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 59
+        "vramPct": 2
       }
     ],
-    "selfHostedInferencePct": 83,
+    "selfHostedInferencePct": 85,
     "jobsProcessed": 15
   }
 }
