@@ -1,5 +1,5 @@
 {
-  "generated": 1788475092673,
+  "generated": 1788475137710,
   "status": "running",
   "stats": {
     "products": 77,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> DropPilot Pro",
+      "t": 1788475092882,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> DropPilot Pro",
       "t": 1788475072877,
       "type": "building"
@@ -1580,15 +1586,15 @@
       "text": "scout discovered key-gated free provider: qwenhuggingface — queued for key hunter",
       "t": 1788470552444,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788470548754,
-      "type": "launch"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> DropPilot Pro",
+      "t": 1788475092882,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> DropPilot Pro",
@@ -1619,49 +1625,6 @@
       "text": "stage 'idea'",
       "t": 1788475052889,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788475043018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788475043009,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PainPointPro",
-      "t": 1788475042875,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PainPointPro — 2 files, working node app. Handing off to test.",
-      "t": 1788475038724,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788475038724,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 76 products)",
-      "t": 1788475022870,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788475004531,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1877,42 +1840,42 @@
   "throughput": [
     0,
     1,
-    0,
-    6,
-    1,
-    0,
-    0,
-    1,
-    1,
-    0,
-    1,
-    0,
-    0,
-    5,
-    17,
-    2,
-    20,
     6,
     0,
     1,
     0,
     0,
-    1,
+    2,
     0,
     0,
     1,
-    0,
     0,
     2,
-    11
+    12,
+    10,
+    13,
+    11,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    11,
+    2
   ],
   "load": {
     "loadavg": [
-      0.17,
       0.19,
+      0.2,
       0.24
     ],
-    "ramPct": 74,
+    "ramPct": 76,
     "cpus": 12
   },
   "brain": {
@@ -2597,7 +2560,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
@@ -2613,13 +2576,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 23,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 53
+    "jobsProcessed": 54
   }
 }
