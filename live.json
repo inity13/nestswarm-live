@@ -1,5 +1,5 @@
 {
-  "generated": 1788455063716,
+  "generated": 1788455108739,
   "status": "running",
   "stats": {
     "products": 69,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> InfoGuard",
+      "t": 1788455068619,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> InfoGuard",
       "t": 1788455058619,
       "type": "building"
@@ -1580,15 +1586,15 @@
       "text": "stage 'test' -> CreditGuard",
       "t": 1788450166954,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788450159421,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> InfoGuard",
+      "t": 1788455068619,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> InfoGuard",
@@ -1631,12 +1637,6 @@
       "text": "stage 'idea'",
       "t": 1788455028625,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788455018603,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1850,21 +1850,20 @@
     "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
-    0,
     6,
     1,
     0,
-    8,
-    1,
+    4,
+    5,
     0,
-    0,
-    8,
-    0,
-    0,
-    1,
     0,
     3,
     5,
+    0,
+    1,
+    0,
+    1,
+    7,
     0,
     0,
     4,
@@ -1879,13 +1878,14 @@
     1,
     0,
     0,
-    9
+    4,
+    7
   ],
   "load": {
     "loadavg": [
-      0.27,
+      0.18,
       0.1,
-      0.08
+      0.09
     ],
     "ramPct": 54,
     "cpus": 12
@@ -2542,7 +2542,7 @@
     {
       "name": "InfoGuard",
       "niche": "local services & gig economy",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2571,7 +2571,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 79
       },
       {
@@ -2587,13 +2587,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 59
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 29
+    "jobsProcessed": 30
   }
 }
