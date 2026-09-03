@@ -1,5 +1,5 @@
 {
-  "generated": 1788465101942,
+  "generated": 1788465146168,
   "status": "running",
   "stats": {
     "products": 72,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788465124600,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3816MB free)",
+      "t": 1788465124599,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 72 products)",
+      "t": 1788465123948,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 72 products)",
       "t": 1788464962300,
       "type": "event"
@@ -1568,27 +1586,28 @@
       "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Technology\"}",
       "t": 1788463519960,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788465124600,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788463517042,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788463516420,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3816MB free)",
+      "t": 1788465124599,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 72 products)",
-      "t": 1788463501649,
+      "t": 1788465123948,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,27 +1819,26 @@
     "priority": "The highest-rated, simplest-to-ship item from the four listed that can be turned into a sellable product within 72 hours"
   },
   "throughput": [
-    28,
-    16,
-    18,
-    23,
+    21,
+    19,
     22,
-    25,
-    20,
+    16,
+    23,
+    28,
     43,
+    5,
     1,
-    3,
-    4,
-    0,
-    1,
-    0,
+    6,
     0,
     1,
     0,
     0,
-    2,
+    1,
+    0,
+    0,
+    1,
     7,
-    0,
+    1,
     1,
     0,
     0,
@@ -1829,15 +1847,16 @@
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.06,
-      0.21
+      0.17,
+      0.1,
+      0.22
     ],
-    "ramPct": 43,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2539,9 +2558,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
