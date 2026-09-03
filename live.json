@@ -1,5 +1,5 @@
 {
-  "generated": 1788452722935,
+  "generated": 1788452767960,
   "status": "running",
   "stats": {
     "products": 68,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Meeting actions executed: focus niche: highest-scoring catalog product as sole flagship; paused new builds (focus mode)",
+      "t": 1788452722962,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "security-officer",
       "text": "Security is paramount, ensuring every line of code meets the highest standards before release. The swarm's top priority should be to finalize and launch a single flagship product with robust security measures in place.",
@@ -1097,16 +1104,15 @@
       "t": 1788440901989,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Thank you all for your input. We're on a solid path now, focusing on building one flagship product that truly stands out. It's about quality over quantity, and it's crucial to get this right from the start. The most important thing we need to do next is nail down our target audience and create a compelling narrative that resonates with them deeply. Let’s lock into a single, beautifully crafted flagship that captures the essence of what makes us unique, and then let’s make sure every aspect—from marketing to design—is tailored to sell it to the right people.",
-      "t": 1788440901987,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "meeting actions taken: focus niche: highest-scoring catalog product as sole flagship; paused new builds (focus mode)",
+      "t": 1788452722962,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
@@ -1580,15 +1586,15 @@
       "text": "conductor created skill stripe-alternative-fallback",
       "t": 1788448905506,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-sandbox-checkout",
-      "t": 1788448905505,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "meeting actions taken: focus niche: highest-scoring catalog product as sole flagship; paused new builds (focus mode)",
+      "t": 1788452722962,
+      "type": "event"
+    },
     {
       "who": "security-officer",
       "text": "Security is paramount, ensuring every line of code meets the highest standards before release. The swarm's top priority should be to finalize and launch a single flagship product with robust security measures in place.",
@@ -2041,11 +2047,28 @@
     "receipts": 0
   },
   "meeting": {
-    "direction": "Focus on shipping one flagship product with working checkout and verified buyer intent, prioritizing revenue-ready over vanity metrics.",
-    "priority": "AI-powered chatbot platform for small businesses (as proposed by Ideator Guinan)"
+    "direction": "Focus the entire swarm on a single flagship product drawn from the existing catalog — ship it polished with a working checkout before building anything new. Reject the ideator's proposal to pivot to a brand-new AI email-inbox product, which violates launch discipline by starting fresh work while no flagship is revenue-ready.",
+    "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
     6,
+    18,
+    0,
+    1,
+    1,
+    0,
     0,
     1,
     0,
@@ -2053,34 +2076,17 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    10,
+    6,
+    11,
     14,
-    0,
-    1,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    6,
-    13,
     15,
-    14
+    5
   ],
   "load": {
     "loadavg": [
-      1.21,
-      0.55,
-      0.26
+      0.57,
+      0.47,
+      0.25
     ],
     "ramPct": 63,
     "cpus": 12
@@ -2124,8 +2130,8 @@
         "tier": "free"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "ling-3.0-flash-fin-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2766,7 +2772,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
@@ -2788,7 +2794,7 @@
         "vramPct": 59
       }
     ],
-    "selfHostedInferencePct": 97,
+    "selfHostedInferencePct": 96,
     "jobsProcessed": 28
   }
 }
