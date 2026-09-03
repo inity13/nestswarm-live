@@ -1,5 +1,5 @@
 {
-  "generated": 1788457899986,
+  "generated": 1788457944677,
   "status": "running",
   "stats": {
     "products": 70,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788457923397,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2876MB free)",
+      "t": 1788457923395,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 70 products)",
+      "t": 1788457921948,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (4 notes updated)",
       "t": 1788457899149,
       "type": "vault"
@@ -1568,27 +1586,27 @@
       "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788454108362,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> LedgerLens",
-      "t": 1788454108252,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788454101287,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788454069607,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788457923397,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2876MB free)",
+      "t": 1788457923395,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 70 products)",
+      "t": 1788457921948,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (4 notes updated)",
@@ -1807,44 +1825,44 @@
     "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
-    23,
+    2,
+    0,
+    1,
     0,
     0,
     1,
     0,
     0,
+    7,
+    6,
+    0,
     1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     6,
+    13,
     2,
-    5,
-    0,
     1,
     0,
     0,
     1,
     0,
     0,
-    1,
-    0,
-    0,
-    11,
-    10,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1
+    4
   ],
   "load": {
     "loadavg": [
-      0.36,
-      0.23,
-      0.19
+      0.76,
+      0.35,
+      0.23
     ],
-    "ramPct": 58,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2527,9 +2545,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
