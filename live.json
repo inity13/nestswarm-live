@@ -1,5 +1,5 @@
 {
-  "generated": 1788452587949,
+  "generated": 1788452632910,
   "status": "running",
   "stats": {
     "products": 68,
@@ -1619,24 +1619,6 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788452549502,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788452523721,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3941MB free)",
-      "t": 1788452523718,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
-      "t": 1788452522519,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1851,8 +1833,23 @@
   },
   "throughput": [
     0,
+    5,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     1,
     6,
+    14,
+    5,
+    1,
     0,
     1,
     0,
@@ -1862,32 +1859,17 @@
     0,
     1,
     0,
-    0,
-    1,
-    1,
-    6,
-    18,
-    0,
-    1,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    6,
-    11
+    3,
+    8,
+    18
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.17,
-      0.12
+      0.34,
+      0.22,
+      0.14
     ],
-    "ramPct": 51,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1913,7 +1895,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "scout": {
@@ -1937,7 +1919,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "distributor": {
@@ -1953,7 +1935,7 @@
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "preflight": {
@@ -1961,7 +1943,7 @@
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "demand_validator": {
@@ -1969,7 +1951,7 @@
         "tier": "local"
       },
       "security-officer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2571,7 +2553,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 1,
         "vramPct": 79
       },
       {
@@ -2589,8 +2571,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 93
+        "utilPct": 0,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 97,
