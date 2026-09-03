@@ -1,5 +1,5 @@
 {
-  "generated": 1788430151349,
+  "generated": 1788430166464,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788430162706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 2 zen free models",
+      "t": 1788430161084,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "security scan: 62 products with flags, 0 with high-severity findings",
       "t": 1788430151086,
       "type": "security"
@@ -1073,6 +1085,18 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788430162706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 2 zen free models",
+      "t": 1788430161084,
+      "type": "scout"
+    },
     {
       "who": "swarm",
       "text": "security scan: 62 products with flags, 0 with high-severity findings",
@@ -1369,14 +1393,14 @@
     0,
     0,
     0,
-    0,
-    15
+    8,
+    11
   ],
   "load": {
     "loadavg": [
-      0.76,
-      0.46,
-      0.52
+      1.1,
+      0.56,
+      0.55
     ],
     "ramPct": 38,
     "cpus": 12
@@ -1394,10 +1418,20 @@
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
       }
     },
     "free": [
-      "ling-3.0-flash-fin-free"
+      "nemotron-3.5-lightning-free",
+      "openai",
+      "gemini-flash-latest"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -1965,7 +1999,7 @@
           "python",
           "vision"
         ],
-        "busy": true
+        "busy": false
       }
     ],
     "selfHostedInferencePct": 100,
