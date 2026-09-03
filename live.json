@@ -1,5 +1,5 @@
 {
-  "generated": 1788456144122,
+  "generated": 1788456189109,
   "status": "running",
   "stats": {
     "products": 69,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788456145397,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3168MB free)",
+      "t": 1788456145396,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1788456136078,
       "type": "event"
@@ -1574,21 +1586,21 @@
       "text": "ideated: LedgerLens [small-business operations & accounting]",
       "t": 1788451763665,
       "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788451753253,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: small-business operations & accounting",
-      "t": 1788451753245,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788456145397,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3168MB free)",
+      "t": 1788456145396,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1898,7 +1910,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1908,8 +1919,8 @@
     1,
     0,
     0,
-    9,
-    2,
+    4,
+    7,
     0,
     1,
     0,
@@ -1926,15 +1937,16 @@
     1,
     0,
     0,
-    21
+    16,
+    7
   ],
   "load": {
     "loadavg": [
-      0.95,
+      0.62,
       0.31,
-      0.16
+      0.17
     ],
-    "ramPct": 58,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2617,9 +2629,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 7,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
