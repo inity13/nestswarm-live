@@ -1,5 +1,5 @@
 {
-  "generated": 1788461500901,
+  "generated": 1788461545573,
   "status": "running",
   "stats": {
     "products": 71,
@@ -1110,6 +1110,24 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 71 products)",
+      "t": 1788461524014,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788461523146,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2647MB free)",
+      "t": 1788461523145,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 71 products)",
       "t": 1788461343098,
       "type": "event"
     },
@@ -1568,27 +1586,28 @@
       "text": "EXTREME elevation: build for InfoGuard is stuck (attempt 2) — trying a stronger model",
       "t": 1788456639113,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'build' -> InfoGuard",
-      "t": 1788456639111,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788456629212,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 71 products)",
+      "t": 1788461524014,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'test' -> InfoGuard",
-      "t": 1788456629116,
-      "type": "building"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788461523146,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2647MB free)",
+      "t": 1788461523145,
+      "type": "bench"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,8 +1819,7 @@
     "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
-    11,
-    5,
+    10,
     0,
     1,
     0,
@@ -1809,35 +1827,36 @@
     1,
     0,
     0,
-    2,
-    0,
-    0,
     1,
-    3,
-    3,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
     0,
     1,
     0,
     6,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.18,
-      0.18
+      0.64,
+      0.34,
+      0.23
     ],
-    "ramPct": 58,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2520,9 +2539,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 19
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
