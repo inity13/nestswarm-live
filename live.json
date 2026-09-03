@@ -1,5 +1,5 @@
 {
-  "generated": 1788431578022,
+  "generated": 1788431607533,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788431604376,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (gemini) · 2 zen free models",
+      "t": 1788431596980,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite data push: upload live.json failed 409",
+      "t": 1788431594181,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788431592227,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788431577220,
       "type": "event"
@@ -1073,6 +1097,30 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788431604376,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (gemini) · 2 zen free models",
+      "t": 1788431596980,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite data push: upload live.json failed 409",
+      "t": 1788431594181,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788431592227,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1373,16 +1421,16 @@
     0,
     0,
     0,
-    0,
-    14
+    9,
+    12
   ],
   "load": {
     "loadavg": [
-      1.62,
-      1.15,
-      1
+      2.34,
+      1.38,
+      1.08
     ],
-    "ramPct": 41,
+    "ramPct": 45,
     "cpus": 12
   },
   "brain": {
@@ -1393,6 +1441,18 @@
       },
       "architect": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -1951,7 +2011,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
@@ -1966,7 +2026,7 @@
           "python",
           "vision"
         ],
-        "busy": true
+        "busy": false
       }
     ],
     "selfHostedInferencePct": 100,
