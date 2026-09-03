@@ -1,5 +1,5 @@
 {
-  "generated": 1788426901813,
+  "generated": 1788427051426,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788427050562,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship Primary (score 4/8, pass 3/3)",
+      "t": 1788427041018,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Primary → primary.zip (25733 bytes)",
+      "t": 1788427037842,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for Primary: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788427037704,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788426927861,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 1 zen free models",
+      "t": 1788426927168,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 61 products with flags, 0 with high-severity findings",
+      "t": 1788426915618,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for architect (desktop script failed (exit 1): <3>WSL (53933) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788426911429,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788426900857,
       "type": "event"
@@ -1063,62 +1111,26 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788426900857,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788427050562,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788426896343,
+      "text": "launch-discipline: polishing flagship Primary (score 4/8, pass 3/3)",
+      "t": 1788427041018,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788426890627,
+      "text": "packaged Primary → primary.zip (25733 bytes)",
+      "t": 1788427037842,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: polishing flagship Primary (score 4/8, pass 2/3)",
-      "t": 1788426870675,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788426870621,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 3 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788426870600,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788426870575,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788426870574,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 61 products from disk (next port 5312)",
-      "t": 1788426866523,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788426866477,
+      "text": "polish syntax fail for Primary: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788427037704,
       "type": "event"
     }
   ],
@@ -1331,24 +1343,36 @@
     0,
     0,
     0,
+    7,
+    9,
     0,
-    0,
-    0,
-    11
+    6
   ],
   "load": {
     "loadavg": [
-      2.52,
-      2.54,
-      2
+      2.84,
+      2.6,
+      2.1
     ],
-    "ramPct": 32,
+    "ramPct": 42,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
