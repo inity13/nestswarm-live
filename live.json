@@ -1,5 +1,5 @@
 {
-  "generated": 1788430196537,
+  "generated": 1788430241499,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788430237537,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788430226868,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788430162706,
       "type": "event"
@@ -1087,6 +1099,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788430237537,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788430226868,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788430162706,
       "type": "event"
@@ -1096,30 +1120,6 @@
       "text": "scout: 2 free providers live (pollinations, gemini) · 2 zen free models",
       "t": 1788430161084,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 62 products with flags, 0 with high-severity findings",
-      "t": 1788430151086,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788430136102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788430131112,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788430126077,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1344,17 +1344,17 @@
     0,
     0,
     0,
-    0,
-    12,
-    12
+    8,
+    15,
+    7
   ],
   "load": {
     "loadavg": [
-      1.35,
-      0.66,
-      0.59
+      1.53,
+      0.82,
+      0.65
     ],
-    "ramPct": 36,
+    "ramPct": 44,
     "cpus": 12
   },
   "brain": {
@@ -1398,6 +1398,14 @@
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [
@@ -1416,11 +1424,11 @@
     "active": 2,
     "byKind": {
       "crypto": {
-        "total": 3,
+        "total": 2,
         "active": 1
       },
       "card": {
-        "total": 1,
+        "total": 2,
         "active": 1
       },
       "donation": {
@@ -1432,7 +1440,7 @@
         "active": 0
       },
       "marketplace": {
-        "total": 5,
+        "total": 6,
         "active": 0
       },
       "subscription": {
@@ -1456,7 +1464,7 @@
         "active": 0
       },
       "grant": {
-        "total": 2,
+        "total": 1,
         "active": 0
       }
     },
@@ -1595,7 +1603,7 @@
       },
       {
         "name": "Millo",
-        "kind": "crypto",
+        "kind": "card",
         "active": false,
         "captcha": false
       },
@@ -1631,13 +1639,13 @@
       },
       {
         "name": "Supercreator",
-        "kind": "sponsorship",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
       {
         "name": "C3.ai",
-        "kind": "grant",
+        "kind": "sponsorship",
         "active": false,
         "captcha": false
       }
