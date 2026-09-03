@@ -1,5 +1,5 @@
 {
-  "generated": 1788440026629,
+  "generated": 1788440056154,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788440052676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 0 free providers live (none) · 1 zen free models",
+      "t": 1788440051582,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 63 products with flags, 0 with high-severity findings",
+      "t": 1788440040811,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788440025838,
       "type": "event"
@@ -1175,6 +1193,24 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788440052676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 0 free providers live (none) · 1 zen free models",
+      "t": 1788440051582,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 63 products with flags, 0 with high-severity findings",
+      "t": 1788440040811,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1477,16 +1513,16 @@
     0,
     0,
     0,
-    0,
-    12
+    7,
+    13
   ],
   "load": {
     "loadavg": [
-      0.63,
-      1.35,
-      1.4
+      1.58,
+      1.51,
+      1.45
     ],
-    "ramPct": 43,
+    "ramPct": 42,
     "cpus": 12
   },
   "brain": {
@@ -1494,9 +1530,31 @@
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "ling-3.0-flash-fin-free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 4,
@@ -2066,7 +2124,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
