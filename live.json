@@ -1,5 +1,5 @@
 {
-  "generated": 1788467936735,
+  "generated": 1788467982054,
   "status": "running",
   "stats": {
     "products": 74,
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "The financial dashboard must be self-contained, runnable in the browser, and require zero ",
         "t": 1788467853953
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "The financial dashboard must be self-contained, runnable in the browser, and require no ex",
         "t": 1788467873257
@@ -1594,45 +1594,6 @@
       "text": "stage 'build' -> ConsentLedger",
       "t": 1788467901837,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 6 quality demands recorded for ConsentLedger",
-      "t": 1788467889168,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> ConsentLedger",
-      "t": 1788467881836,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: ConsentLedger — privacy, security & personal data. Let's see if it's worth building.",
-      "t": 1788467879655,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: ConsentLedger [privacy, security & personal data]",
-      "t": 1788467879655,
-      "type": "ideated"
-    },
-    {
-      "who": "Scotty",
-      "text": "The financial dashboard must be self-contained, runnable in the browser, and require no external dependencies or installations. It should work out of the box with a single HTML file, using only vanilla JavaScript and CSS—no build steps, no package managers, no server required. The most important quality requirement is that it must actually function as a real-time financial tracker with live data simulation, not just mockups or static displays.",
-      "t": 1788467873257,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "The financial dashboard must be self-contained, runnable in the browser, and require zero external dependencies or installations beyond a modern web browser. It must ship with a single HTML file that loads all logic and data locally, ensuring maximum portability and ease of use for non-technical users. The only requirement is that it works out-of-the-box—no setup, no config, no API keys. That’s the hard constraint. Everything else is optional.",
-      "t": 1788467853953,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1846,9 +1807,8 @@
     "priority": "The highest-rated, simplest-to-ship item from the four listed that can be turned into a sellable product within 72 hours"
   },
   "throughput": [
-    0,
-    6,
-    1,
+    4,
+    3,
     0,
     1,
     0,
@@ -1860,8 +1820,8 @@
     0,
     0,
     3,
-    6,
-    0,
+    4,
+    2,
     1,
     0,
     0,
@@ -1872,16 +1832,17 @@
     0,
     0,
     1,
-    1,
+    0,
     8,
     8,
-    7
+    8,
+    0
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.14,
-      0.1
+      0.11,
+      0.12,
+      0.09
     ],
     "ramPct": 52,
     "cpus": 12
@@ -2568,7 +2529,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
