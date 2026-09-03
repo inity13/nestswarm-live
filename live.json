@@ -1,5 +1,5 @@
 {
-  "generated": 1788440176861,
+  "generated": 1788440221415,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788440209956,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788440208791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788440198333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788440197300,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3202MB free)",
+      "t": 1788440197298,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788440190990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788440175884,
       "type": "event"
@@ -1231,6 +1267,42 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788440209956,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788440208791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788440198333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788440197300,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3202MB free)",
+      "t": 1788440197298,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788440190990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788440175884,
       "type": "event"
@@ -1246,12 +1318,6 @@
       "text": "revenue scout: 2/30 channels active · 0 new discovered",
       "t": 1788440139400,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788440105974,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1487,18 +1553,18 @@
     0,
     0,
     0,
-    7,
+    16,
     13,
-    10,
-    13
+    8,
+    18
   ],
   "load": {
     "loadavg": [
-      2.36,
-      1.79,
-      1.56
+      1.87,
+      1.74,
+      1.55
     ],
-    "ramPct": 53,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -1573,6 +1639,10 @@
       },
       "demand_validator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security-officer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2148,7 +2218,7 @@
           "coding",
           "gpu"
         ],
-        "busy": true
+        "busy": false
       },
       {
         "alias": "GPU-Node-2",
