@@ -1,5 +1,5 @@
 {
-  "generated": 1788428405994,
+  "generated": 1788428586058,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788428474013,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider pollinations; disabled provider mistral; disabled provider gemini",
+      "t": 1788428474013,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788428474012,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider pollinations",
+      "t": 1788428474011,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788428465178,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788428465136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788428432072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Beehiiv step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1788428331519,
       "type": "event"
@@ -1418,82 +1460,9 @@
       "text": "scout: 2 free providers live (pollinations, gemini) · 1 zen free models",
       "t": 1788427926927,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788427922325,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 61 products with flags, 0 with high-severity findings",
-      "t": 1788427910327,
-      "type": "security"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788428331519,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini already has a working key — skip",
-      "t": 1788428330331,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: obtained mistral key!",
-      "t": 1788428330330,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mistral step 1 -> {\"action\":\"clickText\",\"text\":\"https://console.mistral.ai\"}",
-      "t": 1788428329522,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 2 -> {}",
-      "t": 1788428327220,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mistral step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788428324822,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting mistral (https://console.mistral.ai)",
-      "t": 1788428323341,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788428321533,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788428319522,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Beehiiv (revenue)",
-      "t": 1788428316460,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1706,9 +1675,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     14,
     8,
@@ -1718,15 +1684,18 @@
     29,
     40,
     30,
+    0,
+    3,
+    5,
     0
   ],
   "load": {
     "loadavg": [
-      0.57,
-      1.41,
-      1.75
+      0.07,
+      0.81,
+      1.45
     ],
-    "ramPct": 49,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -1813,10 +1782,7 @@
       }
     },
     "free": [
-      "ling-3.0-flash-fin-free",
-      "openai",
-      "mistral-small-latest",
-      "gemini-flash-latest"
+      "ling-3.0-flash-fin-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
