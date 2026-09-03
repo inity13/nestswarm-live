@@ -1,5 +1,5 @@
 {
-  "generated": 1788436200064,
+  "generated": 1788436245242,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788436217031,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq repeated action — forcing submit instead",
+      "t": 1788436217031,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788436207848,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
       "t": 1788436196641,
       "type": "event"
@@ -1147,6 +1165,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788436217031,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq repeated action — forcing submit instead",
+      "t": 1788436217031,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788436207848,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
       "t": 1788436196641,
       "type": "event"
@@ -1162,18 +1198,6 @@
       "text": "keyhunter: groq step 0 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
       "t": 1788436173471,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788436154221,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788436135622,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1363,7 +1387,7 @@
     }
   ],
   "ledger": {
-    "total": 520,
+    "total": 522,
     "revenue": 0,
     "effects": 85,
     "boundary": 0,
@@ -1400,19 +1424,19 @@
     0,
     0,
     0,
-    0,
+    11,
     12,
-    12,
-    12,
-    10
+    10,
+    10,
+    12
   ],
   "load": {
     "loadavg": [
-      1.79,
-      1.48,
-      1.16
+      1.37,
+      1.43,
+      1.15
     ],
-    "ramPct": 56,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1474,6 +1498,22 @@
         "tier": "local"
       },
       "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security-officer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
