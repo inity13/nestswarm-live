@@ -1,5 +1,5 @@
 {
-  "generated": 1788466991558,
+  "generated": 1788467036548,
   "status": "running",
   "stats": {
     "products": 73,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for ClarityScore — 2 files, working node app. Handing off to test.",
+      "t": 1788467012736,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for ClarityScore — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,39 @@
       "t": 1788451763495,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
-      "t": 1788451753246,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ClarityScore",
+      "t": 1788467031689,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for ClarityScore is stuck (attempt 2) — trying a stronger model",
+      "t": 1788467031689,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788467021802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ClarityScore",
+      "t": 1788467021688,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788467012736,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1556,55 +1586,44 @@
       "text": "stage 'test' -> PulsePoint",
       "t": 1788463700996,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 1 -> {}",
-      "t": 1788463700552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788463697253,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini already has a working key — skip",
-      "t": 1788463695695,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
-      "t": 1788463695695,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788463693581,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788466924702,
-      "type": "bench"
+      "text": "stage 'build' -> ClarityScore",
+      "t": 1788467031689,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3748MB free)",
-      "t": 1788466924701,
-      "type": "bench"
+      "text": "EXTREME elevation: build for ClarityScore is stuck (attempt 2) — trying a stronger model",
+      "t": 1788467031689,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
-      "t": 1788466922897,
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788467021802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ClarityScore",
+      "t": 1788467021688,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for ClarityScore — 2 files, working node app. Handing off to test.",
+      "t": 1788467012736,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788467012736,
       "type": "event"
     }
   ],
@@ -1821,13 +1840,13 @@
   "throughput": [
     0,
     1,
+    5,
+    3,
+    1,
     0,
-    6,
+    0,
     2,
-    1,
     0,
-    1,
-    1,
     0,
     1,
     0,
@@ -1835,8 +1854,8 @@
     1,
     0,
     0,
-    1,
     6,
+    1,
     0,
     1,
     0,
@@ -1848,13 +1867,13 @@
     0,
     0,
     3,
-    0
+    6
   ],
   "load": {
     "loadavg": [
-      0.21,
-      0.17,
-      0.12
+      0.1,
+      0.14,
+      0.11
     ],
     "ramPct": 53,
     "cpus": 12
@@ -2557,13 +2576,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 98,
-    "jobsProcessed": 43
+    "jobsProcessed": 44
   }
 }
