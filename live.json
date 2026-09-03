@@ -1,5 +1,5 @@
 {
-  "generated": 1788471087242,
+  "generated": 1788471132170,
   "status": "running",
   "stats": {
     "products": 75,
@@ -1109,6 +1109,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788471104600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider groq",
+      "t": 1788471104600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788471104599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788471101527,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> InnovateFit",
+      "t": 1788471092338,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788471091419,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> InnovateFit",
       "t": 1788471082334,
       "type": "building"
@@ -1550,45 +1586,45 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
       "t": 1788467283230,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
-      "t": 1788467102919,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> ClarityScore",
-      "t": 1788467031689,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for ClarityScore is stuck (attempt 2) — trying a stronger model",
-      "t": 1788467031689,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788467021802,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> ClarityScore",
-      "t": 1788467021688,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788467012736,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788471104600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider groq",
+      "t": 1788471104600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788471104599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788471101527,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> InnovateFit",
+      "t": 1788471092338,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788471091419,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> InnovateFit",
@@ -1827,7 +1863,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     6,
     0,
@@ -1841,13 +1876,13 @@
     0,
     0,
     1,
-    1,
-    11,
-    2,
     0,
-    0,
-    16,
     8,
+    6,
+    0,
+    0,
+    13,
+    11,
     0,
     1,
     0,
@@ -1855,15 +1890,16 @@
     1,
     0,
     0,
-    4
+    1,
+    11
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.22,
-      0.18
+      0.14,
+      0.2,
+      0.17
     ],
-    "ramPct": 63,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1905,8 +1941,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1951,8 +1987,7 @@
     },
     "free": [
       "nemotron-3.5-lightning-free",
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2520,7 +2555,7 @@
     {
       "name": "InnovateFit",
       "niche": "personal finance, investing & budgeting",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2565,13 +2600,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 98,
-    "jobsProcessed": 48
+    "jobsProcessed": 49
   }
 }
