@@ -1,5 +1,5 @@
 {
-  "generated": 1788448986744,
+  "generated": 1788449031760,
   "status": "running",
   "stats": {
     "products": 66,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788448988012,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1788448949476,
       "type": "event"
@@ -1580,15 +1586,15 @@
       "text": "new build started (ideating) — niche: AI & automation utilities",
       "t": 1788444264994,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788444255026,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788448988012,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1618,72 +1624,6 @@
       "text": "scout: 1 free providers live (groq) · 1 zen free models",
       "t": 1788448947387,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
-      "t": 1788448921378,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788448920687,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3938MB free)",
-      "t": 1788448920686,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 5 operational improvement(s) recommended",
-      "t": 1788448905636,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1788448905582,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788448905506,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-sandbox-checkout",
-      "t": 1788448905506,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-alternative-fallback",
-      "t": 1788448905506,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-sandbox-checkout",
-      "t": 1788448905505,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-alternative-fallback",
-      "t": 1788448905505,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788448905504,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1900,8 +1840,8 @@
     0,
     1,
     0,
-    0,
-    7,
+    6,
+    1,
     0,
     0,
     1,
@@ -1924,15 +1864,15 @@
     0,
     1,
     0,
-    0,
-    12,
-    6
+    9,
+    9,
+    1
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.22,
-      0.14
+      0.15,
+      0.19,
+      0.13
     ],
     "ramPct": 53,
     "cpus": 12
@@ -2619,7 +2559,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 45,
+        "utilPct": 28,
         "vramPct": 50
       },
       {
@@ -2635,9 +2575,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
         "vramPct": 93
       }
     ],
