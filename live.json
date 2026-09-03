@@ -1,5 +1,5 @@
 {
-  "generated": 1788429486156,
+  "generated": 1788429666449,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> TaskMaster Pro",
+      "t": 1788429555577,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788429552402,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TaskMaster Pro",
+      "t": 1788429545576,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788429539543,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788429511937,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788429332493,
       "type": "event"
@@ -1448,36 +1478,6 @@
       "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"input#password-field\",\"value\":\"<YOUR_PASSWORD_HERE>\"}",
       "t": 1788428159954,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 4 -> {\"action\":\"type\",\"selector\":\"#identifier-field\",\"value\":\"[email]\"}",
-      "t": 1788428122630,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
-      "t": 1788428113447,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#identifier-field\",\"value\":\"[email]\"}",
-      "t": 1788428110878,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"#identifier-field\",\"value\":\"[email]\"}",
-      "t": 1788428096830,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788428093037,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1676,9 +1676,6 @@
     "priority": "A niche-based SaaS tool for small business owners managing remote teams, specifically targeting time-tracking and task coordination pain points."
   },
   "throughput": [
-    0,
-    0,
-    7,
     14,
     8,
     11,
@@ -1705,15 +1702,18 @@
     0,
     1,
     0,
+    0,
+    4,
+    3,
     0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.1,
-      0.59
+      0.19,
+      0.12,
+      0.51
     ],
-    "ramPct": 50,
+    "ramPct": 35,
     "cpus": 12
   },
   "brain": {
@@ -2372,6 +2372,6 @@
       }
     ],
     "selfHostedInferencePct": 100,
-    "jobsProcessed": 1
+    "jobsProcessed": 2
   }
 }
