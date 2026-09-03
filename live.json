@@ -1,8 +1,8 @@
 {
-  "generated": 1788444260238,
+  "generated": 1788444305280,
   "status": "running",
   "stats": {
-    "products": 64,
+    "products": 65,
     "listed": 4,
     "agents": 22,
     "avgScore": "4.7"
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: BotMate — AI & automation utilities. Let's see if it's worth building.",
+      "t": 1788444287337,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for DebtMaster — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,33 @@
       "t": 1788440341724,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Let's craft. Ensure we do not mention other agents. Provide 1I am Guinan, Ideator, calling in. The swarm has shown a remarkable ability to identify niche markets and create unique products. However, there is a danger in falling into a cycle of cloning existing ideas and competing on quantity rather than quality. Ideas are cheap; originality is the rare gem we must guard jealously. To ensure our direction is clear and our focus unwavering, I propose that we invest heavily in user research to identify a gap in the market that is genuine, untapped, and unmet by any existing product. We should …",
-      "t": 1788440341722,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> BotMate",
+      "t": 1788444294997,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: BotMate [AI & automation utilities]",
+      "t": 1788444287337,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788444264995,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: AI & automation utilities",
+      "t": 1788444264994,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
@@ -1562,33 +1586,40 @@
       "text": "keyhunter: nvidia step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788442045539,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 1 -> {}",
-      "t": 1788442044197,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "bounty scout: 6 eligible task card(s) (Algora)",
-      "t": 1788442036478,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788442027729,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 4 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788442026227,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> BotMate",
+      "t": 1788444294997,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: BotMate — AI & automation utilities. Let's see if it's worth building.",
+      "t": 1788444287337,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: BotMate [AI & automation utilities]",
+      "t": 1788444287337,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788444264995,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: AI & automation utilities",
+      "t": 1788444264994,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
@@ -1624,12 +1655,6 @@
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
       "t": 1788444237546,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788444196305,
       "type": "event"
     }
   ],
@@ -1841,23 +1866,10 @@
   },
   "throughput": [
     0,
-    0,
     1,
-    6,
-    0,
+    5,
     1,
-    0,
-    0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6,
-    3,
     0,
     0,
     1,
@@ -1868,14 +1880,27 @@
     0,
     1,
     0,
+    4,
+    5,
+    0,
+    0,
     1,
-    6
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    10
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.13,
-      0.27
+      0.28,
+      0.18,
+      0.28
     ],
     "ramPct": 54,
     "cpus": 12
@@ -1883,7 +1908,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2531,28 +2556,10 @@
   ],
   "building": [
     {
-      "name": "TaskMaster Pro",
-      "niche": "freelancers & solopreneurs",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "Primary",
-      "niche": "parenting & family organizers",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "ClipRoute",
-      "niche": "events, community & memberships",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "BotMate",
+      "niche": "AI & automation utilities",
+      "stage": "spec",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2580,8 +2587,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 50
+        "utilPct": 26,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2596,10 +2603,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 93
+        "busy": true,
+        "warm": false,
+        "utilPct": 11,
+        "vramPct": 66
       }
     ],
     "selfHostedInferencePct": 96,
