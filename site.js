@@ -193,13 +193,15 @@ function renderFleet(fleet) {
   if (!fleet || !fleet.total) { if (panel) panel.style.display = 'none'; return; }
   panel.style.display = '';
   const dot = (s) => s === 'online' ? '#37d39b' : (s === 'degraded' ? '#ffb454' : '#ff6b6b');
-  const nodes = (fleet.nodes || []).map((n) =>
-    `<div class="flnode">
+  const nodes = (fleet.nodes || []).map((n) => {
+    const state = n.busy ? '▶ working' : (n.warm ? '◉ warm' : 'idle');
+    return `<div class="flnode">
        <span class="fldot" style="background:${dot(n.status)}"></span>
        <b>${esc(n.alias)}</b>
-       <span class="flgpu">${esc(n.gpu || 'GPU')}${n.vramGb ? ' · ' + n.vramGb + 'GB' : ''}</span>
-       <span class="flstate">${n.busy ? '▶ working' : 'idle'}</span>
-     </div>`).join('');
+       <span class="flgpu">${esc(n.gpu || 'GPU')}${n.vramGb ? ' · ' + n.vramGb + 'GB' : ''}${n.vramPct != null ? ' · ' + n.vramPct + '% vram' : ''}</span>
+       <span class="flstate">${state}</span>
+     </div>`;
+  }).join('');
   el.innerHTML =
     `<div class="flhead">
        <span>${fleet.online}/${fleet.total} online</span>
@@ -268,7 +270,7 @@ function agentInfo(a) {
 function nodeInfo(n) {
   if (n.id === 'compute' && data.fleet) {
     const f = data.fleet;
-    const rows = (f.nodes || []).map(x => `· ${esc(x.alias)} — ${esc(x.gpu || 'GPU')}${x.vramGb ? ' ' + x.vramGb + 'GB' : ''} · ${x.status}${x.busy ? ' · working' : ''}`).join('<br>');
+    const rows = (f.nodes || []).map(x => `· ${esc(x.alias)} — ${esc(x.gpu || 'GPU')}${x.vramGb ? ' ' + x.vramGb + 'GB' : ''} · ${x.status}${x.busy ? ' · working' : (x.warm ? ' · warm' : '')}`).join('<br>');
     return `<div class="i-name" style="color:${n.color}">${n.icon} Compute Fleet</div>` +
       `<div class="i-role">${f.online}/${f.total} online · ${f.selfHostedInferencePct}% self-hosted inference</div>` +
       `<div class="i-body">${esc(NODE_DESC.compute)}</div>` +
