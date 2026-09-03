@@ -1,5 +1,5 @@
 {
-  "generated": 1788439506217,
+  "generated": 1788439551027,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1198,30 +1198,6 @@
       "text": "scout: 0 free providers live (none) · 0 zen free models",
       "t": 1788439470659,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 63 products with flags, 0 with high-severity findings",
-      "t": 1788439460574,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788439445593,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788439440594,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788439435564,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1454,17 +1430,17 @@
     0,
     0,
     0,
-    0,
-    12,
-    10
+    8,
+    10,
+    8
   ],
   "load": {
     "loadavg": [
-      3.65,
-      2.26,
-      1.38
+      4.61,
+      2.7,
+      1.58
     ],
-    "ramPct": 49,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1503,6 +1479,18 @@
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2094,7 +2082,7 @@
         "busy": true
       }
     ],
-    "selfHostedInferencePct": 92,
+    "selfHostedInferencePct": 95,
     "jobsProcessed": 12
   }
 }
