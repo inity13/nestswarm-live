@@ -1,5 +1,5 @@
 {
-  "generated": 1788447411173,
+  "generated": 1788447456579,
   "status": "running",
   "stats": {
     "products": 66,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for CreditWise — 2 files, working node app. Handing off to test.",
+      "t": 1788447443809,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for CreditWise.",
@@ -1097,16 +1104,33 @@
       "t": 1788440341758,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "I believe the swarm’s survival hinges on turning the flagship into a turnkey, checkout‑ready machine—every feature, from listing to payment, should be fully automated so the product can sell itself. The team must immediately build a complete, Stripe‑backed checkout flow for the chosen flagship and run end‑to‑end tests so it can generate revenue without manual intervention.",
-      "t": 1788440341755,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CreditWise",
+      "t": 1788447455998,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788447454570,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CreditWise",
+      "t": 1788447446000,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788447443808,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
@@ -1562,33 +1586,41 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788442301506,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CreditWise",
+      "t": 1788447455998,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788442294232,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788442294172,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788447454570,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
-      "t": 1788442256107,
-      "type": "event"
+      "text": "stage 'test' -> CreditWise",
+      "t": 1788447446000,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for CreditWise — 2 files, working node app. Handing off to test.",
+      "t": 1788447443809,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "ownerreq: emailed 5 new request(s) to [email]",
-      "t": 1788442176289,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788447443808,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1796,14 +1828,10 @@
     "priority": "AI-powered chatbot platform for small businesses (as proposed by Ideator Guinan)"
   },
   "throughput": [
-    0,
     1,
     0,
-    6,
-    1,
-    0,
-    0,
-    1,
+    4,
+    3,
     0,
     0,
     1,
@@ -1811,9 +1839,12 @@
     0,
     1,
     0,
+    0,
     1,
+    0,
+    0,
     10,
-    12,
+    13,
     0,
     1,
     0,
@@ -1825,15 +1856,16 @@
     0,
     0,
     1,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.25,
+      0.17,
+      0.26,
       0.18
     ],
-    "ramPct": 51,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2518,8 +2550,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 28,
-        "vramPct": 85
+        "utilPct": 31,
+        "vramPct": 87
       },
       {
         "alias": "GPU-Node-2",
@@ -2534,13 +2566,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 3,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 96,
-    "jobsProcessed": 21
+    "jobsProcessed": 22
   }
 }
