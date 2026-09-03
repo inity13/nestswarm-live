@@ -1,5 +1,5 @@
 {
-  "generated": 1788448941712,
+  "generated": 1788448986744,
   "status": "running",
   "stats": {
     "products": 66,
@@ -1109,6 +1109,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788448949476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
+      "t": 1788448949476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788448949475,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788448947388,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 1 zen free models",
+      "t": 1788448947387,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
       "t": 1788448921378,
       "type": "event"
@@ -1556,39 +1586,39 @@
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
       "t": 1788444255026,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788444255018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> DebtMaster",
-      "t": 1788444254990,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788444249479,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
-      "t": 1788444237546,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788444196305,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788448949476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
+      "t": 1788448949476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788448949475,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788448947388,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 1 zen free models",
+      "t": 1788448947387,
+      "type": "scout"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 66 products)",
@@ -1867,7 +1897,6 @@
     "priority": "AI-powered chatbot platform for small businesses (as proposed by Ideator Guinan)"
   },
   "throughput": [
-    1,
     0,
     1,
     0,
@@ -1896,15 +1925,16 @@
     1,
     0,
     0,
-    12
+    12,
+    6
   ],
   "load": {
     "loadavg": [
-      0.58,
-      0.24,
+      0.32,
+      0.22,
       0.14
     ],
-    "ramPct": 50,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2589,7 +2619,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 28,
+        "utilPct": 45,
         "vramPct": 50
       },
       {
