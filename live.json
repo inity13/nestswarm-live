@@ -1,5 +1,5 @@
 {
-  "generated": 1788430136897,
+  "generated": 1788430151349,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788430151086,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788430136102,
       "type": "event"
@@ -1067,6 +1073,12 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788430151086,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1358,21 +1370,29 @@
     0,
     0,
     0,
-    12
+    15
   ],
   "load": {
     "loadavg": [
-      0.3,
-      0.37,
-      0.49
+      0.76,
+      0.46,
+      0.52
     ],
-    "ramPct": 36,
+    "ramPct": 38,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -1930,7 +1950,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
