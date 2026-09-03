@@ -1,5 +1,5 @@
 {
-  "generated": 1788440804236,
+  "generated": 1788440849640,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788440848802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1788440848801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788440800036,
       "type": "launch"
@@ -1309,6 +1321,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788440848802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1788440848801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788440800036,
       "type": "launch"
@@ -1414,30 +1438,6 @@
       "text": "scout discovered key-gated free provider: metallama — queued for key hunter",
       "t": 1788440778612,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788440745216,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3927MB free)",
-      "t": 1788440745214,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
-      "t": 1788440730639,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (groq) · 0 zen free models",
-      "t": 1788440724323,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1673,18 +1673,18 @@
     0,
     0,
     0,
-    0,
-    8,
-    12,
-    35
+    7,
+    11,
+    15,
+    32
   ],
   "load": {
     "loadavg": [
-      3.2,
-      2.38,
-      1.96
+      1.59,
+      2.08,
+      1.87
     ],
-    "ramPct": 64,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1755,6 +1755,18 @@
       },
       "preflight": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security-officer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2390,7 +2402,7 @@
         "busy": true
       }
     ],
-    "selfHostedInferencePct": 92,
+    "selfHostedInferencePct": 94,
     "jobsProcessed": 12
   }
 }
