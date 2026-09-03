@@ -1,5 +1,5 @@
 {
-  "generated": 1788454298853,
+  "generated": 1788454343447,
   "status": "running",
   "stats": {
     "products": 68,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788454322209,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3716MB free)",
+      "t": 1788454322208,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
+      "t": 1788454320617,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (3 notes updated)",
       "t": 1788454298012,
       "type": "vault"
@@ -1568,27 +1586,27 @@
       "text": "stage 'build' -> CreditGuard",
       "t": 1788449136585,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> CreditGuard",
-      "t": 1788449126580,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: CreditGuard [local services & gig economy]",
-      "t": 1788449118305,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: local services & gig economy",
-      "t": 1788449106581,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788454322209,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3716MB free)",
+      "t": 1788454322208,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 68 products)",
+      "t": 1788454320617,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (3 notes updated)",
@@ -1807,10 +1825,9 @@
     "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
-    10,
+    13,
     15,
-    12,
-    14,
+    17,
     0,
     0,
     1,
@@ -1820,8 +1837,8 @@
     0,
     0,
     1,
-    4,
-    2,
+    0,
+    6,
     1,
     0,
     8,
@@ -1833,18 +1850,19 @@
     0,
     1,
     0,
-    7,
-    1,
+    3,
+    5,
     0,
-    1
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.14,
-      0.11
+      0.36,
+      0.21,
+      0.14
     ],
-    "ramPct": 46,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2545,9 +2563,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 17
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
