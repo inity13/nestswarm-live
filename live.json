@@ -1,5 +1,5 @@
 {
-  "generated": 1788438249787,
+  "generated": 1788438295143,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788438294385,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788438251186,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3444MB free)",
+      "t": 1788438251185,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "revenue scout: 2/30 channels active · 0 new discovered",
       "t": 1788438244902,
       "type": "scout"
@@ -1165,6 +1183,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788438294385,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788438251186,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3444MB free)",
+      "t": 1788438251185,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "revenue scout: 2/30 channels active · 0 new discovered",
       "t": 1788438244902,
       "type": "scout"
@@ -1192,54 +1228,6 @@
       "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
       "t": 1788438223194,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: replika — queued for key hunter",
-      "t": 1788438197019,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788438196553,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1788438196552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1788438196552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: deepseek — queued for key hunter",
-      "t": 1788438196552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
-      "t": 1788438196552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
-      "t": 1788438171779,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (gemini) · 1 zen free models",
-      "t": 1788438170104,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1471,18 +1459,18 @@
     0,
     0,
     0,
-    0,
     9,
-    9,
-    19
+    8,
+    14,
+    14
   ],
   "load": {
     "loadavg": [
-      3.29,
-      1.47,
-      0.86
+      1.91,
+      1.36,
+      0.85
     ],
-    "ramPct": 55,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -1525,6 +1513,22 @@
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2083,7 +2087,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
@@ -2098,7 +2102,7 @@
           "python",
           "vision"
         ],
-        "busy": true
+        "busy": false
       }
     ],
     "selfHostedInferencePct": 100,
