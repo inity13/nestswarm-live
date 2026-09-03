@@ -1,5 +1,5 @@
 {
-  "generated": 1788440502798,
+  "generated": 1788440533030,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: replicate — queued for key hunter",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1788440506676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788440501578,
       "type": "event"
@@ -1195,6 +1225,36 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: replicate — queued for key hunter",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788440506677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1788440506676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788440501578,
       "type": "event"
@@ -1233,48 +1293,6 @@
       "who": "swarm",
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1788440462525,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 4 products listed — polishing, marketing & distributing",
-      "t": 1788440442585,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788440442534,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 4 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788440442518,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788440442505,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788440442505,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 63 products from disk (next port 5314)",
-      "t": 1788440442239,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788440442221,
       "type": "event"
     }
   ],
@@ -1513,16 +1531,16 @@
     0,
     0,
     0,
-    7,
-    12
+    14,
+    16
   ],
   "load": {
     "loadavg": [
-      2.34,
-      2.03,
-      1.71
+      3.85,
+      2.42,
+      1.86
     ],
-    "ramPct": 52,
+    "ramPct": 44,
     "cpus": 12
   },
   "brain": {
@@ -1545,6 +1563,30 @@
       },
       "security": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "ling-3.0-flash-fin-free",
+        "tier": "free"
+      },
+      "critic": {
+        "model": "ling-3.0-flash-fin-free",
+        "tier": "free"
+      },
+      "polisher": {
+        "model": "ling-3.0-flash-fin-free",
+        "tier": "free"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2139,7 +2181,7 @@
         "busy": true
       }
     ],
-    "selfHostedInferencePct": 100,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 12
   }
 }
