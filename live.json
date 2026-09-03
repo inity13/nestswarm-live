@@ -1,5 +1,5 @@
 {
-  "generated": 1788467711684,
+  "generated": 1788467756786,
   "status": "running",
   "stats": {
     "products": 73,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788467753139,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
       "t": 1788467643699,
       "type": "event"
@@ -1580,19 +1586,13 @@
       "text": "EXTREME elevation: build for PulsePoint is stuck (attempt 2) — trying a stronger model",
       "t": 1788463711001,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PulsePoint",
-      "t": 1788463711000,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
-      "t": 1788467643699,
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788467753139,
       "type": "event"
     }
   ],
@@ -1811,8 +1811,8 @@
     1,
     0,
     0,
-    1,
     6,
+    1,
     0,
     1,
     0,
@@ -1824,10 +1824,7 @@
     0,
     0,
     3,
-    0,
     6,
-    1,
-    0,
     0,
     1,
     0,
@@ -1836,12 +1833,15 @@
     0,
     0,
     1,
-    0
+    0,
+    0,
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.08,
+      0.04,
+      0.07,
       0.08
     ],
     "ramPct": 52,
@@ -2545,9 +2545,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 42,
         "vramPct": 93
       }
     ],
