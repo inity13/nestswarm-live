@@ -1,5 +1,5 @@
 {
-  "generated": 1788436741003,
+  "generated": 1788436786014,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> CaseCraft",
+      "t": 1788436755662,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788436749954,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> CaseCraft",
       "t": 1788436735648,
       "type": "building"
@@ -1466,21 +1478,21 @@
       "text": "keyhunter: nvidia step 1 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
       "t": 1788436391314,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788436390800,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Beehiiv (revenue)",
-      "t": 1788436389327,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CaseCraft",
+      "t": 1788436755662,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788436749954,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> CaseCraft",
@@ -1726,28 +1738,28 @@
     0,
     0,
     0,
-    0,
-    12,
-    12,
+    11,
     12,
     10,
-    11,
-    42,
-    39,
+    10,
+    13,
+    32,
+    50,
     56,
-    72,
-    5,
-    16,
-    3,
-    4
+    60,
+    13,
+    17,
+    6,
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.66,
-      0.97,
-      1.02
+      1.12,
+      1.06,
+      1.05
     ],
-    "ramPct": 73,
+    "ramPct": 80,
     "cpus": 12
   },
   "brain": {
@@ -2360,7 +2372,7 @@
     {
       "name": "CaseCraft",
       "niche": "crypto, web3 & trading",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2402,10 +2414,10 @@
           "python",
           "vision"
         ],
-        "busy": true
+        "busy": false
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 9
+    "jobsProcessed": 10
   }
 }
