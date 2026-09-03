@@ -1,5 +1,5 @@
 {
-  "generated": 1788433931231,
+  "generated": 1788433976238,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788433964562,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788433897458,
       "type": "event"
@@ -1081,6 +1087,12 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788433964562,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
       "t": 1788433897458,
       "type": "event"
@@ -1090,30 +1102,6 @@
       "text": "scout: 0 free providers live (none) · 2 zen free models",
       "t": 1788433888882,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 62 products with flags, 0 with high-severity findings",
-      "t": 1788433885749,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788433870771,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788433865818,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788433860739,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1342,17 +1330,17 @@
     0,
     0,
     0,
-    0,
-    11,
-    4
+    7,
+    8,
+    2
   ],
   "load": {
     "loadavg": [
-      2.93,
-      1.63,
-      1.15
+      4.05,
+      2.05,
+      1.31
     ],
-    "ramPct": 47,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1362,6 +1350,10 @@
         "tier": "local"
       },
       "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
