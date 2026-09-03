@@ -1,5 +1,5 @@
 {
-  "generated": 1788474147631,
+  "generated": 1788474192582,
   "status": "running",
   "stats": {
     "products": 76,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788474151885,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2953MB free)",
+      "t": 1788474151883,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 76 products)",
       "t": 1788474122223,
       "type": "event"
@@ -1574,21 +1586,21 @@
       "text": "stage 'idea'",
       "t": 1788470282191,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788470272309,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788470272299,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788474151885,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2953MB free)",
+      "t": 1788474151883,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 76 products)",
@@ -1808,12 +1820,11 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     1,
-    15,
-    9,
+    14,
+    10,
     0,
     1,
     1,
@@ -1836,15 +1847,16 @@
     1,
     0,
     0,
-    7
+    5,
+    17
   ],
   "load": {
     "loadavg": [
-      0.76,
-      0.36,
-      0.24
+      1.12,
+      0.49,
+      0.29
     ],
-    "ramPct": 57,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1874,7 +1886,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -1894,7 +1906,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -1902,15 +1914,15 @@
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
-      },
-      "github_researcher": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
-      "automation_operator": {
+      "github_researcher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "preflight": {
@@ -1918,7 +1930,7 @@
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "demand_validator": {
@@ -1926,7 +1938,7 @@
         "tier": "local"
       },
       "security-officer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2527,10 +2539,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 17
+        "utilPct": 89,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2547,8 +2559,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 1
+        "utilPct": 82,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 98,
