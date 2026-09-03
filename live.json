@@ -1,5 +1,5 @@
 {
-  "generated": 1788441784515,
+  "generated": 1788441829495,
   "status": "running",
   "stats": {
     "products": 64,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1788441822937,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788441812213,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1788441781212,
       "type": "event"
@@ -1255,6 +1267,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1788441822937,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788441812213,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1788441781212,
       "type": "event"
@@ -1324,30 +1348,6 @@
       "text": "scout: 1 free providers live (groq) · 0 zen free models",
       "t": 1788441749235,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 63 products with flags, 0 with high-severity findings",
-      "t": 1788441739035,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788441724050,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788441719069,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788441714025,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1584,28 +1584,28 @@
     0,
     0,
     0,
-    0,
-    11,
-    24
+    8,
+    18,
+    26
   ],
   "load": {
     "loadavg": [
-      2.89,
-      2.03,
-      1.63
+      2.69,
+      2.09,
+      1.66
     ],
-    "ramPct": 43,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "ling-3.0-flash-fin-free",
+        "tier": "free"
       },
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1620,7 +1620,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1642,6 +1642,42 @@
       "researcher": {
         "model": "ling-3.0-flash-fin-free",
         "tier": "free"
+      },
+      "marketer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security-officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [
@@ -2241,10 +2277,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 14,
-        "vramPct": 51
+        "busy": false,
+        "warm": true,
+        "utilPct": 7,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2265,7 +2301,7 @@
         "vramPct": 59
       }
     ],
-    "selfHostedInferencePct": 71,
+    "selfHostedInferencePct": 83,
     "jobsProcessed": 15
   }
 }
