@@ -281,29 +281,33 @@ function brain() {
 
     agents.forEach((a,i)=>{
       const p = agentPos(i,t,lay);
-      hit.agents.push({ name:a.name, color:a.color, role:NAME_TO_ROLE[a.name]||'', x:p.x, y:p.y, active:a.active, last:a.last });
-      const role = NAME_TO_ROLE[a.name]||'coder';
+      const role = a.role || NAME_TO_ROLE[a.name] || '';
+      const dim = a.enabled === false;
+      hit.agents.push({ name:a.name, color:a.color, role, x:p.x, y:p.y, active:a.active, last:a.last, enabled:a.enabled });
       const hl = hover && hover.type==='agent' && hover.name===a.name;
       (ROLE_SERVICES[role]||['vault']).forEach(sid=>{
         const sp = nodePos(sid,t,lay);
-        ctx.strokeStyle=hexA(a.color, hl?0.4:0.12); ctx.lineWidth= hl?1.4:0.7; ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(sp.x,sp.y); ctx.stroke();
-        if(!paused && a.active && Math.random()>0.96) spawn(p,sp,a.color,1.2);
+        ctx.strokeStyle=hexA(a.color, hl?0.4:(dim?0.05:0.12)); ctx.lineWidth= hl?1.4:0.7; ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(sp.x,sp.y); ctx.stroke();
+        if(!paused && a.active && !dim && Math.random()>0.96) spawn(p,sp,a.color,1.2);
       });
-      const size = (a.active || hl) ? 18 : 13;
+      const size = ((a.active && !dim) || hl) ? 18 : 13;
       const img = avatarImgs[a.name];
       if (img && img.complete && img.naturalWidth) {
         ctx.save();
+        ctx.globalAlpha = dim ? 0.35 : 1;
         ctx.beginPath(); ctx.arc(p.x, p.y, size / 2, 0, Math.PI * 2); ctx.closePath(); ctx.clip();
         ctx.drawImage(img, p.x - size / 2, p.y - size / 2, size, size);
         ctx.restore();
-        ctx.strokeStyle = hexA(a.color, (a.active || hl) ? 0.9 : 0.4); ctx.lineWidth = (a.active || hl) ? 1.6 : 1;
+        ctx.strokeStyle = hexA(a.color, ((a.active && !dim) || hl) ? 0.9 : 0.4); ctx.lineWidth = ((a.active && !dim) || hl) ? 1.6 : 1;
         ctx.beginPath(); ctx.arc(p.x, p.y, size / 2, 0, Math.PI * 2); ctx.stroke();
       } else {
-        ctx.fillStyle = a.color; ctx.shadowBlur = (a.active || hl) ? 26 : 10; ctx.shadowColor = a.color;
+        ctx.fillStyle = a.color; ctx.globalAlpha = dim ? 0.35 : 1;
+        ctx.shadowBlur = ((a.active && !dim) || hl) ? 26 : 10; ctx.shadowColor = a.color;
         ctx.beginPath(); ctx.arc(p.x, p.y, size / 2, 0, Math.PI * 2); ctx.fill(); ctx.shadowBlur = 0;
+        ctx.globalAlpha = 1;
       }
-      if(a.active){ ctx.strokeStyle=hexA(a.color,0.6); ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc(p.x,p.y,size/2+4+Math.sin(now/280)*2,0,Math.PI*2); ctx.stroke(); if(!paused) burst(p); }
-      if(lay.fagent>0){ ctx.fillStyle=hexA(a.color, a.active?1:0.55); ctx.font='9px ui-monospace,Menlo,monospace'; ctx.textAlign='center'; ctx.fillText(a.name, p.x, p.y+(p.y>cy?16:-11)); }
+      if(a.active && !dim){ ctx.strokeStyle=hexA(a.color,0.6); ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc(p.x,p.y,size/2+4+Math.sin(now/280)*2,0,Math.PI*2); ctx.stroke(); if(!paused) burst(p); }
+      if(lay.fagent>0){ ctx.fillStyle=hexA(a.color, (a.active && !dim)?1:0.55); ctx.font='9px ui-monospace,Menlo,monospace'; ctx.textAlign='center'; ctx.fillText(a.name, p.x, p.y+(p.y>cy?16:-11)); }
 
       if (a.active && a.last && a.last.text) {
         const age = Date.now() - a.last.t;
