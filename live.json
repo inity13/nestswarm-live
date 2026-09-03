@@ -1,5 +1,5 @@
 {
-  "generated": 1788444170201,
+  "generated": 1788444215662,
   "status": "running",
   "stats": {
     "products": 64,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788444196305,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
       "t": 1788444059276,
       "type": "event"
@@ -1580,15 +1586,16 @@
       "text": "conductor created skill: chatgpt-account-signup",
       "t": 1788442017191,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788442017190,
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788444196305,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1796,7 +1803,6 @@
     "priority": "AI-powered chatbot platform for small businesses (as proposed by Ideator Guinan)"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1825,13 +1831,14 @@
     0,
     0,
     1,
-    0
+    0,
+    1
   ],
   "load": {
     "loadavg": [
       0.1,
       0.14,
-      0.29
+      0.28
     ],
     "ramPct": 54,
     "cpus": 12
@@ -2534,9 +2541,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 34,
         "vramPct": 93
       }
     ],
