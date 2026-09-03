@@ -1,5 +1,5 @@
 {
-  "generated": 1788439596492,
+  "generated": 1788439641118,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788439630736,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788439616502,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788439614620,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788439595621,
       "type": "event"
@@ -1217,6 +1235,24 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788439630736,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
+      "t": 1788439616502,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788439614620,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
@@ -1477,24 +1513,24 @@
     0,
     0,
     0,
-    7,
-    10,
-    8,
-    12
+    14,
+    9,
+    12,
+    14
   ],
   "load": {
     "loadavg": [
-      2.91,
-      2.53,
-      1.57
+      2.11,
+      2.37,
+      1.56
     ],
-    "ramPct": 57,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1546,6 +1582,26 @@
         "tier": "local"
       },
       "launcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security-officer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -2135,10 +2191,10 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
-    "selfHostedInferencePct": 96,
+    "selfHostedInferencePct": 97,
     "jobsProcessed": 12
   }
 }
