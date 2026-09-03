@@ -1,5 +1,5 @@
 {
-  "generated": 1788440131384,
+  "generated": 1788440176861,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788440175884,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1788440173531,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788440139400,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788440105974,
       "type": "launch"
@@ -1213,33 +1231,27 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788440175884,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1788440173531,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788440139400,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788440105974,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1788440074637,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: deepseek — queued for key hunter",
-      "t": 1788440074637,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
-      "t": 1788440052676,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 0 free providers live (none) · 1 zen free models",
-      "t": 1788440051582,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1475,18 +1487,18 @@
     0,
     0,
     0,
-    0,
     7,
-    16,
-    8
+    13,
+    10,
+    13
   ],
   "load": {
     "loadavg": [
-      2.13,
-      1.7,
-      1.52
+      2.36,
+      1.79,
+      1.56
     ],
-    "ramPct": 56,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -1536,7 +1548,31 @@
         "tier": "local"
       },
       "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -1554,11 +1590,11 @@
     "active": 2,
     "byKind": {
       "crypto": {
-        "total": 1,
+        "total": 2,
         "active": 1
       },
       "card": {
-        "total": 2,
+        "total": 1,
         "active": 1
       },
       "donation": {
@@ -1739,7 +1775,7 @@
       },
       {
         "name": "Ramp",
-        "kind": "card",
+        "kind": "crypto",
         "active": false,
         "captcha": false
       },
