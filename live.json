@@ -1,8 +1,8 @@
 {
-  "generated": 1788465371210,
+  "generated": 1788465416209,
   "status": "running",
   "stats": {
-    "products": 72,
+    "products": 73,
     "listed": 4,
     "agents": 22,
     "avgScore": "4.7"
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: ClarityScore — small-business operations & accounting. Let's see if it's worth building.",
+      "t": 1788465412049,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PulsePoint — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,33 @@
       "t": 1788451718455,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for CreditGuard — 2 files, working node app. Handing off to test.",
-      "t": 1788450939516,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "ideated: ClarityScore [small-business operations & accounting]",
+      "t": 1788465412049,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788465391290,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: small-business operations & accounting",
+      "t": 1788465391289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788465381276,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 72 products)",
@@ -1562,37 +1586,38 @@
       "text": "keyhunter: nvidia step 4 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788463567760,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack needs email verification — reading inbox",
-      "t": 1788463553081,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Technology\"}",
-      "t": 1788463553074,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788463552523,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788463532816,
-      "type": "event"
     }
   ],
   "recent": [
     {
+      "who": "ideator",
+      "text": "New concept on the table: ClarityScore — small-business operations & accounting. Let's see if it's worth building.",
+      "t": 1788465412049,
+      "system": false,
+      "type": "chat"
+    },
+    {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 72 products)",
-      "t": 1788465305644,
+      "text": "ideated: ClarityScore [small-business operations & accounting]",
+      "t": 1788465412049,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788465391290,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: small-business operations & accounting",
+      "t": 1788465391289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788465381276,
       "type": "event"
     }
   ],
@@ -1807,50 +1832,50 @@
     "priority": "The highest-rated, simplest-to-ship item from the four listed that can be turned into a sellable product within 72 hours"
   },
   "throughput": [
-    18,
-    22,
-    56,
-    5,
-    1,
-    6,
+    23,
+    34,
+    29,
     0,
+    7,
     0,
-    1,
     0,
     1,
     0,
     0,
     1,
-    4,
-    4,
+    0,
+    0,
+    2,
+    7,
     0,
     1,
     0,
-    1,
-    0,
-    0,
     0,
     1,
+    0,
+    0,
+    1,
+    0,
     0,
     3,
     0,
     0,
     1,
-    0
+    5
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.09,
+      0.25,
+      0.12,
       0.18
     ],
-    "ramPct": 52,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2498,28 +2523,10 @@
   ],
   "building": [
     {
-      "name": "TaskMaster Pro",
-      "niche": "freelancers & solopreneurs",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "Primary",
-      "niche": "parenting & family organizers",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "ClipRoute",
-      "niche": "events, community & memberships",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "ClarityScore",
+      "niche": "small-business operations & accounting",
+      "stage": "spec",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2545,10 +2552,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 50
+        "busy": true,
+        "warm": false,
+        "utilPct": 89,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2563,10 +2570,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 93
+        "busy": true,
+        "warm": false,
+        "utilPct": 84,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 98,
