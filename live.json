@@ -1,5 +1,5 @@
 {
-  "generated": 1788431976145,
+  "generated": 1788432005663,
   "status": "running",
   "stats": {
     "products": 62,
@@ -157,6 +157,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TaskMaster Pro — 2 files, working node app. Handing off to test.",
+      "t": 1788431975568,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TaskMaster Pro — 2 files, working node app. Handing off to test.",
@@ -989,16 +996,45 @@
       "t": 1788422665257,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "I agree the noise has to be silenced, but we must also ensure every line is safe and every dependency vetted before any money flows; we cannot shortcut on security or quality. The single thing we must do next is pick one of the 61 ideas, finish its build, run full internal validation, and publish a live checkout before anything else.",
-      "t": 1788422665256,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788432002359,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TaskMaster Pro",
+      "t": 1788431995380,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788431990350,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (gemini) · 2 zen free models",
+      "t": 1788431989074,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for TaskMaster Pro",
+      "t": 1788431987664,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TaskMaster Pro",
+      "t": 1788431985384,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
@@ -1085,6 +1121,49 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788432002359,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TaskMaster Pro",
+      "t": 1788431995380,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788431990350,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (gemini) · 2 zen free models",
+      "t": 1788431989074,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for TaskMaster Pro",
+      "t": 1788431987664,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TaskMaster Pro",
+      "t": 1788431985384,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TaskMaster Pro — 2 files, working node app. Handing off to test.",
+      "t": 1788431975568,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
@@ -1397,16 +1476,16 @@
     0,
     0,
     0,
-    0,
-    16
+    9,
+    14
   ],
   "load": {
     "loadavg": [
-      1.63,
-      2.17,
-      1.63
+      1.67,
+      2.14,
+      1.64
     ],
-    "ramPct": 40,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1418,6 +1497,10 @@
       "coder": {
         "model": "claude-sonnet-5",
         "tier": "extreme"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [
@@ -1948,7 +2031,7 @@
     {
       "name": "TaskMaster Pro",
       "niche": "freelancers & solopreneurs",
-      "stage": "test",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -1975,13 +2058,13 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "degraded",
+        "status": "offline",
         "can": [
           "browser",
           "coding",
@@ -1993,7 +2076,7 @@
         "busy": false
       }
     ],
-    "selfHostedInferencePct": 50,
+    "selfHostedInferencePct": 67,
     "jobsProcessed": 7
   }
 }
