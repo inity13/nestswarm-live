@@ -1,5 +1,5 @@
 {
-  "generated": 1788444305280,
+  "generated": 1788444350312,
   "status": "running",
   "stats": {
     "products": 65,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> BotMate",
+      "t": 1788444315011,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> BotMate",
       "t": 1788444294997,
       "type": "building"
@@ -1580,15 +1586,15 @@
       "text": "keyhunter: nvidia step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788442046988,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788442045539,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> BotMate",
+      "t": 1788444315011,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> BotMate",
@@ -1618,43 +1624,6 @@
       "who": "swarm",
       "text": "new build started (ideating) — niche: AI & automation utilities",
       "t": 1788444264994,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788444255026,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788444255018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> DebtMaster",
-      "t": 1788444254990,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for DebtMaster — 2 files, working node app. Handing off to test.",
-      "t": 1788444249479,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788444249479,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 64 products)",
-      "t": 1788444237546,
       "type": "event"
     }
   ],
@@ -1867,22 +1836,7 @@
   "throughput": [
     0,
     1,
-    5,
-    1,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    4,
-    5,
-    0,
+    6,
     0,
     1,
     0,
@@ -1893,14 +1847,29 @@
     1,
     0,
     0,
-    2,
-    10
+    1,
+    0,
+    6,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    10,
+    3
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.18,
-      0.28
+      0.19,
+      0.17,
+      0.27
     ],
     "ramPct": 54,
     "cpus": 12
@@ -1912,8 +1881,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2558,7 +2527,7 @@
     {
       "name": "BotMate",
       "niche": "AI & automation utilities",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2587,7 +2556,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
+        "utilPct": 27,
         "vramPct": 80
       },
       {
@@ -2603,13 +2572,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 66
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 96,
-    "jobsProcessed": 17
+    "jobsProcessed": 18
   }
 }
