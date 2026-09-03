@@ -475,5 +475,5 @@ $('#ribbon').addEventListener('click', () => {
 setInterval(() => { const el = $('#clock'); if (el) el.textContent = new Date().toLocaleTimeString(); }, 1000);
 
 load();
-setInterval(load, 30000);
+setInterval(load, 15000);
 brain();
