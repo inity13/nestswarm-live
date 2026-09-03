@@ -1,5 +1,5 @@
 {
-  "generated": 1788427896149,
+  "generated": 1788428047069,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788428045338,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
+      "t": 1788428003518,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788427996870,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788427996483,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 1 zen free models",
+      "t": 1788427926927,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788427922325,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 61 products with flags, 0 with high-severity findings",
+      "t": 1788427910327,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788427895344,
       "type": "event"
@@ -1063,63 +1105,27 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788427895344,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788428045338,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788427890359,
-      "type": "event"
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
+      "t": 1788428003518,
+      "type": "trending"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788427885317,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788427996870,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "focus mode: 3 products listed — polishing, marketing & distributing",
-      "t": 1788427865389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788427865324,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 3 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788427865310,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788427865297,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788427865296,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 61 products from disk (next port 5312)",
-      "t": 1788427864951,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788427864934,
-      "type": "event"
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788427996483,
+      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1331,22 +1337,99 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    10
+    7,
+    15,
+    7,
+    11
   ],
   "load": {
     "loadavg": [
-      2.02,
-      1.93,
-      1.98
+      1.68,
+      1.83,
+      1.93
     ],
-    "ramPct": 38,
+    "ramPct": 46,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security-officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      }
+    },
     "free": [
       "ling-3.0-flash-fin-free",
       "openai",
@@ -1363,7 +1446,7 @@
     "active": 2,
     "byKind": {
       "crypto": {
-        "total": 2,
+        "total": 3,
         "active": 1
       },
       "card": {
@@ -1383,7 +1466,7 @@
         "active": 0
       },
       "subscription": {
-        "total": 3,
+        "total": 2,
         "active": 0
       },
       "ads": {
@@ -1542,7 +1625,7 @@
       },
       {
         "name": "Millo",
-        "kind": "subscription",
+        "kind": "crypto",
         "active": false,
         "captcha": false
       },
@@ -1930,7 +2013,7 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
     "selfHostedInferencePct": 100,
