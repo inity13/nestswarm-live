@@ -1,5 +1,5 @@
 {
-  "generated": 1788433976238,
+  "generated": 1788434021513,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788434020751,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788433994284,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
+      "t": 1788433980233,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788433964562,
       "type": "launch"
@@ -1087,21 +1105,27 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788433964562,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
-      "t": 1788433897458,
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788434020751,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 0 free providers live (none) · 2 zen free models",
-      "t": 1788433888882,
-      "type": "scout"
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788433994284,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
+      "t": 1788433980233,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788433964562,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1329,18 +1353,18 @@
     0,
     0,
     0,
-    0,
     7,
     8,
-    2
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      4.05,
-      2.05,
-      1.31
+      3.14,
+      2.14,
+      1.38
     ],
-    "ramPct": 55,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -1354,6 +1378,10 @@
         "tier": "local"
       },
       "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -1930,7 +1958,7 @@
           "coding",
           "gpu"
         ],
-        "busy": true
+        "busy": false
       },
       {
         "alias": "GPU-Node-2",
