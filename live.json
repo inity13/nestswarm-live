@@ -1,5 +1,5 @@
 {
-  "generated": 1788416446688,
+  "generated": 1788416626585,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1788416556606,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788416495387,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (pollinations, gemini) · 0 zen free models",
+      "t": 1788416481292,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788416481292,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788416470631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788416291825,
       "type": "event"
@@ -1448,39 +1478,16 @@
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1788407489084,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788407470023,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788407289132,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788407110762,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788406928492,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
-      "t": 1788406749753,
+      "text": "conductor returned no valid plan",
+      "t": 1788416556606,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1656,9 +1663,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    0,
-    2,
     1,
     1,
     1,
@@ -1685,15 +1689,18 @@
     0,
     1,
     0,
+    0,
+    4,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.97,
-      0.39,
-      0.25
+      0.42,
+      0.62,
+      0.38
     ],
-    "ramPct": 40,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1776,7 +1783,9 @@
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free"
+      "nemotron-3.5-lightning-free",
+      "openai",
+      "gemini-flash-latest"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
