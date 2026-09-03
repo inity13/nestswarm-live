@@ -1,5 +1,5 @@
 {
-  "generated": 1788432035848,
+  "generated": 1788432080836,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788432070989,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TaskMaster Pro",
+      "t": 1788432055390,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TaskMaster Pro",
+      "t": 1788432052199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: modelscope — queued for key hunter",
       "t": 1788432010216,
       "type": "event"
@@ -1153,6 +1171,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788432070989,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TaskMaster Pro",
+      "t": 1788432055390,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TaskMaster Pro",
+      "t": 1788432052199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: modelscope — queued for key hunter",
       "t": 1788432010216,
       "type": "event"
@@ -1192,67 +1228,6 @@
       "text": "stage 'design' -> TaskMaster Pro",
       "t": 1788431995380,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 62 products with flags, 0 with high-severity findings",
-      "t": 1788431990350,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (gemini) · 2 zen free models",
-      "t": 1788431989074,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for TaskMaster Pro",
-      "t": 1788431987664,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> TaskMaster Pro",
-      "t": 1788431985384,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TaskMaster Pro — 2 files, working node app. Handing off to test.",
-      "t": 1788431975568,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788431975568,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788431975567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788431975371,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788431970383,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788431965348,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1481,17 +1456,17 @@
     0,
     0,
     0,
-    0,
-    16,
-    13
+    9,
+    20,
+    6
   ],
   "load": {
     "loadavg": [
-      3.04,
-      2.41,
-      1.75
+      2.89,
+      2.49,
+      1.8
     ],
-    "ramPct": 47,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -1509,6 +1484,18 @@
         "tier": "local"
       },
       "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -2041,7 +2028,7 @@
     {
       "name": "TaskMaster Pro",
       "niche": "freelancers & solopreneurs",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2086,7 +2073,7 @@
         "busy": false
       }
     ],
-    "selfHostedInferencePct": 75,
+    "selfHostedInferencePct": 86,
     "jobsProcessed": 7
   }
 }
