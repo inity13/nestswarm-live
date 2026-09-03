@@ -1,5 +1,5 @@
 {
-  "generated": 1788470547095,
+  "generated": 1788470592084,
   "status": "running",
   "stats": {
     "products": 75,
@@ -1109,6 +1109,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788470565798,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3269MB free)",
+      "t": 1788470565796,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 5 optimizations",
+      "t": 1788470553284,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: qwenhuggingface — queued for key hunter",
+      "t": 1788470552444,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788470548754,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "revenue scout: 2/37 channels active · 0 new discovered",
       "t": 1788470541818,
       "type": "scout"
@@ -1556,39 +1586,39 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
       "t": 1788466563504,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 73 products)",
-      "t": 1788466387637,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> ClarityScore",
-      "t": 1788466261427,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788466251567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> ClarityScore",
-      "t": 1788466241423,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788466233067,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788470565798,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3269MB free)",
+      "t": 1788470565796,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 5 optimizations",
+      "t": 1788470553284,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: qwenhuggingface — queued for key hunter",
+      "t": 1788470552444,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788470548754,
+      "type": "launch"
+    },
     {
       "who": "swarm",
       "text": "revenue scout: 2/37 channels active · 0 new discovered",
@@ -1660,12 +1690,6 @@
       "text": "conductor created skill: stripe-sandbox-checkout",
       "t": 1788470510656,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788470501614,
-      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1880,7 +1904,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1891,32 +1914,33 @@
     0,
     0,
     1,
+    4,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    8,
     6,
     0,
-    1,
     0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    11,
-    2,
-    0,
-    0,
-    16
+    13,
+    11
   ],
   "load": {
     "loadavg": [
-      0.69,
-      0.28,
-      0.15
+      0.73,
+      0.35,
+      0.18
     ],
-    "ramPct": 55,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1958,8 +1982,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1978,7 +2002,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2600,10 +2624,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 4,
-        "vramPct": 70
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -2618,10 +2642,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 93
+        "utilPct": 0,
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 98,
