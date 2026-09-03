@@ -1,5 +1,5 @@
 {
-  "generated": 1788430166464,
+  "generated": 1788430196537,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1120,54 +1120,6 @@
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1788430126077,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "resumed orphan build: TaskMaster Pro",
-      "t": 1788430106133,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> TaskMaster Pro",
-      "t": 1788430106133,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788430106077,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 3 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788430106063,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788430106048,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788430106048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 62 products from disk (next port 5313)",
-      "t": 1788430105809,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788430105790,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1393,16 +1345,16 @@
     0,
     0,
     0,
-    8,
-    11
+    12,
+    12
   ],
   "load": {
     "loadavg": [
-      1.1,
-      0.56,
-      0.55
+      1.35,
+      0.66,
+      0.59
     ],
-    "ramPct": 38,
+    "ramPct": 36,
     "cpus": 12
   },
   "brain": {
@@ -1425,6 +1377,26 @@
       },
       "security": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -1999,7 +1971,7 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
     "selfHostedInferencePct": 100,
