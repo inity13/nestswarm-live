@@ -1,5 +1,5 @@
 {
-  "generated": 1788430286541,
+  "generated": 1788430331618,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788430327561,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788430311633,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {}",
+      "t": 1788430289611,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite error: upload live.json failed 409",
+      "t": 1788430288231,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788430286101,
       "type": "event"
@@ -1111,6 +1135,30 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq step 2 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788430327561,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 1 -> {\"action\":\"type\",\"selector\":\"#email-input\",\"value\":\"[email]\"}",
+      "t": 1788430311633,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq step 0 -> {}",
+      "t": 1788430289611,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite error: upload live.json failed 409",
+      "t": 1788430288231,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: attempting groq (https://console.groq.com)",
       "t": 1788430286101,
       "type": "event"
@@ -1120,18 +1168,6 @@
       "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
       "t": 1788430260020,
       "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/30 channels active · 0 new discovered",
-      "t": 1788430237537,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788430226868,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1355,18 +1391,18 @@
     0,
     0,
     0,
-    8,
+    15,
     11,
-    7,
-    11
+    8,
+    14
   ],
   "load": {
     "loadavg": [
-      1.95,
-      1.02,
-      0.72
+      1.74,
+      1.1,
+      0.77
     ],
-    "ramPct": 46,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1428,6 +1464,22 @@
         "tier": "local"
       },
       "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security-officer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -2003,7 +2055,7 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
     "selfHostedInferencePct": 100,
