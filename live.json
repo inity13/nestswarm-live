@@ -1,5 +1,5 @@
 {
-  "generated": 1788440056154,
+  "generated": 1788440086300,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1788440074637,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: deepseek — queued for key hunter",
+      "t": 1788440074637,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788440052676,
       "type": "event"
@@ -1195,6 +1207,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1788440074637,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: deepseek — queued for key hunter",
+      "t": 1788440074637,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 63 products)",
       "t": 1788440052676,
       "type": "event"
@@ -1233,48 +1257,6 @@
       "who": "swarm",
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1788440015799,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 4 products listed — polishing, marketing & distributing",
-      "t": 1788439995859,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1788439995803,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 4 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1788439995792,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1788439995781,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 8 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1788439995780,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 63 products from disk (next port 5314)",
-      "t": 1788439995578,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1788439995563,
       "type": "event"
     }
   ],
@@ -1513,16 +1495,16 @@
     0,
     0,
     0,
-    7,
-    13
+    12,
+    15
   ],
   "load": {
     "loadavg": [
-      1.58,
-      1.51,
-      1.45
+      2.11,
+      1.64,
+      1.5
     ],
-    "ramPct": 42,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1548,6 +1530,26 @@
         "tier": "local"
       },
       "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
