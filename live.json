@@ -1,5 +1,5 @@
 {
-  "generated": 1788472302664,
+  "generated": 1788472347363,
   "status": "running",
   "stats": {
     "products": 75,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788472324914,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2871MB free)",
+      "t": 1788472324913,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 75 products)",
+      "t": 1788472322845,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 75 products)",
       "t": 1788472143535,
       "type": "event"
@@ -1568,27 +1586,28 @@
       "text": "stage 'build' -> ConsentLedger",
       "t": 1788467901837,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 6 quality demands recorded for ConsentLedger",
-      "t": 1788467889168,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> ConsentLedger",
-      "t": 1788467881836,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: ConsentLedger [privacy, security & personal data]",
-      "t": 1788467879655,
-      "type": "ideated"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788472324914,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2871MB free)",
+      "t": 1788472324913,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 75 products)",
+      "t": 1788472322845,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,17 +1819,16 @@
     "priority": "The highest-rated, simplest-to-ship item from the four listed that can be turned into a sellable product within 72 hours"
   },
   "throughput": [
-    20,
-    3,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     8,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     4,
+    8,
     0,
     1,
     0,
@@ -1822,22 +1840,23 @@
     0,
     0,
     1,
-    6,
-    0,
+    4,
+    2,
     1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.2,
-      0.18
+      0.33,
+      0.26,
+      0.2
     ],
-    "ramPct": 60,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2521,9 +2540,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 14,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
