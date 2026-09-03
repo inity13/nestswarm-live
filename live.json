@@ -1,5 +1,5 @@
 {
-  "generated": 1788432227091,
+  "generated": 1788432256606,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launcher: TaskMaster Pro already on GitHub (exactly-once)",
+      "t": 1788432256317,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788432254068,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788432241311,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 0 free providers live (none) · 2 zen free models",
+      "t": 1788432239034,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788432226316,
       "type": "event"
@@ -1063,6 +1087,30 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "launcher: TaskMaster Pro already on GitHub (exactly-once)",
+      "t": 1788432256317,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 62 products)",
+      "t": 1788432254068,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 62 products with flags, 0 with high-severity findings",
+      "t": 1788432241311,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 0 free providers live (none) · 2 zen free models",
+      "t": 1788432239034,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1788432226316,
       "type": "event"
@@ -1120,13 +1168,6 @@
       "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
       "t": 1788432196046,
       "type": "event"
-    },
-    {
-      "who": "publisher",
-      "text": "TaskMaster Pro is LISTED at $99 (score -). Time to get it in front of buyers.",
-      "t": 1788432165424,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1356,16 +1397,16 @@
     0,
     0,
     0,
-    0,
-    11
+    7,
+    9
   ],
   "load": {
     "loadavg": [
+      1.78,
       2.17,
-      2.28,
-      1.82
+      1.8
     ],
-    "ramPct": 41,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1373,11 +1414,14 @@
       "ideator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free",
-      "gemini-flash-latest"
+      "nemotron-3.5-lightning-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -1948,7 +1992,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
