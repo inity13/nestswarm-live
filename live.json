@@ -1,5 +1,5 @@
 {
-  "generated": 1788463256304,
+  "generated": 1788463301257,
   "status": "running",
   "stats": {
     "products": 72,
@@ -1109,6 +1109,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788463300338,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1788463300337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788463300337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 72 products with flags, 0 with high-severity findings",
+      "t": 1788463300276,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 72 products)",
       "t": 1788463142892,
       "type": "event"
@@ -1562,33 +1586,34 @@
       "text": "stage 'build' -> DataGuard",
       "t": 1788458999856,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for DataGuard is stuck (attempt 2) — trying a stronger model",
-      "t": 1788458999856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788458989878,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> DataGuard",
-      "t": 1788458989852,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788458985156,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788463300338,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1788463300337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788463300337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 72 products with flags, 0 with high-severity findings",
+      "t": 1788463300276,
+      "type": "security"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,7 +1825,6 @@
     "priority": "The single highest-scoring product currently in the catalog — identified by the researcher and validated by the demand_validator against real willingness-to-pay signals."
   },
   "throughput": [
-    0,
     3,
     0,
     0,
@@ -1809,10 +1833,10 @@
     0,
     1,
     0,
-    1,
-    22,
-    12,
     0,
+    9,
+    24,
+    2,
     1,
     0,
     0,
@@ -1829,15 +1853,16 @@
     0,
     0,
     1,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.18,
+      0.23,
       0.2,
       0.18
     ],
-    "ramPct": 61,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2519,8 +2544,8 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 9,
         "vramPct": 80
       },
@@ -2537,8 +2562,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 93
       }
