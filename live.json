@@ -1,8 +1,8 @@
 {
-  "generated": 1788475047650,
+  "generated": 1788475092673,
   "status": "running",
   "stats": {
-    "products": 76,
+    "products": 77,
     "listed": 4,
     "agents": 22,
     "avgScore": "4.7"
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: DropPilot Pro — e-commerce, dropshipping & reselling. Let's see if it's worth building.",
+      "t": 1788475064850,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PainPointPro — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,33 @@
       "t": 1788462111797,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
-      "t": 1788462101701,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> DropPilot Pro",
+      "t": 1788475072877,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: DropPilot Pro [e-commerce, dropshipping & reselling]",
+      "t": 1788475064849,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: e-commerce, dropshipping & reselling",
+      "t": 1788475052889,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788475052889,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
@@ -1562,33 +1586,40 @@
       "text": "distributor: 5/5 channels reachable",
       "t": 1788470548754,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/37 channels active · 0 new discovered",
-      "t": 1788470541818,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 75 products)",
-      "t": 1788470524230,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788470522617,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 3 zen free models",
-      "t": 1788470522616,
-      "type": "scout"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> DropPilot Pro",
+      "t": 1788475072877,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: DropPilot Pro — e-commerce, dropshipping & reselling. Let's see if it's worth building.",
+      "t": 1788475064850,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: DropPilot Pro [e-commerce, dropshipping & reselling]",
+      "t": 1788475064849,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: e-commerce, dropshipping & reselling",
+      "t": 1788475052889,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788475052889,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
@@ -1845,54 +1876,54 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     6,
     1,
     0,
     0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    5,
+    17,
     2,
+    20,
+    6,
+    0,
+    1,
     0,
     0,
     1,
     0,
     0,
-    7,
-    16,
-    3,
-    22,
+    1,
+    0,
+    0,
     2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7
+    11
   ],
   "load": {
     "loadavg": [
-      0.09,
+      0.17,
       0.19,
-      0.25
+      0.24
     ],
-    "ramPct": 72,
+    "ramPct": 74,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2535,28 +2566,10 @@
   ],
   "building": [
     {
-      "name": "TaskMaster Pro",
-      "niche": "freelancers & solopreneurs",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "Primary",
-      "niche": "parenting & family organizers",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "ClipRoute",
-      "niche": "events, community & memberships",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "DropPilot Pro",
+      "niche": "e-commerce, dropshipping & reselling",
+      "stage": "build",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2584,7 +2597,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 79
       },
       {
@@ -2600,9 +2613,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 6,
+        "busy": true,
+        "warm": false,
+        "utilPct": 23,
         "vramPct": 93
       }
     ],
