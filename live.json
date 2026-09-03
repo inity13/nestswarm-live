@@ -1,5 +1,5 @@
 {
-  "generated": 1788438204811,
+  "generated": 1788438249787,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788438244902,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788438243681,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788438236638,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788438223194,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788438223194,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: replika — queued for key hunter",
       "t": 1788438197019,
       "type": "event"
@@ -1135,6 +1165,36 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "revenue scout: 2/30 channels active · 0 new discovered",
+      "t": 1788438244902,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788438243681,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788438236638,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788438223194,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788438223194,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: replika — queued for key hunter",
       "t": 1788438197019,
       "type": "event"
@@ -1180,36 +1240,6 @@
       "text": "scout: 1 free providers live (gemini) · 1 zen free models",
       "t": 1788438170104,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 63 products with flags, 0 with high-severity findings",
-      "t": 1788438159336,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1788438144359,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788438144357,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1788438139367,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1788438134335,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1442,17 +1472,17 @@
     0,
     0,
     0,
-    0,
-    13,
-    12
+    9,
+    9,
+    19
   ],
   "load": {
     "loadavg": [
-      1.83,
-      0.95,
-      0.67
+      3.29,
+      1.47,
+      0.86
     ],
-    "ramPct": 43,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1467,6 +1497,34 @@
       },
       "scout": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -1489,11 +1547,11 @@
         "active": 1
       },
       "card": {
-        "total": 2,
+        "total": 1,
         "active": 1
       },
       "donation": {
-        "total": 7,
+        "total": 8,
         "active": 0
       },
       "bounty": {
@@ -1501,7 +1559,7 @@
         "active": 0
       },
       "marketplace": {
-        "total": 6,
+        "total": 5,
         "active": 0
       },
       "subscription": {
@@ -1525,7 +1583,7 @@
         "active": 0
       },
       "grant": {
-        "total": 1,
+        "total": 2,
         "active": 0
       }
     },
@@ -1664,7 +1722,7 @@
       },
       {
         "name": "Millo",
-        "kind": "card",
+        "kind": "donation",
         "active": false,
         "captcha": false
       },
@@ -1700,13 +1758,13 @@
       },
       {
         "name": "Supercreator",
-        "kind": "marketplace",
+        "kind": "sponsorship",
         "active": false,
         "captcha": false
       },
       {
         "name": "C3.ai",
-        "kind": "sponsorship",
+        "kind": "grant",
         "active": false,
         "captcha": false
       }
@@ -2025,7 +2083,7 @@
           "coding",
           "gpu"
         ],
-        "busy": true
+        "busy": false
       },
       {
         "alias": "GPU-Node-2",
