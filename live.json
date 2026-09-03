@@ -1,5 +1,5 @@
 {
-  "generated": 1788475903065,
+  "generated": 1788475947773,
   "status": "running",
   "stats": {
     "products": 77,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2868MB free)",
+      "t": 1788475927172,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788475927172,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 77 products)",
+      "t": 1788475921548,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> DropPilot Pro",
       "t": 1788475892965,
       "type": "building"
@@ -1568,27 +1586,27 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788471104599,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788471101527,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> InnovateFit",
-      "t": 1788471092338,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788471091419,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2868MB free)",
+      "t": 1788475927172,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788475927172,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 77 products)",
+      "t": 1788475921548,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'build' -> DropPilot Pro",
@@ -1832,10 +1850,9 @@
     "priority": ""
   },
   "throughput": [
-    11,
-    12,
-    10,
-    15,
+    16,
+    3,
+    22,
     2,
     0,
     1,
@@ -1847,29 +1864,30 @@
     1,
     0,
     0,
-    9,
+    7,
+    7,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     5,
-    0,
-    1,
-    1,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6
+    4
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.23,
-      0.23
+      0.68,
+      0.37,
+      0.27
     ],
-    "ramPct": 56,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2554,8 +2572,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 79
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
