@@ -1,5 +1,5 @@
 {
-  "generated": 1788435352171,
+  "generated": 1788435397531,
   "status": "running",
   "stats": {
     "products": 62,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — provider nemotron-3.5-lightning-free not found; disabled provider mistral; disabled provider gemini",
+      "t": 1788435361059,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788435361058,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider nemotron-3.5-lightning-free not found",
+      "t": 1788435361057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788435361057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (1 notes updated)",
       "t": 1788435336692,
       "type": "vault"
@@ -1454,33 +1478,33 @@
       "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788434536981,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 5 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788434535785,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788434534634,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788434533827,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter repeated action — forcing submit instead",
-      "t": 1788434533827,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — provider nemotron-3.5-lightning-free not found; disabled provider mistral; disabled provider gemini",
+      "t": 1788435361059,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788435361058,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider nemotron-3.5-lightning-free not found",
+      "t": 1788435361057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788435361057,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (1 notes updated)",
@@ -1491,18 +1515,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788435336673,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
-      "t": 1788435286158,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
-      "t": 1788435263318,
       "type": "event"
     }
   ],
@@ -1713,36 +1725,36 @@
     0,
     0,
     0,
-    0,
     7,
-    8,
-    4,
-    2,
-    2,
-    28,
-    58,
-    59,
-    11,
-    0,
-    4,
-    2,
-    0,
-    19,
+    7,
     3,
+    4,
+    1,
+    9,
+    77,
+    55,
+    14,
+    2,
+    4,
+    2,
+    0,
+    15,
+    7,
     0,
     1,
-    18,
+    12,
     35,
-    11,
-    2
+    14,
+    5,
+    16
   ],
   "load": {
     "loadavg": [
-      0.7,
-      0.94,
-      1.09
+      0.48,
+      0.84,
+      1.05
     ],
-    "ramPct": 70,
+    "ramPct": 73,
     "cpus": 12
   },
   "brain": {
@@ -1756,7 +1768,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "researcher": {
@@ -1764,7 +1776,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1772,8 +1784,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "chatgpt(free)",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "architect": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1792,15 +1804,15 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
-      },
-      "polisher": {
         "model": "nemotron-3.5-lightning-free",
         "tier": "free"
       },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2398,7 +2410,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false
+        "busy": true
       },
       {
         "alias": "GPU-Node-2",
@@ -2413,7 +2425,7 @@
           "python",
           "vision"
         ],
-        "busy": true
+        "busy": false
       }
     ],
     "selfHostedInferencePct": 93,
