@@ -1,5 +1,5 @@
 {
-  "generated": 1788401866109,
+  "generated": 1788402046058,
   "status": "running",
   "stats": {
     "products": 61,
@@ -1001,6 +1001,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788402045186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788402045185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 61 products with flags, 0 with high-severity findings",
+      "t": 1788402045181,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
+      "t": 1788401890837,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 61 products)",
       "t": 1788401710435,
       "type": "event"
@@ -1454,33 +1478,28 @@
       "text": "meeting actions taken: focus niche: The highest-conversion listed product validated against real buyer intent and trending tech signals; paused new builds (focus mode)",
       "t": 1788393321188,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "team meeting complete — direction: Launch ONE flagship product from the catalog with a working Stripe checkout to the Swarm Protector's first paying customer — stop all new product initiation immediately. · plan: focus_niche, archive_below, pause_builds",
-      "t": 1788393321187,
-      "type": "meeting"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: All free providers (nemotron-3.5-lightning-free, pollinations/openai, mistral/mistral-small-latest, gemini/gemini-flash-latest) are currently disabled. Nemotron-3.5-lightning-free hit a 429 rate limit; the other three have unknown failure reasons. No free AI provider is currently operational for the swarm. Please investigate: (1) root cause of each provider failure, (2) whether new free providers can be added, and (3) whether a fallback paid provider should be configured to prevent future outages.",
-      "t": 1788393318501,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: All free providers (nemotron-3.5-lightning-free, pollinations/openai, mistral/mistral-small-latest, gemini/gemini-flash-latest) are currently disabled. Nemotron-3.5-lightning-free hit a 429 rate limit; the other three have unknown failure reasons. No free AI provider is currently operational for the swarm. Please investigate: (1) root cause of each provider failure, (2) whether new free providers can be added, and (3) whether a fallback paid provider should be configured to prevent future outages.",
-      "t": 1788393318500,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider nemotron-3-ultra-free failed for demand_validator (cloud http 429: {\"type\":\"error\",\"error\":{\"type\":\"FreeUsageLimitError\",\"message\":\"Rate limit exceeded. Please try again later.\"},\"metadata\":{}})",
-      "t": 1788393309072,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788402045186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting groq (https://console.groq.com)",
+      "t": 1788402045185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 61 products with flags, 0 with high-severity findings",
+      "t": 1788402045181,
+      "type": "security"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1656,9 +1675,6 @@
     "priority": "The single listed product with the clearest path to a committed buyer and working checkout — validate willingness-to-pay before further development"
   },
   "throughput": [
-    1,
-    0,
-    0,
     2,
     0,
     0,
@@ -1685,15 +1701,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.09,
-      0.12
+      0,
+      0.04,
+      0.09
     ],
-    "ramPct": 34,
+    "ramPct": 35,
     "cpus": 12
   },
   "brain": {
