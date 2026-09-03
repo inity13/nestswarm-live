@@ -1,5 +1,5 @@
 {
-  "generated": 1788438339916,
+  "generated": 1788438384875,
   "status": "running",
   "stats": {
     "products": 63,
@@ -1001,6 +1001,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788438364624,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: no candidates found",
+      "t": 1788438355549,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq entering verification code from inbox",
+      "t": 1788438353734,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled free model ling-3.0-flash-fin-free",
       "t": 1788438331771,
       "type": "event"
@@ -1303,6 +1321,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788438364624,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: no candidates found",
+      "t": 1788438355549,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq entering verification code from inbox",
+      "t": 1788438353734,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled free model ling-3.0-flash-fin-free",
       "t": 1788438331771,
       "type": "event"
@@ -1420,24 +1456,6 @@
       "text": "keyhunter: groq step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788438297737,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting groq (https://console.groq.com)",
-      "t": 1788438294385,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788438251186,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3444MB free)",
-      "t": 1788438251185,
-      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1668,19 +1686,19 @@
     0,
     0,
     0,
-    0,
+    13,
+    12,
     15,
-    10,
-    18,
-    45
+    35,
+    20
   ],
   "load": {
     "loadavg": [
-      2.04,
-      1.46,
-      0.91
+      2.02,
+      1.56,
+      0.98
     ],
-    "ramPct": 55,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1710,11 +1728,11 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1726,7 +1744,7 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -2333,10 +2351,10 @@
           "python",
           "vision"
         ],
-        "busy": false
+        "busy": true
       }
     ],
-    "selfHostedInferencePct": 95,
+    "selfHostedInferencePct": 94,
     "jobsProcessed": 12
   }
 }
