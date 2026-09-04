@@ -1,5 +1,5 @@
 {
-  "generated": 1788527282900,
+  "generated": 1788527327930,
   "status": "running",
   "stats": {
     "products": 105,
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "HomeMaster has the potential to be a transformative tool for busy homeowners and renters b",
-        "t": 1788526540643
+        "text": "Usability must be at the forefront of HomeMaster's development. Without a seamless user ex",
+        "t": 1788527290706
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "Usability must be at the forefront of HomeMaster's development. Without a seamless user experience, we risk failing to capture the hearts and minds of our target audience.",
+      "t": 1788527290706,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Sentinel",
       "text": "HomeMaster requires a strong focus on usability and reliability before we can proceed with shipping. These issues could significantly impact user satisfaction and the product's success.",
@@ -1094,16 +1101,21 @@
       "t": 1788518236408,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "EchoBridge is an intriguing concept but requires significant engineering to deliver a reliable cross-device audio experience without over-complicating the stack. The team should focus on building a single-file Node.js app with straightforward UI sections for installation and setup. They must also implement robust testing and user feedback mechanisms to ensure a high-quality product before moving forward.",
-      "t": 1788518233435,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for TaskMate Pro is stuck (attempt 2) — trying a stronger model",
+      "t": 1788527284608,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TaskMate Pro",
+      "t": 1788527284607,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "coder output incomplete (attempt 2)",
@@ -1571,37 +1583,32 @@
       "text": "launch-discipline: HomeMaster plateaued at 5/8 after 0 polish passes — accepting best effort and proceeding to launch.",
       "t": 1788526404406,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: holding on flagship HomeMaster (finishing launch/distribution)",
-      "t": 1788526394347,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: HomeMaster plateaued at 5/8 after 0 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788526394342,
-      "type": "event"
     }
   ],
   "recent": [
     {
+      "who": "LaForge",
+      "text": "Usability must be at the forefront of HomeMaster's development. Without a seamless user experience, we risk failing to capture the hearts and minds of our target audience.",
+      "t": 1788527290706,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for TaskMate Pro is stuck (attempt 2) — trying a stronger model",
+      "t": 1788527284608,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TaskMate Pro",
+      "t": 1788527284607,
+      "type": "building"
+    },
+    {
       "who": "swarm",
       "text": "coder output incomplete (attempt 2)",
       "t": 1788527280713,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 105 products)",
-      "t": 1788527233348,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node nest-node-5090 set to online",
-      "t": 1788527212355,
       "type": "event"
     }
   ],
@@ -1817,43 +1824,43 @@
   },
   "throughput": [
     0,
-    0,
-    3,
-    12,
-    12,
-    3,
-    0,
-    0,
-    8,
-    0,
-    0,
-    8,
-    5,
     1,
-    24,
-    13,
+    12,
     14,
+    3,
+    0,
+    0,
+    8,
+    0,
+    0,
+    2,
+    9,
+    2,
+    22,
+    14,
+    13,
     17,
     16,
-    18,
-    7,
-    0,
-    0,
-    4,
-    2,
+    17,
     9,
     2,
     0,
     2,
-    3
+    2,
+    11,
+    1,
+    1,
+    1,
+    2,
+    5
   ],
   "load": {
     "loadavg": [
-      3.45,
-      3.13,
-      3.2
+      2.02,
+      2.81,
+      3.09
     ],
-    "ramPct": 50,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2563,8 +2570,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 92,
-        "vramPct": 90
+        "utilPct": 41,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2579,13 +2586,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 98
+        "vramPct": 8
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 86
+    "jobsProcessed": 87
   }
 }
