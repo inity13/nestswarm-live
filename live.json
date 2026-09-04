@@ -1,8 +1,8 @@
 {
-  "generated": 1788522826459,
+  "generated": 1788522871443,
   "status": "running",
   "stats": {
-    "products": 101,
+    "products": 102,
     "listed": 8,
     "agents": 22,
     "avgScore": "5.0"
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788522863169,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "coder",
       "text": "Build done for BooklyMate — 3 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788512183341,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "CodeMaster Prep is not ready to ship because it lacks a working prototype with proven adaptive learning. I concede that point. The single most important quality requirement for shipping is that the adaptive engine must actually adjust question difficulty in real time based on user performance—no simulated or static progression. That’s non-negotiable.",
-      "t": 1788512168253,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788522863177,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: study, learning & memory aids",
+      "t": 1788522863169,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788522861118,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788522861104,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3596MB free)",
@@ -1559,33 +1583,34 @@
       "text": "stage 'build' -> FamilySync",
       "t": 1788519562029,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788519555064,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 99 products)",
-      "t": 1788519489492,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 99 products)",
-      "t": 1788519310801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> FamilySync",
-      "t": 1788519251931,
-      "type": "building"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788522863177,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: study, learning & memory aids",
+      "t": 1788522863169,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788522861118,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788522861104,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1797,8 +1822,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    4,
-    1,
+    5,
     4,
     0,
     1,
@@ -1807,8 +1831,8 @@
     1,
     10,
     0,
-    4,
-    0,
+    2,
+    2,
     0,
     1,
     0,
@@ -1821,18 +1845,19 @@
     0,
     1,
     0,
-    5,
-    1,
+    0,
+    6,
     0,
     0,
     3,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.22,
-      0.62
+      0.57,
+      0.31,
+      0.63
     ],
     "ramPct": 54,
     "cpus": 12
@@ -2515,9 +2540,9 @@
   ],
   "building": [
     {
-      "name": "BooklyMate",
-      "niche": "recruiting, HR & team tools",
-      "stage": "build",
+      "name": "Untitled",
+      "niche": "study, learning & memory aids",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2546,8 +2571,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 47
+        "utilPct": 24,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2562,10 +2587,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 93
+        "busy": true,
+        "warm": false,
+        "utilPct": 36,
+        "vramPct": 94
       }
     ],
     "selfHostedInferencePct": 84,
