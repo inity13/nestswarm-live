@@ -1,5 +1,5 @@
 {
-  "generated": 1788534440022,
+  "generated": 1788534485018,
   "status": "running",
   "stats": {
     "products": 111,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788534460312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
       "t": 1788534435714,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 108 products)",
       "t": 1788531375670,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for ProTasker",
-      "t": 1788531298935,
-      "type": "launch"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788534460312,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
@@ -1804,22 +1810,22 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    3,
-    3,
+    0,
+    4,
     2,
-    1,
-    4,
-    1,
-    1,
-    1,
-    0,
-    14,
-    5,
-    1,
-    0,
-    0,
     4,
     0,
+    2,
+    0,
+    1,
+    13,
+    3,
+    3,
+    1,
+    0,
+    1,
+    3,
+    0,
     0,
     1,
     0,
@@ -1830,18 +1836,18 @@
     1,
     0,
     0,
-    1,
-    1,
+    2,
     0,
-    1
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      1.14,
-      0.8,
-      1.21
+      1.98,
+      1.01,
+      1.25
     ],
-    "ramPct": 49,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2542,7 +2548,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 2,
+    "online": 1,
     "total": 2,
     "nodes": [
       {
@@ -2557,14 +2563,14 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
+        "utilPct": 91,
         "vramPct": 90
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "online",
+        "status": "degraded",
         "can": [
           "browser",
           "coding",
@@ -2573,8 +2579,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 98
       }
