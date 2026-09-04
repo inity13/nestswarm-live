@@ -1,5 +1,5 @@
 {
-  "generated": 1788504731985,
+  "generated": 1788504777037,
   "status": "running",
   "stats": {
     "products": 91,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788504733529,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2956MB free)",
+      "t": 1788504733527,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 91 products)",
       "t": 1788504727280,
       "type": "event"
@@ -1574,15 +1586,21 @@
       "text": "launch-discipline: WorkflowGenius plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
       "t": 1788503146871,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for WorkflowGenius — skipping",
-      "t": 1788503146668,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788504733529,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2956MB free)",
+      "t": 1788504733527,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 91 products)",
@@ -1813,44 +1831,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    3,
-    3,
     1,
-    18,
-    21,
-    4,
-    3,
-    1,
-    5,
     2,
-    0,
-    2,
-    0,
-    0,
-    4,
-    3,
-    5,
-    12,
-    0,
-    17,
-    3,
-    35,
-    0,
-    6,
-    1,
-    0,
     10,
+    27,
+    6,
+    3,
+    1,
     5,
+    3,
     0,
+    1,
+    1,
+    0,
+    0,
+    4,
+    8,
+    5,
+    7,
+    12,
+    6,
+    37,
+    0,
+    3,
+    4,
+    0,
+    9,
+    4,
+    2,
+    2,
     3
   ],
   "load": {
     "loadavg": [
-      12.16,
-      12.96,
-      6.04
+      6,
+      11.21,
+      5.78
     ],
-    "ramPct": 61,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2534,10 +2552,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 11,
-        "vramPct": 46
+        "busy": true,
+        "warm": false,
+        "utilPct": 26,
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
