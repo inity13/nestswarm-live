@@ -1,5 +1,5 @@
 {
-  "generated": 1788547359892,
+  "generated": 1788547380045,
   "status": "running",
   "stats": {
     "products": 117,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PetVitals — 2 files, working node app. Handing off to test.",
+      "t": 1788547368212,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: PetVitals — small-business operations & accounting. Let's see if it's worth building.",
@@ -1094,16 +1101,21 @@
       "t": 1788536142078,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "TaskMaster Prime requires an immediate focus on polished user experience to stand out. The single most important quality requirement is a seamless, intuitive interface that enhances productivity and collaboration for remote teams.",
-      "t": 1788536139646,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetVitals",
+      "t": 1788547371738,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788547368212,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 117 products)",
@@ -1571,21 +1583,29 @@
       "text": "revenue scout: 2/42 channels active · 1 new discovered",
       "t": 1788542562697,
       "type": "scout"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetVitals",
+      "t": 1788547371738,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for PetVitals — 2 files, working node app. Handing off to test.",
+      "t": 1788547368212,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
-      "t": 1788542552232,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788542552232,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788547368212,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1799,24 +1819,24 @@
   "throughput": [
     1,
     0,
-    4,
+    6,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     3,
     0,
     0,
     1,
     0,
     0,
-    3,
+    10,
+    2,
     0,
+    2,
     0,
-    1,
-    0,
-    0,
-    7,
-    5,
-    0,
-    1,
-    1,
     0,
     1,
     0,
@@ -1826,13 +1846,13 @@
     0,
     1,
     0,
-    0
+    3
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.22,
-      0.22
+      0.27,
+      0.24,
+      0.23
     ],
     "ramPct": 65,
     "cpus": 12
@@ -1848,8 +1868,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2523,7 +2543,7 @@
     {
       "name": "PetVitals",
       "niche": "small-business operations & accounting",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2552,8 +2572,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 22,
-        "vramPct": 77
+        "utilPct": 42,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2570,7 +2590,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 7,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
