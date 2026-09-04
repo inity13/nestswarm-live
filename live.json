@@ -1,5 +1,5 @@
 {
-  "generated": 1788489449451,
+  "generated": 1788489494462,
   "status": "running",
   "stats": {
     "products": 82,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788489466062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
       "t": 1788489423364,
       "type": "event"
@@ -1580,15 +1586,15 @@
       "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
       "t": 1788485375791,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 118m ago) — skip",
-      "t": 1788485375790,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788489466062,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
@@ -1808,11 +1814,10 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
-    3,
-    4,
+    0,
+    7,
     0,
     0,
     1,
@@ -1836,11 +1841,12 @@
     1,
     0,
     0,
+    1,
     1
   ],
   "load": {
     "loadavg": [
-      0.07,
+      0.08,
       0.09,
       0.09
     ],
@@ -2528,7 +2534,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 50
       },
       {
@@ -2544,9 +2550,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
         "vramPct": 93
       }
     ],
