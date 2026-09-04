@@ -1,5 +1,5 @@
 {
-  "generated": 1788516659778,
+  "generated": 1788516704702,
   "status": "running",
   "stats": {
     "products": 96,
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for Eloquii.",
+      "t": 1788516679926,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (1) recorded for Eloquii: Identify a clear, unmet problem in the market that no existing solution can solve.",
+      "t": 1788516679923,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
@@ -1087,23 +1101,15 @@
       "t": 1788504209501,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "SmartDoc AI has significant potential but requires industry-validated templates and robust compliance features to stand out. The team must immediately develop and validate at least three industry-specific contract templates in jurisdictions where legal standards are well-defined, ensuring the product's credibility before moving forward.",
-      "t": 1788504207938,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "SmartDoc AI has potential but needs industry-validated templates and robust compliance features to stand out. Demand: Provide at least three verified industry-specific contract templates before proceeding with a product launch.",
-      "t": 1788504206251,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "council: 1 quality demands recorded for Eloquii",
+      "t": 1788516679925,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1577,15 +1583,15 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788515538316,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2922MB free)",
-      "t": 1788515538314,
-      "type": "bench"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "council: 1 quality demands recorded for Eloquii",
+      "t": 1788516679925,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1608,42 +1614,6 @@
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
       "t": 1788516638202,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
-      "t": 1788516609401,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
-      "t": 1788516589038,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
-      "t": 1788516589037,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
-      "t": 1788516589002,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
-      "t": 1788516588975,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788516588975,
       "type": "event"
     }
   ],
@@ -1859,7 +1829,6 @@
   },
   "throughput": [
     5,
-    0,
     1,
     0,
     0,
@@ -1870,32 +1839,33 @@
     0,
     0,
     3,
+    18,
+    5,
+    3,
+    0,
+    0,
+    5,
+    0,
     20,
-    5,
-    1,
-    0,
-    0,
-    5,
-    2,
-    19,
-    5,
-    1,
     4,
-    8,
-    14,
+    2,
+    1,
     11,
+    8,
+    18,
     1,
     0,
-    5,
-    6
+    0,
+    11,
+    2
   ],
   "load": {
     "loadavg": [
-      4.29,
-      4.51,
-      2.99
+      3.49,
+      4.26,
+      2.97
     ],
-    "ramPct": 59,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2621,10 +2591,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 35,
-        "vramPct": 74
+        "busy": false,
+        "warm": true,
+        "utilPct": 13,
+        "vramPct": 73
       },
       {
         "alias": "GPU-Node-2",
