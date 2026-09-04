@@ -1,8 +1,8 @@
 {
-  "generated": 1788546479667,
+  "generated": 1788546504330,
   "status": "running",
   "stats": {
-    "products": 116,
+    "products": 117,
     "listed": 13,
     "agents": 22,
     "avgScore": "5.0"
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "new build started (ideating) — niche: small-business operations & accounting",
+      "t": 1788546501407,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788546501407,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
+      "t": 1788546500569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788546492221,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788546492201,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788546492199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
       "t": 1788546319488,
       "type": "event"
@@ -1547,45 +1583,46 @@
       "text": "stage 'test' -> MindSphere",
       "t": 1788542389904,
       "type": "building"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788542387194,
+      "text": "new build started (ideating) — niche: small-business operations & accounting",
+      "t": 1788546501407,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 115 products)",
-      "t": 1788542358397,
+      "text": "stage 'idea'",
+      "t": 1788546501407,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
+      "t": 1788546500569,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 115 products)",
-      "t": 1788542164807,
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788546492221,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 115 products)",
-      "t": 1788541999570,
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788546492201,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788541917222,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 115 products)",
-      "t": 1788541819162,
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788546492199,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1670,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 9×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 10×"
     },
     {
       "name": "Shared memory",
@@ -1797,41 +1834,41 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
-    6,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     3,
+    3,
+    1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.33,
-      0.29,
+      0.35,
+      0.3,
       0.24
     ],
     "ramPct": 66,
@@ -1848,8 +1885,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2521,9 +2558,9 @@
   ],
   "building": [
     {
-      "name": "SmartInvoiceFlow",
-      "niche": "AI & automation utilities",
-      "stage": "build",
+      "name": "Untitled",
+      "niche": "small-business operations & accounting",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2552,8 +2589,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 47
+        "utilPct": 23,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2568,8 +2605,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
