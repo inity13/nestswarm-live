@@ -1,5 +1,5 @@
 {
-  "generated": 1788539211933,
+  "generated": 1788539256871,
   "status": "running",
   "stats": {
     "products": 114,
@@ -1556,58 +1556,9 @@
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788537557709,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop limited until 7:08:08 PM) — trying ChatGPT/free",
-      "t": 1788537555259,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788537555259,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 7:08:08 PM) — trying ChatGPT/free",
-      "t": 1788537553279,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788537553279,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
-      "t": 1788539163354,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — provider ling-3.0-flash-fin-free not found",
-      "t": 1788539163354,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for coder (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788539132868,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788539132868,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1819,21 +1770,20 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    0,
     6,
     13,
-    18,
-    3,
-    2,
-    11,
-    11,
+    16,
     5,
     2,
+    11,
+    11,
     5,
     0,
-    20,
-    13,
-    3,
+    7,
+    0,
+    18,
+    11,
+    7,
     8,
     1,
     0,
@@ -1844,19 +1794,20 @@
     1,
     0,
     0,
+    6,
+    1,
+    8,
+    17,
     7,
-    2,
-    9,
-    14,
-    9
+    11
   ],
   "load": {
     "loadavg": [
-      1.14,
-      0.54,
-      0.38
+      0.62,
+      0.5,
+      0.37
     ],
-    "ramPct": 48,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1882,11 +1833,11 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -1906,11 +1857,11 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -1918,7 +1869,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2572,8 +2523,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 22,
-        "vramPct": 92
+        "utilPct": 90,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2590,8 +2541,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 43,
-        "vramPct": 91
+        "utilPct": 84,
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 79,
