@@ -1,5 +1,5 @@
 {
-  "generated": 1788555418490,
+  "generated": 1788555463372,
   "status": "running",
   "stats": {
     "products": 119,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for StreamFuse — 2 files, working node app. Handing off to test.",
+      "t": 1788555436692,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for StreamFuse — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,39 @@
       "t": 1788538171048,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "The swarm has already mastered countless tools and utilities. It's time to forge something truly unique that stands the test of time. Demand: Create an AI-powered personal assistant that integrates with all major productivity platforms and offers advanced automation features tailored to individual user workflows. The team must ensure this is a genuinely valuable solution, not just another app, before moving forward.",
-      "t": 1788538169810,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> StreamFuse",
+      "t": 1788555455348,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for StreamFuse",
+      "t": 1788555447645,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> StreamFuse",
+      "t": 1788555445347,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788555436692,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788555436692,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 119 products)",
@@ -1553,39 +1583,47 @@
       "text": "keyhunter: cohere step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788550618491,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> StreamFuse",
+      "t": 1788555455348,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. This could be due to too much traffic or a configura",
-      "t": 1788550616960,
+      "text": "tests passed for StreamFuse",
+      "t": 1788555447645,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> StreamFuse",
+      "t": 1788555445347,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for StreamFuse — 2 files, working node app. Handing off to test.",
+      "t": 1788555436692,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788555436692,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cohere (https://cohere.com/signup?referral=swarm)",
-      "t": 1788550616960,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenhuggingface (https://huggingface.co/join)",
-      "t": 1788550615384,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: coherefreetrial step 1 -> {\"action\":\"fail\",\"reason\":\"404 Error - Page not found\"}",
-      "t": 1788550614495,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting aidungeonapi (https://aidungeon.io/signup)",
-      "t": 1788550614495,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788555436692,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1671,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 13×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 14×"
     },
     {
       "name": "Shared memory",
@@ -1801,7 +1839,6 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1818,8 +1855,8 @@
     0,
     0,
     1,
-    7,
-    0,
+    5,
+    2,
     1,
     0,
     0,
@@ -1830,13 +1867,14 @@
     0,
     0,
     1,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.11,
-      0.09
+      0.04,
+      0.1,
+      0.08
     ],
     "ramPct": 52,
     "cpus": 12
@@ -1852,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2527,7 +2565,7 @@
     {
       "name": "StreamFuse",
       "niche": "social media, creators & influencer tools",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2556,7 +2594,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
+        "utilPct": 41,
         "vramPct": 47
       },
       {
@@ -2572,8 +2610,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
