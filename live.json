@@ -1,5 +1,5 @@
 {
-  "generated": 1788560774905,
+  "generated": 1788560819895,
   "status": "running",
   "stats": {
     "products": 121,
@@ -122,10 +122,10 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Scout Quark acknowledges that our focus on raw count has been misplaced. We need to strip ",
-        "t": 1788550683053
+        "text": "I’m skeptical until the Shopify plugin actually writes full, keyword‑rich descriptions for",
+        "t": 1788560776229
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Quark",
+      "text": "I’m skeptical until the Shopify plugin actually writes full, keyword‑rich descriptions for at least 10 sample listings and shows a live A/B test panel—so the team must ship a beta plugin that can auto‑generate and publish those descriptions before any further work.",
+      "t": 1788560776229,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Joey",
       "text": "CopyCraft sounds like a game-changer for e-commerce store owners. It's time to push forward with a working Shopify plugin that actually generates AI-powered descriptions. Let's finalize the development and get it ready for launch!",
@@ -1094,16 +1101,15 @@
       "t": 1788539257756,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "Worf here. After auditing the swarm’s current product catalog and codebase, I have identified a critical vulnerability that could compromise our customers' data security. While the flagships are indeed polished and ready to go, any new development must be free from known vulnerabilities. Therefore, my position is that we must stop churning raw counts and focus on building a single, high-value SaaS product that solves real problems with genuine, verified solutions. This requires us to prioritize quality over quantity, as the swarm’s value lies in solving meaningful issues for our customers. To …",
-      "t": 1788539257754,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 3/3)",
+      "t": 1788560776958,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "packaged CopyCraft → copycraft.zip (10595 bytes)",
@@ -1577,15 +1583,22 @@
       "text": "new build started (ideating) — niche: events, community & memberships",
       "t": 1788558026456,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788558026456,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 3/3)",
+      "t": 1788560776958,
+      "type": "event"
+    },
+    {
+      "who": "Quark",
+      "text": "I’m skeptical until the Shopify plugin actually writes full, keyword‑rich descriptions for at least 10 sample listings and shows a live A/B test panel—so the team must ship a beta plugin that can auto‑generate and publish those descriptions before any further work.",
+      "t": 1788560776229,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "packaged CopyCraft → copycraft.zip (10595 bytes)",
@@ -1596,12 +1609,6 @@
       "who": "swarm",
       "text": "polish syntax fail for CopyCraft: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788560768874,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
-      "t": 1788560725625,
       "type": "event"
     }
   ],
@@ -1821,6 +1828,11 @@
   },
   "throughput": [
     0,
+    1,
+    0,
+    0,
+    1,
+    6,
     0,
     1,
     0,
@@ -1830,9 +1842,6 @@
     0,
     1,
     0,
-    2,
-    5,
-    0,
     0,
     1,
     0,
@@ -1840,22 +1849,20 @@
     1,
     0,
     0,
+    4,
+    3,
+    19,
+    12,
+    12,
+    4,
     1,
-    0,
-    0,
-    6,
-    5,
-    21,
-    6,
-    15,
-    1,
-    4
+    6
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.46,
-      0.36
+      0.3,
+      0.43,
+      0.35
     ],
     "ramPct": 65,
     "cpus": 12
@@ -1887,7 +1894,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -2617,7 +2624,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
+        "utilPct": 41,
         "vramPct": 80
       },
       {
@@ -2635,8 +2642,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 58
+        "utilPct": 4,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
