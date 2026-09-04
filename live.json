@@ -1,5 +1,5 @@
 {
-  "generated": 1788536690952,
+  "generated": 1788536736214,
   "status": "running",
   "stats": {
     "products": 113,
@@ -1103,6 +1103,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> Flockly",
+      "t": 1788536727715,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788536713034,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> Flockly",
       "t": 1788536687707,
       "type": "building"
@@ -1568,21 +1580,21 @@
       "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (23940) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
       "t": 1788536078608,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788536078608,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship TailoredPaws (score 0/8, attempt 2/3)",
-      "t": 1788536077453,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Flockly",
+      "t": 1788536727715,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788536713034,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> Flockly",
@@ -1674,36 +1686,6 @@
       "who": "swarm",
       "text": "packaged TailoredPaws → tailoredpaws.zip (17094 bytes)",
       "t": 1788536657844,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
-      "t": 1788536642685,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788536642685,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
-      "t": 1788536642684,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788536642684,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788536642684,
       "type": "event"
     }
   ],
@@ -1918,42 +1900,42 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    1,
     9,
     0,
     0,
     2,
     0,
-    33,
-    18,
-    0,
-    4,
-    8,
-    5,
-    4,
-    4,
-    23,
-    9,
     15,
-    11,
+    36,
+    0,
     3,
-    13,
-    27,
-    6,
-    12,
+    5,
+    8,
     4,
     5,
-    11,
-    4,
     22,
     10,
-    19
+    14,
+    10,
+    5,
+    8,
+    23,
+    11,
+    9,
+    11,
+    5,
+    10,
+    5,
+    16,
+    15,
+    15,
+    8
   ],
   "load": {
     "loadavg": [
-      0.33,
-      0.43,
-      1.09
+      0.22,
+      0.39,
+      1.05
     ],
     "ramPct": 70,
     "cpus": 12
@@ -2644,7 +2626,7 @@
     {
       "name": "Flockly",
       "niche": "personal finance, investing & budgeting",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2673,8 +2655,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 36,
-        "vramPct": 80
+        "utilPct": 28,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
