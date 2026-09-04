@@ -1,5 +1,5 @@
 {
-  "generated": 1788564150170,
+  "generated": 1788564195180,
   "status": "running",
   "stats": {
     "products": 122,
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788564151952,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2954MB free)",
+      "t": 1788564151951,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788564151191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788564151191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788564151190,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788564151190,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788564147698,
       "type": "event"
@@ -1517,39 +1553,45 @@
       "text": "marketer produced a kit for CopyCraft",
       "t": 1788560651243,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 2/3)",
-      "t": 1788560626923,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788560624449,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for CopyCraft",
-      "t": 1788560624448,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for CopyCraft exited (null)",
-      "t": 1788560617390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: CopyCraft (pass #1)",
-      "t": 1788560617331,
-      "type": "polished"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788564151952,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2954MB free)",
+      "t": 1788564151951,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788564151191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788564151191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788564151190,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788564151190,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
@@ -1832,26 +1874,11 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
-    2,
     0,
     1,
     0,
     0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    5,
-    1,
-    1,
+    6,
     1,
     0,
     0,
@@ -1861,15 +1888,30 @@
     1,
     0,
     0,
-    12
+    1,
+    0,
+    0,
+    6,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    19
   ],
   "load": {
     "loadavg": [
-      0.53,
-      0.27,
-      0.28
+      0.55,
+      0.33,
+      0.3
     ],
-    "ramPct": 61,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1956,9 +1998,7 @@
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free",
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
+      "nemotron-3.5-lightning-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2629,10 +2669,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 4,
-        "vramPct": 20
+        "utilPct": 34,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2647,8 +2687,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
