@@ -1,5 +1,5 @@
 {
-  "generated": 1788530928752,
+  "generated": 1788530973796,
   "status": "running",
   "stats": {
     "products": 108,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Understood. Guinan and Spock have rightly highlighted the need for clarity on features and",
         "t": 1788530873436
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for ProTasker.",
+      "t": 1788530958067,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (2) recorded for ProTasker: define product vision and user requirements with concrete features | draft a concise specification document detailing what 'Untitled' actually does, its core features, and target audience",
+      "t": 1788530958065,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "Scotty",
       "text": "Understood. Guinan and Spock have rightly highlighted the need for clarity on features and the specific niche this product should serve. Scotty: Right you are. Without concrete specs, we're flying blind in the feature space. We'll focus",
@@ -1087,23 +1101,33 @@
       "t": 1788520203259,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: BookkeeperPro — personal finance, investing & budgeting. Let's see if it's worth building.",
-      "t": 1788520202471,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "I believe ideas are cheap but originality is rare. For Untitled, I propose a personalized virtual assistant that learns your habits and preferences to streamline daily tasks, saving time and effort. The team must create a user-friendly AI interface with intuitive voice commands before launching.",
-      "t": 1788520199097,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "council: 2 quality demands recorded for ProTasker",
+      "t": 1788530958066,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for ProTasker is stuck (attempt 2) — trying a stronger model",
+      "t": 1788530955517,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ProTasker",
+      "t": 1788530955512,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788530947767,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 108 products)",
@@ -1559,39 +1583,32 @@
       "text": "new build started (ideating) — niche: home, cooking & household helpers",
       "t": 1788529045055,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788529045055,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged RealFlow MT → realflow-mt.zip (8837 bytes)",
-      "t": 1788529043246,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "NOT LISTED — failed quality gate: RealFlow MT (functional=true, score=2) · streak 1",
-      "t": 1788529043140,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 106 products)",
-      "t": 1788529035434,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "Scotty",
-      "text": "Understood. Guinan and Spock have rightly highlighted the need for clarity on features and the specific niche this product should serve. Scotty: Right you are. Without concrete specs, we're flying blind in the feature space. We'll focus",
-      "t": 1788530873436,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "council: 2 quality demands recorded for ProTasker",
+      "t": 1788530958066,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for ProTasker is stuck (attempt 2) — trying a stronger model",
+      "t": 1788530955517,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ProTasker",
+      "t": 1788530955512,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788530947767,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1805,15 +1822,14 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    4,
     1,
     0,
     2,
-    28,
-    0,
-    3,
+    26,
     2,
-    0,
+    3,
+    1,
+    1,
     5,
     1,
     1,
@@ -1825,24 +1841,25 @@
     0,
     2,
     12,
-    17,
-    0,
+    15,
     2,
     2,
-    0,
+    1,
+    1,
     1,
     3,
     0,
     1,
-    1
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      4.29,
-      3.86,
-      3.79
+      2.94,
+      3.62,
+      3.72
     ],
-    "ramPct": 68,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1884,7 +1901,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:3b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "researcher": {
@@ -2558,8 +2575,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
-        "vramPct": 90
+        "utilPct": 26,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
