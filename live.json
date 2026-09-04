@@ -1,5 +1,5 @@
 {
-  "generated": 1788494400149,
+  "generated": 1788494445428,
   "status": "running",
   "stats": {
     "products": 85,
@@ -1110,6 +1110,18 @@
     {
       "who": "swarm",
       "text": "stage 'build' -> CryptoMind",
+      "t": 1788494425620,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 1)",
+      "t": 1788494423800,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoMind",
       "t": 1788494375618,
       "type": "building"
     },
@@ -1574,21 +1586,21 @@
       "text": "EXTREME elevation: build for SageSupply is stuck (attempt 2) — trying a stronger model",
       "t": 1788491115188,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788491105300,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SageSupply",
-      "t": 1788491105187,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoMind",
+      "t": 1788494425620,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 1)",
+      "t": 1788494423800,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'build' -> CryptoMind",
@@ -1613,49 +1625,6 @@
       "text": "ideated: CryptoMind [study, learning & memory aids]",
       "t": 1788494356324,
       "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788494345626,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: study, learning & memory aids",
-      "t": 1788494345625,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788494335721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788494335713,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> ChainBridge",
-      "t": 1788494335614,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for ChainBridge — 2 files, working node app. Handing off to test.",
-      "t": 1788494326170,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788494326170,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1869,7 +1838,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     2,
     8,
     3,
@@ -1884,26 +1852,27 @@
     0,
     1,
     0,
-    4,
-    3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    0,
-    0,
-    1,
-    0,
     0,
     7,
-    7
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    12,
+    3
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.12,
+      0.07,
+      0.1,
       0.09
     ],
     "ramPct": 52,
@@ -1920,8 +1889,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2613,6 +2582,6 @@
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 77
+    "jobsProcessed": 78
   }
 }
