@@ -1,5 +1,5 @@
 {
-  "generated": 1788507702557,
+  "generated": 1788507747661,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1788507741399,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788507706457,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
       "t": 1788507609643,
       "type": "event"
@@ -1571,21 +1583,22 @@
       "text": "keyhunter: openrouter step 9 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788506668933,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788506668067,
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1788507741399,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 8 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
-      "t": 1788506652414,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788507706457,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1797,7 +1810,6 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    5,
     4,
     0,
     0,
@@ -1807,34 +1819,35 @@
     1,
     0,
     8,
-    29,
-    16,
-    14,
-    22,
-    11,
-    1,
-    1,
-    1,
-    72,
+    26,
+    15,
+    13,
+    19,
+    19,
+    0,
     2,
-    3,
     0,
-    1,
-    0,
-    1,
-    4,
+    61,
+    13,
     4,
     0,
     1,
-    0
+    0,
+    0,
+    5,
+    0,
+    4,
+    1,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.17,
-      0.56
+      0.07,
+      0.16,
+      0.53
     ],
-    "ramPct": 58,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2534,8 +2547,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
-        "vramPct": 71
+        "utilPct": 22,
+        "vramPct": 97
       }
     ],
     "selfHostedInferencePct": 89,
