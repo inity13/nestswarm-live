@@ -1,8 +1,8 @@
 {
-  "generated": 1788496920423,
+  "generated": 1788496965743,
   "status": "running",
   "stats": {
-    "products": 85,
+    "products": 86,
     "listed": 4,
     "agents": 22,
     "avgScore": "4.7"
@@ -265,6 +265,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: CryptoBridge Vault — events, community & memberships. Let's see if it's worth building.",
+      "t": 1788496928935,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788496925963,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "coder",
       "text": "Build done for CryptoMind — 2 files, working node app. Handing off to test.",
@@ -1090,23 +1104,39 @@
       "t": 1788482319813,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "Scotty",
-      "text": "This idea is still vaporware. I’ll concede Spock and Scotty are right on the need for clarity. But I disagree that we can’t build a new social media app if it solves something genuinely new. The one quality requirement: It must be 100% self-contained, zero external dependencies, and runnable in under 60 seconds from a single file download. That’s non-negotiable.",
-      "t": 1788482314744,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: MarketGuard — real estate, renting & property. Let's see if it's worth building.",
-      "t": 1788482257283,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoBridge Vault",
+      "t": 1788496955957,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CryptoBridge Vault",
+      "t": 1788496935947,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: CryptoBridge Vault [events, community & memberships]",
+      "t": 1788496928935,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788496925966,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1788496925962,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
@@ -1556,39 +1586,46 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788492134047,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788492134047,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788492134047,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788492134046,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788492130879,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 4 zen free models",
-      "t": 1788492130871,
-      "type": "scout"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoBridge Vault",
+      "t": 1788496955957,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CryptoBridge Vault",
+      "t": 1788496935947,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: CryptoBridge Vault — events, community & memberships. Let's see if it's worth building.",
+      "t": 1788496928935,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: CryptoBridge Vault [events, community & memberships]",
+      "t": 1788496928935,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788496925966,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1788496925962,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
@@ -1807,22 +1844,21 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
+    4,
+    4,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     8,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1,
-    8,
-    15,
-    15,
-    6,
-    6,
-    0,
+    13,
+    14,
+    10,
+    2,
+    4,
     1,
     0,
     0,
@@ -1836,13 +1872,14 @@
     0,
     0,
     1,
-    1
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.06,
-      0.11
+      0.28,
+      0.14,
+      0.13
     ],
     "ramPct": 62,
     "cpus": 12
@@ -1850,7 +1887,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2497,28 +2534,10 @@
   ],
   "building": [
     {
-      "name": "TaskMaster Pro",
-      "niche": "freelancers & solopreneurs",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "Primary",
-      "niche": "parenting & family organizers",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "JSON Forge",
-      "niche": "local services & gig economy",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "ClipRoute",
+      "name": "CryptoBridge Vault",
       "niche": "events, community & memberships",
-      "stage": "shipped",
-      "status": "listed"
+      "stage": "build",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2546,7 +2565,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 80
       },
       {
@@ -2562,13 +2581,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 93
+        "busy": true,
+        "warm": false,
+        "utilPct": 19,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 79
+    "jobsProcessed": 80
   }
 }
