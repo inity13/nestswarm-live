@@ -1,5 +1,5 @@
 {
-  "generated": 1788508062618,
+  "generated": 1788508107606,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1788508089345,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1788508008471,
       "type": "event"
@@ -1577,19 +1583,13 @@
       "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788506699297,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1788506688820,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1788508008471,
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1788508089345,
       "type": "event"
     }
   ],
@@ -1804,42 +1804,42 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    5,
     1,
     0,
     8,
-    29,
-    16,
-    14,
-    22,
-    11,
-    1,
-    1,
-    1,
-    72,
+    26,
+    15,
+    13,
+    19,
+    19,
+    0,
     2,
-    3,
     0,
-    1,
-    0,
-    1,
-    4,
+    61,
+    13,
     4,
     0,
     1,
     0,
+    0,
+    5,
+    0,
+    4,
+    1,
+    0,
     3,
     1,
     0,
     0,
     1,
-    2
+    2,
+    1
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.21,
-      0.46
+      0.03,
+      0.18,
+      0.43
     ],
     "ramPct": 60,
     "cpus": 12
@@ -2523,7 +2523,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
+        "utilPct": 22,
         "vramPct": 82
       },
       {
@@ -2541,7 +2541,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 10,
+        "utilPct": 12,
         "vramPct": 97
       }
     ],
