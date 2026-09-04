@@ -1,5 +1,5 @@
 {
-  "generated": 1788544928880,
+  "generated": 1788544973851,
   "status": "running",
   "stats": {
     "products": 116,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> SmartInvoiceFlow",
+      "t": 1788544960749,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788544958610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmartInvoiceFlow",
+      "t": 1788544930751,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788544921167,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "vault: synced (3 notes updated)",
       "t": 1788540716788,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 13 products listed — polishing, marketing & distributing",
-      "t": 1788540599246,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788540590818,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788540590800,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SmartInvoiceFlow",
+      "t": 1788544960749,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788544958610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmartInvoiceFlow",
+      "t": 1788544930751,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for SmartInvoiceFlow — 2 files, working node app. Handing off to test.",
@@ -1597,12 +1615,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788544921167,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
-      "t": 1788544878848,
       "type": "event"
     }
   ],
@@ -1818,7 +1830,6 @@
   },
   "throughput": [
     0,
-    0,
     7,
     0,
     0,
@@ -1832,29 +1843,30 @@
     0,
     0,
     1,
-    13,
+    10,
     4,
-    6,
-    0,
-    1,
-    3,
+    9,
     0,
     0,
-    1,
+    4,
     0,
     0,
     1,
     0,
     0,
-    3
+    1,
+    0,
+    0,
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.19,
-      0.25,
-      0.23
+      0.53,
+      0.32,
+      0.25
     ],
-    "ramPct": 68,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -2543,7 +2555,7 @@
     {
       "name": "SmartInvoiceFlow",
       "niche": "AI & automation utilities",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2572,8 +2584,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
-        "vramPct": 51
+        "utilPct": 46,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -2590,11 +2602,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 79,
-    "jobsProcessed": 95
+    "jobsProcessed": 96
   }
 }
