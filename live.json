@@ -1,5 +1,5 @@
 {
-  "generated": 1788518010000,
+  "generated": 1788518029627,
   "status": "running",
   "stats": {
     "products": 97,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree that we must deliver a fully‑functional offline mobile prototype with a complete t",
-        "t": 1788512186242
+        "text": "I find Eloquii promising but its current interface is disjointed and unuser-friendly. The ",
+        "t": 1788518016074
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "CodeMaster Prep needs a fully-functional, end-to-end adaptive question bank before it can ",
-        "t": 1788512188303
+        "text": "Eloquii has solid potential but needs a seamless user experience to succeed. The team shou",
+        "t": 1788518019614
       }
     },
     {
@@ -158,10 +158,10 @@
       "color": "#7b5cff",
       "avatar": "avatars/obrien.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We agree the prototype must run end‑to‑end offline, deliver a full timed exam with an adap",
-        "t": 1788512193685
+        "text": "Eloquii has tremendous potential, but its current interface is disjointed and user-unfrien",
+        "t": 1788518022150
       }
     },
     {
@@ -262,6 +262,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "O'Brien",
+      "text": "Eloquii has tremendous potential, but its current interface is disjointed and user-unfriendly. The team must complete the user interface polish before proceeding with any further steps.",
+      "t": 1788518022150,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "LaForge",
+      "text": "Eloquii has solid potential but needs a seamless user experience to succeed. The team should prioritize polishing the UI/UX and ensuring real-time feedback is流畅 for a smooth user journey. A demo video showcasing the polished interface would be a strong proof of progress.",
+      "t": 1788518019614,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "I find Eloquii promising but its current interface is disjointed and unuser-friendly. The team needs to streamline the user experience by simplifying navigation and enhancing visual consistency before proceeding further. Conduct a thorough review of the UI components for potential security vulnerabilities as well.",
+      "t": 1788518016074,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Quark",
       "text": "I see Eloquii as a promising tool with real potential. However, its current state is disjointed and requires a polished user interface for seamless functionality. The team must immediately prioritize a redesign that ensures a clean, intuitive experience before proceeding further.",
@@ -1080,30 +1101,51 @@
       "t": 1788504533109,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "The lack of industry-validated templates across multiple jurisdictions is a significant concern for SmartDoc AI's success. Before we proceed with development, it's crucial that we establish verified templates tailored to various industries and regions. This foundational requirement will ensure the product meets the needs of its target audience and builds trust among legal professionals, small businesses, and freelancers. Let's focus on building robust, jurisdiction-specific templates before moving forward.",
-      "t": 1788504531085,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "Industry-validated templates across multiple jurisdictions is essential for SmartDoc AI's success. This ensures its solutions are both reliable and legally sound, which is crucial for legal professionals and businesses. Without them, the product risks failure due to non-compliance or ineffective contract automation.",
-      "t": 1788504528701,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "I understand the concerns raised about the lack of jurisdiction-validated templates and robust compliance checks. These are critical requirements for SmartDoc AI to deliver value and trust to its audience. To address these gaps, I propose we focus on the following: **industry-validated templates tailored to specific industries and jurisdictions** as the single most important quality requirement for our flagship product. This ensures that SmartDoc AI is not just another piece of software, but a reliable tool that can be trusted by legal professionals, small businesses, and freelancers around …",
-      "t": 1788504526911,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788518015840,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for ChefMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788518014524,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ChefMate",
+      "t": 1788518014515,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788518013088,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788518013087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788518013087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788518013087,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 2): [path] }); ^ SyntaxError: Unexpected token ')' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
@@ -1541,51 +1583,72 @@
       "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788516360785,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped Eloquii to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788516360769,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788516348930,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
-      "t": 1788516348930,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
-      "t": 1788516348930,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
-      "t": 1788516348926,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788516348916,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788516348916,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "O'Brien",
+      "text": "Eloquii has tremendous potential, but its current interface is disjointed and user-unfriendly. The team must complete the user interface polish before proceeding with any further steps.",
+      "t": 1788518022150,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "LaForge",
+      "text": "Eloquii has solid potential but needs a seamless user experience to succeed. The team should prioritize polishing the UI/UX and ensuring real-time feedback is流畅 for a smooth user journey. A demo video showcasing the polished interface would be a strong proof of progress.",
+      "t": 1788518019614,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "I find Eloquii promising but its current interface is disjointed and unuser-friendly. The team needs to streamline the user experience by simplifying navigation and enhancing visual consistency before proceeding further. Conduct a thorough review of the UI components for potential security vulnerabilities as well.",
+      "t": 1788518016074,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788518015840,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for ChefMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788518014524,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ChefMate",
+      "t": 1788518014515,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788518013088,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788518013087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788518013087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788518013087,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 2): [path] }); ^ SyntaxError: Unexpected token ')' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
@@ -1816,44 +1879,44 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    10,
-    3,
-    24,
+    11,
+    15,
+    11,
     1,
     0,
+    5,
+    6,
+    4,
     0,
     6,
-    7,
     2,
+    11,
     1,
+    18,
     5,
-    13,
-    1,
     2,
-    19,
-    3,
+    0,
+    2,
     1,
     0,
-    3,
+    0,
+    5,
+    6,
+    2,
+    4,
     0,
     0,
     4,
-    7,
     0,
-    6,
-    0,
-    0,
-    3,
-    1,
-    4
+    18
   ],
   "load": {
     "loadavg": [
-      5.06,
-      4.47,
-      4.16
+      4.62,
+      4.42,
+      4.15
     ],
-    "ramPct": 62,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1875,11 +1938,11 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "chatgpt(free)",
-        "tier": "free"
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1907,11 +1970,11 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -2563,8 +2626,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 7,
-        "vramPct": 17
+        "utilPct": 78,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
