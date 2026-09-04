@@ -1,5 +1,5 @@
 {
-  "generated": 1788565995222,
+  "generated": 1788566040215,
   "status": "running",
   "stats": {
     "products": 123,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PropertyPro — 3 files, working exe app. Handing off to test.",
+      "t": 1788566039115,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PropertyPro — 3 files, working exe app. Handing off to test.",
@@ -1094,16 +1101,15 @@
       "t": 1788550683048,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "**Publisher Chandler:** Absolutely agree with Guinan and the need to focus on value over quantity. The swarm has built too much noise, and it’s time to converge on one product that delivers genuine value. That’s where our efforts should go next. Let's polish that flagship until it sings, and then we’ll capture every penny it deserves.",
-      "t": 1788550683047,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (3 files, exe)",
+      "t": 1788566039115,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1577,15 +1583,22 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
       "t": 1788561264073,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider chatgpt not found",
-      "t": 1788561145937,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "coder",
+      "text": "Build done for PropertyPro — 3 files, working exe app. Handing off to test.",
+      "t": 1788566039115,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (3 files, exe)",
+      "t": 1788566039115,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1597,12 +1610,6 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3048MB free)",
       "t": 1788565950499,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
-      "t": 1788565944255,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1821,24 +1828,23 @@
   },
   "throughput": [
     0,
-    0,
     4,
     5,
     0,
     1,
     0,
     0,
-    8,
-    0,
-    0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
     7,
     0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    6,
+    1,
     0,
     1,
     0,
@@ -1849,12 +1855,13 @@
     1,
     0,
     0,
-    3
+    3,
+    2
   ],
   "load": {
     "loadavg": [
-      0.43,
-      0.25,
+      0.32,
+      0.24,
       0.2
     ],
     "ramPct": 61,
@@ -2570,7 +2577,7 @@
     {
       "name": "PropertyPro",
       "niche": "real estate, renting & property",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2599,7 +2606,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
+        "utilPct": 35,
         "vramPct": 49
       },
       {
@@ -2615,9 +2622,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 0,
+        "busy": false,
+        "warm": true,
+        "utilPct": 3,
         "vramPct": 92
       }
     ],
