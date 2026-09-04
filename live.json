@@ -1,5 +1,5 @@
 {
-  "generated": 1788483104003,
+  "generated": 1788483148624,
   "status": "running",
   "stats": {
     "products": 80,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for MarketGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788483107970,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for MarketGuard.",
@@ -1097,16 +1104,51 @@
       "t": 1788463703910,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Thank you all for your thoughtful input. Let's address what we’ve discussed: The architect is right that the swarm’s value is not just in quantity, but in delivering something of genuine quality that earns revenue. The coder and distributor are both emphasizing the importance of shipping a single, polished product first. I concur completely. The designer's insistence on cohesive design for each product page is valid, ensuring a consistent user experience. The critic correctly points out that our goal must be to focus on delivering something that people actually pay for. The marketer is …",
-      "t": 1788463703909,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MarketGuard",
+      "t": 1788483133973,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788483129721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788483127942,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2775MB free)",
+      "t": 1788483127940,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 80 products)",
+      "t": 1788483122881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MarketGuard",
+      "t": 1788483113969,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788483107970,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 80 products)",
@@ -1544,51 +1586,59 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788479027141,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MarketGuard",
+      "t": 1788483133973,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 78 products)",
-      "t": 1788478982566,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788483129721,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 78 products)",
-      "t": 1788478805077,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788483127942,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2775MB free)",
+      "t": 1788483127940,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 80 products)",
+      "t": 1788483122881,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 78 products)",
-      "t": 1788478622505,
-      "type": "event"
+      "text": "stage 'test' -> MarketGuard",
+      "t": 1788483113969,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for MarketGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788483107970,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 78 products)",
-      "t": 1788478441737,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788478304754,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788478304754,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788478304754,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788483107970,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,9 +1850,8 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    6,
-    0,
+    4,
+    2,
     1,
     0,
     0,
@@ -1813,31 +1862,32 @@
     0,
     0,
     1,
-    1,
-    10,
+    0,
+    7,
     18,
-    6,
-    0,
-    1,
-    1,
-    0,
+    5,
+    5,
     1,
     0,
-    0,
+    1,
     1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.16,
-      0.18
+      0.3,
+      0.2,
+      0.19
     ],
-    "ramPct": 58,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2521,8 +2571,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 79
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -2537,13 +2587,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 43,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 63
+    "jobsProcessed": 64
   }
 }
