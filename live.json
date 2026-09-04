@@ -1,5 +1,5 @@
 {
-  "generated": 1788562665185,
+  "generated": 1788562685389,
   "status": "running",
   "stats": {
     "products": 122,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> MonetaryMosaic",
+      "t": 1788562677253,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for MonetaryMosaic is stuck (attempt 2) — trying a stronger model",
+      "t": 1788562677253,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788562667358,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MonetaryMosaic",
+      "t": 1788562667254,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788562661298,
       "type": "event"
@@ -1493,27 +1517,33 @@
       "text": "vault: synced (2 notes updated)",
       "t": 1788560496913,
       "type": "vault"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MonetaryMosaic",
+      "t": 1788562677253,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "preview live: CopyCraft -> http://localhost:5368",
-      "t": 1788560496903,
+      "text": "EXTREME elevation: build for MonetaryMosaic is stuck (attempt 2) — trying a stronger model",
+      "t": 1788562677253,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "LISTED: CopyCraft @ http://localhost:5368 ($4.99 one-time)",
-      "t": 1788560496903,
-      "type": "listed"
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788562667358,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'list' -> CopyCraft",
-      "t": 1788560496894,
+      "text": "stage 'test' -> MonetaryMosaic",
+      "t": 1788562667254,
       "type": "building"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "coder",
       "text": "Build done for MonetaryMosaic — 2 files, working node app. Handing off to test.",
@@ -1743,14 +1773,14 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
-    4,
-    21,
+    18,
+    9,
     5,
-    12,
-    17,
-    17,
-    7,
+    14,
+    19,
+    11,
     10,
+    7,
     0,
     1,
     0,
@@ -1758,8 +1788,8 @@
     1,
     0,
     0,
-    1,
-    6,
+    3,
+    4,
     0,
     1,
     0,
@@ -1772,15 +1802,15 @@
     0,
     1,
     0,
-    2
+    6
   ],
   "load": {
     "loadavg": [
-      0.6,
-      0.39,
-      0.32
+      0.43,
+      0.36,
+      0.31
     ],
-    "ramPct": 68,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2493,7 +2523,7 @@
     {
       "name": "MonetaryMosaic",
       "niche": "personal finance, investing & budgeting",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2522,8 +2552,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
-        "vramPct": 49
+        "utilPct": 42,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2540,11 +2570,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 114
+    "jobsProcessed": 115
   }
 }
