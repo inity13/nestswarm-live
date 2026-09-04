@@ -1,5 +1,5 @@
 {
-  "generated": 1788516839769,
+  "generated": 1788516884697,
   "status": "running",
   "stats": {
     "products": 96,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "ChatGPT responded for conductor (502 chars)",
+      "t": 1788516877934,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
       "t": 1788516829349,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "idea duplicate (ElectraCert); re-ideating in a fresh niche",
       "t": 1788515621804,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (CodeGuard); re-ideating in a fresh niche",
-      "t": 1788515618711,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (502 chars)",
+      "t": 1788516877934,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
@@ -1614,12 +1620,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788516829048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
-      "t": 1788516790110,
       "type": "event"
     }
   ],
@@ -1666,7 +1666,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 2×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 3×"
     },
     {
       "name": "GitHub Copilot",
@@ -1835,7 +1835,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1843,35 +1842,36 @@
     0,
     0,
     3,
+    18,
+    5,
+    3,
+    0,
+    0,
+    5,
+    0,
     20,
-    5,
-    1,
-    0,
-    0,
-    5,
+    4,
     2,
-    19,
-    5,
     1,
-    4,
-    8,
-    14,
     11,
+    8,
+    18,
     1,
     0,
-    5,
-    6,
-    4,
     0,
-    6
+    11,
+    2,
+    2,
+    1,
+    7
   ],
   "load": {
     "loadavg": [
-      6.27,
-      5.11,
-      3.47
+      6.44,
+      5.32,
+      3.62
     ],
-    "ramPct": 62,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -1913,8 +1913,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "chatgpt(free)",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2599,8 +2599,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 52,
-        "vramPct": 92
+        "utilPct": 58,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
@@ -2615,9 +2615,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 16,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
