@@ -1,5 +1,5 @@
 {
-  "generated": 1788481303661,
+  "generated": 1788481348433,
   "status": "running",
   "stats": {
     "products": 79,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788481326200,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2936MB free)",
+      "t": 1788481326198,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
+      "t": 1788481322683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
       "t": 1788481143622,
       "type": "event"
@@ -1568,27 +1586,28 @@
       "text": "stage 'test' -> DropPilot Pro",
       "t": 1788477433202,
       "type": "building"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788481326200,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788477431783,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2936MB free)",
+      "t": 1788481326198,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788477404457,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 77 products)",
-      "t": 1788477362637,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
+      "t": 1788481322683,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,17 +1819,16 @@
     "priority": ""
   },
   "throughput": [
+    0,
+    0,
+    1,
+    1,
+    10,
     3,
     0,
     0,
     1,
-    6,
-    7,
     1,
-    0,
-    0,
-    2,
-    0,
     0,
     1,
     0,
@@ -1818,8 +1836,8 @@
     1,
     0,
     0,
-    7,
-    0,
+    3,
+    4,
     0,
     1,
     0,
@@ -1829,15 +1847,16 @@
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.26,
-      0.2
+      1.06,
+      0.49,
+      0.28
     ],
-    "ramPct": 55,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2520,9 +2539,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
