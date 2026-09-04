@@ -1,5 +1,5 @@
 {
-  "generated": 1788540742313,
+  "generated": 1788540787504,
   "status": "running",
   "stats": {
     "products": 114,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788540743408,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3499MB free)",
+      "t": 1788540743407,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
       "t": 1788540738615,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788537853731,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit 1): <3>WSL (25256) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
-      "t": 1788537846450,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 7:08:08 PM) — trying ChatGPT/free",
-      "t": 1788537836413,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788540743408,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3499MB free)",
+      "t": 1788540743407,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
@@ -1810,44 +1822,44 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    4,
-    6,
-    16,
-    10,
-    7,
-    9,
-    0,
-    0,
-    1,
-    7,
-    0,
-    1,
-    0,
-    0,
-    6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1,
+    3,
+    13,
+    14,
     5,
+    12,
+    1,
     0,
-    2
+    0,
+    8,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      0.61,
-      0.18,
-      0.14
+      0.29,
+      0.15,
+      0.13
     ],
-    "ramPct": 55,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2579,10 +2591,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 6,
-        "vramPct": 20
+        "utilPct": 42,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
