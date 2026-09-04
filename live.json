@@ -1,5 +1,5 @@
 {
-  "generated": 1788484858932,
+  "generated": 1788484904193,
   "status": "running",
   "stats": {
     "products": 81,
@@ -1109,6 +1109,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1788484903376,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788484903317,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1788484903315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788484903315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 80 products with flags, 0 with high-severity findings",
+      "t": 1788484903211,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> SupplyShield",
       "t": 1788484744196,
       "type": "building"
@@ -1556,39 +1586,40 @@
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788480642200,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> EchoTrack",
-      "t": 1788480633640,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788480624703,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
-      "t": 1788480604221,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
-      "t": 1788480422147,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
-      "t": 1788480242571,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1788484903376,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788484903317,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1788484903315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788484903315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 80 products with flags, 0 with high-severity findings",
+      "t": 1788484903211,
+      "type": "security"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,8 +1831,7 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    6,
+    9,
     0,
     0,
     1,
@@ -1826,18 +1856,19 @@
     0,
     0,
     1,
-    1,
-    10,
-    3,
-    0
+    0,
+    6,
+    8,
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.19,
-      0.18
+      0.15,
+      0.18,
+      0.17
     ],
-    "ramPct": 63,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2519,9 +2550,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
+        "busy": true,
+        "warm": false,
+        "utilPct": 12,
         "vramPct": 81
       },
       {
@@ -2537,8 +2568,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 93
       }
