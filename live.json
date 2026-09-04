@@ -1,5 +1,5 @@
 {
-  "generated": 1788539121691,
+  "generated": 1788539166839,
   "status": "running",
   "stats": {
     "products": 114,
@@ -1103,6 +1103,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788539163354,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider ling-3.0-flash-fin-free not found",
+      "t": 1788539163354,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for coder (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788539132868,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788539132868,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
       "t": 1788539119804,
       "type": "event"
@@ -1556,56 +1580,38 @@
       "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788537553279,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 113 products)",
-      "t": 1788537497361,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788537488837,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 7:08:08 PM) — trying ChatGPT/free",
-      "t": 1788537488833,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788537488823,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788539163354,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider ling-3.0-flash-fin-free not found",
+      "t": 1788539163354,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider ling-3.0-flash-fin-free failed for coder (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
+      "t": 1788539132868,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788539132868,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
       "t": 1788539119804,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PawPalz",
-      "t": 1788539058632,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788539057604,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PawPalz",
-      "t": 1788539038621,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1819,44 +1825,44 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
+    10,
+    0,
     6,
-    4,
-    6,
-    9,
-    11,
     14,
-    2,
-    8,
-    12,
-    5,
-    2,
-    7,
-    0,
-    8,
-    20,
-    8,
-    8,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
+    18,
     4,
+    3,
+    10,
+    11,
+    3,
     6,
-    16
+    1,
+    0,
+    23,
+    13,
+    8,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
+    5,
+    3,
+    13,
+    14
   ],
   "load": {
     "loadavg": [
-      0.65,
-      0.3,
-      0.3
+      1.16,
+      0.45,
+      0.35
     ],
-    "ramPct": 59,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1870,11 +1876,11 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
@@ -1898,7 +1904,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "researcher": {
@@ -2572,7 +2578,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 22,
+        "utilPct": 82,
         "vramPct": 80
       },
       {
@@ -2590,8 +2596,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 79,
-        "vramPct": 58
+        "utilPct": 0,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 79,
