@@ -1,5 +1,5 @@
 {
-  "generated": 1788499306186,
+  "generated": 1788499350727,
   "status": "running",
   "stats": {
     "products": 86,
@@ -1109,6 +1109,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788499335240,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788499328999,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 86 products)",
+      "t": 1788499325826,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788499321283,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 4 zen free models",
+      "t": 1788499321282,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788499317506,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 86 products)",
       "t": 1788499146570,
       "type": "event"
@@ -1550,45 +1586,46 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
       "t": 1788494284334,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
-      "t": 1788494104686,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788493928282,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3769MB free)",
-      "t": 1788493928281,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
-      "t": 1788493923773,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
-      "t": 1788493744103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> ChainBridge",
-      "t": 1788493565534,
-      "type": "building"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1788499335240,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788499328999,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 86 products)",
+      "t": 1788499325826,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788499321283,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 4 zen free models",
+      "t": 1788499321282,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788499317506,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,7 +1837,6 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    3,
     0,
     0,
     1,
@@ -1817,8 +1853,8 @@
     0,
     1,
     0,
-    3,
-    4,
+    0,
+    7,
     6,
     0,
     1,
@@ -1829,15 +1865,16 @@
     0,
     1,
     0,
-    0
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.05,
-      0.07
+      1.16,
+      0.36,
+      0.17
     ],
-    "ramPct": 46,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1891,7 +1928,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -1899,7 +1936,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "automation_operator": {
@@ -1924,7 +1961,9 @@
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free"
+      "nemotron-3.5-lightning-free",
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2521,8 +2560,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 10,
-        "vramPct": 18
+        "utilPct": 80,
+        "vramPct": 76
       },
       {
         "alias": "GPU-Node-2",
