@@ -1,5 +1,5 @@
 {
-  "generated": 1788489539489,
+  "generated": 1788489584725,
   "status": "running",
   "stats": {
     "products": 83,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> SageSupply",
+      "t": 1788489544890,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> SageSupply",
       "t": 1788489534882,
       "type": "building"
@@ -1580,15 +1586,15 @@
       "text": "keyhunter: novitaai step 5 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
       "t": 1788485391239,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 4 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
-      "t": 1788485390209,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SageSupply",
+      "t": 1788489544890,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> SageSupply",
@@ -1649,12 +1655,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788489497531,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788489466062,
       "type": "event"
     }
   ],
@@ -1869,7 +1869,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     6,
@@ -1885,28 +1884,29 @@
     3,
     0,
     0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
+    5,
     2,
-    10
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    8,
+    5
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.14,
+      0.12,
+      0.12,
       0.1
     ],
-    "ramPct": 53,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2561,7 +2561,7 @@
     {
       "name": "SageSupply",
       "niche": "personal finance, investing & budgeting",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2591,7 +2591,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 10,
-        "vramPct": 81
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2606,13 +2606,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 71
+    "jobsProcessed": 72
   }
 }
