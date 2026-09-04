@@ -1,5 +1,5 @@
 {
-  "generated": 1788505677149,
+  "generated": 1788505722186,
   "status": "running",
   "stats": {
     "products": 92,
@@ -26,10 +26,10 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "An idea this undefined courts scope creep; I demand the team declare one specific, testabl",
-        "t": 1788503185222
+        "text": "We have no product — only a vague suggestion. Define the problem, the specific user, and t",
+        "t": 1788505696320
       }
     },
     {
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I reckon an idea with no features, no audience, and no stated problem isn't a product — it",
-        "t": 1788503220958
+        "text": "We have literally nothing to build — no name, no problem statement, no user, no feature li",
+        "t": 1788505720810
       }
     },
     {
@@ -265,6 +265,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "We have literally nothing to build — no name, no problem statement, no user, no feature list, not even a napkin sketch. I'm not writing a single line of code until someone hands me a one-page spec that names the product, describes the exact problem it solves for a specific person, lists three must-have features, and defines what \"done\" looks like for the first paying customer.",
+      "t": 1788505720810,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "We have no product — only a vague suggestion. Define the problem, the specific user, and the minimum viable feature set in a one-page brief before any stack discussion.",
+      "t": 1788505696320,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: CodePro — social media, creators & influencer tools. Let's see if it's worth building.",
@@ -1090,23 +1104,21 @@
       "t": 1788495904606,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "I’ve reviewed the catalog and the team’s direction — we're drowning in ideas but lacking focus. I agree with the push to polish one flagship, but I’m not convinced that “one” means “any.” We need a product that’s not just polished, but actually solves a real problem for a specific user in a way that can be monetized immediately. That’s the single most important thing we must do next — stop chasing ideas and start building something we can ship, test, and earn money from. I’ll build it, but only if we’re aligned on what that actually means.",
-      "t": 1788495904605,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "We’ve got 85 ideas and four listed products, but we’re still chasing quantity over quality—this is a ship or sink moment. The swarm must stop caching ideas and start selecting one flagship to polish into a sellable, secure product that earns money immediately. We will not launch anything until it’s ready for real customers, with a working checkout, verified security, and clear value. That single product is our only path forward.",
-      "t": 1788495904603,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CodePro",
+      "t": 1788505721593,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CodePro",
+      "t": 1788505681591,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "ideated: CodePro [social media, creators & influencer tools]",
@@ -1574,21 +1586,35 @@
       "text": "LISTED: SmartDoc AI @ http://localhost:5340 ($49 one-time)",
       "t": 1788503997008,
       "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> SmartDoc AI",
-      "t": 1788503996998,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> SmartDoc AI",
-      "t": 1788503926985,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CodePro",
+      "t": 1788505721593,
+      "type": "building"
+    },
+    {
+      "who": "Scotty",
+      "text": "We have literally nothing to build — no name, no problem statement, no user, no feature list, not even a napkin sketch. I'm not writing a single line of code until someone hands me a one-page spec that names the product, describes the exact problem it solves for a specific person, lists three must-have features, and defines what \"done\" looks like for the first paying customer.",
+      "t": 1788505720810,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "We have no product — only a vague suggestion. Define the problem, the specific user, and the minimum viable feature set in a one-page brief before any stack discussion.",
+      "t": 1788505696320,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CodePro",
+      "t": 1788505681591,
+      "type": "building"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: CodePro — social media, creators & influencer tools. Let's see if it's worth building.",
@@ -1626,48 +1652,6 @@
       "text": "researcher brief: Trade Certification Exam Prep (Journeyman/Master Electrician, Plumbing, HVAC, Welding) (willingness: high) — 4 tool ideas",
       "t": 1788505670584,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 91 products)",
-      "t": 1788505626375,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher exploring: study, learning & memory aids",
-      "t": 1788505621587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged DeveloperKit MT → developerkit-mt.zip (11739 bytes)",
-      "t": 1788505612453,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "NOT LISTED — failed quality gate: DeveloperKit MT (functional=true, score=2) · streak 1",
-      "t": 1788505612419,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged DeveloperKit MT → developerkit-mt.zip (11265 bytes)",
-      "t": 1788505591668,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revise-before-reject: repairing DeveloperKit MT (critic 2) from feedback",
-      "t": 1788505591585,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> DeveloperKit MT",
-      "t": 1788505591577,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1881,44 +1865,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    8,
-    5,
-    7,
+    4,
     12,
     6,
-    37,
-    0,
-    3,
-    4,
-    0,
-    9,
-    4,
-    2,
-    2,
-    3,
-    0,
-    1,
-    1,
-    3,
-    0,
-    4,
-    0,
-    0,
-    5,
-    2,
-    2,
+    11,
+    27,
     11,
     0,
     7,
-    9
+    0,
+    4,
+    6,
+    5,
+    0,
+    5,
+    0,
+    0,
+    2,
+    3,
+    0,
+    4,
+    0,
+    0,
+    4,
+    3,
+    0,
+    10,
+    3,
+    4,
+    5,
+    12
   ],
   "load": {
     "loadavg": [
-      0.61,
-      1.01,
-      2.43
+      0.9,
+      1,
+      2.35
     ],
-    "ramPct": 68,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1928,7 +1912,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
+        "model": "nemotron-3-ultra-free",
         "tier": "free"
       },
       "coder": {
@@ -2574,7 +2558,7 @@
     {
       "name": "CodePro",
       "niche": "social media, creators & influencer tools",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
