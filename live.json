@@ -1,5 +1,5 @@
 {
-  "generated": 1788560369804,
+  "generated": 1788560414844,
   "status": "running",
   "stats": {
     "products": 121,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for CopyCraft — 2 files, working node app. Handing off to test.",
+      "t": 1788560399004,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for CopyCraft — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788539257741,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "As Guinan, I propose we pivot into creating a \"Personalized Health Dashboard\" tailored for remote workers. Unlike existing health trackers, this dashboard integrates with various fitness apps and smartwatches to provide real-time insights into physical well-being, productivity, and mental health. The service offers personalized recommendations based on user data and industry best practices, aiming to improve overall wellness in the digital age. To achieve this, we must first clearly define our target market (remote workers aged 25-40) and conduct thorough research on existing solutions to …",
-      "t": 1788539257738,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "tests passed for CopyCraft",
+      "t": 1788560409125,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CopyCraft",
+      "t": 1788560406877,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788560399004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788560399004,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
@@ -1559,33 +1583,40 @@
       "text": "conductor: 3 request(s) logged for the Swarm Protector",
       "t": 1788556939083,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788556938867,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-live-readiness",
-      "t": 1788556938867,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788556938867,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788556938866,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "tests passed for CopyCraft",
+      "t": 1788560409125,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CopyCraft",
+      "t": 1788560406877,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for CopyCraft — 2 files, working node app. Handing off to test.",
+      "t": 1788560399004,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788560399004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788560399004,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
@@ -1640,7 +1671,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 15×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 16×"
     },
     {
       "name": "Shared memory",
@@ -1808,28 +1839,25 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    1,
     0,
+    2,
     7,
+    5,
     2,
-    6,
-    2,
-    0,
-    0,
     1,
     0,
     0,
     1,
-    6,
     0,
-    0,
-    1,
     0,
     7,
     0,
     0,
     1,
     0,
+    2,
+    5,
+    0,
     0,
     1,
     0,
@@ -1837,15 +1865,18 @@
     1,
     0,
     0,
-    1
+    1,
+    0,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.31,
-      0.27
+      0.15,
+      0.28,
+      0.26
     ],
-    "ramPct": 55,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1859,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2558,7 +2589,7 @@
     {
       "name": "CopyCraft",
       "niche": "events, community & memberships",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2587,7 +2618,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 16
       },
       {
