@@ -1,5 +1,5 @@
 {
-  "generated": 1788549835856,
+  "generated": 1788549880853,
   "status": "running",
   "stats": {
     "products": 118,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1788549877513,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788549875000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788549875000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 2 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
+      "t": 1788549867290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788549789346,
       "type": "bench"
@@ -1559,73 +1583,31 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
       "t": 1788545599443,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
-      "t": 1788545419942,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
-      "t": 1788545241284,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
-      "t": 1788545059587,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmartInvoiceFlow",
-      "t": 1788544960749,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788549789346,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2986MB free)",
-      "t": 1788549789345,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788549764368,
+      "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1788549877513,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788549750488,
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788549875000,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
-      "t": 1788549750487,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788549746923,
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788549875000,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788549746201,
+      "text": "keyhunter: openrouter step 2 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
+      "t": 1788549867290,
       "type": "event"
     }
   ],
@@ -1840,23 +1822,22 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     1,
-    6,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    16,
     4,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    10,
+    10,
     0,
     1,
     2,
@@ -1868,16 +1849,17 @@
     1,
     0,
     0,
-    21,
-    2
+    18,
+    5,
+    7
   ],
   "load": {
     "loadavg": [
-      0.87,
-      0.59,
-      0.39
+      0.48,
+      0.52,
+      0.38
     ],
-    "ramPct": 62,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -2595,10 +2577,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 22,
-        "vramPct": 47
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 68
       },
       {
         "alias": "GPU-Node-2",
@@ -2615,7 +2597,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 4,
+        "utilPct": 11,
         "vramPct": 92
       }
     ],
