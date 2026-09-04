@@ -1,5 +1,5 @@
 {
-  "generated": 1788512088097,
+  "generated": 1788512113383,
   "status": "running",
   "stats": {
     "products": 94,
@@ -131,7 +131,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I view CodeMaster Prep as a viable offering only if we can guarantee no data or code‑expos",
         "t": 1788512015284
@@ -143,7 +143,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "CodeMaster Prep needs a fully functional, end-to-end adaptive question bank before it can ",
         "t": 1788512017694
@@ -230,10 +230,10 @@
       "color": "#e36db8",
       "avatar": null,
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The lack of industry-validated templates across multiple jurisdictions is a critical flaw ",
-        "t": 1788504540330
+        "text": "I believe CodeMaster Prep can hit the market only once we prove the adaptive engine works ",
+        "t": 1788512089958
       }
     },
     {
@@ -242,10 +242,10 @@
       "color": "#bb6adc",
       "avatar": null,
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "SmartDoc AI has significant potential but lacks industry-validated templates across multip",
-        "t": 1788504590372
+        "text": "CodeMaster Prep has potential but lacks concrete buy-in from key stakeholders. Demand: Pro",
+        "t": 1788512091525
       }
     },
     {
@@ -259,6 +259,34 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for PulseRoute.",
+      "t": 1788512106290,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (4) recorded for PulseRoute: Define a singular, well-defined user persona with a specific pain point that is currently underserved by existing solutions. | Articulate a unique value proposition that clearly differentiates this product from competitors and demonstrates measurable improvement over existing tools. | Identify one non-negotiable feature that makes the product indispensable to its target audience. | Provide a concrete, testable hypothesis or prototype idea that validates the user problem and solution before proceeding with development.",
+      "t": 1788512106288,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "demand_validator",
+      "text": "CodeMaster Prep has potential but lacks concrete buy-in from key stakeholders. Demand: Provide a full end-to-end adaptive question bank with real-time references to demonstrate the product’s readiness for launch.",
+      "t": 1788512091525,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "recovery_engineer",
+      "text": "I believe CodeMaster Prep can hit the market only once we prove the adaptive engine works end‑to‑end: a fully timed practice exam that mimics the NEC 2024 format, automatically adjusts difficulty, records a heatmap, and delivers micro‑drills. Demand: build and ship that one complete exam with all adaptive logic and heatmap, then validate its accuracy and user flow with five beta testers before any marketing.",
+      "t": 1788512089958,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "This idea is shaky because it doesn’t nail down a real problem or offer a clear edge—nobody needs another generic tool. But here's what it *must* get right to ship: it has to solve something people actually struggle with, not just automate something they already do well.",
@@ -1070,37 +1098,27 @@
       "t": 1788500192438,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
-      "t": 1788500191442,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for CryptoLedge — 2 files, working node app. Handing off to test.",
-      "t": 1788499834532,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: CryptoLedge — developer productivity tools & services. Let's see if it's worth building.",
-      "t": 1788499416208,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for CryptoBridge Vault — 2 files, working node app. Handing off to test.",
-      "t": 1788499391276,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PulseRoute",
+      "t": 1788512112898,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
+      "t": 1788512108375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 4 quality demands recorded for PulseRoute",
+      "t": 1788512106290,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> PulseRoute",
@@ -1562,27 +1580,41 @@
       "text": "self-heal: provider chatgpt not found",
       "t": 1788511502138,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788511478712,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 6 fix(es) — provider claude not found; provider chatgpt not found; disabled free model nemotron-3.5-lightning-free; disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788511478712,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788511478705,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PulseRoute",
+      "t": 1788512112898,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
+      "t": 1788512108375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 4 quality demands recorded for PulseRoute",
+      "t": 1788512106290,
+      "type": "event"
+    },
+    {
+      "who": "demand_validator",
+      "text": "CodeMaster Prep has potential but lacks concrete buy-in from key stakeholders. Demand: Provide a full end-to-end adaptive question bank with real-time references to demonstrate the product’s readiness for launch.",
+      "t": 1788512091525,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "recovery_engineer",
+      "text": "I believe CodeMaster Prep can hit the market only once we prove the adaptive engine works end‑to‑end: a fully timed practice exam that mimics the NEC 2024 format, automatically adjusts difficulty, records a heatmap, and delivers micro‑drills. Demand: build and ship that one complete exam with all adaptive logic and heatmap, then validate its accuracy and user flow with five beta testers before any marketing.",
+      "t": 1788512089958,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "This idea is shaky because it doesn’t nail down a real problem or offer a clear edge—nobody needs another generic tool. But here's what it *must* get right to ship: it has to solve something people actually struggle with, not just automate something they already do well.",
@@ -1661,27 +1693,6 @@
       "who": "Scotty",
       "text": "This idea needs a sharper problem statement and unique value proposition — right now it’s too vague to build toward a real solution. I need a clear user persona and one concrete pain point we're solving, not a list of features. Define the \"why\" before we code the \"how\".",
       "t": 1788512029512,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "CodeMaster Prep needs a fully functional, end-to-end adaptive question bank before it can be shipped. The team must complete the backend logic and frontend interface to ensure the product is ready for real-world users. This includes passing all necessary tests and securing any required data privacy certifications. Without these steps, we cannot guarantee the product will ship live and meet customer needs.",
-      "t": 1788512017694,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "I view CodeMaster Prep as a viable offering only if we can guarantee no data or code‑exposure risk; any compromise would negate the revenue advantage. The team must first perform a comprehensive penetration test against the entire stack—covering injection, XSS, broken auth, and secret leakage—before any beta release.",
-      "t": 1788512015284,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "This idea lacks a clear differentiator and risks becoming another generic tool in a saturated market. It needs a definitive, compelling user problem it solves better than existing alternatives. Demand: Define the singular, non-negotiable feature that makes this product indispensable — prove it with a working prototype or user test.",
-      "t": 1788512006091,
       "system": false,
       "type": "chat"
     }
@@ -1897,44 +1908,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    1,
     0,
-    0,
-    2,
-    4,
     0,
     1,
-    0,
-    0,
-    4,
-    2,
-    7,
-    1,
-    9,
-    0,
-    9,
-    7,
-    2,
-    6,
-    9,
-    18,
     5,
-    25,
-    7,
+    0,
     1,
-    7,
+    0,
+    0,
     2,
+    4,
+    6,
+    2,
+    3,
+    6,
+    3,
     7,
-    30,
-    15
+    8,
+    1,
+    5,
+    27,
+    1,
+    21,
+    15,
+    1,
+    2,
+    5,
+    4,
+    28,
+    14,
+    17
   ],
   "load": {
     "loadavg": [
-      0.85,
-      1.37,
-      1.68
+      0.9,
+      1.36,
+      1.67
     ],
-    "ramPct": 56,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2008,11 +2019,11 @@
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "demand_validator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security-officer": {
@@ -2587,7 +2598,7 @@
     {
       "name": "PulseRoute",
       "niche": "local services & gig economy",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2616,7 +2627,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 32,
+        "utilPct": 29,
         "vramPct": 79
       },
       {
@@ -2634,11 +2645,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 85,
-        "vramPct": 63
+        "utilPct": 28,
+        "vramPct": 96
       }
     ],
     "selfHostedInferencePct": 89,
-    "jobsProcessed": 83
+    "jobsProcessed": 84
   }
 }
