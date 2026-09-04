@@ -1,5 +1,5 @@
 {
-  "generated": 1788561855009,
+  "generated": 1788561900015,
   "status": "running",
   "stats": {
     "products": 122,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> MonetaryMosaic",
+      "t": 1788561867063,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788561858395,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> MonetaryMosaic",
       "t": 1788561847061,
       "type": "building"
@@ -1490,24 +1502,24 @@
     },
     {
       "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788560399004,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788560399004,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
-      "t": 1788560363797,
       "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MonetaryMosaic",
+      "t": 1788561867063,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788561858395,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> MonetaryMosaic",
@@ -1525,12 +1537,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788561837089,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788561805082,
       "type": "event"
     }
   ],
@@ -1750,27 +1756,26 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
-    6,
-    5,
-    21,
-    6,
-    15,
-    1,
     4,
     3,
-    0,
-    22,
-    6,
-    5,
-    16,
     19,
-    10,
-    10,
+    12,
+    12,
+    4,
+    1,
+    6,
+    0,
+    15,
+    12,
     5,
+    12,
+    19,
+    13,
+    9,
+    8,
     0,
     1,
     0,
@@ -1778,13 +1783,14 @@
     1,
     0,
     0,
+    3,
     4
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.27,
-      0.35
+      0.21,
+      0.26,
+      0.34
     ],
     "ramPct": 82,
     "cpus": 12
@@ -2499,7 +2505,7 @@
     {
       "name": "MonetaryMosaic",
       "niche": "personal finance, investing & budgeting",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2528,7 +2534,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 37,
+        "utilPct": 33,
         "vramPct": 80
       },
       {
@@ -2544,13 +2550,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 113
+    "jobsProcessed": 114
   }
 }
