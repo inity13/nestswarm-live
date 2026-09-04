@@ -1,5 +1,5 @@
 {
-  "generated": 1788558839406,
+  "generated": 1788558904642,
   "status": "running",
   "stats": {
     "products": 121,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite data push: upload live.json failed 422",
+      "t": 1788558890549,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CopyCraft",
+      "t": 1788558856440,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788558853791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> CopyCraft",
       "t": 1788558836430,
       "type": "building"
@@ -1565,27 +1583,27 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
       "t": 1788556042757,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788555855055,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788555855055,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788555855054,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite data push: upload live.json failed 422",
+      "t": 1788558890549,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CopyCraft",
+      "t": 1788558856440,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788558853791,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> CopyCraft",
@@ -1604,18 +1622,6 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788558831353,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788558751423,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2875MB free)",
-      "t": 1788558751422,
-      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1833,15 +1839,14 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    0,
     1,
     1,
     6,
     1,
     0,
     0,
-    1,
-    7,
+    3,
+    5,
     0,
     1,
     0,
@@ -1850,8 +1855,8 @@
     0,
     0,
     12,
-    0,
     1,
+    0,
     1,
     0,
     0,
@@ -1862,15 +1867,16 @@
     0,
     0,
     9,
-    3
+    3,
+    4
   ],
   "load": {
     "loadavg": [
-      0.52,
-      0.38,
-      0.26
+      0.22,
+      0.32,
+      0.24
     ],
-    "ramPct": 66,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2583,7 +2589,7 @@
     {
       "name": "CopyCraft",
       "niche": "events, community & memberships",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2612,7 +2618,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 46
       },
       {
@@ -2628,13 +2634,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
-    "jobsProcessed": 110
+    "jobsProcessed": 111
   }
 }
