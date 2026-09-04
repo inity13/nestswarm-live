@@ -1,5 +1,5 @@
 {
-  "generated": 1788510178027,
+  "generated": 1788510223012,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788510181675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1788510166701,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788507025714,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788507024555,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788510181675,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
@@ -1597,12 +1603,6 @@
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1788510153895,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788510127865,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1817,43 +1817,43 @@
   },
   "throughput": [
     0,
-    0,
-    2,
-    0,
+    1,
+    1,
     3,
+    1,
+    2,
+    0,
+    1,
     3,
     0,
+    12,
     0,
-    2,
-    2,
-    8,
+    7,
     4,
+    0,
+    0,
     1,
-    6,
-    4,
-    0,
-    0,
     1,
     3,
     1,
+    0,
+    0,
+    3,
+    9,
+    1,
     1,
     0,
     0,
-    11,
-    1,
-    1,
-    1,
-    0,
-    0,
-    3
+    2,
+    2
   ],
   "load": {
     "loadavg": [
-      1.63,
-      1.7,
-      1.71
+      2.7,
+      2.04,
+      1.83
     ],
-    "ramPct": 48,
+    "ramPct": 44,
     "cpus": 12
   },
   "brain": {
@@ -2535,8 +2535,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 14,
-        "vramPct": 69
+        "utilPct": 32,
+        "vramPct": 74
       },
       {
         "alias": "GPU-Node-2",
@@ -2553,7 +2553,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 8,
+        "utilPct": 74,
         "vramPct": 96
       }
     ],
