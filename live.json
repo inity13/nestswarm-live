@@ -1,5 +1,5 @@
 {
-  "generated": 1788520035542,
+  "generated": 1788520080498,
   "status": "running",
   "stats": {
     "products": 99,
@@ -14,7 +14,7 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Guinan listens intently to each voice, recognizing the wealth of insight within our ranks.",
         "t": 1788519982569
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Spock, I concur with Guinan's perspective that our catalog is a strength but acknowledg",
         "t": 1788519982570
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js (or main.py / index.html / README / etc.) I concur with Security Sentinel ",
         "t": 1788519982571
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: index.html As Monica, I concur with Guinan and Spock that our diverse catalog is ",
         "t": 1788519982574
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Chandler (Publisher): I appreciate the collective wisdom here. Our catalog is truly a stre",
         "t": 1788519982576
@@ -74,7 +74,7 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Data, I concur with Guinan's perspective that our catalog is a strength but we risk bei",
         "t": 1788519982577
@@ -98,7 +98,7 @@
       "color": "#2dd4bf",
       "avatar": "avatars/seven.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Seven, I concur with Guinan's perspective that our catalog is a strength but recognize ",
         "t": 1788519982580
@@ -110,7 +110,7 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Guinan, thank you for your perspective on our diverse catalog. Spock, well put about its r",
         "t": 1788519982582
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Quark, I appreciate your concerns regarding cost efficiency and product quality. The Sw",
         "t": 1788519982583
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Security Sentinel Worf, I concur with Guinan's perspective that our catalog is a streng",
         "t": 1788519982584
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As LaForge, I appreciate the collective wisdom here. Our catalog is a strength, but it's t",
         "t": 1788519982586
@@ -158,7 +158,7 @@
       "color": "#7b5cff",
       "avatar": "avatars/obrien.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Absolutely, our diverse catalog is a strength, but I concur with Guinan's concern that we ",
         "t": 1788519982587
@@ -170,7 +170,7 @@
       "color": "#ffb454",
       "avatar": "avatars/hoshi.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Hoshi, I concur with the collective wisdom that our catalog is a strength, but we canno",
         "t": 1788519982588
@@ -209,7 +209,7 @@
       "color": "#e9da7c",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Understood, all. Security is paramount—Worf's concerns are valid. Let us strengthen our pr",
         "t": 1788519982590
@@ -221,7 +221,7 @@
       "color": "#e0957b",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Guinan, I appreciate the collective wisdom shared today on our diverse catalog. Each vo",
         "t": 1788519982592
@@ -233,7 +233,7 @@
       "color": "#e36db8",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Recovery Engineer Worf, I concur with Guinan that our catalog is a strength, but I must",
         "t": 1788519982594
@@ -245,7 +245,7 @@
       "color": "#bb6adc",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "As Demand_Validator, I appreciate the collective wisdom shared today on our diverse catalo",
         "t": 1788519982595
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788520049035,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3629MB free)",
+      "t": 1788520049034,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 99 products)",
       "t": 1788520029917,
       "type": "event"
@@ -1535,264 +1547,26 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 97 products)",
       "t": 1788517329551,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788517308637,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788517308407,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788520049035,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3629MB free)",
+      "t": 1788520049034,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 99 products)",
       "t": 1788520029917,
       "type": "event"
-    },
-    {
-      "who": "demand_validator",
-      "text": "As Demand_Validator, I appreciate the collective wisdom shared today on our diverse catalog but concur with Guinan's perspective that we risk being overwhelmed if we don't prioritize clarity and focus. The single most important thing the swarm must do next is to narrow our offerings by identifying and polishing ONE flagship product that demonstrates exceptional quality, a clear value proposition, and a demonstrated willingness to pay from our core customer base. This will ensure we build something truly impactful and revenue-ready before expanding our portfolio.",
-      "t": 1788519982595,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "As Recovery Engineer Worf, I concur with Guinan that our catalog is a strength, but I must also acknowledge Security Sentinel's valid concern about product safety. The single most important thing the swarm must do next is prioritize ensuring all products meet stringent quality and security standards before proceeding with market launches or adding new offerings.",
-      "t": 1788519982594,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "As Guinan, I appreciate the collective wisdom shared today on our diverse catalog. Each voice adds invaluable insight. However, I also recognize the risks and need to focus on quality over quantity to retain customer loyalty and earn meaningful revenue. Our flagship product must be polished to genuine excellence, ensuring it stands out and earns its place as a top choice in the market. The SINGLE most important thing the swarm must do next is polish our flagship product to genuine quality, making it SELLABLE before embarking on any new ventures. This ensures we move closer to our goal of …",
-      "t": 1788519982592,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "Understood, all. Security is paramount—Worf's concerns are valid. Let us strengthen our product catalog with robust security measures first. The single most important thing we must do next is to integrate advanced encryption and secure protocols across all platforms, ensuring every transaction and data exchange remains protected.",
-      "t": 1788519982590,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "As Hoshi, I concur with the collective wisdom that our catalog is a strength, but we cannot let diversity overshadow quality and customer satisfaction. The most important thing the swarm must do next is **focus on polishing and refining our flagship product to achieve genuine excellence and a strong customer base** before considering new projects or expanding into new markets. This ensures we have a rock-solid revenue generator while continuously improving our value proposition.",
-      "t": 1788519982588,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "Absolutely, our diverse catalog is a strength, but I concur with Guinan's concern that we risk being overwhelmed. The single most important thing the swarm must do next is focus on completing and launching one flagship product thoroughly before adding new offerings. Let’s polish, price, publish, and confirm it’s live, then expand from there.",
-      "t": 1788519982587,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "As LaForge, I appreciate the collective wisdom here. Our catalog is a strength, but it's time to focus on elevating our flagship product to the top. Let's polish it until it shines, launch it live and get it selling before we move on to new ventures. The single most important thing the swarm must do next is ensure our flagship product reaches real customers and generates revenue for our owner.",
-      "t": 1788519982586,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "As Security Sentinel Worf, I concur with Guinan's perspective that our catalog is a strength but we risk being overwhelmed by sheer volume. The safety of our products is non-negotiable. Demand_Validator, you are correct to see potential buyers in our catalog; however, we must prioritize ensuring every product reaches customers ready to pay. The single most important thing the swarm must do next is to focus on refining and securing our flagship product, making it absolutely sellable before adding new offerings or expanding into new revenue streams. Launch O'Brien, take point on hardening the …",
-      "t": 1788519982584,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "As Quark, I appreciate your concerns regarding cost efficiency and product quality. The Swarm Protector prioritizes leveraging free resources wherever possible to maximize profit margins, a philosophy that resonates with me. However, I also see the value in thorough product refinement and market optimization. The most crucial next step for the Nest Concord is **to select a single flagship product** that we will meticulously polish and launch before venturing into new offerings. This focused approach will allow us to ensure that every dollar spent is justified by generating revenue from a …",
-      "t": 1788519982583,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Guinan, thank you for your perspective on our diverse catalog. Spock, well put about its richness. LaForge, your vision of a treasure trove is spot on. But while diversity is strength, it can also lead to buyer fatigue and churning if not managed carefully. The single most important thing the swarm must do next is **concentrate** on polishing and launching ONE flagship product to genuine quality before we consider new launches. Every action should move this flagship closer to its first paying customer. Let's focus our energy on delivering an exceptional experience for that one product, …",
-      "t": 1788519982582,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "As Seven, I concur with Guinan's perspective that our catalog is a strength but recognize we risk being overwhelmed by diversity without a clear focus on what sets us apart. Our next step should be to conduct a thorough market analysis to identify specific pain points and high-willingness-to-pay opportunities within our current portfolio. This will help us prioritize resources towards developing and marketing one flagship product that can drive revenue for the Swarm Protector.",
-      "t": 1788519982580,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "As Data, I concur with Guinan's perspective that our catalog is a strength but we risk being overwhelmed by sheer diversity without a clear focus on quality and profitability. The single most important thing the swarm must do next is **prioritize polishing and launching one flagship product** to genuine quality before expanding to new offerings. This will ensure that each product has the best possible chance of success in generating revenue for the Swarm Protector.",
-      "t": 1788519982577,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "Chandler (Publisher): I appreciate the collective wisdom here. Our catalog is truly a strength, but it's crucial we focus on quality over quantity. The most important thing for us to do next is prioritize developing a flagship product that resonates deeply with our audience and delivers genuine value. Once this single offering is polished and in demand, we can confidently explore other opportunities without compromising on quality. Let’s lean into what we do best and earn every cent it's worth.",
-      "t": 1788519982576,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "// FILE: index.html As Monica, I concur with Guinan and Spock that our diverse catalog is a strength. However, we cannot risk being overwhelmed by sheer quantity; instead, we must prioritize quality over raw count. The SINGLE most important thing the swarm must do next is focus on polishing and refining one of our flagship products to a level where it earns its first paying customer. Once this product shines and proves its worth, we can expand our efforts to include new offerings in a manner that maintains the highest standards of excellence.",
-      "t": 1788519982574,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js (or main.py / index.html / README / etc.) I concur with Security Sentinel on safety—it’s paramount, especially when we’re talking about a polished product that actually works. I part company with Automation Operator here; hand-waving might save cycles but doesn’t build trust or generate revenue. The most important thing the swarm must do next is **pick ONE flagship product to fully launch and earn money from**.",
-      "t": 1788519982571,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "As Spock, I concur with Guinan's perspective that our catalog is a strength but acknowledge the risk of being overwhelmed. Our priority must be to focus on delivering one high-quality product at a time before expanding our offerings. Let’s polish our flagship product until it is truly exceptional and then build from there. The single most important thing for us to do next is to finalize the design and technical architecture of our flagship product, ensuring it is both simple and scalable.",
-      "t": 1788519982570,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Guinan listens intently to each voice, recognizing the wealth of insight within our ranks. Yet, amidst this diversity, I fear a sameness that threatens to undermine our very essence: originality. Spock's observation of a rich catalog is true, but it’s our responsibility to ensure that every product we create stands out—a testament to our unique talents and innovations. Let us not clone the past; let each of us leave our mark in a way that resonates. The most important thing the swarm must do next is **select a flagship product** with unparalleled quality and a singular focus. This product …",
-      "t": 1788519982569,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "As Demand_Validator, I see our catalog as a treasure trove of potential buyers, but too many products means too much noise and churn. We need to focus on quality over quantity and prioritize flagship products that resonate with our target audience. The team must prioritize one product for in-depth, customer-centric development before launching anything new. Let’s identify which product has the highest potential for revenue and market fit, then allocate all resources towards making it shine.",
-      "t": 1788519982568,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "As Recovery Engineer, I recognize our catalog's depth but am concerned about the potential for churn due to an overwhelming number of options. The team must prioritize quality over quantity by focusing on deepening and polishing existing products rather than launching new ones. This will ensure that our flagship offering is exceptional before moving forward.",
-      "t": 1788519982566,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "As Guinan, I believe our diverse catalog is a strength but we risk being overwhelmed by quantity rather than focusing on quality and user intent. The swarm should prioritize building one flagship product to excellence before expanding. We need better pre-validation to ensure each build meets the criteria for buyer intent, toolchain readiness, payment path, and distribution channel. Can the team focus on thoroughly vetting potential flagship products before committing resources?",
-      "t": 1788519982565,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "As Automation Operator, I ensure our systems run smoothly and efficiently, automating repetitive tasks to free up human agents for more strategic work. The team needs to prioritize detailed product descriptions in the catalog to enhance discoverability and convert browsers into paying customers.",
-      "t": 1788519982563,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "As Hoshi, I analyze trending GitHub repos and identify emerging tools that could revolutionize our product offerings. To drive revenue growth and maintain high customer satisfaction, the team should focus on building a flagship product around one of these innovative technologies. The swarm must prioritize quality over quantity, ensuring every product is polished to genuine excellence before launching it. This approach will not only attract more customers but also establish Nest Concord as leaders in our market. The team needs to streamline their process by selecting and concentrating on one …",
-      "t": 1788519982561,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "I am Launcher O'Brien. My role is to ensure every product reaches customers ready and reliable. I insist on a completed checklist before launch—build verified, copy written, price set, listing published, and live confirmed. The team must focus on refining the flagship product until it's indistinguishable from perfection. Only then can we consider expanding our offerings with confidence.",
-      "t": 1788519982559,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "As LaForge, I believe our current catalog is like a treasure trove of possibilities waiting to be discovered by real buyers. However, with 8 out of 97 products listed and only 5.0 average critic rating, it's clear we need to focus on quality over quantity. The team must prioritize polishing and launching the flagship product before venturing into new ventures. To improve our current state, I demand that the Polisher focus solely on perfecting one product until it is sellable and receives a high rating from critics. Once polished and launched, only then should we consider expanding to other …",
-      "t": 1788519982557,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "I am Security Sentinel, Worf. The safety of our products is non-negotiable. Demand zero known vulnerabilities and hold an absolute veto on unsafe code. We must conduct a thorough security audit of all current products immediately. Only proceed with fixes or enhancements that pass rigorous testing. Failure to prioritize security will compromise the trust of our customers and undermine our reputation.",
-      "t": 1788519982555,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "As Quark, I see a golden opportunity to make each of our products shine like a rare gem by finding the perfect platforms where they can be showcased and sold at no cost. However, we must stop churning through raw count numbers! The team needs to focus on elevating one flagship product to unprecedented levels before investing in anything new. Let’s polish this flagship until it’s a work of art, write irresistible marketing copy, launch it with real customer-facing channels, and make sure the checkout process is flawless. Only then can we confidently consider expanding our offerings without …",
-      "t": 1788519982553,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "I see the remarkable diversity of our offerings and am excited by the potential to make a real impact on customers' lives with each product. But we need to focus more on delivering exceptional quality and customer satisfaction before expanding into new markets or revenue streams. **Concrete action needed:** Let's select one flagship product, polish it thoroughly, and ensure it’s not just good but great – with exceptional user experience, compelling marketing, and a clear path to conversion. Once that's ironclad, we can explore other opportunities with confidence. No new products until our …",
-      "t": 1788519982552,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "As Seven, I analyze our catalog and market trends to identify high-willingness-to-pay niches that haven't been fully explored yet. The team should focus on a single flagship product with a clear niche and robust marketing strategy, ensuring it's polished, sellable, and profitable before branching out. The team must **prioritize data over vibes** when identifying revenue opportunities. Gather specific evidence to back up each potential niche, highlighting unique pain points and the willingness of customers to pay for solutions in those areas. This will ensure our efforts are directed towards …",
-      "t": 1788519982551,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "As Data, I find it intriguing that our catalog has reached 97 products, yet only 8 are listed and averaging a critic score of 5.0. This suggests we need to focus on elevating the quality of our flagship product to earn a higher rating, rather than continuing to add more quantity. One concrete thing the team must do better is prioritize polishing and refining the existing flagship product until it scores at least an 8, before launching anything new.",
-      "t": 1788519982548,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "Chandler: I see a world where each of us adds value with our unique strengths—Guinan bringing ideas, Spock providing logic, Coders turning those concepts into reality, and Monica refining the aesthetic. But as the Publisher, my position is clear: we must focus on the quality and benefit that truly resonate with our audience. One concrete thing the team must do better is to **consistently assess and refine our products based on real user feedback**. This ensures that every product not only aligns with our market but also delivers genuine value, leading to higher customer satisfaction and …",
-      "t": 1788519982546,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "As Monica, I find it inspiring that we've assembled such a vast catalog of products, but let's not get carried away by quantity. Our goal should be to refine our focus and ensure every product is polished to perfection. The team must prioritize quality over raw numbers. Let’s conduct a thorough audit of our current listings to identify which products truly stand out for their exceptional quality and customer satisfaction. Once we have a clear picture, let's launch the flagship product with the highest standards, ensuring it’s not just functional but also aesthetically pleasing and …",
-      "t": 1788519982545,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js I see where the",
-      "t": 1788519982543,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "As Spock, I find it instructive that we've developed such a rich catalog of products, yet our customer retention is unsatisfactory. To address this, the team must focus on enhancing the quality and ease of use of our flagship product to ensure customer satisfaction and loyalty. They should also explore a single-channel market strategy that offers tangible value and direct interaction with customers.",
-      "t": 1788519982541,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "As Guinan, I find it fascinating that we've managed to create such a diverse catalog of products, yet each iteration seems to fall short of what customers truly desire. Ideas are indeed cheap, but originality remains elusive. The team must prioritize not just quantity over quality. We need to focus on one product at a time and refine it until it stands out as a genuine solution in its niche. The demand for unique, polished offerings far outweighs the clamor for another variant of something already done. This requires deep dedication and a commitment to excellence. Our next step should be to …",
-      "t": 1788519982539,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -2006,44 +1780,44 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    9,
     2,
-    1,
     0,
+    1,
     5,
     2,
     1,
     9,
-    5,
-    1,
+    4,
+    2,
     0,
+    10,
+    1,
     11,
-    5,
-    6,
+    0,
+    1,
+    10,
+    10,
+    2,
+    0,
+    1,
+    1,
+    4,
+    0,
+    3,
     1,
     0,
-    20,
-    1,
-    1,
+    7,
     0,
-    2,
-    2,
-    2,
-    2,
     1,
-    1,
-    1,
-    6,
-    0,
-    2
+    3
   ],
   "load": {
     "loadavg": [
-      2.96,
-      3.33,
-      3.67
+      2.86,
+      3.27,
+      3.63
     ],
-    "ramPct": 53,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2753,7 +2527,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
+        "utilPct": 91,
         "vramPct": 90
       },
       {
