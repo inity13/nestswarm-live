@@ -1,8 +1,8 @@
 {
-  "generated": 1788518190165,
+  "generated": 1788518210623,
   "status": "running",
   "stats": {
-    "products": 97,
+    "products": 98,
     "listed": 8,
     "agents": 22,
     "avgScore": "5.0"
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788518204561,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for ChefMate — 2 files, working node app. Handing off to test.",
+      "t": 1788518193192,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "O'Brien",
       "text": "Eloquii has tremendous potential, but its current interface is disjointed and user-unfriendly. The team must complete the user interface polish before proceeding with any further steps.",
@@ -1087,23 +1101,45 @@
       "t": 1788504589099,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "The lack of industry-validated templates across multiple jurisdictions is a critical flaw that renders SmartDoc AI currently unreliable and unsafe for commercial use. Prioritizing the development of robust, jurisdictionally validated templates should be the top priority before any further progress can be made on this product.",
-      "t": 1788504540330,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "SmartDoc AI must deliver industry-validated templates across multiple jurisdictions before it can be shipped. This is crucial for earning the trust and confidence of legal professionals, small businesses, and freelancers who rely on precise and legally compliant documents.",
-      "t": 1788504533109,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788518204567,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: education, tutoring & courses",
+      "t": 1788518204561,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788518199351,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 3): The operation was aborted due to timeout",
+      "t": 1788518199336,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ChefMate",
+      "t": 1788518194549,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788518193192,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 97 products)",
@@ -1547,45 +1583,53 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
       "t": 1788516432964,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788518204567,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "marketer produced a kit for Eloquii",
-      "t": 1788516375980,
+      "text": "new build started (ideating) — niche: education, tutoring & courses",
+      "t": 1788518204561,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788516366929,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for Eloquii",
-      "t": 1788516366927,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
-      "t": 1788516365049,
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788518199351,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for marketer (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788516365049,
+      "text": "serve fail (attempt 3): The operation was aborted due to timeout",
+      "t": 1788518199336,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
-      "t": 1788516360785,
+      "text": "stage 'test' -> ChefMate",
+      "t": 1788518194549,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for ChefMate — 2 files, working node app. Handing off to test.",
+      "t": 1788518193192,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788518193192,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1799,42 +1843,42 @@
   "throughput": [
     1,
     0,
-    0,
-    6,
-    7,
-    2,
-    1,
     5,
-    13,
-    1,
-    2,
-    19,
-    3,
-    1,
-    0,
-    3,
-    0,
-    0,
+    6,
     4,
-    7,
     0,
     6,
-    0,
-    0,
-    3,
+    2,
+    11,
     1,
-    4,
-    15,
+    18,
+    5,
+    2,
     0,
-    0
+    2,
+    1,
+    0,
+    0,
+    5,
+    6,
+    2,
+    4,
+    0,
+    0,
+    4,
+    0,
+    18,
+    1,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      2.22,
-      3.58,
-      3.88
+      2.34,
+      3.52,
+      3.85
     ],
-    "ramPct": 73,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2513,9 +2557,9 @@
   ],
   "building": [
     {
-      "name": "ChefMate",
-      "niche": "home, cooking & household helpers",
-      "stage": "build",
+      "name": "Untitled",
+      "niche": "education, tutoring & courses",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2544,8 +2588,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 88,
-        "vramPct": 90
+        "utilPct": 5,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2560,9 +2604,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 3,
+        "busy": true,
+        "warm": false,
+        "utilPct": 90,
         "vramPct": 95
       }
     ],
