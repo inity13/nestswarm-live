@@ -1,5 +1,5 @@
 {
-  "generated": 1788549880853,
+  "generated": 1788549901022,
   "status": "running",
   "stats": {
     "products": 118,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1788549892880,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1788549884752,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788549884706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill demand-validation-optimization",
+      "t": 1788549884589,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: demand-validation-optimization",
+      "t": 1788549884588,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788549877513,
       "type": "event"
@@ -1553,39 +1583,39 @@
       "text": "stage 'build' -> SmartInvoiceFlow",
       "t": 1788545741079,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for SmartInvoiceFlow is stuck (attempt 2) — trying a stronger model",
-      "t": 1788545741079,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788545731089,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SmartInvoiceFlow",
-      "t": 1788545731066,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788545724978,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
-      "t": 1788545599443,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1788549892880,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1788549884752,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788549884706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill demand-validation-optimization",
+      "t": 1788549884589,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: demand-validation-optimization",
+      "t": 1788549884588,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
@@ -1702,7 +1732,7 @@
     },
     {
       "name": "Reusable skills",
-      "desc": "42 skill(s) in the refinery"
+      "desc": "43 skill(s) in the refinery"
     },
     {
       "name": "buyer-intent-mining",
@@ -1807,6 +1837,10 @@
     {
       "name": "stripe-alternative-fallback",
       "desc": "Use a hosted merchant-of-record checkout as a fallback when Stripe integration is unavailable"
+    },
+    {
+      "name": "demand-validation-optimization",
+      "desc": "Improve pre-build demand scoring to better identify market gaps and avoid building products with existing fallbacks"
     }
   ],
   "ledger": {
@@ -1823,9 +1857,24 @@
   },
   "throughput": [
     1,
-    4,
+    6,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    17,
+    3,
+    1,
+    0,
     2,
-    1,
     0,
     0,
     1,
@@ -1833,33 +1882,18 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
-    10,
-    10,
-    0,
-    1,
-    2,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    18,
     5,
-    7
+    16,
+    2,
+    14
   ],
   "load": {
     "loadavg": [
-      0.48,
-      0.52,
-      0.38
+      0.42,
+      0.5,
+      0.37
     ],
-    "ramPct": 60,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1901,8 +1935,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1913,7 +1947,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2577,10 +2611,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 68
+        "busy": true,
+        "warm": false,
+        "utilPct": 50,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2597,8 +2631,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 11,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 80,
