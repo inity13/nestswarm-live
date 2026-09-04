@@ -1,5 +1,5 @@
 {
-  "generated": 1788487019119,
+  "generated": 1788487064357,
   "status": "running",
   "stats": {
     "products": 81,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788487035750,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
       "t": 1788486904066,
       "type": "event"
@@ -1580,15 +1586,16 @@
       "text": "keyhunter: nvidia step 0 -> {\"action\":\"clickText\",\"text\":\"Create an Account\"}",
       "t": 1788485216716,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788485200816,
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788487035750,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,12 +1807,11 @@
     "priority": ""
   },
   "throughput": [
+    25,
+    44,
     26,
-    38,
-    46,
-    1,
-    8,
-    4,
+    3,
+    9,
     0,
     1,
     0,
@@ -1829,12 +1835,13 @@
     0,
     0,
     1,
-    0
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.13,
+      0.09,
+      0.12,
       0.24
     ],
     "ramPct": 51,
@@ -2521,7 +2528,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 50
       },
       {
@@ -2537,9 +2544,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 36,
         "vramPct": 93
       }
     ],
