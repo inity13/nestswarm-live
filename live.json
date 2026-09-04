@@ -1,5 +1,5 @@
 {
-  "generated": 1788540562435,
+  "generated": 1788540607466,
   "status": "running",
   "stats": {
     "products": 114,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 13 products listed — polishing, marketing & distributing",
+      "t": 1788540599246,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788540590818,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788540590800,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788540590799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
       "t": 1788540559724,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "flagship: Claude unavailable for publisher (desktop limited until 7:08:08 PM) — trying ChatGPT/free",
       "t": 1788537801789,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788537801789,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 7:08:08 PM) — trying ChatGPT/free",
-      "t": 1788537798138,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider nemotron-3.5-lightning-free failed for polisher (The operation was aborted due to timeout)",
-      "t": 1788537798132,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788537798132,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "focus mode: 13 products listed — polishing, marketing & distributing",
+      "t": 1788540599246,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788540590818,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788540590800,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788540590799,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
@@ -1640,7 +1664,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 7×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 8×"
     },
     {
       "name": "Shared memory",
@@ -1805,24 +1829,23 @@
   },
   "throughput": [
     0,
-    0,
+    2,
+    5,
     3,
-    4,
-    6,
-    16,
-    10,
+    13,
+    14,
+    5,
+    12,
+    1,
+    0,
+    0,
+    8,
+    0,
+    0,
+    1,
+    0,
+    0,
     7,
-    9,
-    0,
-    0,
-    1,
-    7,
-    0,
-    1,
-    0,
-    0,
-    6,
-    1,
     0,
     0,
     1,
@@ -1833,12 +1856,13 @@
     0,
     1,
     0,
-    1
+    0,
+    6
   ],
   "load": {
     "loadavg": [
+      0.07,
       0.06,
-      0.05,
       0.12
     ],
     "ramPct": 47,
@@ -1855,8 +1879,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2526,10 +2550,28 @@
   ],
   "building": [
     {
-      "name": "PawPalz",
-      "niche": "home, cooking & household helpers",
-      "stage": "build",
-      "status": "building"
+      "name": "Flockly",
+      "niche": "personal finance, investing & budgeting",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TailoredPaws",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TaskMaster Prime",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "ProTasker",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2557,8 +2599,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 25,
-        "vramPct": 17
+        "utilPct": 24,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
