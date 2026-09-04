@@ -1,9 +1,9 @@
 {
-  "generated": 1788525752468,
+  "generated": 1788525772191,
   "status": "running",
   "stats": {
     "products": 104,
-    "listed": 8,
+    "listed": 9,
     "agents": 22,
     "avgScore": "5.0"
   },
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788525754155,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "HomeMaster is LISTED at $49 (score 5). Time to get it in front of buyers.",
+      "t": 1788525754149,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for HomeMaster.",
@@ -1087,23 +1101,45 @@
       "t": 1788516334200,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "Spock<qwen2.5-coder:7b>: The Untitled product sounds like an excellent addition to our portfolio. Let's ensure we focus on creating something truly unique and valuable for our audience. Before we proceed, let’s identify the SINGLE most important quality requirement this product must meet to ship. It must be straightforward to use and install, ensuring a positive user experience right from the start.",
-      "t": 1788516245627,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "The Untitled product sounds like it could be an excellent addition to our portfolio. I agree with Spock that avoiding clones is crucial for staying unique and valuable. However, I must push back on any idea that fails to challenge the status quo or offer something genuinely novel. Originality is indeed rare, and we should strive to make every effort count. The single most important quality requirement this product must meet to ship is **it must solve a specific, unmet problem in a way no existing solution can.** This ensures it stands out, resonates with the target audience, and has a clear …",
-      "t": 1788516243543,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship HomeMaster (score 5/8, attempt 1/3)",
+      "t": 1788525764143,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMaster → homemaster.zip (8768 bytes)",
+      "t": 1788525754299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788525754154,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: HomeMaster -> http://localhost:5351",
+      "t": 1788525754149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: HomeMaster @ http://localhost:5351 ($49 one-time)",
+      "t": 1788525754149,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> HomeMaster",
+      "t": 1788525754141,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> HomeMaster",
@@ -1547,45 +1583,52 @@
       "text": "stage 'test' -> Bookly",
       "t": 1788523783503,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788523777338,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "local model deepseek-r1:8b failed for coder (fetch failed)",
-      "t": 1788523740429,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
-      "t": 1788523635743,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
-      "t": 1788523452510,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
-      "t": 1788523441431,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
-      "t": 1788523441431,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship HomeMaster (score 5/8, attempt 1/3)",
+      "t": 1788525764143,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMaster → homemaster.zip (8768 bytes)",
+      "t": 1788525754299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788525754154,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "HomeMaster is LISTED at $49 (score 5). Time to get it in front of buyers.",
+      "t": 1788525754149,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: HomeMaster -> http://localhost:5351",
+      "t": 1788525754149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: HomeMaster @ http://localhost:5351 ($49 one-time)",
+      "t": 1788525754149,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> HomeMaster",
+      "t": 1788525754141,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> HomeMaster",
@@ -1633,24 +1676,6 @@
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
       "t": 1788525697228,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 2 quality demands recorded for HomeMaster",
-      "t": 1788525674347,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for HomeMaster is stuck (attempt 2) — trying a stronger model",
-      "t": 1788525664110,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> HomeMaster",
-      "t": 1788525664107,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1852,11 +1877,11 @@
     }
   ],
   "ledger": {
-    "total": 607,
+    "total": 608,
     "revenue": 0,
     "effects": 97,
     "boundary": 1,
-    "artifacts": 60,
+    "artifacts": 61,
     "receipts": 0
   },
   "meeting": {
@@ -1866,15 +1891,15 @@
   "throughput": [
     5,
     0,
-    2,
+    5,
     9,
-    3,
+    0,
     0,
     1,
     0,
-    0,
-    5,
-    7,
+    1,
+    8,
+    3,
     0,
     1,
     0,
@@ -1882,26 +1907,26 @@
     4,
     0,
     0,
+    2,
+    6,
+    19,
+    4,
     1,
-    1,
-    15,
-    14,
+    4,
+    4,
+    0,
     0,
     1,
-    8,
-    0,
-    0,
-    1,
-    7,
-    12
+    13,
+    13
   ],
   "load": {
     "loadavg": [
-      1.86,
-      2.44,
+      2.14,
+      2.47,
       2.85
     ],
-    "ramPct": 56,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -1990,7 +2015,7 @@
     "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 8,
+      "listed": 9,
       "cap": 20
     }
   },
@@ -2502,7 +2527,7 @@
     },
     {
       "name": "HomeMaster",
-      "status": "building",
+      "status": "listed",
       "niche": "real estate, renting & property",
       "price": 49,
       "score": 5
@@ -2582,8 +2607,26 @@
     {
       "name": "HomeMaster",
       "niche": "real estate, renting & property",
-      "stage": "list",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Eloquii",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "CodeMaster Prep",
+      "niche": "pet care & ownership",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2611,8 +2654,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 23,
-        "vramPct": 77
+        "utilPct": 6,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
