@@ -1,5 +1,5 @@
 {
-  "generated": 1788512923817,
+  "generated": 1788512968723,
   "status": "running",
   "stats": {
     "products": 94,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PulseRoute",
+      "t": 1788512943248,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788512934672,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> PulseRoute",
       "t": 1788512923235,
       "type": "building"
@@ -1571,21 +1583,21 @@
       "text": "node nest-node-core failed (fetch failed) — trying nest-node-5090",
       "t": 1788511598678,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "local model deepseek-r1:8b failed for polisher (fetch failed)",
-      "t": 1788511583665,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788511570441,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PulseRoute",
+      "t": 1788512943248,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788512934672,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> PulseRoute",
@@ -1817,25 +1829,24 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    0,
-    9,
-    5,
-    4,
+    7,
     6,
-    9,
-    18,
     5,
+    6,
+    0,
+    27,
+    2,
     25,
-    7,
-    1,
-    7,
-    0,
-    9,
-    30,
-    14,
-    14,
     10,
+    1,
+    7,
+    0,
     6,
+    29,
+    14,
+    15,
+    11,
+    8,
     1,
     0,
     0,
@@ -1846,13 +1857,14 @@
     0,
     0,
     1,
-    3
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.15,
-      0.75
+      0,
+      0.13,
+      0.71
     ],
     "ramPct": 65,
     "cpus": 12
@@ -2507,7 +2519,7 @@
     {
       "name": "PulseRoute",
       "niche": "local services & gig economy",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2536,8 +2548,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 80
+        "utilPct": 32,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2552,13 +2564,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 96
       }
     ],
     "selfHostedInferencePct": 89,
-    "jobsProcessed": 84
+    "jobsProcessed": 85
   }
 }
