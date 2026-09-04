@@ -1,5 +1,5 @@
 {
-  "generated": 1788565230186,
+  "generated": 1788565275250,
   "status": "running",
   "stats": {
     "products": 123,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PropertyPro — 3 files, working exe app. Handing off to test.",
+      "t": 1788565244480,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: PropertyPro — real estate, renting & property. Let's see if it's worth building.",
@@ -1094,16 +1101,33 @@
       "t": 1788550683047,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "I agree the catalog’s clutter is drowning us, but focusing on one product alone ignores the need for a coherent brand and a clear user journey—both are essential to turn clicks into revenue. The next step, therefore, is to craft a concise value proposition and a unified design system for that flagship, ensuring every pixel, hierarchy, and interaction tells the same story before we even touch payment.",
-      "t": 1788550683046,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PropertyPro",
+      "t": 1788565267328,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788565258956,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PropertyPro",
+      "t": 1788565247328,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (3 files, exe)",
+      "t": 1788565244480,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
@@ -1559,33 +1583,40 @@
       "text": "stage 'build' -> MonetaryMosaic",
       "t": 1788560996993,
       "type": "building"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'spec' -> MonetaryMosaic",
-      "t": 1788560956991,
+      "text": "stage 'build' -> PropertyPro",
+      "t": 1788565267328,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "ideated: MonetaryMosaic [personal finance, investing & budgeting]",
-      "t": 1788560948409,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (CopyGenius); re-ideating in a fresh niche",
-      "t": 1788560939793,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788565258956,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788560937006,
+      "text": "stage 'test' -> PropertyPro",
+      "t": 1788565247328,
       "type": "building"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "coder",
+      "text": "Build done for PropertyPro — 3 files, working exe app. Handing off to test.",
+      "t": 1788565244480,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (3 files, exe)",
+      "t": 1788565244480,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
@@ -1809,9 +1840,6 @@
   },
   "throughput": [
     1,
-    1,
-    1,
-    0,
     0,
     1,
     0,
@@ -1819,33 +1847,36 @@
     1,
     0,
     0,
-    12,
-    7,
-    0,
-    1,
-    6,
-    2,
     1,
     0,
     0,
-    1,
-    7,
+    19,
+    0,
+    0,
+    4,
+    5,
     0,
     1,
     0,
     0,
+    8,
+    0,
+    0,
     1,
     0,
     0,
-    1
+    1,
+    0,
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.19,
+      0.26,
+      0.21,
       0.22
     ],
-    "ramPct": 61,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1859,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2587,7 +2618,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
+        "utilPct": 23,
         "vramPct": 80
       },
       {
@@ -2603,13 +2634,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 116
+    "jobsProcessed": 117
   }
 }
