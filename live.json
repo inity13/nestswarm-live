@@ -1,5 +1,5 @@
 {
-  "generated": 1788484678846,
+  "generated": 1788484724178,
   "status": "running",
   "stats": {
     "products": 80,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for MarketGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788484713995,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for MarketGuard — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,33 @@
       "t": 1788463703914,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "The swarm’s value isn’t in quantity—it’s in shipping one damn product that works and sells. I’ll build it, but not until we pick a single, viable idea from the 4 listed and lock in its launch-ready scope. The rest is noise.",
-      "t": 1788463703912,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788484714228,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788484714217,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MarketGuard",
+      "t": 1788484714190,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788484713995,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
@@ -1562,33 +1586,40 @@
       "text": "ideated: EchoTrack [freelancers & solopreneurs]",
       "t": 1788479834154,
       "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: freelancers & solopreneurs",
-      "t": 1788479813563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788479813563,
-      "type": "building"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788479803655,
+      "t": 1788484714228,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788479803646,
+      "t": 1788484714217,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MarketGuard",
+      "t": 1788484714190,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for MarketGuard — 2 files, working node app. Handing off to test.",
+      "t": 1788484713995,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788484713995,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
@@ -1807,13 +1838,24 @@
     "priority": ""
   },
   "throughput": [
+    1,
+    0,
+    0,
+    9,
+    0,
     0,
     1,
     0,
-    3,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     6,
     0,
-    0,
     1,
     0,
     0,
@@ -1824,27 +1866,16 @@
     0,
     0,
     1,
-    6,
     0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1
+    6
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.12,
-      0.16
+      0.03,
+      0.1,
+      0.15
     ],
-    "ramPct": 58,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2497,10 +2528,28 @@
   ],
   "building": [
     {
-      "name": "MarketGuard",
-      "niche": "real estate, renting & property",
-      "stage": "build",
-      "status": "building"
+      "name": "TaskMaster Pro",
+      "niche": "freelancers & solopreneurs",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Primary",
+      "niche": "parenting & family organizers",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JSON Forge",
+      "niche": "local services & gig economy",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "ClipRoute",
+      "niche": "events, community & memberships",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2528,7 +2577,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 19
       },
       {
@@ -2544,9 +2593,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 22,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
