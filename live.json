@@ -1,5 +1,5 @@
 {
-  "generated": 1788486704307,
+  "generated": 1788486749058,
   "status": "running",
   "stats": {
     "products": 81,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788486726556,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3879MB free)",
+      "t": 1788486726555,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
+      "t": 1788486722674,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
       "t": 1788486542558,
       "type": "event"
@@ -1568,27 +1586,28 @@
       "text": "keyhunter: attempting nvidia (https://build.nvidia.com)",
       "t": 1788485190706,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788486726556,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1788485189764,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3879MB free)",
+      "t": 1788486726555,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "registrar: Beehiiv step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788485186468,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 2 -> {\"action\":\"type\",\"selector\":\"input[name=\\\"identifier\\\"]\",\"value\":\"[email]\"}",
-      "t": 1788485183156,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
+      "t": 1788486722674,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,17 +1819,16 @@
     "priority": ""
   },
   "throughput": [
-    26,
-    18,
-    17,
-    18,
     22,
-    20,
-    25,
-    44,
-    26,
-    3,
-    9,
+    15,
+    17,
+    23,
+    15,
+    30,
+    41,
+    34,
+    1,
+    11,
     0,
     1,
     0,
@@ -1829,15 +1847,16 @@
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0,
-      0.04,
-      0.26
+      0.47,
+      0.17,
+      0.3
     ],
-    "ramPct": 44,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2520,9 +2539,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
