@@ -1,5 +1,5 @@
 {
-  "generated": 1788514634212,
+  "generated": 1788514679228,
   "status": "running",
   "stats": {
     "products": 94,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
+      "t": 1788514663924,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788504094671,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
-      "t": 1788503997016,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788514673862,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] console.log(\"\\n\\n\"); SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788514673849,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PulseRoute",
+      "t": 1788514673773,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788514663924,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
@@ -1559,33 +1583,40 @@
       "text": "ideated: PulseRoute [local services & gig economy]",
       "t": 1788512069764,
       "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (ScriptSmith AI); re-ideating in a fresh niche",
-      "t": 1788512046823,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788511984849,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788511984849,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788511984849,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788514673862,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] console.log(\"\\n\\n\"); SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788514673849,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PulseRoute",
+      "t": 1788514673773,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
+      "t": 1788514663924,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788514663924,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
@@ -1804,44 +1835,44 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
+    5,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    8,
+    13,
+    0,
+    2,
+    12,
+    15,
+    1,
+    0,
     0,
     6,
-    1,
     0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    9,
-    11,
-    1,
-    2,
-    11,
-    16,
-    0,
-    0,
-    1,
-    5,
     0,
     1,
     1,
     0,
-    1
+    6
   ],
   "load": {
     "loadavg": [
-      3.2,
-      1.43,
-      0.76
+      2.84,
+      1.63,
+      0.86
     ],
-    "ramPct": 67,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1855,7 +1886,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2520,10 +2551,28 @@
   ],
   "building": [
     {
-      "name": "PulseRoute",
-      "niche": "local services & gig economy",
-      "stage": "build",
-      "status": "building"
+      "name": "CodeMaster Prep",
+      "niche": "pet care & ownership",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TaskMaster Pro",
+      "niche": "freelancers & solopreneurs",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2551,8 +2600,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 91,
-        "vramPct": 91
+        "utilPct": 34,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
@@ -2567,9 +2616,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 8,
+        "busy": true,
+        "warm": false,
+        "utilPct": 29,
         "vramPct": 96
       }
     ],
