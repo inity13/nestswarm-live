@@ -1,5 +1,5 @@
 {
-  "generated": 1788522916554,
+  "generated": 1788522961503,
   "status": "running",
   "stats": {
     "products": 102,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> Bookly",
+      "t": 1788522953179,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
       "t": 1788522911614,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "coder output incomplete (attempt 2)",
       "t": 1788519865635,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 99 products)",
-      "t": 1788519850068,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Bookly",
+      "t": 1788522953179,
+      "type": "building"
+    },
     {
       "who": "Spock",
       "text": "An idea without a defined problem, audience, and testable need is speculation, not a product; the team must immediately articulate one concrete user need and deliver a minimal, verifiable outcome—such as a single-page prototype or a clickable flow—that validates real demand before any code or architecture begins.",
@@ -1624,30 +1630,6 @@
       "t": 1788522873310,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788522863177,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: study, learning & memory aids",
-      "t": 1788522863169,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788522861118,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788522861104,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1861,44 +1843,44 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    4,
-    0,
-    1,
-    0,
-    0,
-    1,
-    9,
-    1,
-    1,
     3,
-    0,
-    1,
-    0,
-    0,
-    1,
-    3,
-    4,
-    1,
-    0,
     0,
     1,
     0,
     0,
     6,
+    5,
+    0,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    2,
+    3,
+    1,
+    0,
+    0,
+    1,
+    0,
+    5,
+    1,
     0,
     0,
     3,
     0,
-    0,
-    11
+    9,
+    4
   ],
   "load": {
     "loadavg": [
-      0.35,
-      0.3,
-      0.61
+      0.16,
+      0.25,
+      0.58
     ],
-    "ramPct": 55,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2581,7 +2563,7 @@
     {
       "name": "Bookly",
       "niche": "study, learning & memory aids",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2610,8 +2592,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 27,
-        "vramPct": 78
+        "utilPct": 44,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2626,9 +2608,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 34,
+        "busy": false,
+        "warm": true,
+        "utilPct": 8,
         "vramPct": 94
       }
     ],
