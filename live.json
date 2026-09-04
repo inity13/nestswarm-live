@@ -1,5 +1,5 @@
 {
-  "generated": 1788521476038,
+  "generated": 1788521521010,
   "status": "running",
   "stats": {
     "products": 100,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788521515630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788521515618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788521509793,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788521509587,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 100 products)",
       "t": 1788521470613,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 98 products)",
       "t": 1788518412119,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788518312121,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2990MB free)",
-      "t": 1788518312120,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> EduMate",
-      "t": 1788518244572,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> EduMate",
-      "t": 1788518234556,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788521515630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788521515618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788521509793,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788521509587,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 100 products)",
@@ -1805,43 +1829,43 @@
   },
   "throughput": [
     1,
-    1,
-    1,
-    6,
     0,
-    2,
-    6,
+    7,
     0,
-    14,
-    2,
-    2,
-    1,
     1,
     3,
-    2,
-    0,
-    0,
-    1,
-    0,
-    3,
-    3,
-    9,
-    0,
-    5,
     4,
+    9,
+    7,
+    1,
+    1,
+    2,
+    0,
+    4,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1,
+    8,
+    4,
+    4,
+    2,
+    3,
     0,
     1,
     0,
     0,
-    1
+    6
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.79,
-      2.18
+      0.32,
+      0.77,
+      2.11
     ],
-    "ramPct": 55,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1855,8 +1879,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2522,10 +2546,28 @@
   ],
   "building": [
     {
-      "name": "BookkeeperPro",
-      "niche": "personal finance, investing & budgeting",
-      "stage": "test",
-      "status": "building"
+      "name": "Eloquii",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "CodeMaster Prep",
+      "niche": "pet care & ownership",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2553,8 +2595,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 43,
-        "vramPct": 48
+        "utilPct": 41,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
@@ -2571,7 +2613,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 94
       }
     ],
