@@ -1,5 +1,5 @@
 {
-  "generated": 1788566040215,
+  "generated": 1788566085184,
   "status": "running",
   "stats": {
     "products": 123,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PropertyPro",
+      "t": 1788566057333,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for PropertyPro is stuck (attempt 2) — trying a stronger model",
+      "t": 1788566057333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788566047364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PropertyPro",
+      "t": 1788566047334,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (3 files, exe)",
       "t": 1788566039115,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
       "t": 1788561624881,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788561444935,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: focus niche: High-demand niche with proven WTP signals; paused new builds (focus mode); marketed the top product",
-      "t": 1788561343096,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 6 quality demands recorded for CopyCraft",
-      "t": 1788561273736,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788561264073,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PropertyPro",
+      "t": 1788566057333,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for PropertyPro is stuck (attempt 2) — trying a stronger model",
+      "t": 1788566057333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788566047364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PropertyPro",
+      "t": 1788566047334,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for PropertyPro — 3 files, working exe app. Handing off to test.",
@@ -1598,18 +1622,6 @@
       "text": "coder produced a functional build (3 files, exe)",
       "t": 1788566039115,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788565950500,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3048MB free)",
-      "t": 1788565950499,
-      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1827,10 +1839,9 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
-    0,
-    4,
-    5,
-    0,
+    1,
+    7,
+    1,
     1,
     0,
     0,
@@ -1843,8 +1854,8 @@
     1,
     0,
     0,
-    6,
-    1,
+    3,
+    4,
     0,
     1,
     0,
@@ -1856,15 +1867,16 @@
     0,
     0,
     3,
-    2
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.24,
-      0.2
+      0.21,
+      0.22,
+      0.19
     ],
-    "ramPct": 61,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2577,7 +2589,7 @@
     {
       "name": "PropertyPro",
       "niche": "real estate, renting & property",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2624,11 +2636,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 117
+    "jobsProcessed": 118
   }
 }
