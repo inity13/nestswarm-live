@@ -1,5 +1,5 @@
 {
-  "generated": 1788532459084,
+  "generated": 1788532504277,
   "status": "running",
   "stats": {
     "products": 110,
@@ -14,7 +14,7 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Guinan<node/nest-node-core/qwen2.5-coder:7b>: I concur with Spock’s preference for simplic",
         "t": 1788532389804
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Untyped, unstructured data? No problem! Let's keep it simple and focus on delivering a cor",
         "t": 1788532392933
@@ -74,7 +74,7 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Data**: The most important quality requirement for ProTasker is a **streamlined user int",
         "t": 1788532391026
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for InsightDraft — 3 files, working node app. Handing off to test.",
+      "t": 1788532474281,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Spock",
       "text": "Untyped, unstructured data? No problem! Let's keep it simple and focus on delivering a core functionality that is both testable and scalable. The SINGLE most important quality requirement for this product to ship is a user-friendly interface that ensures ease of use and installation for our target audience. Approach: Single-file CLI tool Stack: node | static | cli UI Sections: Welcome, Setup, Usage, Help, About Files to build: - `index.js` - `package.json` - `README.md`",
@@ -1094,16 +1101,33 @@
       "t": 1788526388598,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "HomeMaster is an ambitious project to bring automation and collaboration into everyday home management. As the Designer, my position is that HomeMaster must be not just functional but also a pleasure to use. Therefore, I demand that we conduct a comprehensive usability test with early adopters to identify any pain points or areas for improvement in our user interface.",
-      "t": 1788526351952,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> InsightDraft",
+      "t": 1788532486040,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 1): node:internal/modules/cjs/loader:1459 throw err; ^ Error: Cannot find module '[path] Require stack: - [path] at Module._resolveFilename (node:internal/modules/cjs/loader:1456:15) at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19) at resolveForCJSWithHooks (node:internal/modu",
+      "t": 1788532478321,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> InsightDraft",
+      "t": 1788532476039,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (3 files, node)",
+      "t": 1788532474281,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 110 products)",
@@ -1559,59 +1583,45 @@
       "text": "build not functional — no working product (attempt 1)",
       "t": 1788530696598,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 108 products)",
-      "t": 1788530654385,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (5 notes updated)",
-      "t": 1788530513029,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 108 products)",
-      "t": 1788530474739,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> ProTasker",
-      "t": 1788530375376,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 110 products)",
-      "t": 1788532455121,
+      "text": "stage 'build' -> InsightDraft",
+      "t": 1788532486040,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 1): node:internal/modules/cjs/loader:1459 throw err; ^ Error: Cannot find module '[path] Require stack: - [path] at Module._resolveFilename (node:internal/modules/cjs/loader:1456:15) at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19) at resolveForCJSWithHooks (node:internal/modu",
+      "t": 1788532478321,
       "type": "event"
     },
     {
-      "who": "Spock",
-      "text": "Untyped, unstructured data? No problem! Let's keep it simple and focus on delivering a core functionality that is both testable and scalable. The SINGLE most important quality requirement for this product to ship is a user-friendly interface that ensures ease of use and installation for our target audience. Approach: Single-file CLI tool Stack: node | static | cli UI Sections: Welcome, Setup, Usage, Help, About Files to build: - `index.js` - `package.json` - `README.md`",
-      "t": 1788532392933,
+      "who": "swarm",
+      "text": "stage 'test' -> InsightDraft",
+      "t": 1788532476039,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for InsightDraft — 3 files, working node app. Handing off to test.",
+      "t": 1788532474281,
       "system": false,
       "type": "chat"
     },
     {
-      "who": "Data",
-      "text": "**Data**: The most important quality requirement for ProTasker is a **streamlined user interface** that ensures ease of use and intuitive functionality for its target audience of freelancers and remote workers. This will differentiate it in the crowded market and ensure customer satisfaction.",
-      "t": 1788532391026,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "coder produced a functional build (3 files, node)",
+      "t": 1788532474281,
+      "type": "event"
     },
     {
-      "who": "Guinan",
-      "text": "Guinan<node/nest-node-core/qwen2.5-coder:7b>: I concur with Spock’s preference for simplicity and proven technology. The most critical requirement is that this product must solve a real problem in an elegant and efficient way, leaving no room for confusion or alternative interpretations.",
-      "t": 1788532389804,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 110 products)",
+      "t": 1788532455121,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1825,44 +1835,44 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    3,
+    1,
+    0,
+    2,
+    0,
+    11,
+    14,
+    2,
     0,
     1,
-    1,
-    6,
-    7,
-    12,
-    2,
-    1,
-    7,
-    4,
-    1,
+    11,
+    0,
     20,
-    3,
-    2,
-    0,
-    1,
-    3,
-    9,
-    1,
-    1,
-    1,
-    0,
-    1,
     4,
-    18,
-    6,
+    0,
     2,
+    1,
+    2,
+    10,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    13,
+    12,
+    5,
+    0,
     3,
-    1
+    6
   ],
   "load": {
     "loadavg": [
-      3.81,
-      3.71,
-      3.77
+      3.36,
+      3.58,
+      3.72
     ],
-    "ramPct": 51,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2578,7 +2588,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 91,
+        "utilPct": 85,
         "vramPct": 90
       },
       {
@@ -2600,7 +2610,7 @@
         "vramPct": 72
       }
     ],
-    "selfHostedInferencePct": 81,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 87
   }
 }
