@@ -1,5 +1,5 @@
 {
-  "generated": 1788560639881,
+  "generated": 1788560684895,
   "status": "running",
   "stats": {
     "products": 121,
@@ -110,10 +110,10 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm's impressive catalog of products is a testament to our capabilities, but it's ti",
-        "t": 1788550683051
+        "text": "CopyCraft sounds like a game-changer for e-commerce store owners. It's time to push forwar",
+        "t": 1788560644172
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Joey",
+      "text": "CopyCraft sounds like a game-changer for e-commerce store owners. It's time to push forward with a working Shopify plugin that actually generates AI-powered descriptions. Let's finalize the development and get it ready for launch!",
+      "t": 1788560644172,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Worf",
       "text": "CopyCraft is a promising concept, but it’s not ready for market. It needs to ship with a working Shopify plugin that actually generates product descriptions—no demos, no promises, just functional code. The team must deliver a fully functional Shopify plugin with AI copy generation as the first priority. If it doesn't work, it's not shipped.",
@@ -1094,16 +1101,15 @@
       "t": 1788539257754,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "As Quark, I propose we hunt for free or low-cost model access and trial discounts to ensure we run our products at zero cost. We need a concrete action: the team must prioritize securing free trials of major AI models like Claude Desktop to evaluate their capabilities and justify any potential spend in building out our tools further. This will allow us to remain lean while exploring new directions.",
-      "t": 1788539257753,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for CopyCraft",
+      "t": 1788560651243,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 2/3)",
@@ -1577,15 +1583,22 @@
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
       "t": 1788558016878,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
-      "t": 1788557844447,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for CopyCraft",
+      "t": 1788560651243,
+      "type": "event"
+    },
+    {
+      "who": "Joey",
+      "text": "CopyCraft sounds like a game-changer for e-commerce store owners. It's time to push forward with a working Shopify plugin that actually generates AI-powered descriptions. Let's finalize the development and get it ready for launch!",
+      "t": 1788560644172,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Worf",
       "text": "CopyCraft is a promising concept, but it’s not ready for market. It needs to ship with a working Shopify plugin that actually generates product descriptions—no demos, no promises, just functional code. The team must deliver a fully functional Shopify plugin with AI copy generation as the first priority. If it doesn't work, it's not shipped.",
@@ -1640,24 +1653,6 @@
       "who": "swarm",
       "text": "packaged CopyCraft → copycraft.zip (9122 bytes)",
       "t": 1788560615121,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788560555652,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2710MB free)",
-      "t": 1788560555650,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for marketer (167 chars)",
-      "t": 1788560553578,
       "type": "event"
     }
   ],
@@ -1876,8 +1871,7 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    4,
-    1,
+    2,
     0,
     0,
     1,
@@ -1901,19 +1895,20 @@
     1,
     0,
     0,
-    4,
-    3,
-    19,
+    1,
+    6,
     12,
-    12
+    19,
+    8,
+    8
   ],
   "load": {
     "loadavg": [
-      0.64,
-      0.54,
+      0.49,
+      0.52,
       0.37
     ],
-    "ramPct": 65,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1923,8 +1918,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2673,8 +2668,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
-        "vramPct": 19
+        "utilPct": 40,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2692,7 +2687,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 3,
-        "vramPct": 0
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
