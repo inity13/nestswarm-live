@@ -1,5 +1,5 @@
 {
-  "generated": 1788552061992,
+  "generated": 1788552086992,
   "status": "running",
   "stats": {
     "products": 118,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788552086622,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788552086600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788552086600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
+      "t": 1788552081887,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
       "t": 1788551901581,
       "type": "event"
@@ -1559,33 +1583,34 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1788550357401,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788550357400,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 0 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
-      "t": 1788550347714,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "SECURITY FIXED: Rejected build MTN1",
-      "t": 1788550338631,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "security fix priority: Rejected build MTN1 — child_process: spawns child processes; innerhtml: innerHTML assignment (XSS risk if unsanitized); no-auth: static-serve tool (review exposure)",
-      "t": 1788550338631,
-      "type": "security"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788552086622,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788552086600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788552086600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
+      "t": 1788552081887,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1658,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 12×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 13×"
     },
     {
       "name": "Shared memory",
@@ -1801,44 +1826,44 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    44,
-    15,
+    20,
+    9,
+    2,
+    13,
+    42,
+    47,
+    16,
     0,
-    4,
-    45,
-    44,
-    21,
-    6,
+    1,
+    0,
+    7,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
     0,
     1,
     2,
-    5,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6,
-    1,
-    0,
-    0,
-    3,
-    0,
     0,
     1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.1,
-      0.2
+      0.02,
+      0.09,
+      0.19
     ],
-    "ramPct": 52,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1877,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2525,10 +2550,28 @@
   ],
   "building": [
     {
-      "name": "HealthMate",
-      "niche": "home, cooking & household helpers",
-      "stage": "build",
-      "status": "building"
+      "name": "Flockly",
+      "niche": "personal finance, investing & budgeting",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TailoredPaws",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TaskMaster Prime",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "ProTasker",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2556,8 +2599,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 47
+        "utilPct": 22,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
