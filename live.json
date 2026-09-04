@@ -1,5 +1,5 @@
 {
-  "generated": 1788537656430,
+  "generated": 1788537681141,
   "status": "running",
   "stats": {
     "products": 113,
@@ -1103,6 +1103,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 113 products)",
+      "t": 1788537677523,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,python]",
+      "t": 1788537676442,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launch-discipline: polishing flagship Flockly (score 0/8, attempt 2/3)",
       "t": 1788537618060,
       "type": "event"
@@ -1568,21 +1580,21 @@
       "text": "flagship: Claude unavailable for conductor (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
       "t": 1788536514380,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788536514380,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788536514380,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 113 products)",
+      "t": 1788537677523,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,python]",
+      "t": 1788537676442,
+      "type": "event"
+    },
     {
       "who": "demand_validator",
       "text": "Flockly has significant potential to solve a real problem for remote workers but lacks market validation and a clear value proposition. Demand that the team conducts market research to understand user intent and willingness to pay before proceeding with development.",
@@ -1703,24 +1715,6 @@
       "t": 1788537593207,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for Flockly",
-      "t": 1788537572450,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788537572450,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for publisher (210 chars)",
-      "t": 1788537572449,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1934,42 +1928,42 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    18,
+    16,
+    6,
+    2,
+    26,
+    15,
+    7,
+    11,
+    7,
     8,
-    3,
-    13,
-    27,
-    6,
-    13,
-    3,
-    5,
-    11,
-    11,
-    19,
-    6,
-    19,
     4,
-    3,
+    13,
+    21,
+    11,
+    10,
+    6,
     0,
     0,
     1,
+    0,
+    3,
     3,
     2,
-    3,
-    5,
-    5,
-    1,
-    10,
-    0,
+    9,
+    2,
     6,
-    14,
-    17
+    4,
+    6,
+    9,
+    11,
+    14
   ],
   "load": {
     "loadavg": [
-      0.95,
-      0.6,
-      0.71
+      0.62,
+      0.55,
+      0.69
     ],
     "ramPct": 62,
     "cpus": 12
@@ -2692,7 +2686,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -2707,26 +2701,24 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 79
+        "utilPct": 24,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "offline",
+        "status": "online",
         "can": [
           "browser",
           "coding",
           "gpu",
-          "llm",
-          "python",
-          "vision"
+          "python"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 98
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 79,
