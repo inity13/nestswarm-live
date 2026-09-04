@@ -1,5 +1,5 @@
 {
-  "generated": 1788526247637,
+  "generated": 1788526292700,
   "status": "running",
   "stats": {
     "products": 104,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "ChatGPT responded for conductor (317 chars)",
+      "t": 1788526249221,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: Claude unavailable for conductor (desktop limited until 3:56:05 PM) — trying ChatGPT/free",
       "t": 1788526205291,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "vault: synced (2 notes updated)",
       "t": 1788524510939,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
-      "t": 1788524352939,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (317 chars)",
+      "t": 1788526249221,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: Claude unavailable for conductor (desktop limited until 3:56:05 PM) — trying ChatGPT/free",
@@ -1602,36 +1608,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788526205238,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: HomeMaster already on GitHub (exactly-once)",
-      "t": 1788526194164,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788526189796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788526189796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788526189796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788526189795,
       "type": "event"
     }
   ],
@@ -1678,7 +1654,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 4×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 5×"
     },
     {
       "name": "GitHub Copilot",
@@ -1846,42 +1822,42 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
-    7,
     5,
-    0,
-    1,
-    0,
-    0,
-    4,
-    0,
-    0,
-    1,
     7,
-    19,
-    4,
     0,
-    5,
+    1,
+    0,
+    0,
     4,
     0,
     0,
     1,
-    12,
+    1,
+    15,
     14,
-    3,
+    0,
+    1,
+    8,
+    0,
+    0,
+    1,
+    7,
+    12,
+    10,
     0,
     0,
     8,
     0,
     0,
-    2,
-    9
+    1,
+    10,
+    2
   ],
   "load": {
     "loadavg": [
-      4.86,
-      4.46,
-      3.7
+      5.39,
+      4.66,
+      3.81
     ],
     "ramPct": 53,
     "cpus": 12
@@ -1925,8 +1901,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "chatgpt(free)",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2611,7 +2587,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 64,
+        "utilPct": 61,
         "vramPct": 92
       },
       {
@@ -2627,10 +2603,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 96
+        "busy": true,
+        "warm": false,
+        "utilPct": 59,
+        "vramPct": 97
       }
     ],
     "selfHostedInferencePct": 82,
