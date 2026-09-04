@@ -1,5 +1,5 @@
 {
-  "generated": 1788553347437,
+  "generated": 1788553392445,
   "status": "running",
   "stats": {
     "products": 119,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788553350976,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3821MB free)",
+      "t": 1788553350975,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 119 products)",
       "t": 1788553342899,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "registrar: Millo step 3 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
       "t": 1788550553175,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 3 -> {}",
-      "t": 1788550552718,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788550540706,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788553350976,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3821MB free)",
+      "t": 1788553350975,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 119 products)",
@@ -1814,7 +1826,22 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     1,
     0,
@@ -1823,35 +1850,20 @@
     0,
     0,
     5,
-    2,
+    6,
     0,
     1,
     0,
-    0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    8,
-    2,
-    1,
-    0,
-    0,
-    2
+    3
   ],
   "load": {
     "loadavg": [
-      0.44,
-      0.19,
-      0.14
+      0.2,
+      0.16,
+      0.13
     ],
-    "ramPct": 50,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2567,10 +2579,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 5,
-        "vramPct": 16
+        "utilPct": 39,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
