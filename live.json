@@ -1,5 +1,5 @@
 {
-  "generated": 1788538311569,
+  "generated": 1788538356569,
   "status": "running",
   "stats": {
     "products": 114,
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "The product must solve a real, pain-point problem for a defined audience—otherwise it's ju",
         "t": 1788538243870
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "This idea is a dead end until it defines a real user problem and a clear solution. The swa",
         "t": 1788538252301
@@ -1103,6 +1103,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
+      "t": 1788538322001,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq; disabled free model nemotron-3.5-lightning-free",
+      "t": 1788538322001,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788538322000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788538322000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788538321999,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788538315804,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788538315073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "council: 4 quality demands recorded for PawPalz",
       "t": 1788538258253,
       "type": "event"
@@ -1538,82 +1580,50 @@
       "text": "stage 'package' -> Flockly",
       "t": 1788537257910,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for Flockly",
-      "t": 1788537248737,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> Flockly",
-      "t": 1788537217899,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for Flockly",
-      "t": 1788537210171,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Flockly",
-      "t": 1788537207886,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788537205453,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788537158010,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3799MB free)",
-      "t": 1788537158006,
-      "type": "bench"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "council: 4 quality demands recorded for PawPalz",
-      "t": 1788538258253,
+      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
+      "t": 1788538322001,
       "type": "event"
     },
     {
-      "who": "Scotty",
-      "text": "This idea is a dead end until it defines a real user problem and a clear solution. The swarm doesn’t need another blank slate—just a tool that actually helps someone do something they couldn't do before. The single most important quality requirement? It must work the first time, or it's not worth shipping.",
-      "t": 1788538252301,
-      "system": false,
-      "type": "chat"
-    },
-    {
       "who": "swarm",
-      "text": "council: 3 quality demands recorded for Flockly",
-      "t": 1788538250142,
+      "text": "self-heal complete: 4 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq; disabled free model nemotron-3.5-lightning-free",
+      "t": 1788538322001,
       "type": "event"
     },
     {
-      "who": "Spock",
-      "text": "The product must solve a real, pain-point problem for a defined audience—otherwise it's just code with no purpose. Its simplicity and testability are non-negotiable; we ship only what we can verify works. The single most important quality requirement: it must be installable, runnable, and demonstrably useful in under five minutes by someone with zero technical background.",
-      "t": 1788538243870,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788538322000,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> PawPalz",
-      "t": 1788538238306,
-      "type": "building"
+      "text": "self-heal: disabled provider groq",
+      "t": 1788538322000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788538321999,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788538315804,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788538315073,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1827,42 +1837,42 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    23,
-    9,
-    19,
+    16,
+    14,
+    8,
     4,
-    3,
     0,
     0,
     1,
-    3,
-    0,
-    5,
-    5,
-    5,
+    2,
     1,
+    3,
+    6,
+    5,
+    2,
     10,
     0,
     6,
     13,
-    18,
-    3,
-    2,
-    11,
-    11,
+    16,
     5,
     2,
+    11,
+    11,
     5,
     0,
-    20,
-    13,
-    3
+    7,
+    0,
+    18,
+    10,
+    8,
+    8
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.31,
-      0.45
+      0.16,
+      0.28,
+      0.43
     ],
     "ramPct": 68,
     "cpus": 12
@@ -2580,7 +2590,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
+        "utilPct": 24,
         "vramPct": 79
       },
       {
