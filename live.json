@@ -1,5 +1,5 @@
 {
-  "generated": 1788495750327,
+  "generated": 1788495795321,
   "status": "running",
   "stats": {
     "products": 85,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788495756391,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3828MB free)",
+      "t": 1788495756388,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 85 products)",
       "t": 1788495724479,
       "type": "event"
@@ -1574,21 +1586,21 @@
       "text": "stage 'spec' -> ChainBridge",
       "t": 1788491925318,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: ChainBridge [freelancers & solopreneurs]",
-      "t": 1788491924370,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788491914186,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788495756391,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3828MB free)",
+      "t": 1788495756388,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 85 products)",
@@ -1808,14 +1820,13 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
     2,
-    10,
+    7,
     5,
-    1,
+    4,
     1,
     0,
     1,
@@ -1836,15 +1847,16 @@
     1,
     0,
     0,
+    5,
     6
   ],
   "load": {
     "loadavg": [
-      1.47,
-      0.46,
-      0.21
+      1.56,
+      0.66,
+      0.29
     ],
-    "ramPct": 44,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -1878,8 +1890,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2526,10 +2538,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 60,
-        "vramPct": 18
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2544,10 +2556,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 59
+        "busy": true,
+        "warm": false,
+        "utilPct": 30,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 97,
