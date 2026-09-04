@@ -1,5 +1,5 @@
 {
-  "generated": 1788526202702,
+  "generated": 1788526247637,
   "status": "running",
   "stats": {
     "products": 104,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 3:56:05 PM) — trying ChatGPT/free",
+      "t": 1788526205291,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788526205238,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788526205238,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: HomeMaster already on GitHub (exactly-once)",
       "t": 1788526194164,
       "type": "launch"
@@ -1565,27 +1583,27 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
       "t": 1788524352939,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged Bookly → bookly.zip (10599 bytes)",
-      "t": 1788524193749,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revise-before-reject: repairing Bookly (critic 3) from feedback",
-      "t": 1788524193664,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> Bookly",
-      "t": 1788524193658,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 3:56:05 PM) — trying ChatGPT/free",
+      "t": 1788526205291,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788526205238,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788526205238,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launcher: HomeMaster already on GitHub (exactly-once)",
@@ -1614,12 +1632,6 @@
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
       "t": 1788526189795,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 104 products)",
-      "t": 1788526152531,
       "type": "event"
     }
   ],
@@ -1835,43 +1847,43 @@
   },
   "throughput": [
     0,
-    1,
-    9,
-    2,
+    7,
+    5,
     0,
     1,
     0,
-    3,
-    1,
+    0,
+    4,
     0,
     0,
-    2,
-    6,
-    20,
-    3,
     1,
     7,
+    19,
+    4,
+    0,
+    5,
+    4,
+    0,
+    0,
     1,
-    0,
-    0,
-    3,
     12,
-    12,
+    14,
     3,
     0,
     0,
     8,
     0,
     0,
-    8
+    2,
+    9
   ],
   "load": {
     "loadavg": [
-      3.71,
-      4.23,
-      3.6
+      4.86,
+      4.46,
+      3.7
     ],
-    "ramPct": 48,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2599,8 +2611,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 7,
-        "vramPct": 19
+        "utilPct": 64,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
