@@ -1,5 +1,5 @@
 {
-  "generated": 1788565950211,
+  "generated": 1788565995222,
   "status": "running",
   "stats": {
     "products": 123,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788565950500,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3048MB free)",
+      "t": 1788565950499,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
       "t": 1788565944255,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "self-heal: provider chatgpt not found",
       "t": 1788561145937,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
-      "t": 1788561145937,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for MonetaryMosaic",
-      "t": 1788561127532,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788565950500,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3048MB free)",
+      "t": 1788565950499,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
@@ -1808,25 +1820,25 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
+    0,
+    0,
+    4,
+    5,
+    0,
+    1,
+    0,
+    0,
+    8,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     7,
     0,
-    1,
-    6,
-    2,
-    1,
-    0,
-    0,
-    1,
-    7,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    6,
     0,
     1,
     0,
@@ -1837,11 +1849,11 @@
     1,
     0,
     0,
-    1
+    3
   ],
   "load": {
     "loadavg": [
-      0.71,
+      0.43,
       0.25,
       0.2
     ],
@@ -2585,10 +2597,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 43
+        "busy": true,
+        "warm": false,
+        "utilPct": 42,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -2603,8 +2615,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
