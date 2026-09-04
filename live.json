@@ -1,5 +1,5 @@
 {
-  "generated": 1788494355131,
+  "generated": 1788494400149,
   "status": "running",
   "stats": {
     "products": 85,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: CryptoMind — study, learning & memory aids. Let's see if it's worth building.",
+      "t": 1788494356324,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for ChainBridge — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,27 @@
       "t": 1788474317231,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "I agree that quality over quantity is essential. The most crucial step now is to finalize our flagship product and ensure it's polished and ready for launch. Let’s make every element count, from design aesthetics to user experience. After we have a flawless product in the pipeline, we can explore revenue streams like premium subscriptions and marketplaces.",
-      "t": 1788474317229,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoMind",
+      "t": 1788494375618,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CryptoMind",
+      "t": 1788494365615,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: CryptoMind [study, learning & memory aids]",
+      "t": 1788494356324,
+      "type": "ideated"
+    },
     {
       "who": "swarm",
       "text": "stage 'idea'",
@@ -1568,27 +1586,34 @@
       "text": "stage 'test' -> SageSupply",
       "t": 1788491105187,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788491100521,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
-      "t": 1788491044239,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
-      "t": 1788490864227,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> CryptoMind",
+      "t": 1788494375618,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> CryptoMind",
+      "t": 1788494365615,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: CryptoMind — study, learning & memory aids. Let's see if it's worth building.",
+      "t": 1788494356324,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: CryptoMind [study, learning & memory aids]",
+      "t": 1788494356324,
+      "type": "ideated"
+    },
     {
       "who": "swarm",
       "text": "stage 'idea'",
@@ -1630,18 +1655,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788494326170,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788494286913,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
-      "t": 1788494284334,
       "type": "event"
     }
   ],
@@ -1857,12 +1870,9 @@
   },
   "throughput": [
     0,
-    1,
-    1,
-    11,
-    1,
-    0,
-    0,
+    2,
+    8,
+    3,
     1,
     0,
     0,
@@ -1872,7 +1882,10 @@
     1,
     0,
     0,
-    7,
+    1,
+    0,
+    4,
+    3,
     0,
     0,
     1,
@@ -1884,16 +1897,16 @@
     1,
     0,
     0,
-    2,
+    7,
     7
   ],
   "load": {
     "loadavg": [
-      0.19,
+      0.15,
       0.12,
-      0.1
+      0.09
     ],
-    "ramPct": 51,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2546,9 +2559,9 @@
   ],
   "building": [
     {
-      "name": "Untitled",
+      "name": "CryptoMind",
       "niche": "study, learning & memory aids",
-      "stage": "idea",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2575,10 +2588,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 18
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
