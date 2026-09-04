@@ -1,5 +1,5 @@
 {
-  "generated": 1788534980080,
+  "generated": 1788535025277,
   "status": "running",
   "stats": {
     "products": 111,
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: model gemini-flash-latest not found",
+      "t": 1788534994791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788534994791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; model gemini-flash-latest not found; disabled provider groq",
+      "t": 1788534994791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788534994784,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788534992748,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for TaskMaster Prime",
+      "t": 1788534992747,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
       "t": 1788534978489,
       "type": "event"
@@ -1547,55 +1583,49 @@
       "text": "EXTREME elevation: build for TaskMate AI is stuck (attempt 2) — trying a stronger model",
       "t": 1788532165951,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): bad response: 500 len=24",
-      "t": 1788532158337,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> TaskMate AI",
-      "t": 1788532155951,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788532149745,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 109 products)",
-      "t": 1788532094994,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 109 products)",
-      "t": 1788531916143,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788531750861,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
-      "t": 1788534978489,
+      "text": "self-heal: model gemini-flash-latest not found",
+      "t": 1788534994791,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt script failed (exit 1): <3>WSL (20478) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling to local",
-      "t": 1788534897663,
+      "text": "self-heal: disabled provider groq",
+      "t": 1788534994791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; model gemini-flash-latest not found; disabled provider groq",
+      "t": 1788534994791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788534994784,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788534992748,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for TaskMaster Prime",
+      "t": 1788534992747,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
+      "t": 1788534978489,
       "type": "event"
     }
   ],
@@ -1810,44 +1840,44 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    13,
-    5,
-    1,
-    0,
-    0,
-    4,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    0,
-    1,
-    1,
-    0,
     3,
     3,
+    1,
     0,
-    11,
-    7,
-    5,
-    1
+    1,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    6,
+    0,
+    3,
+    12,
+    8,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      4.37,
-      3.29,
-      2.27
+      3.75,
+      3.23,
+      2.3
     ],
-    "ramPct": 48,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -2581,8 +2611,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
-        "vramPct": 89
+        "utilPct": 64,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
