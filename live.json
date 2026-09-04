@@ -1,5 +1,5 @@
 {
-  "generated": 1788484633838,
+  "generated": 1788484678846,
   "status": "running",
   "stats": {
     "products": 80,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788484665452,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 80 products)",
       "t": 1788484562580,
       "type": "event"
@@ -1580,19 +1586,13 @@
       "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788479803646,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PainPointGenius",
-      "t": 1788479803553,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 80 products)",
-      "t": 1788484562580,
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788484665452,
       "type": "event"
     }
   ],
@@ -1810,22 +1810,22 @@
     0,
     1,
     0,
-    0,
-    8,
-    1,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
+    3,
     6,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    6,
+    0,
     1,
     0,
     0,
@@ -1836,15 +1836,15 @@
     0,
     0,
     1,
-    0
+    1
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.15,
+      0.06,
+      0.12,
       0.16
     ],
-    "ramPct": 56,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2529,7 +2529,7 @@
         "busy": false,
         "warm": false,
         "utilPct": 10,
-        "vramPct": 17
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
@@ -2544,9 +2544,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 22,
         "vramPct": 93
       }
     ],
