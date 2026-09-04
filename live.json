@@ -1,5 +1,5 @@
 {
-  "generated": 1788485533909,
+  "generated": 1788485578921,
   "status": "running",
   "stats": {
     "products": 81,
@@ -1109,6 +1109,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> SupplyShield",
+      "t": 1788485534295,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788485532812,
       "type": "event"
@@ -1568,15 +1574,15 @@
       "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788485115657,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 7 -> {\"action\":\"type\",\"selector\":\"#emailAddress-field\",\"value\":\"[email]\"}",
-      "t": 1788485105674,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SupplyShield",
+      "t": 1788485534295,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
@@ -1624,12 +1630,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788485503230,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
-      "t": 1788485462994,
       "type": "event"
     }
   ],
@@ -1846,10 +1846,7 @@
   "throughput": [
     0,
     1,
-    0,
     6,
-    1,
-    0,
     0,
     1,
     0,
@@ -1859,27 +1856,30 @@
     0,
     1,
     0,
+    0,
     1,
-    13,
+    1,
+    10,
+    3,
     0,
-    0,
-    21,
-    20,
+    9,
+    28,
     19,
-    14,
+    12,
+    22,
     21,
-    19,
-    27,
-    40,
-    40,
-    2,
-    10
+    26,
+    37,
+    47,
+    1,
+    8,
+    4
   ],
   "load": {
     "loadavg": [
-      0.33,
-      1.25,
-      0.91
+      0.15,
+      1.08,
+      0.87
     ],
     "ramPct": 67,
     "cpus": 12
@@ -2565,7 +2565,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 81
       },
       {
@@ -2588,6 +2588,6 @@
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 66
+    "jobsProcessed": 67
   }
 }
