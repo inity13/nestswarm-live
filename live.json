@@ -1,5 +1,5 @@
 {
-  "generated": 1788556453851,
+  "generated": 1788556499083,
   "status": "running",
   "stats": {
     "products": 120,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> ClauseCompass",
+      "t": 1788556475876,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788556470530,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> ClauseCompass",
       "t": 1788556445862,
       "type": "building"
@@ -1571,21 +1583,21 @@
       "text": "stage 'idea'",
       "t": 1788553004248,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788552994216,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
-      "t": 1788552984411,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ClauseCompass",
+      "t": 1788556475876,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788556470530,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> ClauseCompass",
@@ -1603,12 +1615,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788556438006,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
-      "t": 1788556408421,
       "type": "event"
     }
   ],
@@ -1827,7 +1833,6 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    7,
     0,
     1,
     0,
@@ -1842,27 +1847,28 @@
     0,
     6,
     10,
-    19,
-    5,
-    3,
-    0,
+    16,
+    8,
+    1,
     2,
-    5,
     0,
+    7,
+    0,
+    0,
+    1,
     0,
     1,
     1,
     0,
-    1,
     6,
-    0,
+    3,
     4
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.09,
-      0.11
+      0.06,
+      0.08,
+      0.1
     ],
     "ramPct": 56,
     "cpus": 12
@@ -2553,7 +2559,7 @@
     {
       "name": "ClauseCompass",
       "niche": "legal, contracts & compliance",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2598,13 +2604,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
-    "jobsProcessed": 107
+    "jobsProcessed": 108
   }
 }
