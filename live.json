@@ -1,11 +1,11 @@
 {
-  "generated": 1788516299574,
+  "generated": 1788516344597,
   "status": "running",
   "stats": {
     "products": 96,
-    "listed": 7,
+    "listed": 8,
     "agents": 22,
-    "avgScore": "4.8"
+    "avgScore": "5.0"
   },
   "agents": [
     {
@@ -14,7 +14,7 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "The Untitled product sounds like it could be an excellent addition to our portfolio. I agr",
         "t": 1788516243543
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Spock<qwen2.5-coder:7b>: The Untitled product sounds like an excellent addition to our por",
         "t": 1788516245627
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788516334319,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "Eloquii is LISTED at $149 (score 6). Time to get it in front of buyers.",
+      "t": 1788516334200,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Spock",
       "text": "Spock<qwen2.5-coder:7b>: The Untitled product sounds like an excellent addition to our portfolio. Let's ensure we focus on creating something truly unique and valuable for our audience. Before we proceed, let’s identify the SINGLE most important quality requirement this product must meet to ship. It must be straightforward to use and install, ensuring a positive user experience right from the start.",
@@ -1087,23 +1101,45 @@
       "t": 1788504206251,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "SmartDoc AI has significant potential but lacks industry-validated templates and robust compliance features. The team should prioritize developing jurisdiction-specific templates and implementing automated compliance checks to mitigate legal risks before launching the product. This ensures a higher quality offering that meets user needs confidently.",
-      "t": 1788504204818,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "SmartDoc AI holds promise for legal professionals and small businesses but needs industry-validated templates and robust compliance checks to be credible. The team must complete jurisdictional validation of at least three industry-specific templates before proceeding with a launch.",
-      "t": 1788504203148,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship Eloquii (score 6/8, attempt 1/3)",
+      "t": 1788516344185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Eloquii → eloquii.zip (8597 bytes)",
+      "t": 1788516334541,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788516334318,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: Eloquii -> http://localhost:5345",
+      "t": 1788516334200,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: Eloquii @ http://localhost:5345 ($149 subscription)",
+      "t": 1788516334200,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> Eloquii",
+      "t": 1788516334147,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> Eloquii",
@@ -1547,45 +1583,52 @@
       "text": "self-heal complete: 1 fix(es) — disabled provider groq",
       "t": 1788514069199,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788514068079,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788514067048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: mosaicml — queued for key hunter",
-      "t": 1788514066212,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: qwen — queued for key hunter",
-      "t": 1788514066209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788514066209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788514062070,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship Eloquii (score 6/8, attempt 1/3)",
+      "t": 1788516344185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged Eloquii → eloquii.zip (8597 bytes)",
+      "t": 1788516334541,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788516334318,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "Eloquii is LISTED at $149 (score 6). Time to get it in front of buyers.",
+      "t": 1788516334200,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: Eloquii -> http://localhost:5345",
+      "t": 1788516334200,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: Eloquii @ http://localhost:5345 ($149 subscription)",
+      "t": 1788516334200,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> Eloquii",
+      "t": 1788516334147,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> Eloquii",
@@ -1596,57 +1639,6 @@
       "who": "swarm",
       "text": "designer improved UI for Eloquii",
       "t": 1788516266088,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
-      "t": 1788516248101,
-      "type": "event"
-    },
-    {
-      "who": "Spock",
-      "text": "Spock<qwen2.5-coder:7b>: The Untitled product sounds like an excellent addition to our portfolio. Let's ensure we focus on creating something truly unique and valuable for our audience. Before we proceed, let’s identify the SINGLE most important quality requirement this product must meet to ship. It must be straightforward to use and install, ensuring a positive user experience right from the start.",
-      "t": 1788516245627,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> Eloquii",
-      "t": 1788516244122,
-      "type": "building"
-    },
-    {
-      "who": "Guinan",
-      "text": "The Untitled product sounds like it could be an excellent addition to our portfolio. I agree with Spock that avoiding clones is crucial for staying unique and valuable. However, I must push back on any idea that fails to challenge the status quo or offer something genuinely novel. Originality is indeed rare, and we should strive to make every effort count. The single most important quality requirement this product must meet to ship is **it must solve a specific, unmet problem in a way no existing solution can.** This ensures it stands out, resonates with the target audience, and has a clear …",
-      "t": 1788516243543,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for Eloquii",
-      "t": 1788516236410,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Eloquii",
-      "t": 1788516234122,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for Eloquii — 2 files, working node app. Handing off to test.",
-      "t": 1788516231617,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788516231617,
       "type": "event"
     }
   ],
@@ -1849,11 +1841,11 @@
     }
   ],
   "ledger": {
-    "total": 604,
+    "total": 605,
     "revenue": 0,
     "effects": 96,
     "boundary": 1,
-    "artifacts": 58,
+    "artifacts": 59,
     "receipts": 0
   },
   "meeting": {
@@ -1861,14 +1853,13 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
+    0,
+    3,
+    4,
+    0,
     1,
     0,
-    6,
-    1,
-    0,
-    1,
     5,
-    0,
     1,
     0,
     0,
@@ -1879,26 +1870,27 @@
     0,
     0,
     3,
+    18,
+    5,
+    3,
+    0,
+    0,
+    5,
+    0,
     20,
-    5,
-    1,
-    0,
-    0,
-    5,
-    2,
-    19,
-    5,
-    1,
     4,
+    2,
+    1,
+    11,
     8
   ],
   "load": {
     "loadavg": [
-      3.48,
-      3.16,
-      2.02
+      2.83,
+      3.04,
+      2.03
     ],
-    "ramPct": 53,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1932,7 +1924,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "polisher": {
@@ -1987,7 +1979,7 @@
     "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 7,
+      "listed": 8,
       "cap": 20
     }
   },
@@ -2358,6 +2350,13 @@
       "score": 7
     },
     {
+      "name": "Eloquii",
+      "status": "listed",
+      "niche": "writing, copy & content creation",
+      "price": 149,
+      "score": 6
+    },
+    {
       "name": "InsightSage",
       "status": "archived",
       "niche": "legal, contracts & compliance",
@@ -2566,21 +2565,32 @@
       "niche": "study, learning & memory aids",
       "price": 19.99,
       "score": 5
-    },
-    {
-      "name": "EquiVestTaxOpt",
-      "status": "archived",
-      "niche": "home, cooking & household helpers",
-      "price": 24.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "Eloquii",
       "niche": "writing, copy & content creation",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "CodeMaster Prep",
+      "niche": "pet care & ownership",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2608,8 +2618,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 15,
-        "vramPct": 69
+        "utilPct": 93,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
