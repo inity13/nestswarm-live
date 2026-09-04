@@ -1,5 +1,5 @@
 {
-  "generated": 1788488504669,
+  "generated": 1788488549277,
   "status": "running",
   "stats": {
     "products": 82,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788488527593,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3773MB free)",
+      "t": 1788488527592,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
+      "t": 1788488524985,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
       "t": 1788488343078,
       "type": "event"
@@ -1568,27 +1586,28 @@
       "text": "registrar: Millo step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788485337655,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788488527593,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "registrar: Millo step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788485335604,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3773MB free)",
+      "t": 1788488527592,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"fail\",\"reason\":\"Access denied. The provided URL is not accessible.\"}",
-      "t": 1788485333443,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Millo (revenue)",
-      "t": 1788485333443,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
+      "t": 1788488524985,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,16 +1819,27 @@
     "priority": ""
   },
   "throughput": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    9,
+    12,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     3,
-    0,
-    0,
-    1,
-    0,
-    1,
-    13,
-    8,
-    0,
-    2,
+    4,
     0,
     0,
     1,
@@ -1818,26 +1848,15 @@
     1,
     0,
     0,
-    1,
-    0,
-    6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0
+    3
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.11,
-      0.11
+      0.3,
+      0.17,
+      0.13
     ],
-    "ramPct": 46,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2520,9 +2539,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
