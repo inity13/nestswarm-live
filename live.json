@@ -1,8 +1,8 @@
 {
-  "generated": 1788525167332,
+  "generated": 1788525212367,
   "status": "running",
   "stats": {
-    "products": 103,
+    "products": 104,
     "listed": 8,
     "agents": 22,
     "avgScore": "5.0"
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1788525211432,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: PawPrints Pro — pet care & ownership. Let's see if it's worth building.",
@@ -1094,16 +1101,51 @@
       "t": 1788513772574,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
-      "t": 1788512915595,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788525211435,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: real estate, renting & property",
+      "t": 1788525211432,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher brief: Home Organization (willingness: high) — 3 tool ideas",
+      "t": 1788525211299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher exploring: home, cooking & household helpers",
+      "t": 1788525193990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788525193430,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788525193418,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788525193415,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "EXTREME elevation: build for PawPrints Pro is stuck (attempt 2) — trying a stronger model",
@@ -1541,51 +1583,51 @@
       "text": "EXTREME elevation: build for BooklyMate is stuck (attempt 2) — trying a stronger model",
       "t": 1788522513000,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> BooklyMate",
-      "t": 1788522512999,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 2)",
-      "t": 1788522512429,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 101 products)",
-      "t": 1788522371944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 101 products)",
-      "t": 1788522195204,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> BooklyMate",
-      "t": 1788522132850,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788522126020,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788522110003,
-      "type": "vault"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788525211435,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: real estate, renting & property",
+      "t": 1788525211432,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher brief: Home Organization (willingness: high) — 3 tool ideas",
+      "t": 1788525211299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher exploring: home, cooking & household helpers",
+      "t": 1788525193990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788525193430,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788525193418,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788525193415,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "EXTREME elevation: build for PawPrints Pro is stuck (attempt 2) — trying a stronger model",
@@ -1615,12 +1657,6 @@
       "text": "coder output incomplete (attempt 2)",
       "t": 1788525154902,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788525111099,
-      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1670,7 +1706,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 1×"
     },
     {
       "name": "Shared memory",
@@ -1834,27 +1870,26 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     12,
     0,
     0,
     1,
     0,
+    1,
     4,
-    1,
-    3,
-    1,
+    2,
+    2,
     5,
     0,
-    5,
+    2,
     9,
-    0,
+    3,
     0,
     1,
     0,
     0,
-    7,
     5,
+    7,
     0,
     1,
     0,
@@ -1863,15 +1898,16 @@
     0,
     0,
     1,
-    7
+    1,
+    15
   ],
   "load": {
     "loadavg": [
-      2.58,
-      3.27,
-      3.28
+      1.44,
+      2.85,
+      3.14
     ],
-    "ramPct": 54,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1885,8 +1921,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2550,9 +2586,9 @@
   ],
   "building": [
     {
-      "name": "PawPrints Pro",
-      "niche": "pet care & ownership",
-      "stage": "build",
+      "name": "Untitled",
+      "niche": "real estate, renting & property",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2579,10 +2615,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 6,
-        "vramPct": 48
+        "busy": true,
+        "warm": false,
+        "utilPct": 39,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2598,9 +2634,9 @@
           "vision"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 3
+        "warm": true,
+        "utilPct": 4,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 83,
