@@ -1,5 +1,5 @@
 {
-  "generated": 1788511393066,
+  "generated": 1788511438328,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788511402603,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 11:53:22 AM) — trying ChatGPT/free",
+      "t": 1788511402597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop unavailable) — falling through",
+      "t": 1788511402584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788511402584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1788511401290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
       "t": 1788511389484,
       "type": "event"
@@ -1553,67 +1583,43 @@
       "text": "self-heal complete: 2 fix(es) — disabled free model nemotron-3.5-lightning-free; requested owner: Switch the active free model from the failing nemotron-3.5-lightning-free to ling-3.0-flash-fin-free, which is the only available free model in the registry. Update free.model to 'ling-3.0-flash-fin-free' and ensure it is enabled so the coder agent has a working free provider.",
       "t": 1788509028004,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
-      "t": 1788509028003,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Switch the active free model from the failing nemotron-3.5-lightning-free to ling-3.0-flash-fin-free, which is the only available free model in the registry. Update free.model to 'ling-3.0-flash-fin-free' and ensure it is enabled so the coder agent has a working free provider.",
-      "t": 1788509028003,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788509028003,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1788509023430,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1788508939074,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788511389484,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788511402603,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit 1): <3>WSL (76971) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
-      "t": 1788511326928,
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 11:53:22 AM) — trying ChatGPT/free",
+      "t": 1788511402597,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (76965) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788511316905,
+      "text": "desktop fallback failed for conductor (desktop unavailable) — falling through",
+      "t": 1788511402584,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788511307090,
-      "type": "vault"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788511306880,
+      "t": 1788511402584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1788511401290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
+      "t": 1788511389484,
       "type": "event"
     }
   ],
@@ -1830,40 +1836,40 @@
   "throughput": [
     0,
     0,
-    2,
-    10,
+    11,
+    1,
     1,
     1,
     0,
     0,
+    3,
     1,
+    0,
+    1,
+    0,
+    0,
+    3,
     3,
     0,
     1,
     0,
     0,
-    1,
     5,
-    0,
     1,
-    0,
-    0,
-    1,
-    5,
-    6,
-    2,
-    3,
-    6,
-    3,
     7,
+    1,
+    9,
+    0,
+    9,
     8,
-    1
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      5.02,
-      2.01,
-      1.4
+      5.54,
+      2.57,
+      1.62
     ],
     "ramPct": 50,
     "cpus": 12
@@ -2565,8 +2571,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
-        "vramPct": 91
+        "utilPct": 35,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
@@ -2583,7 +2589,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 6,
+        "utilPct": 10,
         "vramPct": 96
       }
     ],
