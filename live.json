@@ -1,5 +1,5 @@
 {
-  "generated": 1788516569705,
+  "generated": 1788516589425,
   "status": "running",
   "stats": {
     "products": 96,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
+      "t": 1788516589038,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
+      "t": 1788516589037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
+      "t": 1788516589002,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788516588975,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788516588975,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
       "t": 1788516432964,
       "type": "event"
@@ -1553,39 +1583,40 @@
       "text": "self-heal: provider ling-3.0-flash-fin-free not found",
       "t": 1788514918723,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — provider ling-3.0-flash-fin-free not found",
-      "t": 1788514918723,
+      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
+      "t": 1788516589038,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788514908171,
-      "type": "vault"
+      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
+      "t": 1788516589037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
+      "t": 1788516589002,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788516588975,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788514907967,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
-      "t": 1788514811310,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 7 products listed — polishing, marketing & distributing",
-      "t": 1788514683777,
+      "t": 1788516588975,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1798,43 +1829,43 @@
   },
   "throughput": [
     1,
+    2,
+    3,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    19,
+    5,
+    2,
+    0,
     0,
     5,
+    0,
+    20,
+    5,
+    1,
+    1,
+    11,
+    15,
+    11,
     1,
     0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    7,
-    13,
-    6,
-    0,
-    0,
-    1,
-    4,
-    6,
-    18,
-    2,
-    1,
-    10,
-    3,
-    24,
-    1,
-    0,
-    0
+    5
   ],
   "load": {
     "loadavg": [
-      6.29,
-      4.5,
-      2.81
+      6.27,
+      4.61,
+      2.89
     ],
-    "ramPct": 63,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2562,7 +2593,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 61,
+        "utilPct": 32,
         "vramPct": 92
       },
       {
@@ -2580,7 +2611,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 0,
+        "utilPct": 14,
         "vramPct": 92
       }
     ],
