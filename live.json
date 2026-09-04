@@ -1,5 +1,5 @@
 {
-  "generated": 1788545739205,
+  "generated": 1788545759402,
   "status": "running",
   "stats": {
     "products": 116,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> SmartInvoiceFlow",
+      "t": 1788545741079,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for SmartInvoiceFlow is stuck (attempt 2) — trying a stronger model",
+      "t": 1788545741079,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788545731089,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "new build started (ideating) — niche: study, learning & memory aids",
       "t": 1788541509619,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788541499590,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
-      "t": 1788541458276,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SmartInvoiceFlow",
+      "t": 1788545741079,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for SmartInvoiceFlow is stuck (attempt 2) — trying a stronger model",
+      "t": 1788545741079,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
@@ -1824,12 +1836,12 @@
   },
   "throughput": [
     1,
-    5,
-    9,
-    9,
+    12,
+    3,
+    8,
     0,
-    0,
-    4,
+    1,
+    3,
     0,
     0,
     1,
@@ -1839,10 +1851,7 @@
     0,
     0,
     1,
-    5,
-    1,
-    1,
-    0,
+    6,
     0,
     1,
     0,
@@ -1852,11 +1861,14 @@
     0,
     1,
     0,
-    4
+    0,
+    1,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.32,
+      0.29,
       0.24,
       0.2
     ],
@@ -2578,8 +2590,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
-        "vramPct": 17
+        "utilPct": 23,
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
@@ -2601,6 +2613,6 @@
       }
     ],
     "selfHostedInferencePct": 79,
-    "jobsProcessed": 96
+    "jobsProcessed": 97
   }
 }
