@@ -1,5 +1,5 @@
 {
-  "generated": 1788502096242,
+  "generated": 1788502141153,
   "status": "running",
   "stats": {
     "products": 89,
@@ -1109,6 +1109,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788502107820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> WorkflowGenius",
+      "t": 1788502106724,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for WorkflowGenius is stuck (attempt 2) — trying a stronger model",
+      "t": 1788502106724,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 2): fetch failed",
+      "t": 1788502098974,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> WorkflowGenius",
+      "t": 1788502096723,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788502090087,
       "type": "event"
@@ -1556,39 +1586,39 @@
       "text": "syntax fail (attempt 3): [path] <code>const http = require('http'); ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788499396384,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> CryptoBridge Vault",
-      "t": 1788499396287,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788499391276,
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788502107820,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "revenue scout: 2/37 channels active · 0 new discovered",
-      "t": 1788499363973,
-      "type": "scout"
+      "text": "stage 'build' -> WorkflowGenius",
+      "t": 1788502106724,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788499358618,
-      "type": "bench"
+      "text": "EXTREME elevation: build for WorkflowGenius is stuck (attempt 2) — trying a stronger model",
+      "t": 1788502106724,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3272MB free)",
-      "t": 1788499358616,
-      "type": "bench"
-    }
-  ],
-  "recent": [
+      "text": "serve fail (attempt 2): fetch failed",
+      "t": 1788502098974,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> WorkflowGenius",
+      "t": 1788502096723,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for WorkflowGenius — 2 files, working node app. Handing off to test.",
@@ -1600,12 +1630,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788502090087,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 89 products)",
-      "t": 1788502025076,
       "type": "event"
     }
   ],
@@ -1820,42 +1844,42 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    0,
-    3,
-    0,
+    2,
+    1,
     5,
-    2,
-    0,
     1,
-    3,
-    1,
-    0,
-    1,
-    2,
-    7,
-    8,
-    0,
-    0,
-    1,
-    1,
-    8,
-    1,
-    2,
-    0,
     1,
     1,
     0,
+    4,
+    0,
+    0,
     1,
+    9,
+    5,
     3,
     0,
+    0,
+    2,
+    8,
+    0,
+    3,
+    0,
+    0,
+    2,
+    0,
+    0,
+    4,
+    0,
+    0,
     1,
-    2
+    7
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.2,
-      0.25
+      0.24,
+      0.22,
+      0.26
     ],
     "ramPct": 63,
     "cpus": 12
@@ -2514,7 +2538,7 @@
     {
       "name": "WorkflowGenius",
       "niche": "recruiting, HR & team tools",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2543,7 +2567,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 80
       },
       {
