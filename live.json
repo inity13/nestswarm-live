@@ -1,5 +1,5 @@
 {
-  "generated": 1788521656048,
+  "generated": 1788521702088,
   "status": "running",
   "stats": {
     "products": 101,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> BooklyMate",
+      "t": 1788521672683,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 101 products)",
       "t": 1788521651442,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 98 products)",
       "t": 1788518602214,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for ideator (fetch failed) — falling to external/free",
-      "t": 1788518572016,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> BooklyMate",
+      "t": 1788521672683,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 101 products)",
@@ -1804,42 +1810,42 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    6,
-    0,
-    2,
-    6,
-    0,
-    14,
-    2,
-    2,
-    1,
-    1,
-    3,
-    2,
-    0,
     0,
     1,
-    0,
     3,
-    3,
-    9,
-    0,
-    5,
     4,
-    0,
-    1,
-    0,
-    0,
-    1,
     9,
+    7,
     1,
-    1
+    1,
+    2,
+    0,
+    4,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1,
+    8,
+    4,
+    4,
+    2,
+    3,
+    0,
+    1,
+    0,
+    0,
+    6,
+    5,
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.53,
-      1.84
+      0.05,
+      0.46,
+      1.75
     ],
     "ramPct": 54,
     "cpus": 12
@@ -1851,8 +1857,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "coder": {
         "model": "nemotron-3.5-lightning-free",
@@ -2524,7 +2530,7 @@
     {
       "name": "BooklyMate",
       "niche": "recruiting, HR & team tools",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2553,8 +2559,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
-        "vramPct": 78
+        "utilPct": 41,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2571,7 +2577,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 6,
         "vramPct": 94
       }
     ],
