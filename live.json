@@ -1,8 +1,8 @@
 {
-  "generated": 1788552988096,
+  "generated": 1788553032328,
   "status": "running",
   "stats": {
-    "products": 118,
+    "products": 119,
     "listed": 13,
     "agents": 22,
     "avgScore": "5.0"
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "new build started (ideating) — niche: recruiting, HR & team tools",
+      "t": 1788553004248,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788553004248,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788552994216,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
       "t": 1788552984411,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788550524908,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Millo step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788550523256,
+      "text": "new build started (ideating) — niche: recruiting, HR & team tools",
+      "t": 1788553004248,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> HealthMate",
-      "t": 1788550523083,
+      "text": "stage 'idea'",
+      "t": 1788553004248,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "security fix blocked for Rejected build MTN1: still flagged: child_process",
-      "t": 1788550514543,
-      "type": "security"
-    }
-  ],
-  "recent": [
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788552994216,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
@@ -1809,23 +1827,23 @@
   },
   "throughput": [
     0,
+    6,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     7,
     0,
     0,
     1,
-    2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    5,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1837,21 +1855,21 @@
     1,
     0,
     0,
-    1
+    5
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.09,
-      0.12
+      0.36,
+      0.16,
+      0.14
     ],
-    "ramPct": 44,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2532,28 +2550,10 @@
   ],
   "building": [
     {
-      "name": "Flockly",
-      "niche": "personal finance, investing & budgeting",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "TailoredPaws",
-      "niche": "writing, copy & content creation",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "TaskMaster Prime",
-      "niche": "real estate, renting & property",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "ProTasker",
-      "niche": "health, fitness & habit tracking",
-      "stage": "shipped",
-      "status": "listed"
+      "name": "Untitled",
+      "niche": "local services & gig economy",
+      "stage": "idea",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2581,8 +2581,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 17
+        "utilPct": 35,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2600,7 +2600,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 92
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 81,
