@@ -1,5 +1,5 @@
 {
-  "generated": 1788514068750,
+  "generated": 1788514094049,
   "status": "running",
   "stats": {
     "products": 94,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
+      "t": 1788514089912,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788514069199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
+      "t": 1788514069199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
       "t": 1788514068079,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788511981427,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
-      "t": 1788511981426,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider claude not found",
-      "t": 1788511981425,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider chatgpt not found",
-      "t": 1788511981425,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
+      "t": 1788514089912,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788514069199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
+      "t": 1788514069199,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
@@ -1906,21 +1924,17 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    1,
-    0,
-    0,
-    3,
-    5,
-    0,
-    1,
     0,
     0,
     1,
-    3,
-    3,
+    7,
+    0,
     1,
     0,
     0,
+    1,
+    0,
+    6,
     1,
     0,
     0,
@@ -1930,20 +1944,24 @@
     1,
     0,
     0,
-    4,
-    17,
+    1,
+    0,
     0,
     1,
-    3,
-    22
+    9,
+    11,
+    1,
+    2,
+    11,
+    16
   ],
   "load": {
     "loadavg": [
-      0.89,
-      0.43,
-      0.41
+      0.59,
+      0.39,
+      0.4
     ],
-    "ramPct": 65,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1985,8 +2003,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2653,8 +2671,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 89,
-        "vramPct": 79
+        "utilPct": 30,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2671,7 +2689,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 5,
+        "utilPct": 6,
         "vramPct": 97
       }
     ],
