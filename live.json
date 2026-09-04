@@ -1,5 +1,5 @@
 {
-  "generated": 1788526292700,
+  "generated": 1788526312334,
   "status": "running",
   "stats": {
     "products": 104,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788526311233,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "ChatGPT responded for conductor (317 chars)",
       "t": 1788526249221,
       "type": "event"
@@ -1577,37 +1583,19 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
       "t": 1788524532465,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788524510939,
-      "type": "vault"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788526311233,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "ChatGPT responded for conductor (317 chars)",
       "t": 1788526249221,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 3:56:05 PM) — trying ChatGPT/free",
-      "t": 1788526205291,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
-      "t": 1788526205238,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788526205238,
       "type": "event"
     }
   ],
@@ -1822,8 +1810,8 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    5,
-    7,
+    8,
+    3,
     0,
     1,
     0,
@@ -1831,33 +1819,33 @@
     4,
     0,
     0,
+    2,
+    6,
+    19,
+    4,
     1,
-    1,
-    15,
-    14,
+    4,
+    4,
+    0,
     0,
     1,
+    13,
+    13,
+    3,
+    0,
+    0,
     8,
     0,
     0,
-    1,
     7,
-    12,
-    10,
-    0,
-    0,
-    8,
-    0,
-    0,
-    1,
-    10,
-    2
+    6,
+    1
   ],
   "load": {
     "loadavg": [
-      5.39,
-      4.66,
-      3.81
+      5.79,
+      4.79,
+      3.87
     ],
     "ramPct": 53,
     "cpus": 12
@@ -2587,7 +2575,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 61,
+        "utilPct": 62,
         "vramPct": 92
       },
       {
@@ -2603,9 +2591,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 59,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 97
       }
     ],
