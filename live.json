@@ -1,5 +1,5 @@
 {
-  "generated": 1788520845747,
+  "generated": 1788520890768,
   "status": "running",
   "stats": {
     "products": 100,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> BookkeeperPro",
+      "t": 1788520862460,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788520853754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 100 products)",
       "t": 1788520750626,
       "type": "event"
@@ -1523,27 +1535,22 @@
       "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
       "t": 1788518015840,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "EXTREME elevation: build for ChefMate is stuck (attempt 2) — trying a stronger model",
-      "t": 1788518014524,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> ChefMate",
-      "t": 1788518014515,
+      "text": "stage 'build' -> BookkeeperPro",
+      "t": 1788520862460,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788518013088,
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788520853754,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1755,10 +1762,9 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     1,
-    6,
-    14,
+    0,
+    20,
     1,
     1,
     0,
@@ -1767,32 +1773,33 @@
     0,
     2,
     1,
-    1,
-    7,
-    0,
     1,
     3,
     4,
+    1,
+    3,
     4,
-    12,
     0,
+    14,
     2,
     2,
-    0,
+    1,
+    1,
     4,
     1,
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      5.52,
-      4.27,
-      3.77
+      4.53,
+      4.17,
+      3.76
     ],
-    "ramPct": 55,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2502,8 +2509,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 61,
-        "vramPct": 91
+        "utilPct": 90,
+        "vramPct": 90
       },
       {
         "alias": "GPU-Node-2",
