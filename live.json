@@ -1,5 +1,5 @@
 {
-  "generated": 1788558794421,
+  "generated": 1788558839406,
   "status": "running",
   "stats": {
     "products": 121,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for CopyCraft — 2 files, working node app. Handing off to test.",
+      "t": 1788558831353,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: CopyCraft — events, community & memberships. Let's see if it's worth building.",
@@ -1094,16 +1101,21 @@
       "t": 1788539030555,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for PawPalz.",
-      "t": 1788538258253,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CopyCraft",
+      "t": 1788558836430,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788558831353,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1571,21 +1583,28 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788555855054,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788555855053,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite error: upload index.html failed 422",
-      "t": 1788555852080,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CopyCraft",
+      "t": 1788558836430,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for CopyCraft — 2 files, working node app. Handing off to test.",
+      "t": 1788558831353,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788558831353,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1597,42 +1616,6 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (2875MB free)",
       "t": 1788558751422,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788558738164,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788558738163,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788558738163,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788558738162,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite error: upload live.json failed 422",
-      "t": 1788558734770,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788558734770,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1851,15 +1834,14 @@
   },
   "throughput": [
     0,
-    0,
-    2,
-    0,
+    1,
+    1,
     6,
     1,
     0,
     0,
-    8,
-    0,
+    1,
+    7,
     0,
     1,
     0,
@@ -1868,26 +1850,27 @@
     0,
     0,
     12,
-    1,
     0,
     1,
-    0,
-    0,
     1,
     0,
     0,
     1,
     0,
     0,
-    9
+    1,
+    0,
+    0,
+    9,
+    3
   ],
   "load": {
     "loadavg": [
-      0.63,
-      0.37,
-      0.25
+      0.52,
+      0.38,
+      0.26
     ],
-    "ramPct": 65,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1901,8 +1884,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2600,7 +2583,7 @@
     {
       "name": "CopyCraft",
       "niche": "events, community & memberships",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2647,7 +2630,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 25,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
