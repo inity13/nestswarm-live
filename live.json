@@ -1,5 +1,5 @@
 {
-  "generated": 1788545694164,
+  "generated": 1788545739205,
   "status": "running",
   "stats": {
     "products": 116,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SmartInvoiceFlow — 2 files, working node app. Handing off to test.",
+      "t": 1788545724978,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SmartInvoiceFlow — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,27 @@
       "t": 1788536138112,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "LaForge (Nest Concord) here. Thank you all for your input. The single most important quality requirement for TaskMaster Prime to ship is a polished user experience. Every feature and detail must be refined to ensure it's intuitive, efficient, and delightful for users. User feedback will guide our final polish before we launch it live on real marketplaces and platforms.",
-      "t": 1788536136215,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788545731089,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmartInvoiceFlow",
+      "t": 1788545731066,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788545724978,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 116 products)",
@@ -1565,27 +1583,35 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
       "t": 1788541458276,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
-      "t": 1788541278804,
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788545731089,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
-      "t": 1788541097499,
-      "type": "event"
+      "text": "stage 'test' -> SmartInvoiceFlow",
+      "t": 1788545731066,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SmartInvoiceFlow — 2 files, working node app. Handing off to test.",
+      "t": 1788545724978,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
-      "t": 1788540918551,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788545724978,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1797,10 +1823,9 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     1,
-    12,
-    2,
+    5,
+    9,
     9,
     0,
     0,
@@ -1814,8 +1839,8 @@
     0,
     0,
     1,
-    6,
-    0,
+    5,
+    1,
     1,
     0,
     0,
@@ -1826,12 +1851,13 @@
     0,
     0,
     1,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.35,
-      0.23,
+      0.32,
+      0.24,
       0.2
     ],
     "ramPct": 60,
@@ -2552,8 +2578,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 28,
-        "vramPct": 15
+        "utilPct": 26,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2568,8 +2594,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
