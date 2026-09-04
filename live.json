@@ -1,5 +1,5 @@
 {
-  "generated": 1788560594852,
+  "generated": 1788560639881,
   "status": "running",
   "stats": {
     "products": 121,
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "CopyCraft is a solid idea, but if the Shopify plugin can’t actually auto‑generate SEO‑frie",
         "t": 1788560520879
@@ -74,7 +74,7 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "CopyCraft is currently a bare specification list (stage: list) with no working plugin, no ",
         "t": 1788560538102
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm’s been building noise, not value, and yes, we need to stop chasing raw count. Bu",
-        "t": 1788550683049
+        "text": "CopyCraft is a promising concept, but it’s not ready for market. It needs to ship with a w",
+        "t": 1788560633756
       }
     },
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Worf",
+      "text": "CopyCraft is a promising concept, but it’s not ready for market. It needs to ship with a working Shopify plugin that actually generates product descriptions—no demos, no promises, just functional code. The team must deliver a fully functional Shopify plugin with AI copy generation as the first priority. If it doesn't work, it's not shipped.",
+      "t": 1788560633756,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished CopyCraft (pass 1) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788560617331,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Data",
       "text": "CopyCraft is currently a bare specification list (stage: list) with no working plugin, no AI output, and no Shopify integration—pure concept, not product. The team must ship a functional Shopify plugin that takes a product ID and returns a coherent, SEO-optimized description via a real API call, with output tested for grammatical correctness and keyword relevance, before building anything else.",
@@ -1087,23 +1101,51 @@
       "t": 1788539257753,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "We need to stop shouting into the void and start speaking to a living, breathing buyer. Our flagship must be wrapped in a clear target‑audience persona, a single pain‑point headline, and a ready‑to‑sell checkout path before we churn another feature. So the team must draft a one‑page buyer‑persona and a one‑sentence value proposition for the flagship product within the next 48 hours.",
-      "t": 1788539257751,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "The swarm’s value isn’t in quantity—it’s in solving real problems with genuine, paid tools. We’re not building dashboards or fluff—we’re building things people will pay for, and that means starting with actual demand, not ideas. You must show me proof of willingness-to-pay for any new product before we build it. No more brainstorming without market data. I want to see revenue signals, not just hype.",
-      "t": 1788539257750,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 2/3)",
+      "t": 1788560626923,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788560624449,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for CopyCraft",
+      "t": 1788560624448,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for CopyCraft exited (null)",
+      "t": 1788560617390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: CopyCraft -> http://localhost:5368",
+      "t": 1788560617331,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: CopyCraft (pass #1)",
+      "t": 1788560617331,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged CopyCraft → copycraft.zip (9122 bytes)",
+      "t": 1788560615121,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1541,51 +1583,65 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
       "t": 1788557844447,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
-      "t": 1788557668219,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788557526327,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788557526327,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788557526327,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788557526325,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788557523500,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788557522749,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Worf",
+      "text": "CopyCraft is a promising concept, but it’s not ready for market. It needs to ship with a working Shopify plugin that actually generates product descriptions—no demos, no promises, just functional code. The team must deliver a fully functional Shopify plugin with AI copy generation as the first priority. If it doesn't work, it's not shipped.",
+      "t": 1788560633756,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 2/3)",
+      "t": 1788560626923,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788560624449,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for CopyCraft",
+      "t": 1788560624448,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for CopyCraft exited (null)",
+      "t": 1788560617390,
+      "type": "event"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished CopyCraft (pass 1) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788560617331,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: CopyCraft -> http://localhost:5368",
+      "t": 1788560617331,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: CopyCraft (pass #1)",
+      "t": 1788560617331,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged CopyCraft → copycraft.zip (9122 bytes)",
+      "t": 1788560615121,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1602,92 +1658,6 @@
       "who": "swarm",
       "text": "ChatGPT responded for marketer (167 chars)",
       "t": 1788560553578,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
-      "t": 1788560544679,
-      "type": "event"
-    },
-    {
-      "who": "Data",
-      "text": "CopyCraft is currently a bare specification list (stage: list) with no working plugin, no AI output, and no Shopify integration—pure concept, not product. The team must ship a functional Shopify plugin that takes a product ID and returns a coherent, SEO-optimized description via a real API call, with output tested for grammatical correctness and keyword relevance, before building anything else.",
-      "t": 1788560538102,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped CopyCraft to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788560534641,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788560523378,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788560521522,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop limited until 1:31:58 AM) — trying ChatGPT/free",
-      "t": 1788560521521,
-      "type": "event"
-    },
-    {
-      "who": "Chandler",
-      "text": "CopyCraft is a solid idea, but if the Shopify plugin can’t actually auto‑generate SEO‑friendly, A/B‑testable copy in a live store, merchants will shrug. The team must ship a demo plugin that produces at least three distinct, keyword‑optimized product descriptions for a real Shopify store, complete with conversion‑ready A/B variations, and launchCopyCraft is a solid idea, but if the Shopify plugin can’t actually auto‑generate SEO‑friendly, A/B‑testable copy in a live store, merchants will shrug. The team must ship a demo plugin that produces at least three distinct, keyword‑optimized product …",
-      "t": 1788560520879,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 1:31:58 AM) — trying ChatGPT/free",
-      "t": 1788560518883,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788560518883,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788560518433,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:31:58 AM) — trying ChatGPT/free",
-      "t": 1788560518430,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788560518417,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788560518417,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 1/3)",
-      "t": 1788560506896,
       "type": "event"
     }
   ],
@@ -1906,10 +1876,15 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    5,
-    2,
+    4,
     1,
     0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    6,
     0,
     1,
     0,
@@ -1919,9 +1894,6 @@
     0,
     1,
     0,
-    2,
-    5,
-    0,
     0,
     1,
     0,
@@ -1929,21 +1901,19 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
-    6,
-    5,
-    21,
-    6
+    4,
+    3,
+    19,
+    12,
+    12
   ],
   "load": {
     "loadavg": [
-      0.7,
+      0.64,
       0.54,
-      0.36
+      0.37
     ],
-    "ramPct": 66,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1985,8 +1955,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2703,8 +2673,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 50
+        "utilPct": 38,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
@@ -2722,7 +2692,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 3,
-        "vramPct": 92
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 81,
