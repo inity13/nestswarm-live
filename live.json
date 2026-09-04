@@ -1,5 +1,5 @@
 {
-  "generated": 1788500250843,
+  "generated": 1788500296026,
   "status": "running",
   "stats": {
     "products": 88,
@@ -14,7 +14,7 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Originality beats cloning any day. This product is a niche-specific automation tool for re",
         "t": 1788500192438
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "ownerreq: emailed 4 new request(s) to [email]",
+      "t": 1788500269071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TaskMaster AI",
+      "t": 1788500266387,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 88 products)",
       "t": 1788500225901,
       "type": "event"
@@ -1574,21 +1586,21 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1788496915947,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 85 products)",
-      "t": 1788496805791,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 85 products)",
-      "t": 1788496624828,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "ownerreq: emailed 4 new request(s) to [email]",
+      "t": 1788500269071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TaskMaster AI",
+      "t": 1788500266387,
+      "type": "building"
+    },
     {
       "who": "Spock",
       "text": "Untitled with zero features, audience, or problem statement is a blank slate that risks endless scope-creep if we prioritize architecture over definition—we must first articulate a testable core value before any stack discussion. The team must produce a one-sentence value proposition and a mocked single-page user flow before considering any code, deployment, or infrastructure decisions.",
@@ -1630,50 +1642,6 @@
       "who": "swarm",
       "text": "conductor created skill: stripe-live-readiness",
       "t": 1788500218089,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> TaskMaster AI",
-      "t": 1788500196382,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: TaskMaster AI — privacy, security & personal data. Let's see if it's worth building.",
-      "t": 1788500194657,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: TaskMaster AI [privacy, security & personal data]",
-      "t": 1788500194657,
-      "type": "ideated"
-    },
-    {
-      "who": "Guinan",
-      "text": "Originality beats cloning any day. This product is a niche-specific automation tool for remote workers. The team must define the exact problem it solves, create a demo, and validate with real users before proceeding.",
-      "t": 1788500192438,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788500191444,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: privacy, security & personal data",
-      "t": 1788500191441,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher brief: AI workflow auditor & one-click automation generator for solo knowledge workers (willingness: medium) — 4 tool ideas",
-      "t": 1788500191381,
       "type": "event"
     }
   ],
@@ -1889,7 +1857,6 @@
   },
   "throughput": [
     0,
-    0,
     7,
     6,
     0,
@@ -1903,8 +1870,8 @@
     0,
     0,
     8,
-    11,
     6,
+    11,
     3,
     0,
     0,
@@ -1912,20 +1879,21 @@
     3,
     0,
     4,
-    7,
-    0,
+    4,
+    3,
     1,
     4,
     0,
-    16
+    16,
+    3
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.2,
+      0.23,
+      0.22,
       0.23
     ],
-    "ramPct": 63,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2582,7 +2550,7 @@
     {
       "name": "TaskMaster AI",
       "niche": "privacy, security & personal data",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2611,7 +2579,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
