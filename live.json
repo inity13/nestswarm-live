@@ -1,5 +1,5 @@
 {
-  "generated": 1788526157566,
+  "generated": 1788526202702,
   "status": "running",
   "stats": {
     "products": 104,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launcher: HomeMaster already on GitHub (exactly-once)",
+      "t": 1788526194164,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788526189796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788526189796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788526189796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788526189795,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 104 products)",
       "t": 1788526152531,
       "type": "event"
@@ -1553,39 +1583,39 @@
       "text": "stage 'list' -> Bookly",
       "t": 1788524193658,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> Bookly",
-      "t": 1788524183656,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for Bookly",
-      "t": 1788524182563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
-      "t": 1788524173207,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> Bookly",
-      "t": 1788524143631,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for Bookly",
-      "t": 1788524135915,
-      "type": "test"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launcher: HomeMaster already on GitHub (exactly-once)",
+      "t": 1788526194164,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788526189796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788526189796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788526189796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788526189795,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 104 products)",
@@ -1805,43 +1835,43 @@
   },
   "throughput": [
     0,
+    1,
+    9,
+    2,
+    0,
+    1,
+    0,
+    3,
+    1,
+    0,
     0,
     2,
-    10,
-    0,
-    1,
-    0,
-    0,
-    4,
-    0,
-    0,
-    1,
-    1,
-    11,
-    18,
-    0,
-    1,
-    8,
-    0,
-    0,
+    6,
+    20,
+    3,
     1,
     7,
-    9,
-    13,
+    1,
+    0,
+    0,
+    3,
+    12,
+    12,
+    3,
     0,
     0,
     8,
     0,
     0,
-    1
+    8
   ],
   "load": {
     "loadavg": [
-      5.71,
-      4.6,
-      3.68
+      3.71,
+      4.23,
+      3.6
     ],
-    "ramPct": 49,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1855,8 +1885,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2569,8 +2599,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 55,
-        "vramPct": 16
+        "utilPct": 7,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
@@ -2588,10 +2618,10 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 93
+        "vramPct": 96
       }
     ],
-    "selfHostedInferencePct": 83,
+    "selfHostedInferencePct": 82,
     "jobsProcessed": 86
   }
 }
