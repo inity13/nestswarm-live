@@ -1,5 +1,5 @@
 {
-  "generated": 1788492149855,
+  "generated": 1788492194863,
   "status": "running",
   "stats": {
     "products": 84,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788492150530,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3928MB free)",
+      "t": 1788492150529,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: amazonsagemakerinference — queued for key hunter",
       "t": 1788492144809,
       "type": "event"
@@ -1574,21 +1586,21 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788488527593,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3773MB free)",
-      "t": 1788488527592,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788492150530,
       "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
-      "t": 1788488524985,
-      "type": "event"
-    }
-  ],
-  "recent": [
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3928MB free)",
+      "t": 1788492150529,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "scout discovered key-gated free provider: amazonsagemakerinference — queued for key hunter",
@@ -1690,12 +1702,6 @@
       "text": "conductor created skill: stripe-owner-onboarding",
       "t": 1788492113641,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (5 notes updated)",
-      "t": 1788492104383,
-      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1910,7 +1916,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1921,32 +1926,33 @@
     0,
     0,
     1,
-    6,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    6,
-    16,
+    4,
     2,
+    1,
     0,
-    21
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    6,
+    12,
+    7,
+    0,
+    18,
+    5
   ],
   "load": {
     "loadavg": [
-      1.02,
-      0.33,
-      0.17
+      0.48,
+      0.28,
+      0.16
     ],
-    "ramPct": 49,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2629,9 +2635,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 7,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2646,9 +2652,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 30,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
