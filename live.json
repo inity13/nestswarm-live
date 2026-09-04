@@ -1,5 +1,5 @@
 {
-  "generated": 1788508332690,
+  "generated": 1788508377633,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788508349701,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3899MB free)",
+      "t": 1788508349699,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
       "t": 1788508327469,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "registrar: registering Beehiiv (revenue)",
       "t": 1788506721658,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting nvidia (https://build.nvidia.com)",
-      "t": 1788506711739,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1788506710604,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788508349701,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3899MB free)",
+      "t": 1788508349699,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
@@ -1596,12 +1608,6 @@
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1788508310512,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788508243035,
       "type": "event"
     }
   ],
@@ -1816,44 +1822,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    18,
     17,
-    17,
-    18,
-    3,
-    2,
-    0,
-    41,
-    33,
-    4,
-    0,
+    14,
+    19,
+    9,
     1,
-    0,
-    0,
+    1,
+    26,
+    47,
     5,
     0,
+    0,
+    1,
+    0,
     4,
     1,
-    0,
-    2,
-    2,
-    0,
+    4,
     0,
     1,
     2,
     1,
     1,
+    0,
+    0,
+    3,
+    0,
+    1,
+    2,
     1,
     1,
-    3
+    4
   ],
   "load": {
     "loadavg": [
-      0.59,
-      0.28,
+      0.45,
+      0.29,
       0.41
     ],
-    "ramPct": 49,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2533,10 +2539,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 14,
-        "vramPct": 73
+        "busy": true,
+        "warm": false,
+        "utilPct": 39,
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
@@ -2553,8 +2559,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 8,
-        "vramPct": 97
+        "utilPct": 12,
+        "vramPct": 96
       }
     ],
     "selfHostedInferencePct": 89,
