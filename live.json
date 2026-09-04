@@ -1,5 +1,5 @@
 {
-  "generated": 1788553887471,
+  "generated": 1788553932647,
   "status": "running",
   "stats": {
     "products": 119,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> StreamFuse",
+      "t": 1788553894593,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788553890078,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 119 products)",
       "t": 1788553883820,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "registrar: Millo step 5 -> {}",
       "t": 1788550580187,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788550562102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788550560953,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> StreamFuse",
+      "t": 1788553894593,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788553890078,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 119 products)",
@@ -1827,44 +1839,44 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    5,
+    6,
+    0,
+    1,
+    0,
+    1,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    8,
-    2,
-    1,
-    0,
-    0,
-    2,
-    2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    4
+    5
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.12,
+      0.17,
+      0.13,
       0.11
     ],
-    "ramPct": 53,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2553,7 +2565,7 @@
     {
       "name": "StreamFuse",
       "niche": "social media, creators & influencer tools",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2582,8 +2594,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 47,
-        "vramPct": 48
+        "utilPct": 23,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
@@ -2598,13 +2610,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
-    "jobsProcessed": 104
+    "jobsProcessed": 105
   }
 }
