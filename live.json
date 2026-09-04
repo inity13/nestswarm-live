@@ -1,5 +1,5 @@
 {
-  "generated": 1788560414844,
+  "generated": 1788560459883,
   "status": "running",
   "stats": {
     "products": 121,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'design' -> CopyCraft",
+      "t": 1788560416883,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "tests passed for CopyCraft",
       "t": 1788560409125,
       "type": "test"
@@ -1577,15 +1583,15 @@
       "text": "conductor: 3 operational improvement(s) recommended",
       "t": 1788556939137,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788556939083,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> CopyCraft",
+      "t": 1788560416883,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "tests passed for CopyCraft",
@@ -1615,12 +1621,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788560399004,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
-      "t": 1788560363797,
       "type": "event"
     }
   ],
@@ -1840,23 +1840,22 @@
   },
   "throughput": [
     0,
-    2,
+    9,
+    3,
+    4,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    6,
+    0,
+    1,
+    0,
+    0,
     7,
-    5,
-    2,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    2,
-    5,
     0,
     0,
     1,
@@ -1868,15 +1867,16 @@
     1,
     0,
     0,
-    6
+    4,
+    3
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.28,
-      0.26
+      0.7,
+      0.39,
+      0.3
     ],
-    "ramPct": 58,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2616,10 +2616,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 16
+        "utilPct": 89,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2637,7 +2637,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 92
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 81,
