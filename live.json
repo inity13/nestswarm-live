@@ -1,5 +1,5 @@
 {
-  "generated": 1788524131924,
+  "generated": 1788524151650,
   "status": "running",
   "stats": {
     "products": 102,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'design' -> Bookly",
+      "t": 1788524143631,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for Bookly",
+      "t": 1788524135915,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Bookly",
+      "t": 1788524133632,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788524129593,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "conductor: 1 operational improvement(s) recommended",
       "t": 1788520958913,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788520958791,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1788520958791,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
-      "t": 1788520935428,
-      "type": "scout"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> Bookly",
+      "t": 1788524143631,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for Bookly",
+      "t": 1788524135915,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> Bookly",
+      "t": 1788524133632,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for Bookly — 2 files, working node app. Handing off to test.",
@@ -1813,42 +1831,42 @@
   "throughput": [
     1,
     0,
-    0,
-    6,
+    5,
+    1,
     0,
     0,
     3,
     0,
+    9,
+    3,
+    3,
+    0,
+    1,
+    2,
+    2,
     5,
-    6,
+    0,
+    3,
+    9,
+    0,
+    0,
+    1,
+    0,
+    4,
+    1,
     4,
     0,
-    1,
-    2,
-    0,
-    5,
-    2,
-    0,
-    12,
-    0,
-    0,
-    1,
-    0,
-    1,
-    4,
-    2,
-    2,
     5,
     0,
-    2
+    5
   ],
   "load": {
     "loadavg": [
-      4.31,
-      3.62,
-      2.37
+      3.16,
+      3.4,
+      2.33
     ],
-    "ramPct": 61,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2529,7 +2547,7 @@
     {
       "name": "Bookly",
       "niche": "study, learning & memory aids",
-      "stage": "test",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2558,8 +2576,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 91,
-        "vramPct": 90
+        "utilPct": 5,
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
@@ -2574,9 +2592,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 15,
+        "busy": false,
+        "warm": true,
+        "utilPct": 14,
         "vramPct": 96
       }
     ],
