@@ -1,5 +1,5 @@
 {
-  "generated": 1788511258198,
+  "generated": 1788511303207,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (76950) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788511298297,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (76869) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788511288268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1788511282976,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788511272992,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for critic (chatgpt script failed (exit 1): <3>WSL (76844) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
       "t": 1788511234463,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
       "t": 1788508687994,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (76950) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788511298297,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (76869) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788511288268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1788511282976,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1788508626038,
+      "t": 1788511272992,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
-      "t": 1788508543160,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788508507687,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788508349701,
-      "type": "bench"
-    }
-  ],
-  "recent": [
     {
       "who": "Scotty",
       "text": "CodeMaster Prep needs to ship a working prototype with at least one full exam simulation and a functional spaced repetition engine—no half-baked features. I demand the team deliver a fully interactive demo app that runs offline and actually adapts question difficulty based on user performance. Without that, we're just building promises, not products.",
@@ -1621,18 +1645,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788511214431,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788511209715,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1788511200110,
       "type": "event"
     }
   ],
@@ -1849,40 +1861,40 @@
   "throughput": [
     3,
     1,
-    1,
-    0,
-    0,
-    11,
-    1,
-    1,
-    1,
     0,
     0,
     3,
+    9,
     1,
-    0,
-    1,
-    0,
-    0,
-    3,
-    3,
-    0,
     1,
     0,
     0,
-    5,
+    2,
+    2,
+    0,
     1,
+    0,
+    0,
+    2,
+    4,
+    0,
+    1,
+    0,
+    0,
+    4,
+    2,
     7,
     1,
     9,
     0,
-    9
+    9,
+    5
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.36,
-      0.88
+      0.92,
+      0.51,
+      0.9
     ],
     "ramPct": 49,
     "cpus": 12
@@ -2584,8 +2596,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
-        "vramPct": 78
+        "utilPct": 99,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
@@ -2602,8 +2614,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 96
+        "utilPct": 14,
+        "vramPct": 62
       }
     ],
     "selfHostedInferencePct": 89,
