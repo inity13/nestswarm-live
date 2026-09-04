@@ -1,5 +1,5 @@
 {
-  "generated": 1788495840343,
+  "generated": 1788495885601,
   "status": "running",
   "stats": {
     "products": 85,
@@ -1588,20 +1588,7 @@
       "type": "building"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788495756391,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3828MB free)",
-      "t": 1788495756388,
-      "type": "bench"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1813,12 +1800,11 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     0,
-    7,
-    7,
+    2,
+    12,
     3,
     2,
     0,
@@ -1832,25 +1818,26 @@
     1,
     0,
     0,
+    3,
+    5,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     8,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1,
-    8,
-    15
+    13,
+    14
   ],
   "load": {
     "loadavg": [
-      0.92,
-      0.63,
-      0.3
+      0.56,
+      0.57,
+      0.29
     ],
-    "ramPct": 55,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1876,16 +1863,16 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "scout": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
       "critic": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1900,15 +1887,15 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
-      "launcher": {
+      "distributor": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -2534,7 +2521,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
@@ -2552,8 +2539,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 1
+        "utilPct": 20,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 97,
