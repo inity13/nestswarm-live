@@ -1,5 +1,5 @@
 {
-  "generated": 1788560954941,
+  "generated": 1788560999945,
   "status": "running",
   "stats": {
     "products": 122,
@@ -26,10 +26,10 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The idea is vague. I concede that we need clear features and audience. But \"personalized l",
-        "t": 1788555631308
+        "text": "This is not a product — it's a void. We need a clear problem, audience, and value proposit",
+        "t": 1788560969570
       }
     },
     {
@@ -221,10 +221,10 @@
       "color": "#e0957b",
       "avatar": null,
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm has indeed chased quantity over quality long enough. Let's converge on building ",
-        "t": 1788550683061
+        "text": "CopyCraft should be the flagship, but only if the Shopify plugin can generate full, keywor",
+        "t": 1788560976345
       }
     },
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "preflight",
+      "text": "CopyCraft should be the flagship, but only if the Shopify plugin can generate full, keyword‑rich descriptions that pass a real‑world A/B test showing a measurable lift in conversion rates. The team must deliver a prototype plugin that writes descriptions for at least 10 live products and produces a ≥10 % increase in click‑through or add‑to‑cart metrics in a controlled test.",
+      "t": 1788560976345,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "This is not a product — it's a void. We need a clear problem, audience, and value proposition before we build anything. The team must define the core user pain point and the specific translation task this solves. Without that, we're building in vacuum. Demand: a one-page problem-solution statement with 3 concrete user scenarios. No code, no stack, no design — just clarity on why someone would pay for this.",
+      "t": 1788560969570,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: MonetaryMosaic — personal finance, investing & budgeting. Let's see if it's worth building.",
@@ -1087,23 +1101,21 @@
       "t": 1788539257771,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "// FILE: index.html <!-- Conceding quality over quantity is crucial, but hierarchy and polish cannot be ignored. A polished, user-friendly product is worth the extra time and effort. --> I must concede that quality takes precedence over quantity, but we cannot overlook aesthetics and functionality. The most important thing for us to do next is ensure that our flagship product is not only functional but also beautifully designed and polished. This means refining every element down to the smallest detail, ensuring a seamless user experience from top to bottom. With this in mind, I propose we …",
-      "t": 1788539257769,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js The architect's insistence on quality over quantity feels spot-on right now, especially given that eleven out of one hundred fourteen products have a critic// FILE: app.js The architect's insistence on quality over quantity feels spot-on right now, especially given that eleven out of one hundred fourteen products have a critic rating of 5.0 or higher. But I'm not building another dashboard—our next move should be a working crypto payment processor that actually takes money, not just lists products. That's the single most important thing we must do next.",
-      "t": 1788539257768,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MonetaryMosaic",
+      "t": 1788560996993,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> MonetaryMosaic",
+      "t": 1788560956991,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "ideated: MonetaryMosaic [personal finance, investing & budgeting]",
@@ -1571,21 +1583,35 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788558738163,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788558738163,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788558738162,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MonetaryMosaic",
+      "t": 1788560996993,
+      "type": "building"
+    },
+    {
+      "who": "preflight",
+      "text": "CopyCraft should be the flagship, but only if the Shopify plugin can generate full, keyword‑rich descriptions that pass a real‑world A/B test showing a measurable lift in conversion rates. The team must deliver a prototype plugin that writes descriptions for at least 10 live products and produces a ≥10 % increase in click‑through or add‑to‑cart metrics in a controlled test.",
+      "t": 1788560976345,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "This is not a product — it's a void. We need a clear problem, audience, and value proposition before we build anything. The team must define the core user pain point and the specific translation task this solves. Without that, we're building in vacuum. Demand: a one-page problem-solution statement with 3 concrete user scenarios. No code, no stack, no design — just clarity on why someone would pay for this.",
+      "t": 1788560969570,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> MonetaryMosaic",
+      "t": 1788560956991,
+      "type": "building"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: MonetaryMosaic — personal finance, investing & budgeting. Let's see if it's worth building.",
@@ -1700,12 +1726,6 @@
       "who": "swarm",
       "text": "polish syntax fail for CopyCraft: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788560920691,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
-      "t": 1788560903987,
       "type": "event"
     }
   ],
@@ -1925,15 +1945,17 @@
   },
   "throughput": [
     0,
+    1,
+    6,
+    0,
+    1,
+    0,
     0,
     7,
     0,
     0,
     1,
     0,
-    2,
-    5,
-    0,
     0,
     1,
     0,
@@ -1941,27 +1963,25 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
-    6,
-    5,
-    21,
-    6,
-    15,
-    1,
     4,
     3,
+    19,
+    12,
+    12,
+    4,
+    1,
+    6,
     0,
-    22
+    15,
+    12
   ],
   "load": {
     "loadavg": [
-      1.03,
-      0.57,
-      0.41
+      0.6,
+      0.52,
+      0.4
     ],
-    "ramPct": 69,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1971,8 +1991,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2031,7 +2051,7 @@
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2674,7 +2694,7 @@
     {
       "name": "MonetaryMosaic",
       "niche": "personal finance, investing & budgeting",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2701,9 +2721,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 4,
+        "busy": true,
+        "warm": false,
+        "utilPct": 40,
         "vramPct": 80
       },
       {
@@ -2721,11 +2741,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 15,
-        "vramPct": 58
+        "utilPct": 6,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
-    "jobsProcessed": 112
+    "jobsProcessed": 113
   }
 }
