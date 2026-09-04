@@ -1,5 +1,5 @@
 {
-  "generated": 1788508602697,
+  "generated": 1788508647711,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788508626038,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
       "t": 1788508543160,
       "type": "event"
@@ -1577,19 +1583,13 @@
       "text": "free provider nemotron-3.5-lightning-free failed for coder (The operation was aborted due to timeout)",
       "t": 1788506731840,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788506731840,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
-      "t": 1788508543160,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788508626038,
       "type": "event"
     }
   ],
@@ -1804,44 +1804,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    1,
-    1,
-    1,
-    72,
     2,
-    3,
     0,
-    1,
-    0,
-    1,
-    4,
+    61,
+    13,
     4,
     0,
     1,
     0,
-    3,
-    1,
     0,
-    0,
-    1,
-    2,
-    1,
-    2,
-    0,
-    1,
     5,
     0,
+    4,
+    1,
+    0,
+    3,
+    1,
+    0,
     0,
     1,
-    1
+    2,
+    1,
+    2,
+    0,
+    1,
+    3,
+    2,
+    0,
+    1,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.18,
-      0.33
+      0.65,
+      0.29,
+      0.36
     ],
-    "ramPct": 50,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2523,8 +2523,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 52
+        "utilPct": 90,
+        "vramPct": 83
       },
       {
         "alias": "GPU-Node-2",
@@ -2541,7 +2541,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 5,
         "vramPct": 96
       }
     ],
