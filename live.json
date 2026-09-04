@@ -1,5 +1,5 @@
 {
-  "generated": 1788525122279,
+  "generated": 1788525167332,
   "status": "running",
   "stats": {
     "products": 103,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "EXTREME elevation: build for PawPrints Pro is stuck (attempt 2) — trying a stronger model",
+      "t": 1788525163976,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PawPrints Pro",
+      "t": 1788525163974,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788525163617,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3635MB free)",
+      "t": 1788525163616,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788525154902,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (3 notes updated)",
       "t": 1788525111099,
       "type": "vault"
@@ -1553,50 +1583,44 @@
       "text": "vault: synced (4 notes updated)",
       "t": 1788522110003,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> BooklyMate",
-      "t": 1788522062818,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788522056654,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 101 products)",
-      "t": 1788522013138,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 101 products)",
-      "t": 1788521831183,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> BooklyMate",
-      "t": 1788521672683,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788525111099,
-      "type": "vault"
+      "text": "EXTREME elevation: build for PawPrints Pro is stuck (attempt 2) — trying a stronger model",
+      "t": 1788525163976,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 103 products)",
-      "t": 1788525072537,
+      "text": "stage 'build' -> PawPrints Pro",
+      "t": 1788525163974,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788525163617,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3635MB free)",
+      "t": 1788525163616,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "coder output incomplete (attempt 2)",
+      "t": 1788525154902,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788525111099,
+      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1811,17 +1835,16 @@
   },
   "throughput": [
     0,
-    10,
-    2,
+    12,
     0,
     0,
     1,
+    0,
+    4,
     1,
     3,
     1,
-    4,
-    4,
-    1,
+    5,
     0,
     5,
     9,
@@ -1829,25 +1852,26 @@
     0,
     1,
     0,
-    1,
-    9,
-    2,
+    0,
+    7,
+    5,
     0,
     1,
     0,
-    3,
+    0,
+    4,
+    0,
+    0,
     1,
-    0,
-    0,
-    2
+    7
   ],
   "load": {
     "loadavg": [
-      2.71,
-      3.38,
-      3.32
+      2.58,
+      3.27,
+      3.28
     ],
-    "ramPct": 53,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2555,10 +2579,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 90,
-        "vramPct": 90
+        "busy": false,
+        "warm": true,
+        "utilPct": 6,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
