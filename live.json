@@ -1,5 +1,5 @@
 {
-  "generated": 1788494265315,
+  "generated": 1788494310099,
   "status": "running",
   "stats": {
     "products": 84,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788494286913,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
+      "t": 1788494284334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
       "t": 1788494104686,
       "type": "event"
@@ -1574,21 +1586,22 @@
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788490325701,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
-      "t": 1788490323726,
+      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
+      "t": 1788494286913,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'test' -> SageSupply",
-      "t": 1788490315032,
-      "type": "building"
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 84 products)",
+      "t": 1788494284334,
+      "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,12 +1813,11 @@
     "priority": ""
   },
   "throughput": [
+    0,
+    0,
     1,
-    0,
-    0,
-    2,
-    7,
-    4,
+    1,
+    11,
     1,
     0,
     0,
@@ -1829,7 +1841,8 @@
     0,
     1,
     0,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
@@ -2537,9 +2550,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
         "vramPct": 93
       }
     ],
