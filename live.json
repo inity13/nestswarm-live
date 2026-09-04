@@ -1,5 +1,5 @@
 {
-  "generated": 1788491069748,
+  "generated": 1788491114743,
   "status": "running",
   "stats": {
     "products": 83,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SageSupply — 2 files, working node app. Handing off to test.",
+      "t": 1788491100521,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SageSupply — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,27 @@
       "t": 1788474317205,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "We stop pretending that quantity builds value. The swarm ships one product at a time—polished, launched, and selling. Not another half-baked idea. The team must stop listing products in the catalog without a clear path to revenue. Every item must have a defined customer-facing channel or marketplace listing before it’s considered “live.” That means real checkout, real pricing, and real exposure. I will take the current flagship and make it *sellable*—not just working, but selling. I demand that we ship one product that earns money in the next 72 hours, not another idea that never leaves the …",
-      "t": 1788474317204,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788491105300,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SageSupply",
+      "t": 1788491105187,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788491100521,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
@@ -1568,27 +1586,34 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
       "t": 1788485824224,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 81 products)",
-      "t": 1788485643548,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SupplyShield",
-      "t": 1788485534295,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788485532812,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788491105300,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SageSupply",
+      "t": 1788491105187,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SageSupply — 2 files, working node app. Handing off to test.",
+      "t": 1788491100521,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788491100521,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
@@ -1808,25 +1833,12 @@
   },
   "throughput": [
     0,
-    0,
-    1,
-    6,
-    7,
-    1,
-    0,
     1,
     1,
-    0,
-    0,
+    12,
     1,
     0,
-    0,
     1,
-    0,
-    0,
-    9,
-    0,
-    0,
     1,
     0,
     0,
@@ -1836,12 +1848,25 @@
     1,
     0,
     0,
-    1
+    8,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    4
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.09,
+      0.01,
+      0.08,
       0.08
     ],
     "ramPct": 53,
@@ -2528,7 +2553,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 50
       },
       {
@@ -2544,9 +2569,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 43,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
