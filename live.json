@@ -1,5 +1,5 @@
 {
-  "generated": 1788523861886,
+  "generated": 1788523906900,
   "status": "running",
   "stats": {
     "products": 102,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> Bookly",
+      "t": 1788523893563,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788523888239,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
       "t": 1788523814245,
       "type": "event"
@@ -1571,44 +1583,19 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 100 products)",
       "t": 1788520571985,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> BookkeeperPro",
-      "t": 1788520512301,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1788520506375,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
-      "t": 1788523814245,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Bookly",
-      "t": 1788523783503,
+      "text": "stage 'build' -> Bookly",
+      "t": 1788523893563,
       "type": "building"
     },
     {
-      "who": "coder",
-      "text": "Build done for Bookly — 3 files, working node app. Handing off to test.",
-      "t": 1788523777338,
-      "system": false,
-      "type": "chat"
-    },
-    {
       "who": "swarm",
-      "text": "coder produced a functional build (3 files, node)",
-      "t": 1788523777338,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788523888239,
       "type": "event"
     }
   ],
@@ -1823,8 +1810,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
-    3,
+    4,
     1,
     0,
     0,
@@ -1837,30 +1823,31 @@
     3,
     0,
     9,
-    4,
-    2,
-    0,
-    2,
-    1,
-    2,
-    5,
-    0,
-    10,
-    2,
-    0,
-    0,
-    1,
-    1,
     3,
-    1
+    3,
+    0,
+    1,
+    2,
+    2,
+    3,
+    2,
+    0,
+    12,
+    0,
+    0,
+    1,
+    0,
+    4,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      2.74,
-      3.22,
-      1.89
+      2.37,
+      3.1,
+      1.91
     ],
-    "ramPct": 51,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1874,8 +1861,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2541,7 +2528,7 @@
     {
       "name": "Bookly",
       "niche": "study, learning & memory aids",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2570,7 +2557,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 91,
+        "utilPct": 92,
         "vramPct": 90
       },
       {
