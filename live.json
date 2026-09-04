@@ -1,5 +1,5 @@
 {
-  "generated": 1788509457853,
+  "generated": 1788509502862,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788509465745,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
       "t": 1788509407711,
       "type": "event"
@@ -1577,19 +1583,13 @@
       "text": "keyhunter: nvidia step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788506997862,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788506996680,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788509407711,
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788509465745,
       "type": "event"
     }
   ],
@@ -1804,44 +1804,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
+    3,
+    1,
+    0,
+    0,
+    1,
     2,
     1,
+    2,
+    0,
     1,
+    5,
     0,
     0,
+    1,
+    1,
+    3,
+    1,
+    2,
+    0,
+    1,
     3,
     0,
-    1,
-    2,
-    1,
-    1,
+    12,
+    0,
+    7,
     4,
     0,
     0,
-    2,
-    0,
-    3,
-    3,
-    0,
-    0,
-    2,
-    2,
-    8,
-    4,
     1,
-    6,
-    4,
-    0,
-    0,
     1
   ],
   "load": {
     "loadavg": [
-      0.29,
-      0.97,
-      0.78
+      2.36,
+      1.36,
+      0.92
     ],
-    "ramPct": 50,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -2523,8 +2523,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 28,
-        "vramPct": 77
+        "utilPct": 35,
+        "vramPct": 90
       },
       {
         "alias": "GPU-Node-2",
@@ -2541,7 +2541,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 6,
         "vramPct": 96
       }
     ],
