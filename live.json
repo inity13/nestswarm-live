@@ -1,5 +1,5 @@
 {
-  "generated": 1788515624397,
+  "generated": 1788515669496,
   "status": "running",
   "stats": {
     "products": 95,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> SocialFlow MT",
+      "t": 1788515633959,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> SocialFlow MT",
       "t": 1788515623954,
       "type": "building"
@@ -1577,15 +1583,15 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
       "t": 1788513730255,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
-      "t": 1788513549556,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SocialFlow MT",
+      "t": 1788515633959,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> SocialFlow MT",
@@ -1657,18 +1663,6 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1788515583946,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788515538316,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2922MB free)",
-      "t": 1788515538314,
-      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1882,11 +1876,10 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    0,
     1,
     3,
-    16,
-    10,
+    11,
+    15,
     0,
     0,
     1,
@@ -1895,8 +1888,8 @@
     1,
     1,
     0,
-    3,
-    4,
+    1,
+    6,
     0,
     1,
     0,
@@ -1911,15 +1904,16 @@
     0,
     0,
     3,
-    18
+    7,
+    13
   ],
   "load": {
     "loadavg": [
-      1.58,
-      0.72,
-      0.63
+      2.08,
+      0.94,
+      0.71
     ],
-    "ramPct": 69,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1929,7 +1923,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "coder": {
@@ -2600,7 +2594,7 @@
     {
       "name": "SocialFlow MT",
       "niche": "social media, creators & influencer tools",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2627,10 +2621,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 13,
-        "vramPct": 80
+        "busy": true,
+        "warm": false,
+        "utilPct": 91,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
@@ -2647,7 +2641,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 0,
+        "utilPct": 13,
         "vramPct": 92
       }
     ],
