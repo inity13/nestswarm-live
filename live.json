@@ -1,5 +1,5 @@
 {
-  "generated": 1788560525097,
+  "generated": 1788560549855,
   "status": "running",
   "stats": {
     "products": 121,
@@ -74,10 +74,10 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The 118-product catalog with a 5.0 average and only 13 listed objectively reveals inflated",
-        "t": 1788550683048
+        "text": "CopyCraft is currently a bare specification list (stage: list) with no working plugin, no ",
+        "t": 1788560538102
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Data",
+      "text": "CopyCraft is currently a bare specification list (stage: list) with no working plugin, no AI output, and no Shopify integration—pure concept, not product. The team must ship a functional Shopify plugin that takes a product ID and returns a coherent, SEO-optimized description via a real API call, with output tested for grammatical correctness and keyword relevance, before building anything else.",
+      "t": 1788560538102,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Chandler",
       "text": "CopyCraft is a solid idea, but if the Shopify plugin can’t actually auto‑generate SEO‑friendly, A/B‑testable copy in a live store, merchants will shrug. The team must ship a demo plugin that produces at least three distinct, keyword‑optimized product descriptions for a real Shopify store, complete with conversion‑ready A/B variations, and launchCopyCraft is a solid idea, but if the Shopify plugin can’t actually auto‑generate SEO‑friendly, A/B‑testable copy in a live store, merchants will shrug. The team must ship a demo plugin that produces at least three distinct, keyword‑optimized product …",
@@ -1094,16 +1101,21 @@
       "t": 1788539257750,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "We stop chasing quantity and start owning quality. The swarm’s value is not in having a hundred half-baked products, but in shipping one perfect thing that makes money. The team must stop listing products just to meet a count. Pick ONE flagship, polish it until it gleams, and launch it with real checkout working before you touch anything else. No more sketchy iterations.",
-      "t": 1788539257749,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
+      "t": 1788560544679,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped CopyCraft to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788560534641,
+      "type": "launch"
+    },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
@@ -1571,21 +1583,28 @@
       "text": "EXTREME elevation: build for ClauseCompass is stuck (attempt 2) — trying a stronger model",
       "t": 1788557266147,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> ClauseCompass",
-      "t": 1788557266146,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788557256218,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
+      "t": 1788560544679,
+      "type": "event"
+    },
+    {
+      "who": "Data",
+      "text": "CopyCraft is currently a bare specification list (stage: list) with no working plugin, no AI output, and no Shopify integration—pure concept, not product. The team must ship a functional Shopify plugin that takes a product ID and returns a coherent, SEO-optimized description via a real API call, with output tested for grammatical correctness and keyword relevance, before building anything else.",
+      "t": 1788560538102,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped CopyCraft to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788560534641,
+      "type": "launch"
+    },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
@@ -1920,9 +1939,9 @@
     }
   ],
   "ledger": {
-    "total": 620,
+    "total": 621,
     "revenue": 0,
-    "effects": 102,
+    "effects": 103,
     "boundary": 1,
     "artifacts": 68,
     "receipts": 0
@@ -1932,20 +1951,19 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
-    9,
-    3,
-    4,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     2,
-    5,
+    6,
+    2,
+    0,
     0,
     1,
     0,
+    0,
+    1,
+    6,
+    0,
+    0,
+    1,
     0,
     7,
     0,
@@ -1959,17 +1977,18 @@
     1,
     0,
     0,
-    4,
+    1,
+    6,
     5,
-    21
+    22
   ],
   "load": {
     "loadavg": [
-      1.11,
-      0.52,
-      0.34
+      1.14,
+      0.58,
+      0.37
     ],
-    "ramPct": 68,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -2003,8 +2022,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2729,8 +2748,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 81
+        "utilPct": 44,
+        "vramPct": 45
       },
       {
         "alias": "GPU-Node-2",
@@ -2747,8 +2766,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 71,
-        "vramPct": 58
+        "utilPct": 14,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
