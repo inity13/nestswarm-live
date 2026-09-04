@@ -1,5 +1,5 @@
 {
-  "generated": 1788505587132,
+  "generated": 1788505606919,
   "status": "running",
   "stats": {
     "products": 91,
@@ -1109,6 +1109,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "packaged DeveloperKit MT → developerkit-mt.zip (11265 bytes)",
+      "t": 1788505591668,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing DeveloperKit MT (critic 2) from feedback",
+      "t": 1788505591585,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> DeveloperKit MT",
+      "t": 1788505591577,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'package' -> DeveloperKit MT",
       "t": 1788505491564,
       "type": "building"
@@ -1568,27 +1586,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 90 products)",
       "t": 1788503646428,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788503505801,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788503505594,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 90 products)",
-      "t": 1788503466164,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "packaged DeveloperKit MT → developerkit-mt.zip (11265 bytes)",
+      "t": 1788505591668,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing DeveloperKit MT (critic 2) from feedback",
+      "t": 1788505591585,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> DeveloperKit MT",
+      "t": 1788505591577,
+      "type": "building"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,43 +1820,43 @@
   },
   "throughput": [
     4,
-    4,
-    4,
+    6,
+    2,
     12,
+    9,
+    9,
+    28,
+    9,
     0,
-    17,
-    14,
-    24,
+    7,
     0,
     6,
-    1,
-    0,
-    10,
-    5,
-    0,
-    5,
-    0,
-    0,
-    2,
-    3,
-    0,
-    1,
-    3,
-    0,
-    2,
-    5,
-    0,
-    9,
     4,
-    0
+    5,
+    2,
+    3,
+    0,
+    1,
+    1,
+    3,
+    0,
+    4,
+    0,
+    0,
+    5,
+    2,
+    0,
+    11,
+    2,
+    4
   ],
   "load": {
     "loadavg": [
-      0.4,
-      1.16,
-      2.62
+      0.42,
+      1.11,
+      2.57
     ],
-    "ramPct": 70,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1871,7 +1890,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nemotron-3.5-lightning-free",
+        "model": "nemotron-3-ultra-free",
         "tier": "free"
       },
       "polisher": {
@@ -2493,7 +2512,7 @@
     {
       "name": "DeveloperKit MT",
       "niche": "developer productivity tools & services",
-      "stage": "package",
+      "stage": "list",
       "status": "building"
     }
   ],
@@ -2522,7 +2541,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
+        "utilPct": 23,
         "vramPct": 82
       },
       {
