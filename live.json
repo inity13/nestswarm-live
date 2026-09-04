@@ -1,5 +1,5 @@
 {
-  "generated": 1788525707460,
+  "generated": 1788525752468,
   "status": "running",
   "stats": {
     "products": 104,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> HomeMaster",
+      "t": 1788525744133,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for HomeMaster",
+      "t": 1788525736607,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> HomeMaster",
+      "t": 1788525714120,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (6 notes updated)",
+      "t": 1788525711239,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
       "text": "tests passed for HomeMaster",
       "t": 1788525706415,
       "type": "test"
@@ -1559,33 +1583,33 @@
       "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
       "t": 1788523441431,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — provider ling-3.0-flash-fin-free not found; disabled free model nemotron-3.5-lightning-free",
-      "t": 1788523441431,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for coder (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788523440127,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider ling-3.0-flash-fin-free failed for conductor (cloud http 503: {\"error\":{\"type\":\"server_error\",\"message\":\"Error from provider (Console): Upstream request failed: Endpoint is unavailable.\"}})",
-      "t": 1788523439799,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788523439799,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> HomeMaster",
+      "t": 1788525744133,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for HomeMaster",
+      "t": 1788525736607,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> HomeMaster",
+      "t": 1788525714120,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (6 notes updated)",
+      "t": 1788525711239,
+      "type": "vault"
+    },
     {
       "who": "swarm",
       "text": "tests passed for HomeMaster",
@@ -1627,12 +1651,6 @@
       "text": "stage 'build' -> HomeMaster",
       "t": 1788525664107,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 2)",
-      "t": 1788525659014,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1846,42 +1864,42 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    1,
     5,
     0,
-    5,
+    2,
     9,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    5,
+    3,
     0,
     1,
     0,
-    0,
-    4,
-    0,
-    0,
-    1,
-    7,
-    19,
-    4,
     0,
     5,
+    7,
+    0,
+    1,
+    0,
+    0,
     4,
     0,
     0,
     1,
+    1,
+    15,
+    14,
+    0,
+    1,
+    8,
+    0,
+    0,
+    1,
+    7,
     12
   ],
   "load": {
     "loadavg": [
-      1.35,
+      1.86,
       2.44,
-      2.87
+      2.85
     ],
     "ramPct": 56,
     "cpus": 12
@@ -2483,6 +2501,13 @@
       "score": 6
     },
     {
+      "name": "HomeMaster",
+      "status": "building",
+      "niche": "real estate, renting & property",
+      "price": 49,
+      "score": 5
+    },
+    {
       "name": "CodeMaster Prep",
       "status": "listed",
       "niche": "pet care & ownership",
@@ -2551,20 +2576,13 @@
       "niche": "AI & automation utilities",
       "price": 19.99,
       "score": 5
-    },
-    {
-      "name": "Prodigy AI Tutor",
-      "status": "archived",
-      "niche": "study, learning & memory aids",
-      "price": 19.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "HomeMaster",
       "niche": "real estate, renting & property",
-      "stage": "design",
+      "stage": "list",
       "status": "building"
     }
   ],
@@ -2593,7 +2611,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 44,
+        "utilPct": 23,
         "vramPct": 77
       },
       {
@@ -2612,7 +2630,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 94
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 83,
