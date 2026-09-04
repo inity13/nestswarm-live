@@ -1,5 +1,5 @@
 {
-  "generated": 1788516794707,
+  "generated": 1788516839769,
   "status": "running",
   "stats": {
     "products": 96,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
+      "t": 1788516829349,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
+      "t": 1788516829349,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
+      "t": 1788516829072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788516829048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788516829048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
       "t": 1788516790110,
       "type": "event"
@@ -1553,55 +1583,43 @@
       "text": "idea duplicate (CodeGuard); re-ideating in a fresh niche",
       "t": 1788515618711,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TradePro Prep); re-ideating in a fresh niche",
-      "t": 1788515615908,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (CodeMaster Prep); re-ideating in a fresh niche",
-      "t": 1788515612041,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (CodeGuard Exam Prep); re-ideating in a fresh niche",
-      "t": 1788515608961,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (ElectricEdge); re-ideating in a fresh niche",
-      "t": 1788515605361,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788515593961,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
-      "t": 1788516790110,
+      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
+      "t": 1788516829349,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788516708687,
-      "type": "vault"
+      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
+      "t": 1788516829349,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:48 PM) — trying ChatGPT/free",
+      "t": 1788516829072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788516829048,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788516708310,
+      "t": 1788516829048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
+      "t": 1788516790110,
       "type": "event"
     }
   ],
@@ -1824,36 +1842,36 @@
     1,
     0,
     0,
-    1,
-    5,
-    17,
-    6,
-    0,
-    0,
-    1,
-    4,
-    6,
-    16,
-    4,
-    1,
-    8,
-    4,
-    23,
     3,
-    0,
-    0,
-    6,
+    20,
     5,
+    1,
+    0,
+    0,
+    5,
+    2,
+    19,
+    5,
+    1,
     4,
-    1
+    8,
+    14,
+    11,
+    1,
+    0,
+    5,
+    6,
+    4,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      5.68,
-      4.83,
-      3.3
+      6.27,
+      5.11,
+      3.47
     ],
-    "ramPct": 60,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2581,7 +2599,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 44,
+        "utilPct": 52,
         "vramPct": 92
       },
       {
@@ -2597,9 +2615,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 16,
         "vramPct": 93
       }
     ],
