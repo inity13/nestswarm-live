@@ -1,5 +1,5 @@
 {
-  "generated": 1788536420638,
+  "generated": 1788536465802,
   "status": "running",
   "stats": {
     "products": 112,
@@ -1103,6 +1103,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788536445316,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
+      "t": 1788536431185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788536431185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launch-discipline: polishing flagship TailoredPaws (score 0/8, attempt 3/3)",
       "t": 1788536417589,
       "type": "event"
@@ -1562,27 +1580,27 @@
       "text": "marketer produced a kit for TailoredPaws",
       "t": 1788535768787,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (23704) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788535761186,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for marketer (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788535761186,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop busy (single-flight)) — trying ChatGPT/free",
-      "t": 1788535753207,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788536445316,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
+      "t": 1788536431185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788536431185,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship TailoredPaws (score 0/8, attempt 3/3)",
@@ -1624,36 +1642,6 @@
       "who": "swarm",
       "text": "packaged TailoredPaws → tailoredpaws.zip (16530 bytes)",
       "t": 1788536407334,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788536356038,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
-      "t": 1788536356037,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788536356027,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop limited until 6:46:45 PM) — trying ChatGPT/free",
-      "t": 1788536356026,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788536356026,
       "type": "event"
     }
   ],
@@ -1868,44 +1856,44 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    3,
     0,
-    11,
-    7,
-    5,
-    1,
+    3,
+    12,
     8,
     0,
-    1,
-    1,
-    4,
-    36,
-    11,
-    2,
-    5,
     9,
-    3,
+    0,
+    1,
+    1,
+    0,
+    37,
+    14,
+    0,
     5,
-    17,
-    16,
+    10,
+    2,
     6,
-    16,
+    8,
+    18,
+    8,
+    21,
     6,
     2,
-    26,
-    15,
-    7,
-    11,
-    7,
-    8
+    18,
+    23,
+    5,
+    13,
+    3,
+    6,
+    10
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.4,
-      1.32
+      0.11,
+      0.34,
+      1.25
     ],
-    "ramPct": 65,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2641,8 +2629,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 81
+        "utilPct": 31,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
