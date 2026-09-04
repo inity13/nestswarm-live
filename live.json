@@ -1,5 +1,5 @@
 {
-  "generated": 1788492779936,
+  "generated": 1788492825210,
   "status": "running",
   "stats": {
     "products": 84,
@@ -1109,6 +1109,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> ChainBridge",
+      "t": 1788492785421,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788492781907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> ChainBridge",
       "t": 1788492765421,
       "type": "building"
@@ -1574,21 +1586,21 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788489497531,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788489466062,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 82 products)",
-      "t": 1788489423364,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ChainBridge",
+      "t": 1788492785421,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788492781907,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> ChainBridge",
@@ -1630,12 +1642,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788492760847,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788492704232,
       "type": "event"
     }
   ],
@@ -1850,7 +1856,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     6,
     0,
@@ -1865,11 +1870,11 @@
     0,
     1,
     1,
-    13,
-    11,
+    12,
+    12,
     0,
-    10,
-    13,
+    1,
+    22,
     0,
     0,
     1,
@@ -1879,15 +1884,16 @@
     0,
     0,
     2,
-    8
+    7,
+    4
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.14,
+      0.17,
+      0.13,
       0.13
     ],
-    "ramPct": 50,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2542,7 +2548,7 @@
     {
       "name": "ChainBridge",
       "niche": "freelancers & solopreneurs",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2571,7 +2577,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 50
       },
       {
@@ -2587,13 +2593,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 97,
-    "jobsProcessed": 75
+    "jobsProcessed": 76
   }
 }
