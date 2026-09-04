@@ -1,5 +1,5 @@
 {
-  "generated": 1788509862945,
+  "generated": 1788509907955,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1591,49 +1591,6 @@
       "text": "stage 'design' -> CodeMaster Prep",
       "t": 1788509822416,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
-      "t": 1788509816353,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — provider ling-3.0-flash-fin-free not found",
-      "t": 1788509816353,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for CodeMaster Prep",
-      "t": 1788509814814,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> CodeMaster Prep",
-      "t": 1788509812423,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1788509806780,
-      "type": "event"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for CodeMaster Prep — 1 files, working static app. Handing off to test.",
-      "t": 1788509804137,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788509804136,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1847,12 +1804,11 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    1,
     2,
     0,
     1,
-    5,
-    0,
+    3,
+    2,
     0,
     1,
     1,
@@ -1876,13 +1832,14 @@
     0,
     0,
     3,
-    9
+    9,
+    1
   ],
   "load": {
     "loadavg": [
-      2.6,
-      3.49,
-      2.17
+      1.27,
+      3.01,
+      2.07
     ],
     "ramPct": 48,
     "cpus": 12
@@ -1894,8 +1851,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3-ultra-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
         "model": "ling-3.0-flash-fin-free",
@@ -2566,7 +2523,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 91,
+        "utilPct": 46,
         "vramPct": 78
       },
       {
@@ -2584,7 +2541,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 86,
+        "utilPct": 10,
         "vramPct": 96
       }
     ],
