@@ -1,5 +1,5 @@
 {
-  "generated": 1788529668498,
+  "generated": 1788529713521,
   "status": "running",
   "stats": {
     "products": 107,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> DocuGuard",
+      "t": 1788529695158,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 1): fetch failed",
+      "t": 1788529694586,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax repaired for DocuGuard",
+      "t": 1788529692380,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 107 products)",
       "t": 1788529575897,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788528879145,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> DocuGuard",
+      "t": 1788529695158,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "registrar: Beehiiv step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788528875172,
+      "text": "serve fail (attempt 1): fetch failed",
+      "t": 1788529694586,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 106 products)",
-      "t": 1788528855743,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Beehiiv (revenue)",
-      "t": 1788528754112,
+      "text": "syntax repaired for DocuGuard",
+      "t": 1788529692380,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1797,44 +1816,44 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     1,
-    7,
-    7,
-    25,
-    34,
-    3,
-    10,
+    0,
+    14,
+    14,
+    40,
+    8,
     5,
-    19,
-    11,
-    6,
-    1,
-    1,
-    9,
-    0,
-    25,
-    39,
-    2,
+    10,
     18,
-    32,
-    4,
+    8,
+    10,
+    1,
+    1,
+    8,
+    1,
+    1,
+    62,
+    3,
+    9,
+    25,
+    20,
     1,
     0,
     2,
-    28,
-    0,
-    3,
+    26,
     2,
-    0
+    3,
+    1,
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      2.38,
-      3.28,
-      3.27
+      1.98,
+      3.05,
+      3.19
     ],
-    "ramPct": 49,
+    "ramPct": 46,
     "cpus": 12
   },
   "brain": {
@@ -2521,7 +2540,7 @@
     {
       "name": "DocuGuard",
       "niche": "legal, contracts & compliance",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2551,7 +2570,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 90,
-        "vramPct": 90
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
