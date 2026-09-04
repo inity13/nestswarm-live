@@ -1,5 +1,5 @@
 {
-  "generated": 1788480583929,
+  "generated": 1788480628351,
   "status": "running",
   "stats": {
     "products": 79,
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for EchoTrack — 2 files, working node app. Handing off to test.",
+      "t": 1788480624703,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: EchoTrack — freelancers & solopreneurs. Let's see if it's worth building.",
@@ -1097,16 +1104,21 @@
       "t": 1788463703892,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "We stop listing products and start shipping one. The swarm’s value is not in quantity but in finishing what we start. Demand: Pick one of the 4 listed products, polish it to genuine quality, and get it sellable with working checkout before building anything new.",
-      "t": 1788463703891,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788480624703,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
+      "t": 1788480604221,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
@@ -1574,21 +1586,29 @@
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788476673189,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
-      "who": "swarm",
-      "text": "stage 'test' -> DropPilot Pro",
-      "t": 1788476673091,
-      "type": "building"
+      "who": "coder",
+      "text": "Build done for EchoTrack — 2 files, working node app. Handing off to test.",
+      "t": 1788480624703,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
-      "t": 1788476670975,
+      "t": 1788480624703,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 79 products)",
+      "t": 1788480604221,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1800,7 +1820,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1816,28 +1835,29 @@
     0,
     0,
     1,
-    6,
-    7,
     1,
-    0,
-    0,
-    2,
+    10,
+    3,
     0,
     0,
     1,
+    1,
+    0,
+    1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.16,
+      0.12,
+      0.15,
       0.14
     ],
-    "ramPct": 60,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2492,7 +2512,7 @@
     {
       "name": "EchoTrack",
       "niche": "freelancers & solopreneurs",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2521,7 +2541,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 79
       },
       {
@@ -2537,9 +2557,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 0,
+        "busy": false,
+        "warm": true,
+        "utilPct": 3,
         "vramPct": 93
       }
     ],
