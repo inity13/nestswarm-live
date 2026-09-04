@@ -1,5 +1,5 @@
 {
-  "generated": 1788524582156,
+  "generated": 1788524627178,
   "status": "running",
   "stats": {
     "products": 103,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PawPrints Pro",
+      "t": 1788524593812,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> PawPrints Pro",
       "t": 1788524573811,
       "type": "building"
@@ -1577,15 +1583,15 @@
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
       "t": 1788521515630,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788521515618,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PawPrints Pro",
+      "t": 1788524593812,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> PawPrints Pro",
@@ -1628,18 +1634,6 @@
       "text": "NOT LISTED — failed quality gate: Bookly (functional=true, score=3) · streak 1",
       "t": 1788524548790,
       "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 102 products)",
-      "t": 1788524532465,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788524510939,
-      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1853,27 +1847,26 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     9,
+    3,
+    3,
+    0,
+    1,
+    2,
+    2,
+    3,
+    2,
+    0,
+    12,
+    0,
+    0,
+    1,
+    0,
     4,
-    2,
-    0,
-    2,
-    1,
-    2,
-    5,
-    0,
-    10,
-    2,
-    0,
-    0,
-    1,
     1,
     3,
     1,
-    4,
-    4,
-    1,
+    5,
     0,
     5,
     9,
@@ -1881,16 +1874,17 @@
     0,
     1,
     0,
-    1,
-    9
+    0,
+    7,
+    5
   ],
   "load": {
     "loadavg": [
-      3.96,
-      4.78,
-      3.4
+      2.67,
+      4.33,
+      3.32
     ],
-    "ramPct": 46,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1900,8 +1894,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "coder": {
         "model": "deepseek-r1:8b",
@@ -2571,7 +2565,7 @@
     {
       "name": "PawPrints Pro",
       "niche": "pet care & ownership",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2598,10 +2592,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 6,
-        "vramPct": 16
+        "utilPct": 93,
+        "vramPct": 90
       },
       {
         "alias": "GPU-Node-2",
@@ -2617,9 +2611,9 @@
           "vision"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 4,
-        "vramPct": 94
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 3
       }
     ],
     "selfHostedInferencePct": 83,
