@@ -1,5 +1,5 @@
 {
-  "generated": 1788518280102,
+  "generated": 1788518325025,
   "status": "running",
   "stats": {
     "products": 98,
@@ -14,7 +14,7 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Guinan suggests a new product called \"EchoBridge,\" a cross-device audio synchronization to",
         "t": 1788518225634
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "EchoBridge is an intriguing concept but requires significant engineering to deliver a reli",
         "t": 1788518233435
@@ -170,7 +170,7 @@
       "color": "#ffb454",
       "avatar": "avatars/hoshi.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Eloquii has considerable potential but requires a cohesive, user-friendly interface to sta",
         "t": 1788518209146
@@ -209,7 +209,7 @@
       "color": "#e9da7c",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Eloquii has immense potential to revolutionize content creation with its AI-driven feature",
         "t": 1788518229249
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788518312121,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2990MB free)",
+      "t": 1788518312120,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> EduMate",
       "t": 1788518244572,
       "type": "building"
@@ -1571,21 +1583,21 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 96 products)",
       "t": 1788516609401,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
-      "t": 1788516589038,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 1:15:48 PM) — falling through",
-      "t": 1788516589037,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788518312121,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2990MB free)",
+      "t": 1788518312120,
+      "type": "bench"
+    },
     {
       "who": "Scotty",
       "text": "Position: EchoBridge sounds like a useful tool but needs to drop the vagueness immediately. Demand: You need to specify at least three concrete, measurable features before I can start coding—otherwise, it’s not actionable.",
@@ -1619,102 +1631,6 @@
       "t": 1788518236408,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> EduMate",
-      "t": 1788518234556,
-      "type": "building"
-    },
-    {
-      "who": "Spock",
-      "text": "EchoBridge is an intriguing concept but requires significant engineering to deliver a reliable cross-device audio experience without over-complicating the stack. The team should focus on building a single-file Node.js app with straightforward UI sections for installation and setup. They must also implement robust testing and user feedback mechanisms to ensure a high-quality product before moving forward.",
-      "t": 1788518233435,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: EduMate — education, tutoring & courses. Let's see if it's worth building.",
-      "t": 1788518232161,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: EduMate [education, tutoring & courses]",
-      "t": 1788518232161,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 98 products)",
-      "t": 1788518231579,
-      "type": "event"
-    },
-    {
-      "who": "automation_operator",
-      "text": "Eloquii has immense potential to revolutionize content creation with its AI-driven features, but its current layout and user interface are disjointed and confusing. The team must prioritize a redesign that streamlines the user experience and improves navigation. A proof-of-concept of the redesigned interface is needed within the next two weeks to ensure we're on the right track before moving forward with further development.",
-      "t": 1788518229249,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Guinan suggests a new product called \"EchoBridge,\" a cross-device audio synchronization tool that allows users to listen to the same music or voice notes simultaneously across multiple devices without needing to manually sync them. The current stage is an MVP prototype ready for testing and feedback. To move forward, the team must implement seamless real-time audio synchronization across all connected devices within 24 hours. This ensures a premium user experience before expanding to additional features or marketing efforts.",
-      "t": 1788518225634,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "Eloquii has considerable potential but requires a cohesive, user-friendly interface to stand out in the competitive writing tools market. The team must prioritize streamlining its current layout and ensuring seamless functionality across all features to enhance usability and attract more customers.",
-      "t": 1788518209146,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788518204567,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: education, tutoring & courses",
-      "t": 1788518204561,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788518199351,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 3): The operation was aborted due to timeout",
-      "t": 1788518199336,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> ChefMate",
-      "t": 1788518194549,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for ChefMate — 2 files, working node app. Handing off to test.",
-      "t": 1788518193192,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788518193192,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1929,43 +1845,43 @@
   },
   "throughput": [
     0,
+    11,
+    2,
+    2,
+    1,
+    7,
+    11,
+    1,
+    9,
+    14,
+    1,
+    1,
+    0,
+    3,
+    0,
+    0,
     5,
     6,
-    4,
-    0,
-    6,
-    2,
-    11,
-    1,
-    20,
-    3,
-    2,
-    0,
-    2,
-    1,
-    0,
-    0,
-    11,
-    0,
     2,
     4,
     0,
-    1,
-    3,
     0,
+    3,
+    1,
     18,
     1,
     0,
-    9,
-    18
+    8,
+    18,
+    3
   ],
   "load": {
     "loadavg": [
-      2.51,
-      3.32,
-      3.76
+      4.05,
+      3.64,
+      3.85
     ],
-    "ramPct": 62,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2694,7 +2610,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 95
+        "vramPct": 94
       }
     ],
     "selfHostedInferencePct": 87,
