@@ -1,5 +1,5 @@
 {
-  "generated": 1788535135650,
+  "generated": 1788535205370,
   "status": "running",
   "stats": {
     "products": 111,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Agreed on keeping things simple and focused.",
-        "t": 1788532576750
+        "text": "// FILE: app.js ```javascript const express = require('express'); const path = require('pa",
+        "t": 1788535141580
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js ```javascript const express = require('express'); const path = require('path'); const fs = require('fs'); const app = express(); app.use(express.json()); // Serve static files from the 'public' directory // FILE: app.js ```javascript const express = require('express'); const path = require('path'); const fs = require('fs'); const app = express(); app.use(express.json()); // Serve static files from the 'public' directory const publicPath = path.join(__dirname, 'public'); app.use('/', express.static(publicPath)); // Handle API // FILE: app.js ```javascript const express = …",
+      "t": 1788535141580,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
@@ -1094,16 +1101,15 @@
       "t": 1788527290706,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "HomeMaster requires a strong focus on usability and reliability before we can proceed with shipping. These issues could significantly impact user satisfaction and the product's success.",
-      "t": 1788527192668,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
+      "t": 1788535160930,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: model gemini-flash-latest not found",
@@ -1577,15 +1583,23 @@
       "text": "stage 'build' -> TaskMate AI",
       "t": 1788532165951,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for TaskMate AI is stuck (attempt 2) — trying a stronger model",
-      "t": 1788532165951,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 111 products)",
+      "t": 1788535160930,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js ```javascript const express = require('express'); const path = require('path'); const fs = require('fs'); const app = express(); app.use(express.json()); // Serve static files from the 'public' directory // FILE: app.js ```javascript const express = require('express'); const path = require('path'); const fs = require('fs'); const app = express(); app.use(express.json()); // Serve static files from the 'public' directory const publicPath = path.join(__dirname, 'public'); app.use('/', express.static(publicPath)); // Handle API // FILE: app.js ```javascript const express = …",
+      "t": 1788535141580,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1797,7 +1811,6 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    1,
     0,
     1,
     3,
@@ -1812,29 +1825,30 @@
     1,
     0,
     0,
-    1,
-    1,
+    2,
+    0,
     0,
     2,
     0,
     0,
     6,
     0,
-    2,
-    11,
-    9,
-    1,
+    3,
+    12,
+    8,
+    0,
     9,
     0,
-    0
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      5.09,
-      3.99,
-      2.69
+      5.16,
+      4.16,
+      2.84
     ],
-    "ramPct": 47,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2566,10 +2580,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 5,
-        "vramPct": 17
+        "utilPct": 63,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
