@@ -1,5 +1,5 @@
 {
-  "generated": 1788542363040,
+  "generated": 1788542408078,
   "status": "running",
   "stats": {
     "products": 115,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for MindSphere — 2 files, working node app. Handing off to test.",
+      "t": 1788542387194,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: MindSphere — study, learning & memory aids. Let's see if it's worth building.",
@@ -1094,16 +1101,27 @@
       "t": 1788536105747,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "TailoredPaws shows great potential but requires rigorous security auditing. Demand that we conduct a thorough code review for all current features to identify and mitigate any vulnerabilities before proceeding further with development.",
-      "t": 1788536103877,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788542403700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MindSphere",
+      "t": 1788542389904,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788542387194,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 115 products)",
@@ -1565,27 +1583,34 @@
       "text": "launch-discipline: Flockly storefront LIVE → https://inity13.github.io/[private-repo]/pmtn4k4snwqa5/",
       "t": 1788538164748,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: Flockly plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788538158260,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for Flockly exited (1)",
-      "t": 1788538150120,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: Flockly -> http://localhost:5360",
-      "t": 1788538150080,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788542403700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MindSphere",
+      "t": 1788542389904,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for MindSphere — 2 files, working node app. Handing off to test.",
+      "t": 1788542387194,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788542387194,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 115 products)",
@@ -1804,42 +1829,42 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    5,
-    0,
-    2,
-    2,
     0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    5,
     3,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1,
-    1,
     0,
     0,
     1,
     0,
     0,
-    1
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    7,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.06,
-      0.07
+      0.25,
+      0.11,
+      0.09
     ],
     "ramPct": 58,
     "cpus": 12
@@ -1855,8 +1880,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2557,8 +2582,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 80
+        "utilPct": 41,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2573,9 +2598,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
