@@ -1,5 +1,5 @@
 {
-  "generated": 1788550195970,
+  "generated": 1788550241027,
   "status": "running",
   "stats": {
     "products": 118,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1788550239977,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1788550239539,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HealthMate",
+      "t": 1788550226659,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 118 products)",
       "t": 1788550100744,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788548192167,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PetVitals",
-      "t": 1788548192059,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788548185856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 117 products)",
-      "t": 1788548120987,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1788550239977,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1788550239539,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HealthMate",
+      "t": 1788550226659,
+      "type": "building"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1820,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1810,8 +1828,8 @@
     0,
     1,
     0,
-    16,
-    4,
+    10,
+    10,
     0,
     1,
     2,
@@ -1823,19 +1841,20 @@
     1,
     0,
     0,
-    21,
-    2,
-    14,
-    30,
-    14,
-    11,
-    1,
-    0
+    18,
+    5,
+    7,
+    10,
+    41,
+    0,
+    12,
+    0,
+    7
   ],
   "load": {
     "loadavg": [
+      0.57,
       0.62,
-      0.64,
       0.48
     ],
     "ramPct": 68,
@@ -1872,7 +1891,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "polisher": {
@@ -1892,7 +1911,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2558,8 +2577,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 77
+        "utilPct": 25,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2576,7 +2595,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 4,
         "vramPct": 92
       }
     ],
