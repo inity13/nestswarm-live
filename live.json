@@ -1,5 +1,5 @@
 {
-  "generated": 1788510853107,
+  "generated": 1788510898178,
   "status": "running",
   "stats": {
     "products": 93,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788510869100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788510853123,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
       "t": 1788510848166,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788507106129,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788507067378,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia entering verification code from inbox",
-      "t": 1788507040957,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788510869100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788510853123,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
@@ -1804,44 +1816,44 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    0,
     1,
-    7,
-    3,
-    0,
-    1,
-    1,
-    2,
-    2,
-    0,
-    0,
-    2,
-    10,
-    1,
-    1,
+    6,
+    4,
     0,
     0,
     1,
     3,
+    1,
+    1,
+    0,
+    0,
+    11,
+    1,
+    1,
+    1,
+    0,
+    0,
+    3,
+    1,
     0,
     1,
     0,
     0,
-    1,
-    5,
+    3,
+    3,
     0,
     1,
     0,
     0,
-    1
+    5
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.6,
-      1.17
+      1.59,
+      0.91,
+      1.24
     ],
-    "ramPct": 46,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1855,8 +1867,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2523,8 +2535,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
-        "vramPct": 91
+        "utilPct": 78,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
