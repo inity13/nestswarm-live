@@ -1,5 +1,5 @@
 {
-  "generated": 1788513959024,
+  "generated": 1788514003989,
   "status": "running",
   "stats": {
     "products": 94,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788513977504,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "ownerreq: emailed 1 new request(s) to [email]",
       "t": 1788513953995,
       "type": "event"
@@ -1577,25 +1583,19 @@
       "text": "flagship: Claude unavailable for marketer (desktop limited until 11:53:22 AM) — trying ChatGPT/free",
       "t": 1788511805575,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788511747959,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "ownerreq: emailed 1 new request(s) to [email]",
-      "t": 1788513953995,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1788513977504,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
-      "t": 1788513909488,
+      "text": "ownerreq: emailed 1 new request(s) to [email]",
+      "t": 1788513953995,
       "type": "event"
     }
   ],
@@ -1810,20 +1810,22 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    11,
+    6,
+    1,
+    0,
+    0,
+    1,
+    7,
+    0,
+    1,
+    0,
+    0,
+    1,
+    3,
     3,
     1,
     0,
     0,
-    8,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    5,
-    1,
     1,
     0,
     0,
@@ -1833,21 +1835,19 @@
     1,
     0,
     0,
+    4,
+    17,
+    0,
     1,
-    0,
-    0,
-    8,
-    13,
-    0,
-    2
+    3
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.21,
-      0.35
+      0.44,
+      0.3,
+      0.38
     ],
-    "ramPct": 48,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1901,7 +1901,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2532,8 +2532,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 30,
-        "vramPct": 16
+        "utilPct": 29,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2550,8 +2550,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 18,
-        "vramPct": 54
+        "utilPct": 26,
+        "vramPct": 97
       }
     ],
     "selfHostedInferencePct": 89,
