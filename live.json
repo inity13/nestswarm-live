@@ -1,5 +1,5 @@
 {
-  "generated": 1788560549855,
+  "generated": 1788560594852,
   "status": "running",
   "stats": {
     "products": 121,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "CopyCraft needs to ship with a working Shopify plugin that actually generates and inserts ",
         "t": 1788560500930
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I'm Monica. I believe CopyCraft deserves to be the flagship product of Nest Concord. We ne",
         "t": 1788560502954
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788560555652,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2710MB free)",
+      "t": 1788560555650,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for marketer (167 chars)",
+      "t": 1788560553578,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
       "t": 1788560544679,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788557522749,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
-      "t": 1788557486817,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 120 products)",
-      "t": 1788557322507,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for ClauseCompass is stuck (attempt 2) — trying a stronger model",
-      "t": 1788557266147,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788560555652,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2710MB free)",
+      "t": 1788560555650,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for marketer (167 chars)",
+      "t": 1788560553578,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 121 products)",
@@ -1671,69 +1689,6 @@
       "text": "launch-discipline: polishing flagship CopyCraft (score 5/8, attempt 1/3)",
       "t": 1788560506896,
       "type": "event"
-    },
-    {
-      "who": "Monica",
-      "text": "I'm Monica. I believe CopyCraft deserves to be the flagship product of Nest Concord. We need to polish and refine it until it feels premium and seamless. The first concrete thing the team must do is provide a working demo of the Shopify plugin that actually generates AI-generated product descriptions. Show us proof that it's functional, reliable, and ready for customers to use.",
-      "t": 1788560502954,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "CopyCraft needs to ship with a working Shopify plugin that actually generates and inserts product descriptions into a store — not just a mockup or a spec. I demand a functional prototype that demonstrates the full end-to-end flow from plugin activation to AI-generated copy appearing in a real Shopify product listing, because without that, it's just an idea.",
-      "t": 1788560500930,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged CopyCraft → copycraft.zip (8062 bytes)",
-      "t": 1788560497070,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788560496913,
-      "type": "vault"
-    },
-    {
-      "who": "publisher",
-      "text": "CopyCraft is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
-      "t": 1788560496904,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: CopyCraft -> http://localhost:5368",
-      "t": 1788560496903,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "LISTED: CopyCraft @ http://localhost:5368 ($4.99 one-time)",
-      "t": 1788560496903,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> CopyCraft",
-      "t": 1788560496894,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> CopyCraft",
-      "t": 1788560466899,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for CopyCraft",
-      "t": 1788560462099,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1779,7 +1734,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 8×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 9×"
     },
     {
       "name": "GitHub Copilot",
@@ -1951,25 +1906,25 @@
     "priority": "The top-rated product from the 13 listed that shows strongest potential for customer conversion and revenue generation"
   },
   "throughput": [
+    5,
     2,
-    6,
-    2,
-    0,
-    0,
     1,
     0,
     0,
     1,
-    6,
     0,
-    0,
-    1,
     0,
     7,
     0,
     0,
     1,
     0,
+    2,
+    5,
+    0,
+    0,
+    1,
+    0,
     0,
     1,
     0,
@@ -1977,18 +1932,18 @@
     1,
     0,
     0,
-    1,
     6,
     5,
-    22
+    21,
+    6
   ],
   "load": {
     "loadavg": [
-      1.14,
-      0.58,
-      0.37
+      0.7,
+      0.54,
+      0.36
     ],
-    "ramPct": 60,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2038,7 +1993,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "distributor": {
@@ -2748,8 +2703,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 44,
-        "vramPct": 45
+        "utilPct": 35,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2766,7 +2721,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 14,
+        "utilPct": 3,
         "vramPct": 92
       }
     ],
