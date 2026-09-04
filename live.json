@@ -1,5 +1,5 @@
 {
-  "generated": 1788521070805,
+  "generated": 1788521090436,
   "status": "running",
   "stats": {
     "products": 100,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788521080041,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788521080041,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788521080040,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788520984265,
       "type": "bench"
@@ -1541,49 +1559,25 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 98 products)",
       "t": 1788518231579,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788518204567,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: education, tutoring & courses",
-      "t": 1788518204561,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788518199351,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 3): The operation was aborted due to timeout",
-      "t": 1788518199336,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788520984265,
-      "type": "bench"
+      "text": "self-heal: disabled provider groq",
+      "t": 1788521080041,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3435MB free)",
-      "t": 1788520984264,
-      "type": "bench"
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788521080041,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "council: 5 quality demands recorded for BookkeeperPro",
-      "t": 1788520982325,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788521080040,
       "type": "event"
     }
   ],
@@ -1800,24 +1794,24 @@
   "throughput": [
     1,
     1,
-    0,
-    2,
+    1,
+    1,
     4,
     0,
-    2,
+    3,
+    0,
     1,
+    7,
+    0,
     1,
     3,
     4,
-    1,
-    3,
     4,
+    12,
+    1,
+    1,
+    2,
     0,
-    14,
-    2,
-    2,
-    1,
-    1,
     4,
     1,
     0,
@@ -1825,15 +1819,15 @@
     1,
     0,
     3,
-    4,
     8,
-    0
+    4,
+    4
   ],
   "load": {
     "loadavg": [
-      0.77,
-      2.91,
-      3.37
+      0.55,
+      2.72,
+      3.3
     ],
     "ramPct": 57,
     "cpus": 12
@@ -1922,9 +1916,7 @@
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free",
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
+      "nemotron-3.5-lightning-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2549,8 +2541,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 47
+        "utilPct": 23,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
