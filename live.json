@@ -1,5 +1,5 @@
 {
-  "generated": 1788520980793,
+  "generated": 1788521025920,
   "status": "running",
   "stats": {
     "products": 100,
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for BookkeeperPro.",
+      "t": 1788520982325,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (5) recorded for BookkeeperPro: Define and document a single, validated target audience persona with primary pain points and a willingness-to-pay signal | Specify the product delivery format (desktop single-file, web app, or CLI) and justify it against the audience persona | Limit MVP feature set to exactly 2 core tasks the product solves, explicitly excluding scope creep | Set concrete accessibility and usability criteria: WCAG 2.1 AA baseline for UI, installation time under 2 minutes for non-technical users | Choose one AI capability direction (personalized assistant or …",
+      "t": 1788520982323,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "Spock",
       "text": "Simplicity is paramount. Untitled must be a single-file tool that users can easily download and run on their computer without technical expertise. This ensures broad appeal and rapid adoption. The most important quality requirement is ease of use and installation for non-technical buyers. A static single-file tool (static) best meets this requirement by providing a one-click, no-setup experience.",
@@ -1087,23 +1101,27 @@
       "t": 1788512134007,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "Scotty",
-      "text": "CodeMaster Prep’s concept is solid, but it’s not ready to ship yet. I’ll concede that we need a working prototype, but I push back on anything requiring live data or complex adaptive logic without proven performance. The single most important quality requirement for shipping: **it must be fully functional offline with a real, tested question bank and timed exam mode** — no placeholders, no simulations.",
-      "t": 1788512122017,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "I agree we must rigorously vet every idea before any code is written, but I’m not convinced we should halt product creation entirely; instead we should streamline the validation pipeline and launch only the highest‑confidence opportunity. The swarm’s next step is to formalize a rapid market‑fit test—define clear criteria, run a quick prototype or landing‑page test, and only commit to development on ideas that meet the threshold.",
-      "t": 1788512113168,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788520984265,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3435MB free)",
+      "t": 1788520984264,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 5 quality demands recorded for BookkeeperPro",
+      "t": 1788520982325,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "conductor: 1 operational improvement(s) recommended",
@@ -1547,21 +1565,27 @@
       "text": "serve fail (attempt 3): The operation was aborted due to timeout",
       "t": 1788518199336,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> ChefMate",
-      "t": 1788518194549,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788518193192,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788520984265,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3435MB free)",
+      "t": 1788520984264,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "council: 5 quality demands recorded for BookkeeperPro",
+      "t": 1788520982325,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "conductor: 1 operational improvement(s) recommended",
@@ -1578,24 +1602,6 @@
       "who": "swarm",
       "text": "conductor: 2 request(s) logged for the Swarm Protector",
       "t": 1788520958791,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
-      "t": 1788520935428,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788520935428,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 100 products)",
-      "t": 1788520929791,
       "type": "event"
     }
   ],
@@ -1810,26 +1816,25 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    10,
-    10,
-    2,
+    14,
+    1,
+    1,
     0,
-    1,
-    1,
+    2,
     4,
     0,
-    3,
+    2,
     1,
-    0,
+    1,
     7,
     0,
     1,
     3,
     4,
-    9,
-    7,
-    1,
-    1,
+    4,
+    12,
+    0,
+    2,
     2,
     0,
     4,
@@ -1837,17 +1842,18 @@
     0,
     0,
     1,
-    2,
-    1,
-    8
+    0,
+    3,
+    8,
+    4
   ],
   "load": {
     "loadavg": [
-      2.88,
-      3.87,
-      3.7
+      1.44,
+      3.35,
+      3.53
     ],
-    "ramPct": 55,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1889,8 +1895,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2561,8 +2567,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 39
+        "utilPct": 24,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
