@@ -1,5 +1,5 @@
 {
-  "generated": 1788513733834,
+  "generated": 1788513778954,
   "status": "running",
   "stats": {
     "products": 94,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
+      "t": 1788513772574,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,45 @@
       "t": 1788503997016,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "publisher",
-      "text": "SmartDoc AI is LISTED at $49 (score -). Time to get it in front of buyers.",
-      "t": 1788503997008,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788513773597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PulseRoute",
+      "t": 1788513773500,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788513772574,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 1 zen free models",
+      "t": 1788513758358,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788513758358,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788513758170,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
@@ -1547,45 +1583,52 @@
       "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
       "t": 1788511628348,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider claude not found",
-      "t": 1788511628347,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider chatgpt not found",
-      "t": 1788511628347,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 11:53:22 AM) — trying ChatGPT/free",
-      "t": 1788511616226,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788511616226,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 11:53:22 AM) — trying ChatGPT/free",
-      "t": 1788511613085,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788511613085,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788513773597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PulseRoute",
+      "t": 1788513773500,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for PulseRoute — 2 files, working node app. Handing off to test.",
+      "t": 1788513772574,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788513772574,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 1 zen free models",
+      "t": 1788513758358,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788513758358,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1788513758170,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 94 products)",
@@ -1804,26 +1847,23 @@
     "priority": "Premium subscription service leveraging AI-powered language models with strong user demand"
   },
   "throughput": [
-    28,
-    14,
-    17,
-    8,
-    10,
+    25,
+    16,
+    12,
+    11,
     3,
-    0,
-    0,
     1,
-    7,
     0,
-    1,
+    0,
+    8,
     0,
     0,
     1,
     0,
-    6,
+    0,
     1,
-    0,
-    0,
+    5,
+    1,
     1,
     0,
     0,
@@ -1833,15 +1873,18 @@
     1,
     0,
     0,
-    1
+    1,
+    0,
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.41,
-      0.17,
-      0.38
+      0.44,
+      0.22,
+      0.39
     ],
-    "ramPct": 47,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1927,7 +1970,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "ling-3.0-flash-fin-free",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 7,
@@ -2521,10 +2567,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 14,
-        "vramPct": 42
+        "busy": true,
+        "warm": false,
+        "utilPct": 32,
+        "vramPct": 85
       },
       {
         "alias": "GPU-Node-2",
@@ -2541,8 +2587,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 32,
-        "vramPct": 97
+        "utilPct": 10,
+        "vramPct": 98
       }
     ],
     "selfHostedInferencePct": 89,
