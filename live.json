@@ -1,5 +1,5 @@
 {
-  "generated": 1788539481978,
+  "generated": 1788539527006,
   "status": "running",
   "stats": {
     "products": 114,
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788539526788,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — provider ling-3.0-flash-fin-free not found; disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788539526788,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788539526787,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788539526786,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788539526786,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788539515547,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
       "t": 1788539477655,
       "type": "event"
@@ -1517,39 +1553,45 @@
       "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,python]",
       "t": 1788537676442,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship Flockly (score 0/8, attempt 2/3)",
-      "t": 1788537618060,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for Flockly exited (null)",
-      "t": 1788537616557,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: Flockly -> http://localhost:5360",
-      "t": 1788537616523,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: Flockly (pass #1)",
-      "t": 1788537616523,
-      "type": "polished"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged Flockly → flockly.zip (9803 bytes)",
-      "t": 1788537614313,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788539526788,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — provider ling-3.0-flash-fin-free not found; disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788539526788,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788539526787,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider ling-3.0-flash-fin-free not found",
+      "t": 1788539526786,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788539526786,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788539515547,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
@@ -1768,42 +1810,42 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
-    10,
-    10,
-    5,
-    2,
-    7,
-    0,
-    8,
-    20,
-    8,
-    8,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     3,
-    4,
-    6,
-    16,
     10,
+    11,
+    3,
     6,
-    10,
+    1,
+    0,
+    23,
+    13,
+    8,
+    0,
+    1,
     0,
     0,
-    1
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
+    5,
+    3,
+    13,
+    14,
+    5,
+    12,
+    1,
+    0,
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.28,
-      0.31
+      0.02,
+      0.24,
+      0.29
     ],
     "ramPct": 62,
     "cpus": 12
@@ -1847,7 +1889,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "researcher": {
@@ -2521,8 +2563,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 27,
-        "vramPct": 80
+        "utilPct": 22,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
