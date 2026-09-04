@@ -1,5 +1,5 @@
 {
-  "generated": 1788511213056,
+  "generated": 1788511258198,
   "status": "running",
   "stats": {
     "products": 93,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "You're all right — we have a category, not a product. I'll write code the moment someone g",
-        "t": 1788505778291
+        "text": "CodeMaster Prep needs to ship a working prototype with at least one full exam simulation a",
+        "t": 1788511237084
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "CodeMaster Prep needs to ship a working prototype with at least one full exam simulation and a functional spaced repetition engine—no half-baked features. I demand the team deliver a fully interactive demo app that runs offline and actually adapts question difficulty based on user performance. Without that, we're just building promises, not products.",
+      "t": 1788511237084,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
@@ -1094,16 +1101,39 @@
       "t": 1788495904617,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "You're right we can't keep chasing 85 ideas; we need one flagship, a solid security audit, and a real checkout. The next decisive move is to pick the highest‑margin idea, finish its core features, and launch it live on a marketplace with a working payment flow.",
-      "t": 1788495904616,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for critic (chatgpt script failed (exit 1): <3>WSL (76844) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788511234463,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788511224457,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (76837) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788511224451,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for critic (desktop script failed (exit 1): <3>WSL (76833) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788511214431,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788511214431,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
@@ -1553,39 +1583,46 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788508349701,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3899MB free)",
-      "t": 1788508349699,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788508327469,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1788508310512,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
-      "t": 1788508243035,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
-      "t": 1788508147016,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Scotty",
+      "text": "CodeMaster Prep needs to ship a working prototype with at least one full exam simulation and a functional spaced repetition engine—no half-baked features. I demand the team deliver a fully interactive demo app that runs offline and actually adapts question difficulty based on user performance. Without that, we're just building promises, not products.",
+      "t": 1788511237084,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for critic (chatgpt script failed (exit 1): <3>WSL (76844) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788511234463,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788511224457,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (76837) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788511224451,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for critic (desktop script failed (exit 1): <3>WSL (76833) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788511214431,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788511214431,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 93 products)",
@@ -1810,42 +1847,42 @@
     "priority": "The most promising product with clear monetization path and high customer need"
   },
   "throughput": [
-    1,
-    2,
-    2,
-    0,
-    0,
-    2,
-    10,
+    3,
     1,
     1,
     0,
     0,
+    11,
     1,
+    1,
+    1,
+    0,
+    0,
+    3,
+    1,
+    0,
+    1,
+    0,
+    0,
+    3,
     3,
     0,
     1,
     0,
     0,
-    1,
     5,
-    0,
     1,
-    0,
-    0,
+    7,
     1,
-    5,
-    6,
-    2,
-    3,
-    6,
-    3
+    9,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.39,
-      0.91
+      0.16,
+      0.36,
+      0.88
     ],
     "ramPct": 49,
     "cpus": 12
@@ -1861,7 +1898,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
@@ -2547,8 +2584,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
-        "vramPct": 79
+        "utilPct": 24,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2565,7 +2602,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 6,
+        "utilPct": 3,
         "vramPct": 96
       }
     ],
