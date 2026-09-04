@@ -1,5 +1,5 @@
 {
-  "generated": 1788539097043,
+  "generated": 1788539121691,
   "status": "running",
   "stats": {
     "products": 114,
@@ -1103,6 +1103,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
+      "t": 1788539119804,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> PawPalz",
       "t": 1788539058632,
       "type": "building"
@@ -1574,15 +1580,15 @@
       "text": "flagship: Claude unavailable for publisher (desktop unavailable) — trying ChatGPT/free",
       "t": 1788537488823,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788537488823,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 114 products)",
+      "t": 1788539119804,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'build' -> PawPalz",
@@ -1600,19 +1606,6 @@
       "text": "stage 'test' -> PawPalz",
       "t": 1788539038621,
       "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PawPalz — 2 files, working node app. Handing off to test.",
-      "t": 1788539030555,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788539030555,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1826,50 +1819,50 @@
     "priority": "custom AI assistant for remote workers"
   },
   "throughput": [
-    1,
-    10,
-    0,
     6,
-    14,
-    17,
-    5,
-    0,
-    12,
-    10,
-    5,
-    5,
-    2,
-    0,
-    21,
-    13,
     4,
     6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
+    9,
+    11,
+    14,
     2,
-    9
+    8,
+    12,
+    5,
+    2,
+    7,
+    0,
+    8,
+    20,
+    8,
+    8,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    4,
+    6,
+    16
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.2,
-      0.27
+      0.65,
+      0.3,
+      0.3
     ],
-    "ramPct": 54,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -1889,7 +1882,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1921,15 +1914,15 @@
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "preflight": {
@@ -1941,7 +1934,7 @@
         "tier": "local"
       },
       "demand_validator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security-officer": {
@@ -2579,8 +2572,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 49
+        "utilPct": 22,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2597,7 +2590,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 78,
+        "utilPct": 79,
         "vramPct": 58
       }
     ],
