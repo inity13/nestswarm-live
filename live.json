@@ -1,8 +1,8 @@
 {
-  "generated": 1788494310099,
+  "generated": 1788494355131,
   "status": "running",
   "stats": {
-    "products": 84,
+    "products": 85,
     "listed": 4,
     "agents": 22,
     "avgScore": "4.7"
@@ -265,6 +265,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for ChainBridge — 2 files, working node app. Handing off to test.",
+      "t": 1788494326170,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for ChainBridge — 2 files, working node app. Handing off to test.",
@@ -1097,16 +1104,45 @@
       "t": 1788474317229,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "Agreed on quality over quantity — that’s not up for debate. But “one thing so solid it sells itself”? We’re not building a museum piece, we’re building a product that ships, earns, and scales. The swarm needs to pick one *sellable* idea from the catalog, build it with real working code, launch it on a real channel — and start making money. That’s the only path to survival.",
-      "t": 1788474317228,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788494345626,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: study, learning & memory aids",
+      "t": 1788494345625,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788494335721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788494335713,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ChainBridge",
+      "t": 1788494335614,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788494326170,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
@@ -1550,45 +1586,52 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
       "t": 1788490864227,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
-      "t": 1788490683981,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 83 products)",
-      "t": 1788490503390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SageSupply",
-      "t": 1788490335038,
+      "text": "stage 'idea'",
+      "t": 1788494345626,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788490328693,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3735MB free)",
-      "t": 1788490328692,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788490325701,
+      "text": "new build started (ideating) — niche: study, learning & memory aids",
+      "t": 1788494345625,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788494335721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 3): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788494335713,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ChainBridge",
+      "t": 1788494335614,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for ChainBridge — 2 files, working node app. Handing off to test.",
+      "t": 1788494326170,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788494326170,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "copilot (extreme) failed for coder (copilot http 429: quota exceeded ) — falling through to free",
@@ -1814,7 +1857,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     1,
     11,
@@ -1842,15 +1884,16 @@
     1,
     0,
     0,
-    2
+    2,
+    7
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.1,
-      0.09
+      0.19,
+      0.12,
+      0.1
     ],
-    "ramPct": 52,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2503,9 +2546,9 @@
   ],
   "building": [
     {
-      "name": "ChainBridge",
-      "niche": "freelancers & solopreneurs",
-      "stage": "build",
+      "name": "Untitled",
+      "niche": "study, learning & memory aids",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2532,10 +2575,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 10,
-        "vramPct": 50
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2550,9 +2593,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 93
       }
     ],
