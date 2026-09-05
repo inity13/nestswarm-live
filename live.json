@@ -1,5 +1,5 @@
 {
-  "generated": 1788581883874,
+  "generated": 1788581928883,
   "status": "running",
   "stats": {
     "products": 128,
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "TripMate AI must ship with functional calendar integration before moving forward. The most",
-        "t": 1788578812415
+        "text": "As Monica, I demand that we create a compelling hero section for SkillMap that clearly com",
+        "t": 1788581900786
       }
     },
     {
@@ -62,10 +62,10 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "You're all spot on about calendar sync being non‑negotiable, but I think we can hold off o",
-        "t": 1788578824075
+        "text": "SkillMap has huge potential but needs a robust demo to showcase its automated scheduling a",
+        "t": 1788581902153
       }
     },
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Chandler",
+      "text": "SkillMap has huge potential but needs a robust demo to showcase its automated scheduling and invoicing features. Before moving forward, demand a functional test version that proves SkillMap works as advertised.",
+      "t": 1788581902153,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "As Monica, I demand that we create a compelling hero section for SkillMap that clearly communicates its value to local service providers. The hero must be modern, visually appealing, and call out the key features in a way that resonates with our audience. Additionally, I request that Scotty prioritize building a fully functional and testable demo of SkillMap's automated scheduling feature before we proceed with further development or marketing.",
+      "t": 1788581900786,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "SkillMap needs to ship with a working, testable demo that proves the automated scheduling and invoicing workflows function end-to-end—no half-baked UIs or stubbed APIs. I demand we build and launch a minimal viable product (MVP) that actually processes a real job from booking to payment, including a live Stripe test checkout, before expanding features. // FILE: README.md ```markdown # SkillMap - Local Service Business Automation **Automated scheduling, invoicing, and client ratings for local service providers.** ## Features - Automated job scheduling and reminders - Integrated invoicing and …",
@@ -1087,23 +1101,75 @@
       "t": 1788567635237,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "I agree the AI needs to be production‑ready, the UI polished, and security tight—none of those can be brushed aside. The one thing that will make or break PropertyPro is a fully functional AI engine that consistently generates SEO‑optimized listings that demonstrably lift occupancy or revenue, validated by real‑world A/B data.",
-      "t": 1788567624410,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for TripSmart.",
-      "t": 1788567616285,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for SkillMap",
+      "t": 1788581924514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (66422) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788581917754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66416) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581907742,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581907742,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for critic (desktop busy (single-flight)) — trying ChatGPT/free",
+      "t": 1788581902755,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581902755,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581901396,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop busy (single-flight)) — trying ChatGPT/free",
+      "t": 1788581901395,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788581899366,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66411) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581897711,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788581897711,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
@@ -1517,75 +1583,89 @@
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788579631951,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> SkillMap",
-      "t": 1788579613265,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788579610898,
+      "text": "marketer produced a kit for SkillMap",
+      "t": 1788581924514,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788579472553,
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (66422) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788581917754,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788579291346,
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66416) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581907742,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788579125663,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581907742,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
-      "t": 1788579125663,
+      "text": "flagship: Claude unavailable for critic (desktop busy (single-flight)) — trying ChatGPT/free",
+      "t": 1788581902755,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788579123907,
-      "type": "vault"
+      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581902755,
+      "type": "event"
+    },
+    {
+      "who": "Chandler",
+      "text": "SkillMap has huge potential but needs a robust demo to showcase its automated scheduling and invoicing features. Before moving forward, demand a functional test version that proves SkillMap works as advertised.",
+      "t": 1788581902153,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581901396,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop busy (single-flight)) — trying ChatGPT/free",
+      "t": 1788581901395,
+      "type": "event"
+    },
+    {
+      "who": "Monica",
+      "text": "As Monica, I demand that we create a compelling hero section for SkillMap that clearly communicates its value to local service providers. The hero must be modern, visually appealing, and call out the key features in a way that resonates with our audience. Additionally, I request that Scotty prioritize building a fully functional and testable demo of SkillMap's automated scheduling feature before we proceed with further development or marketing.",
+      "t": 1788581900786,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1788581899366,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66411) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581897711,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788579123279,
+      "t": 1788581897711,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788579112155,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788578931891,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for TripMate AI",
-      "t": 1788578891552,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
@@ -1596,12 +1676,6 @@
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1788581882895,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788581812985,
       "type": "event"
     }
   ],
@@ -1823,41 +1897,41 @@
     0,
     1,
     0,
+    2,
+    1,
+    4,
+    2,
+    1,
     0,
-    3,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     0,
     6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
     11,
-    5,
-    7,
-    2,
+    6,
+    6,
+    1,
+    11,
     16,
-    10,
+    1,
     0,
     0,
     1,
-    2
+    17
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.12,
-      0.14
+      0.72,
+      0.31,
+      0.21
     ],
-    "ramPct": 53,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1907,7 +1981,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -2629,7 +2703,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 89,
         "vramPct": 80
       },
       {
