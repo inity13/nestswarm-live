@@ -1,5 +1,5 @@
 {
-  "generated": 1788584764003,
+  "generated": 1788584809033,
   "status": "running",
   "stats": {
     "products": 129,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "designer improved UI for JobMate",
+      "t": 1788584807064,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'design' -> JobMate",
       "t": 1788584763475,
       "type": "building"
@@ -1577,15 +1583,15 @@
       "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66440) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
       "t": 1788581943503,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "marketer produced a kit for SkillMap",
-      "t": 1788581924514,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "designer improved UI for JobMate",
+      "t": 1788584807064,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> JobMate",
@@ -1621,12 +1627,6 @@
       "who": "swarm",
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
       "t": 1788584752274,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788584692393,
       "type": "event"
     }
   ],
@@ -1848,7 +1848,19 @@
     0,
     1,
     0,
+    6,
+    1,
     0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
     7,
     0,
     0,
@@ -1861,26 +1873,14 @@
     1,
     0,
     0,
-    3,
-    6,
-    0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    6
+    8
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.05,
-      0.1
+      0.37,
+      0.13,
+      0.12
     ],
     "ramPct": 53,
     "cpus": 12
@@ -1900,7 +1900,7 @@
         "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2607,7 +2607,7 @@
     {
       "name": "JobMate",
       "niche": "small-business operations & accounting",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2636,8 +2636,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 36,
-        "vramPct": 50
+        "utilPct": 90,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2652,10 +2652,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 92
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 83,
