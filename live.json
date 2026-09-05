@@ -1,5 +1,5 @@
 {
-  "generated": 1788603935643,
+  "generated": 1788603980901,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788603953878,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788603778758,
       "type": "bench"
@@ -1577,15 +1583,15 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1788598144661,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788598013665,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788603953878,
+      "type": "event"
+    },
     {
       "who": "demand_validator",
       "text": "Absolutely agree that quantity over quality is drowning our market presence. The swarm’s output needs to be refined to stand out. The single most important thing the swarm must do next: finalize and launch a single flagship product with genuine value before moving on to anything else.",
@@ -2047,7 +2053,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -2073,16 +2078,17 @@
     0,
     3,
     0,
-    4,
-    16,
-    4,
-    15
+    1,
+    11,
+    10,
+    9,
+    11
   ],
   "load": {
     "loadavg": [
-      0.93,
-      0.62,
-      0.41
+      0.51,
+      0.55,
+      0.39
     ],
     "ramPct": 80,
     "cpus": 12
@@ -2126,8 +2132,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2874,8 +2880,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 82,
-        "vramPct": 80
+        "utilPct": 40,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2890,10 +2896,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 79,
-        "vramPct": 58
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 85,
