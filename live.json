@@ -1,9 +1,9 @@
 {
-  "generated": 1788594844692,
+  "generated": 1788594889652,
   "status": "running",
   "stats": {
     "products": 132,
-    "listed": 19,
+    "listed": 20,
     "agents": 22,
     "avgScore": "5.0"
   },
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm’s value lies not in churning products, but in shipping one exceptional product t",
-        "t": 1788593347179
+        "text": "TenantGuard needs a working proof of concept that actually integrates with real tenant scr",
+        "t": 1788594878380
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree that the swarm must pivot from a noisy inventory to a single, razor‑sharp flagship",
-        "t": 1788593347183
+        "text": "TenantGuard demands polished visuals, consistent layout, and a seamless user experience to",
+        "t": 1788594880129
       }
     },
     {
@@ -262,6 +262,34 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "TenantGuard demands polished visuals, consistent layout, and a seamless user experience to ensure it stands out in the competitive property management software market. The team must deliver a fully functional proof of concept that integrates with real tenant data to prove its value.",
+      "t": 1788594880129,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "TenantGuard needs a working proof of concept that actually integrates with real tenant screening APIs and demonstrates live risk scoring — not just a dashboard mockup. I demand the team deliver a fully functional MVP with at least one integrated screening check (credit or criminal) and a live scoring engine that outputs a risk score in real time, so we can validate the core value proposition before building more features.",
+      "t": 1788594878380,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788594874301,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "TenantGuard is LISTED at $99 (score 5). Time to get it in front of buyers.",
+      "t": 1788594874244,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TenantGuard — 2 files, working node app. Handing off to test.",
@@ -1073,37 +1101,45 @@
       "t": 1788585836667,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "JobMate needs to demonstrate a fully integrated end-to-end workflow that gig workers can easily understand and use. The team must deliver a complete, functional demo that shows all features in a cohesive manner before proceeding further.",
-      "t": 1788585834635,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "JobMate’s promise is clear but its prototype never lets a gig worker see a single job flow from start to finish; we can’t sell confidence if the workflow is invisible. Demand: build a live end‑to‑end demo that walks through job creation, client messaging, invoicing, payment tracking, and rating export—running automatically in under 5 minutes with no manual clicks.",
-      "t": 1788585832771,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "JobMate’s valueJobMate’s value proposition is solid, but the prototype currently lacks a cohesive end‑to‑end workflow that lets a gig worker go from job creation to invoicing and feedback in one unified interface. The team must build a minimal, end‑to‑end demo that demonstrates a gig worker creating a job, sending a client message, generating and sending an invoice, receiving payment confirmation, and collecting feedback, with each step completing in under 30 seconds and a 95 % functional success rate.",
-      "t": 1788585829438,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "JobMate is now BUYABLE at https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/ — real Stripe checkout live.",
-      "t": 1788585778865,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship TenantGuard (score 5/8, attempt 1/3)",
+      "t": 1788594884241,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged TenantGuard → tenantguard.zip (10280 bytes)",
+      "t": 1788594874449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788594874300,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: TenantGuard -> http://localhost:5379",
+      "t": 1788594874243,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: TenantGuard @ http://localhost:5379 ($99 one-time)",
+      "t": 1788594874243,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> TenantGuard",
+      "t": 1788594874236,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> TenantGuard",
@@ -1547,45 +1583,66 @@
       "text": "registrar: Beehiiv step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788593215693,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Beehiiv (revenue)",
-      "t": 1788593204574,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788593196822,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2785MB free)",
-      "t": 1788593196821,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack needs email verification — reading inbox",
-      "t": 1788593182131,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788593182129,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
-      "t": 1788593165227,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship TenantGuard (score 5/8, attempt 1/3)",
+      "t": 1788594884241,
+      "type": "event"
+    },
+    {
+      "who": "Monica",
+      "text": "TenantGuard demands polished visuals, consistent layout, and a seamless user experience to ensure it stands out in the competitive property management software market. The team must deliver a fully functional proof of concept that integrates with real tenant data to prove its value.",
+      "t": 1788594880129,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "TenantGuard needs a working proof of concept that actually integrates with real tenant screening APIs and demonstrates live risk scoring — not just a dashboard mockup. I demand the team deliver a fully functional MVP with at least one integrated screening check (credit or criminal) and a live scoring engine that outputs a risk score in real time, so we can validate the core value proposition before building more features.",
+      "t": 1788594878380,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged TenantGuard → tenantguard.zip (10280 bytes)",
+      "t": 1788594874449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788594874300,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "TenantGuard is LISTED at $99 (score 5). Time to get it in front of buyers.",
+      "t": 1788594874244,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: TenantGuard -> http://localhost:5379",
+      "t": 1788594874243,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: TenantGuard @ http://localhost:5379 ($99 one-time)",
+      "t": 1788594874243,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> TenantGuard",
+      "t": 1788594874236,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> TenantGuard",
@@ -1597,61 +1654,6 @@
       "text": "designer improved UI for TenantGuard",
       "t": 1788594834514,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> TenantGuard",
-      "t": 1788594794237,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for TenantGuard",
-      "t": 1788594786541,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> TenantGuard",
-      "t": 1788594784236,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TenantGuard — 2 files, working node app. Handing off to test.",
-      "t": 1788594783776,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788594783776,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788594783776,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788594773737,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788594755372,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3808MB free)",
-      "t": 1788594755371,
-      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1857,11 +1859,11 @@
     }
   ],
   "ledger": {
-    "total": 633,
+    "total": 634,
     "revenue": 0,
     "effects": 108,
     "boundary": 1,
-    "artifacts": 75,
+    "artifacts": 76,
     "receipts": 0
   },
   "meeting": {
@@ -1869,44 +1871,44 @@
     "priority": ""
   },
   "throughput": [
-    18,
-    24,
-    11,
-    40,
-    36,
-    19,
+    26,
+    13,
+    37,
+    25,
+    35,
     0,
-    3,
-    5,
     0,
+    8,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    6,
     1,
     0,
     0,
     1,
     0,
     0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
     7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    5
+    14
   ],
   "load": {
     "loadavg": [
-      1.07,
-      0.51,
-      0.37
+      0.77,
+      0.53,
+      0.38
     ],
-    "ramPct": 51,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1920,8 +1922,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -1940,8 +1942,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1997,7 +1999,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 19,
+      "listed": 20,
       "cap": 20
     }
   },
@@ -2550,6 +2552,13 @@
       "score": 6
     },
     {
+      "name": "TenantGuard",
+      "status": "listed",
+      "niche": "privacy, security & personal data",
+      "price": 99,
+      "score": 5
+    },
+    {
       "name": "LocateMate",
       "status": "listed",
       "niche": "travel, trip planning & remote work",
@@ -2618,21 +2627,32 @@
       "niche": "health, fitness & habit tracking",
       "price": 49,
       "score": 5
-    },
-    {
-      "name": "HomeMaster",
-      "status": "listed",
-      "niche": "real estate, renting & property",
-      "price": 49,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "TenantGuard",
       "niche": "privacy, security & personal data",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "LocateMate",
+      "niche": "travel, trip planning & remote work",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "JobMate",
+      "niche": "small-business operations & accounting",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SkillMap",
+      "niche": "study, learning & memory aids",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2661,7 +2681,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 6,
-        "vramPct": 79
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2678,7 +2698,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 61,
         "vramPct": 92
       }
     ],
