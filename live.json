@@ -1,5 +1,5 @@
 {
-  "generated": 1788634719855,
+  "generated": 1788634764800,
   "status": "running",
   "stats": {
     "products": 135,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop limited until 10:08:28 PM) — trying ChatGPT/free",
+      "t": 1788634754938,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for marketer (925 chars)",
+      "t": 1788634754932,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788634708838,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788632004982,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship PersonalForge MT (score 5/8, attempt 2/3)",
-      "t": 1788631965141,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
-      "t": 1788631964208,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop limited until 10:08:28 PM) — trying ChatGPT/free",
+      "t": 1788634754938,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for marketer (925 chars)",
+      "t": 1788634754932,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
@@ -1652,18 +1664,6 @@
       "text": "stage 'list' -> PetDesk MT",
       "t": 1788634684675,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> PetDesk MT",
-      "t": 1788634664678,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for PetDesk MT",
-      "t": 1788634658306,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1709,7 +1709,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 18×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 19×"
     },
     {
       "name": "GitHub Copilot",
@@ -1881,7 +1881,6 @@
     "priority": "Micro-farmer digital marketplace (end-to-end platform for publishing, selling, and shipping produce)"
   },
   "throughput": [
-    0,
     1,
     6,
     0,
@@ -1895,8 +1894,8 @@
     0,
     0,
     1,
-    2,
-    4,
+    0,
+    6,
     1,
     0,
     0,
@@ -1908,17 +1907,18 @@
     0,
     3,
     0,
-    5,
-    4,
-    13
+    0,
+    7,
+    11,
+    7
   ],
   "load": {
     "loadavg": [
-      0.84,
-      0.54,
-      0.36
+      0.55,
+      0.5,
+      0.35
     ],
-    "ramPct": 69,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1968,7 +1968,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "distributor": {
@@ -2708,8 +2708,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
-        "vramPct": 80
+        "utilPct": 33,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2726,8 +2726,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 69,
-        "vramPct": 58
+        "utilPct": 39,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 86,
