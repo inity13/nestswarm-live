@@ -1,5 +1,5 @@
 {
-  "generated": 1788628015796,
+  "generated": 1788628060790,
   "status": "running",
   "stats": {
     "products": 133,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
+      "t": 1788628017956,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,39 @@
       "t": 1788595290007,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "TenantGuard is not ready because it lacks a working proof of concept, and I agree—it’s a fatal flaw. But calling it “premature” misses the point: it’s a fraud in its current state. The single most important requirement for shipping? A live, functional risk engine that delivers real scores on real data—no demos, no promises, just results.",
-      "t": 1788595277817,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for TenantScreenPrime is stuck (attempt 2) — trying a stronger model",
+      "t": 1788628035584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TenantScreenPrime",
+      "t": 1788628035583,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788628025700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TenantScreenPrime",
+      "t": 1788628025583,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788628017956,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
@@ -1553,43 +1583,44 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788621808364,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788621805653,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788621765334,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788621765334,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788621765334,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788621765333,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
-      "t": 1788627947170,
+      "text": "EXTREME elevation: build for TenantScreenPrime is stuck (attempt 2) — trying a stronger model",
+      "t": 1788628035584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TenantScreenPrime",
+      "t": 1788628035583,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788628025700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TenantScreenPrime",
+      "t": 1788628025583,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
+      "t": 1788628017956,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788628017956,
       "type": "event"
     }
   ],
@@ -1810,22 +1841,10 @@
   "throughput": [
     0,
     1,
-    0,
-    6,
-    3,
-    0,
+    1,
+    7,
     1,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    6,
-    3,
     0,
     1,
     0,
@@ -1836,12 +1855,24 @@
     1,
     0,
     0,
+    9,
+    0,
+    0,
     1,
-    0
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.04,
+      0.06,
       0.06,
       0.07
     ],
@@ -2633,13 +2664,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 14,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 86,
-    "jobsProcessed": 147
+    "jobsProcessed": 148
   }
 }
