@@ -1,5 +1,5 @@
 {
-  "generated": 1788568425136,
+  "generated": 1788568445239,
   "status": "running",
   "stats": {
     "products": 124,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
+      "t": 1788568431606,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for PropertyPro.",
@@ -1094,16 +1101,21 @@
       "t": 1788560935253,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "CopyCraft is now BUYABLE at https://inity13.github.io/[private-repo]/pmtnh9pl5xhsl/ — real Stripe checkout live.",
-      "t": 1788560933608,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripSmart",
+      "t": 1788568437308,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788568431606,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
@@ -1571,21 +1583,29 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
       "t": 1788566663976,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripSmart",
+      "t": 1788568437308,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
+      "t": 1788568431606,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
-      "t": 1788566486753,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
-      "t": 1788566306219,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788568431606,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1803,23 +1823,23 @@
   "throughput": [
     1,
     0,
-    0,
-    9,
-    18,
+    5,
+    6,
+    16,
     0,
     2,
-    9,
-    14,
+    16,
+    7,
     4,
-    4,
-    3,
-    1,
+    7,
     0,
-    15,
-    21,
+    1,
+    5,
+    18,
+    17,
+    10,
     11,
-    12,
-    8,
+    6,
     0,
     0,
     1,
@@ -1830,15 +1850,15 @@
     0,
     1,
     0,
-    0
+    3
   ],
   "load": {
     "loadavg": [
-      0.09,
+      0.13,
       0.2,
-      0.31
+      0.3
     ],
-    "ramPct": 66,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1872,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2551,7 +2571,7 @@
     {
       "name": "TripSmart",
       "niche": "local services & gig economy",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2580,7 +2600,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
+        "utilPct": 42,
         "vramPct": 47
       },
       {
@@ -2598,7 +2618,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
