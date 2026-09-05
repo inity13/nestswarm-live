@@ -1,5 +1,5 @@
 {
-  "generated": 1788642908536,
+  "generated": 1788642953532,
   "status": "running",
   "stats": {
     "products": 138,
@@ -74,7 +74,7 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue’s concept is ambitious but unproven—its value hinges on how well it actually integ",
         "t": 1788642835689
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue is stuck in idea land. It needs to ship a working prototype that actually integrat",
         "t": 1788642850367
@@ -110,7 +110,7 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue is only worth marketing once it proves its core promise: it must ship a working be",
         "t": 1788642859490
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue has great potential, but it needs to ship a fully functional prototype that meets ",
         "t": 1788642861517
@@ -1640,113 +1640,6 @@
       "t": 1788642863757,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "MindCue has great potential, but it needs to ship a fully functional prototype that meets user expectations and proves its core value before investing in marketing or additional development features. The team should prioritize creating a working demo that integrates spaced repetition effectively and demonstrates real-world utility within the first month of launch.",
-      "t": 1788642861517,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "MindCue is only worth marketing once it proves its core promise: it must ship a working beta that ingests a 10‑page lecture PDF, auto‑generates spaced‑repetition flashcards, and demonstrates a 20 % recall improvement in a 7‑day test with at least three real users. That tangible proof is the quality bar we demand before any launch copy.",
-      "t": 1788642859490,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship MindCue (score 4/8, attempt 2/3)",
-      "t": 1788642853550,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for MindCue exited (null)",
-      "t": 1788642850836,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council demands satisfied for MindCue",
-      "t": 1788642850796,
-      "type": "event"
-    },
-    {
-      "who": "polisher",
-      "text": "Polished MindCue (pass 1) — tighter, cleaner, closer to ship-ready.",
-      "t": 1788642850793,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: MindCue -> http://localhost:5385",
-      "t": 1788642850793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: MindCue (pass #1)",
-      "t": 1788642850793,
-      "type": "polished"
-    },
-    {
-      "who": "Worf",
-      "text": "MindCue is stuck in idea land. It needs to ship a working prototype that actually integrates spaced repetition with voice-to-text input, not just talk about it. The team must deliver a functional version with at least one integrated study material type and a working flashcard system before adding new features. No more specs, no more mockups—show me the product that works.",
-      "t": 1788642850367,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged MindCue → mindcue.zip (13182 bytes)",
-      "t": 1788642848581,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider freeProviders not found",
-      "t": 1788642836565,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — provider freeProviders not found",
-      "t": 1788642836565,
-      "type": "event"
-    },
-    {
-      "who": "Data",
-      "text": "MindCue’s concept is ambitious but unproven—its value hinges on how well it actually integrates spaced repetition with real learning behavior, not just buzzwords. The team must ship a working prototype that demonstrates adaptive flashcards syncing with user input, or the product is still just an idea.",
-      "t": 1788642835689,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788642833390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788642833390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788642833389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788642833388,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1965,7 +1858,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1975,31 +1867,32 @@
     3,
     0,
     0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    6,
+    3,
     4,
-    19,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    5,
+    1,
+    23,
     4,
-    14,
-    18
+    10,
+    22,
+    0
   ],
   "load": {
     "loadavg": [
-      0.48,
-      0.5,
-      0.3
+      0.22,
+      0.43,
+      0.28
     ],
     "ramPct": 65,
     "cpus": 12
@@ -2789,9 +2682,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 36,
+        "busy": false,
+        "warm": true,
+        "utilPct": 8,
         "vramPct": 78
       },
       {
@@ -2809,7 +2702,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 7,
+        "utilPct": 4,
         "vramPct": 92
       }
     ],
