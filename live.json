@@ -1,5 +1,5 @@
 {
-  "generated": 1788576708660,
+  "generated": 1788576753898,
   "status": "running",
   "stats": {
     "products": 127,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788576749117,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3716MB free)",
+      "t": 1788576749115,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
       "t": 1788576592118,
       "type": "event"
@@ -1571,21 +1583,22 @@
       "text": "vault: synced (2 notes updated)",
       "t": 1788571924157,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788571923532,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 125 products)",
-      "t": 1788571911771,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788576749117,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3716MB free)",
+      "t": 1788576749115,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,15 +1814,14 @@
     "priority": ""
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    12,
     2,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6,
-    8,
-    0,
     0,
     2,
     0,
@@ -1830,15 +1842,16 @@
     0,
     0,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.07,
-      0.09
+      0.44,
+      0.17,
+      0.12
     ],
-    "ramPct": 44,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2592,8 +2605,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 15
+        "utilPct": 15,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
