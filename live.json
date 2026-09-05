@@ -1,5 +1,5 @@
 {
-  "generated": 1788643268620,
+  "generated": 1788643313647,
   "status": "running",
   "stats": {
     "products": 139,
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We should mention that we acknowledge the need for functional prototype and that the core ",
         "t": 1788643187367
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: FitCue — health, fitness & habit tracking. Let's see if it's worth building.",
+      "t": 1788643287256,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "launcher",
       "text": "MindCue is now BUYABLE at https://inity13.github.io/[private-repo]/pmtou6exmrvxu/ — real Stripe checkout live.",
@@ -1094,16 +1101,27 @@
       "t": 1788634684684,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
-      "t": 1788634586597,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FitCue",
+      "t": 1788643313635,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> FitCue",
+      "t": 1788643293636,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: FitCue [health, fitness & habit tracking]",
+      "t": 1788643287256,
+      "type": "ideated"
+    },
     {
       "who": "swarm",
       "text": "idea duplicate (MemoryMentor); re-ideating in a fresh niche",
@@ -1565,27 +1583,34 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
       "t": 1788640904678,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
-      "t": 1788640725958,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
-      "t": 1788640544610,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788640403610,
-      "type": "vault"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FitCue",
+      "t": 1788643313635,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> FitCue",
+      "t": 1788643293636,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: FitCue — health, fitness & habit tracking. Let's see if it's worth building.",
+      "t": 1788643287256,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: FitCue [health, fitness & habit tracking]",
+      "t": 1788643287256,
+      "type": "ideated"
+    },
     {
       "who": "swarm",
       "text": "idea duplicate (MemoryMentor); re-ideating in a fresh niche",
@@ -1652,19 +1677,6 @@
       "text": "polish syntax fail for MindCue: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788643244771,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 12:21:41 AM) — trying ChatGPT/free",
-      "t": 1788643187869,
-      "type": "event"
-    },
-    {
-      "who": "Monica",
-      "text": "We should mention that we acknowledge the need for functional prototype and that the core features must be ready, but we push back that shipping before the UI ismonarchly polished will result in a subpar user experience that could harm MindCue's reputation. The most important quality requirement for MindCue to ship is a **polished, user-friendly interface** that makes full use of modern web design principles, ensuring seamless interaction and a visually appealing layout. This will not only improve user satisfaction but also increase the likelihood of positive reviews and organic growth.",
-      "t": 1788643187367,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1883,12 +1895,11 @@
   },
   "throughput": [
     0,
-    0,
     3,
     0,
     0,
-    7,
-    0,
+    3,
+    4,
     0,
     1,
     0,
@@ -1901,31 +1912,32 @@
     0,
     1,
     6,
+    0,
+    23,
     4,
-    19,
-    4,
-    16,
-    16,
+    10,
+    22,
     0,
     1,
     6,
     0,
     2,
-    12
+    5,
+    13
   ],
   "load": {
     "loadavg": [
-      1.06,
-      0.39,
-      0.27
+      0.82,
+      0.42,
+      0.29
     ],
-    "ramPct": 67,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2660,9 +2672,9 @@
   ],
   "building": [
     {
-      "name": "Untitled",
-      "niche": "small-business operations & accounting",
-      "stage": "idea",
+      "name": "FitCue",
+      "niche": "health, fitness & habit tracking",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2691,7 +2703,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 32,
+        "utilPct": 25,
         "vramPct": 79
       },
       {
@@ -2707,13 +2719,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 92
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 87,
-    "jobsProcessed": 162
+    "jobsProcessed": 163
   }
 }
