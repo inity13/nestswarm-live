@@ -1,5 +1,5 @@
 {
-  "generated": 1788645833315,
+  "generated": 1788645878253,
   "status": "running",
   "stats": {
     "products": 139,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "MindCue needs to ship a working prototype that actually integrates spaced repetition with ",
-        "t": 1788643044097
+        "text": "FitCue needs real calendar integration and working AI workout generation to be viable — no",
+        "t": 1788645857176
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "FitCue needs real calendar integration and working AI workout generation to be viable — not just promises. I demand a working prototype with mocked calendar data and a basic AI model that can generate 3-minute routines — this isn’t a concept, it’s a test of execution. If we can't deliver that, we’re not shipping. // FILE: app.js ```javascript const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = …",
+      "t": 1788645857176,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
@@ -1094,16 +1101,27 @@
       "t": 1788635131751,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "PetDesk MT is still a rough draft; we cannot launch until the core booking workflow is fully integrated with a real payment provider and has end‑to‑end tests covering all edge cases. Provide a working proof‑of‑concept demo with a 100 % functional UI before we publish.",
-      "t": 1788635129885,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship FitCue (score 6/8, attempt 2/3)",
+      "t": 1788645863350,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged FitCue → fitcue.zip (13611 bytes)",
+      "t": 1788645855774,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for FitCue: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788645855726,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 139 products)",
@@ -1565,37 +1583,32 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
       "t": 1788643245787,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged MindCue → mindcue.zip (16927 bytes)",
-      "t": 1788643244821,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for MindCue: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788643244771,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 12:21:41 AM) — trying ChatGPT/free",
-      "t": 1788643187869,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 139 products)",
-      "t": 1788645764256,
+      "text": "launch-discipline: polishing flagship FitCue (score 6/8, attempt 2/3)",
+      "t": 1788645863350,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "FitCue needs real calendar integration and working AI workout generation to be viable — not just promises. I demand a working prototype with mocked calendar data and a basic AI model that can generate 3-minute routines — this isn’t a concept, it’s a test of execution. If we can't deliver that, we’re not shipping. // FILE: app.js ```javascript const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = …",
+      "t": 1788645857176,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged FitCue → fitcue.zip (13611 bytes)",
+      "t": 1788645855774,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "marketer produced a kit for FitCue",
-      "t": 1788645744641,
+      "text": "polish syntax fail for FitCue: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788645855726,
       "type": "event"
     }
   ],
@@ -1814,44 +1827,44 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
+    6,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
     3,
+    0,
+    0,
+    1,
+    0,
+    0,
     4,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     3,
-    4,
-    0,
+    14,
     1,
-    0,
-    0,
-    3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    5,
-    5,
-    11,
-    0
+    5
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.35,
+      0.25,
+      0.33,
       0.31
     ],
-    "ramPct": 71,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1865,8 +1878,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2641,7 +2654,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
+        "utilPct": 27,
         "vramPct": 79
       },
       {
@@ -2659,8 +2672,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 4,
-        "vramPct": 92
+        "utilPct": 2,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 87,
