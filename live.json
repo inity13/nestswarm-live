@@ -1,5 +1,5 @@
 {
-  "generated": 1788566850249,
+  "generated": 1788566895188,
   "status": "running",
   "stats": {
     "products": 123,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> PropertyPro",
+      "t": 1788566867323,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PropertyPro",
+      "t": 1788566862740,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
       "t": 1788566843866,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788562661298,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788562509738,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788562353318,
-      "type": "bench"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> PropertyPro",
+      "t": 1788566867323,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PropertyPro",
+      "t": 1788566862740,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
@@ -1847,10 +1859,7 @@
   "throughput": [
     0,
     0,
-    1,
-    6,
-    0,
-    1,
+    7,
     0,
     0,
     1,
@@ -1860,29 +1869,32 @@
     0,
     0,
     1,
+    0,
+    0,
+    3,
+    4,
     2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7
+    5
   ],
   "load": {
     "loadavg": [
-      0.37,
-      0.2,
-      0.18
+      1.4,
+      0.55,
+      0.3
     ],
-    "ramPct": 61,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1904,7 +1916,7 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security": {
@@ -2595,7 +2607,7 @@
     {
       "name": "PropertyPro",
       "niche": "real estate, renting & property",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2624,7 +2636,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
+        "utilPct": 40,
         "vramPct": 80
       },
       {
@@ -2640,10 +2652,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 92
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 82,
