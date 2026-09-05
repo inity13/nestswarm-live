@@ -1,5 +1,5 @@
 {
-  "generated": 1788591109377,
+  "generated": 1788591154271,
   "status": "running",
   "stats": {
     "products": 131,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788591147961,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2856MB free)",
+      "t": 1788591147960,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 131 products)",
       "t": 1788590992756,
       "type": "event"
@@ -1571,21 +1583,22 @@
       "text": "conductor created skill stripe-live-readiness",
       "t": 1788585820925,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788585820925,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness",
-      "t": 1788585820924,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788591147961,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2856MB free)",
+      "t": 1788591147960,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1814,6 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    3,
     1,
     0,
     0,
@@ -1830,15 +1842,16 @@
     0,
     0,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.34,
-      0.29
+      1.06,
+      0.54,
+      0.36
     ],
-    "ramPct": 59,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2592,10 +2605,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 34,
-        "vramPct": 18
+        "utilPct": 4,
+        "vramPct": 20
       },
       {
         "alias": "GPU-Node-2",
