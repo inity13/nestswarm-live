@@ -1,5 +1,5 @@
 {
-  "generated": 1788648532839,
+  "generated": 1788648577836,
   "status": "running",
   "stats": {
     "products": 141,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> NestGuard",
+      "t": 1788648562968,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788648557052,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> NestGuard",
+      "t": 1788648532974,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (3 files, exe)",
       "t": 1788648527799,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "stage 'design' -> SensoryMate",
       "t": 1788647163177,
       "type": "building"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "tests passed for SensoryMate",
-      "t": 1788647155510,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SensoryMate",
-      "t": 1788647153182,
+      "text": "stage 'build' -> NestGuard",
+      "t": 1788648562968,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1788647145574,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788648557052,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> NestGuard",
+      "t": 1788648532974,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for NestGuard — 3 files, working exe app. Handing off to test.",
@@ -1597,12 +1615,6 @@
       "who": "swarm",
       "text": "coder produced a functional build (3 files, exe)",
       "t": 1788648527799,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 141 products)",
-      "t": 1788648463753,
       "type": "event"
     }
   ],
@@ -1823,42 +1835,42 @@
   "throughput": [
     0,
     1,
-    0,
-    5,
+    3,
     19,
-    4,
-    4,
-    11,
-    23,
-    8,
-    2,
-    13,
+    6,
     0,
     12,
-    2,
+    18,
+    16,
+    1,
+    14,
     0,
-    43,
-    10,
-    11,
+    8,
+    6,
+    0,
+    36,
+    15,
+    13,
+    0,
     1,
     0,
     0,
     1,
-    0,
     7,
+    0,
     1,
     0,
     0,
     1,
-    2
+    6
   ],
   "load": {
     "loadavg": [
-      0.25,
+      0.31,
       0.29,
-      0.42
+      0.41
     ],
-    "ramPct": 93,
+    "ramPct": 95,
     "cpus": 12
   },
   "brain": {
@@ -2601,7 +2613,7 @@
     {
       "name": "NestGuard",
       "niche": "privacy, security & personal data",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2630,7 +2642,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
+        "utilPct": 36,
         "vramPct": 81
       },
       {
@@ -2646,13 +2658,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 26,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
-    "jobsProcessed": 167
+    "jobsProcessed": 168
   }
 }
