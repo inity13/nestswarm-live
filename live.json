@@ -1,8 +1,8 @@
 {
-  "generated": 1788637734241,
+  "generated": 1788637779271,
   "status": "running",
   "stats": {
-    "products": 136,
+    "products": 137,
     "listed": 5,
     "agents": 22,
     "avgScore": "-"
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: Knozzy — legal, contracts & compliance. Let's see if it's worth building.",
+      "t": 1788637767330,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders; archived 4 products below score 60; paused new builds (focus mode)",
@@ -1094,16 +1101,39 @@
       "t": 1788631835169,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "publisher",
-      "text": "PersonalForge MT is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
-      "t": 1788631835159,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> Knozzy",
+      "t": 1788637774148,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: Knozzy [legal, contracts & compliance]",
+      "t": 1788637767330,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: legal, contracts & compliance",
+      "t": 1788637764175,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788637764175,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788637754151,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 136 products)",
@@ -1553,43 +1583,44 @@
       "text": "registrar: Beehiiv step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1788636554289,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 6m ago) — skip",
-      "t": 1788636552248,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
-      "t": 1788636552248,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia entering verification code from inbox",
-      "t": 1788636537679,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788636527916,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788636520312,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 136 products)",
-      "t": 1788637664316,
+      "text": "stage 'spec' -> Knozzy",
+      "t": 1788637774148,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: Knozzy — legal, contracts & compliance. Let's see if it's worth building.",
+      "t": 1788637767330,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: Knozzy [legal, contracts & compliance]",
+      "t": 1788637767330,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: legal, contracts & compliance",
+      "t": 1788637764175,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788637764175,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788637754151,
       "type": "event"
     }
   ],
@@ -1809,43 +1840,43 @@
   },
   "throughput": [
     0,
-    1,
-    6,
-    32,
-    25,
-    16,
-    19,
-    21,
-    15,
-    17,
-    35,
-    68,
-    10,
-    1,
     7,
+    24,
+    27,
+    19,
+    17,
+    24,
+    13,
+    17,
+    26,
+    47,
+    44,
+    0,
+    8,
     5,
-    1,
-    0,
     0,
     1,
     0,
     0,
     1,
     0,
+    0,
     1,
+    1,
+    0,
     1,
     0,
     0,
     1,
-    0
+    6
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.13,
-      0.3
+      0.1,
+      0.12,
+      0.29
     ],
-    "ramPct": 59,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -2586,28 +2617,10 @@
   ],
   "building": [
     {
-      "name": "Flockly",
-      "niche": "personal finance, investing & budgeting",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "TailoredPaws",
-      "niche": "writing, copy & content creation",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "SmartDoc AI",
+      "name": "Knozzy",
       "niche": "legal, contracts & compliance",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
-      "name": "WorkflowGenius",
-      "niche": "recruiting, HR & team tools",
-      "stage": "shipped",
-      "status": "listed"
+      "stage": "spec",
+      "status": "building"
     }
   ],
   "nodes": [
@@ -2635,7 +2648,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 37,
+        "utilPct": 43,
         "vramPct": 80
       },
       {
@@ -2651,8 +2664,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
