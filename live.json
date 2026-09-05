@@ -1,5 +1,5 @@
 {
-  "generated": 1788603755653,
+  "generated": 1788603801119,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788603778758,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2541MB free)",
+      "t": 1788603778756,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788603774739,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1788603615448,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788598013665,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788603778758,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2541MB free)",
+      "t": 1788603778756,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788597833060,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788597654281,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788597473758,
+      "t": 1788603774739,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1820,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1830,15 +1848,16 @@
     0,
     3,
     0,
-    4
+    1,
+    11
   ],
   "load": {
     "loadavg": [
-      0.99,
-      0.46,
-      0.32
+      0.93,
+      0.53,
+      0.36
     ],
-    "ramPct": 57,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1888,7 +1907,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -2628,8 +2647,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 19
+        "utilPct": 90,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2644,9 +2663,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 3,
+        "busy": true,
+        "warm": false,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
