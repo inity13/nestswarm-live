@@ -1,5 +1,5 @@
 {
-  "generated": 1788583953876,
+  "generated": 1788583998995,
   "status": "running",
   "stats": {
     "products": 129,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for JobMate — 2 files, working node app. Handing off to test.",
+      "t": 1788583988316,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for JobMate — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788575348249,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PetCare AI — 2 files, working node app. Handing off to test.",
-      "t": 1788574547101,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788583993487,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> JobMate",
+      "t": 1788583993450,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788583988316,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
+      "t": 1788583971728,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1553,39 +1577,40 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788581897711,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1788581883391,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1788581882895,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788581812985,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788581632696,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
-      "t": 1788581600675,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788583993487,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> JobMate",
+      "t": 1788583993450,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for JobMate — 2 files, working node app. Handing off to test.",
+      "t": 1788583988316,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788583988316,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
+      "t": 1788583971728,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1814,13 +1839,12 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    21,
-    11,
-    11,
-    3,
+    19,
+    12,
+    2,
+    19,
+    4,
     17,
-    7,
-    14,
     0,
     0,
     7,
@@ -1831,8 +1855,8 @@
     0,
     1,
     0,
-    6,
-    1,
+    3,
+    4,
     0,
     0,
     1,
@@ -1843,12 +1867,13 @@
     0,
     1,
     0,
-    2
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.13,
+      0.27,
+      0.14,
       0.18
     ],
     "ramPct": 52,
@@ -2605,7 +2630,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 42,
         "vramPct": 50
       },
       {
@@ -2621,9 +2646,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 47,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
