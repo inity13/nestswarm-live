@@ -1,5 +1,5 @@
 {
-  "generated": 1788649297800,
+  "generated": 1788649342784,
   "status": "running",
   "stats": {
     "products": 141,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> NestGuard",
+      "t": 1788649332903,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for NestGuard is stuck (attempt 2) — trying a stronger model",
+      "t": 1788649332903,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788649325853,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 141 products)",
       "t": 1788649183065,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "packaged SensoryMate → sensorymate.zip (10071 bytes)",
       "t": 1788647263397,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> NestGuard",
+      "t": 1788649332903,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788647263234,
-      "type": "vault"
+      "text": "EXTREME elevation: build for NestGuard is stuck (attempt 2) — trying a stronger model",
+      "t": 1788649332903,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "LISTED: SensoryMate @ http://localhost:5387 ($9.99 one-time)",
-      "t": 1788647263177,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: SensoryMate -> http://localhost:5387",
-      "t": 1788647263176,
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788649325853,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,25 +1820,24 @@
     "priority": "Nest Finance Tracker - AI-powered personal finance tool with crypto wallet integration and subscription model"
   },
   "throughput": [
-    8,
-    6,
+    11,
     0,
-    36,
-    15,
+    22,
+    27,
     13,
-    0,
+    2,
     1,
     0,
     0,
     1,
-    7,
-    0,
+    2,
+    5,
     1,
     0,
     0,
     1,
-    6,
-    0,
+    5,
+    1,
     1,
     0,
     0,
@@ -1830,15 +1848,16 @@
     0,
     0,
     1,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.43,
-      0.31,
-      0.35
+      0.33,
+      0.3,
+      0.34
     ],
-    "ramPct": 71,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2610,7 +2629,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 39,
         "vramPct": 51
       },
       {
@@ -2626,13 +2645,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
-    "jobsProcessed": 168
+    "jobsProcessed": 169
   }
 }
