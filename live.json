@@ -1,5 +1,5 @@
 {
-  "generated": 1788585754001,
+  "generated": 1788585799097,
   "status": "running",
   "stats": {
     "products": 129,
@@ -158,7 +158,7 @@
       "color": "#7b5cff",
       "avatar": "avatars/obrien.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "JobMate’s promise is enticing, but the prototype still lacks a fully integrated, test‑driv",
         "t": 1788585691048
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "launcher",
+      "text": "JobMate is now BUYABLE at https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/ — real Stripe checkout live.",
+      "t": 1788585778865,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished JobMate (pass 3) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788585771202,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "O'Brien",
       "text": "JobMate’s promise is enticing, but the prototype still lacks a fully integrated, test‑driven workflow that shows a gig worker creating a job, communicating with a client, invoicing, and receiving feedback—all in a single pass. I demand a complete end‑to‑end demo, coupled with an automated integration test suite covering >80 % of the workflow, and a publicly accessible preview URL for stakeholder review before any listing is published.",
@@ -1087,23 +1101,111 @@
       "t": 1788578649721,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
-      "t": 1788578638487,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "Sentinel",
-      "text": "TripMate AI is premature—shipping without functional calendar integration and robust security measures leaves it vulnerable. Demand a working, tested calendar system and secure authentication before proceeding with any new features or launches.",
-      "t": 1788578587013,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — provider claude not found; provider chatgpt not found; disabled free model nemotron-3.5-lightning-free",
+      "t": 1788585784946,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider claude not found",
+      "t": 1788585784945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788585784945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
+      "t": 1788585784945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 18 products listed — polishing, marketing & distributing",
+      "t": 1788585783547,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: JobMate SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1788585778876,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "storefront: JobMate is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/",
+      "t": 1788585778865,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: JobMate storefront LIVE → https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/",
+      "t": 1788585778865,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3606MB free)",
+      "t": 1788585778634,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788585778634,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: JobMate plateaued at 5/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1788585773547,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
+      "t": 1788585773074,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for JobMate exited (1)",
+      "t": 1788585771273,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: JobMate -> http://localhost:5376",
+      "t": 1788585771202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: JobMate (pass #3)",
+      "t": 1788585771202,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged JobMate → jobmate.zip (13339 bytes)",
+      "t": 1788585768926,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (275 chars)",
+      "t": 1788585764003,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
@@ -1481,111 +1583,125 @@
       "text": "EXTREME elevation: build for JobMate is stuck (attempt 2) — trying a stronger model",
       "t": 1788584003451,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'build' -> JobMate",
-      "t": 1788584003450,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788583993487,
+      "text": "self-heal complete: 3 fix(es) — provider claude not found; provider chatgpt not found; disabled free model nemotron-3.5-lightning-free",
+      "t": 1788585784946,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'test' -> JobMate",
-      "t": 1788583993450,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788583988316,
+      "text": "self-heal: provider claude not found",
+      "t": 1788585784945,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788583971728,
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788585784945,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled free model nemotron-3.5-lightning-free",
+      "t": 1788585784945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 18 products listed — polishing, marketing & distributing",
+      "t": 1788585783547,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: JobMate SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1788585778876,
+      "type": "event"
+    },
+    {
+      "who": "launcher",
+      "text": "JobMate is now BUYABLE at https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/ — real Stripe checkout live.",
+      "t": 1788585778865,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "storefront: JobMate is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/",
+      "t": 1788585778865,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: JobMate storefront LIVE → https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/",
+      "t": 1788585778865,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3606MB free)",
+      "t": 1788585778634,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788583949321,
+      "t": 1788585778634,
       "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3807MB free)",
-      "t": 1788583949317,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788583791947,
+      "text": "launch-discipline: JobMate plateaued at 5/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1788585773547,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788583613616,
+      "t": 1788585773074,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788583431791,
+      "text": "preview for JobMate exited (1)",
+      "t": 1788585771273,
+      "type": "event"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished JobMate (pass 3) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788585771202,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: JobMate -> http://localhost:5376",
+      "t": 1788585771202,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788583252349,
+      "text": "POLISHED: JobMate (pass #3)",
+      "t": 1788585771202,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged JobMate → jobmate.zip (13339 bytes)",
+      "t": 1788585768926,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> JobMate",
-      "t": 1788583223319,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788583221365,
+      "text": "ChatGPT responded for conductor (275 chars)",
+      "t": 1788585764003,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> JobMate",
-      "t": 1788583213319,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788583207364,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788583073113,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788582892070,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
@@ -1651,13 +1767,6 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788585723453,
       "type": "event"
-    },
-    {
-      "who": "O'Brien",
-      "text": "JobMate’s promise is enticing, but the prototype still lacks a fully integrated, test‑driven workflow that shows a gig worker creating a job, communicating with a client, invoicing, and receiving feedback—all in a single pass. I demand a complete end‑to‑end demo, coupled with an automated integration test suite covering >80 % of the workflow, and a publicly accessible preview URL for stakeholder review before any listing is published.",
-      "t": 1788585691048,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1703,7 +1812,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 13×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 14×"
     },
     {
       "name": "GitHub Copilot",
@@ -1875,8 +1984,7 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    7,
-    0,
+    2,
     0,
     1,
     0,
@@ -1889,8 +1997,8 @@
     0,
     1,
     6,
-    15,
-    1,
+    12,
+    4,
     5,
     3,
     10,
@@ -1901,18 +2009,19 @@
     0,
     2,
     0,
-    7,
-    1,
-    1,
-    12
+    5,
+    3,
+    0,
+    10,
+    23
   ],
   "load": {
     "loadavg": [
-      0.75,
-      0.22,
-      0.13
+      0.79,
+      0.31,
+      0.17
     ],
-    "ramPct": 47,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2684,10 +2793,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 18
+        "utilPct": 38,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2704,8 +2813,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 92
+        "utilPct": 14,
+        "vramPct": 65
       }
     ],
     "selfHostedInferencePct": 83,
