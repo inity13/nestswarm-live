@@ -1,5 +1,5 @@
 {
-  "generated": 1788588274081,
+  "generated": 1788588319200,
   "status": "running",
   "stats": {
     "products": 130,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for FitMate — 2 files, working node app. Handing off to test.",
+      "t": 1788588279727,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for FitMate — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,45 @@
       "t": 1788581242666,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
-      "t": 1788580481371,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FitMate",
+      "t": 1788588293711,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for FitMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788588293711,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 130 products)",
+      "t": 1788588292731,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788588283811,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> FitMate",
+      "t": 1788588283710,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788588279727,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 130 products)",
@@ -1547,45 +1583,53 @@
       "text": "POLISHED: JobMate (pass #2)",
       "t": 1788585558246,
       "type": "polished"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FitMate",
+      "t": 1788588293711,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "packaged JobMate → jobmate.zip (13207 bytes)",
-      "t": 1788585556074,
+      "text": "EXTREME elevation: build for FitMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788588293711,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788585413669,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 130 products)",
+      "t": 1788588292731,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788585232875,
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788588283811,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: polishing flagship JobMate (score 5/8, attempt 2/3)",
-      "t": 1788585183507,
-      "type": "event"
+      "text": "stage 'test' -> FitMate",
+      "t": 1788588283710,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for FitMate — 2 files, working node app. Handing off to test.",
+      "t": 1788588279727,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788585179999,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788585179998,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788588279727,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,25 +1845,24 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
+    0,
+    0,
+    6,
+    4,
+    7,
+    1,
+    1,
+    0,
     1,
     0,
     0,
-    7,
-    7,
+    1,
+    0,
+    0,
+    1,
+    0,
+    6,
     3,
-    1,
-    1,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    8,
-    1,
     0,
     0,
     1,
@@ -1830,15 +1873,16 @@
     0,
     1,
     0,
-    0
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.3,
-      0.26,
+      0.2,
+      0.24,
       0.26
     ],
-    "ramPct": 64,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2594,7 +2638,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 34,
         "vramPct": 50
       },
       {
@@ -2610,13 +2654,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 84,
-    "jobsProcessed": 138
+    "jobsProcessed": 139
   }
 }
