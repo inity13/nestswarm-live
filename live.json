@@ -1,5 +1,5 @@
 {
-  "generated": 1788567075192,
+  "generated": 1788567120201,
   "status": "running",
   "stats": {
     "products": 123,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launcher: listing prepared for PropertyPro",
+      "t": 1788567099720,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788567099720,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship PropertyPro (score 5/8, attempt 2/3)",
+      "t": 1788567087321,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for PropertyPro: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788567080408,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PropertyPro → propertypro.zip (12696 bytes)",
+      "t": 1788567080407,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
       "t": 1788567024672,
       "type": "event"
@@ -1553,50 +1583,38 @@
       "text": "conductor created skill: demand-validation-optimization",
       "t": 1788564139807,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788564139806,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788563964110,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788563786753,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 122 products)",
-      "t": 1788563603958,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788563524448,
-      "type": "vault"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
-      "t": 1788567024672,
+      "text": "launcher: listing prepared for PropertyPro",
+      "t": 1788567099720,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788567099720,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship PropertyPro (score 5/8, attempt 2/3)",
+      "t": 1788567087321,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launcher: shipped PropertyPro to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788567014866,
-      "type": "launch"
+      "text": "polish syntax fail for PropertyPro: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788567080408,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PropertyPro → propertypro.zip (12696 bytes)",
+      "t": 1788567080407,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1815,7 +1833,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1826,8 +1843,8 @@
     0,
     0,
     3,
-    4,
     2,
+    4,
     1,
     0,
     0,
@@ -1839,16 +1856,17 @@
     0,
     1,
     0,
-    6,
     5,
+    6,
     16,
-    1,
-    1
+    0,
+    2,
+    9
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.41,
+      0.23,
+      0.38,
       0.28
     ],
     "ramPct": 63,
@@ -1885,16 +1903,16 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
-      },
-      "polisher": {
         "model": "nemotron-3.5-lightning-free",
         "tier": "free"
       },
-      "conductor": {
+      "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
+      },
+      "conductor": {
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "nemotron-3.5-lightning-free",
@@ -2611,7 +2629,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 35,
         "vramPct": 77
       },
       {
@@ -2629,7 +2647,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 4,
+        "utilPct": 72,
         "vramPct": 92
       }
     ],
