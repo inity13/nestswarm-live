@@ -1,5 +1,5 @@
 {
-  "generated": 1788589894246,
+  "generated": 1788589939403,
   "status": "running",
   "stats": {
     "products": 131,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for LocateMate — 2 files, working node app. Handing off to test.",
+      "t": 1788589918635,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: LocateMate — travel, trip planning & remote work. Let's see if it's worth building.",
@@ -1094,16 +1101,33 @@
       "t": 1788581323300,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "publisher",
-      "text": "SkillMap is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
-      "t": 1788581323288,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788589937296,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LocateMate",
+      "t": 1788589923870,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788589918635,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 131 products)",
+      "t": 1788589913054,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 131 products)",
@@ -1559,33 +1583,41 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3606MB free)",
       "t": 1788585778634,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788585778634,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: JobMate plateaued at 5/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788585773547,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788589937296,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
-      "t": 1788585773074,
+      "text": "stage 'test' -> LocateMate",
+      "t": 1788589923870,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for LocateMate — 2 files, working node app. Handing off to test.",
+      "t": 1788589918635,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788589918635,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "preview for JobMate exited (1)",
-      "t": 1788585771273,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 131 products)",
+      "t": 1788589913054,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1833,6 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    1,
     0,
     0,
     7,
@@ -1816,13 +1847,13 @@
     1,
     0,
     0,
-    7,
-    7,
-    0,
+    1,
+    12,
+    1,
     1,
     0,
+    1,
     3,
-    1,
     0,
     0,
     1,
@@ -1830,15 +1861,16 @@
     0,
     1,
     0,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.21,
-      0.24
+      0.15,
+      0.19,
+      0.23
     ],
-    "ramPct": 65,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1884,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2594,7 +2626,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 35,
         "vramPct": 50
       },
       {
@@ -2612,7 +2644,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 15,
+        "utilPct": 29,
         "vramPct": 92
       }
     ],
