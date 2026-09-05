@@ -1,8 +1,8 @@
 {
-  "generated": 1788652447331,
+  "generated": 1788652492445,
   "status": "running",
   "stats": {
-    "products": 142,
+    "products": 143,
     "listed": 8,
     "agents": 22,
     "avgScore": "5.0"
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "idea duplicate (SensoryMate); re-ideating in a fresh niche",
+      "t": 1788652484078,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: recruiting, HR & team tools",
+      "t": 1788652472507,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788652472507,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788652466687,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788652466662,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788652466661,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788652428178,
       "type": "bench"
@@ -1547,45 +1583,45 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 141 products)",
       "t": 1788649363167,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "idea duplicate (SensoryMate); re-ideating in a fresh niche",
+      "t": 1788652484078,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> NestGuard",
-      "t": 1788649332903,
+      "text": "new build started (ideating) — niche: recruiting, HR & team tools",
+      "t": 1788652472507,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788652472507,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "EXTREME elevation: build for NestGuard is stuck (attempt 2) — trying a stronger model",
-      "t": 1788649332903,
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788652466687,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "build not functional — no working product (attempt 2)",
-      "t": 1788649325853,
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788652466662,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 141 products)",
-      "t": 1788649183065,
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788652466661,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 141 products)",
-      "t": 1788649003514,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788648830375,
-      "type": "bench"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1652,7 +1688,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 39×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 40×"
     },
     {
       "name": "Shared memory",
@@ -1820,42 +1856,42 @@
     "priority": "Nest Finance Tracker - AI-powered personal finance tool with crypto wallet integration and subscription model"
   },
   "throughput": [
+    1,
+    1,
+    0,
+    0,
+    7,
+    0,
     0,
     1,
+    7,
+    0,
     1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    5,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     3,
-    4,
-    0,
-    0,
-    1,
-    7,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3
+    8
   ],
   "load": {
     "loadavg": [
-      0.37,
-      0.18,
-      0.17
+      0.44,
+      0.22,
+      0.19
     ],
     "ramPct": 63,
     "cpus": 12
@@ -1863,7 +1899,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1871,8 +1907,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2598,9 +2634,9 @@
   ],
   "building": [
     {
-      "name": "EducationLens MT",
-      "niche": "education, tutoring & courses",
-      "stage": "build",
+      "name": "Untitled",
+      "niche": "e-commerce, dropshipping & reselling",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2629,8 +2665,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 51
+        "utilPct": 89,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2645,8 +2681,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
