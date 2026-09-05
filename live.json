@@ -1,5 +1,5 @@
 {
-  "generated": 1788634584845,
+  "generated": 1788634587427,
   "status": "running",
   "stats": {
     "products": 135,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788634586597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788634586597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788634430710,
       "type": "bench"
@@ -1571,21 +1583,22 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788631853248,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "launch-discipline: polishing flagship PersonalForge MT (score 5/8, attempt 1/3)",
-      "t": 1788631845148,
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788634586597,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "packaged PersonalForge MT → personalforge-mt.zip (11736 bytes)",
-      "t": 1788631835344,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788634586597,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1646,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 32×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 33×"
     },
     {
       "name": "Shared memory",
@@ -1830,7 +1843,7 @@
     0,
     3,
     0,
-    0
+    3
   ],
   "load": {
     "loadavg": [
@@ -1852,8 +1865,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2581,7 +2594,7 @@
     {
       "name": "PetDesk MT",
       "niche": "pet care & ownership",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2610,7 +2623,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
+        "utilPct": 33,
         "vramPct": 50
       },
       {
