@@ -1,5 +1,5 @@
 {
-  "generated": 1788634629824,
+  "generated": 1788634674835,
   "status": "running",
   "stats": {
     "products": 135,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> PetDesk MT",
+      "t": 1788634664678,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PetDesk MT",
+      "t": 1788634658306,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
       "t": 1788634605843,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788631857793,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 9:20:53 PM) — trying ChatGPT/free",
-      "t": 1788631855466,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788631855466,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> PetDesk MT",
+      "t": 1788634664678,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PetDesk MT",
+      "t": 1788634658306,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
@@ -1846,13 +1858,9 @@
   },
   "throughput": [
     0,
-    0,
     1,
-    6,
-    0,
-    1,
-    0,
-    0,
+    2,
+    4,
     1,
     0,
     0,
@@ -1861,8 +1869,11 @@
     0,
     1,
     0,
-    6,
+    0,
     1,
+    0,
+    4,
+    3,
     0,
     0,
     1,
@@ -1874,15 +1885,16 @@
     3,
     0,
     0,
-    7
+    7,
+    4
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.26,
-      0.25
+      1.44,
+      0.59,
+      0.36
     ],
-    "ramPct": 68,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1900,7 +1912,7 @@
         "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2625,7 +2637,7 @@
     {
       "name": "PetDesk MT",
       "niche": "pet care & ownership",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2655,7 +2667,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 36,
-        "vramPct": 50
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2672,8 +2684,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 77,
-        "vramPct": 58
+        "utilPct": 1,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 86,
