@@ -1,5 +1,5 @@
 {
-  "generated": 1788576213874,
+  "generated": 1788576258636,
   "status": "running",
   "stats": {
     "products": 127,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> TripMate AI",
+      "t": 1788576233272,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
+      "t": 1788576232385,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788576230364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> TripMate AI",
       "t": 1788576213274,
       "type": "building"
@@ -1565,27 +1583,27 @@
       "text": "ownerreq: emailed 2 new request(s) to [email]",
       "t": 1788571809250,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "EXTREME elevation: build for TravelGenie MT is stuck (attempt 2) — trying a stronger model",
-      "t": 1788571803359,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> TravelGenie MT",
-      "t": 1788571803358,
+      "text": "stage 'build' -> TripMate AI",
+      "t": 1788576233272,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788571793443,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
+      "t": 1788576232385,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788576230364,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> TripMate AI",
@@ -1821,7 +1839,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
     0,
     6,
     1,
@@ -1829,8 +1846,8 @@
     0,
     1,
     0,
-    2,
-    1,
+    0,
+    3,
     0,
     0,
     1,
@@ -1850,13 +1867,14 @@
     0,
     1,
     0,
-    3
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.1,
-      0.14
+      0.02,
+      0.08,
+      0.13
     ],
     "ramPct": 54,
     "cpus": 12
@@ -2583,7 +2601,7 @@
     {
       "name": "TripMate AI",
       "niche": "legal, contracts & compliance",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2612,8 +2630,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
-        "vramPct": 78
+        "utilPct": 37,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2628,13 +2646,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 7,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 128
+    "jobsProcessed": 129
   }
 }
