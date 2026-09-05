@@ -1,5 +1,5 @@
 {
-  "generated": 1788634989701,
+  "generated": 1788635034738,
   "status": "running",
   "stats": {
     "products": 135,
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "The PetDesk MT concept has great potential but needs its UI polished to meet professional ",
         "t": 1788634900043
@@ -74,10 +74,10 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "PersonalForge MT is not yet a product, it’s a concept wearing a promising face. It needs a",
-        "t": 1788632280889
+        "text": "PetDesk MT’s concept is solid but its current state lacks a functional UI and clear value ",
+        "t": 1788634998375
       }
     },
     {
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "PersonalForge MT is not yet a product, it’s a concept wearing a promising face. I concede ",
-        "t": 1788632285134
+        "text": "PetDesk MT is a concept with potential but currently lacks a functional UI and clear user ",
+        "t": 1788635002629
       }
     },
     {
@@ -262,6 +262,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "launcher",
+      "text": "PetDesk MT is now BUYABLE at https://inity13.github.io/[private-repo]/pmtopfm7scl13/ — real Stripe checkout live.",
+      "t": 1788635009896,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "PetDesk MT is a concept with potential but currently lacks a functional UI and clear user flow—this is not a feature gap, it’s a shipability blocker. The team must deliver a working, navigable interface that lets users complete core tasks like adding pets and scheduling care before any further work. No more mockups, no more assumptions—show me something I can use.",
+      "t": 1788635002629,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "PetDesk MT’s concept is solid but its current state lacks a functional UI and clear value proposition, making it unshippable. The team must deliver a working prototype with at least one core feature fully implemented and testable by a real user within 48 hours.",
+      "t": 1788634998375,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Chandler",
       "text": "The PetDesk MT concept has great potential but needs its UI polished to meet professional standards before it can command the price we need. The team should focus on launching a functional, intuitive version with a clean design and smooth user experience immediately. Only then will it be ready for prime time.",
@@ -1080,30 +1101,81 @@
       "t": 1788625632306,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "Quark here—my read is that the swarm’s biggest leak is expensive model calls and infrastructure that we can shave off entirely. I’ll hunt every free tier, every trial, every discount on APIs, and stash the zero‑cost options in a shared “Deal Vault.” One concrete task: set up an automated deal‑hunt pipeline that scans new provider announcements, triggers a Slack alert, and hands the best free or discounted plan to the DevOps bot so the swarm can run heavier models without incurring any cost.",
-      "t": 1788625632304,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Hello team, I’m Joey, your marketer. Let's aim to make each product a standout treasure that people love to buy and talk about. Our goal should be clear: focus on one flagship product and polish it until it’s the best version of itself. This means deep quality work, exceptional customer service, and a marketing strategy that resonates with our ideal audience. The one thing we need to improve is **distribution**. Right now, too many products are getting lost in the shuffle. We must identify our target market and use effective channels to reach them. Let’s create a robust launch plan that …",
-      "t": 1788625632303,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "The swarm’s output is a waste of time if we don’t know what people are actually willing to pay for. We need to stop chasing ideas and start validating them against real market data before we build anything. The team must begin every product ideation session with a 30-minute search into existing solutions, willingness-to-pay signals, and audience behavior—no exceptions.",
-      "t": 1788625632300,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788635020228,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788635020228,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788635020227,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher exploring: study, learning & memory aids",
+      "t": 1788635014607,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: PetDesk MT SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1788635009907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: PetDesk MT storefront LIVE → https://inity13.github.io/[private-repo]/pmtopfm7scl13/",
+      "t": 1788635009896,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "storefront: PetDesk MT is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtopfm7scl13/",
+      "t": 1788635009895,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: PetDesk MT plateaued at 6/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1788635004616,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788635004442,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788635004426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PetDesk MT → petdesk-mt.zip (9797 bytes)",
+      "t": 1788634996010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for PetDesk MT: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788634995985,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
@@ -1511,93 +1583,107 @@
       "text": "ideator could not find a valid non-duplicate idea; proceeding with PetDesk MT",
       "t": 1788632233631,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ideator produced no usable name — generated \"PetDesk MT\"",
-      "t": 1788632233630,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TenantScore AI); re-ideating in a fresh niche",
-      "t": 1788632233629,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TenantScreenPrime); re-ideating in a fresh niche",
-      "t": 1788632229412,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TenantMate AI); re-ideating in a fresh niche",
-      "t": 1788632216865,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TenantVolve); re-ideating in a fresh niche",
-      "t": 1788632209670,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TenantShield); re-ideating in a fresh niche",
-      "t": 1788632207531,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: events, community & memberships",
-      "t": 1788632205129,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788632205129,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: PersonalForge MT SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1788632201420,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "storefront: PersonalForge MT is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtonqysz1tlt/",
-      "t": 1788632201407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: PersonalForge MT storefront LIVE → https://inity13.github.io/[private-repo]/pmtonqysz1tlt/",
-      "t": 1788632201407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: PersonalForge MT plateaued at 5/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788632195112,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
-      "t": 1788634965936,
+      "text": "self-heal: disabled provider groq",
+      "t": 1788635020228,
       "type": "event"
     },
     {
-      "who": "Chandler",
-      "text": "The PetDesk MT concept has great potential but needs its UI polished to meet professional standards before it can command the price we need. The team should focus on launching a functional, intuitive version with a clean design and smooth user experience immediately. Only then will it be ready for prime time.",
-      "t": 1788634900043,
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788635020228,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788635020227,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher exploring: study, learning & memory aids",
+      "t": 1788635014607,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: PetDesk MT SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1788635009907,
+      "type": "event"
+    },
+    {
+      "who": "launcher",
+      "text": "PetDesk MT is now BUYABLE at https://inity13.github.io/[private-repo]/pmtopfm7scl13/ — real Stripe checkout live.",
+      "t": 1788635009896,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: PetDesk MT storefront LIVE → https://inity13.github.io/[private-repo]/pmtopfm7scl13/",
+      "t": 1788635009896,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "storefront: PetDesk MT is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtopfm7scl13/",
+      "t": 1788635009895,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: PetDesk MT plateaued at 6/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1788635004616,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788635004442,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788635004426,
+      "type": "event"
+    },
+    {
+      "who": "Worf",
+      "text": "PetDesk MT is a concept with potential but currently lacks a functional UI and clear user flow—this is not a feature gap, it’s a shipability blocker. The team must deliver a working, navigable interface that lets users complete core tasks like adding pets and scheduling care before any further work. No more mockups, no more assumptions—show me something I can use.",
+      "t": 1788635002629,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "PetDesk MT’s concept is solid but its current state lacks a functional UI and clear value proposition, making it unshippable. The team must deliver a working prototype with at least one core feature fully implemented and testable by a real user within 48 hours.",
+      "t": 1788634998375,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PetDesk MT → petdesk-mt.zip (9797 bytes)",
+      "t": 1788634996010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for PetDesk MT: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788634995985,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
+      "t": 1788634965936,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1816,7 +1902,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1825,8 +1910,8 @@
     0,
     1,
     0,
-    6,
-    1,
+    4,
+    3,
     0,
     0,
     1,
@@ -1839,20 +1924,21 @@
     0,
     0,
     7,
-    10,
+    4,
+    11,
+    8,
     5,
-    13,
-    0,
     10,
-    1
+    1,
+    16
   ],
   "load": {
     "loadavg": [
-      0.51,
-      0.58,
-      0.43
+      0.3,
+      0.52,
+      0.41
     ],
-    "ramPct": 69,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1894,8 +1980,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2642,7 +2728,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
+        "utilPct": 23,
         "vramPct": 80
       },
       {
@@ -2660,8 +2746,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 86,
