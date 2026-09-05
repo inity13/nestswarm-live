@@ -1,5 +1,5 @@
 {
-  "generated": 1788591739315,
+  "generated": 1788591784482,
   "status": "running",
   "stats": {
     "products": 131,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launcher: listing prepared for LocateMate",
+      "t": 1788591764147,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788591764147,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit 1): <3>WSL (75790) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788591762490,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit 1): <3>WSL (75786) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788591752444,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit 1): <3>WSL (75772) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788591742430,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: shipped LocateMate to https://github.com/inity13/[private-repo] (private)",
       "t": 1788591735497,
       "type": "launch"
@@ -1553,39 +1583,39 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788587551049,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2540MB free)",
-      "t": 1788587551047,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> FitMate",
-      "t": 1788587513662,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788587511873,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> FitMate",
-      "t": 1788587503661,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788587502893,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for LocateMate",
+      "t": 1788591764147,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788591764147,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit 1): <3>WSL (75790) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788591762490,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit 1): <3>WSL (75786) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788591752444,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit 1): <3>WSL (75772) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788591742430,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launcher: shipped LocateMate to https://github.com/inity13/[private-repo] (private)",
@@ -1870,7 +1900,6 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    1,
     0,
     1,
     0,
@@ -1895,19 +1924,20 @@
     0,
     1,
     0,
-    5,
-    6,
-    10,
+    3,
+    7,
+    11,
     0,
-    11
+    8,
+    9
   ],
   "load": {
     "loadavg": [
-      0.25,
-      0.44,
-      0.37
+      0.24,
+      0.41,
+      0.36
     ],
-    "ramPct": 68,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1929,7 +1959,7 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
@@ -2681,7 +2711,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 16,
+        "utilPct": 38,
         "vramPct": 80
       },
       {
