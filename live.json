@@ -1,5 +1,5 @@
 {
-  "generated": 1788628780829,
+  "generated": 1788628825664,
   "status": "running",
   "stats": {
     "products": 133,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
+      "t": 1788628785939,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,39 @@
       "t": 1788595292051,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "TenantGuard is now BUYABLE at https://inity13.github.io/[private-repo]/pmto1qtjzrvmo/ — real Stripe checkout live.",
-      "t": 1788595290007,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TenantScreenPrime",
+      "t": 1788628805481,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for TenantScreenPrime",
+      "t": 1788628797803,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TenantScreenPrime",
+      "t": 1788628795479,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788628785938,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788628785938,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
@@ -1553,39 +1583,47 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788622007790,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TenantScreenPrime",
+      "t": 1788628805481,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1788621875643,
+      "text": "tests passed for TenantScreenPrime",
+      "t": 1788628797803,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TenantScreenPrime",
+      "t": 1788628795479,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
+      "t": 1788628785939,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788628785938,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788621865642,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788621832277,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3824MB free)",
-      "t": 1788621832276,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788621826927,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788628785938,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1671,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 30×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 31×"
     },
     {
       "name": "Shared memory",
@@ -1801,7 +1839,6 @@
     "priority": "Micro-farmer digital marketplace (end-to-end platform for publishing, selling, and shipping produce)"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1830,13 +1867,14 @@
     0,
     0,
     1,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.1,
-      0.09
+      0.05,
+      0.09,
+      0.08
     ],
     "ramPct": 45,
     "cpus": 12
@@ -1852,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2581,7 +2619,7 @@
     {
       "name": "TenantScreenPrime",
       "niche": "parenting & family organizers",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2626,10 +2664,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 92
+        "busy": true,
+        "warm": false,
+        "utilPct": 14,
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 86,
