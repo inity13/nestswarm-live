@@ -1,5 +1,5 @@
 {
-  "generated": 1788647048109,
+  "generated": 1788647093109,
   "status": "running",
   "stats": {
     "products": 140,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788647069675,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2468MB free)",
+      "t": 1788647069672,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 140 products)",
       "t": 1788647025000,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 139 products)",
       "t": 1788645764256,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "marketer produced a kit for FitCue",
-      "t": 1788645744641,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship FitCue (score 6/8, attempt 1/3)",
-      "t": 1788645733369,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788647069675,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2468MB free)",
+      "t": 1788647069672,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 140 products)",
@@ -1614,12 +1626,6 @@
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
       "t": 1788647011841,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788647002790,
       "type": "event"
     }
   ],
@@ -1839,49 +1845,49 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
     1,
-    6,
+    5,
+    5,
     11,
-    4,
     0,
     5,
     6,
     12,
     0,
+    17,
     27,
-    24,
-    16,
-    14,
-    7,
-    7,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
+    18,
+    18,
     8,
-    16
+    7,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    5,
+    19,
+    4
   ],
   "load": {
     "loadavg": [
-      1.11,
-      0.6,
-      0.42
+      0.96,
+      0.66,
+      0.45
     ],
-    "ramPct": 64,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2647,8 +2653,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 20,
-        "vramPct": 43
+        "utilPct": 28,
+        "vramPct": 51
       },
       {
         "alias": "GPU-Node-2",
@@ -2663,10 +2669,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 58
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
