@@ -1,8 +1,8 @@
 {
-  "generated": 1788572748729,
+  "generated": 1788572794057,
   "status": "running",
   "stats": {
-    "products": 125,
+    "products": 126,
     "listed": 15,
     "agents": 22,
     "avgScore": "5.0"
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788572793359,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: pet care & ownership",
+      "t": 1788572793357,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged TravelGenie MT → travelgenie-mt.zip (10270 bytes)",
+      "t": 1788572783850,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: TravelGenie MT (functional=true, score=3) · streak 2",
+      "t": 1788572783795,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "re-critique TravelGenie MT: score 3",
+      "t": 1788572783791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "packaged TravelGenie MT → travelgenie-mt.zip (10046 bytes)",
       "t": 1788572633436,
       "type": "event"
@@ -1553,39 +1583,40 @@
       "text": "registrar: Beehiiv step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1788571577483,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1788572793359,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "registrar: Beehiiv step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788571576344,
+      "text": "new build started (ideating) — niche: pet care & ownership",
+      "t": 1788572793357,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: nvidia needs email verification — reading inbox",
-      "t": 1788571575438,
+      "text": "packaged TravelGenie MT → travelgenie-mt.zip (10270 bytes)",
+      "t": 1788572783850,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Beehiiv step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788571575196,
-      "type": "event"
+      "text": "NOT LISTED — failed quality gate: TravelGenie MT (functional=true, score=3) · streak 2",
+      "t": 1788572783795,
+      "type": "listed"
     },
     {
       "who": "swarm",
-      "text": "registrar: Beehiiv step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788571574025,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788571572875,
+      "text": "re-critique TravelGenie MT: score 3",
+      "t": 1788572783791,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1789,11 +1820,11 @@
     }
   ],
   "ledger": {
-    "total": 624,
+    "total": 625,
     "revenue": 0,
     "effects": 104,
     "boundary": 1,
-    "artifacts": 70,
+    "artifacts": 71,
     "receipts": 0
   },
   "meeting": {
@@ -1801,23 +1832,22 @@
     "priority": ""
   },
   "throughput": [
-    6,
-    1,
+    4,
     0,
     1,
     0,
     0,
-    28,
-    15,
-    18,
-    51,
-    38,
-    49,
-    22,
-    10,
+    17,
+    23,
     19,
-    3,
-    8,
+    30,
+    58,
+    44,
+    15,
+    25,
+    14,
+    6,
+    10,
     0,
     0,
     1,
@@ -1827,16 +1857,17 @@
     0,
     0,
     1,
+    0,
+    10,
     5,
-    5,
-    5,
-    0
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.54,
-      1.43
+      0.06,
+      0.47,
+      1.36
     ],
     "ramPct": 75,
     "cpus": 12
@@ -1852,8 +1883,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2561,9 +2592,9 @@
   ],
   "building": [
     {
-      "name": "TravelGenie MT",
-      "niche": "travel, trip planning & remote work",
-      "stage": "list",
+      "name": "Untitled",
+      "niche": "pet care & ownership",
+      "stage": "idea",
       "status": "building"
     }
   ],
@@ -2592,8 +2623,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 77
+        "utilPct": 37,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2610,7 +2641,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 4,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
