@@ -1,5 +1,5 @@
 {
-  "generated": 1788582378878,
+  "generated": 1788582423895,
   "status": "running",
   "stats": {
     "products": 129,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> JobMate",
+      "t": 1788582403314,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
       "t": 1788582351958,
       "type": "event"
@@ -1577,87 +1583,19 @@
       "text": "vault: synced (1 notes updated)",
       "t": 1788581523855,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788581523260,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> JobMate",
+      "t": 1788582403314,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
       "t": 1788582351958,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> JobMate",
-      "t": 1788582323309,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: JobMate — small-business operations & accounting. Let's see if it's worth building.",
-      "t": 1788582316125,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: JobMate [small-business operations & accounting]",
-      "t": 1788582316125,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: small-business operations & accounting",
-      "t": 1788582313327,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788582313327,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SkillMap SHIPPED (polished 2×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1788582309670,
-      "type": "event"
-    },
-    {
-      "who": "launcher",
-      "text": "SkillMap is now BUYABLE at https://inity13.github.io/[private-repo]/pmtntjhxffac9/ — real Stripe checkout live.",
-      "t": 1788582309659,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SkillMap storefront LIVE → https://inity13.github.io/[private-repo]/pmtntjhxffac9/",
-      "t": 1788582309659,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "storefront: SkillMap is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtntjhxffac9/",
-      "t": 1788582309658,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SkillMap plateaued at 5/8 after 2 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788582303307,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for SkillMap — skipping",
-      "t": 1788582299643,
       "type": "event"
     }
   ],
@@ -1877,7 +1815,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1887,33 +1824,34 @@
     1,
     0,
     0,
+    7,
+    11,
+    5,
+    7,
+    2,
+    16,
     10,
-    8,
-    6,
-    6,
-    4,
-    19,
-    5,
     0,
     0,
     1,
+    2,
+    17,
+    17,
+    1,
+    4,
+    16,
+    25,
     5,
-    16,
-    16,
-    0,
-    6,
-    20,
-    19,
-    12,
-    2
+    9,
+    12
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.41,
-      0.32
+      0.92,
+      0.57,
+      0.38
     ],
-    "ramPct": 64,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1923,8 +1861,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
         "model": "nemotron-3.5-lightning-free",
@@ -1939,7 +1877,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "scout": {
@@ -1947,12 +1885,12 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "polisher": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "conductor": {
         "model": "nemotron-3.5-lightning-free",
@@ -1963,7 +1901,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "distributor": {
@@ -2638,7 +2576,7 @@
     {
       "name": "JobMate",
       "niche": "small-business operations & accounting",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2667,7 +2605,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
+        "utilPct": 89,
         "vramPct": 80
       },
       {
@@ -2685,11 +2623,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 79,
-        "vramPct": 58
+        "utilPct": 25,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 133
+    "jobsProcessed": 134
   }
 }
