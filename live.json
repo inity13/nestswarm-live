@@ -1,5 +1,5 @@
 {
-  "generated": 1788570065177,
+  "generated": 1788570090092,
   "status": "running",
   "stats": {
     "products": 124,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> TripSmart",
+      "t": 1788570087255,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TripSmart",
+      "t": 1788570084471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
+      "t": 1788570083523,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'design' -> TripSmart",
       "t": 1788570047256,
       "type": "building"
@@ -1565,27 +1583,27 @@
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788567123712,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788567123712,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788567123711,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 3:18:35 AM) — trying ChatGPT/free",
-      "t": 1788567123711,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TripSmart",
+      "t": 1788570087255,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TripSmart",
+      "t": 1788570084471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
+      "t": 1788570083523,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> TripSmart",
@@ -1839,13 +1857,9 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
-    1,
-    0,
-    3,
-    4,
     0,
     0,
-    1,
+    7,
     0,
     0,
     1,
@@ -1855,8 +1869,11 @@
     0,
     0,
     1,
+    0,
+    0,
+    1,
+    0,
     6,
-    0,
     1,
     0,
     0,
@@ -1868,13 +1885,14 @@
     0,
     1,
     0,
-    6
+    3,
+    7
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.2,
-      0.23
+      0.74,
+      0.33,
+      0.28
     ],
     "ramPct": 67,
     "cpus": 12
@@ -1894,7 +1912,7 @@
         "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2589,7 +2607,7 @@
     {
       "name": "TripSmart",
       "niche": "local services & gig economy",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2616,10 +2634,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 42,
-        "vramPct": 47
+        "busy": false,
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2636,7 +2654,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 5,
+        "utilPct": 0,
         "vramPct": 58
       }
     ],
