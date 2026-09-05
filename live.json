@@ -1,5 +1,5 @@
 {
-  "generated": 1788595159725,
+  "generated": 1788595204707,
   "status": "running",
   "stats": {
     "products": 132,
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "TenantGuard requires a fully functional proof of concept that demonstrates its AI-driven r",
         "t": 1788595071727
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I agree that a live proof‑of‑concept is non‑negotiable—landlords need to see real credit, ",
         "t": 1788595087651
@@ -74,10 +74,10 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "At \"list\" stage, claiming a functional AI-driven tenant risk scoring engine without integr",
-        "t": 1788594909060
+        "text": "TenantGuard is not ready for market because it lacks a working proof of concept, and the A",
+        "t": 1788595184787
       }
     },
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Data",
+      "text": "TenantGuard is not ready for market because it lacks a working proof of concept, and the AI risk engine it claims to have is unproven. The most important quality requirement is that it must demonstrate a fully functional, end-to-end AI-driven tenant risk scoring system that actually integrates with real data sources — this isn’t optional, it’s the core of what makes the product credible. Without that, it's just another idea on a list.",
+      "t": 1788595184787,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished TenantGuard (pass 2) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788595183600,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Chandler",
       "text": "I agree that a live proof‑of‑concept is non‑negotiable—landlords need to see real credit, criminal, and employment data feed into a risk score, not a mock‑up. I’m not insisting on a runway‑ready UI before that; the core engine has to work end‑to‑end. The single most crucial requirement to ship is a robust, fully‑validated AI risk‑scoring engine that can ingest live applicant data, produce accurate risk scores, and expose a clear audit trail for compliance.",
@@ -1087,23 +1101,63 @@
       "t": 1788585981703,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (6) recorded for JobMate: Build a fully functional, end-to-end demo prototype of JobMate that allows a gig worker to complete a full job lifecycle from creation to invoicing and feedback in under 5 minutes. | Integrate all core features (job scheduling, client communication, invoicing, payment tracking, performance review) into a single, seamless user flow with no data silos or manual handoffs. | Deploy the prototype on a free-tier serverless stack (e.g., AWS Lambda + DynamoDB free tier) and ensure 99% uptime for a 30-day trial period. | Implement automated integration tests …",
-      "t": 1788585981699,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "demand_validator",
-      "text": "JobMate needs a fully integrated end-to-end workflow that feels like one cohesive platform. This is the single most important quality requirement for shipping at this stage.",
-      "t": 1788585965254,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788595185577,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
+      "t": 1788595185577,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship TenantGuard (score 5/8, attempt 3/3)",
+      "t": 1788595184269,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for TenantGuard exited (1)",
+      "t": 1788595183641,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: TenantGuard (pass #2)",
+      "t": 1788595183600,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: TenantGuard -> http://localhost:5379",
+      "t": 1788595183599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged TenantGuard → tenantguard.zip (11647 bytes)",
+      "t": 1788595181397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for marketer (611 chars)",
+      "t": 1788595179432,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for TenantGuard",
+      "t": 1788595179432,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: Claude unavailable for marketer (desktop limited until 11:04:53 AM) — trying ChatGPT/free",
@@ -1529,63 +1583,77 @@
       "text": "keyhunter: nvidia needs email verification — reading inbox",
       "t": 1788593340275,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788593339982,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
-      "t": 1788593335693,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788593332690,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788593328698,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up\"}",
-      "t": 1788593324992,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 8 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788593321644,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 0 -> {}",
-      "t": 1788593306413,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788593303283,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"fail\",\"reason\":\"Access denied. Unable to create account.\"}",
-      "t": 1788593292577,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788595185577,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
+      "t": 1788595185577,
+      "type": "event"
+    },
+    {
+      "who": "Data",
+      "text": "TenantGuard is not ready for market because it lacks a working proof of concept, and the AI risk engine it claims to have is unproven. The most important quality requirement is that it must demonstrate a fully functional, end-to-end AI-driven tenant risk scoring system that actually integrates with real data sources — this isn’t optional, it’s the core of what makes the product credible. Without that, it's just another idea on a list.",
+      "t": 1788595184787,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship TenantGuard (score 5/8, attempt 3/3)",
+      "t": 1788595184269,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for TenantGuard exited (1)",
+      "t": 1788595183641,
+      "type": "event"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished TenantGuard (pass 2) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788595183600,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: TenantGuard (pass #2)",
+      "t": 1788595183600,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: TenantGuard -> http://localhost:5379",
+      "t": 1788595183599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged TenantGuard → tenantguard.zip (11647 bytes)",
+      "t": 1788595181397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for marketer (611 chars)",
+      "t": 1788595179432,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for TenantGuard",
+      "t": 1788595179432,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: Claude unavailable for marketer (desktop limited until 11:04:53 AM) — trying ChatGPT/free",
@@ -1603,111 +1671,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788595133218,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788595098022,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for TenantGuard",
-      "t": 1788595098021,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 11:04:53 AM) — trying ChatGPT/free",
-      "t": 1788595096201,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788595096201,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788595096200,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788595096200,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop limited until 11:04:53 AM) — trying ChatGPT/free",
-      "t": 1788595096199,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped TenantGuard to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788595096196,
-      "type": "launch"
-    },
-    {
-      "who": "Chandler",
-      "text": "I agree that a live proof‑of‑concept is non‑negotiable—landlords need to see real credit, criminal, and employment data feed into a risk score, not a mock‑up. I’m not insisting on a runway‑ready UI before that; the core engine has to work end‑to‑end. The single most crucial requirement to ship is a robust, fully‑validated AI risk‑scoring engine that can ingest live applicant data, produce accurate risk scores, and expose a clear audit trail for compliance.",
-      "t": 1788595087651,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship TenantGuard (score 5/8, attempt 2/3)",
-      "t": 1788595084260,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for TenantGuard exited (null)",
-      "t": 1788595082336,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council demands satisfied for TenantGuard",
-      "t": 1788595082306,
-      "type": "event"
-    },
-    {
-      "who": "polisher",
-      "text": "Polished TenantGuard (pass 1) — tighter, cleaner, closer to ship-ready.",
-      "t": 1788595082304,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: TenantGuard -> http://localhost:5379",
-      "t": 1788595082304,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: TenantGuard (pass #1)",
-      "t": 1788595082304,
-      "type": "polished"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged TenantGuard → tenantguard.zip (12644 bytes)",
-      "t": 1788595080092,
-      "type": "event"
-    },
-    {
-      "who": "Monica",
-      "text": "TenantGuard requires a fully functional proof of concept that demonstrates its AI-driven risk scoring engine working seamlessly with all integrated checks before we can proceed with further development or polishing the visuals and layout. This is the single most important quality requirement to ensure the product meets customer expectations and delivers value.",
-      "t": 1788595071727,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1753,7 +1716,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 15×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 16×"
     },
     {
       "name": "GitHub Copilot",
@@ -1925,10 +1888,9 @@
     "priority": ""
   },
   "throughput": [
+    0,
+    3,
     5,
-    0,
-    8,
-    0,
     0,
     1,
     0,
@@ -1948,19 +1910,20 @@
     1,
     0,
     0,
-    9,
-    4,
-    18,
-    11,
+    7,
+    5,
+    15,
+    15,
     0,
-    20,
-    4
+    10,
+    14,
+    13
   ],
   "load": {
     "loadavg": [
-      0.73,
-      0.55,
-      0.41
+      0.34,
+      0.47,
+      0.39
     ],
     "ramPct": 61,
     "cpus": 12
@@ -1996,24 +1959,24 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "polisher": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
+        "model": "chatgpt(free)",
+        "tier": "free"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2734,7 +2697,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 21,
+        "utilPct": 34,
         "vramPct": 80
       },
       {
@@ -2752,7 +2715,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 2,
         "vramPct": 92
       }
     ],
