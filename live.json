@@ -1,5 +1,5 @@
 {
-  "generated": 1788633820008,
+  "generated": 1788633864957,
   "status": "running",
   "stats": {
     "products": 135,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "EXTREME elevation: build for PetDesk MT is stuck (attempt 2) — trying a stronger model",
+      "t": 1788633834867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PetDesk MT",
+      "t": 1788633834865,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788633824890,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetDesk MT",
+      "t": 1788633824865,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788633816413,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "designer improved UI for PersonalForge MT",
       "t": 1788631813583,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> PersonalForge MT",
-      "t": 1788631775152,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for PersonalForge MT",
-      "t": 1788631767388,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PersonalForge MT",
-      "t": 1788631765162,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788631760187,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for PetDesk MT is stuck (attempt 2) — trying a stronger model",
+      "t": 1788633834867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PetDesk MT",
+      "t": 1788633834865,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788633824890,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetDesk MT",
+      "t": 1788633824865,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
@@ -1815,17 +1839,16 @@
     "priority": "Micro-farmer digital marketplace (end-to-end platform for publishing, selling, and shipping produce)"
   },
   "throughput": [
-    10,
+    11,
+    0,
+    32,
+    13,
+    7,
+    0,
     1,
-    6,
-    27,
-    17,
+    0,
     2,
-    0,
-    1,
-    0,
-    6,
-    3,
+    7,
     0,
     0,
     1,
@@ -1844,15 +1867,16 @@
     0,
     0,
     1,
-    2
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.18,
-      0.24
+      0.33,
+      0.22,
+      0.25
     ],
-    "ramPct": 68,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2595,7 +2619,7 @@
     {
       "name": "PetDesk MT",
       "niche": "pet care & ownership",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2624,8 +2648,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 50
+        "utilPct": 42,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2642,11 +2666,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 86,
-    "jobsProcessed": 153
+    "jobsProcessed": 154
   }
 }
