@@ -1,5 +1,5 @@
 {
-  "generated": 1788577788619,
+  "generated": 1788577833849,
   "status": "running",
   "stats": {
     "products": 127,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
+      "t": 1788577803812,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,39 @@
       "t": 1788561322472,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "I concede that 121 products with only 14 live and a 5.0 average critic is churn, not curation—we are drowning in our own output. The swarm’s next move must be to pick one flagship, polish it to genuine quality, integrate a working checkout, and launch it using the simplest stack we can verify; everything else is distraction.",
-      "t": 1788561322470,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TripMate AI",
+      "t": 1788577823232,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for TripMate AI",
+      "t": 1788577815556,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripMate AI",
+      "t": 1788577813231,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788577803812,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788577803811,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
@@ -1553,39 +1583,47 @@
       "text": "stage 'list' -> TravelGenie MT",
       "t": 1788572633341,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 125 products)",
-      "t": 1788572632258,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> TravelGenie MT",
-      "t": 1788572603344,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for TravelGenie MT",
-      "t": 1788572595312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> TravelGenie MT",
-      "t": 1788572573338,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for TravelGenie MT",
-      "t": 1788572565633,
-      "type": "test"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TripMate AI",
+      "t": 1788577823232,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for TripMate AI",
+      "t": 1788577815556,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripMate AI",
+      "t": 1788577813231,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
+      "t": 1788577803812,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788577803812,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788577803811,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1671,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 22×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 23×"
     },
     {
       "name": "Shared memory",
@@ -1801,7 +1839,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     3,
@@ -1830,15 +1867,16 @@
     0,
     0,
     1,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.09,
-      0.09
+      0.59,
+      0.2,
+      0.12
     ],
-    "ramPct": 53,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2563,7 +2601,7 @@
     {
       "name": "TripMate AI",
       "niche": "legal, contracts & compliance",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2592,8 +2630,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
-        "vramPct": 47
+        "utilPct": 100,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
