@@ -1,5 +1,5 @@
 {
-  "generated": 1788582468878,
+  "generated": 1788582513790,
   "status": "running",
   "stats": {
     "products": 129,
@@ -1585,14 +1585,7 @@
       "type": "vault"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> JobMate",
-      "t": 1788582403314,
-      "type": "building"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1808,7 +1801,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1818,32 +1810,33 @@
     1,
     0,
     6,
+    5,
     11,
-    6,
-    6,
-    1,
+    3,
+    5,
     11,
     16,
     1,
     0,
     0,
     1,
-    17,
-    11,
-    9,
+    14,
+    8,
+    15,
     0,
     15,
-    23,
-    9,
+    21,
     11,
-    8,
-    12
+    11,
+    3,
+    17,
+    7
   ],
   "load": {
     "loadavg": [
-      1.1,
-      0.7,
-      0.43
+      0.81,
+      0.69,
+      0.44
     ],
     "ramPct": 69,
     "cpus": 12
@@ -1855,19 +1848,19 @@
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
-      },
-      "coder": {
         "model": "nemotron-3.5-lightning-free",
         "tier": "free"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security": {
@@ -2599,7 +2592,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
+        "utilPct": 41,
         "vramPct": 80
       },
       {
@@ -2615,10 +2608,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 58
+        "busy": true,
+        "warm": false,
+        "utilPct": 23,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
