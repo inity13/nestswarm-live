@@ -1,5 +1,5 @@
 {
-  "generated": 1788620008260,
+  "generated": 1788620050763,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788620045419,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788620029325,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3682MB free)",
+      "t": 1788620029323,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788620026609,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788619846291,
       "type": "event"
@@ -1559,33 +1583,34 @@
       "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠙ \u001b[K\u001b[?25h\u001b[?2026l",
       "t": 1788616405705,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠋ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1788616405603,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788616405361,
+      "t": 1788620045419,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model qwen2.5-coder:7b not found — pulling automatically",
-      "t": 1788616405325,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788620029325,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788616404973,
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3682MB free)",
+      "t": 1788620029323,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788620026609,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1826,6 @@
     "priority": "The single product from the 20 listed that scores highest on verifiable utility, market demand, and readiness for checkout"
   },
   "throughput": [
-    5,
     0,
     0,
     1,
@@ -1830,15 +1854,16 @@
     0,
     1,
     0,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.12,
-      2.67
+      0.22,
+      0.15,
+      2.57
     ],
-    "ramPct": 51,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2625,9 +2650,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
