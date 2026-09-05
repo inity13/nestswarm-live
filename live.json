@@ -1,5 +1,5 @@
 {
-  "generated": 1788642548557,
+  "generated": 1788642593549,
   "status": "running",
   "stats": {
     "products": 138,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for MindCue — 2 files, working node app. Handing off to test.",
+      "t": 1788642578045,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for MindCue — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788632218045,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "PersonalForge MT promises to be a creator‑centric branding assistant, but without a functional demo of its core content‑curation engine it’s just another buzzword. I demand the team deliver a working prototype that pulls a user’s public social feeds, auto‑generates a weekly content calendar, and integrates a Stripe‑based checkout for paid plans.",
-      "t": 1788632216721,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "tests passed for MindCue",
+      "t": 1788642585891,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MindCue",
+      "t": 1788642583574,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788642578044,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788642578044,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
@@ -1559,33 +1583,40 @@
       "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
       "t": 1788636841483,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "tests passed for MindCue",
+      "t": 1788642585891,
+      "type": "test"
     },
     {
       "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788636841466,
-      "type": "event"
+      "text": "stage 'test' -> MindCue",
+      "t": 1788642583574,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for MindCue — 2 files, working node app. Handing off to test.",
+      "t": 1788642578045,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788636841464,
+      "t": 1788642578044,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788636812743,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788642578044,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788636812743,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
@@ -1640,7 +1671,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 36×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 37×"
     },
     {
       "name": "Shared memory",
@@ -1809,11 +1840,10 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
-    6,
-    1,
+    5,
+    2,
     0,
     0,
     1,
@@ -1825,11 +1855,8 @@
     3,
     0,
     0,
-    7,
-    0,
-    0,
-    1,
-    0,
+    3,
+    4,
     0,
     1,
     0,
@@ -1837,12 +1864,16 @@
     1,
     0,
     0,
-    1
+    1,
+    0,
+    0,
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.2,
+      0.19,
+      0.19,
       0.12
     ],
     "ramPct": 54,
@@ -1859,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2588,7 +2619,7 @@
     {
       "name": "MindCue",
       "niche": "real estate, renting & property",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2617,7 +2648,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 36,
         "vramPct": 50
       },
       {
