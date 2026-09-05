@@ -1,5 +1,5 @@
 {
-  "generated": 1788581568867,
+  "generated": 1788581613740,
   "status": "running",
   "stats": {
     "products": 128,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "This \"product\" is a placeholder with no direction, no value proposition, and no audience —",
-        "t": 1788578801161
+        "text": "SkillMap needs to ship with a working, testable demo that proves the automated scheduling ",
+        "t": 1788581598623
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "SkillMap needs to ship with a working, testable demo that proves the automated scheduling and invoicing workflows function end-to-end—no half-baked UIs or stubbed APIs. I demand we build and launch a minimal viable product (MVP) that actually processes a real job from booking to payment, including a live Stripe test checkout, before expanding features. // FILE: README.md ```markdown # SkillMap - Local Service Business Automation **Automated scheduling, invoicing, and client ratings for local service providers.** ## Features - Automated job scheduling and reminders - Integrated invoicing and …",
+      "t": 1788581598623,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
@@ -1094,16 +1101,81 @@
       "t": 1788567616285,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (5) recorded for TripSmart: Define a single, concrete problem this product solves for a specific user (e.g., 'helps diabetic patients track blood sugar levels and medication adherence without manual input') | Specify exactly what 'seamless integration' means in technical terms (e.g., 'connects to Fitbit via OAuth 2.0 and Apple Health via HKHealthStore API') | Deliver a working prototype that demonstrates one core health data flow (e.g., real-time symptom logging with automated alerts) | Ensure the product ships as a single executable or static file that works on Windows, Mac, …",
-      "t": 1788567616283,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788581600675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788581600675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788581600674,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider claude not found",
+      "t": 1788581585176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788581585176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — provider claude not found; provider chatgpt not found",
+      "t": 1788581585176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 2/3)",
+      "t": 1788581583287,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (66288) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788581582589,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SkillMap → skillmap.zip (12658 bytes)",
+      "t": 1788581581894,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council demands satisfied for SkillMap",
+      "t": 1788581581859,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for SkillMap: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788581581858,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66281) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581572566,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit 1): <3>WSL (66261) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
@@ -1511,81 +1583,88 @@
       "text": "conductor: 3 operational improvement(s) recommended",
       "t": 1788578676265,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788578676218,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-live-readiness",
-      "t": 1788578676102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788578676102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788578676101,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788578676101,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness",
-      "t": 1788578676099,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788578676097,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> SkillMap",
-      "t": 1788578653262,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: SkillMap [study, learning & memory aids]",
-      "t": 1788578649721,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788578638491,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: study, learning & memory aids",
-      "t": 1788578638487,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher brief: Local Service Gig Worker Management Platform (willingness: high) — 3 tool ideas",
-      "t": 1788578638376,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788581600675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788581600675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788581600674,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "SkillMap needs to ship with a working, testable demo that proves the automated scheduling and invoicing workflows function end-to-end—no half-baked UIs or stubbed APIs. I demand we build and launch a minimal viable product (MVP) that actually processes a real job from booking to payment, including a live Stripe test checkout, before expanding features. // FILE: README.md ```markdown # SkillMap - Local Service Business Automation **Automated scheduling, invoicing, and client ratings for local service providers.** ## Features - Automated job scheduling and reminders - Integrated invoicing and …",
+      "t": 1788581598623,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider claude not found",
+      "t": 1788581585176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788581585176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — provider claude not found; provider chatgpt not found",
+      "t": 1788581585176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 2/3)",
+      "t": 1788581583287,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (66288) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788581582589,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SkillMap → skillmap.zip (12658 bytes)",
+      "t": 1788581581894,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council demands satisfied for SkillMap",
+      "t": 1788581581859,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for SkillMap: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788581581858,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66281) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581572566,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit 1): <3>WSL (66261) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
@@ -1639,12 +1718,6 @@
       "text": "vault: synced (1 notes updated)",
       "t": 1788581523855,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788581523260,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1862,7 +1935,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1873,8 +1945,8 @@
     0,
     2,
     1,
-    4,
-    2,
+    0,
+    6,
     1,
     0,
     0,
@@ -1887,19 +1959,20 @@
     1,
     0,
     6,
+    5,
     11,
-    6,
-    6,
-    1,
-    11
+    3,
+    5,
+    11,
+    16
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.25,
-      0.18
+      0.08,
+      0.21,
+      0.17
     ],
-    "ramPct": 53,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1913,8 +1986,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2671,7 +2744,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
+        "utilPct": 43,
         "vramPct": 80
       },
       {
@@ -2689,8 +2762,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 73,
-        "vramPct": 58
+        "utilPct": 24,
+        "vramPct": 50
       }
     ],
     "selfHostedInferencePct": 83,
