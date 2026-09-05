@@ -1,5 +1,5 @@
 {
-  "generated": 1788567750165,
+  "generated": 1788567795184,
   "status": "running",
   "stats": {
     "products": 124,
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "PropertyPro must deliver a fully functional AI module that automatically optimizes listing",
         "t": 1788567661700
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I concur that a fully functional AI module is essential for PropertyPro's launch. This com",
         "t": 1788567663768
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "PropertyPro needs a fully functional AI module that automatically optimizes listings and g",
         "t": 1788567665726
@@ -158,7 +158,7 @@
       "color": "#7b5cff",
       "avatar": "avatars/obrien.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "PropertyPro can't launch until we have a fully functional AI module that reliably optimize",
         "t": 1788567667391
@@ -170,7 +170,7 @@
       "color": "#ffb454",
       "avatar": "avatars/hoshi.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**To all Nest Concord members:** The consensus is clear: PropertyPro's flagship product mu",
         "t": 1788567669519
@@ -209,7 +209,7 @@
       "color": "#e9da7c",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "PropertyPro is promising but needs a fully functional AI module that automatically optimiz",
         "t": 1788567671253
@@ -221,7 +221,7 @@
       "color": "#e0957b",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Sure, AI and UI polish are non‑negotiable, but we should focus on delivering a fully produ",
         "t": 1788567675909
@@ -233,7 +233,7 @@
       "color": "#e36db8",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I agree that a production‑ready AI, a polished UI, and airtight security are non‑negotiabl",
         "t": 1788567678950
@@ -245,7 +245,7 @@
       "color": "#bb6adc",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "The SINGLE most important quality requirement for PropertyPro to ship is a fully functiona",
         "t": 1788567680684
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788567754339,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2460MB free)",
+      "t": 1788567754338,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
       "t": 1788567743161,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "EXTREME elevation: build for PropertyPro is stuck (attempt 2) — trying a stronger model",
       "t": 1788566057333,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788566047364,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PropertyPro",
-      "t": 1788566047334,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788567754339,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2460MB free)",
+      "t": 1788567754338,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
@@ -1615,75 +1627,6 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788567723700,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 4 quality demands recorded for PropertyPro",
-      "t": 1788567696050,
-      "type": "event"
-    },
-    {
-      "who": "demand_validator",
-      "text": "The SINGLE most important quality requirement for PropertyPro to ship is a fully functional AI module that delivers real value. Every other feature is secondary until this core functionality is in place.",
-      "t": 1788567680684,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "I agree that a production‑ready AI, a polished UI, and airtight security are non‑negotiable, but we can slice the AI to a minimal viable model that auto‑generates SEO‑friendly descriptions before we add advanced analytics. The single quality requirement that must be met for launch is that the AI must produce accurate, high‑ranking copy with an 85 %+ relevance score as validated by live A/B testing.",
-      "t": 1788567678950,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "Sure, AI and UI polish are non‑negotiable, but we should focus on delivering a fully production‑ready AI module that auto‑optimizes listings and...delivers measurable value. Without it, PropertyPro will remain stuck in prototype limbo and fail to meet its potential.",
-      "t": 1788567675909,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "PropertyPro is promising but needs a fully functional AI module that automatically optimizes listings to be viable for market launch. The SINGLE most important quality requirement for PropertyPro to ship is a working AI component that delivers real value through advanced listing optimization.",
-      "t": 1788567671253,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "**To all Nest Concord members:** The consensus is clear: PropertyPro's flagship product must deliver a fully functional AI module that automatically optimizes listings and generates SEO-friendly descriptions to launch successfully. This requirement underpins every other aspect of its development. Without it, PropertyPro remains a hollow shell on the market. Hoshi",
-      "t": 1788567669519,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "PropertyPro can't launch until we have a fully functional AI module that reliably optimizes listings and generates SEO-friendly descriptions. The SINGLE most important quality requirement is a production-ready AI system that delivers value to users.",
-      "t": 1788567667391,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "PropertyPro needs a fully functional AI module that automatically optimizes listings and generates SEO-friendly descriptions before it can launch. The SINGLE most important quality requirement is a production-ready AI model that delivers measurable value through automated optimization and enhanced search engine performance. Only once this core feature is in place can PropertyPro be considered ready for the market.",
-      "t": 1788567665726,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "I concur that a fully functional AI module is essential for PropertyPro's launch. This component must deliver on its promise of automating listing optimization and generating SEO-friendly descriptions to ensure the product meets market demands. The SINGLE most important quality requirement for PropertyPro to ship is a **fully functional AI module** that reliably optimizes listings and generates SEO-optimized content.",
-      "t": 1788567663768,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "PropertyPro must deliver a fully functional AI module that automatically optimizes listings and generates SEO-friendly descriptions before it can launch. Without this core feature, PropertyPro remains just a wish list, unable to compete or deliver value in the market. Let's focus on building a product our customers will love by launching with quality at its heart.",
-      "t": 1788567661700,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1901,44 +1844,44 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
+    4,
     2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    13,
-    7,
-    2,
     5,
-    11,
-    11,
-    0,
-    7,
+    16,
     1,
+    1,
+    16,
+    7,
+    4,
+    7,
     0,
-    15,
-    19,
+    1,
     11,
+    17,
+    14,
     12,
-    8
+    10,
+    3
   ],
   "load": {
     "loadavg": [
-      1.22,
-      0.71,
-      0.44
+      0.82,
+      0.69,
+      0.45
     ],
-    "ramPct": 67,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2678,10 +2621,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 4,
-        "vramPct": 15
+        "utilPct": 35,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
