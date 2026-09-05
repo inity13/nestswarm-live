@@ -1,5 +1,5 @@
 {
-  "generated": 1788594799674,
+  "generated": 1788594844692,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> TenantGuard",
+      "t": 1788594844235,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TenantGuard",
+      "t": 1788594834514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'design' -> TenantGuard",
       "t": 1788594794237,
       "type": "building"
@@ -1571,21 +1583,21 @@
       "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
       "t": 1788593165227,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 2 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
-      "t": 1788593164515,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788593153296,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TenantGuard",
+      "t": 1788594844235,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TenantGuard",
+      "t": 1788594834514,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> TenantGuard",
@@ -1857,16 +1869,15 @@
     "priority": ""
   },
   "throughput": [
-    17,
-    22,
     18,
-    14,
+    24,
+    11,
     40,
-    44,
+    36,
+    19,
+    0,
+    3,
     5,
-    0,
-    8,
-    0,
     0,
     1,
     0,
@@ -1886,15 +1897,16 @@
     1,
     0,
     0,
-    9
+    7,
+    5
   ],
   "load": {
     "loadavg": [
-      0.79,
-      0.36,
-      0.32
+      1.07,
+      0.51,
+      0.37
     ],
-    "ramPct": 50,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -1912,7 +1924,7 @@
         "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
@@ -2619,7 +2631,7 @@
     {
       "name": "TenantGuard",
       "niche": "privacy, security & personal data",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2646,10 +2658,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 26,
-        "vramPct": 17
+        "busy": false,
+        "warm": true,
+        "utilPct": 6,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2664,8 +2676,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
