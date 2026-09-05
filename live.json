@@ -1,5 +1,5 @@
 {
-  "generated": 1788643538560,
+  "generated": 1788643583589,
   "status": "running",
   "stats": {
     "products": 139,
@@ -74,7 +74,7 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue’s concept is solid, but it’s not a product until it works—this isn’t about hype, i",
         "t": 1788643460135
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue is not a concept—it’s a promise. It must ship a working prototype that actually in",
         "t": 1788643463084
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Sure, we must ship a tangible spaced‑repetition engine before polishing the UI, but we don",
         "t": 1788643485576
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "MindCue needs to ship a working prototype that actually integrates spaced repetition befor",
         "t": 1788643487471
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "You’re right that a functioning spaced‑repetition engine trumps any UI polish; that’s what",
         "t": 1788643491520
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for MindCue.",
+      "t": 1788643564593,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "swarm",
+      "text": "Council demands (4) recorded for MindCue: functional spaced-repetition engine that adapts flashcard difficulty in real-time based on user recall performance | voice-to-text integration that converts uploaded study materials into structured, searchable key-concept flashcards | end-to-end core loop: material upload → key-concept extraction → spaced-repetition scheduling → recall tracking → difficulty adaptation | working prototype demonstrating the full core loop with at least one integrated study material type (e.g., PDF) and measurable recall tracking",
+      "t": 1788643564589,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "demand_validator",
       "text": "I agree that a working spaced-repetition core is non-negotiable, yet we must not lose sight of the end goal: delivering value to our customers. MindCue needs to ship a fully functional prototype that integrates spaced repetition, before we can even consider polishing its user interface or marketing it effectively.",
@@ -1087,23 +1101,15 @@
       "t": 1788635084586,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "The PetDesk MT concept shows promise but needs its UI polished to be user-friendly and professional. The team must deliver a fully functional and visually appealing UI by next week or re-evaluate the flagship product approach.",
-      "t": 1788635058377,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "PetDesk MT must be a single dashboard for pet owners to book vet visits, set medication alerts, and store health records—no more, no lessWe need to be concise, elegant, precise, with wit. Let's deliver.PetDesk MT is the one‑stop hub where pet owners effortlessly book vet appointments, receive automated medication reminders, and keep every health record in a tidy, searchable archive. **Demand:** Deliver a fully functional, polished UI that proves the booking flow, alert system, and record storage work flawlessly",
-      "t": 1788635056590,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "council: 4 quality demands recorded for MindCue",
+      "t": 1788643564592,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1577,15 +1583,15 @@
       "text": "tests passed for MindCue",
       "t": 1788642585891,
       "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> MindCue",
-      "t": 1788642583574,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "council: 4 quality demands recorded for MindCue",
+      "t": 1788643564592,
+      "type": "event"
+    },
     {
       "who": "demand_validator",
       "text": "I agree that a working spaced-repetition core is non-negotiable, yet we must not lose sight of the end goal: delivering value to our customers. MindCue needs to ship a fully functional prototype that integrates spaced repetition, before we can even consider polishing its user interface or marketing it effectively.",
@@ -1618,53 +1624,6 @@
       "who": "O'Brien",
       "text": "**MindCue needs to ship a working prototype that actually integrates spaced repetition before polishing the UI or marketing.** **The single most important quality requirement is a fully functional AI-powered spaced repetition engine that adapts recall difficulty based on user performance and integrates with uploaded study materials. Without this, MindCue cannot deliver on its core promise and will not be sellable to customers.**",
       "t": 1788643494082,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "You’re right that a functioning spaced‑repetition engine trumps any UI polish; that’s what stops the project from being “live.” The single quality the product must meet is a reliably adaptive recall‑difficulty algorithm that delivers accurate spaced‑repetition schedules in real time.",
-      "t": 1788643491520,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "MindCue needs to ship a working prototype that actually integrates spaced repetition before we can proceed with further development. The most important quality requirement is ensuring the AI-powered flashcard system functions securely and reliably.",
-      "t": 1788643487471,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "Sure, we must ship a tangible spaced‑repetition engine before polishing the UI, but we don’t need a chrome‑laden design yet; the single most vital quality is a reliable, data‑driven spaced‑repetition core that adapts to user performance in real time.",
-      "t": 1788643485576,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788643464121,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2528MB free)",
-      "t": 1788643464120,
-      "type": "bench"
-    },
-    {
-      "who": "Worf",
-      "text": "MindCue is not a concept—it’s a promise. It must ship a working prototype that actually integrates spaced repetition, or it's just another idea in a sea of half-baked tools. The single most important quality requirement: it must prove its core AI-driven recall system works before we market it.",
-      "t": 1788643463084,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "MindCue’s concept is solid, but it’s not a product until it works—this isn’t about hype, it’s about proof. The single most important requirement to ship? It must deliver a working spaced repetition system that actually adapts and improves recall. No ifs, ands, or AI promises.",
-      "t": 1788643460135,
       "system": false,
       "type": "chat"
     }
@@ -1884,7 +1843,6 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    0,
     7,
     0,
     0,
@@ -1896,30 +1854,31 @@
     0,
     1,
     0,
+    0,
+    1,
+    6,
+    8,
+    15,
+    5,
+    23,
+    8,
     0,
     4,
     3,
-    13,
-    12,
-    7,
-    26,
-    1,
-    1,
-    5,
-    1,
     0,
     2,
-    16,
-    22,
-    5,
-    7,
-    10
+    13,
+    17,
+    10,
+    8,
+    12,
+    2
   ],
   "load": {
     "loadavg": [
-      1.12,
-      0.88,
-      0.51
+      0.62,
+      0.78,
+      0.49
     ],
     "ramPct": 77,
     "cpus": 12
@@ -1963,8 +1922,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2695,7 +2654,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
+        "utilPct": 26,
         "vramPct": 79
       },
       {
@@ -2714,7 +2673,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 58
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
