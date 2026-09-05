@@ -1,5 +1,5 @@
 {
-  "generated": 1788595924768,
+  "generated": 1788595969804,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788595925539,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
+      "t": 1788595925539,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788595924133,
       "type": "event"
@@ -1571,31 +1583,25 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788593873287,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788593692852,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788593526485,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788595924133,
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788595925539,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788595852984,
+      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
+      "t": 1788595925539,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788595924133,
       "type": "event"
     }
   ],
@@ -1823,18 +1829,18 @@
     0,
     1,
     0,
-    0,
+    2,
     7,
-    5,
-    15,
-    15,
-    0,
-    10,
     14,
+    18,
+    1,
+    1,
+    19,
+    17,
+    0,
+    16,
     13,
     0,
-    22,
-    7,
     0,
     1,
     0,
@@ -1843,13 +1849,13 @@
     0,
     0,
     1,
-    1
+    4
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.15,
-      0.25
+      0.1,
+      0.14,
+      0.24
     ],
     "ramPct": 65,
     "cpus": 12
@@ -2623,8 +2629,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
-        "vramPct": 80
+        "utilPct": 40,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2639,8 +2645,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
