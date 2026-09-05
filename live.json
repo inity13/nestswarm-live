@@ -1,5 +1,5 @@
 {
-  "generated": 1788574548692,
+  "generated": 1788574593887,
   "status": "running",
   "stats": {
     "products": 126,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PetCare AI",
+      "t": 1788574563303,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for PetCare AI is stuck (attempt 2) — trying a stronger model",
+      "t": 1788574563303,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788574553391,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetCare AI",
+      "t": 1788574553303,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788574547100,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "keyhunter: novitaai entering verification code from inbox",
       "t": 1788571645800,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788571640929,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
-      "t": 1788571636903,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788571633389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788571628624,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> PetCare AI",
+      "t": 1788574563303,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for PetCare AI is stuck (attempt 2) — trying a stronger model",
+      "t": 1788574563303,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788574553391,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetCare AI",
+      "t": 1788574553303,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for PetCare AI — 2 files, working node app. Handing off to test.",
@@ -1815,9 +1839,8 @@
     "priority": ""
   },
   "throughput": [
-    10,
     7,
-    4,
+    7,
     0,
     1,
     0,
@@ -1844,13 +1867,14 @@
     0,
     0,
     1,
-    2
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.06,
-      0.25
+      0.01,
+      0.05,
+      0.24
     ],
     "ramPct": 44,
     "cpus": 12
@@ -2577,7 +2601,7 @@
     {
       "name": "PetCare AI",
       "niche": "pet care & ownership",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2624,11 +2648,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 126
+    "jobsProcessed": 127
   }
 }
