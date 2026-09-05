@@ -1,5 +1,5 @@
 {
-  "generated": 1788625451018,
+  "generated": 1788625496197,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1820,7 +1820,6 @@
     "priority": "The single product from the 20 listed that scores highest on verifiable utility, market demand, and readiness for checkout"
   },
   "throughput": [
-    2,
     0,
     1,
     0,
@@ -1835,8 +1834,8 @@
     0,
     0,
     1,
-    2,
-    0,
+    1,
+    1,
     1,
     0,
     0,
@@ -1848,16 +1847,17 @@
     0,
     1,
     0,
-    2,
-    3
+    1,
+    4,
+    2
   ],
   "load": {
     "loadavg": [
-      0.27,
-      0.14,
-      0.1
+      0.24,
+      0.15,
+      0.11
     ],
-    "ramPct": 53,
+    "ramPct": 47,
     "cpus": 12
   },
   "brain": {
@@ -1871,8 +1871,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2645,10 +2645,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 10,
-        "vramPct": 50
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2663,9 +2663,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 36,
         "vramPct": 92
       }
     ],
