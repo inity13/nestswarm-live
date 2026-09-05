@@ -1,5 +1,5 @@
 {
-  "generated": 1788589309329,
+  "generated": 1788589354178,
   "status": "running",
   "stats": {
     "products": 131,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788589350033,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2679MB free)",
+      "t": 1788589350030,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1788589324285,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 131 products)",
       "t": 1788589192565,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "packaged JobMate → jobmate.zip (13339 bytes)",
       "t": 1788585768926,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for conductor (275 chars)",
-      "t": 1788585764003,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1788585752030,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 3 zen free models",
-      "t": 1788585745318,
-      "type": "scout"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788589350033,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2679MB free)",
+      "t": 1788589350030,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1788589324285,
+      "type": "vault"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1820,6 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    5,
     1,
     0,
     0,
@@ -1813,8 +1831,8 @@
     0,
     1,
     0,
-    4,
-    3,
+    0,
+    7,
     0,
     0,
     1,
@@ -1830,15 +1848,16 @@
     7,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.19,
-      0.23
+      0.69,
+      0.32,
+      0.27
     ],
-    "ramPct": 68,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2594,8 +2613,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 80
+        "utilPct": 18,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
