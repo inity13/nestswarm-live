@@ -1,5 +1,5 @@
 {
-  "generated": 1788643178568,
+  "generated": 1788643223594,
   "status": "running",
   "stats": {
     "products": 138,
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "MindCue aims for elegance and functionality. The team needs to deliver a polished prototyp",
-        "t": 1788642688486
+        "text": "We should mention that we acknowledge the need for functional prototype and that the core ",
+        "t": 1788643187367
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "We should mention that we acknowledge the need for functional prototype and that the core features must be ready, but we push back that shipping before the UI ismonarchly polished will result in a subpar user experience that could harm MindCue's reputation. The most important quality requirement for MindCue to ship is a **polished, user-friendly interface** that makes full use of modern web design principles, ensuring seamless interaction and a visually appealing layout. This will not only improve user satisfaction but also increase the likelihood of positive reviews and organic growth.",
+      "t": 1788643187367,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "MindCue needs to ship a working prototype that actually integrates spaced repetition with user performance data—no fluff, no fake demos. The single most important quality requirement? It must have a functioning flashcard system that adapts difficulty in real-time based on user recall, or it's not shipping.",
@@ -1094,16 +1101,15 @@
       "t": 1788633816413,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
-      "t": 1788633047823,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop limited until 12:21:41 AM) — trying ChatGPT/free",
+      "t": 1788643187869,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
@@ -1577,15 +1583,23 @@
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
       "t": 1788640166589,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1788640166589,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop limited until 12:21:41 AM) — trying ChatGPT/free",
+      "t": 1788643187869,
+      "type": "event"
+    },
+    {
+      "who": "Monica",
+      "text": "We should mention that we acknowledge the need for functional prototype and that the core features must be ready, but we push back that shipping before the UI ismonarchly polished will result in a subpar user experience that could harm MindCue's reputation. The most important quality requirement for MindCue to ship is a **polished, user-friendly interface** that makes full use of modern web design principles, ensuring seamless interaction and a visually appealing layout. This will not only improve user satisfaction but also increase the likelihood of positive reviews and organic growth.",
+      "t": 1788643187367,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1815,6 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1819,26 +1832,27 @@
     0,
     1,
     0,
+    0,
+    1,
+    6,
+    8,
+    15,
+    5,
+    23,
+    8,
     0,
     4,
     3,
-    13,
-    12,
-    7,
-    26,
-    1,
-    1,
-    5,
-    1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.21,
-      0.22
+      0.08,
+      0.19,
+      0.21
     ],
-    "ramPct": 65,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1856,7 +1870,7 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2628,8 +2642,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 78
+        "utilPct": 46,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2646,7 +2660,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 4,
+        "utilPct": 44,
         "vramPct": 92
       }
     ],
