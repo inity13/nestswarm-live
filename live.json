@@ -1,5 +1,5 @@
 {
-  "generated": 1788570990019,
+  "generated": 1788571034948,
   "status": "running",
   "stats": {
     "products": 125,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TravelGenie MT — 2 files, working node app. Handing off to test.",
+      "t": 1788570991568,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788560943815,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
-      "t": 1788560937003,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TravelGenie MT",
+      "t": 1788571017156,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788571008706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TravelGenie MT",
+      "t": 1788570997230,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788570991568,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 125 products)",
@@ -1559,33 +1583,40 @@
       "text": "ideated: TripSmart [local services & gig economy]",
       "t": 1788567549822,
       "type": "ideated"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "idea duplicate (TripMate); re-ideating in a fresh niche",
-      "t": 1788567547282,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (TripMate); re-ideating in a fresh niche",
-      "t": 1788567544364,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788567527865,
+      "text": "stage 'build' -> TravelGenie MT",
+      "t": 1788571017156,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "new build started (ideating) — niche: legal, contracts & compliance",
-      "t": 1788567527861,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788571008706,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TravelGenie MT",
+      "t": 1788570997230,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TravelGenie MT — 2 files, working node app. Handing off to test.",
+      "t": 1788570991568,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788570991568,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 125 products)",
@@ -1808,23 +1839,23 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
+    6,
+    0,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    7,
+    0,
+    0,
+    1,
     0,
     6,
-    1,
+    18,
+    17,
     0,
-    0,
-    3,
-    0,
-    0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    3,
-    7,
-    22,
-    9,
     1,
     0,
     0,
@@ -1832,20 +1863,20 @@
     0,
     0,
     1,
-    0,
-    1,
     1,
     0,
+    1,
     0,
-    1
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.3,
+      0.23,
+      0.28,
       0.31
     ],
-    "ramPct": 72,
+    "ramPct": 74,
     "cpus": 12
   },
   "brain": {
@@ -1859,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -2587,7 +2618,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
+        "utilPct": 37,
         "vramPct": 77
       },
       {
@@ -2603,13 +2634,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 122
+    "jobsProcessed": 123
   }
 }
