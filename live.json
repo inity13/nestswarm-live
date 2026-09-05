@@ -1,5 +1,5 @@
 {
-  "generated": 1788600200482,
+  "generated": 1788600245388,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1788600214599,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788600191209,
       "type": "bench"
@@ -1577,15 +1583,15 @@
       "text": "launch-discipline: TenantGuard storefront LIVE → https://inity13.github.io/[private-repo]/pmto1qtjzrvmo/",
       "t": 1788595290007,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: TenantGuard plateaued at 5/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788595284272,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1788600214599,
+      "type": "trending"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1656,66 +1662,6 @@
       "who": "swarm",
       "text": "revenue: queued Coinbase Commerce for account acquisition",
       "t": 1788600165568,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
-      "t": 1788600150106,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788600150106,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1788600138446,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788600138395,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788600138235,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788600138235,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-live-readiness",
-      "t": 1788600138235,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788600138235,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness",
-      "t": 1788600138234,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788600138233,
       "type": "event"
     }
   ],
@@ -1935,7 +1881,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1944,8 +1889,8 @@
     0,
     1,
     0,
-    1,
-    2,
+    0,
+    3,
     0,
     0,
     1,
@@ -1962,16 +1907,17 @@
     0,
     3,
     0,
-    9,
-    18
+    0,
+    20,
+    9
   ],
   "load": {
     "loadavg": [
-      1.33,
-      0.5,
-      0.23
+      0.98,
+      0.54,
+      0.26
     ],
-    "ramPct": 53,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2033,7 +1979,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2761,8 +2707,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 14,
-        "vramPct": 51
+        "utilPct": 41,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2777,9 +2723,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 85,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 58
       }
     ],
