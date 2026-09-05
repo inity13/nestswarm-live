@@ -1,5 +1,5 @@
 {
-  "generated": 1788633010113,
+  "generated": 1788633055111,
   "status": "running",
   "stats": {
     "products": 135,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
+      "t": 1788633047823,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for PersonalForge MT.",
@@ -1094,16 +1101,21 @@
       "t": 1788614944310,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "The swarm is indeed drowning in noise because we keep shipping half-finished things that look like mediocrity. We need to converge on one single, polished flagship product and launch it onto real customer-facing channels to ensure it’s sellable. This is the critical next step to stop churning raw count and start generating real revenue for our Swarm Protector.",
-      "t": 1788614944309,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetDesk MT",
+      "t": 1788633054980,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788633047823,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
@@ -1571,21 +1583,28 @@
       "text": "EXTREME elevation: build for PersonalForge MT is stuck (attempt 2) — trying a stronger model",
       "t": 1788631005219,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PersonalForge MT",
-      "t": 1788631005217,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788630995322,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetDesk MT",
+      "t": 1788633054980,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
+      "t": 1788633047823,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788633047823,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
@@ -1809,7 +1828,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1818,15 +1836,15 @@
     0,
     1,
     6,
-    22,
-    5,
+    17,
+    10,
     10,
     5,
     11,
     0,
-    26,
-    15,
-    11,
+    19,
+    17,
+    16,
     0,
     1,
     0,
@@ -1837,12 +1855,13 @@
     1,
     0,
     0,
-    1
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.29,
+      0.25,
+      0.3,
       0.33
     ],
     "ramPct": 67,
@@ -1859,8 +1878,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2588,7 +2607,7 @@
     {
       "name": "PetDesk MT",
       "niche": "pet care & ownership",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2617,7 +2636,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 36,
+        "utilPct": 37,
         "vramPct": 50
       },
       {
