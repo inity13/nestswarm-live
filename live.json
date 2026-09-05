@@ -1,5 +1,5 @@
 {
-  "generated": 1788593494442,
+  "generated": 1788593539572,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788593526485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788593526485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788593526485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788593526485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788593524558,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788593523939,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788593513561,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: gemini in cooldown (last attempt 7m ago) — skip",
       "t": 1788593377570,
       "type": "event"
@@ -1523,27 +1565,52 @@
       "text": "keyhunter: openrouter step 6 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
       "t": 1788593031879,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788593012929,
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788593526485,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"#emailAddress-field\",\"value\":\"[email]\"}",
-      "t": 1788593012576,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788593526485,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788593011647,
+      "text": "self-heal: disabled provider groq",
+      "t": 1788593526485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788593526485,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1788593524558,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788593523939,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788593513561,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1761,40 +1828,40 @@
   "throughput": [
     0,
     0,
-    3,
-    6,
-    1,
+    0,
+    2,
     0,
     1,
     9,
     0,
     4,
-    19,
     10,
-    18,
-    14,
-    7,
-    1,
-    0,
-    0,
-    1,
-    0,
-    26,
-    28,
     15,
     20,
+    12,
+    11,
+    1,
+    0,
+    0,
+    1,
+    0,
+    11,
+    35,
     17,
-    32,
-    24,
+    22,
+    18,
+    14,
     40,
-    4,
-    0
+    44,
+    5,
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.51,
-      0.87,
-      0.72
+      0.24,
+      0.75,
+      0.68
     ],
     "ramPct": 65,
     "cpus": 12
@@ -1838,8 +1905,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2550,7 +2617,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 46,
+        "utilPct": 29,
         "vramPct": 79
       },
       {
