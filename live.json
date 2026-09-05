@@ -1,5 +1,5 @@
 {
-  "generated": 1788585394090,
+  "generated": 1788585439076,
   "status": "running",
   "stats": {
     "products": 129,
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "JobMate’s promise is good, but its prototype is a shell with no end‑to‑end demo. Demand th",
         "t": 1788585305715
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree that the swarm must stop flooding the market and instead lock down a single, reven",
-        "t": 1788582540946
+        "text": "JobMate’s fragmented workflow exposes data‑exposure and injection risks; without a unified",
+        "t": 1788585427583
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "JobMate’s fragmented workflow exposes data‑exposure and injection risks; without a unified, secure foundation it cannot safely claim to manage gigs. Require the team to integrate a comprehensive security audit that includes automated static analysis for injection flaws, enforce HTTPS/CSRF protection on all endpoints, and deliver a proof‑of‑concept that all job data is encrypted in transit and at rest before proceeding.",
+      "t": 1788585427583,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Quark",
       "text": "JobMate’s promise is good, but its prototype is a shell with no end‑to‑end demo. Demand that the team ship a fully functional MVP on a free‑tier serverless stack—AWS Lambda + DynamoDB free tier—running the entire job‑life‑cycle (create, message, invoice, rate) and passing a 99 % uptime test for a 30‑day trial period. If that can’t be achieved without incurring spend, the product is dead.",
@@ -1094,16 +1101,15 @@
       "t": 1788578549622,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "TripMate AI is premature in its current form—shipping without functional calendar integration or expense tracking is a critical failure. It must ship with a working, tested calendar sync and expense categorization before any further development. The interface can be polished later, but the core functionality must work first. If it doesn’t, it’s not ready.",
-      "t": 1788578544402,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
+      "t": 1788585413669,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
@@ -1577,21 +1583,21 @@
       "text": "storefront: SkillMap is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtntjhxffac9/",
       "t": 1788582309658,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SkillMap plateaued at 5/8 after 2 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788582303307,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "Quark",
-      "text": "JobMate’s promise is good, but its prototype is a shell with no end‑to‑end demo. Demand that the team ship a fully functional MVP on a free‑tier serverless stack—AWS Lambda + DynamoDB free tier—running the entire job‑life‑cycle (create, message, invoice, rate) and passing a 99 % uptime test for a 30‑day trial period. If that can’t be achieved without incurring spend, the product is dead.",
-      "t": 1788585305715,
+      "who": "Sentinel",
+      "text": "JobMate’s fragmented workflow exposes data‑exposure and injection risks; without a unified, secure foundation it cannot safely claim to manage gigs. Require the team to integrate a comprehensive security audit that includes automated static analysis for injection flaws, enforce HTTPS/CSRF protection on all endpoints, and deliver a proof‑of‑concept that all job data is encrypted in transit and at rest before proceeding.",
+      "t": 1788585427583,
       "system": false,
       "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 129 products)",
+      "t": 1788585413669,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1809,14 +1815,13 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
     0,
-    2,
+    0,
     7,
-    0,
+    2,
     0,
     1,
     0,
@@ -1829,8 +1834,8 @@
     0,
     1,
     6,
-    15,
-    1,
+    12,
+    4,
     5,
     3,
     10,
@@ -1838,12 +1843,13 @@
     13,
     1,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.02,
       0.08,
+      0.09,
       0.09
     ],
     "ramPct": 56,
@@ -2618,7 +2624,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 35,
         "vramPct": 80
       },
       {
@@ -2636,8 +2642,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 5,
-        "vramPct": 92
+        "utilPct": 46,
+        "vramPct": 65
       }
     ],
     "selfHostedInferencePct": 83,
