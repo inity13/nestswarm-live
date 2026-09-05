@@ -1,5 +1,5 @@
 {
-  "generated": 1788578733804,
+  "generated": 1788578778812,
   "status": "running",
   "stats": {
     "products": 128,
@@ -14,10 +14,10 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Guinan<node/nest-node-core/qwen2.5-coder:7b>: I agree that originality is precious and clo",
-        "t": 1788572862483
+        "text": "Guinan<node/nest-node-5090/gpt-oss:20b>: Thank you for your insights, Spock and Scotty. I ",
+        "t": 1788578772869
       }
     },
     {
@@ -26,10 +26,10 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The idea is empty. It must have a clear audience and a single compelling feature that solv",
-        "t": 1788572869571
+        "text": "A product with no name, features, or audience defined is not a starting point — it’s a voi",
+        "t": 1788578757512
       }
     },
     {
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "TripMate AI needs to ship with a working, tested calendar integration and expense tracking",
-        "t": 1788578274541
+        "text": "This \"product\" is a placeholder with no direction, no value proposition, and no clarity on",
+        "t": 1788578770167
       }
     },
     {
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I’m at a loss until TripMate AI is a live, purchasable MVP—calendar sync, expense classifi",
         "t": 1788578685789
@@ -158,7 +158,7 @@
       "color": "#7b5cff",
       "avatar": "avatars/obrien.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "TripMate AI is a critical tool for remote workers but needs immediate focus on functional ",
         "t": 1788578687505
@@ -262,6 +262,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "Guinan",
+      "text": "Guinan<node/nest-node-5090/gpt-oss:20b>: Thank you for your insights, Spock and Scotty. I understand the importance of clear direction and value before diving in. Let's focus on a product that solves an unmet need with originality. The most important quality requirement this product must meet is: A unique selling proposition that genuinely addresses a problem or fulfills a desire that current solutions fall short of, backed by solid user research. Let’s start by identifying the pain point and then crafting something truly different to meet it.",
+      "t": 1788578772869,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "This \"product\" is a placeholder with no direction, no value proposition, and no clarity on what problem it solves. I won't build something undefined — I need a clear product brief with at least one core feature and target audience before I write a line of code. Demand: Define the product’s single most important feature and its primary user persona — that's the minimum viable spec to begin.",
+      "t": 1788578770167,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "A product with no name, features, or audience defined is not a starting point — it’s a void, and I won’t let the swarm build nothing. You must immediately articulate one specific problem for one concrete user and deliver a minimal, testable prototype that solves it, with a verifiable outcome, before any other work begins.",
+      "t": 1788578757512,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "demand_validator",
       "text": "TripMate AI is essential for remote workers but requires immediate focus on functional calendar integration and robust expense tracking to be market-ready. The team must deliver a working MVP with these features before proceeding.",
@@ -1080,30 +1101,15 @@
       "t": 1788566902429,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "PropertyPro needs real AI integration to be viable—right now it’s just a wishlist. I demand that we ship a working MVP with at least one tested AI model (like GPT-3.5 or Claude) for listing optimization, not a mockup or placeholder. No “coming soon” features. If the AI doesn’t work, it doesn’t ship.",
-      "t": 1788566900606,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
-      "t": 1788566897386,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "publisher",
-      "text": "PropertyPro is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
-      "t": 1788566897330,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
+      "t": 1788578752447,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'build' -> SkillMap",
@@ -1577,15 +1583,36 @@
       "text": "designer improved UI for TripMate AI",
       "t": 1788577861877,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
-      "t": 1788577853170,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Guinan",
+      "text": "Guinan<node/nest-node-5090/gpt-oss:20b>: Thank you for your insights, Spock and Scotty. I understand the importance of clear direction and value before diving in. Let's focus on a product that solves an unmet need with originality. The most important quality requirement this product must meet is: A unique selling proposition that genuinely addresses a problem or fulfills a desire that current solutions fall short of, backed by solid user research. Let’s start by identifying the pain point and then crafting something truly different to meet it.",
+      "t": 1788578772869,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "This \"product\" is a placeholder with no direction, no value proposition, and no clarity on what problem it solves. I won't build something undefined — I need a clear product brief with at least one core feature and target audience before I write a line of code. Demand: Define the product’s single most important feature and its primary user persona — that's the minimum viable spec to begin.",
+      "t": 1788578770167,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "A product with no name, features, or audience defined is not a starting point — it’s a void, and I won’t let the swarm build nothing. You must immediately articulate one specific problem for one concrete user and deliver a minimal, testable prototype that solves it, with a verifiable outcome, before any other work begins.",
+      "t": 1788578757512,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
+      "t": 1788578752447,
+      "type": "event"
+    },
     {
       "who": "demand_validator",
       "text": "TripMate AI is essential for remote workers but requires immediate focus on functional calendar integration and robust expense tracking to be market-ready. The team must deliver a working MVP with these features before proceeding.",
@@ -1626,87 +1653,6 @@
       "text": "stage 'build' -> SkillMap",
       "t": 1788578713263,
       "type": "building"
-    },
-    {
-      "who": "O'Brien",
-      "text": "TripMate AI is a critical tool for remote workers but needs immediate focus on functional calendar integration and expense tracking to prove its value. The team must deliver a fully functional MVP with these features before proceeding.",
-      "t": 1788578687505,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "I’m at a loss until TripMate AI is a live, purchasable MVP—calendar sync, expense classification, and a Stripe‑enabled checkout all working on a public URL. The next concrete step is to deploy that MVP on a real domain, create a minimal marketing landing page, and enable live payments so we can grab our first paying customerDeploy the MVP on a public domain (e.g., tripmate.ai), host the minimal landing page, wire Stripe checkout, and run end‑to‑end‑to‑end testing, then launch.",
-      "t": 1788578685789,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1788578676265,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788578676218,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-live-readiness",
-      "t": 1788578676102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788578676102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788578676101,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788578676101,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness",
-      "t": 1788578676099,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788578676097,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> SkillMap",
-      "t": 1788578653262,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: SkillMap — study, learning & memory aids. Let's see if it's worth building.",
-      "t": 1788578649721,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: SkillMap [study, learning & memory aids]",
-      "t": 1788578649721,
-      "type": "ideated"
     }
   ],
   "capabilities": [
@@ -1924,23 +1870,22 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    6,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6,
-    11,
+    2,
     4,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    5,
+    6,
+    10,
     0,
     6,
     11,
@@ -1950,16 +1895,17 @@
     2,
     1,
     0,
-    27,
-    11,
-    7,
-    19
+    12,
+    25,
+    8,
+    14,
+    10
   ],
   "load": {
     "loadavg": [
-      0.27,
-      0.37,
-      0.27
+      0.13,
+      0.32,
+      0.25
     ],
     "ramPct": 55,
     "cpus": 12
@@ -1967,7 +1913,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -2717,7 +2663,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 21,
+        "utilPct": 36,
         "vramPct": 80
       },
       {
@@ -2735,8 +2681,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 61,
-        "vramPct": 58
+        "utilPct": 11,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
