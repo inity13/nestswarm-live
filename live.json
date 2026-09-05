@@ -1,5 +1,5 @@
 {
-  "generated": 1788580488674,
+  "generated": 1788580533731,
   "status": "running",
   "stats": {
     "products": 128,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> SkillMap",
+      "t": 1788580493266,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for SkillMap is stuck (attempt 2) — trying a stronger model",
+      "t": 1788580493266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788580483370,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "packaged TripMate AI → tripmate-ai.zip (14167 bytes)",
       "t": 1788578284501,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for TripMate AI: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788578284452,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
-      "t": 1788578212672,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SkillMap",
+      "t": 1788580493266,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for SkillMap is stuck (attempt 2) — trying a stronger model",
+      "t": 1788580493266,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
@@ -1827,10 +1839,9 @@
     "priority": ""
   },
   "throughput": [
-    8,
-    6,
-    16,
-    3,
+    5,
+    10,
+    10,
     1,
     0,
     0,
@@ -1856,11 +1867,12 @@
     0,
     2,
     1,
-    4
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.23,
+      0.19,
       0.14,
       0.12
     ],
@@ -2620,8 +2632,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 51
+        "utilPct": 35,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2638,11 +2650,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 132
+    "jobsProcessed": 133
   }
 }
