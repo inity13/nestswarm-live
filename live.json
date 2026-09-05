@@ -1,11 +1,11 @@
 {
-  "generated": 1788631795329,
+  "generated": 1788631840296,
   "status": "running",
   "stats": {
     "products": 134,
-    "listed": 7,
+    "listed": 8,
     "agents": 22,
-    "avgScore": "5.5"
+    "avgScore": "5.3"
   },
   "agents": [
     {
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "This idea is thin, but not unsalvageable. I’ll concede that we need a clear problem and au",
-        "t": 1788629510427
+        "text": "PersonalForge MT is a personal branding and content curation tool for creators and profess",
+        "t": 1788631838046
       }
     },
     {
@@ -262,6 +262,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "PersonalForge MT is a personal branding and content curation tool for creators and professionals who want to streamline their online presence. The current stage is conceptual with no working prototype. I demand a working proof-of-concept UI that demonstrates at least one core feature—like importing a portfolio or generating a bio—before we proceed. No placeholders, no mockups. Just something functional that shows real data flow and interaction.",
+      "t": 1788631838046,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788631835169,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "PersonalForge MT is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
+      "t": 1788631835159,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PersonalForge MT — 2 files, working node app. Handing off to test.",
@@ -1080,30 +1101,51 @@
       "t": 1788614944260,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "Absolutely agree that quantity over quality is drowning our market presence. The swarm’s output needs to be refined to stand out. The single most important thing the swarm must do next: finalize and launch a single flagship product with genuine value before moving on to anything else.",
-      "t": 1788603932874,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "I appreciate your insights, team. Quality truly is non-negotiable, and I concur that churning raw counts is not our path forward. However, we cannot afford to overlook the importance of customer feedback and continuous improvement. The single most important thing the swarm must do next is finalize the design and development of our flagship product, ensuring it resonates deeply with our target audience before moving on to additional offerings. This will allow us to deliver exceptional value and build a loyal customer base that drives genuine revenue for the Swarm Protector.",
-      "t": 1788603932873,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "The swarm must focus on refining a single flagship product to excellence before embarking on new initiatives. This ensures we build value rather than noise and earns us true customer loyalty.",
-      "t": 1788603932871,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "packaged PersonalForge MT → personalforge-mt.zip (11736 bytes)",
+      "t": 1788631835344,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788631835168,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: PersonalForge MT @ http://localhost:5381 ($4.99 one-time)",
+      "t": 1788631835159,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: PersonalForge MT -> http://localhost:5381",
+      "t": 1788631835158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> PersonalForge MT",
+      "t": 1788631835149,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> PersonalForge MT",
+      "t": 1788631815154,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PersonalForge MT",
+      "t": 1788631813583,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> PersonalForge MT",
@@ -1541,51 +1583,65 @@
       "text": "conductor created skill: stripe-live-readiness",
       "t": 1788629019447,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788629019447,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788629019444,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788629005363,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788629005343,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 1 zen free models",
-      "t": 1788628950049,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788628945745,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for critic (792 chars)",
-      "t": 1788628938812,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Scotty",
+      "text": "PersonalForge MT is a personal branding and content curation tool for creators and professionals who want to streamline their online presence. The current stage is conceptual with no working prototype. I demand a working proof-of-concept UI that demonstrates at least one core feature—like importing a portfolio or generating a bio—before we proceed. No placeholders, no mockups. Just something functional that shows real data flow and interaction.",
+      "t": 1788631838046,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PersonalForge MT → personalforge-mt.zip (11736 bytes)",
+      "t": 1788631835344,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788631835168,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "PersonalForge MT is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
+      "t": 1788631835159,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: PersonalForge MT @ http://localhost:5381 ($4.99 one-time)",
+      "t": 1788631835159,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: PersonalForge MT -> http://localhost:5381",
+      "t": 1788631835158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> PersonalForge MT",
+      "t": 1788631835149,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> PersonalForge MT",
+      "t": 1788631815154,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PersonalForge MT",
+      "t": 1788631813583,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> PersonalForge MT",
@@ -1621,12 +1677,6 @@
       "who": "swarm",
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
       "t": 1788631760186,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 134 products)",
-      "t": 1788631727307,
       "type": "event"
     }
   ],
@@ -1833,11 +1883,11 @@
     }
   ],
   "ledger": {
-    "total": 646,
+    "total": 647,
     "revenue": 0,
     "effects": 110,
     "boundary": 1,
-    "artifacts": 77,
+    "artifacts": 78,
     "receipts": 0
   },
   "meeting": {
@@ -1847,8 +1897,8 @@
   "throughput": [
     0,
     1,
-    0,
-    6,
+    3,
+    3,
     1,
     0,
     0,
@@ -1860,29 +1910,29 @@
     0,
     3,
     0,
+    4,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    6
+    12
   ],
   "load": {
     "loadavg": [
-      0.29,
-      0.24,
-      0.24
+      0.74,
+      0.35,
+      0.28
     ],
-    "ramPct": 70,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1896,15 +1946,15 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security": {
@@ -1975,7 +2025,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 7,
+      "listed": 8,
       "cap": 20
     }
   },
@@ -2546,6 +2596,13 @@
       "score": 6
     },
     {
+      "name": "PersonalForge MT",
+      "status": "listed",
+      "niche": "personal finance, investing & budgeting",
+      "price": 4.99,
+      "score": 5
+    },
+    {
       "name": "TenantScreenPrime",
       "status": "listed",
       "niche": "parenting & family organizers",
@@ -2614,21 +2671,32 @@
       "niche": "social media, creators & influencer tools",
       "price": 4.99,
       "score": 5
-    },
-    {
-      "name": "TaskMaster Prime",
-      "status": "archived",
-      "niche": "real estate, renting & property",
-      "price": 99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "PersonalForge MT",
       "niche": "personal finance, investing & budgeting",
-      "stage": "design",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TenantScreenPrime",
+      "niche": "parenting & family organizers",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Flockly",
+      "niche": "personal finance, investing & budgeting",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TailoredPaws",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2656,8 +2724,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 46,
-        "vramPct": 51
+        "utilPct": 37,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2674,8 +2742,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 80,
-        "vramPct": 58
+        "utilPct": 21,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 86,
