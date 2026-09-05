@@ -1,5 +1,5 @@
 {
-  "generated": 1788569685088,
+  "generated": 1788569730158,
   "status": "running",
   "stats": {
     "products": 124,
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788569719695,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788569719694,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788569719694,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788569719693,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite error: github auth failed 504",
+      "t": 1788569715659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788569715659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788569548221,
       "type": "bench"
@@ -1547,45 +1583,46 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
       "t": 1788567024672,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "launcher: shipped PropertyPro to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788567014866,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop limited until 3:18:35 AM) — trying ChatGPT/free",
-      "t": 1788566917183,
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788569719695,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788566917183,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788569719694,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788566915676,
+      "text": "self-heal: disabled provider groq",
+      "t": 1788569719694,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 3:18:35 AM) — trying ChatGPT/free",
-      "t": 1788566915672,
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788569719693,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788566915662,
+      "text": "publicsite error: github auth failed 504",
+      "t": 1788569715659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788569715659,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1838,6 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1823,22 +1859,23 @@
     0,
     0,
     1,
-    2,
-    4,
+    0,
+    6,
     1,
     0,
     0,
     3,
     0,
-    0
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.27,
-      0.27
+      0.11,
+      0.25,
+      0.26
     ],
-    "ramPct": 68,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2580,7 +2617,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
+        "utilPct": 37,
         "vramPct": 47
       },
       {
