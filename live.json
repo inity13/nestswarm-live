@@ -1,5 +1,5 @@
 {
-  "generated": 1788580308675,
+  "generated": 1788580353998,
   "status": "running",
   "stats": {
     "products": 128,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788580347029,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3899MB free)",
+      "t": 1788580347026,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
       "t": 1788580192276,
       "type": "event"
@@ -1571,21 +1583,22 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788578091675,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship TripMate AI (score 5/8, attempt 2/3)",
-      "t": 1788578083232,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for TripMate AI exited (null)",
-      "t": 1788578077258,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788580347029,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3899MB free)",
+      "t": 1788580347026,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,13 +1814,12 @@
     "priority": ""
   },
   "throughput": [
-    30,
-    8,
-    18,
-    8,
-    6,
-    16,
-    3,
+    11,
+    7,
+    19,
+    5,
+    10,
+    10,
     1,
     0,
     0,
@@ -1830,15 +1842,16 @@
     0,
     0,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.07,
-      0.11
+      0.31,
+      0.14,
+      0.13
     ],
-    "ramPct": 42,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2594,8 +2607,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
-        "vramPct": 18
+        "utilPct": 36,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2610,8 +2623,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
