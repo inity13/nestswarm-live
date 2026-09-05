@@ -1,5 +1,5 @@
 {
-  "generated": 1788643988503,
+  "generated": 1788644033543,
   "status": "running",
   "stats": {
     "products": 139,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788644005128,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788644005128,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788644005126,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788644003191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 139 products)",
       "t": 1788643964163,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "vault: synced (2 notes updated)",
       "t": 1788642683639,
       "type": "vault"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "preview live: MindCue -> http://localhost:5385",
-      "t": 1788642683575,
+      "text": "self-heal: disabled provider groq",
+      "t": 1788644005128,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "LISTED: MindCue @ http://localhost:5385 ($4.99 one-time)",
-      "t": 1788642683575,
-      "type": "listed"
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788644005128,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'list' -> MindCue",
-      "t": 1788642683564,
-      "type": "building"
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788644005126,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'package' -> MindCue",
-      "t": 1788642663564,
-      "type": "building"
-    }
-  ],
-  "recent": [
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788644003191,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 139 products)",
@@ -1809,43 +1833,43 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
     1,
-    6,
+    5,
+    1,
+    23,
     4,
-    19,
-    4,
-    14,
-    18,
+    10,
+    22,
     0,
     1,
     6,
     0,
     2,
-    12,
-    7,
-    19,
-    7,
-    13,
     4,
-    1,
+    13,
+    21,
+    7,
+    9,
+    6,
+    3,
     0,
     0,
     1,
     0,
     0,
-    1
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.36,
-      0.39
+      0.07,
+      0.3,
+      0.37
     ],
-    "ramPct": 78,
+    "ramPct": 75,
     "cpus": 12
   },
   "brain": {
@@ -1887,8 +1911,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1932,9 +1956,7 @@
       }
     },
     "free": [
-      "nemotron-3.5-lightning-free",
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
+      "nemotron-3.5-lightning-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2619,7 +2641,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
+        "utilPct": 43,
         "vramPct": 79
       },
       {
