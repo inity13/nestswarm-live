@@ -1,5 +1,5 @@
 {
-  "generated": 1788569235136,
+  "generated": 1788569280127,
   "status": "running",
   "stats": {
     "products": 124,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
+      "t": 1788569257621,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,39 @@
       "t": 1788560936926,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "CopyCraft cannot ship until the Shopify plugin undergoes a full security audit that verifies no injection vectors, no exposed secrets, and no unsafe dependencies. The team must produce a signed audit report and fix any discovered issues before moving to production.",
-      "t": 1788560935253,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for TripSmart is stuck (attempt 2) — trying a stronger model",
+      "t": 1788569277285,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TripSmart",
+      "t": 1788569277284,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788569267312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripSmart",
+      "t": 1788569267285,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788569257620,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
@@ -1553,43 +1583,44 @@
       "text": "vault: synced (2 notes updated)",
       "t": 1788566897384,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: PropertyPro -> http://localhost:5370",
-      "t": 1788566897330,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "LISTED: PropertyPro @ http://localhost:5370 ($4.99 one-time)",
-      "t": 1788566897330,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> PropertyPro",
-      "t": 1788566897321,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> PropertyPro",
-      "t": 1788566867323,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for PropertyPro",
-      "t": 1788566862740,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
-      "t": 1788569184484,
+      "text": "EXTREME elevation: build for TripSmart is stuck (attempt 2) — trying a stronger model",
+      "t": 1788569277285,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TripSmart",
+      "t": 1788569277284,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788569267312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripSmart",
+      "t": 1788569267285,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
+      "t": 1788569257621,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788569257620,
       "type": "event"
     }
   ],
@@ -1808,24 +1839,23 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
+    21,
+    18,
+    9,
     11,
-    17,
-    14,
-    12,
-    10,
+    8,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    5,
-    2,
+    4,
     0,
     0,
     1,
@@ -1837,13 +1867,14 @@
     1,
     0,
     0,
-    1
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.27,
-      0.29,
-      0.28
+      0.26,
+      0.28,
+      0.27
     ],
     "ramPct": 59,
     "cpus": 12
@@ -2587,8 +2618,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 15
+        "utilPct": 36,
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
@@ -2603,13 +2634,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 82,
-    "jobsProcessed": 120
+    "jobsProcessed": 121
   }
 }
