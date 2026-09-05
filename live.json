@@ -1,5 +1,5 @@
 {
-  "generated": 1788621806013,
+  "generated": 1788621808967,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788621808365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788621808365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788621808364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788621808364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788621805653,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "keyhunter: mosaicml step 3 -> {\"action\":\"fail\",\"reason\":\"The provided URL does not contain any information related to MosaicML or API keys. The page i",
       "t": 1788616520595,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting reactai (https://react.ai/signup/)",
-      "t": 1788616520595,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788616519448,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 6 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
-      "t": 1788616506052,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mosaicml step 2 -> {\"action\":\"clickText\",\"text\":\"https://app.mosaicml.com/register\"}",
-      "t": 1788616501257,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788621808365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788621808365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788621808364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788621808364,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
@@ -1921,7 +1945,7 @@
     0,
     1,
     9,
-    9
+    14
   ],
   "load": {
     "loadavg": [
@@ -2735,8 +2759,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
