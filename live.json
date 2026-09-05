@@ -1,5 +1,5 @@
 {
-  "generated": 1788618208242,
+  "generated": 1788618250471,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1788618235125,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3633MB free)",
+      "t": 1788618230576,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788618230576,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788618226104,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788618225126,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788618046868,
       "type": "event"
@@ -1553,39 +1583,40 @@
       "text": "keyhunter: cohere step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
       "t": 1788615149602,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1788618235125,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 7 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788615147693,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3633MB free)",
+      "t": 1788618230576,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788618230576,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788615146335,
+      "t": 1788618226104,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 6 -> {}",
-      "t": 1788615146250,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788615142906,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 4 -> {}",
-      "t": 1788615141507,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1788618225126,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,23 +1832,22 @@
     "priority": "The single product from the 20 listed that scores highest on verifiable utility, market demand, and readiness for checkout"
   },
   "throughput": [
-    24,
-    17,
-    17,
-    5,
+    12,
+    15,
+    14,
     0,
     0,
     1,
     0,
     0,
-    2,
+    1,
+    4,
+    0,
+    1,
+    0,
+    0,
     3,
     0,
-    1,
-    0,
-    0,
-    3,
-    0,
     0,
     1,
     0,
@@ -1830,15 +1860,16 @@
     0,
     1,
     0,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.52,
-      17.99
+      0.66,
+      0.63,
+      17.29
     ],
-    "ramPct": 51,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2625,9 +2656,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
