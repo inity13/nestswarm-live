@@ -1,5 +1,5 @@
 {
-  "generated": 1788646958178,
+  "generated": 1788647003128,
   "status": "running",
   "stats": {
     "products": 140,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788647002790,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 140 products)",
       "t": 1788646843285,
       "type": "event"
@@ -1577,15 +1583,16 @@
       "text": "stage 'list' -> FitCue",
       "t": 1788645723369,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> FitCue",
-      "t": 1788645703371,
-      "type": "building"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788647002790,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,28 +1808,27 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    0,
     3,
     0,
     0,
     1,
     0,
     0,
-    4,
+    1,
+    6,
+    12,
     3,
-    14,
-    1,
-    5,
-    5,
-    9,
     4,
-    11,
-    24,
-    22,
-    20,
-    8,
-    10,
+    1,
+    6,
+    12,
     0,
+    29,
+    28,
+    15,
+    12,
+    6,
+    5,
     1,
     0,
     0,
@@ -1830,15 +1836,16 @@
     0,
     0,
     1,
-    3
+    1,
+    15
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.31,
-      0.32
+      0.98,
+      0.5,
+      0.38
     ],
-    "ramPct": 86,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1856,11 +1863,11 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
@@ -1868,7 +1875,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -1888,11 +1895,11 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -1900,7 +1907,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2608,9 +2615,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 27,
+        "busy": false,
+        "warm": true,
+        "utilPct": 5,
         "vramPct": 81
       },
       {
@@ -2628,8 +2635,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 0
+        "utilPct": 23,
+        "vramPct": 53
       }
     ],
     "selfHostedInferencePct": 87,
