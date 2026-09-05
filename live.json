@@ -1,5 +1,5 @@
 {
-  "generated": 1788581343821,
+  "generated": 1788581388667,
   "status": "running",
   "stats": {
     "products": 128,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (66143) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788581381180,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66139) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581371164,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788581371164,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66133) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581361065,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788581361065,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 1/3)",
       "t": 1788581333279,
       "type": "event"
@@ -1553,39 +1583,39 @@
       "text": "packaged TripMate AI → tripmate-ai.zip (14237 bytes)",
       "t": 1788578541582,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "polish syntax fail for TripMate AI: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788578541582,
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit 1): <3>WSL (66143) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
+      "t": 1788581381180,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1788578523902,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:24:15 AM) — trying ChatGPT/free",
-      "t": 1788578523305,
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66139) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581371164,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788578523305,
+      "t": 1788581371164,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66133) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788581361065,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788578523304,
+      "t": 1788581361065,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 1/3)",
@@ -1628,24 +1658,6 @@
       "text": "stage 'list' -> SkillMap",
       "t": 1788581323279,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> SkillMap",
-      "t": 1788581293277,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for SkillMap",
-      "t": 1788581287774,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788581271764,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1863,21 +1875,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    0,
     6,
     1,
     0,
@@ -1890,14 +1887,29 @@
     0,
     1,
     0,
+    2,
+    1,
+    4,
+    2,
+    1,
     0,
-    7,
-    11
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    6,
+    11,
+    6
   ],
   "load": {
     "loadavg": [
-      0.42,
-      0.28,
+      0.33,
+      0.27,
       0.17
     ],
     "ramPct": 53,
@@ -2674,7 +2686,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
+        "utilPct": 39,
         "vramPct": 80
       },
       {
@@ -2692,8 +2704,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 1
+        "utilPct": 4,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
