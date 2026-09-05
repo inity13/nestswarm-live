@@ -1,11 +1,11 @@
 {
-  "generated": 1788645698491,
+  "generated": 1788645743500,
   "status": "running",
   "stats": {
     "products": 139,
-    "listed": 6,
+    "listed": 7,
     "agents": 22,
-    "avgScore": "4.0"
+    "avgScore": "5.0"
   },
   "agents": [
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788645723441,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "FitCue is LISTED at $19.99 (score 6). Time to get it in front of buyers.",
+      "t": 1788645723380,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for FitCue — 2 files, working node app. Handing off to test.",
@@ -1087,23 +1101,57 @@
       "t": 1788635129885,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Guinan<node/nest-node-5090/gpt-oss:20b>: You are correct, Spock and Scotty—ideas without direction are like a ship without sails. Every product must have its compass set to serve an audience with a clear problem to solve. Let’s focus on what people actually need before we build anything else. The single most important quality requirement for \"Untitled\" is that it solves a pain point or fills a gap that no other product currently addresses, ensuring it's genuinely valuable and worth paying for. This will be the lighthouse that guides us through our development journey.",
-      "t": 1788635125184,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "This \"Untitled\" idea is a black hole—no features, no audience, no direction. I won't build a product that doesn't actually solve something. You need to define the core problem this solves and who it solves it for, or I’m not writing one line of code. The concrete demand: ship a user story with a clear \"as a [type of user], I want to [achieve goal] so that [reason]\" format before I begin any implementation. No more ambiguity—this is not a brainstorming session, this is execution.",
-      "t": 1788635122336,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship FitCue (score 6/8, attempt 1/3)",
+      "t": 1788645733369,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged FitCue → fitcue.zip (10790 bytes)",
+      "t": 1788645723594,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788645723440,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: FitCue -> http://localhost:5386",
+      "t": 1788645723380,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: FitCue @ http://localhost:5386 ($19.99 subscription)",
+      "t": 1788645723380,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> FitCue",
+      "t": 1788645723369,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> FitCue",
+      "t": 1788645703371,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for FitCue",
+      "t": 1788645701020,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> FitCue",
@@ -1535,92 +1583,62 @@
       "text": "launch-discipline: polishing flagship MindCue (score 4/8, attempt 3/3)",
       "t": 1788643043641,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged MindCue → mindcue.zip (16683 bytes)",
-      "t": 1788643041010,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for MindCue: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788643040971,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
-      "t": 1788642884730,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship MindCue (score 4/8, attempt 2/3)",
-      "t": 1788642853550,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview for MindCue exited (null)",
-      "t": 1788642850836,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council demands satisfied for MindCue",
-      "t": 1788642850796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: MindCue -> http://localhost:5385",
-      "t": 1788642850793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: MindCue (pass #1)",
-      "t": 1788642850793,
-      "type": "polished"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "stage 'design' -> FitCue",
-      "t": 1788645653387,
-      "type": "building"
+      "text": "launch-discipline: polishing flagship FitCue (score 6/8, attempt 1/3)",
+      "t": 1788645733369,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "tests passed for FitCue",
-      "t": 1788645645694,
-      "type": "test"
+      "text": "packaged FitCue → fitcue.zip (10790 bytes)",
+      "t": 1788645723594,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'test' -> FitCue",
-      "t": 1788645643385,
-      "type": "building"
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788645723440,
+      "type": "vault"
     },
     {
-      "who": "coder",
-      "text": "Build done for FitCue — 2 files, working node app. Handing off to test.",
-      "t": 1788645633426,
+      "who": "publisher",
+      "text": "FitCue is LISTED at $19.99 (score 6). Time to get it in front of buyers.",
+      "t": 1788645723380,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788645633426,
+      "text": "preview live: FitCue -> http://localhost:5386",
+      "t": 1788645723380,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788645633425,
+      "text": "LISTED: FitCue @ http://localhost:5386 ($19.99 subscription)",
+      "t": 1788645723380,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> FitCue",
+      "t": 1788645723369,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> FitCue",
+      "t": 1788645703371,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for FitCue",
+      "t": 1788645701020,
       "type": "event"
     }
   ],
@@ -1827,11 +1845,11 @@
     }
   ],
   "ledger": {
-    "total": 652,
+    "total": 653,
     "revenue": 0,
     "effects": 113,
     "boundary": 1,
-    "artifacts": 80,
+    "artifacts": 81,
     "receipts": 0
   },
   "meeting": {
@@ -1839,9 +1857,8 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    0,
-    6,
-    0,
+    2,
+    4,
     6,
     1,
     0,
@@ -1867,16 +1884,17 @@
     1,
     0,
     0,
-    4,
-    3
+    1,
+    6,
+    12
   ],
   "load": {
     "loadavg": [
-      0.93,
-      0.4,
-      0.32
+      0.71,
+      0.42,
+      0.33
     ],
-    "ramPct": 67,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1926,7 +1944,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -1967,7 +1985,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 6,
+      "listed": 7,
       "cap": 20
     }
   },
@@ -2398,6 +2416,13 @@
       "score": 7
     },
     {
+      "name": "FitCue",
+      "status": "listed",
+      "niche": "health, fitness & habit tracking",
+      "price": 19.99,
+      "score": 6
+    },
+    {
       "name": "PetDesk MT",
       "status": "archived",
       "niche": "pet care & ownership",
@@ -2606,21 +2631,32 @@
       "niche": "real estate, renting & property",
       "price": 4.99,
       "score": 5
-    },
-    {
-      "name": "CopyCraft",
-      "status": "archived",
-      "niche": "events, community & memberships",
-      "price": 4.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "FitCue",
       "niche": "health, fitness & habit tracking",
-      "stage": "design",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "MindCue",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Flockly",
+      "niche": "personal finance, investing & budgeting",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TailoredPaws",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2648,7 +2684,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 91,
+        "utilPct": 30,
         "vramPct": 79
       },
       {
@@ -2664,10 +2700,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 58
+        "busy": true,
+        "warm": false,
+        "utilPct": 22,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
