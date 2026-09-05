@@ -1,5 +1,5 @@
 {
-  "generated": 1788647185386,
+  "generated": 1788647228090,
   "status": "running",
   "stats": {
     "products": 140,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> SensoryMate",
+      "t": 1788647223169,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 140 products)",
+      "t": 1788647204441,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'design' -> SensoryMate",
       "t": 1788647163177,
       "type": "building"
@@ -1547,45 +1559,21 @@
       "text": "packaged FitCue → fitcue.zip (11549 bytes)",
       "t": 1788645984991,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 139 products)",
-      "t": 1788645943272,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788645933110,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:15:33 AM) — trying ChatGPT/free",
-      "t": 1788645933106,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788645933094,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788645933094,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped FitCue to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788645932332,
-      "type": "launch"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> SensoryMate",
+      "t": 1788647223169,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 140 products)",
+      "t": 1788647204441,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> SensoryMate",
@@ -1833,24 +1821,23 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
     6,
-    14,
-    1,
-    5,
-    0,
-    8,
-    10,
-    0,
-    31,
-    26,
-    16,
     11,
-    6,
+    4,
+    0,
     5,
+    6,
+    12,
+    0,
+    27,
+    24,
+    16,
+    14,
+    7,
+    7,
     1,
     0,
     0,
@@ -1858,19 +1845,20 @@
     0,
     0,
     1,
-    2,
-    15,
-    9,
-    2,
-    10
+    1,
+    8,
+    16,
+    3,
+    8,
+    14
   ],
   "load": {
     "loadavg": [
-      1.46,
-      0.79,
-      0.51
+      2.11,
+      1.07,
+      0.62
     ],
-    "ramPct": 66,
+    "ramPct": 80,
     "cpus": 12
   },
   "brain": {
@@ -1892,15 +1880,15 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "security": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
-      "scout": {
+      "security": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1924,7 +1912,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -1932,7 +1920,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2613,7 +2601,7 @@
     {
       "name": "SensoryMate",
       "niche": "writing, copy & content creation",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2642,7 +2630,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
+        "utilPct": 71,
         "vramPct": 81
       },
       {
@@ -2660,8 +2648,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
-        "vramPct": 92
+        "utilPct": 81,
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 87,
