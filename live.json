@@ -1,5 +1,5 @@
 {
-  "generated": 1788579588658,
+  "generated": 1788579633785,
   "status": "running",
   "stats": {
     "products": 128,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
+      "t": 1788579610898,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for TripMate AI.",
@@ -1094,16 +1101,33 @@
       "t": 1788567576257,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "An \"Untitled\" product with no features, no audience definition, and no technical grounding is not a starting point—it's a void. The team must immediately articulate a single, concrete problem this solves for a specific user, otherwise we're just building noise. Define the problem, or this idea stays exactly where it is: on the cutting room floor.",
-      "t": 1788567573657,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SkillMap",
+      "t": 1788579633264,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788579631951,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SkillMap",
+      "t": 1788579613265,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788579610898,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
@@ -1559,33 +1583,41 @@
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788578055357,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:24:15 AM) — trying ChatGPT/free",
-      "t": 1788578055353,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788578055342,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788578055342,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped TripMate AI to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788578054581,
-      "type": "launch"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SkillMap",
+      "t": 1788579633264,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788579631951,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SkillMap",
+      "t": 1788579613265,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
+      "t": 1788579610898,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788579610898,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,25 +1833,24 @@
     "priority": ""
   },
   "throughput": [
-    6,
-    13,
-    2,
+    11,
+    4,
     0,
-    12,
+    6,
+    11,
+    0,
+    1,
+    16,
+    2,
+    1,
+    0,
+    27,
+    11,
+    7,
+    19,
     5,
-    0,
-    1,
-    16,
-    2,
-    1,
-    0,
-    30,
-    8,
-    18,
-    8,
-    6,
-    16,
-    3,
+    10,
+    10,
     1,
     0,
     0,
@@ -1830,15 +1861,16 @@
     0,
     0,
     1,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.16,
-      0.18
+      0.06,
+      0.13,
+      0.17
     ],
-    "ramPct": 59,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1884,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2594,8 +2626,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 80
+        "utilPct": 35,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2610,13 +2642,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 3,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 131
+    "jobsProcessed": 132
   }
 }
