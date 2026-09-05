@@ -1,5 +1,5 @@
 {
-  "generated": 1788638589109,
+  "generated": 1788638634105,
   "status": "running",
   "stats": {
     "products": 137,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> Knozzy",
+      "t": 1788638604031,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788638597726,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> Knozzy",
       "t": 1788638584032,
       "type": "building"
@@ -1571,21 +1583,21 @@
       "text": "keyhunter: novitaai step 4 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
       "t": 1788636591072,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Creator Monetization Platforms (revenue)",
-      "t": 1788636590003,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Product Hunt (revenue)",
-      "t": 1788636588877,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> Knozzy",
+      "t": 1788638604031,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788638597726,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> Knozzy",
@@ -1827,8 +1839,7 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    12,
-    0,
+    5,
     1,
     0,
     0,
@@ -1856,13 +1867,14 @@
     1,
     0,
     0,
-    4
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.09,
-      0.18
+      0.03,
+      0.07,
+      0.17
     ],
     "ramPct": 53,
     "cpus": 12
@@ -2607,7 +2619,7 @@
     {
       "name": "Knozzy",
       "niche": "legal, contracts & compliance",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2636,7 +2648,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
+        "utilPct": 35,
         "vramPct": 50
       },
       {
@@ -2652,13 +2664,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
-    "jobsProcessed": 157
+    "jobsProcessed": 158
   }
 }
