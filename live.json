@@ -1,5 +1,5 @@
 {
-  "generated": 1788574908682,
+  "generated": 1788574953880,
   "status": "running",
   "stats": {
     "products": 126,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788574949504,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3644MB free)",
+      "t": 1788574949501,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 126 products)",
       "t": 1788574793148,
       "type": "event"
@@ -1571,21 +1583,22 @@
       "text": "registrar: Millo step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788571666599,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788571665188,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788571664400,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788574949504,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3644MB free)",
+      "t": 1788574949501,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1814,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
     1,
     0,
     0,
@@ -1824,21 +1836,22 @@
     0,
     0,
     1,
-    2,
-    4,
+    0,
+    6,
     1,
     0,
     0,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.07,
-      0.19
+      0.4,
+      0.16,
+      0.21
     ],
-    "ramPct": 46,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2592,8 +2605,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 15
+        "utilPct": 15,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
