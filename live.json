@@ -1,5 +1,5 @@
 {
-  "generated": 1788573108704,
+  "generated": 1788573153994,
   "status": "running",
   "stats": {
     "products": 126,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788573151178,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3796MB free)",
+      "t": 1788573151177,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788573124097,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 126 products)",
       "t": 1788572992566,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
       "t": 1788571616494,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
-      "t": 1788571615454,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788571614230,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini already has a working key — skip",
-      "t": 1788571612378,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788573151178,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3796MB free)",
+      "t": 1788573151177,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788573124097,
+      "type": "vault"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,17 +1820,16 @@
     "priority": ""
   },
   "throughput": [
-    27,
-    15,
-    18,
-    51,
-    38,
-    49,
-    22,
-    10,
+    23,
     19,
-    3,
-    8,
+    30,
+    58,
+    44,
+    15,
+    25,
+    14,
+    6,
+    10,
     0,
     0,
     1,
@@ -1821,24 +1839,25 @@
     0,
     0,
     1,
-    5,
-    5,
-    5,
     0,
     10,
+    5,
+    0,
     7,
-    4,
+    7,
+    7,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.24,
+      0.68,
+      0.37,
       1
     ],
-    "ramPct": 76,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2590,10 +2609,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 36,
-        "vramPct": 77
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
