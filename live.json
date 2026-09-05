@@ -1,5 +1,5 @@
 {
-  "generated": 1788628828440,
+  "generated": 1788628870650,
   "status": "running",
   "stats": {
     "products": 133,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> TenantScreenPrime",
+      "t": 1788628855476,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TenantScreenPrime",
+      "t": 1788628850148,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
+      "t": 1788628848086,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'design' -> TenantScreenPrime",
       "t": 1788628805481,
       "type": "building"
@@ -1565,27 +1583,27 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788622405717,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788622367793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788622186778,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788622007790,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TenantScreenPrime",
+      "t": 1788628855476,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TenantScreenPrime",
+      "t": 1788628850148,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
+      "t": 1788628848086,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> TenantScreenPrime",
@@ -1839,7 +1857,6 @@
     "priority": "Micro-farmer digital marketplace (end-to-end platform for publishing, selling, and shipping produce)"
   },
   "throughput": [
-    1,
     0,
     0,
     9,
@@ -1855,28 +1872,29 @@
     0,
     0,
     1,
+    4,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     6,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
     6
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.09,
-      0.08
+      0.61,
+      0.24,
+      0.14
     ],
-    "ramPct": 45,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2538,6 +2556,13 @@
       "score": 6
     },
     {
+      "name": "TenantScreenPrime",
+      "status": "building",
+      "niche": "parenting & family organizers",
+      "price": 59,
+      "score": 5
+    },
+    {
       "name": "TenantGuard",
       "status": "archived",
       "niche": "privacy, security & personal data",
@@ -2606,20 +2631,13 @@
       "niche": "real estate, renting & property",
       "price": 99,
       "score": 5
-    },
-    {
-      "name": "ProTasker",
-      "status": "archived",
-      "niche": "health, fitness & habit tracking",
-      "price": 49,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "TenantScreenPrime",
       "niche": "parenting & family organizers",
-      "stage": "design",
+      "stage": "list",
       "status": "building"
     }
   ],
@@ -2647,9 +2665,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 18
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2664,10 +2682,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 14,
-        "vramPct": 58
+        "utilPct": 2,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 86,
