@@ -1,5 +1,5 @@
 {
-  "generated": 1788589939403,
+  "generated": 1788589984394,
   "status": "running",
   "stats": {
     "products": 131,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> LocateMate",
+      "t": 1788589943871,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788589937296,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "launch-discipline: JobMate storefront LIVE → https://inity13.github.io/[private-repo]/pmtnvq9gelgtx/",
       "t": 1788585778865,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3606MB free)",
-      "t": 1788585778634,
-      "type": "bench"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LocateMate",
+      "t": 1788589943871,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
@@ -1834,7 +1840,6 @@
   },
   "throughput": [
     0,
-    0,
     7,
     0,
     0,
@@ -1848,8 +1853,8 @@
     0,
     0,
     1,
-    12,
-    1,
+    11,
+    2,
     1,
     0,
     1,
@@ -1862,15 +1867,16 @@
     1,
     0,
     0,
-    6
+    4,
+    3
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.19,
-      0.23
+      0.23,
+      0.21,
+      0.24
     ],
-    "ramPct": 63,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2626,7 +2632,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
+        "utilPct": 38,
         "vramPct": 50
       },
       {
@@ -2642,13 +2648,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 29,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 84,
-    "jobsProcessed": 140
+    "jobsProcessed": 141
   }
 }
