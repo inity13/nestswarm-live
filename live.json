@@ -1,5 +1,5 @@
 {
-  "generated": 1788639806697,
+  "generated": 1788639848948,
   "status": "running",
   "stats": {
     "products": 137,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3614MB free)",
+      "t": 1788639830202,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788639830202,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 137 products)",
+      "t": 1788639824571,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 137 products)",
       "t": 1788639644828,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
       "t": 1788636626387,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3614MB free)",
+      "t": 1788639830202,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: novitaai entering verification code from inbox",
-      "t": 1788636623237,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788639830202,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788636610092,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788636608832,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 137 products)",
+      "t": 1788639824571,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,17 +1820,16 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
     3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    0,
     0,
     1,
     0,
@@ -1830,15 +1848,16 @@
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.09,
-      0.08
+      0.89,
+      0.29,
+      0.16
     ],
-    "ramPct": 49,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2610,8 +2629,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
-        "vramPct": 18
+        "utilPct": 42,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
