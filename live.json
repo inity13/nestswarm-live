@@ -1,5 +1,5 @@
 {
-  "generated": 1788627208465,
+  "generated": 1788627250894,
   "status": "running",
   "stats": {
     "products": 133,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
+      "t": 1788627233648,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: TenantScreenPrime — parenting & family organizers. Let's see if it's worth building.",
@@ -1094,16 +1101,51 @@
       "t": 1788595277817,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "TenantGuard is not ready for market because it lacks a working proof of concept, and the AI risk engine it claims to have is unproven. The most important quality requirement is that it must demonstrate a fully functional, end-to-end AI-driven tenant risk scoring system that actually integrates with real data sources — this isn’t optional, it’s the core of what makes the product credible. Without that, it's just another idea on a list.",
-      "t": 1788595184787,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TenantScreenPrime",
+      "t": 1788627245659,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788627244540,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TenantScreenPrime",
+      "t": 1788627235656,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788627233648,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788627232031,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3803MB free)",
+      "t": 1788627232030,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
+      "t": 1788627226598,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
@@ -1541,51 +1583,59 @@
       "text": "conductor: 3 request(s) logged for the Swarm Protector",
       "t": 1788621743694,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TenantScreenPrime",
+      "t": 1788627245659,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788621743643,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788627244540,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788621743643,
+      "text": "stage 'test' -> TenantScreenPrime",
+      "t": 1788627235656,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TenantScreenPrime — 2 files, working node app. Handing off to test.",
+      "t": 1788627233648,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788627233648,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill stripe-live-readiness",
-      "t": 1788621743643,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788627232031,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788621743643,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3803MB free)",
+      "t": 1788627232030,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788621743642,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness",
-      "t": 1788621743642,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788621647964,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 133 products)",
+      "t": 1788627226598,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1802,16 +1852,15 @@
   },
   "throughput": [
     3,
-    9,
+    18,
     15,
-    13,
-    3,
+    4,
     0,
     1,
     0,
     0,
-    2,
-    0,
+    1,
+    1,
     0,
     1,
     0,
@@ -1820,25 +1869,26 @@
     0,
     8,
     1,
-    1,
     0,
     1,
-    0,
-    0,
     1,
     0,
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.05,
-      0.07
+      0.49,
+      0.16,
+      0.11
     ],
-    "ramPct": 45,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2611,7 +2661,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 80
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2626,13 +2676,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 5,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 86,
-    "jobsProcessed": 146
+    "jobsProcessed": 147
   }
 }
