@@ -1,9 +1,9 @@
 {
-  "generated": 1788581298701,
+  "generated": 1788581343821,
   "status": "running",
   "stats": {
     "products": 128,
-    "listed": 16,
+    "listed": 17,
     "agents": 22,
     "avgScore": "5.0"
   },
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788581323300,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "SkillMap is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
+      "t": 1788581323288,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
@@ -1087,23 +1101,45 @@
       "t": 1788567616283,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "Monica",
-      "text": "The SINGLE most important quality requirement for PropertyPro to ship is a fully functional AI module that delivers measurable value through automated listing optimization and SEO-optimized descriptions. This ensures that the product not only meets but exceeds user expectations, providing real benefits from day one.",
-      "t": 1788567609007,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "The product needs to be a real, working thing that solves a genuine problem, not just another vague idea. It must ship with zero friction—no signups, no API keys, no nonsense. The single most important quality requirement? It has to work the moment someone opens it in their browser.",
-      "t": 1788567602179,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 1/3)",
+      "t": 1788581333279,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SkillMap → skillmap.zip (9784 bytes)",
+      "t": 1788581323459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788581323299,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SkillMap -> http://localhost:5375",
+      "t": 1788581323288,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: SkillMap @ http://localhost:5375 ($4.99 one-time)",
+      "t": 1788581323288,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> SkillMap",
+      "t": 1788581323279,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> SkillMap",
@@ -1547,45 +1583,52 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788578523304,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:24:15 AM) — trying ChatGPT/free",
-      "t": 1788578523304,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788578523304,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788578523304,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:24:15 AM) — trying ChatGPT/free",
-      "t": 1788578523259,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 3 distribution action(s) this pass",
-      "t": 1788578510416,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for TripMate AI",
-      "t": 1788578510415,
-      "type": "launch"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 1/3)",
+      "t": 1788581333279,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SkillMap → skillmap.zip (9784 bytes)",
+      "t": 1788581323459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788581323299,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "SkillMap is LISTED at $4.99 (score 5). Time to get it in front of buyers.",
+      "t": 1788581323288,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SkillMap -> http://localhost:5375",
+      "t": 1788581323288,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: SkillMap @ http://localhost:5375 ($4.99 one-time)",
+      "t": 1788581323288,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> SkillMap",
+      "t": 1788581323279,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> SkillMap",
@@ -1602,43 +1645,6 @@
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
       "t": 1788581271764,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> SkillMap",
-      "t": 1788581253279,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for SkillMap",
-      "t": 1788581245518,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SkillMap",
-      "t": 1788581243279,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
-      "t": 1788581242666,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788581242666,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788581242665,
       "type": "event"
     }
   ],
@@ -1845,11 +1851,11 @@
     }
   ],
   "ledger": {
-    "total": 627,
+    "total": 628,
     "revenue": 0,
     "effects": 105,
     "boundary": 1,
-    "artifacts": 72,
+    "artifacts": 73,
     "receipts": 0
   },
   "meeting": {
@@ -1858,8 +1864,7 @@
   },
   "throughput": [
     0,
-    3,
-    4,
+    7,
     0,
     0,
     1,
@@ -1886,15 +1891,16 @@
     1,
     0,
     0,
-    10
+    7,
+    11
   ],
   "load": {
     "loadavg": [
-      0.89,
-      0.33,
-      0.18
+      0.42,
+      0.28,
+      0.17
     ],
-    "ramPct": 51,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -1987,7 +1993,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 16,
+      "listed": 17,
       "cap": 20
     }
   },
@@ -2540,6 +2546,13 @@
       "score": 6
     },
     {
+      "name": "SkillMap",
+      "status": "listed",
+      "niche": "study, learning & memory aids",
+      "price": 4.99,
+      "score": 5
+    },
+    {
       "name": "TripMate AI",
       "status": "listed",
       "niche": "legal, contracts & compliance",
@@ -2608,21 +2621,32 @@
       "niche": "events, community & memberships",
       "price": 4.99,
       "score": 5
-    },
-    {
-      "name": "JSON Forge",
-      "status": "listed",
-      "niche": "local services & gig economy",
-      "price": 4.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "SkillMap",
       "niche": "study, learning & memory aids",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TripMate AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "PropertyPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "CopyCraft",
+      "niche": "events, community & memberships",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2650,7 +2674,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
+        "utilPct": 40,
         "vramPct": 80
       },
       {
@@ -2668,8 +2692,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 92
+        "utilPct": 1,
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 83,
