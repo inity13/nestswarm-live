@@ -1,5 +1,5 @@
 {
-  "generated": 1788586699125,
+  "generated": 1788586744150,
   "status": "running",
   "stats": {
     "products": 130,
@@ -14,10 +14,10 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Guinan nods thoughtfully, her eyes scanning the faces around the table. \"I understand your",
-        "t": 1788582540932
+        "text": "We need to propose something like: \"A micro-credentialing platform that uses blockchain fo",
+        "t": 1788586726450
       }
     },
     {
@@ -259,6 +259,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Guinan",
+      "text": "We need to propose something like: \"A micro-credentialing platform that uses blockchain for skill verification in the gig economy.\" Or \"A subscription-based platform that curates personal learning paths based on daily microThe last assistant output: \"We need to propose something like: \"A micro-credentialing platform that uses blockchain for skill verification in the gig economy.\" Or \"A subscription-based platform that curates personal learning paths based on daily micro\"The last assistant left off mid‑sentence: “Or a subscription‑based platform that curates personal learning paths based on …",
+      "t": 1788586726450,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: FitMate — health, fitness & habit tracking. Let's see if it's worth building.",
@@ -1091,16 +1098,21 @@
       "t": 1788578863989,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "Calendar sync is the single gatekeeper—if it fails, the whole value chain collapses. All the other requests are right: the UX must be clean and the expense engine must auto‑classify, but without a reliable, real‑time connection to the user’s calendar the product cannot ship.",
-      "t": 1788578862335,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FitMate",
+      "t": 1788586723616,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> FitMate",
+      "t": 1788586703614,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "ideated: FitMate [health, fitness & habit tracking]",
@@ -1568,21 +1580,28 @@
       "text": "launcher: shipped JobMate to https://github.com/inity13/[private-repo] (private)",
       "t": 1788585015047,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for publisher (538 chars)",
-      "t": 1788584996603,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788584948188,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Guinan",
+      "text": "We need to propose something like: \"A micro-credentialing platform that uses blockchain for skill verification in the gig economy.\" Or \"A subscription-based platform that curates personal learning paths based on daily microThe last assistant output: \"We need to propose something like: \"A micro-credentialing platform that uses blockchain for skill verification in the gig economy.\" Or \"A subscription-based platform that curates personal learning paths based on daily micro\"The last assistant left off mid‑sentence: “Or a subscription‑based platform that curates personal learning paths based on …",
+      "t": 1788586726450,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FitMate",
+      "t": 1788586723616,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> FitMate",
+      "t": 1788586703614,
+      "type": "building"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: FitMate — health, fitness & habit tracking. Let's see if it's worth building.",
@@ -1836,55 +1855,55 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
+    7,
+    8,
     5,
-    3,
-    10,
-    2,
-    13,
-    1,
-    1,
-    0,
-    2,
-    0,
-    5,
-    3,
-    0,
-    10,
-    23,
-    18,
-    4,
     12,
     2,
     0,
     1,
+    1,
+    1,
     0,
+    8,
     0,
-    5,
-    0,
+    10,
+    18,
+    23,
+    3,
+    12,
+    3,
     0,
     1,
     0,
     0,
-    6
+    2,
+    3,
+    0,
+    1,
+    0,
+    0,
+    2,
+    8
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.23,
-      0.24
+      0.16,
+      0.21,
+      0.23
     ],
-    "ramPct": 81,
+    "ramPct": 77,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
         "model": "nemotron-3.5-lightning-free",
@@ -2600,7 +2619,7 @@
     {
       "name": "FitMate",
       "niche": "health, fitness & habit tracking",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2645,13 +2664,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 92
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 136
+    "jobsProcessed": 137
   }
 }
