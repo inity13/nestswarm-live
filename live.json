@@ -1,5 +1,5 @@
 {
-  "generated": 1788580443666,
+  "generated": 1788580488674,
   "status": "running",
   "stats": {
     "products": 128,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
+      "t": 1788580481371,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,27 @@
       "t": 1788567590159,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "Guinan: I understand the need for specificity and technical grounding, Spock, and Scotty. However, I propose that we focus on creating an AI-Powered Personal Health Assistant (AI-PHA) designed specifically for individuals with chronic illnesses. This product would provide tailored health advice, symptom tracking, and medication reminders based on a user's medical history and daily activities. The most important quality requirement for this flagship product is to ensure its privacy and security measures are foolproof, given the sensitive nature of health data.",
-      "t": 1788567576257,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788580483370,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SkillMap",
+      "t": 1788580483269,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788580481371,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
@@ -1565,31 +1583,32 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
       "t": 1788578212672,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788578091676,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788578091676,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788578091676,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788580372033,
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788580483370,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SkillMap",
+      "t": 1788580483269,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
+      "t": 1788580481371,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788580481371,
       "type": "event"
     }
   ],
@@ -1808,44 +1827,44 @@
     "priority": ""
   },
   "throughput": [
-    14,
-    10,
     8,
-    13,
+    6,
+    16,
     3,
+    1,
     0,
+    0,
+    6,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    6,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     0,
     2,
-    4,
-    0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    0
+    4
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.1,
-      0.11
+      0.23,
+      0.14,
+      0.12
     ],
-    "ramPct": 51,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2601,8 +2620,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
-        "vramPct": 50
+        "utilPct": 41,
+        "vramPct": 51
       },
       {
         "alias": "GPU-Node-2",
@@ -2617,8 +2636,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 3,
         "vramPct": 92
       }
