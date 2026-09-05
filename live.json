@@ -1,5 +1,5 @@
 {
-  "generated": 1788605511162,
+  "generated": 1788605556065,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788605551336,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2647MB free)",
+      "t": 1788605551332,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1788605435699,
       "type": "event"
@@ -1571,32 +1583,20 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788599633165,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788599453747,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788599273469,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1788605435699,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788605551336,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788605425698,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2647MB free)",
+      "t": 1788605551332,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1814,10 +1814,9 @@
     "priority": ""
   },
   "throughput": [
-    5,
-    17,
+    16,
     4,
-    13,
+    15,
     3,
     0,
     0,
@@ -1843,15 +1842,16 @@
     0,
     0,
     3,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.14,
-      0.2
+      0.53,
+      0.25,
+      0.24
     ],
-    "ramPct": 56,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -2639,9 +2639,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 4,
         "vramPct": 19
       },
       {
