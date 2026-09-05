@@ -1,5 +1,5 @@
 {
-  "generated": 1788636069545,
+  "generated": 1788636114582,
   "status": "running",
   "stats": {
     "products": 136,
@@ -1103,6 +1103,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> MindMate",
+      "t": 1788636084449,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for MindMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788636084449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788636074473,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MindMate",
+      "t": 1788636074449,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788636065563,
       "type": "event"
@@ -1556,33 +1580,33 @@
       "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
       "t": 1788634586597,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788634586597,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788634430710,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2728MB free)",
-      "t": 1788634430709,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
-      "t": 1788634426314,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MindMate",
+      "t": 1788636084449,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for MindMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788636084449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788636074473,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> MindMate",
+      "t": 1788636074449,
+      "type": "building"
+    },
     {
       "who": "coder",
       "text": "Build done for MindMate — 2 files, working node app. Handing off to test.",
@@ -1819,24 +1843,23 @@
   },
   "throughput": [
     0,
-    0,
     3,
     0,
     0,
     7,
-    10,
-    5,
-    13,
-    0,
+    4,
+    11,
+    7,
+    6,
     10,
     1,
+    16,
     20,
-    18,
+    12,
+    3,
+    9,
+    6,
     11,
-    5,
-    8,
-    8,
-    7,
     0,
     1,
     0,
@@ -1847,15 +1870,16 @@
     1,
     0,
     0,
-    3
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.13,
-      0.22
+      0.22,
+      0.16,
+      0.23
     ],
-    "ramPct": 78,
+    "ramPct": 77,
     "cpus": 12
   },
   "brain": {
@@ -2598,7 +2622,7 @@
     {
       "name": "MindMate",
       "niche": "privacy, security & personal data",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2627,7 +2651,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 32,
+        "utilPct": 36,
         "vramPct": 80
       },
       {
@@ -2645,11 +2669,11 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 86,
-    "jobsProcessed": 155
+    "jobsProcessed": 156
   }
 }
