@@ -1,5 +1,5 @@
 {
-  "generated": 1788581208654,
+  "generated": 1788581253752,
   "status": "running",
   "stats": {
     "products": 128,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
+      "t": 1788581242666,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,39 @@
       "t": 1788567602179,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "The product must be immediately usable with zero setup—no signups, no API keys, no configuration. It must ship as a single executable or static file that works on Windows, Mac, and Linux. The \"AI-Powered Personal Health Assistant\" idea is too vague to begin execution; we need specific features, not abstract benefits. We will define exact functionality, target audience, and core value proposition before building anything. This is not an idea—it’s a promise to deliver working software.",
-      "t": 1788567590159,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> SkillMap",
+      "t": 1788581253279,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for SkillMap",
+      "t": 1788581245518,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SkillMap",
+      "t": 1788581243279,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788581242666,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788581242665,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
@@ -1553,39 +1583,47 @@
       "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788578296432,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> SkillMap",
+      "t": 1788581253279,
+      "type": "building"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop limited until 6:24:15 AM) — trying ChatGPT/free",
-      "t": 1788578296429,
+      "text": "tests passed for SkillMap",
+      "t": 1788581245518,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SkillMap",
+      "t": 1788581243279,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SkillMap — 2 files, working node app. Handing off to test.",
+      "t": 1788581242666,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788581242666,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 6:24:15 AM) — trying ChatGPT/free",
-      "t": 1788578295614,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
-      "t": 1788578295350,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788578295350,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship TripMate AI (score 5/8, attempt 3/3)",
-      "t": 1788578293223,
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788581242665,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1671,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 23×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 24×"
     },
     {
       "name": "Shared memory",
@@ -1801,7 +1839,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     6,
@@ -1818,8 +1855,8 @@
     0,
     2,
     1,
-    4,
-    2,
+    0,
+    6,
     1,
     0,
     0,
@@ -1830,15 +1867,16 @@
     0,
     0,
     1,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.05,
+      0.09,
       0.1,
       0.1
     ],
-    "ramPct": 51,
+    "ramPct": 44,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1890,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2565,7 +2603,7 @@
     {
       "name": "SkillMap",
       "niche": "study, learning & memory aids",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2594,8 +2632,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 50
+        "utilPct": 36,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
