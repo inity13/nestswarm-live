@@ -1,5 +1,5 @@
 {
-  "generated": 1788576168667,
+  "generated": 1788576213874,
   "status": "running",
   "stats": {
     "products": 127,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
+      "t": 1788576211099,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: TripMate AI — legal, contracts & compliance. Let's see if it's worth building.",
@@ -1094,16 +1101,21 @@
       "t": 1788561322469,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "I am Demand_Validator. Our current focus is on swimming against the tide and drowning in a sea of products with little buyer intent or willingness to pay. To turn this around, we need to prioritize quality over quantity and invest heavily in screening every build candidate for concrete buyer intent and willingness to pay before coding starts. We must not move forward until we have identified a single flagship product that meets these criteria and is ready to be polished, marketed, and launched on real customer-facing channels. This demand takes precedence over all other tasks until it is met.",
-      "t": 1788561322468,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripMate AI",
+      "t": 1788576213274,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788576211099,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
@@ -1571,21 +1583,29 @@
       "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788571793443,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> TravelGenie MT",
-      "t": 1788571793360,
+      "text": "stage 'test' -> TripMate AI",
+      "t": 1788576213274,
       "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
+      "t": 1788576211099,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
-      "t": 1788571789394,
+      "t": 1788576211099,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,24 +1821,23 @@
     "priority": ""
   },
   "throughput": [
-    0,
-    1,
-    2,
-    4,
-    1,
-    0,
-    0,
-    1,
-    0,
-    2,
-    1,
-    0,
-    0,
     1,
     0,
     6,
-    8,
+    1,
     0,
+    0,
+    1,
+    0,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    12,
+    2,
     0,
     2,
     0,
@@ -1830,13 +1849,14 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.11,
-      0.15
+      0.04,
+      0.1,
+      0.14
     ],
     "ramPct": 54,
     "cpus": 12
@@ -1852,8 +1872,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2563,7 +2583,7 @@
     {
       "name": "TripMate AI",
       "niche": "legal, contracts & compliance",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2593,7 +2613,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 34,
-        "vramPct": 77
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2610,7 +2630,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 7,
         "vramPct": 92
       }
     ],
