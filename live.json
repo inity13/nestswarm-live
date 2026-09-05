@@ -1,5 +1,5 @@
 {
-  "generated": 1788567705154,
+  "generated": 1788567725264,
   "status": "running",
   "stats": {
     "products": 124,
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I agree the AI needs to be production‑ready, the UI polished, and security tight—none of t",
         "t": 1788567624410
@@ -74,7 +74,7 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "PropertyPro is stuck because it’s promised AI but delivers nothing—everyone's right to dem",
         "t": 1788567635237
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788567724410,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788567723700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "council: 4 quality demands recorded for PropertyPro",
       "t": 1788567696050,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3048MB free)",
       "t": 1788565950499,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
-      "t": 1788565944255,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 123 products)",
-      "t": 1788565764063,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788567724410,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788567723700,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "council: 4 quality demands recorded for PropertyPro",
@@ -1668,26 +1680,6 @@
       "t": 1788567640003,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "PropertyPro is stuck because it’s promised AI but delivers nothing—everyone's right to demand a working module. The single most important requirement? A production-ready AI engine that auto-generates and optimizes listings; until that ships, it's not a product, it's a wishlist.",
-      "t": 1788567635237,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "I agree the AI needs to be production‑ready, the UI polished, and security tight—none of those can be brushed aside. The one thing that will make or break PropertyPro is a fully functional AI engine that consistently generates SEO‑optimized listings that demonstrably lift occupancy or revenue, validated by real‑world A/B data.",
-      "t": 1788567624410,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 5 quality demands recorded for TripSmart",
-      "t": 1788567616285,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1906,43 +1898,43 @@
   },
   "throughput": [
     3,
+    2,
+    4,
+    1,
     0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    5,
     6,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    9,
-    18,
+    16,
     0,
     2,
-    9,
-    14,
+    16,
+    7,
     4,
-    4,
-    3,
-    1,
+    7,
     0,
-    15,
-    21,
-    11,
-    12
+    1,
+    5,
+    18,
+    17,
+    10,
+    11
   ],
   "load": {
     "loadavg": [
-      0.55,
-      0.56,
-      0.38
+      0.39,
+      0.52,
+      0.37
     ],
-    "ramPct": 85,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -2684,7 +2676,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 37,
+        "utilPct": 32,
         "vramPct": 77
       },
       {
@@ -2700,8 +2692,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
