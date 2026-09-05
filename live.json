@@ -1,5 +1,5 @@
 {
-  "generated": 1788621760963,
+  "generated": 1788621806013,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788621805653,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788621765334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788621765334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788621765334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788621765333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
+      "t": 1788621762995,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788621762995,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
       "t": 1788621743738,
       "type": "event"
@@ -1541,51 +1583,51 @@
       "text": "keyhunter: mosaicml step 2 -> {\"action\":\"clickText\",\"text\":\"https://app.mosaicml.com/register\"}",
       "t": 1788616501257,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788616500290,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mosaicml step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788616482183,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
-      "t": 1788616481250,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788616463083,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788616444776,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mosaicml step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788616444191,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
-      "t": 1788616426362,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788621805653,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788621765334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788621765334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788621765334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788621765333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
+      "t": 1788621762995,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788621762995,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
@@ -1850,7 +1892,6 @@
     "priority": "The single product from the 20 listed that scores highest on verifiable utility, market demand, and readiness for checkout"
   },
   "throughput": [
-    0,
     5,
     0,
     0,
@@ -1879,13 +1920,14 @@
     0,
     0,
     1,
+    9,
     9
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.02,
-      0.43
+      0.14,
+      0.06,
+      0.42
     ],
     "ramPct": 45,
     "cpus": 12
@@ -1917,7 +1959,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1973,7 +2015,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "nemotron-3.5-lightning-free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2674,9 +2718,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 18
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2691,8 +2735,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
