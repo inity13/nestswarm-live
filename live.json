@@ -1,5 +1,5 @@
 {
-  "generated": 1788582108857,
+  "generated": 1788582153747,
   "status": "running",
   "stats": {
     "products": 128,
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "As Monica, I demand that we create a compelling hero section for SkillMap that clearly com",
-        "t": 1788581900786
+        "text": "SkillMap demands a fully functional demo that proves its automated scheduling capabilities",
+        "t": 1788582112077
       }
     },
     {
@@ -62,10 +62,10 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "SkillMap has huge potential but needs a robust demo to showcase its automated scheduling a",
-        "t": 1788581902153
+        "text": "**Chandler:** Thanks for your input, team. SkillMap does need a fully functional demo that",
+        "t": 1788582114213
       }
     },
     {
@@ -74,10 +74,10 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "SkillMap at \"list\" stage with undifferentiated features is not a product—it's a features l",
-        "t": 1788581929139
+        "text": "SkillMap at \"list\" with undifferentiated features is not a product—it is a specification. ",
+        "t": 1788582126062
       }
     },
     {
@@ -262,6 +262,34 @@
     }
   ],
   "chat": [
+    {
+      "who": "polisher",
+      "text": "Polished SkillMap (pass 2) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788582144410,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "SkillMap at \"list\" with undifferentiated features is not a product—it is a specification. To ship, it must pass the sellability test: a fully automated workflow where scheduling a job instantly generates and collects payment with no manual steps, because without a working checkout the product cannot generate revenue by definition.",
+      "t": 1788582126062,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Chandler",
+      "text": "**Chandler:** Thanks for your input, team. SkillMap does need a fully functional demo that proves its automated scheduling and invoicing features work seamlessly. A working demo is essential before we can proceed with further development. The most important quality requirement at this stage is to ensure the product functions as intended—no half-baked demos allowed. Once we have that, I'll start on some benefit-led copy to make it shine.",
+      "t": 1788582114213,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "SkillMap demands a fully functional demo that proves its automated scheduling capabilities before it can ship. This is non-negotiable. Without demonstrating practical functionality, SkillMap remains merely a brochure and cannot achieve the polish required for launch.",
+      "t": 1788582112077,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "demand_validator",
       "text": "SkillMap needs to ship with a fully functional demo that demonstrates its automated scheduling features before proceeding further. This demo must be testable and verifiable by potential customers to prove the product's core value.",
@@ -1073,37 +1101,57 @@
       "t": 1788570028491,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
-      "t": 1788569257621,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TripSmart — 2 files, working node app. Handing off to test.",
-      "t": 1788568431606,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for PropertyPro.",
-      "t": 1788567696050,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (4) recorded for PropertyPro: Build and integrate a production-ready AI module that automatically generates SEO-optimized, high-converting rental property listings with a minimum 20% lift in simulated SERP scores compared to manua | Deploy a fully functional UI audit with consistent design elements and responsive layout across all platform touchpoints. | Implement an end-to-end automated user flow: signup, email verification, Stripe checkout, and receipt confirmation with 100% success rate in live testing. | Integrate a CI/CD pipeline with OWASP Dependency-Check, TruffleHog, …",
-      "t": 1788567696048,
-      "system": true,
-      "type": "system"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 3/3)",
+      "t": 1788582153295,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788582152076,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3817MB free)",
+      "t": 1788582152075,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for SkillMap exited (null)",
+      "t": 1788582144464,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SkillMap -> http://localhost:5375",
+      "t": 1788582144410,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: SkillMap (pass #2)",
+      "t": 1788582144410,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SkillMap → skillmap.zip (11728 bytes)",
+      "t": 1788582142227,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788582123267,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66483) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
@@ -1535,57 +1583,86 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
       "t": 1788580732619,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788580552472,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SkillMap",
-      "t": 1788580493266,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for SkillMap is stuck (attempt 2) — trying a stronger model",
-      "t": 1788580493266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788580483370,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SkillMap",
-      "t": 1788580483269,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788580481371,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788580372033,
+      "text": "launch-discipline: polishing flagship SkillMap (score 5/8, attempt 3/3)",
+      "t": 1788582153295,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788580347029,
+      "t": 1788582152076,
       "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3817MB free)",
+      "t": 1788582152075,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for SkillMap exited (null)",
+      "t": 1788582144464,
+      "type": "event"
+    },
+    {
+      "who": "polisher",
+      "text": "Polished SkillMap (pass 2) — tighter, cleaner, closer to ship-ready.",
+      "t": 1788582144410,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SkillMap -> http://localhost:5375",
+      "t": 1788582144410,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: SkillMap (pass #2)",
+      "t": 1788582144410,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SkillMap → skillmap.zip (11728 bytes)",
+      "t": 1788582142227,
+      "type": "event"
+    },
+    {
+      "who": "Data",
+      "text": "SkillMap at \"list\" with undifferentiated features is not a product—it is a specification. To ship, it must pass the sellability test: a fully automated workflow where scheduling a job instantly generates and collects payment with no manual steps, because without a working checkout the product cannot generate revenue by definition.",
+      "t": 1788582126062,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788582123267,
+      "type": "event"
+    },
+    {
+      "who": "Chandler",
+      "text": "**Chandler:** Thanks for your input, team. SkillMap does need a fully functional demo that proves its automated scheduling and invoicing features work seamlessly. A working demo is essential before we can proceed with further development. The most important quality requirement at this stage is to ensure the product functions as intended—no half-baked demos allowed. Once we have that, I'll start on some benefit-led copy to make it shine.",
+      "t": 1788582114213,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "SkillMap demands a fully functional demo that proves its automated scheduling capabilities before it can ship. This is non-negotiable. Without demonstrating practical functionality, SkillMap remains merely a brochure and cannot achieve the polish required for launch.",
+      "t": 1788582112077,
+      "system": false,
+      "type": "chat"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,10 +1878,9 @@
     "priority": ""
   },
   "throughput": [
-    2,
     1,
-    4,
-    2,
+    0,
+    6,
     1,
     0,
     0,
@@ -1817,28 +1893,29 @@
     1,
     0,
     6,
+    5,
     11,
-    6,
-    6,
-    1,
+    3,
+    5,
     11,
     16,
     1,
     0,
     0,
     1,
-    17,
-    11,
-    9,
-    0
+    14,
+    8,
+    15,
+    0,
+    15
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.32,
-      0.24
+      1.13,
+      0.54,
+      0.32
     ],
-    "ramPct": 64,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1929,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "nemotron-3.5-lightning-free",
+        "tier": "free"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2608,10 +2685,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 40,
-        "vramPct": 80
+        "busy": false,
+        "warm": true,
+        "utilPct": 4,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
