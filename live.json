@@ -1,5 +1,5 @@
 {
-  "generated": 1788578238596,
+  "generated": 1788578283764,
   "status": "running",
   "stats": {
     "products": 127,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The idea is empty, but I won’t ship a blank slate. It needs a single, sharp feature that s",
-        "t": 1788572873728
+        "text": "TripMate AI needs to ship with a working, tested calendar integration and expense tracking",
+        "t": 1788578274541
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree we must stop chasing every idea and focus on a single flagship, but we can’t let a",
-        "t": 1788571849094
+        "text": "TripMate AI demands a polished, user-friendly interface with a clear hierarchy and strong ",
+        "t": 1788578276077
       }
     },
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "TripMate AI demands a polished, user-friendly interface with a clear hierarchy and strong hero section. The team must provide a working prototype of the calendar integration and expense tracker to ensure seamless functionality before launch.",
+      "t": 1788578276077,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "TripMate AI needs to ship with a working, tested calendar integration and expense tracking sync—no demo mode, no mockups. I demand the team deliver a fully functional prototype with real API connections and a working checkout flow before we ship. The product must be runnable and sellable, not just described. // FILE: README.md ```markdown # TripMate AI Your personal travel companion for remote work success. ## Features - AI-driven itinerary planning with real-time suggestions based on meeting schedules and location preferences. - Integrated calendar scheduling, client meetings, and local …",
+      "t": 1788578274541,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "polisher",
       "text": "Polished TripMate AI (pass 1) — tighter, cleaner, closer to ship-ready.",
@@ -1087,20 +1101,6 @@
       "t": 1788561322478,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "I concede the catalog has become a swamp of half-finished work and that a 5.0 average across 121 products is statistically implausible without genuine polish, but I disagree that diluting focus will help—we must lock onto one flagship, harden it to edge cases, implement a working checkout, and launch it on a real customer-facing channel before we build anything else.",
-      "t": 1788561322477,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "A 5.0 average across 121 products is statistically implausible without bias — it's noise, not quality. The swarm must immediately cease new development, select one candidate, integrate a working payment flow, and ship it to a real customer or euthanize it.",
-      "t": 1788561322476,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
@@ -1587,6 +1587,20 @@
   ],
   "recent": [
     {
+      "who": "Monica",
+      "text": "TripMate AI demands a polished, user-friendly interface with a clear hierarchy and strong hero section. The team must provide a working prototype of the calendar integration and expense tracker to ensure seamless functionality before launch.",
+      "t": 1788578276077,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "TripMate AI needs to ship with a working, tested calendar integration and expense tracking sync—no demo mode, no mockups. I demand the team deliver a fully functional prototype with real API connections and a working checkout flow before we ship. The product must be runnable and sellable, not just described. // FILE: README.md ```markdown # TripMate AI Your personal travel companion for remote work success. ## Features - AI-driven itinerary planning with real-time suggestions based on meeting schedules and location preferences. - Integrated calendar scheduling, client meetings, and local …",
+      "t": 1788578274541,
+      "system": false,
+      "type": "chat"
+    },
+    {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 127 products)",
       "t": 1788578212672,
@@ -1809,7 +1823,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1817,35 +1830,36 @@
     0,
     0,
     1,
-    2,
-    4,
-    1,
     0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    5,
     6,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     10,
-    0,
-    6,
     11,
     0,
-    1
+    1,
+    16,
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.27,
-      0.21
+      0.05,
+      0.23,
+      0.2
     ],
-    "ramPct": 56,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1859,8 +1873,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2617,7 +2631,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
+        "utilPct": 27,
         "vramPct": 80
       },
       {
@@ -2635,7 +2649,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 4,
+        "utilPct": 3,
         "vramPct": 92
       }
     ],
