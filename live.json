@@ -1,5 +1,5 @@
 {
-  "generated": 1788641606348,
+  "generated": 1788641648911,
   "status": "running",
   "stats": {
     "products": 138,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788641629833,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3645MB free)",
+      "t": 1788641629831,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
+      "t": 1788641623977,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
       "t": 1788641445235,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "keyhunter: cohere step 7 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788636656003,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788641629833,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 6 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788636654804,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3645MB free)",
+      "t": 1788641629831,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788636653605,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1788636653039,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 138 products)",
+      "t": 1788641623977,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,17 +1820,16 @@
     "priority": "Micro-entrepreneur financial advisor SaaS solving real-time cash flow prediction, expense tracking, and tax reminders"
   },
   "throughput": [
-    3,
     0,
     0,
     1,
     0,
     0,
-    20,
+    14,
+    6,
     0,
-    0,
-    2,
-    0,
+    1,
+    1,
     0,
     1,
     0,
@@ -1830,15 +1848,16 @@
     0,
     1,
     0,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.04,
-      0.06
+      0.29,
+      0.12,
+      0.09
     ],
-    "ramPct": 48,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2610,8 +2629,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 18
+        "utilPct": 38,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
