@@ -1,5 +1,5 @@
 {
-  "generated": 1788595879793,
+  "generated": 1788595924768,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788595924133,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788595852984,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788593526485,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788593526485,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788595924133,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
@@ -1809,7 +1815,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1819,31 +1824,32 @@
     1,
     0,
     0,
-    9,
-    4,
-    18,
-    11,
+    7,
+    5,
+    15,
+    15,
     0,
-    20,
-    4,
+    10,
+    14,
     13,
-    4,
-    25,
+    0,
+    22,
+    7,
+    0,
+    1,
     0,
     0,
     1,
     0,
     0,
     1,
-    0,
-    0,
     1
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.17,
-      0.26
+      0.05,
+      0.15,
+      0.25
     ],
     "ramPct": 65,
     "cpus": 12
@@ -2617,8 +2623,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 44,
-        "vramPct": 81
+        "utilPct": 33,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2633,8 +2639,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
