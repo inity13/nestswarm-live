@@ -1,5 +1,5 @@
 {
-  "generated": 1788616990256,
+  "generated": 1788617035336,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: provider nemotron-3.5-lightning-free not found",
+      "t": 1788617013518,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider nemotron-3.5-lightning-free not found",
+      "t": 1788617013518,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788617004971,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
       "t": 1788616965446,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "keyhunter: coherefreetrial step 1 -> {\"action\":\"fail\",\"reason\":\"404 error encountered, page not found.\"}",
       "t": 1788615128000,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: provider nemotron-3.5-lightning-free not found",
+      "t": 1788617013518,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting aidungeonapi (https://aidungeon.io/signup)",
-      "t": 1788615128000,
+      "text": "self-heal complete: 1 fix(es) — provider nemotron-3.5-lightning-free not found",
+      "t": 1788617013518,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788615127003,
+      "t": 1788617004971,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "keyhunter: coherefreetrial step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788615126710,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
@@ -1827,25 +1845,25 @@
     0,
     0,
     0,
-    0,
-    42,
-    12,
-    15,
+    38,
+    10,
+    19,
     14,
-    0,
+    2,
     0,
     1,
     0,
     0,
-    1
+    1,
+    4
   ],
   "load": {
     "loadavg": [
-      0.03,
-      25.23,
-      66.4
+      0.01,
+      21.7,
+      63.26
     ],
-    "ramPct": 53,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1887,8 +1905,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "ling-3.0-flash-fin-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2652,7 +2670,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 58
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 85,
