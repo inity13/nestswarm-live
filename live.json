@@ -1,5 +1,5 @@
 {
-  "generated": 1788647498136,
+  "generated": 1788647543026,
   "status": "running",
   "stats": {
     "products": 140,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:37:57 AM) — trying ChatGPT/free",
+      "t": 1788647517620,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788647517610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788647517610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: 3 distribution action(s) this pass",
       "t": 1788647405796,
       "type": "launch"
@@ -1565,27 +1583,28 @@
       "text": "launch-discipline: holding on flagship FitCue (finishing launch/distribution)",
       "t": 1788646163316,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "launch-discipline: FitCue plateaued at 6/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788646163315,
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 1:37:57 AM) — trying ChatGPT/free",
+      "t": 1788647517620,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: holding on flagship FitCue (finishing launch/distribution)",
-      "t": 1788646153316,
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788647517610,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: FitCue plateaued at 6/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788646153315,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788647517610,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,44 +1820,44 @@
     "priority": "Nest Finance Tracker - AI-powered personal finance tool with crypto wallet integration and subscription model"
   },
   "throughput": [
-    14,
-    1,
-    5,
-    5,
-    9,
-    4,
-    11,
-    24,
-    22,
-    20,
-    8,
-    10,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
     3,
-    19,
-    6,
-    0,
-    12,
-    18,
-    16,
+    4,
     1,
-    14,
-    0
+    6,
+    12,
+    0,
+    29,
+    28,
+    15,
+    12,
+    6,
+    5,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    15,
+    10,
+    2,
+    10,
+    16,
+    20,
+    0,
+    15,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.25,
-      0.68,
-      0.58
+      0.79,
+      0.76,
+      0.61
     ],
-    "ramPct": 84,
+    "ramPct": 83,
     "cpus": 12
   },
   "brain": {
@@ -2628,8 +2647,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
-        "vramPct": 81
+        "utilPct": 44,
+        "vramPct": 82
       },
       {
         "alias": "GPU-Node-2",
