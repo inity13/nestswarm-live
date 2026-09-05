@@ -1,11 +1,11 @@
 {
-  "generated": 1788634674835,
+  "generated": 1788634719855,
   "status": "running",
   "stats": {
     "products": 135,
-    "listed": 8,
+    "listed": 9,
     "agents": 22,
-    "avgScore": "5.3"
+    "avgScore": "5.5"
   },
   "agents": [
     {
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788634684737,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "PetDesk MT is LISTED at $4.99 (score 6). Time to get it in front of buyers.",
+      "t": 1788634684684,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
@@ -1087,23 +1101,69 @@
       "t": 1788625632295,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "I’m convinced we must stop treating each product as a standalone experiment and instead build a coherent brand identity that speaks to our users across all touchpoints. The team must create a living design system—complete with typography, color palettes, component library, and a strict review process—so every new feature or product immediately reflects our polished, unified aesthetic.",
-      "t": 1788625632293,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "I believe the swarm should abandon the endless “copy‑cat” approach and treat each product as a handcrafted gem, not a mass‑produced souvenir. The only way to stop churning raw count is to pick a single niche that no one has truly solved—say, an end‑to‑end digital platform that lets micro‑farmers publish, sell, and ship their produce through a frictionless marketplace, with embedded payments and a transparent supply‑chain tracker. That’s the kind of single flagship that moves money in and keeps the swarm’s energy focused. **Concrete demand:** Stop auto‑generating product listings; instead, …",
-      "t": 1788625632289,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788634708838,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 10:08:28 PM) — trying ChatGPT/free",
+      "t": 1788634708834,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop unavailable) — trying ChatGPT/free",
+      "t": 1788634708824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788634708824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship PetDesk MT (score 6/8, attempt 1/3)",
+      "t": 1788634694675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PetDesk MT → petdesk-mt.zip (7253 bytes)",
+      "t": 1788634684881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788634684736,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: PetDesk MT -> http://localhost:5382",
+      "t": 1788634684684,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: PetDesk MT @ http://localhost:5382 ($4.99 one-time)",
+      "t": 1788634684684,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> PetDesk MT",
+      "t": 1788634684675,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> PetDesk MT",
@@ -1523,69 +1583,76 @@
       "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
       "t": 1788631964208,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788631964207,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788631964206,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged PersonalForge MT → personalforge-mt.zip (14610 bytes)",
-      "t": 1788631961952,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for PersonalForge MT: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788631961917,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council demands satisfied for PersonalForge MT",
-      "t": 1788631961917,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "marketer produced a kit for PersonalForge MT",
-      "t": 1788631907103,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 134 products)",
-      "t": 1788631906375,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for marketer (899 chars)",
-      "t": 1788631900550,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop limited until 9:20:53 PM) — trying ChatGPT/free",
-      "t": 1788631857793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788631857793,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788634708838,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 10:08:28 PM) — trying ChatGPT/free",
+      "t": 1788634708834,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop unavailable) — trying ChatGPT/free",
+      "t": 1788634708824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788634708824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship PetDesk MT (score 6/8, attempt 1/3)",
+      "t": 1788634694675,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged PetDesk MT → petdesk-mt.zip (7253 bytes)",
+      "t": 1788634684881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788634684736,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "PetDesk MT is LISTED at $4.99 (score 6). Time to get it in front of buyers.",
+      "t": 1788634684684,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: PetDesk MT -> http://localhost:5382",
+      "t": 1788634684684,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: PetDesk MT @ http://localhost:5382 ($4.99 one-time)",
+      "t": 1788634684684,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> PetDesk MT",
+      "t": 1788634684675,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> PetDesk MT",
@@ -1596,49 +1663,6 @@
       "who": "swarm",
       "text": "designer improved UI for PetDesk MT",
       "t": 1788634658306,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 135 products)",
-      "t": 1788634605843,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> PetDesk MT",
-      "t": 1788634604689,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for PetDesk MT",
-      "t": 1788634597003,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PetDesk MT",
-      "t": 1788634594689,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PetDesk MT — 2 files, working node app. Handing off to test.",
-      "t": 1788634586597,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788634586597,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788634586597,
       "type": "event"
     }
   ],
@@ -1845,11 +1869,11 @@
     }
   ],
   "ledger": {
-    "total": 648,
+    "total": 649,
     "revenue": 0,
     "effects": 111,
     "boundary": 1,
-    "artifacts": 78,
+    "artifacts": 79,
     "receipts": 0
   },
   "meeting": {
@@ -1857,6 +1881,18 @@
     "priority": "Micro-farmer digital marketplace (end-to-end platform for publishing, selling, and shipping produce)"
   },
   "throughput": [
+    0,
+    1,
+    6,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     1,
     2,
@@ -1870,31 +1906,19 @@
     1,
     0,
     0,
-    1,
+    3,
     0,
+    5,
     4,
-    3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    0,
-    0,
-    7,
-    4
+    13
   ],
   "load": {
     "loadavg": [
-      1.44,
-      0.59,
+      0.84,
+      0.54,
       0.36
     ],
-    "ramPct": 71,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1985,7 +2009,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 8,
+      "listed": 9,
       "cap": 20
     }
   },
@@ -2416,6 +2440,13 @@
       "score": 7
     },
     {
+      "name": "PetDesk MT",
+      "status": "listed",
+      "niche": "pet care & ownership",
+      "price": 4.99,
+      "score": 6
+    },
+    {
       "name": "Eloquii",
       "status": "listed",
       "niche": "writing, copy & content creation",
@@ -2624,21 +2655,32 @@
       "niche": "events, community & memberships",
       "price": 4.99,
       "score": 5
-    },
-    {
-      "name": "StreamFuse",
-      "status": "rejected",
-      "niche": "social media, creators & influencer tools",
-      "price": 4.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "PetDesk MT",
       "niche": "pet care & ownership",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "PersonalForge MT",
+      "niche": "personal finance, investing & budgeting",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TenantScreenPrime",
+      "niche": "parenting & family organizers",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Flockly",
+      "niche": "personal finance, investing & budgeting",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2666,7 +2708,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 36,
+        "utilPct": 26,
         "vramPct": 80
       },
       {
@@ -2684,8 +2726,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 0
+        "utilPct": 69,
+        "vramPct": 58
       }
     ],
     "selfHostedInferencePct": 86,
