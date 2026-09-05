@@ -1,5 +1,5 @@
 {
-  "generated": 1788603710887,
+  "generated": 1788603755653,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1801,7 +1801,6 @@
     "priority": ""
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1830,21 +1829,22 @@
     0,
     0,
     3,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.3,
-      0.27
+      0.99,
+      0.46,
+      0.32
     ],
-    "ramPct": 59,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1852,11 +1852,11 @@
         "tier": "local"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2628,7 +2628,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
+        "utilPct": 3,
         "vramPct": 19
       },
       {
@@ -2645,9 +2645,9 @@
           "vision"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 0
+        "warm": true,
+        "utilPct": 3,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 85,
