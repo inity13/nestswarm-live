@@ -1,5 +1,5 @@
 {
-  "generated": 1788575358666,
+  "generated": 1788575403706,
   "status": "running",
   "stats": {
     "products": 127,
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> TripMate AI",
+      "t": 1788575383294,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> TripMate AI",
       "t": 1788575353296,
       "type": "building"
@@ -1577,15 +1583,15 @@
       "text": "keyhunter: coherefreetrial step 4 -> {\"action\":\"type\",\"selector\":\"#Email_1013\",\"value\":\"[email]\"}",
       "t": 1788571729729,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: coherefreetrial step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1788571727744,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TripMate AI",
+      "t": 1788575383294,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> TripMate AI",
@@ -1864,9 +1870,8 @@
   },
   "throughput": [
     0,
-    0,
-    4,
-    3,
+    1,
+    6,
     0,
     1,
     0,
@@ -1892,13 +1897,14 @@
     1,
     0,
     0,
-    12
+    7,
+    7
   ],
   "load": {
     "loadavg": [
-      0.83,
-      0.27,
-      0.21
+      0.39,
+      0.23,
+      0.2
     ],
     "ramPct": 56,
     "cpus": 12
@@ -2625,7 +2631,7 @@
     {
       "name": "TripMate AI",
       "niche": "legal, contracts & compliance",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2654,7 +2660,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
+        "utilPct": 38,
         "vramPct": 77
       },
       {
@@ -2670,13 +2676,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 58
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 83,
-    "jobsProcessed": 127
+    "jobsProcessed": 128
   }
 }
