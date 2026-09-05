@@ -1,5 +1,5 @@
 {
-  "generated": 1788567725264,
+  "generated": 1788567750165,
   "status": "running",
   "stats": {
     "products": 124,
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "PropertyPro is dead in the water until it delivers on its AI promise—everyone's right abou",
         "t": 1788567640003
@@ -110,7 +110,7 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Scotty:** PropertyPro is promising, but it’s stuck in prototype limbo—AI features are pr",
         "t": 1788567659659
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
+      "t": 1788567743161,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788567726065,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
+      "t": 1788567726065,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (3 notes updated)",
       "t": 1788567724410,
       "type": "vault"
@@ -1565,27 +1583,27 @@
       "text": "stage 'test' -> PropertyPro",
       "t": 1788566047334,
       "type": "building"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "coder produced a functional build (3 files, exe)",
-      "t": 1788566039115,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 124 products)",
+      "t": 1788567743161,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788565950500,
-      "type": "bench"
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1788567726065,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3048MB free)",
-      "t": 1788565950499,
-      "type": "bench"
-    }
-  ],
-  "recent": [
+      "text": "self-heal complete: 1 fix(es) — provider chatgpt not found",
+      "t": 1788567726065,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (3 notes updated)",
@@ -1664,20 +1682,6 @@
       "who": "Quark",
       "text": "PropertyPro must deliver a fully functional AI module that automatically optimizes listings and generates SEO-friendly descriptions before it can launch. Without this core feature, PropertyPro remains just a wish list, unable to compete or deliver value in the market. Let's focus on building a product our customers will love by launching with quality at its heart.",
       "t": 1788567661700,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "**Scotty:** PropertyPro is promising, but it’s stuck in prototype limbo—AI features are promised but not delivered yet. **Monica:** I demand that PropertyPro undergo an immediate UI audit by our lead developer to ensure a polished user experience. **Chandler:** I’m not convinced PropertyPro is ready for the market until it actually delivers on its AI promises. The current version lacks the automation and intelligence users need. **Data:** Here’s my analysis: **The SINGLE most important quality requirement for PropertyPro to ship is a fully functional AI module that delivers reliable …",
-      "t": 1788567659659,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "PropertyPro is dead in the water until it delivers on its AI promise—everyone's right about that. The single most important requirement? A production-ready module that actually generates optimized listings. No more wishlists, no more demos. If it can't do that, it's not a product, it's a placeholder.",
-      "t": 1788567640003,
       "system": false,
       "type": "chat"
     }
@@ -1897,44 +1901,44 @@
     "priority": "The top product with the strongest evidence of market interest and revenue potential among the 14 listed"
   },
   "throughput": [
-    3,
     2,
-    4,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    5,
     6,
-    16,
+    1,
     0,
-    2,
-    16,
-    7,
-    4,
-    7,
     0,
     1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    13,
+    7,
+    2,
     5,
-    18,
-    17,
-    10,
-    11
+    11,
+    11,
+    0,
+    7,
+    1,
+    0,
+    15,
+    19,
+    11,
+    12,
+    8
   ],
   "load": {
     "loadavg": [
-      0.39,
-      0.52,
-      0.37
+      1.22,
+      0.71,
+      0.44
     ],
-    "ramPct": 60,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -2674,10 +2678,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 32,
-        "vramPct": 77
+        "utilPct": 4,
+        "vramPct": 15
       },
       {
         "alias": "GPU-Node-2",
@@ -2692,8 +2696,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
