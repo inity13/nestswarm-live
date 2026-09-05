@@ -1,5 +1,5 @@
 {
-  "generated": 1788572568750,
+  "generated": 1788572613980,
   "status": "running",
   "stats": {
     "products": 125,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> TravelGenie MT",
+      "t": 1788572603344,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TravelGenie MT",
+      "t": 1788572595312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TravelGenie MT",
+      "t": 1788572573338,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
       "text": "tests passed for TravelGenie MT",
       "t": 1788572565633,
       "type": "test"
@@ -1565,27 +1583,27 @@
       "text": "registrar: Beehiiv step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1788571568286,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788571567131,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788571564962,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 9 -> {}",
-      "t": 1788571563792,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TravelGenie MT",
+      "t": 1788572603344,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TravelGenie MT",
+      "t": 1788572595312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TravelGenie MT",
+      "t": 1788572573338,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "tests passed for TravelGenie MT",
@@ -1833,26 +1851,25 @@
     "priority": ""
   },
   "throughput": [
-    1,
     0,
     0,
-    6,
-    1,
-    0,
-    1,
-    0,
-    0,
-    28,
-    15,
-    18,
-    51,
-    38,
-    49,
-    22,
-    10,
-    19,
     3,
-    8,
+    4,
+    0,
+    1,
+    0,
+    0,
+    17,
+    23,
+    19,
+    30,
+    58,
+    44,
+    15,
+    25,
+    14,
+    6,
+    10,
     0,
     0,
     1,
@@ -1862,15 +1879,16 @@
     0,
     0,
     1,
-    5
+    0,
+    10
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.69,
+      1.03,
+      0.85,
       1.66
     ],
-    "ramPct": 73,
+    "ramPct": 75,
     "cpus": 12
   },
   "brain": {
@@ -1888,11 +1906,11 @@
         "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security": {
@@ -2595,7 +2613,7 @@
     {
       "name": "TravelGenie MT",
       "niche": "travel, trip planning & remote work",
-      "stage": "design",
+      "stage": "package",
       "status": "building"
     }
   ],
@@ -2624,7 +2642,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
+        "utilPct": 37,
         "vramPct": 77
       },
       {
@@ -2640,10 +2658,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 92
+        "busy": true,
+        "warm": false,
+        "utilPct": 3,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 83,
