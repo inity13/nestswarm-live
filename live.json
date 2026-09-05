@@ -1,9 +1,9 @@
 {
-  "generated": 1788584809033,
+  "generated": 1788584853888,
   "status": "running",
   "stats": {
     "products": 129,
-    "listed": 17,
+    "listed": 18,
     "agents": 22,
     "avgScore": "5.0"
   },
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm’s been churning out products like it’s trying to outrun a swarm of klingons, but",
-        "t": 1788582540934
+        "text": "JobMate needs a clear go/no-go on its core workflow: job creation → client communication →",
+        "t": 1788584835695
       }
     },
     {
@@ -262,6 +262,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "JobMate needs a clear go/no-go on its core workflow: job creation → client communication → invoicing → feedback collection. I demand the team finalize and test the end-to-end flow in a working prototype before proceeding. No half-baked features or speculative UIs — I need to see actual data movement and user actions validated. If it doesn’t work, it’s not ready.",
+      "t": 1788584835695,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788584833534,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "JobMate is LISTED at $29 (score 5). Time to get it in front of buyers.",
+      "t": 1788584833486,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for JobMate — 2 files, working node app. Handing off to test.",
@@ -1080,30 +1101,57 @@
       "t": 1788577893241,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
-      "t": 1788577803812,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
-      "t": 1788577034336,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TripMate AI — 2 files, working node app. Handing off to test.",
-      "t": 1788576211099,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship JobMate (score 5/8, attempt 1/3)",
+      "t": 1788584843478,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for JobMate",
+      "t": 1788584841515,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged JobMate → jobmate.zip (10645 bytes)",
+      "t": 1788584833682,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788584833533,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: JobMate -> http://localhost:5376",
+      "t": 1788584833486,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: JobMate @ http://localhost:5376 ($29 subscription)",
+      "t": 1788584833486,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> JobMate",
+      "t": 1788584833479,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> JobMate",
+      "t": 1788584813477,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "designer improved UI for JobMate",
@@ -1535,98 +1583,75 @@
       "text": "packaged SkillMap → skillmap.zip (11728 bytes)",
       "t": 1788582142227,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788582123267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66483) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788582001751,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 128 products)",
-      "t": 1788581992114,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for marketer (chatgpt rate-limited) — trying free providers",
-      "t": 1788581982129,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT free-tier limit reached (auto-failover to local; no action needed)",
-      "t": 1788581982128,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit 1): <3>WSL (66458) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788581963545,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit 1): <3>WSL (66446) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
-      "t": 1788581953531,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (66440) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788581943503,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "designer improved UI for JobMate",
-      "t": 1788584807064,
+      "text": "launch-discipline: polishing flagship JobMate (score 5/8, attempt 1/3)",
+      "t": 1788584843478,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'design' -> JobMate",
-      "t": 1788584763475,
-      "type": "building"
+      "text": "marketer produced a kit for JobMate",
+      "t": 1788584841515,
+      "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "tests passed for JobMate",
-      "t": 1788584755711,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> JobMate",
-      "t": 1788584753475,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for JobMate — 2 files, working node app. Handing off to test.",
-      "t": 1788584752275,
+      "who": "Scotty",
+      "text": "JobMate needs a clear go/no-go on its core workflow: job creation → client communication → invoicing → feedback collection. I demand the team finalize and test the end-to-end flow in a working prototype before proceeding. No half-baked features or speculative UIs — I need to see actual data movement and user actions validated. If it doesn’t work, it’s not ready.",
+      "t": 1788584835695,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788584752275,
+      "text": "packaged JobMate → jobmate.zip (10645 bytes)",
+      "t": 1788584833682,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788584752274,
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788584833533,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "JobMate is LISTED at $29 (score 5). Time to get it in front of buyers.",
+      "t": 1788584833486,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: JobMate -> http://localhost:5376",
+      "t": 1788584833486,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: JobMate @ http://localhost:5376 ($29 subscription)",
+      "t": 1788584833486,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> JobMate",
+      "t": 1788584833479,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> JobMate",
+      "t": 1788584813477,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for JobMate",
+      "t": 1788584807064,
       "type": "event"
     }
   ],
@@ -1833,11 +1858,11 @@
     }
   ],
   "ledger": {
-    "total": 629,
+    "total": 630,
     "revenue": 0,
     "effects": 106,
     "boundary": 1,
-    "artifacts": 73,
+    "artifacts": 74,
     "receipts": 0
   },
   "meeting": {
@@ -1845,7 +1870,6 @@
     "priority": "AI-powered personal finance assistant for millennials and Gen Z"
   },
   "throughput": [
-    0,
     1,
     0,
     6,
@@ -1874,15 +1898,16 @@
     0,
     0,
     1,
-    8
+    6,
+    15
   ],
   "load": {
     "loadavg": [
-      0.37,
-      0.13,
-      0.12
+      0.75,
+      0.24,
+      0.15
     ],
-    "ramPct": 53,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1896,8 +1921,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -1932,7 +1957,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -1973,7 +1998,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 17,
+      "listed": 18,
       "cap": 20
     }
   },
@@ -2526,6 +2551,13 @@
       "score": 6
     },
     {
+      "name": "JobMate",
+      "status": "listed",
+      "niche": "small-business operations & accounting",
+      "price": 29,
+      "score": 5
+    },
+    {
       "name": "SkillMap",
       "status": "listed",
       "niche": "study, learning & memory aids",
@@ -2594,21 +2626,32 @@
       "niche": "pet care & ownership",
       "price": 149,
       "score": 5
-    },
-    {
-      "name": "ClipRoute",
-      "status": "listed",
-      "niche": "events, community & memberships",
-      "price": 4.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "JobMate",
       "niche": "small-business operations & accounting",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SkillMap",
+      "niche": "study, learning & memory aids",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "TripMate AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "PropertyPro",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2636,7 +2679,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
+        "utilPct": 74,
         "vramPct": 80
       },
       {
@@ -2652,10 +2695,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 58
+        "busy": true,
+        "warm": false,
+        "utilPct": 1,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 83,
