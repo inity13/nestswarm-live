@@ -1,5 +1,5 @@
 {
-  "generated": 1788578328853,
+  "generated": 1788578373847,
   "status": "running",
   "stats": {
     "products": 127,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "TripMate AI needs to ship with a working, tested calendar integration and expense tracking",
         "t": 1788578274541
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "TripMate AI demands a polished, user-friendly interface with a clear hierarchy and strong ",
         "t": 1788578276077
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "ChatGPT responded for conductor (342 chars)",
+      "t": 1788578334642,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788578296432,
       "type": "event"
@@ -1577,15 +1583,15 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 126 products)",
       "t": 1788574973043,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788574949504,
-      "type": "bench"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (342 chars)",
+      "t": 1788578334642,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
@@ -1658,20 +1664,6 @@
       "text": "polish syntax fail for TripMate AI: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788578284452,
       "type": "event"
-    },
-    {
-      "who": "Monica",
-      "text": "TripMate AI demands a polished, user-friendly interface with a clear hierarchy and strong hero section. The team must provide a working prototype of the calendar integration and expense tracker to ensure seamless functionality before launch.",
-      "t": 1788578276077,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "TripMate AI needs to ship with a working, tested calendar integration and expense tracking sync—no demo mode, no mockups. I demand the team deliver a fully functional prototype with real API connections and a working checkout flow before we ship. The product must be runnable and sellable, not just described. // FILE: README.md ```markdown # TripMate AI Your personal travel companion for remote work success. ## Features - AI-driven itinerary planning with real-time suggestions based on meeting schedules and location preferences. - Integrated calendar scheduling, client meetings, and local …",
-      "t": 1788578274541,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1717,7 +1709,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 10×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 11×"
     },
     {
       "name": "GitHub Copilot",
@@ -1889,7 +1881,6 @@
     "priority": ""
   },
   "throughput": [
-    0,
     1,
     0,
     2,
@@ -1911,19 +1902,20 @@
     1,
     0,
     6,
-    13,
-    2,
+    11,
+    4,
     0,
-    12,
-    5,
+    6,
+    11,
     0,
     1,
-    16
+    16,
+    2
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.21,
+      0.09,
+      0.2,
       0.19
     ],
     "ramPct": 57,
@@ -1968,8 +1960,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "chatgpt(free)",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2696,9 +2688,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 35,
+        "busy": false,
+        "warm": true,
+        "utilPct": 4,
         "vramPct": 80
       },
       {
