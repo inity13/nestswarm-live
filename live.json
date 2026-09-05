@@ -1,5 +1,5 @@
 {
-  "generated": 1788621808967,
+  "generated": 1788621850967,
   "status": "running",
   "stats": {
     "products": 132,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788621832277,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3824MB free)",
+      "t": 1788621832276,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788621826927,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1788621808365,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "registrar: Millo step 9 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
       "t": 1788616539282,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: reactai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788616538593,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 8 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
-      "t": 1788616522689,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: mosaicml step 3 -> {\"action\":\"fail\",\"reason\":\"The provided URL does not contain any information related to MosaicML or API keys. The page i",
-      "t": 1788616520595,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788621832277,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3824MB free)",
+      "t": 1788621832276,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 132 products)",
+      "t": 1788621826927,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1650,54 +1668,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788621762995,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1788621743738,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788621743694,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: demand-validation-optimization",
-      "t": 1788621743643,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1788621743643,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-live-readiness",
-      "t": 1788621743643,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill demand-validation-optimization",
-      "t": 1788621743643,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1788621743642,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness",
-      "t": 1788621743642,
       "type": "event"
     }
   ],
@@ -1916,8 +1886,7 @@
     "priority": "The single product from the 20 listed that scores highest on verifiable utility, market demand, and readiness for checkout"
   },
   "throughput": [
-    5,
-    0,
+    1,
     0,
     1,
     0,
@@ -1931,8 +1900,8 @@
     1,
     0,
     0,
-    3,
-    0,
+    1,
+    2,
     0,
     1,
     0,
@@ -1944,16 +1913,17 @@
     0,
     0,
     1,
-    9,
-    14
+    0,
+    17,
+    9
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.06,
-      0.42
+      0.57,
+      0.22,
+      0.46
     ],
-    "ramPct": 45,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2744,7 +2714,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 80
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
