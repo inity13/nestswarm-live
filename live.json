@@ -1,5 +1,5 @@
 {
-  "generated": 1788653304818,
+  "generated": 1788653347250,
   "status": "running",
   "stats": {
     "products": 143,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
+      "t": 1788653334848,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: ScopeSage — freelancers & solopreneurs. Let's see if it's worth building.",
@@ -1094,16 +1101,27 @@
       "t": 1788646128220,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "FitCue offers a unique solution for busy professionals seeking quick, effective workouts. To ensure its success, the team must deliver real calendar integration and functional AI workout generation that works seamlessly with users' schedules.",
-      "t": 1788646118091,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ScopeSage",
+      "t": 1788653342422,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788653334848,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
+      "t": 1788653323165,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
@@ -1565,27 +1583,35 @@
       "text": "idea duplicate (SensoryFit); re-ideating in a fresh niche",
       "t": 1788650119723,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ScopeSage",
+      "t": 1788653342422,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
+      "t": 1788653334848,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "idea duplicate (Sensory Harmony); re-ideating in a fresh niche",
-      "t": 1788650108293,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788653334848,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "idea duplicate (SensoryEase); re-ideating in a fresh niche",
-      "t": 1788650105692,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (SensoryMate Pro); re-ideating in a fresh niche",
-      "t": 1788650103386,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
+      "t": 1788653323165,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1801,7 +1827,6 @@
     "priority": "Nest Finance Tracker - AI-powered personal finance tool with crypto wallet integration and subscription model"
   },
   "throughput": [
-    1,
     0,
     0,
     7,
@@ -1817,28 +1842,29 @@
     0,
     0,
     3,
-    15,
-    2,
+    12,
+    5,
     1,
     0,
     0,
     1,
     0,
     0,
-    2,
-    0,
+    1,
+    1,
     0,
     1,
     0,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.33,
+      0.32,
       0.21,
       0.19
     ],
-    "ramPct": 67,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1878,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2581,7 +2607,7 @@
     {
       "name": "ScopeSage",
       "niche": "freelancers & solopreneurs",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2610,7 +2636,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
+        "utilPct": 37,
         "vramPct": 81
       },
       {
@@ -2628,7 +2654,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
