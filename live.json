@@ -1,5 +1,5 @@
 {
-  "generated": 1788681192816,
+  "generated": 1788681236741,
   "status": "running",
   "stats": {
     "products": 159,
@@ -1100,6 +1100,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788681231005,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788681231005,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788681230904,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788681228986,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3557MB free)",
+      "t": 1788681228985,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
       "t": 1788681075487,
       "type": "event"
@@ -1547,33 +1577,40 @@
       "text": "keyhunter: nvidia step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788679395127,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting nvidia (https://build.nvidia.com)",
-      "t": 1788679393192,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1788679392302,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv needs email verification — reading inbox",
-      "t": 1788679392239,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788679392238,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788681231005,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788681231005,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788681230904,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788681228986,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3557MB free)",
+      "t": 1788681228985,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1789,23 +1826,22 @@
     "priority": ""
   },
   "throughput": [
-    26,
+    18,
     16,
-    19,
+    21,
     20,
-    17,
-    4,
+    6,
     1,
     13,
     0,
     1,
     4,
-    4,
-    4,
-    2,
-    1,
+    0,
+    7,
+    3,
+    0,
     11,
-    1,
+    2,
     2,
     0,
     3,
@@ -1818,15 +1854,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.12,
-      0.26
+      0.84,
+      0.3,
+      0.31
     ],
-    "ramPct": 66,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2616,8 +2653,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 34,
-        "vramPct": 81
+        "utilPct": 40,
+        "vramPct": 51
       },
       {
         "alias": "GPU-Node-2",
