@@ -1,5 +1,5 @@
 {
-  "generated": 1788670347669,
+  "generated": 1788670392585,
   "status": "running",
   "stats": {
     "products": 157,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for RealPilot MT.",
+      "t": 1788670367064,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "demand_validator",
       "text": "RealPilot MT needs a clear set of features and an identified audience before proceeding. The most important quality requirement is **a user-friendly interface** that simplifies real estate transactions for professionals. This will ensure the product is not only technically sound but also highly valuable to its target market.",
@@ -1094,16 +1101,21 @@
       "t": 1788667383726,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "**My Position:** EvoSage has potential to disrupt the B2B coaching space but is currently underdeveloped. The product reads like a feature list without concrete implementation. **Concrete Demand:** The team must create a demo version of EvoSage that integrates basic AI-driven career advancement planning and real-time performance analytics within 30 days. This will help validate user intent and ensure the platform is ready for broader development and launch.",
-      "t": 1788667381671,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> EventsPal MT",
+      "t": 1788670365612,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788670362831,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 157 products)",
@@ -1571,21 +1583,21 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 156 products)",
       "t": 1788669196085,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'spec' -> RealPilot MT",
-      "t": 1788669125634,
+      "text": "stage 'build' -> EventsPal MT",
+      "t": 1788670365612,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "ideator produced no usable name — generated \"RealPilot MT\"",
-      "t": 1788669118038,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788670362831,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "demand_validator",
       "text": "RealPilot MT needs a clear set of features and an identified audience before proceeding. The most important quality requirement is **a user-friendly interface** that simplifies real estate transactions for professionals. This will ensure the product is not only technically sound but also highly valuable to its target market.",
@@ -1655,31 +1667,6 @@
       "t": 1788670315885,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 157 products)",
-      "t": 1788670275605,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> EventsPal MT",
-      "t": 1788670265613,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for EventsPal MT — 2 files, working node app. Handing off to test.",
-      "t": 1788670260298,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788670260298,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1897,42 +1884,42 @@
     "priority": ""
   },
   "throughput": [
+    10,
+    15,
+    17,
     8,
-    12,
-    12,
     14,
-    14,
-    11,
-    4,
+    7,
+    0,
     2,
-    0,
-    22,
-    7,
-    5,
-    7,
+    21,
+    3,
+    10,
+    6,
     1,
-    14,
-    5,
-    7,
-    9,
-    0,
-    13,
-    5,
-    9,
-    14,
-    25,
     12,
     3,
-    0,
+    11,
+    7,
     3,
-    5,
-    11
+    12,
+    6,
+    4,
+    18,
+    19,
+    9,
+    12,
+    1,
+    3,
+    4,
+    11,
+    5
   ],
   "load": {
     "loadavg": [
-      0.66,
-      0.44,
-      0.45
+      0.38,
+      0.4,
+      0.44
     ],
     "ramPct": 96,
     "cpus": 12
@@ -2677,7 +2664,7 @@
     {
       "name": "EventsPal MT",
       "niche": "events, community & memberships",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2706,7 +2693,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 35,
+        "utilPct": 38,
         "vramPct": 80
       },
       {
