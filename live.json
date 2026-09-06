@@ -1,5 +1,5 @@
 {
-  "generated": 1788703153766,
+  "generated": 1788703197767,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788703175681,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
+      "t": 1788703175681,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: 3 distribution action(s) this pass",
       "t": 1788703143826,
       "type": "launch"
@@ -1571,21 +1583,21 @@
       "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
       "t": 1788701235158,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1788701218607,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788701218602,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788703175681,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
+      "t": 1788703175681,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launcher: 3 distribution action(s) this pass",
@@ -1603,48 +1615,6 @@
       "text": "ChatGPT responded for publisher (752 chars)",
       "t": 1788703143824,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
-      "t": 1788703091128,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
-      "t": 1788703091128,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788703091122,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788703091122,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit 1): <3>WSL (99117) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788703090274,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788703090274,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped MindMate to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788703080237,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1862,12 +1832,11 @@
     "priority": "AI‑powered personal assistant for freelancers that syncs with Google Calendar and Trello."
   },
   "throughput": [
-    1,
-    1,
-    3,
-    1,
-    16,
-    1,
+    2,
+    2,
+    2,
+    13,
+    4,
     0,
     3,
     3,
@@ -1877,29 +1846,30 @@
     1,
     1,
     3,
-    19,
-    1,
+    15,
+    5,
     15,
     3,
+    1,
     2,
     4,
     1,
-    1,
-    1,
-    5,
+    0,
+    4,
     19,
     11,
-    2,
-    8,
-    4
+    4,
+    1,
+    7,
+    7
   ],
   "load": {
     "loadavg": [
-      5.12,
-      3.7,
-      2.2
+      3.56,
+      3.46,
+      2.18
     ],
-    "ramPct": 47,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2687,8 +2657,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 32,
-        "vramPct": 17
+        "utilPct": 67,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
