@@ -1,5 +1,5 @@
 {
-  "generated": 1788668187656,
+  "generated": 1788668232673,
   "status": "running",
   "stats": {
     "products": 155,
@@ -1103,6 +1103,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788668226841,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788668226840,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for InsightCraft is stuck (attempt 2) — trying a stronger model",
+      "t": 1788668195664,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> InsightCraft",
+      "t": 1788668195663,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <actual code here> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788668190840,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 155 products)",
       "t": 1788668116028,
       "type": "event"
@@ -1550,43 +1580,37 @@
       "text": "coder produced a functional build (3 files, node)",
       "t": 1788666783405,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 154 products)",
-      "t": 1788666675835,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 154 products)",
-      "t": 1788666494654,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> EvoSage",
-      "t": 1788666465652,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> EvoSage",
-      "t": 1788666395651,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: EvoSage [health, fitness & habit tracking]",
-      "t": 1788666394166,
-      "type": "ideated"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 155 products)",
-      "t": 1788668116028,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788668226841,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788668226840,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for InsightCraft is stuck (attempt 2) — trying a stronger model",
+      "t": 1788668195664,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> InsightCraft",
+      "t": 1788668195663,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <actual code here> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788668190840,
       "type": "event"
     }
   ],
@@ -1637,7 +1661,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 47×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 48×"
     },
     {
       "name": "Shared memory",
@@ -1805,41 +1829,41 @@
     "priority": ""
   },
   "throughput": [
-    10,
     6,
-    12,
-    1,
-    2,
-    0,
+    10,
     3,
-    9,
     2,
-    6,
-    7,
-    4,
     1,
-    9,
+    3,
+    8,
+    2,
+    7,
     6,
-    7,
-    13,
-    7,
-    12,
-    10,
-    17,
+    5,
     0,
+    9,
+    7,
+    6,
+    12,
+    5,
+    14,
+    5,
+    22,
+    2,
+    2,
+    4,
+    0,
+    0,
+    1,
     5,
     1,
-    0,
-    1,
-    0,
-    6,
-    1,
-    2
+    3,
+    7
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.14,
+      0.16,
+      0.15,
       0.24
     ],
     "ramPct": 74,
@@ -1856,8 +1880,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2614,7 +2638,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 43,
+        "utilPct": 40,
         "vramPct": 80
       },
       {
