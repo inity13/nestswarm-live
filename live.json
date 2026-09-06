@@ -1,5 +1,5 @@
 {
-  "generated": 1788654877067,
+  "generated": 1788654922175,
   "status": "running",
   "stats": {
     "products": 143,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
+      "t": 1788654905911,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
@@ -1094,16 +1101,33 @@
       "t": 1788646132099,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "FitCue is promising but unproven—its AI workout generation and calendar integration are critical features that need immediate development. The team must prioritize real-time calendar sync with reliable AI-driven workout generation before launching any version to market. Worf demands a functioning prototype within the next two weeks to ensure we meet our security standards and customer expectations.",
-      "t": 1788646130293,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "tests passed for ScopeSage",
+      "t": 1788654914610,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> ScopeSage",
+      "t": 1788654912350,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788654905911,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788654905911,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
@@ -1559,33 +1583,41 @@
       "text": "self-heal: disabled provider groq",
       "t": 1788650542666,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "tests passed for ScopeSage",
+      "t": 1788654914610,
+      "type": "test"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788650542665,
+      "text": "stage 'test' -> ScopeSage",
+      "t": 1788654912350,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
+      "t": 1788654905911,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788654905911,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788650542664,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1788650540345,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1788650540299,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788654905911,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1633,7 +1665,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 40×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 41×"
     },
     {
       "name": "Shared memory",
@@ -1801,7 +1833,6 @@
     "priority": "Nest Finance Tracker - AI-powered personal finance tool with crypto wallet integration and subscription model"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1818,8 +1849,8 @@
     0,
     0,
     1,
-    6,
-    0,
+    2,
+    4,
     3,
     0,
     0,
@@ -1830,15 +1861,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.2,
+      0.22,
+      0.22,
       0.18
     ],
-    "ramPct": 67,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1852,8 +1884,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2581,7 +2613,7 @@
     {
       "name": "ScopeSage",
       "niche": "freelancers & solopreneurs",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2610,7 +2642,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
+        "utilPct": 37,
         "vramPct": 51
       },
       {
