@@ -1,11 +1,11 @@
 {
-  "generated": 1788655012055,
+  "generated": 1788655057046,
   "status": "running",
   "stats": {
     "products": 143,
-    "listed": 8,
+    "listed": 9,
     "agents": 22,
-    "avgScore": "5.0"
+    "avgScore": "5.3"
   },
   "agents": [
     {
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "SensoryMate needs to work *today*, not tomorrow — no placeholders, no empty states, no “co",
-        "t": 1788647772940
+        "text": "ScopeSage needs to ship a working prototype that actually integrates AI decision support w",
+        "t": 1788655016756
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Monica (Designer):** I concur that SensoryMate must deliver a functional, responsive vis",
-        "t": 1788647775641
+        "text": "Monica<node/nest-node-5090/qwen3-designer:40b>: ScopeSage must prioritize aesthetic integr",
+        "t": 1788655018757
       }
     },
     {
@@ -262,6 +262,34 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "Monica<node/nest-node-5090/qwen3-designer:40b>: ScopeSage must prioritize aesthetic integrity and user experience over mere functionality. The hero section should feature a striking, minimalistic design that highlights AI-driven decision support with a clear call-to-action. Demand that the current prototype be reviewed by an external designer to ensure it meets our high standards before moving forward.",
+      "t": 1788655018757,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "ScopeSage needs to ship a working prototype that actually integrates AI decision support with real project management tasks—right now it’s just a list of features. I demand we build a minimal viable product that lets users input a task, get an AI-generated priority score and resource estimate, and see a basic workflow automation in action. No more specs, no more mocks—ship something testable and revenue-ready.",
+      "t": 1788655016756,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788655012273,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "ScopeSage is LISTED at $79 (score 6). Time to get it in front of buyers.",
+      "t": 1788655012263,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
@@ -1073,37 +1101,93 @@
       "t": 1788646139197,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "FitCue offers a compelling value proposition but requires real-time calendar sync and functional AI-generated workouts to truly differentiate. The team must implement seamless calendar integration and validate the effectiveness of its AI workout generation through user testing to ensure a polished product ready for market.",
-      "t": 1788646137033,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "FitCue is promising with its value proposition but lacks practical AI-generated workouts and seamless calendar integration. The team must deliver a fully functional prototype with real-time AI-driven micro-workouts integrated into a working calendar before proceeding further.",
-      "t": 1788646135300,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "FitCue holds promise but is currently unproven—its AI workout generation and calendar integration are critical. Demand: Complete real-time calendar sync functionality with functional AI-generated workouts before proceeding to launch.",
-      "t": 1788646133670,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "FitCue offers a compelling value proposition but requires real-time calendar integration and functional AI to truly stand out. The team must deliver a working prototype within the next two weeks to prove its concept to potential customers.",
-      "t": 1788646132099,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (43298) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788655052027,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788655052027,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop busy (single-flight)) — trying ChatGPT/free",
+      "t": 1788655050488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788655050488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped ScopeSage to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788655050477,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit 1): <3>WSL (43290) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788655042006,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788655042006,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for ScopeSage",
+      "t": 1788655028910,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship ScopeSage (score 6/8, attempt 1/3)",
+      "t": 1788655022248,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged ScopeSage → scopesage.zip (11334 bytes)",
+      "t": 1788655012446,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788655012272,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: ScopeSage -> http://localhost:5390",
+      "t": 1788655012263,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: ScopeSage @ http://localhost:5390 ($79 subscription)",
+      "t": 1788655012263,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> ScopeSage",
+      "t": 1788655012255,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> ScopeSage",
@@ -1499,93 +1583,114 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 142 products)",
       "t": 1788650983779,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> EducationLens MT",
-      "t": 1788650952708,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1788650951502,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> EducationLens MT",
-      "t": 1788650942706,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788650932890,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 142 products)",
-      "t": 1788650802287,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ownerreq: emailed 2 new request(s) to [email]",
-      "t": 1788650725942,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2782MB free)",
-      "t": 1788650630335,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788650630335,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 142 products)",
-      "t": 1788650624763,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788650610855,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788650610855,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788650610854,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788650610853,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (5 notes updated)",
-      "t": 1788650602286,
-      "type": "vault"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (43298) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788655052027,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788655052027,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop busy (single-flight)) — trying ChatGPT/free",
+      "t": 1788655050488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788655050488,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped ScopeSage to https://github.com/inity13/[private-repo] (private)",
+      "t": 1788655050477,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit 1): <3>WSL (43290) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
+      "t": 1788655042006,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788655042006,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for ScopeSage",
+      "t": 1788655028910,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship ScopeSage (score 6/8, attempt 1/3)",
+      "t": 1788655022248,
+      "type": "event"
+    },
+    {
+      "who": "Monica",
+      "text": "Monica<node/nest-node-5090/qwen3-designer:40b>: ScopeSage must prioritize aesthetic integrity and user experience over mere functionality. The hero section should feature a striking, minimalistic design that highlights AI-driven decision support with a clear call-to-action. Demand that the current prototype be reviewed by an external designer to ensure it meets our high standards before moving forward.",
+      "t": 1788655018757,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "ScopeSage needs to ship a working prototype that actually integrates AI decision support with real project management tasks—right now it’s just a list of features. I demand we build a minimal viable product that lets users input a task, get an AI-generated priority score and resource estimate, and see a basic workflow automation in action. No more specs, no more mocks—ship something testable and revenue-ready.",
+      "t": 1788655016756,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged ScopeSage → scopesage.zip (11334 bytes)",
+      "t": 1788655012446,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788655012272,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "ScopeSage is LISTED at $79 (score 6). Time to get it in front of buyers.",
+      "t": 1788655012263,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: ScopeSage -> http://localhost:5390",
+      "t": 1788655012263,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: ScopeSage @ http://localhost:5390 ($79 subscription)",
+      "t": 1788655012263,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> ScopeSage",
+      "t": 1788655012255,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> ScopeSage",
@@ -1597,18 +1702,6 @@
       "text": "designer improved UI for ScopeSage",
       "t": 1788654980399,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
-      "t": 1788654943447,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> ScopeSage",
-      "t": 1788654922351,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1814,11 +1907,11 @@
     }
   ],
   "ledger": {
-    "total": 656,
+    "total": 658,
     "revenue": 0,
-    "effects": 115,
+    "effects": 116,
     "boundary": 1,
-    "artifacts": 82,
+    "artifacts": 83,
     "receipts": 0
   },
   "meeting": {
@@ -1827,21 +1920,21 @@
   },
   "throughput": [
     0,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     1,
     6,
     0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    6,
     3,
     0,
     0,
@@ -1853,17 +1946,17 @@
     0,
     1,
     0,
-    0,
-    7,
-    5
+    6,
+    5,
+    19
   ],
   "load": {
     "loadavg": [
-      1.47,
-      0.65,
-      0.34
+      1.15,
+      0.71,
+      0.38
     ],
-    "ramPct": 67,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1877,11 +1970,11 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
@@ -1913,7 +2006,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "distributor": {
@@ -1954,7 +2047,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 8,
+      "listed": 9,
       "cap": 20
     }
   },
@@ -2386,7 +2479,7 @@
     },
     {
       "name": "ScopeSage",
-      "status": "building",
+      "status": "listed",
       "niche": "freelancers & solopreneurs",
       "price": 79,
       "score": 6
@@ -2606,8 +2699,26 @@
     {
       "name": "ScopeSage",
       "niche": "freelancers & solopreneurs",
-      "stage": "list",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SensoryMate",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "FitCue",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "MindCue",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2635,7 +2746,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 39,
+        "utilPct": 35,
         "vramPct": 81
       },
       {
@@ -2651,9 +2762,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 31,
         "vramPct": 92
       }
     ],
