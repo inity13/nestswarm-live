@@ -1,5 +1,5 @@
 {
-  "generated": 1788668862614,
+  "generated": 1788668907505,
   "status": "running",
   "stats": {
     "products": 155,
@@ -1103,6 +1103,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launch-discipline: InsightCraft plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1788668905641,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for InsightCraft — skipping",
+      "t": 1788668903972,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 155 products)",
       "t": 1788668834994,
       "type": "event"
@@ -1550,61 +1562,25 @@
       "text": "launch-discipline: EvoSage plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
       "t": 1788667575651,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 154 products)",
-      "t": 1788667574666,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish broke functionality for EvoSage — discarding changes",
-      "t": 1788667570924,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "launch-discipline: InsightCraft plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1788668905641,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for InsightCraft — skipping",
+      "t": 1788668903972,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 155 products)",
       "t": 1788668834994,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ChatGPT responded for conductor (1314 chars)",
-      "t": 1788668797918,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 7:31:00 AM) — trying ChatGPT/free",
-      "t": 1788668788378,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788668788378,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for researcher (desktop limited until 7:31:00 AM) — trying ChatGPT/free",
-      "t": 1788668788377,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788668788377,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788668788377,
       "type": "event"
     }
   ],
@@ -1823,42 +1799,42 @@
     "priority": ""
   },
   "throughput": [
-    0,
-    6,
-    4,
+    1,
+    9,
     6,
     7,
     13,
     7,
     12,
-    14,
-    13,
+    10,
+    17,
     0,
-    6,
-    0,
+    5,
+    1,
     0,
     1,
     0,
     6,
-    3,
-    4,
-    6,
+    1,
+    2,
+    10,
     5,
     9,
     0,
-    9,
-    19,
     7,
+    19,
+    8,
+    12,
+    12,
     14,
-    16,
-    15,
-    13
+    14,
+    11
   ],
   "load": {
     "loadavg": [
-      1.11,
-      0.84,
-      0.55
+      1.39,
+      0.93,
+      0.59
     ],
     "ramPct": 69,
     "cpus": 12
@@ -1902,7 +1878,7 @@
         "tier": "free"
       },
       "conductor": {
-        "model": "chatgpt(free)",
+        "model": "nemotron-3.5-lightning-free",
         "tier": "free"
       },
       "researcher": {
@@ -2650,8 +2626,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 72,
-        "vramPct": 80
+        "utilPct": 36,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
