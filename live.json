@@ -1,5 +1,5 @@
 {
-  "generated": 1788715349536,
+  "generated": 1788715394587,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788715352881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: vault sync error: (b.competitors || []).map is not a function — b.competitors is not an array. Needs code fix in vault sync logic to guard against non-array competitor data.",
+      "t": 1788715352881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: vault sync error: (b.competitors || []).map is not a function — b.competitors is not an array. Needs code fix in vault sync logic to guard against non-array competitor data.",
+      "t": 1788715352881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788715352880,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788715349349,
       "type": "launch"
@@ -1559,33 +1583,33 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788712437096,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788712437096,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788712434900,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788712434900,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788712434899,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788715352881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: vault sync error: (b.competitors || []).map is not a function — b.competitors is not an array. Needs code fix in vault sync logic to guard against non-array competitor data.",
+      "t": 1788715352881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: vault sync error: (b.competitors || []).map is not a function — b.competitors is not an array. Needs code fix in vault sync logic to guard against non-array competitor data.",
+      "t": 1788715352881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788715352880,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
@@ -1674,12 +1698,6 @@
       "who": "swarm",
       "text": "conductor created skill: payment-gateway-integration",
       "t": 1788715330882,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788715277017,
       "type": "event"
     }
   ],
@@ -1906,8 +1924,17 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
+    11,
+    1,
     0,
-    12,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    14,
     0,
     0,
     1,
@@ -1925,25 +1952,16 @@
     1,
     0,
     0,
-    1,
-    0,
-    13,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    19
+    9,
+    16
   ],
   "load": {
     "loadavg": [
-      0.15,
+      0.12,
       0.1,
       0.09
     ],
-    "ramPct": 66,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1985,8 +2003,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "ling-3.0-flash-fin-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2030,9 +2048,7 @@
       }
     },
     "free": [
-      "ling-3.0-flash-fin-free",
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
+      "ling-3.0-flash-fin-free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2765,7 +2781,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 6,
+        "utilPct": 9,
         "vramPct": 78
       },
       {
