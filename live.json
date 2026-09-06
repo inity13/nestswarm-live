@@ -1,9 +1,9 @@
 {
-  "generated": 1788667152670,
+  "generated": 1788667196692,
   "status": "running",
   "stats": {
     "products": 154,
-    "listed": 15,
+    "listed": 16,
     "agents": 22,
     "avgScore": "5.3"
   },
@@ -259,6 +259,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788667175728,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "EvoSage is LISTED at $99 (score -). Time to get it in front of buyers.",
+      "t": 1788667175672,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for EvoSage — 2 files, working node app. Handing off to test.",
@@ -1084,23 +1098,45 @@
       "t": 1788663812923,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "RealFlow MT requires a polished marketing strategy to stand out in its niche, ensuring it reaches its target audience effectively. However, the most critical quality requirement is an absolutely secure codebase to protect user data and ensure peace of mind.",
-      "t": 1788663811095,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "RealFlow MT has significant potential in animation but requires a polished marketing strategy to connect with its audience effectively. The most critical quality requirement for shipping RealFlow MT is an absolutely secure codebase, ensuring that the product can be trusted and reliably used by professionals.",
-      "t": 1788663809408,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for EvoSage",
+      "t": 1788667187796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
+      "t": 1788667185663,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged EvoSage → evosage.zip (10577 bytes)",
+      "t": 1788667175916,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: EvoSage -> http://localhost:5401",
+      "t": 1788667175672,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: EvoSage @ http://localhost:5401 ($99 one-time)",
+      "t": 1788667175672,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> EvoSage",
+      "t": 1788667175663,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> EvoSage",
@@ -1544,45 +1580,53 @@
       "text": "flagship: ChatGPT unavailable for critic (chatgpt busy (single-flight)) — trying free providers",
       "t": 1788666121001,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop busy (single-flight)) — trying ChatGPT/free",
-      "t": 1788666120118,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped InsightDraft to https://github.com/inity13/[private-repo] (private)",
-      "t": 1788666120115,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit 1): <3>WSL (56109) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying free providers",
-      "t": 1788666108869,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit 1): <3>WSL (56106) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788666098857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788666098857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit 1): <3>WSL (56100) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — trying ChatGPT/free",
-      "t": 1788666088823,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for EvoSage",
+      "t": 1788667187796,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
+      "t": 1788667185663,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged EvoSage → evosage.zip (10577 bytes)",
+      "t": 1788667175916,
+      "type": "event"
+    },
+    {
+      "who": "publisher",
+      "text": "EvoSage is LISTED at $99 (score -). Time to get it in front of buyers.",
+      "t": 1788667175672,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: EvoSage -> http://localhost:5401",
+      "t": 1788667175672,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: EvoSage @ http://localhost:5401 ($99 one-time)",
+      "t": 1788667175672,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> EvoSage",
+      "t": 1788667175663,
+      "type": "building"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1786,11 +1830,11 @@
     }
   ],
   "ledger": {
-    "total": 671,
+    "total": 672,
     "revenue": 0,
     "effects": 122,
     "boundary": 1,
-    "artifacts": 90,
+    "artifacts": 91,
     "receipts": 0
   },
   "meeting": {
@@ -1798,42 +1842,42 @@
     "priority": ""
   },
   "throughput": [
-    10,
-    10,
-    20,
-    6,
-    5,
-    19,
-    1,
-    1,
-    4,
-    5,
-    10,
-    0,
-    16,
-    4,
-    20,
     14,
+    12,
     14,
-    20,
-    6,
-    10,
-    3,
+    5,
+    14,
+    5,
     2,
-    1,
-    3,
+    2,
+    6,
+    9,
+    2,
     8,
-    2,
-    7,
+    11,
+    13,
+    22,
+    3,
+    30,
     6,
+    3,
+    11,
+    2,
+    1,
+    0,
+    11,
+    2,
     5,
-    0
+    8,
+    5,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.36,
-      0.41
+      0.38,
+      0.37,
+      0.42
     ],
     "ramPct": 60,
     "cpus": 12
@@ -1926,7 +1970,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 15,
+      "listed": 16,
       "cap": 20
     }
   },
@@ -2578,8 +2622,26 @@
     {
       "name": "EvoSage",
       "niche": "health, fitness & habit tracking",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "InsightDraft",
+      "niche": "developer productivity tools & services",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "InsightForge",
+      "niche": "e-commerce, dropshipping & reselling",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "HomeMate MT",
+      "niche": "home, cooking & household helpers",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2607,7 +2669,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 39,
         "vramPct": 80
       },
       {
