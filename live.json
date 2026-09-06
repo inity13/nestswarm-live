@@ -1,5 +1,5 @@
 {
-  "generated": 1788660807886,
+  "generated": 1788660852866,
   "status": "running",
   "stats": {
     "products": 147,
@@ -110,7 +110,7 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Understood. Let's address the feedback: 1. **Mindscape has significant potential but lacks",
         "t": 1788660758025
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I agree that technical validation is crucial for Mindscape to be more than just a list of ",
         "t": 1788660760424
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I concur with the concerns raised. Technical validation is essential for Mindscape to be m",
         "t": 1788660762606
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for PetForge MT — 2 files, working node app. Handing off to test.",
+      "t": 1788660847600,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for Mindscape.",
@@ -1094,16 +1101,27 @@
       "t": 1788655162108,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "Monica<node/nest-node-5090/qwen3-designer:40b>: ScopeSage must prioritize aesthetic integrity and user experience over mere functionality. The hero section should feature a striking, minimalistic design that highlights AI-driven decision support with a clear call-to-action. Demand that the current prototype be reviewed by an external designer to ensure it meets our high standards before moving forward.",
-      "t": 1788655018757,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788660847600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788660831225,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788660831153,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "council: 3 quality demands recorded for Mindscape",
@@ -1565,27 +1583,34 @@
       "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
       "t": 1788658972542,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
-      "who": "swarm",
-      "text": "stage 'test' -> MindMate",
-      "t": 1788658945901,
-      "type": "building"
+      "who": "coder",
+      "text": "Build done for PetForge MT — 2 files, working node app. Handing off to test.",
+      "t": 1788660847600,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
-      "t": 1788658943767,
+      "t": 1788660847600,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 145 products)",
-      "t": 1788658937254,
+      "text": "vault: synced (3 notes updated)",
+      "t": 1788660831225,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788660831153,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "council: 3 quality demands recorded for Mindscape",
@@ -1640,33 +1665,6 @@
       "t": 1788660764632,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "I concur with the concerns raised. Technical validation is essential for Mindscape to be more than a list of features. To proceed with confidence and ensure security, the product must be built on a robust, validated codebase that adheres to best practices and eliminates any known vulnerabilities. Without this foundation, shipping Mindscape could compromise both its effectiveness and our reputation as stewards of user data and security.",
-      "t": 1788660762606,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "I agree that technical validation is crucial for Mindscape to be more than just a list of features. Before moving forward, we need an MVP that demonstrates the product works as intended and proves its value to potential users. The single most important quality requirement is delivering a functional, user-friendly AI-driven memory training system that can adapt to individual learning styles and goals. Once this core functionality is in place, we can build upon it with additional features like LMS integration and visual cue builders.",
-      "t": 1788660760424,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Understood. Let's address the feedback: 1. **Mindscape has significant potential but lacks technical validation.** We agree and will focus on building a solid MVP to ensure it meets market needs. 2. **The team should focus on delivering a working product before moving forward with new features.** Absolutely, let’s polish one flagship offering first. 3. **The product must be polished and sellable before moving on to new initiatives.** We'll ensure it's revenue-ready before pursuing additional features or expansions. 4. **Mindscape requires technical validation to prove its efficacy.** This …",
-      "t": 1788660758025,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 147 products)",
-      "t": 1788660735291,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1886,40 +1884,40 @@
   "throughput": [
     0,
     1,
-    0,
-    14,
-    4,
-    3,
-    0,
-    2,
-    4,
-    0,
+    8,
+    7,
     6,
     0,
-    3,
     1,
+    5,
     0,
-    0,
-    1,
-    0,
-    10,
     5,
     1,
-    10,
-    11,
+    3,
+    0,
     1,
     0,
-    15,
-    13,
-    15,
-    4,
-    13
+    0,
+    1,
+    7,
+    7,
+    2,
+    10,
+    10,
+    2,
+    0,
+    6,
+    22,
+    12,
+    6,
+    14,
+    4
   ],
   "load": {
     "loadavg": [
-      0.74,
-      0.61,
-      1.53
+      0.47,
+      0.56,
+      1.47
     ],
     "ramPct": 77,
     "cpus": 12
@@ -2664,7 +2662,7 @@
     {
       "name": "PetForge MT",
       "niche": "pet care & ownership",
-      "stage": "build",
+      "stage": "test",
       "status": "building"
     }
   ],
@@ -2693,7 +2691,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 22,
+        "utilPct": 24,
         "vramPct": 79
       },
       {
