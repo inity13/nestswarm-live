@@ -1,5 +1,5 @@
 {
-  "generated": 1788706393899,
+  "generated": 1788706437937,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788706432049,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788706432049,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788706431959,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788706278128,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788703575951,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt script failed (exit 1): <3>WSL (99718) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling to local",
-      "t": 1788703549443,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788706432049,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
-      "t": 1788703539397,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788706432049,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
-      "t": 1788703539381,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788706431959,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1802,7 +1821,6 @@
   },
   "throughput": [
     12,
-    3,
     0,
     0,
     1,
@@ -1811,8 +1829,8 @@
     1,
     0,
     0,
-    14,
-    0,
+    4,
+    10,
     0,
     1,
     0,
@@ -1830,15 +1848,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.03,
-      0.24
+      0.58,
+      0.17,
+      0.27
     ],
-    "ramPct": 55,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2626,8 +2645,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 79
+        "utilPct": 17,
+        "vramPct": 70
       },
       {
         "alias": "GPU-Node-2",
