@@ -1,5 +1,5 @@
 {
-  "generated": 1788702433705,
+  "generated": 1788702477726,
   "status": "running",
   "stats": {
     "products": 160,
@@ -38,8 +38,11 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
-      "last": null
+      "active": true,
+      "last": {
+        "text": "Scotty: We're building something undefined into an actual product—risky when we need to de",
+        "t": 1788702464686
+      }
     },
     {
       "role": "designer",
@@ -259,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "Scotty: We're building something undefined into an actual product—risky when we need to deliver revenue quickly. Let's avoid placeholders entirely and define core functionality before writing a single line of code. Demand: The team must clearly define the specific features, audience parameters, and primary user flow for this \"Untitled\" app *before* I write any code or // FILE: app.js (or main.py / index.html / README / manifest.json etc.) Scotty: Okay, let's define the specific features, audience parameters, and primary user flow for this \"Untitled\" app *before* I write any code or mockups. …",
+      "t": 1788702464686,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Spock",
       "text": "I believe we should start with a simple web app built in Node.js to ensure ease of use and installability for our target audience. The first concrete thing the team must do is define clear quality bar criteria for the product, such as user-friendly interface design, robust functionality testing, and responsive customer support, before moving forward with development.",
@@ -1091,16 +1101,15 @@
       "t": 1788673102864,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "InsightMentor’s description is feature-bleed hype with no technical evidence; the voice-driven content claim is objectively unremarkable—voice-to-text adds zero authenticity value for LinkedIn writing, and the A/B testing framework is unspecified without LinkedIn API integration. I demand the team release a concrete technical specification and pilot data mapping voice input to published post performance, with A/B results against a typed baseline.",
-      "t": 1788673091158,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MindMate",
+      "t": 1788702446972,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> MindMate",
@@ -1550,21 +1559,22 @@
       "text": "registrar: Beehiiv step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1788700998131,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788700996995,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788700995856,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Scotty",
+      "text": "Scotty: We're building something undefined into an actual product—risky when we need to deliver revenue quickly. Let's avoid placeholders entirely and define core functionality before writing a single line of code. Demand: The team must clearly define the specific features, audience parameters, and primary user flow for this \"Untitled\" app *before* I write any code or // FILE: app.js (or main.py / index.html / README / manifest.json etc.) Scotty: Okay, let's define the specific features, audience parameters, and primary user flow for this \"Untitled\" app *before* I write any code or mockups. …",
+      "t": 1788702464686,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MindMate",
+      "t": 1788702446972,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'spec' -> MindMate",
@@ -1638,12 +1648,6 @@
       "who": "swarm",
       "text": "researcher exploring: parenting & family organizers",
       "t": 1788702396965,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1788702386966,
       "type": "event"
     }
   ],
@@ -1862,24 +1866,23 @@
     "priority": "AI‑powered personal assistant for freelancers that syncs with Google Calendar and Trello."
   },
   "throughput": [
-    0,
     1,
     0,
     0,
-    5,
-    76,
-    26,
-    19,
-    22,
+    1,
+    62,
+    40,
+    17,
+    25,
+    11,
     13,
-    8,
+    1,
+    1,
     2,
-    1,
-    1,
-    3,
-    1,
-    16,
-    1,
+    2,
+    2,
+    13,
+    4,
     0,
     3,
     3,
@@ -1889,15 +1892,16 @@
     1,
     1,
     3,
-    19,
-    1,
-    15
+    15,
+    5,
+    15,
+    3
   ],
   "load": {
     "loadavg": [
-      0.75,
-      0.42,
-      0.4
+      2.04,
+      0.79,
+      0.52
     ],
     "ramPct": 50,
     "cpus": 12
@@ -1913,8 +1917,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2640,7 +2644,7 @@
     {
       "name": "MindMate",
       "niche": "freelancers & solopreneurs",
-      "stage": "spec",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2669,8 +2673,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 32,
-        "vramPct": 77
+        "utilPct": 90,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
