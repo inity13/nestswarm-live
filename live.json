@@ -1,5 +1,5 @@
 {
-  "generated": 1788654967049,
+  "generated": 1788655012055,
   "status": "running",
   "stats": {
     "products": 143,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'package' -> ScopeSage",
+      "t": 1788654982262,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for ScopeSage",
+      "t": 1788654980399,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
       "t": 1788654943447,
       "type": "event"
@@ -1571,21 +1583,21 @@
       "text": "vault: synced (5 notes updated)",
       "t": 1788650602286,
       "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788650602271,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
-      "t": 1788650557770,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> ScopeSage",
+      "t": 1788654982262,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for ScopeSage",
+      "t": 1788654980399,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 143 products)",
@@ -1597,37 +1609,6 @@
       "text": "stage 'design' -> ScopeSage",
       "t": 1788654922351,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for ScopeSage",
-      "t": 1788654914610,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> ScopeSage",
-      "t": 1788654912350,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for ScopeSage — 2 files, working node app. Handing off to test.",
-      "t": 1788654905911,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788654905911,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788654905911,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1846,9 +1827,8 @@
   },
   "throughput": [
     0,
-    0,
-    4,
-    3,
+    1,
+    6,
     0,
     1,
     0,
@@ -1873,14 +1853,15 @@
     0,
     1,
     0,
-    3,
-    4
+    0,
+    7,
+    5
   ],
   "load": {
     "loadavg": [
-      1.17,
-      0.42,
-      0.25
+      1.47,
+      0.65,
+      0.34
     ],
     "ramPct": 67,
     "cpus": 12
@@ -1900,7 +1881,7 @@
         "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2404,6 +2385,13 @@
       "score": 7
     },
     {
+      "name": "ScopeSage",
+      "status": "building",
+      "niche": "freelancers & solopreneurs",
+      "price": 79,
+      "score": 6
+    },
+    {
       "name": "FitCue",
       "status": "listed",
       "niche": "health, fitness & habit tracking",
@@ -2612,20 +2600,13 @@
       "niche": "local services & gig economy",
       "price": 4.99,
       "score": 5
-    },
-    {
-      "name": "PropertyPro",
-      "status": "archived",
-      "niche": "real estate, renting & property",
-      "price": 4.99,
-      "score": 5
     }
   ],
   "building": [
     {
       "name": "ScopeSage",
       "niche": "freelancers & solopreneurs",
-      "stage": "design",
+      "stage": "list",
       "status": "building"
     }
   ],
@@ -2654,7 +2635,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 89,
+        "utilPct": 39,
         "vramPct": 81
       },
       {
@@ -2673,7 +2654,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 58
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
