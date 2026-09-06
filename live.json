@@ -1,5 +1,5 @@
 {
-  "generated": 1788666792732,
+  "generated": 1788666836787,
   "status": "running",
   "stats": {
     "products": 154,
@@ -1103,6 +1103,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788666831031,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788666831031,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788666830929,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788666828838,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3324MB free)",
+      "t": 1788666828837,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> EvoSage",
+      "t": 1788666825668,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788666822692,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> EvoSage",
       "t": 1788666785661,
       "type": "building"
@@ -1538,51 +1580,51 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1788665875797,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 153 products)",
-      "t": 1788665776110,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788666831031,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788665708316,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788666831031,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788665708316,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788666830929,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788665708315,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788666828838,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788665708315,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3324MB free)",
+      "t": 1788666828837,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> InsightDraft",
-      "t": 1788665675648,
+      "text": "stage 'build' -> EvoSage",
+      "t": 1788666825668,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788665631000,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788666822692,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> EvoSage",
@@ -1818,44 +1860,44 @@
     "priority": ""
   },
   "throughput": [
-    7,
     11,
     1,
     4,
     10,
     0,
-    10,
-    10,
-    20,
     6,
-    5,
-    19,
-    1,
-    1,
-    4,
-    5,
-    10,
-    0,
-    16,
-    4,
-    20,
     14,
+    12,
     14,
-    20,
+    5,
+    14,
+    5,
+    2,
+    2,
     6,
-    10,
+    9,
+    2,
+    8,
+    11,
+    13,
+    22,
     3,
+    30,
+    6,
+    3,
+    11,
     2,
     1,
-    3
+    0,
+    11
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.29,
-      0.43
+      0.38,
+      0.35,
+      0.45
     ],
-    "ramPct": 89,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2598,7 +2640,7 @@
     {
       "name": "EvoSage",
       "niche": "health, fitness & habit tracking",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2625,10 +2667,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 33,
-        "vramPct": 81
+        "busy": false,
+        "warm": true,
+        "utilPct": 4,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
