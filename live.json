@@ -1,5 +1,5 @@
 {
-  "generated": 1788656002180,
+  "generated": 1788656004515,
   "status": "running",
   "stats": {
     "products": 144,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788656004057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788656004057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788656004056,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (3 notes updated)",
       "t": 1788656001648,
       "type": "vault"
@@ -1565,27 +1583,27 @@
       "text": "launch-discipline: polishing flagship ScopeSage (score 6/8, attempt 1/3)",
       "t": 1788655022248,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged ScopeSage → scopesage.zip (11334 bytes)",
-      "t": 1788655012446,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788655012272,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: ScopeSage -> http://localhost:5390",
-      "t": 1788655012263,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788656004057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788656004057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788656004056,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (3 notes updated)",
@@ -1825,33 +1843,33 @@
     0,
     1,
     0,
-    5,
+    6,
     4,
-    16,
+    15,
     6,
-    6,
-    11,
+    7,
+    10,
     4,
     13,
     2,
-    5,
-    28,
+    7,
+    26,
     5,
     4,
-    1,
-    19,
+    3,
+    17,
     10,
     5,
     0,
-    2
+    6
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.41,
+      0.22,
+      0.42,
       0.4
     ],
-    "ramPct": 57,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1893,8 +1911,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -2639,8 +2657,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
