@@ -1,5 +1,5 @@
 {
-  "generated": 1788729794658,
+  "generated": 1788729838628,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2671MB free)",
+      "t": 1788729833311,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788729833311,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788729832793,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788729832668,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1788729750209,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788726232776,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3369MB free)",
-      "t": 1788726231670,
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2671MB free)",
+      "t": 1788729833311,
       "type": "bench"
     },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788726231670,
+      "t": 1788729833311,
       "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788726077857,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788729832793,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788725897395,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788729832668,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1596,60 +1620,6 @@
       "who": "swarm",
       "text": "self-heal complete: 1 fix(es) — disabled provider gemini",
       "t": 1788729750209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788729747959,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1788729740331,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/57 channels active · 1 new discovered",
-      "t": 1788729735807,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue: queued Nest Concord Grant Platform for account acquisition",
-      "t": 1788729735806,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
-      "t": 1788729734397,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788729734397,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1788729728244,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788729728189,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788729728189,
       "type": "event"
     }
   ],
@@ -1876,8 +1846,7 @@
     "priority": "AI‑powered meeting summarizer for small‑to‑medium businesses (SMBs)"
   },
   "throughput": [
-    11,
-    1,
+    7,
     0,
     0,
     1,
@@ -1904,16 +1873,17 @@
     1,
     0,
     0,
-    8,
-    9
+    1,
+    16,
+    4
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.14,
-      0.08
+      0.94,
+      0.32,
+      0.15
     ],
-    "ramPct": 68,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2739,9 +2709,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 79
+        "warm": false,
+        "utilPct": 1,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
