@@ -1,5 +1,5 @@
 {
-  "generated": 1788735194522,
+  "generated": 1788735238503,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788735232737,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2646MB free)",
+      "t": 1788735232736,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788735232625,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788735232625,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788735232497,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788735078713,
       "type": "event"
@@ -1553,39 +1583,40 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788732197316,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788735232737,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788732017842,
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2646MB free)",
+      "t": 1788735232736,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788735232625,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "ownerreq: emailed 1 new request(s) to [email]",
-      "t": 1788731875483,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788735232625,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788731838208,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788731657316,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Fix the vault sync error: (b.competitors || []).map is not a function. The `b.competitors` field is not an array in the vault data structure — add a type guard or normalize it before `.map()` is called. This is a code bug, not a provider issue.",
-      "t": 1788731642454,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788735232497,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1809,16 +1840,15 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    3,
-    13,
-    3,
+    12,
     4,
-    4,
+    3,
+    5,
     2,
     1,
-    6,
-    16,
-    0,
+    4,
+    14,
+    4,
     14,
     0,
     0,
@@ -1838,15 +1868,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.24,
-      0.48
+      1,
+      0.46,
+      0.55
     ],
-    "ramPct": 77,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2669,9 +2700,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 79
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
