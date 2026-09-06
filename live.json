@@ -1,5 +1,5 @@
 {
-  "generated": 1788703513749,
+  "generated": 1788703557743,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "chatgpt fallback failed for conductor (chatgpt script failed (exit 1): <3>WSL (99718) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling to local",
+      "t": 1788703549443,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
+      "t": 1788703539397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788703539381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1788703432017,
       "type": "event"
@@ -1565,91 +1583,25 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788702231825,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788702231754,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
-      "t": 1788702137045,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
-      "t": 1788701959598,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788703432017,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
-      "t": 1788703431859,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "chatgpt fallback failed for conductor (chatgpt busy (single-flight)) — falling to local",
-      "t": 1788703431858,
+      "text": "chatgpt fallback failed for conductor (chatgpt script failed (exit 1): <3>WSL (99718) ERROR: UtilAcceptVsock:251: accept4 failed 110 ) — falling to local",
+      "t": 1788703549443,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
-      "t": 1788703431858,
+      "t": 1788703539397,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 5:08:11 PM) — trying ChatGPT/free",
-      "t": 1788703431857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788703431857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
-      "t": 1788703431857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788703431815,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788703431815,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 5:08:11 PM) — trying ChatGPT/free",
-      "t": 1788703431814,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788703431783,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit null): '\\\\wsl.localhost\\Ubuntu-24.04\\home\\datanest\\swarm\\core' CMD.EXE was started with the above path as the current directory. UNC paths are not supported. Defaulting to Windows directory. [drive_chatgpt] prompt submitted; waiting for reply ) — trying free providers",
+      "t": 1788703539381,
       "type": "event"
     }
   ],
@@ -1868,7 +1820,6 @@
     "priority": "AI‑powered personal assistant for freelancers that syncs with Google Calendar and Trello."
   },
   "throughput": [
-    0,
     3,
     3,
     0,
@@ -1877,33 +1828,34 @@
     1,
     1,
     3,
-    19,
-    1,
+    15,
+    5,
     15,
     3,
+    1,
     2,
     4,
     1,
-    1,
-    1,
-    5,
+    0,
+    4,
     19,
     11,
-    2,
-    8,
     4,
-    3,
+    1,
+    7,
+    7,
     1,
     2,
     1,
     12,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      5.89,
-      4.8,
-      3.14
+      5.97,
+      4.98,
+      3.28
     ],
     "ramPct": 51,
     "cpus": 12
@@ -2693,7 +2645,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 67,
+        "utilPct": 56,
         "vramPct": 92
       },
       {
