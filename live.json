@@ -1,5 +1,5 @@
 {
-  "generated": 1788661436963,
+  "generated": 1788661482842,
   "status": "running",
   "stats": {
     "products": 147,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "ChatGPT responded for conductor (325 chars)",
+      "t": 1788661469810,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788661462464,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 5:33:51 AM) — trying ChatGPT/free",
+      "t": 1788661462463,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 147 products)",
+      "t": 1788661455357,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788661436338,
       "type": "bench"
@@ -1559,33 +1583,33 @@
       "text": "tests passed for Mindscape",
       "t": 1788660138075,
       "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> Mindscape",
-      "t": 1788660135842,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1788660129721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788660129721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Mindscape",
-      "t": 1788660095847,
-      "type": "building"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (325 chars)",
+      "t": 1788661469810,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1788661462464,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop limited until 5:33:51 AM) — trying ChatGPT/free",
+      "t": 1788661462463,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 147 products)",
+      "t": 1788661455357,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1639,43 +1663,6 @@
       "text": "launch-discipline: polishing flagship PetForge MT (score 0/8, attempt 1/3)",
       "t": 1788661395788,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged PetForge MT → petforge-mt.zip (8385 bytes)",
-      "t": 1788661385932,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1788661385807,
-      "type": "vault"
-    },
-    {
-      "who": "publisher",
-      "text": "PetForge MT is LISTED at $199 (score -). Time to get it in front of buyers.",
-      "t": 1788661385797,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "preview live: PetForge MT -> http://localhost:5394",
-      "t": 1788661385797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "LISTED: PetForge MT @ http://localhost:5394 ($199 one-time)",
-      "t": 1788661385797,
-      "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> PetForge MT",
-      "t": 1788661385791,
-      "type": "building"
     }
   ],
   "capabilities": [
@@ -1721,7 +1708,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 23×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 24×"
     },
     {
       "name": "GitHub Copilot",
@@ -1893,44 +1880,44 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    3,
     0,
+    3,
     1,
     0,
     0,
     1,
     4,
     6,
-    6,
-    8,
-    8,
-    6,
-    0,
+    5,
+    2,
+    15,
+    5,
+    1,
     0,
     27,
-    10,
+    1,
+    16,
+    7,
     9,
-    12,
-    4,
-    3,
+    5,
     5,
     0,
     0,
     1,
-    4,
-    6,
-    5,
     0,
-    17
+    9,
+    6,
+    0,
+    10,
+    12
   ],
   "load": {
     "loadavg": [
-      0.94,
-      0.6,
-      1
+      0.44,
+      0.51,
+      0.95
     ],
-    "ramPct": 57,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1972,7 +1959,7 @@
         "tier": "free"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
+        "model": "chatgpt(free)",
         "tier": "free"
       },
       "researcher": {
@@ -2718,10 +2705,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 6,
-        "vramPct": 19
+        "utilPct": 22,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
