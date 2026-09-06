@@ -1,5 +1,5 @@
 {
-  "generated": 1788659187947,
+  "generated": 1788659232993,
   "status": "running",
   "stats": {
     "products": 145,
@@ -1106,6 +1106,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788659226622,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788659226600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788659226599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for MindMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788659195895,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MindMate",
+      "t": 1788659195894,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788659193198,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 145 products)",
       "t": 1788659116483,
       "type": "event"
@@ -1547,49 +1583,43 @@
       "text": "keyhunter: cohere step 4 -> {\"action\":\"type\",\"selector\":\"input[type='email']\",\"value\":\"[email]\"}",
       "t": 1788658228311,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1788658226233,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788658225185,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788658223969,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1788658222545,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. This could be due to too much traffic or a configura",
-      "t": 1788658221181,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cohere (https://cohere.com/signup?referral=swarm)",
-      "t": 1788658221181,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 145 products)",
-      "t": 1788659116483,
+      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
+      "t": 1788659226622,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 3)",
+      "t": 1788659226600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788659226599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for MindMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1788659195895,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> MindMate",
+      "t": 1788659195894,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 2)",
+      "t": 1788659193198,
       "type": "event"
     }
   ],
@@ -1640,7 +1670,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 43×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 44×"
     },
     {
       "name": "Shared memory",
@@ -1814,36 +1844,36 @@
     0,
     0,
     0,
-    7,
-    10,
-    21,
-    14,
-    26,
-    18,
-    26,
-    42,
-    42,
+    9,
+    13,
+    20,
+    23,
+    22,
+    20,
+    27,
+    64,
     17,
     15,
     39,
-    5,
-    9,
+    0,
+    13,
+    1,
     0,
     0,
     1,
     0,
     0,
-    4,
-    3,
+    7,
+    0,
     0,
     1,
-    0
+    8
   ],
   "load": {
     "loadavg": [
-      0.08,
-      3.91,
-      6.99
+      0.04,
+      3.36,
+      6.65
     ],
     "ramPct": 74,
     "cpus": 12
@@ -1859,8 +1889,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2586,10 +2616,28 @@
   ],
   "building": [
     {
-      "name": "MindMate",
+      "name": "ScopeSage",
       "niche": "freelancers & solopreneurs",
-      "stage": "build",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SensoryMate",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "FitCue",
+      "niche": "health, fitness & habit tracking",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "MindCue",
+      "niche": "real estate, renting & property",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2617,7 +2665,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
+        "utilPct": 42,
         "vramPct": 82
       },
       {
