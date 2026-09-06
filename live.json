@@ -1,5 +1,5 @@
 {
-  "generated": 1788660897009,
+  "generated": 1788660942896,
   "status": "running",
   "stats": {
     "products": 147,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> PetForge MT",
+      "t": 1788660925810,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788660925429,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 147 products)",
+      "t": 1788660915950,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> PetForge MT",
       "t": 1788660855814,
       "type": "building"
@@ -1565,57 +1583,32 @@
       "text": "stage 'build' -> MindMate",
       "t": 1788659195894,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 2)",
-      "t": 1788659193198,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 145 products)",
-      "t": 1788659116483,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> MindMate",
-      "t": 1788658975904,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> PetForge MT",
-      "t": 1788660855814,
+      "text": "stage 'build' -> PetForge MT",
+      "t": 1788660925810,
       "type": "building"
     },
     {
-      "who": "coder",
-      "text": "Build done for PetForge MT — 2 files, working node app. Handing off to test.",
-      "t": 1788660847600,
-      "system": false,
-      "type": "chat"
-    },
-    {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1788660847600,
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788660925429,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1788660831225,
-      "type": "vault"
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 147 products)",
+      "t": 1788660915950,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788660831153,
-      "type": "event"
+      "text": "stage 'test' -> PetForge MT",
+      "t": 1788660855814,
+      "type": "building"
     }
   ],
   "capabilities": [
@@ -1833,42 +1826,42 @@
     "priority": ""
   },
   "throughput": [
+    4,
+    10,
+    6,
+    1,
+    1,
     1,
     4,
-    11,
-    5,
-    1,
-    1,
-    5,
+    2,
+    4,
     0,
-    5,
-    1,
     3,
-    0,
     1,
     0,
     0,
     1,
     4,
     6,
-    6,
-    8,
-    8,
-    6,
-    0,
+    5,
+    2,
+    15,
+    5,
+    1,
     0,
     27,
-    10,
+    1,
+    16,
+    7,
     9,
-    12,
-    4,
-    3
+    5,
+    5
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.49,
-      1.4
+      0.2,
+      0.44,
+      1.34
     ],
     "ramPct": 77,
     "cpus": 12
@@ -2613,7 +2606,7 @@
     {
       "name": "PetForge MT",
       "niche": "pet care & ownership",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2642,7 +2635,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 30,
+        "utilPct": 45,
         "vramPct": 79
       },
       {
