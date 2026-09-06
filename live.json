@@ -1,9 +1,9 @@
 {
-  "generated": 1788661347849,
+  "generated": 1788661392879,
   "status": "running",
   "stats": {
     "products": 147,
-    "listed": 10,
+    "listed": 11,
     "agents": 22,
     "avgScore": "5.3"
   },
@@ -262,6 +262,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1788661385808,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "PetForge MT is LISTED at $199 (score -). Time to get it in front of buyers.",
+      "t": 1788661385797,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for PetForge MT — 2 files, working node app. Handing off to test.",
@@ -1087,23 +1101,39 @@
       "t": 1788655319276,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "polisher",
-      "text": "Polished ScopeSage (pass 2) — tighter, cleaner, closer to ship-ready.",
-      "t": 1788655314721,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "polisher",
-      "text": "Polished ScopeSage (pass 1) — tighter, cleaner, closer to ship-ready.",
-      "t": 1788655162108,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "packaged PetForge MT → petforge-mt.zip (8385 bytes)",
+      "t": 1788661385932,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788661385807,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: PetForge MT -> http://localhost:5394",
+      "t": 1788661385797,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: PetForge MT @ http://localhost:5394 ($199 one-time)",
+      "t": 1788661385797,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> PetForge MT",
+      "t": 1788661385791,
+      "type": "building"
+    },
     {
       "who": "swarm",
       "text": "stage 'package' -> PetForge MT",
@@ -1553,56 +1583,45 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3498MB free)",
       "t": 1788659633865,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1788659631372,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 3 quality demands recorded for Mindscape",
-      "t": 1788659609728,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> Mindscape",
-      "t": 1788659515875,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 1)",
-      "t": 1788659511373,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 146 products)",
-      "t": 1788659475737,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "stage 'package' -> PetForge MT",
-      "t": 1788661275792,
+      "text": "packaged PetForge MT → petforge-mt.zip (8385 bytes)",
+      "t": 1788661385932,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1788661385807,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "PetForge MT is LISTED at $199 (score -). Time to get it in front of buyers.",
+      "t": 1788661385797,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: PetForge MT -> http://localhost:5394",
+      "t": 1788661385797,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: PetForge MT @ http://localhost:5394 ($199 one-time)",
+      "t": 1788661385797,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> PetForge MT",
+      "t": 1788661385791,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 147 products)",
-      "t": 1788661275701,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for PetForge MT",
-      "t": 1788661268993,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1808,11 +1827,11 @@
     }
   ],
   "ledger": {
-    "total": 660,
+    "total": 661,
     "revenue": 0,
     "effects": 117,
     "boundary": 1,
-    "artifacts": 84,
+    "artifacts": 85,
     "receipts": 0
   },
   "meeting": {
@@ -1820,42 +1839,42 @@
     "priority": ""
   },
   "throughput": [
+    5,
+    1,
+    3,
+    0,
+    1,
+    0,
+    0,
+    1,
+    7,
+    7,
+    2,
+    10,
+    10,
+    2,
     0,
     6,
-    0,
-    3,
-    1,
-    0,
-    0,
-    1,
-    0,
-    10,
-    5,
-    1,
-    10,
-    11,
-    1,
-    0,
-    15,
-    13,
-    15,
+    22,
+    12,
+    6,
+    14,
     4,
-    13,
-    5,
+    1,
     5,
     0,
     0,
     1,
-    0,
-    7,
+    4,
     8,
-    0
+    3,
+    7
   ],
   "load": {
     "loadavg": [
-      0.56,
-      0.48,
-      1
+      0.74,
+      0.51,
+      0.99
     ],
     "ramPct": 81,
     "cpus": 12
@@ -1948,7 +1967,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 10,
+      "listed": 11,
       "cap": 20
     }
   },
@@ -2600,8 +2619,26 @@
     {
       "name": "PetForge MT",
       "niche": "pet care & ownership",
-      "stage": "package",
-      "status": "building"
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "Mindscape",
+      "niche": "local services & gig economy",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "ScopeSage",
+      "niche": "freelancers & solopreneurs",
+      "stage": "shipped",
+      "status": "listed"
+    },
+    {
+      "name": "SensoryMate",
+      "niche": "writing, copy & content creation",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2627,9 +2664,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 6,
+        "busy": true,
+        "warm": false,
+        "utilPct": 89,
         "vramPct": 79
       },
       {
