@@ -1,5 +1,5 @@
 {
-  "generated": 1788726194790,
+  "generated": 1788726238718,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788726232923,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788726232923,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788726232776,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3369MB free)",
+      "t": 1788726231670,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788726231670,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788726077857,
       "type": "event"
@@ -1553,39 +1583,40 @@
       "text": "keyhunter: novitaai step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788722815068,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788726232923,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788722814436,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788726232923,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788726232776,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3369MB free)",
+      "t": 1788726231670,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788722805165,
+      "t": 1788726231670,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2558MB free)",
-      "t": 1788722805163,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 3 -> {\"action\":\"type\",\"selector\":\"input[type='email']\",\"value\":\"[email]\"}",
-      "t": 1788722798458,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788722797827,
-      "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1809,8 +1840,7 @@
     "priority": "AI‑powered meeting summarizer for small‑to‑medium businesses (SMBs)"
   },
   "throughput": [
-    11,
-    1,
+    7,
     0,
     0,
     1,
@@ -1838,15 +1868,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.08,
-      0.1
+      1.31,
+      0.39,
+      0.2
     ],
-    "ramPct": 57,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2664,8 +2695,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 79
+        "utilPct": 4,
+        "vramPct": 42
       },
       {
         "alias": "GPU-Node-2",
