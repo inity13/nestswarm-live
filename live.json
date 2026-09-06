@@ -1,5 +1,5 @@
 {
-  "generated": 1788661212880,
+  "generated": 1788661256969,
   "status": "running",
   "stats": {
     "products": 147,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'design' -> PetForge MT",
+      "t": 1788661245794,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for PetForge MT",
+      "t": 1788661238030,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetForge MT",
+      "t": 1788661235793,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788661227680,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788661227679,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> PetForge MT",
       "t": 1788661195794,
       "type": "building"
@@ -1553,39 +1583,39 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 146 products)",
       "t": 1788659295605,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> Mindscape",
-      "t": 1788659245890,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: Mindscape [local services & gig economy]",
-      "t": 1788659241732,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1788659235913,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: local services & gig economy",
-      "t": 1788659235910,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1788659226622,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> PetForge MT",
+      "t": 1788661245794,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for PetForge MT",
+      "t": 1788661238030,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PetForge MT",
+      "t": 1788661235793,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1788661227680,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1788661227679,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'build' -> PetForge MT",
@@ -1652,7 +1682,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 45×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 46×"
     },
     {
       "name": "Shared memory",
@@ -1820,9 +1850,8 @@
     "priority": ""
   },
   "throughput": [
+    4,
     1,
-    5,
-    0,
     5,
     1,
     3,
@@ -1831,30 +1860,31 @@
     0,
     0,
     1,
-    7,
-    7,
-    2,
-    10,
-    10,
-    2,
-    0,
-    6,
-    22,
-    12,
-    6,
-    14,
     4,
-    1,
+    6,
+    6,
+    8,
+    8,
+    6,
+    0,
+    0,
+    27,
+    10,
+    9,
+    12,
+    4,
+    3,
     5,
     0,
     0,
     1,
-    4
+    4,
+    6
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.26,
+      0.83,
+      0.39,
       1.03
     ],
     "ramPct": 79,
@@ -1871,8 +1901,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nemotron-3.5-lightning-free",
-        "tier": "free"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2600,7 +2630,7 @@
     {
       "name": "PetForge MT",
       "niche": "pet care & ownership",
-      "stage": "build",
+      "stage": "design",
       "status": "building"
     }
   ],
@@ -2629,7 +2659,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 31,
+        "utilPct": 91,
         "vramPct": 79
       },
       {
