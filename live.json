@@ -1,5 +1,5 @@
 {
-  "generated": 1788708104068,
+  "generated": 1788708149094,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 1 zen free models",
+      "t": 1788708145002,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788708145002,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788708125514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788708125514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788708077488,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788704656045,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788704654086,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3527MB free)",
-      "t": 1788704654085,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788704646343,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788704646343,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 1 zen free models",
+      "t": 1788708145002,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788708145002,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788708125514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788708125514,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1809,7 +1833,6 @@
   },
   "throughput": [
     0,
-    0,
     16,
     0,
     0,
@@ -1837,15 +1860,16 @@
     1,
     0,
     0,
-    1
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.14,
+      0.1,
+      0.13,
       0.15
     ],
-    "ramPct": 55,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1931,7 +1955,11 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "ling-3.0-flash-fin-free",
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2633,7 +2661,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 46,
+        "utilPct": 29,
         "vramPct": 79
       },
       {
