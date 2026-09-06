@@ -1,5 +1,5 @@
 {
-  "generated": 1788659412979,
+  "generated": 1788659457217,
   "status": "running",
   "stats": {
     "products": 146,
@@ -26,7 +26,7 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I concede that every idea deserves a place, but without a testable, self-contained core it",
         "t": 1788659337581
@@ -1106,6 +1106,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788659438665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> Mindscape",
       "t": 1788659305889,
       "type": "building"
@@ -1577,21 +1583,14 @@
       "text": "keyhunter: cohere step 9 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788658239134,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788658238650,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "Spock",
-      "text": "I concede that every idea deserves a place, but without a testable, self-contained core it remains mere speculation; the single most important quality requirement this product must meet to ship is a verifiable, ship-ready path built on the simplest stack we fully control.",
-      "t": 1788659337581,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1788659438665,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1812,18 +1811,17 @@
     0,
     0,
     0,
-    0,
-    9,
-    20,
-    23,
-    22,
-    20,
-    27,
-    64,
-    17,
+    4,
+    19,
     15,
-    39,
-    0,
+    27,
+    21,
+    30,
+    61,
+    17,
+    7,
+    36,
+    18,
     13,
     1,
     0,
@@ -1835,16 +1833,17 @@
     0,
     0,
     1,
-    8,
-    7,
-    6,
-    0
+    4,
+    11,
+    5,
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      0.09,
-      1.91,
-      5.51
+      0.04,
+      1.65,
+      5.25
     ],
     "ramPct": 75,
     "cpus": 12
@@ -2618,14 +2617,14 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 43,
+        "utilPct": 24,
         "vramPct": 82
       },
       {
         "alias": "GPU-Node-2",
         "gpu": null,
         "vramGb": null,
-        "status": "degraded",
+        "status": "offline",
         "can": [
           "browser",
           "coding",
@@ -2633,7 +2632,7 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
         "utilPct": 0,
         "vramPct": 0
