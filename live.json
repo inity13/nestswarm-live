@@ -1,5 +1,5 @@
 {
-  "generated": 1788673992692,
+  "generated": 1788674036735,
   "status": "running",
   "stats": {
     "products": 159,
@@ -1097,6 +1097,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788674033093,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2318MB free)",
+      "t": 1788674033091,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788674031048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788674031048,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788674030884,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
       "t": 1788673874598,
       "type": "event"
@@ -1544,33 +1574,40 @@
       "text": "launch-discipline: CryptoPilot MT SHIPPED (polished 0×, marketed, live, sellable via stripe) — advancing to next.",
       "t": 1788671850948,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788674033093,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "storefront: CryptoPilot MT is LIVE & BUYABLE at https://inity13.github.io/[private-repo]/pmtpckqw31h90/",
-      "t": 1788671850930,
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2318MB free)",
+      "t": 1788674033091,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788674031048,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: CryptoPilot MT storefront LIVE → https://inity13.github.io/[private-repo]/pmtpckqw31h90/",
-      "t": 1788671850930,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788674031048,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: CryptoPilot MT plateaued at 0/8 after 0 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1788671845608,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for CryptoPilot MT — skipping",
-      "t": 1788671839899,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788674030884,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1786,24 +1823,23 @@
     "priority": ""
   },
   "throughput": [
-    8,
-    2,
-    3,
+    4,
+    4,
     0,
     1,
     3,
     0,
     1,
     0,
-    7,
-    9,
-    2,
+    4,
+    10,
+    4,
     11,
     7,
-    9,
-    12,
-    5,
-    9,
+    4,
+    17,
+    1,
+    13,
     11,
     3,
     3,
@@ -1815,15 +1851,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.27,
-      0.36
+      0.9,
+      0.43,
+      0.41
     ],
-    "ramPct": 84,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2612,10 +2649,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 34,
-        "vramPct": 80
+        "busy": false,
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
