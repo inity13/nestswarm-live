@@ -1,5 +1,5 @@
 {
-  "generated": 1788693748380,
+  "generated": 1788693793433,
   "status": "running",
   "stats": {
     "products": 159,
@@ -1100,6 +1100,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: replikalimitedfreetier — queued for key hunter",
+      "t": 1788693764381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
+      "t": 1788693748490,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788693748490,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
       "t": 1788693677094,
       "type": "event"
@@ -1559,31 +1577,25 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788688431213,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788688427639,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2202MB free)",
-      "t": 1788688427636,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
-      "t": 1788688275915,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 159 products)",
-      "t": 1788693677094,
+      "text": "scout discovered key-gated free provider: replikalimitedfreetier — queued for key hunter",
+      "t": 1788693764381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 2 zen free models",
+      "t": 1788693748490,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788693748490,
       "type": "event"
     }
   ],
@@ -1802,44 +1814,44 @@
     "priority": ""
   },
   "throughput": [
+    5,
+    1,
+    2,
     0,
-    6,
+    1,
     0,
     2,
     1,
     0,
     0,
-    3,
+    4,
     0,
-    0,
+    2,
     1,
-    3,
-    0,
-    3,
     0,
     0,
     1,
     0,
     0,
     1,
-    0,
     3,
-    3,
-    0,
-    5,
+    2,
+    1,
+    1,
+    4,
     1,
     0,
     0,
     1,
-    0
+    4
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.19,
-      0.19
+      0.26,
+      0.22,
+      0.2
     ],
-    "ramPct": 59,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1926,6 +1938,8 @@
       }
     },
     "free": [
+      "nemotron-3.5-lightning-free",
+      "gemini-flash-latest",
       "openai/gpt-oss-120b"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2629,8 +2643,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 20
+        "utilPct": 41,
+        "vramPct": 82
       },
       {
         "alias": "GPU-Node-2",
