@@ -1,5 +1,5 @@
 {
-  "generated": 1788661662860,
+  "generated": 1788661707847,
   "status": "running",
   "stats": {
     "products": 147,
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Council adjourned for PetForge MT.",
+      "t": 1788661697215,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "demand_validator",
       "text": "PetForge MT requires a compelling value proposition that clearly aligns with its features and audience. The single most important quality requirement for launching PetForge MT is to have a well-defined set of features and a clear understanding of the target market, ensuring it resonates with potential customers.",
@@ -1094,16 +1101,27 @@
       "t": 1788655796747,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "I agree we need a live prototype, but we don't have to build every fancy feature at once; let's first nail the core AI decision engine that can ingest user data and output actionable suggestions in under 5 seconds\"I agree we need a live prototype, but we don't have to build every fancy feature at once; let's first nail the core AI decision engine that can ingest user data and output actionable suggestions in under 5 seconds. Once we have that solidified, we can incrementally add the rest of the features, ensuring each one is well-tested before moving on.",
-      "t": 1788655786207,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "packaged PetForge MT → petforge-mt.zip (10737 bytes)",
+      "t": 1788661706216,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for PetForge MT: [path] ... SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788661706177,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (1020 chars)",
+      "t": 1788661697214,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: Claude unavailable for conductor (desktop limited until 5:33:51 AM) — trying ChatGPT/free",
@@ -1529,33 +1547,27 @@
       "text": "launcher: shipped Mindscape to https://github.com/inity13/[private-repo] (private)",
       "t": 1788660359801,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1788660334510,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop limited until 5:15:34 AM) — trying ChatGPT/free",
-      "t": 1788660334504,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop unavailable) — trying ChatGPT/free",
-      "t": 1788660334492,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788660334492,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "packaged PetForge MT → petforge-mt.zip (10737 bytes)",
+      "t": 1788661706216,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for PetForge MT: [path] ... SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788661706177,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for conductor (1020 chars)",
+      "t": 1788661697214,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: Claude unavailable for conductor (desktop limited until 5:33:51 AM) — trying ChatGPT/free",
@@ -1682,7 +1694,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 24×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 25×"
     },
     {
       "name": "GitHub Copilot",
@@ -1855,41 +1867,41 @@
   },
   "throughput": [
     0,
-    0,
     1,
-    4,
-    6,
+    0,
+    10,
     5,
-    2,
+    1,
+    10,
+    11,
+    1,
+    0,
     15,
+    13,
+    15,
+    4,
+    13,
     5,
+    5,
+    0,
+    0,
     1,
     0,
-    27,
-    1,
-    16,
     7,
-    9,
-    5,
-    5,
-    0,
-    0,
-    1,
-    0,
-    9,
-    6,
+    8,
     0,
     10,
-    12,
     10,
-    18,
-    13
+    11,
+    19,
+    9,
+    9
   ],
   "load": {
     "loadavg": [
-      1.12,
-      0.74,
-      0.95
+      0.53,
+      0.63,
+      0.9
     ],
     "ramPct": 66,
     "cpus": 12
@@ -1933,7 +1945,7 @@
         "tier": "free"
       },
       "conductor": {
-        "model": "nemotron-3.5-lightning-free",
+        "model": "chatgpt(free)",
         "tier": "free"
       },
       "researcher": {
@@ -2682,7 +2694,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 35,
-        "vramPct": 81
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
