@@ -1,5 +1,5 @@
 {
-  "generated": 1788702613675,
+  "generated": 1788702657803,
   "status": "running",
   "stats": {
     "products": 160,
@@ -14,7 +14,7 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "I appreciate Spock's caution about complexity and Scotty's concern about risk. Let's simpl",
         "t": 1788702543634
@@ -26,10 +26,10 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I believe we should start with a simple web app built in Node.js to ensure ease of use and",
-        "t": 1788702413411
+        "text": "To ensure simplicity and testability, we should start with a single Node.js web app. This ",
+        "t": 1788702614715
       }
     },
     {
@@ -262,6 +262,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Spock",
+      "text": "To ensure simplicity and testability, we should start with a single Node.js web app. This approach balances ease of use for the target audience while keeping the technical overhead manageable. The most important quality requirement is to create a product that delivers value immediately and is easy to launch and test.",
+      "t": 1788702614715,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Guinan",
       "text": "I appreciate Spock's caution about complexity and Scotty's concern about risk. Let's simplify our approach while ensuring we stay original. The most important quality requirement for this product is a **single, clear, compelling value proposition** that resonates with its target audience and addresses a specific pain point they have today. This foundational clarity will guide everything from design to marketing to feature development.",
@@ -1094,13 +1101,6 @@
       "t": 1788673106916,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "InsightMentor is an exciting tool for B2B founders and professionals to boost their LinkedIn presence with AI-driven thought leadership. However, I demand we establish a clear user problem that this product solves before proceeding further. Without it, the features seem like overhyped buzzwords without substance. Let's focus on defining a real pain point and demonstrating how InsightMentor addresses it through concrete examples.",
-      "t": 1788673105207,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
@@ -1553,15 +1553,16 @@
       "text": "registrar: registering Product Hunt (revenue)",
       "t": 1788701020168,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788701001785,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "Spock",
+      "text": "To ensure simplicity and testability, we should start with a single Node.js web app. This approach balances ease of use for the target audience while keeping the technical overhead manageable. The most important quality requirement is to create a product that delivers value immediately and is easy to launch and test.",
+      "t": 1788702614715,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "stage 'build' -> MindMate",
@@ -1579,13 +1580,6 @@
       "text": "ownerreq: emailed 1 new request(s) to [email]",
       "t": 1788702595098,
       "type": "event"
-    },
-    {
-      "who": "Guinan",
-      "text": "I appreciate Spock's caution about complexity and Scotty's concern about risk. Let's simplify our approach while ensuring we stay original. The most important quality requirement for this product is a **single, clear, compelling value proposition** that resonates with its target audience and addresses a specific pain point they have today. This foundational clarity will guide everything from design to marketing to feature development.",
-      "t": 1788702543634,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1803,21 +1797,20 @@
     "priority": "AI‑powered personal assistant for freelancers that syncs with Google Calendar and Trello."
   },
   "throughput": [
-    0,
-    5,
-    76,
-    26,
-    19,
-    22,
+    1,
+    62,
+    40,
+    17,
+    25,
+    11,
     13,
-    8,
+    1,
+    1,
     2,
-    1,
-    1,
-    3,
-    1,
-    16,
-    1,
+    2,
+    2,
+    13,
+    4,
     0,
     3,
     3,
@@ -1827,20 +1820,21 @@
     1,
     1,
     3,
-    19,
-    1,
+    15,
+    5,
     15,
     3,
+    1,
     2,
     4
   ],
   "load": {
     "loadavg": [
-      2.86,
-      1.67,
-      0.9
+      3.27,
+      1.92,
+      1.02
     ],
-    "ramPct": 53,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2608,10 +2602,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 17
+        "utilPct": 91,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
