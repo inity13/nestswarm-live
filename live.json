@@ -1,5 +1,5 @@
 {
-  "generated": 1788729749642,
+  "generated": 1788729794658,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788729750209,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider gemini",
+      "t": 1788729750209,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788729747959,
       "type": "launch"
@@ -1571,21 +1583,21 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788725897395,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788725717279,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Please supply an API key for the Google Gemini free provider so it can be activated.",
-      "t": 1788725634560,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788729750209,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider gemini",
+      "t": 1788729750209,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
@@ -1638,12 +1650,6 @@
       "who": "swarm",
       "text": "conductor: 1 request(s) logged for the Swarm Protector",
       "t": 1788729728189,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788729677336,
       "type": "event"
     }
   ],
@@ -1870,8 +1876,17 @@
     "priority": "AI‑powered meeting summarizer for small‑to‑medium businesses (SMBs)"
   },
   "throughput": [
+    11,
+    1,
     0,
-    12,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    10,
     0,
     0,
     1,
@@ -1889,25 +1904,16 @@
     1,
     0,
     0,
-    1,
-    0,
-    9,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13
+    8,
+    9
   ],
   "load": {
     "loadavg": [
-      0.4,
+      0.23,
       0.14,
       0.08
     ],
-    "ramPct": 66,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1949,8 +1955,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "nemotron-3-ultra-free",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -1995,7 +2001,6 @@
     },
     "free": [
       "nemotron-3-ultra-free",
-      "gemini-flash-latest",
       "openai/gpt-oss-120b"
     ],
     "posture": "free-first · paid reserved for extreme",
