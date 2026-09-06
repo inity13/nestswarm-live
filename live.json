@@ -1,5 +1,5 @@
 {
-  "generated": 1788703108754,
+  "generated": 1788703153766,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788703143826,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for MindMate",
+      "t": 1788703143825,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for publisher (752 chars)",
+      "t": 1788703143824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
       "t": 1788703091128,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "registrar: Millo step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1788701218602,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788701218003,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
-      "t": 1788701202401,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 4m ago) — skip",
-      "t": 1788701202400,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "launcher: 3 distribution action(s) this pass",
+      "t": 1788703143826,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for MindMate",
+      "t": 1788703143825,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "ChatGPT responded for publisher (752 chars)",
+      "t": 1788703143824,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop limited until 5:08:11 PM) — falling through",
@@ -1627,12 +1645,6 @@
       "text": "launcher: shipped MindMate to https://github.com/inity13/[private-repo] (private)",
       "t": 1788703080237,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788703036561,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1678,7 +1690,7 @@
     },
     {
       "name": "ChatGPT",
-      "desc": "free ChatGPT via logged-in browser RPA · used 36×"
+      "desc": "free ChatGPT via logged-in browser RPA · used 37×"
     },
     {
       "name": "GitHub Copilot",
@@ -1850,44 +1862,44 @@
     "priority": "AI‑powered personal assistant for freelancers that syncs with Google Calendar and Trello."
   },
   "throughput": [
-    2,
-    2,
-    2,
     1,
-    2,
-    15,
     1,
     3,
-    1,
-    2,
-    1,
-    3,
-    0,
-    2,
-    0,
-    3,
-    20,
     1,
     16,
+    1,
+    0,
+    3,
+    3,
+    0,
+    4,
+    0,
+    1,
+    1,
+    3,
+    19,
+    1,
+    15,
+    3,
     2,
+    4,
+    1,
+    1,
     1,
     5,
-    1,
-    0,
-    1,
-    16,
-    8,
+    19,
     11,
-    3,
-    7
+    2,
+    8,
+    4
   ],
   "load": {
     "loadavg": [
-      5.33,
-      3.47,
-      2.05
+      5.12,
+      3.7,
+      2.2
     ],
-    "ramPct": 50,
+    "ramPct": 47,
     "cpus": 12
   },
   "brain": {
@@ -1909,8 +1921,8 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "chatgpt(free)",
+        "tier": "free"
       },
       "security": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2675,8 +2687,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 36,
-        "vramPct": 92
+        "utilPct": 32,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
