@@ -1,5 +1,5 @@
 {
-  "generated": 1788653347250,
+  "generated": 1788653392248,
   "status": "running",
   "stats": {
     "products": 143,
@@ -1106,6 +1106,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> ScopeSage",
+      "t": 1788653352422,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788653351387,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> ScopeSage",
       "t": 1788653342422,
       "type": "building"
@@ -1571,21 +1583,21 @@
       "text": "ideator produced no usable name — generated \"EducationLens MT\"",
       "t": 1788650122712,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (SensorySmart); re-ideating in a fresh niche",
-      "t": 1788650122709,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (SensoryFit); re-ideating in a fresh niche",
-      "t": 1788650119723,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> ScopeSage",
+      "t": 1788653352422,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1788653351387,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> ScopeSage",
@@ -1828,9 +1840,8 @@
   },
   "throughput": [
     0,
-    0,
-    7,
-    0,
+    5,
+    2,
     0,
     1,
     0,
@@ -1842,8 +1853,8 @@
     0,
     0,
     3,
-    12,
-    5,
+    8,
+    9,
     1,
     0,
     0,
@@ -1856,13 +1867,14 @@
     1,
     0,
     0,
-    4
+    1,
+    6
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.21,
-      0.19
+      0.23,
+      0.2,
+      0.18
     ],
     "ramPct": 68,
     "cpus": 12
@@ -2607,7 +2619,7 @@
     {
       "name": "ScopeSage",
       "niche": "freelancers & solopreneurs",
-      "stage": "test",
+      "stage": "build",
       "status": "building"
     }
   ],
@@ -2636,7 +2648,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 37,
+        "utilPct": 42,
         "vramPct": 81
       },
       {
@@ -2652,13 +2664,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
-    "jobsProcessed": 173
+    "jobsProcessed": 174
   }
 }
