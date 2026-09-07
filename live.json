@@ -1,5 +1,5 @@
 {
-  "generated": 1788819920373,
+  "generated": 1788819965342,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788819946777,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2397MB free)",
+      "t": 1788819946775,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788819847977,
       "type": "event"
@@ -1583,50 +1595,20 @@
       "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
       "t": 1788816834366,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788816834365,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788816834364,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788819847977,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788819946777,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788819831520,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788819831520,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788819831519,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788819831519,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2397MB free)",
+      "t": 1788819946775,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1863,6 +1845,15 @@
     1,
     0,
     0,
+    14,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     1,
     13,
     0,
@@ -1873,33 +1864,24 @@
     0,
     0,
     1,
-    0,
-    13,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    5,
-    19,
-    6
+    6,
+    17,
+    7,
+    8
   ],
   "load": {
     "loadavg": [
-      1.38,
-      0.81,
-      0.43
+      1.23,
+      0.87,
+      0.47
     ],
-    "ramPct": 68,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1979,7 +1961,7 @@
         "tier": "local"
       },
       "payment-integrator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2751,8 +2733,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 6,
-        "vramPct": 70
+        "utilPct": 9,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -2767,10 +2749,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 59
+        "busy": true,
+        "warm": false,
+        "utilPct": 21,
+        "vramPct": 51
       }
     ],
     "selfHostedInferencePct": 78,
