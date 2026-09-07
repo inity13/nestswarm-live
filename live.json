@@ -1,5 +1,5 @@
 {
-  "generated": 1788803589075,
+  "generated": 1788803632628,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788803626708,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788803626708,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788803626610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788803473021,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788800039204,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider b.competitors not found",
-      "t": 1788800037229,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — provider b.competitors not found",
-      "t": 1788800037229,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788800027561,
+      "t": 1788803626708,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788803626708,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788803626610,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,8 +1844,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    7,
-    1,
+    4,
     0,
     0,
     1,
@@ -1854,15 +1872,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.35,
-      0.27,
-      0.21
+      1.01,
+      0.44,
+      0.27
     ],
-    "ramPct": 71,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -2719,9 +2738,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 80
+        "warm": false,
+        "utilPct": 4,
+        "vramPct": 20
       },
       {
         "alias": "GPU-Node-2",
