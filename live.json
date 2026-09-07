@@ -1,5 +1,5 @@
 {
-  "generated": 1788790991499,
+  "generated": 1788791035334,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1115,6 +1115,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788791029370,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788791029370,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788791029225,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788791028435,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3597MB free)",
+      "t": 1788791028434,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788790878719,
       "type": "event"
@@ -1562,39 +1592,40 @@
       "text": "keyhunter: attempting replikaalternative (https://www.replika.ai/)",
       "t": 1788788134694,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. This could be due to too much traffic or a configura",
-      "t": 1788788133194,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenalternative (https://huggingface.co/spaces/Qwen/Qwen-demo)",
-      "t": 1788788133194,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788788131707,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenhuggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1788788130095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: googlegemini entering verification code from inbox",
-      "t": 1788788126345,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788791029370,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788791029370,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788791029225,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788791028435,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3597MB free)",
+      "t": 1788791028434,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1822,8 +1853,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    8,
-    8,
+    13,
     0,
     0,
     1,
@@ -1832,8 +1862,8 @@
     1,
     0,
     0,
-    14,
-    0,
+    4,
+    10,
     0,
     1,
     0,
@@ -1851,15 +1881,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.17,
-      0.17
+      0.9,
+      0.35,
+      0.23
     ],
-    "ramPct": 55,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2707,8 +2738,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 80
+        "utilPct": 6,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
