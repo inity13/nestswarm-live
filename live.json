@@ -1,5 +1,5 @@
 {
-  "generated": 1788825184346,
+  "generated": 1788825227885,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788825225476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788825225476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788825225476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788825225475,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788825221935,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788825221934,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788825221874,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788825218842,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2787MB free)",
+      "t": 1788825218841,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788825066385,
       "type": "event"
@@ -1541,63 +1595,64 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1788822229461,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
-      "t": 1788822229460,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788822229459,
+      "t": 1788825225476,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
-      "t": 1788822226569,
+      "t": 1788825225476,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788822226569,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788822226568,
+      "t": 1788825225476,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1788822226567,
+      "t": 1788825225475,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788822222538,
+      "t": 1788825221935,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788822222537,
+      "t": 1788825221934,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788822222465,
+      "t": 1788825221874,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788825218842,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2787MB free)",
+      "t": 1788825218841,
+      "type": "bench"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1880,6 @@
     "priority": "The top niche is 'AI-powered productivity tools for remote teams' — a validated market need with high-margin potential."
   },
   "throughput": [
-    7,
     1,
     0,
     0,
@@ -1845,8 +1899,8 @@
     0,
     0,
     1,
-    13,
-    0,
+    8,
+    5,
     1,
     0,
     0,
@@ -1854,15 +1908,16 @@
     0,
     0,
     1,
-    0
+    0,
+    10
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.13,
-      0.11
+      0.51,
+      0.24,
+      0.15
     ],
-    "ramPct": 56,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2719,9 +2774,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2736,8 +2791,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 93
       }
