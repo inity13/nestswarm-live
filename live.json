@@ -1,5 +1,5 @@
 {
-  "generated": 1788816186110,
+  "generated": 1788816229688,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788816223779,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788816223665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3592MB free)",
+      "t": 1788816222402,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788816222402,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
       "t": 1788816136283,
       "type": "event"
@@ -1571,92 +1595,32 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788813231647,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788813228696,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788813228696,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788813228696,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788813228695,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1788816136283,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788816136238,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: compliance",
-      "t": 1788816136185,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-gateway-integration",
-      "t": 1788816136185,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill financial-analysis",
-      "t": 1788816136185,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill compliance",
-      "t": 1788816136185,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: financial-analysis",
-      "t": 1788816136184,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: payment-gateway-integration",
-      "t": 1788816136182,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788816223779,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788816121673,
+      "t": 1788816223665,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1788816121672,
-      "type": "scout"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3592MB free)",
+      "t": 1788816222402,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788816222402,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1886,8 +1850,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    15,
-    1,
+    6,
     0,
     0,
     1,
@@ -1896,17 +1859,8 @@
     1,
     0,
     0,
-    14,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13,
+    9,
+    5,
     0,
     1,
     0,
@@ -1914,16 +1868,26 @@
     1,
     0,
     0,
-    3,
-    9
+    1,
+    8,
+    5,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    11,
+    4
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.13,
-      0.08
+      0.51,
+      0.21,
+      0.1
     ],
-    "ramPct": 46,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2783,9 +2747,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 7,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
@@ -2802,7 +2766,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 2,
         "vramPct": 51
       }
     ],
