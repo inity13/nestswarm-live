@@ -1,5 +1,5 @@
 {
-  "generated": 1788819785403,
+  "generated": 1788819828974,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788819826630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788819826630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788819826629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788819826629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788819823233,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788819823233,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788819822958,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788819667986,
       "type": "event"
@@ -1553,51 +1595,52 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788816608605,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788816428450,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
-      "t": 1788816393730,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
-      "t": 1788816372182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788816372181,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788816371064,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
-      "t": 1788816371064,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/62 channels active · 0 new discovered",
-      "t": 1788816346305,
-      "type": "scout"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788819826630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788819826630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788819826629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788819826629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788819823233,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788819823233,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788819822958,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,8 +1868,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    15,
-    1,
+    6,
     0,
     0,
     1,
@@ -1835,17 +1877,8 @@
     1,
     0,
     0,
-    14,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13,
+    9,
+    5,
     0,
     1,
     0,
@@ -1854,15 +1887,25 @@
     0,
     0,
     1,
-    6
+    8,
+    5,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    5,
+    12
   ],
   "load": {
     "loadavg": [
-      0.97,
-      0.44,
-      0.27
+      1.1,
+      0.55,
+      0.32
     ],
-    "ramPct": 64,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -2718,10 +2761,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 6,
-        "vramPct": 76
+        "busy": true,
+        "warm": false,
+        "utilPct": 42,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2736,10 +2779,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 59
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 78,
