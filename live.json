@@ -1,5 +1,5 @@
 {
-  "generated": 1788823384676,
+  "generated": 1788823428168,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1119,6 +1119,42 @@
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
+      "t": 1788823424397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788823424397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788823422329,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788823422234,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788823420324,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2716MB free)",
+      "t": 1788823420322,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
       "t": 1788823341235,
       "type": "event"
     },
@@ -1559,45 +1595,45 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788821022730,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788823424397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788823424397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788823422329,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788821022657,
+      "t": 1788823422234,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788820928010,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788823420324,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788820748085,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2716MB free)",
+      "t": 1788823420322,
+      "type": "bench"
     },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788820567404,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788820430623,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788820430623,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
@@ -1680,18 +1716,6 @@
       "who": "swarm",
       "text": "conductor created skill: stripe-owner-onboarding",
       "t": 1788823338901,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1788823319098,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788823319098,
       "type": "event"
     }
   ],
@@ -1922,8 +1946,7 @@
     "priority": "The top niche is 'AI-powered productivity tools for remote teams' — a validated market need with high-margin potential."
   },
   "throughput": [
-    15,
-    1,
+    6,
     0,
     0,
     1,
@@ -1932,17 +1955,8 @@
     1,
     0,
     0,
-    14,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13,
+    9,
+    5,
     0,
     1,
     0,
@@ -1950,16 +1964,26 @@
     1,
     0,
     0,
-    3,
-    16
+    1,
+    8,
+    5,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    18,
+    7
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.17,
-      0.17
+      0.65,
+      0.31,
+      0.22
     ],
-    "ramPct": 57,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2818,10 +2842,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "utilPct": 82,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
