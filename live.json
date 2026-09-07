@@ -1,5 +1,5 @@
 {
-  "generated": 1788767592785,
+  "generated": 1788767636631,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788767630758,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788767630757,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788767630659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788767477733,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "keyhunter: replika step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788766349447,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: eleutheraillamafreetrial step 1 -> {\"action\":\"fail\",\"reason\":\"The page is not accessible. The URL may be incorrect or the service might be down.\"}",
-      "t": 1788766348137,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting replika (https://www.replika.ai/signup)",
-      "t": 1788766348137,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788766338147,
-      "type": "bench"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788767630758,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788767630757,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788767630659,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1809,18 +1828,17 @@
     "priority": "remote project management for creative industries"
   },
   "throughput": [
-    18,
+    29,
+    6,
+    13,
+    42,
     19,
-    12,
-    7,
-    52,
     15,
-    14,
     17,
-    13,
-    40,
-    63,
-    1,
+    16,
+    28,
+    56,
+    22,
     0,
     1,
     1,
@@ -1838,15 +1856,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.13,
-      0.41
+      1.11,
+      0.38,
+      0.48
     ],
-    "ramPct": 57,
+    "ramPct": 47,
     "cpus": 12
   },
   "brain": {
@@ -2692,10 +2711,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 80
+        "utilPct": 6,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2712,7 +2731,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 0,
+        "utilPct": 14,
         "vramPct": 93
       }
     ],
