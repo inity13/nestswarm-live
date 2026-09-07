@@ -1,5 +1,5 @@
 {
-  "generated": 1788773036395,
+  "generated": 1788773082501,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788773058173,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788773040023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider gemini",
+      "t": 1788773040023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1788773030478,
       "type": "event"
@@ -1565,27 +1583,27 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788770357224,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788770176549,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788770044853,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788770044853,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788773058173,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788773040023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider gemini",
+      "t": 1788773040023,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
@@ -1609,42 +1627,6 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (2783MB free)",
       "t": 1788773029991,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788772950471,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync error indicates that 'b.competitors' is not an array, causing a .map failure. Please inspect [path] (or related file) and ensure it contains a JSON array. Correct the structure to resolve the sync issue.",
-      "t": 1788772950471,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: The vault sync error indicates that 'b.competitors' is not an array, causing a .map failure. Please inspect [path] (or related file) and ensure it contains a JSON array. Correct the structure to resolve the sync issue.",
-      "t": 1788772950471,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788772950470,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1788772949205,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1788772946637,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1870,16 +1852,6 @@
     "priority": "remote project management for creative industries"
   },
   "throughput": [
-    11,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    14,
     0,
     0,
     1,
@@ -1898,16 +1870,26 @@
     0,
     0,
     1,
+    0,
+    13,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     18,
-    4
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.54,
-      0.22,
-      0.13
+      0.63,
+      0.31,
+      0.17
     ],
-    "ramPct": 63,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1949,7 +1931,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "researcher": {
@@ -2755,8 +2737,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 7,
-        "vramPct": 42
+        "utilPct": 10,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2773,7 +2755,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 2,
         "vramPct": 73
       }
     ],
