@@ -1,5 +1,5 @@
 {
-  "generated": 1788769392774,
+  "generated": 1788769436690,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788769430659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788769430659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788769430534,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788769277723,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "keyhunter: attempting qwenalternative (https://huggingface.co/spaces/Qwen/Qwen-demo)",
       "t": 1788766434982,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: qwenhuggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788766433543,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788769430659,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788766432980,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788769430659,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider gemini",
-      "t": 1788766432980,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788769430534,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1810,7 +1829,6 @@
   },
   "throughput": [
     13,
-    3,
     0,
     0,
     1,
@@ -1819,8 +1837,8 @@
     1,
     0,
     0,
-    14,
-    0,
+    4,
+    10,
     0,
     1,
     0,
@@ -1838,15 +1856,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.09,
-      0.18
+      0.83,
+      0.29,
+      0.24
     ],
-    "ramPct": 55,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2692,10 +2711,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 24,
-        "vramPct": 80
+        "utilPct": 6,
+        "vramPct": 20
       },
       {
         "alias": "GPU-Node-2",
@@ -2710,10 +2729,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 90
+        "busy": true,
+        "warm": false,
+        "utilPct": 39,
+        "vramPct": 98
       }
     ],
     "selfHostedInferencePct": 79,
