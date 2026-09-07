@@ -1,5 +1,5 @@
 {
-  "generated": 1788772947542,
+  "generated": 1788772992689,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788772950471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that 'b.competitors' is not an array, causing a .map failure. Please inspect [path] (or related file) and ensure it contains a JSON array. Correct the structure to resolve the sync issue.",
+      "t": 1788772950471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: The vault sync error indicates that 'b.competitors' is not an array, causing a .map failure. Please inspect [path] (or related file) and ensure it contains a JSON array. Correct the structure to resolve the sync issue.",
+      "t": 1788772950471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788772950470,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788772949205,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788772946637,
       "type": "launch"
@@ -1553,39 +1583,39 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1788770042415,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788772950471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that 'b.competitors' is not an array, causing a .map failure. Please inspect [path] (or related file) and ensure it contains a JSON array. Correct the structure to resolve the sync issue.",
+      "t": 1788772950471,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: The vault sync error indicates that 'b.competitors' is not an array, causing a .map failure. Please inspect [path] (or related file) and ensure it contains a JSON array. Correct the structure to resolve the sync issue.",
+      "t": 1788772950471,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
-      "t": 1788770042414,
+      "t": 1788772950470,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788770042413,
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788772949205,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788770030607,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788770030607,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788770030481,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
@@ -1632,12 +1662,6 @@
       "who": "swarm",
       "text": "conductor: 1 request(s) logged for the Swarm Protector",
       "t": 1788772926563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788772879999,
       "type": "event"
     }
   ],
@@ -1864,8 +1888,17 @@
     "priority": "remote project management for creative industries"
   },
   "throughput": [
+    15,
+    1,
     0,
-    16,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    14,
     0,
     0,
     1,
@@ -1883,25 +1916,16 @@
     1,
     0,
     0,
-    1,
-    0,
-    13,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    12
+    8,
+    11
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.1,
-      0.09
+      0.21,
+      0.13,
+      0.1
     ],
-    "ramPct": 65,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1943,7 +1967,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -1987,10 +2011,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2752,7 +2773,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
@@ -2770,7 +2791,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 7,
+        "utilPct": 3,
         "vramPct": 73
       }
     ],
