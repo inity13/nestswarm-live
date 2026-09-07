@@ -1,5 +1,5 @@
 {
-  "generated": 1788801833004,
+  "generated": 1788801879247,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788801852123,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788801837017,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
+      "t": 1788801837017,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788801827265,
       "type": "bench"
@@ -1577,27 +1595,27 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788798832610,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788801852123,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
-      "t": 1788798830631,
+      "t": 1788801837017,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788798830631,
+      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
+      "t": 1788801837017,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788798830630,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1620,30 +1638,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788801826997,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: eleutheraifreetrial — queued for key hunter",
-      "t": 1788801744686,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788801744548,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider gemini",
-      "t": 1788801744548,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788801744547,
       "type": "event"
     }
   ],
@@ -1874,16 +1868,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    9,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    12,
     0,
     0,
     1,
@@ -1902,14 +1886,24 @@
     0,
     0,
     1,
+    0,
+    11,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     19,
-    4
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.89,
+      0.65,
       0.42,
-      0.22
+      0.23
     ],
     "ramPct": 67,
     "cpus": 12
@@ -1953,8 +1947,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "gemini-flash-latest",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2769,8 +2763,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 8,
-        "vramPct": 43
+        "utilPct": 9,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
