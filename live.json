@@ -1,5 +1,5 @@
 {
-  "generated": 1788763993041,
+  "generated": 1788764036908,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788764031073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788764031073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788764030903,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788763877956,
       "type": "event"
@@ -1565,27 +1583,28 @@
       "text": "self-heal: disabled provider groq",
       "t": 1788760442443,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788760441796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider groq",
-      "t": 1788760441796,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788760431241,
+      "t": 1788764031073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788764031073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788764030903,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1810,7 +1829,6 @@
   },
   "throughput": [
     13,
-    3,
     0,
     0,
     1,
@@ -1819,8 +1837,8 @@
     1,
     0,
     0,
-    12,
-    0,
+    4,
+    8,
     0,
     1,
     0,
@@ -1838,15 +1856,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.2,
-      0.24
+      0.72,
+      0.34,
+      0.29
     ],
-    "ramPct": 67,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2692,10 +2711,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 24,
-        "vramPct": 80
+        "utilPct": 5,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2710,10 +2729,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 3
+        "utilPct": 30,
+        "vramPct": 4
       }
     ],
     "selfHostedInferencePct": 79,
