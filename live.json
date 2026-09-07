@@ -1,5 +1,5 @@
 {
-  "generated": 1788740594359,
+  "generated": 1788740638341,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788740632446,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2521MB free)",
+      "t": 1788740632445,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788740632444,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788740632443,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788740632317,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788740477588,
       "type": "event"
@@ -1553,39 +1583,40 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788736931573,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788740632446,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788736925855,
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2521MB free)",
+      "t": 1788740632445,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788740632444,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788736925854,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788740632443,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788736878651,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788736695935,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788736517485,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788740632317,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1809,8 +1840,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    10,
-    1,
+    2,
     0,
     0,
     2,
@@ -1819,8 +1849,8 @@
     1,
     0,
     0,
-    16,
-    0,
+    6,
+    10,
     0,
     1,
     0,
@@ -1838,15 +1868,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.35,
-      0.27
+      0.72,
+      0.45,
+      0.31
     ],
-    "ramPct": 70,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2668,10 +2699,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 79
+        "busy": true,
+        "warm": false,
+        "utilPct": 28,
+        "vramPct": 42
       },
       {
         "alias": "GPU-Node-2",
