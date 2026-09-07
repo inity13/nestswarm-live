@@ -1,5 +1,5 @@
 {
-  "generated": 1788810787308,
+  "generated": 1788810830956,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788810825051,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788810825050,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788810824947,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788810824542,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3388MB free)",
+      "t": 1788810824540,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788810670152,
       "type": "event"
@@ -1565,39 +1595,40 @@
       "text": "keyhunter: nvidia step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1788809271895,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788809269910,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788809269617,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788809267870,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788809267569,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Beehiiv step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1788809265240,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788810825051,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788810825050,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788810824947,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788810824542,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3388MB free)",
+      "t": 1788810824540,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,18 +1856,26 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    7,
-    26,
-    6,
+    11,
+    20,
     4,
-    45,
-    15,
+    21,
+    38,
+    8,
     20,
     5,
-    30,
+    36,
+    11,
+    6,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     12,
-    16,
-    0,
     0,
     1,
     0,
@@ -1845,24 +1884,16 @@
     0,
     0,
     1,
-    12,
     0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0
+    5
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.11,
-      0.39
+      0.83,
+      0.29,
+      0.44
     ],
-    "ramPct": 57,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2720,8 +2751,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 80
+        "utilPct": 6,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
