@@ -1,5 +1,5 @@
 {
-  "generated": 1788780102086,
+  "generated": 1788780147089,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1788780131154,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788780131154,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1788780126906,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788780126857,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788780126856,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788780079967,
       "type": "event"
@@ -1553,39 +1583,39 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788777016578,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788777012141,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2490MB free)",
-      "t": 1788777012134,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788776837271,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788776658417,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788776658417,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1788780131154,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788780131154,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1788780126906,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788780126857,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788780126856,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1817,7 +1847,6 @@
   },
   "throughput": [
     0,
-    0,
     16,
     0,
     0,
@@ -1834,8 +1863,8 @@
     0,
     0,
     1,
-    1,
     0,
+    1,
     1,
     0,
     11,
@@ -1845,13 +1874,14 @@
     1,
     0,
     0,
-    1
+    1,
+    7
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.18,
-      0.22
+      0.57,
+      0.27,
+      0.25
     ],
     "ramPct": 65,
     "cpus": 12
@@ -1939,7 +1969,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2701,7 +2734,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
@@ -2719,8 +2752,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 72
+        "utilPct": 8,
+        "vramPct": 98
       }
     ],
     "selfHostedInferencePct": 79,
