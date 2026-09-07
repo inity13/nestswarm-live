@@ -1,5 +1,5 @@
 {
-  "generated": 1788762823076,
+  "generated": 1788762868132,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: provider b.competitors not found",
+      "t": 1788762844541,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — provider b.competitors not found",
+      "t": 1788762844541,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788762843801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788762843801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788762843800,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788762843799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788762831121,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788762831121,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788762830977,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788762796257,
       "type": "event"
@@ -1529,63 +1583,63 @@
       "text": "self-heal complete: 4 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq; requested owner: The vault sync script expects b.competitors to be an array. Please verify the structure of the competitors data in [path] and ensure it is stored as an array (e.g., []), or add a guard to coerce non‑array values to an empty array before calling .map().",
       "t": 1788759832361,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: provider b.competitors not found",
+      "t": 1788762844541,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788759832360,
+      "text": "self-heal complete: 1 fix(es) — provider b.competitors not found",
+      "t": 1788762844541,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
-      "t": 1788759832360,
+      "t": 1788762843801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1788762843801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788762843800,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1788759832359,
+      "t": 1788762843799,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788759831259,
+      "t": 1788762831121,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788759831259,
+      "t": 1788762831121,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788759831165,
+      "t": 1788762830977,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788759736988,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788759557685,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788759377796,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1816,7 +1870,6 @@
     "priority": "The current highest‑rated shipped product (the top‑scoring flagship) will be the immediate focus."
   },
   "throughput": [
-    13,
     0,
     1,
     0,
@@ -1845,15 +1898,16 @@
     1,
     0,
     0,
-    1
+    1,
+    11
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.23,
-      0.26
+      0.73,
+      0.36,
+      0.3
     ],
-    "ramPct": 70,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -2701,8 +2755,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
-        "vramPct": 50
+        "utilPct": 48,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2718,9 +2772,9 @@
           "vision"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 95
+        "vramPct": 3
       }
     ],
     "selfHostedInferencePct": 79,
