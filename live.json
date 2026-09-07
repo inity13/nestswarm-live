@@ -1,5 +1,5 @@
 {
-  "generated": 1788780192128,
+  "generated": 1788780236001,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788780230076,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2875MB free)",
+      "t": 1788780230075,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788780230047,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788780229923,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1788780153851,
       "type": "event"
@@ -1559,33 +1583,33 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1788777232274,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788780230076,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788777232273,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788777232272,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2875MB free)",
+      "t": 1788780230075,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788777230097,
+      "t": 1788780230047,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788777230097,
+      "t": 1788780229923,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1608,36 +1632,6 @@
       "who": "swarm",
       "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
       "t": 1788780152648,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1788780131154,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788780131154,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 operational improvement(s) recommended",
-      "t": 1788780126906,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788780126857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788780126856,
       "type": "event"
     }
   ],
@@ -1864,8 +1858,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    15,
-    1,
+    11,
     0,
     0,
     1,
@@ -1892,16 +1885,17 @@
     1,
     0,
     0,
-    7,
-    6
+    1,
+    12,
+    4
   ],
   "load": {
     "loadavg": [
-      0.41,
-      0.26,
-      0.25
+      1.05,
+      0.44,
+      0.31
     ],
-    "ramPct": 65,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2749,8 +2743,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 79
+        "utilPct": 6,
+        "vramPct": 42
       },
       {
         "alias": "GPU-Node-2",
@@ -2767,7 +2761,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 13,
+        "utilPct": 9,
         "vramPct": 98
       }
     ],
