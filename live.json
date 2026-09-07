@@ -1,10 +1,10 @@
 {
-  "generated": 1788787302044,
+  "generated": 1788787346828,
   "status": "passive",
   "stats": {
     "products": 160,
     "listed": 20,
-    "agents": 22,
+    "agents": 23,
     "avgScore": "5.3"
   },
   "agents": [
@@ -257,6 +257,15 @@
       "color": "#e77379",
       "avatar": null,
       "enabled": false,
+      "active": false,
+      "last": null
+    },
+    {
+      "role": "payment-integrator",
+      "name": "payment-integrator",
+      "color": "#ed6c4a",
+      "avatar": null,
+      "enabled": true,
       "active": false,
       "last": null
     }
@@ -1106,6 +1115,132 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1788787346138,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/61 channels active · 0 new discovered",
+      "t": 1788787345518,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788787343522,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788787343522,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788787343521,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788787342423,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788787337716,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1788787335580,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788787335517,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added payment-integrator (Responsible for integrating payment gateways to securely process transactions.)",
+      "t": 1788787335462,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill financial-analysis",
+      "t": 1788787335462,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill compliance",
+      "t": 1788787335462,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: compliance",
+      "t": 1788787335461,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: financial-analysis",
+      "t": 1788787335459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788787332468,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1788787329759,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788787329759,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788787321703,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 8m ago) — skip",
+      "t": 1788787321690,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788787321690,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1788787321337,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788787282392,
       "type": "event"
@@ -1457,135 +1592,135 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788784938745,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788784757941,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788784578591,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788784442633,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788784442633,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788784442632,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788784442631,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788784441026,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788784441026,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788784441025,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788784441025,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788784429890,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788784429890,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788784429761,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788784398801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788784217418,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788784038065,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2400MB free)",
-      "t": 1788783866462,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788783866462,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788783859409,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788783859409,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788783859409,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1788787346138,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/61 channels active · 0 new discovered",
+      "t": 1788787345518,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788787343522,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788787343522,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788787343521,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788787342423,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788787337716,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1788787335580,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788787335517,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added payment-integrator (Responsible for integrating payment gateways to securely process transactions.)",
+      "t": 1788787335462,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill financial-analysis",
+      "t": 1788787335462,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill compliance",
+      "t": 1788787335462,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: compliance",
+      "t": 1788787335461,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: financial-analysis",
+      "t": 1788787335459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788787332468,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1788787329759,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788787329759,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788787321703,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 8m ago) — skip",
+      "t": 1788787321690,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788787321690,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1788787321337,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1640,7 +1775,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 56×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 57×"
     },
     {
       "name": "Shared memory",
@@ -1684,7 +1819,7 @@
     },
     {
       "name": "Reusable skills",
-      "desc": "45 skill(s) in the refinery"
+      "desc": "46 skill(s) in the refinery"
     },
     {
       "name": "buyer-intent-mining",
@@ -1801,6 +1936,10 @@
     {
       "name": "payment-gateway-integration",
       "desc": "Integrates payment gateways for secure and efficient transactions."
+    },
+    {
+      "name": "compliance",
+      "desc": "Ensures all operations comply with relevant regulations and standards."
     }
   ],
   "ledger": {
@@ -1816,7 +1955,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     0,
     15,
     0,
@@ -1845,15 +1983,16 @@
     1,
     0,
     0,
-    1
+    1,
+    31
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.16,
-      0.18
+      2.09,
+      0.61,
+      0.33
     ],
-    "ramPct": 68,
+    "ramPct": 78,
     "cpus": 12
   },
   "brain": {
@@ -1863,11 +2002,11 @@
         "tier": "local"
       },
       "architect": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
@@ -1895,7 +2034,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -1967,11 +2106,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 8,
+        "total": 7,
         "active": 0
       },
       "subscription": {
-        "total": 4,
+        "total": 5,
         "active": 0
       },
       "other": {
@@ -2350,7 +2489,7 @@
       },
       {
         "name": "Nest Concord Product Hunt Promotion",
-        "kind": "marketplace",
+        "kind": "subscription",
         "active": false,
         "captcha": false
       },
@@ -2699,9 +2838,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
+        "busy": true,
+        "warm": false,
+        "utilPct": 56,
         "vramPct": 79
       },
       {
