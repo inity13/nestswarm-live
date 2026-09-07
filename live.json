@@ -1,5 +1,5 @@
 {
-  "generated": 1788792791155,
+  "generated": 1788792835040,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1115,6 +1115,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788792828990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788792828990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788792828893,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788792828537,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3608MB free)",
+      "t": 1788792828535,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788792676606,
       "type": "event"
@@ -1562,39 +1592,40 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788789620425,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788789438625,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788792828990,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3570MB free)",
-      "t": 1788789265036,
-      "type": "bench"
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788792828990,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788792828893,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788789265036,
+      "t": 1788792828537,
       "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788789257852,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788789257852,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3608MB free)",
+      "t": 1788792828535,
+      "type": "bench"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1822,8 +1853,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    15,
-    1,
+    11,
     0,
     0,
     1,
@@ -1851,15 +1881,16 @@
     0,
     0,
     1,
-    0
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0,
-      0.04,
-      0.08
+      0.51,
+      0.16,
+      0.12
     ],
-    "ramPct": 55,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2707,8 +2738,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 80
+        "utilPct": 7,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
