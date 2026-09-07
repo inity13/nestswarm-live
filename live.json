@@ -1,5 +1,5 @@
 {
-  "generated": 1788794590938,
+  "generated": 1788794634699,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1115,6 +1115,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788794628791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788794628647,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788794628194,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3652MB free)",
+      "t": 1788794628188,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1788794535656,
       "type": "event"
@@ -1568,92 +1592,32 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788791633760,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788791631840,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788791631840,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788791631839,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788791631839,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788794535656,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788794628791,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync error indicates that 'b.competitors' is not an array (map is undefined). Please verify and correct the structure of the 'competitors' field in [path] or related product files.",
-      "t": 1788794535656,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: The vault sync error indicates that 'b.competitors' is not an array (map is undefined). Please verify and correct the structure of the 'competitors' field in [path] or related product files.",
-      "t": 1788794535656,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788794535655,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1788794534394,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1788794526102,
-      "type": "scout"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788794526102,
+      "t": 1788794628647,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor: 1 operational improvement(s) recommended",
-      "t": 1788794523413,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788794628194,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1788794523363,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1788794523363,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3652MB free)",
+      "t": 1788794628188,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1883,8 +1847,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    15,
-    1,
+    11,
     0,
     0,
     1,
@@ -1911,16 +1874,17 @@
     1,
     0,
     0,
-    7,
-    6
+    1,
+    12,
+    4
   ],
   "load": {
     "loadavg": [
-      0.31,
-      0.15,
-      0.09
+      0.74,
+      0.27,
+      0.14
     ],
-    "ramPct": 54,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -2768,8 +2732,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 80
+        "utilPct": 7,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
