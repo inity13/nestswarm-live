@@ -1,5 +1,5 @@
 {
-  "generated": 1788801744259,
+  "generated": 1788801789246,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: eleutheraifreetrial — queued for key hunter",
+      "t": 1788801744686,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788801744548,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider gemini",
+      "t": 1788801744548,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788801744547,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1788801741212,
       "type": "launch"
@@ -1571,33 +1595,33 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788798827757,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788798793611,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: focus niche: a specific pain point with high willingness-to-pay; paused new builds (focus mode)",
-      "t": 1788798671383,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788798614385,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1788798613009,
-      "type": "bench"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: eleutheraifreetrial — queued for key hunter",
+      "t": 1788801744686,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788801744548,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider gemini",
+      "t": 1788801744548,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788801744547,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
@@ -1650,12 +1674,6 @@
       "who": "swarm",
       "text": "conductor: 1 request(s) logged for the Swarm Protector",
       "t": 1788801722093,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788801672344,
       "type": "event"
     }
   ],
@@ -1886,8 +1904,17 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
+    13,
+    1,
     0,
-    14,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    12,
     0,
     0,
     1,
@@ -1905,25 +1932,16 @@
     1,
     0,
     0,
-    1,
-    0,
-    11,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13
+    6,
+    14
   ],
   "load": {
     "loadavg": [
-      1.42,
-      0.37,
-      0.19
+      0.67,
+      0.32,
+      0.18
     ],
-    "ramPct": 69,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1965,8 +1983,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -2013,10 +2031,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2782,9 +2797,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 89,
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
