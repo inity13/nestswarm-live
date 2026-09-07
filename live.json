@@ -1,5 +1,5 @@
 {
-  "generated": 1788780147089,
+  "generated": 1788780192128,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1106,6 +1106,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788780153851,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788780153851,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788780153850,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788780152648,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
       "t": 1788780131154,
       "type": "scout"
@@ -1559,33 +1583,33 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788777230097,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788777229973,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788777196458,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: focus niche: personalized mental health support using AI; paused new builds (focus mode); marketed the top product",
-      "t": 1788777068231,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788777016578,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788780153851,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1788780153851,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788780153850,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788780152648,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
@@ -1614,12 +1638,6 @@
       "who": "swarm",
       "text": "conductor: team is well-sized — no changes",
       "t": 1788780126856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788780079967,
       "type": "event"
     }
   ],
@@ -1846,10 +1864,7 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
-    16,
-    0,
-    0,
+    15,
     1,
     0,
     0,
@@ -1857,30 +1872,33 @@
     0,
     0,
     1,
-    13,
+    0,
+    0,
+    14,
+    0,
     0,
     1,
     0,
     0,
     1,
-    0,
-    1,
     1,
     0,
+    1,
     11,
-    1,
-    0,
     0,
     1,
     0,
     0,
     1,
-    7
+    0,
+    0,
+    7,
+    6
   ],
   "load": {
     "loadavg": [
-      0.57,
-      0.27,
+      0.41,
+      0.26,
       0.25
     ],
     "ramPct": 65,
@@ -1925,7 +1943,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -1969,10 +1987,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2734,7 +2749,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 79
       },
       {
@@ -2752,7 +2767,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 8,
+        "utilPct": 13,
         "vramPct": 98
       }
     ],
