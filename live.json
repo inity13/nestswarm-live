@@ -1,5 +1,5 @@
 {
-  "generated": 1788902547740,
+  "generated": 1788902592742,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788902586043,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788902586042,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/63 channels active · 1 new discovered",
+      "t": 1788902564276,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue: queued Tally.so Form Payments for account acquisition",
+      "t": 1788902564273,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
       "t": 1788902530364,
       "type": "event"
@@ -1571,33 +1595,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788899814996,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788899633488,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788899627936,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788899627936,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788899627935,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788902586043,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788902586042,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/63 channels active · 1 new discovered",
+      "t": 1788902564276,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue: queued Tally.so Form Payments for account acquisition",
+      "t": 1788902564273,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
@@ -1916,7 +1940,6 @@
     "priority": "The flagship product must be selected based on market research and validated willingness-to-pay before any further development."
   },
   "throughput": [
-    0,
     15,
     1,
     0,
@@ -1945,15 +1968,16 @@
     1,
     0,
     0,
-    16
+    16,
+    6
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.06,
-      0.07
+      0.96,
+      0.25,
+      0.13
     ],
-    "ramPct": 45,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2054,7 +2078,7 @@
     }
   },
   "revenue": {
-    "total": 62,
+    "total": 63,
     "active": 2,
     "byKind": {
       "crypto": {
@@ -2066,7 +2090,7 @@
         "active": 1
       },
       "donation": {
-        "total": 8,
+        "total": 10,
         "active": 0
       },
       "bounty": {
@@ -2078,7 +2102,7 @@
         "active": 0
       },
       "subscription": {
-        "total": 6,
+        "total": 5,
         "active": 0
       },
       "other": {
@@ -2367,7 +2391,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "donation",
         "active": false,
         "captcha": false
       },
@@ -2476,6 +2500,12 @@
       {
         "name": "Nest Concord Developer API Revenue Platform",
         "kind": "api-revenue",
+        "active": false,
+        "captcha": false
+      },
+      {
+        "name": "Tally.so Form Payments",
+        "kind": "donation",
         "active": false,
         "captcha": false
       }
@@ -2812,10 +2842,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 19
+        "utilPct": 87,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2832,8 +2862,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 59
+        "utilPct": 3,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 81,
