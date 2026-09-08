@@ -1,5 +1,5 @@
 {
-  "generated": 1788909749140,
+  "generated": 1788909794167,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout discovered key-gated free provider: deepinfra — queued for key hunter",
+      "t": 1788909757459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1788909757459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider mistral",
       "t": 1788909736150,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788907016808,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788906834695,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788906828556,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: deepinfra — queued for key hunter",
+      "t": 1788909757459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1788909757459,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
@@ -1928,7 +1940,6 @@
     "priority": "A subscription-driven API product that integrates with existing marketplaces (e.g., Gumroad, Etsy) and can be monetized via Stripe"
   },
   "throughput": [
-    0,
     15,
     1,
     0,
@@ -1957,15 +1968,16 @@
     1,
     0,
     0,
+    3,
     19
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.18,
-      0.22
+      0.52,
+      0.29,
+      0.25
     ],
-    "ramPct": 59,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1995,7 +2007,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -2830,10 +2842,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 19
+        "utilPct": 1,
+        "vramPct": 20
       },
       {
         "alias": "GPU-Node-2",
@@ -2848,10 +2860,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 24,
-        "vramPct": 51
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 81,
