@@ -1,5 +1,5 @@
 {
-  "generated": 1788906373324,
+  "generated": 1788906418364,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1609,12 +1609,6 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (2418MB free)",
       "t": 1788906359940,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788906295421,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1844,7 +1838,6 @@
     "priority": "The flagship product must be selected based on market research and validated willingness-to-pay before any further development."
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1869,19 +1862,20 @@
     1,
     0,
     0,
-    2,
-    10,
-    16,
-    6,
-    9
+    1,
+    8,
+    18,
+    7,
+    5,
+    16
   ],
   "load": {
     "loadavg": [
-      1.53,
-      0.97,
+      1.08,
+      0.93,
       0.55
     ],
-    "ramPct": 69,
+    "ramPct": 74,
     "cpus": 12
   },
   "brain": {
@@ -1911,7 +1905,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1931,7 +1925,7 @@
         "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "distributor": {
@@ -1943,15 +1937,15 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "automation_operator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
-      "preflight": {
+      "automation_operator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2745,8 +2739,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 50
+        "utilPct": 5,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2763,8 +2757,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 28,
-        "vramPct": 92
+        "utilPct": 83,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 81,
