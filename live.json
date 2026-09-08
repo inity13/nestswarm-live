@@ -1,5 +1,5 @@
 {
-  "generated": 1788852090763,
+  "generated": 1788852135607,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788852120092,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1788852115430,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788852115430,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788852111544,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788852109778,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 8m ago) — skip",
+      "t": 1788852109768,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788852109768,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1788852109422,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788851930944,
       "type": "event"
@@ -1547,57 +1595,58 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788849218268,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1788852120092,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1788852115430,
+      "type": "scout"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788849218258,
+      "t": 1788852115430,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788849050706,
+      "t": 1788852111544,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788848871562,
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1788852109778,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788848691147,
+      "text": "keyhunter: groq in cooldown (last attempt 8m ago) — skip",
+      "t": 1788852109768,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788848623060,
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1788852109768,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788848623060,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788848623059,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788848623058,
-      "type": "event"
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1788852109422,
+      "type": "security"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1645,7 +1694,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 59×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 60×"
     },
     {
       "name": "Shared memory",
@@ -1825,7 +1874,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    1,
     0,
     15,
     1,
@@ -1854,21 +1902,22 @@
     0,
     1,
     0,
-    0
+    0,
+    10
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.16,
-      0.17
+      0.2,
+      0.18,
+      0.18
     ],
-    "ramPct": 56,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1916,7 +1965,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -1952,7 +2001,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2719,9 +2771,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2736,10 +2788,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 93
+        "busy": true,
+        "warm": false,
+        "utilPct": 4,
+        "vramPct": 51
       }
     ],
     "selfHostedInferencePct": 79,
