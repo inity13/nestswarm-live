@@ -1,5 +1,5 @@
 {
-  "generated": 1788852675535,
+  "generated": 1788852720536,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1565,30 +1565,6 @@
       "text": "keyhunter: openrouter step 7 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1788852393222,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788852392035,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788852390888,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788852389749,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1788852388554,
-      "type": "event"
     }
   ],
   "recent": [
@@ -1602,30 +1578,6 @@
       "who": "swarm",
       "text": "keyhunter: coherefreetrial step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
       "t": 1788852644348,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We may need to try again later or contact them for a",
-      "t": 1788852599876,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting coherefreetrial (https://cohere.com/signup)",
-      "t": 1788852599876,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1788852596455,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai entering verification code from inbox",
-      "t": 1788852593301,
       "type": "event"
     }
   ],
@@ -1857,7 +1809,6 @@
   },
   "throughput": [
     0,
-    0,
     14,
     0,
     0,
@@ -1877,23 +1828,24 @@
     0,
     0,
     10,
-    1,
-    4,
+    0,
+    5,
     14,
     13,
-    23,
-    53,
-    32,
-    52,
-    5
+    22,
+    25,
+    47,
+    65,
+    5,
+    9
   ],
   "load": {
     "loadavg": [
-      0.46,
-      0.53,
-      0.34
+      0.84,
+      0.59,
+      0.37
     ],
-    "ramPct": 69,
+    "ramPct": 73,
     "cpus": 12
   },
   "brain": {
@@ -1923,7 +1875,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -1939,7 +1891,7 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "marketer": {
@@ -1947,11 +1899,11 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1959,7 +1911,7 @@
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "preflight": {
@@ -2751,9 +2703,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
+        "busy": true,
+        "warm": false,
+        "utilPct": 89,
         "vramPct": 80
       },
       {
@@ -2769,10 +2721,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 93
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 79,
