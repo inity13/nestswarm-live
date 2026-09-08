@@ -1,5 +1,5 @@
 {
-  "generated": 1788855780195,
+  "generated": 1788855825235,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788855817573,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788855817573,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788855817514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788855816489,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3598MB free)",
+      "t": 1788855816487,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788855710741,
       "type": "event"
@@ -1565,44 +1595,38 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788852651064,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: coherefreetrial step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1788852644348,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We may need to try again later or contact them for a",
-      "t": 1788852599876,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting coherefreetrial (https://cohere.com/signup)",
-      "t": 1788852599876,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1788852596455,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai entering verification code from inbox",
-      "t": 1788852593301,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788855710741,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788855817573,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788855817573,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788855817514,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788855816489,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3598MB free)",
+      "t": 1788855816487,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1832,8 +1856,17 @@
     "priority": "The most mature prototype with demonstrated buyer intent or early user traction"
   },
   "throughput": [
-    15,
+    0,
     1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    3,
+    11,
     0,
     0,
     1,
@@ -1852,24 +1885,15 @@
     0,
     0,
     1,
-    13,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0
+    5
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.05,
-      0.07
+      0.29,
+      0.12,
+      0.09
     ],
-    "ramPct": 46,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2726,9 +2750,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2743,8 +2767,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 93
       }
