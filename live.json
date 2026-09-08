@@ -1,5 +1,5 @@
 {
-  "generated": 1788841337201,
+  "generated": 1788841382392,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1832,7 +1832,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     15,
     1,
     0,
@@ -1861,15 +1860,16 @@
     1,
     0,
     0,
-    2
+    1,
+    7
   ],
   "load": {
     "loadavg": [
-      0.26,
       0.12,
+      0.1,
       0.07
     ],
-    "ramPct": 54,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1879,15 +1879,15 @@
         "tier": "local"
       },
       "architect": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -1903,11 +1903,11 @@
         "tier": "local"
       },
       "critic": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "conductor": {
@@ -2725,9 +2725,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 87,
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
@@ -2745,8 +2745,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 59
+        "utilPct": 9,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 78,
