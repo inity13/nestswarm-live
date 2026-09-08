@@ -1,5 +1,5 @@
 {
-  "generated": 1788884491619,
+  "generated": 1788884545641,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1119,6 +1119,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788884513072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788884333501,
       "type": "event"
     },
@@ -1589,15 +1595,16 @@
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1788881018541,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788881018487,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788884513072,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1832,6 @@
     "priority": "Product #17: TaskFlow Automator (already built, validated in internal testing, scoring 8.2/10)"
   },
   "throughput": [
-    1,
     0,
     15,
     1,
@@ -1854,21 +1860,22 @@
     0,
     1,
     0,
-    0
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.09,
-      0.08
+      0.17,
+      0.12,
+      0.09
     ],
-    "ramPct": 47,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1880,7 +1887,7 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -2719,9 +2726,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 19
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2736,9 +2743,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 15,
         "vramPct": 92
       }
     ],
