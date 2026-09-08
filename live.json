@@ -1,5 +1,5 @@
 {
-  "generated": 1788862889885,
+  "generated": 1788862934797,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1119,6 +1119,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788862910778,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788862730043,
       "type": "event"
     },
@@ -1589,15 +1595,16 @@
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1788859417257,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788859417212,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788862910778,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1832,6 @@
     "priority": "The most mature prototype with demonstrated buyer intent or early user traction"
   },
   "throughput": [
-    1,
     0,
     15,
     1,
@@ -1854,15 +1860,16 @@
     0,
     1,
     0,
-    0
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.26,
-      0.26
+      0.76,
+      0.38,
+      0.31
     ],
-    "ramPct": 61,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1872,11 +1879,11 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
@@ -2721,7 +2728,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 41,
-        "vramPct": 19
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2736,8 +2743,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
