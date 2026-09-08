@@ -1,5 +1,5 @@
 {
-  "generated": 1788906274285,
+  "generated": 1788906328352,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788906295421,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1788906233797,
       "type": "event"
@@ -1589,79 +1595,13 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1788903224615,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788903224615,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788906233797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788906233797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788906233796,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788906233795,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788906231067,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788906231067,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788906231065,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788906231064,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788906221874,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788906221874,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788906221836,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788906295421,
       "type": "event"
     }
   ],
@@ -1892,7 +1832,6 @@
     "priority": "The flagship product must be selected based on market research and validated willingness-to-pay before any further development."
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1919,23 +1858,24 @@
     1,
     0,
     0,
-    5,
-    7,
-    17
+    4,
+    8,
+    17,
+    7
   ],
   "load": {
     "loadavg": [
-      1.43,
-      0.67,
-      0.41
+      1.83,
+      0.89,
+      0.5
     ],
-    "ramPct": 69,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1999,11 +1939,11 @@
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "demand_validator": {
@@ -2015,7 +1955,7 @@
         "tier": "local"
       },
       "payment-integrator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2791,10 +2731,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 100,
-        "vramPct": 80
+        "busy": false,
+        "warm": true,
+        "utilPct": 8,
+        "vramPct": 71
       },
       {
         "alias": "GPU-Node-2",
@@ -2809,10 +2749,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 59
+        "vramPct": 2
       }
     ],
     "selfHostedInferencePct": 81,
