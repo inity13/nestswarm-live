@@ -1,5 +1,5 @@
 {
-  "generated": 1788841472389,
+  "generated": 1788841517218,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788841490884,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1788841429510,
       "type": "event"
@@ -1589,15 +1595,15 @@
       "text": "self-heal: disabled provider groq",
       "t": 1788838424850,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788838424850,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788841490884,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1644,24 +1650,6 @@
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1788841428127,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788841419577,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788841419577,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788841419538,
       "type": "event"
     }
   ],
@@ -1892,7 +1880,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1919,17 +1906,18 @@
     1,
     0,
     0,
-    5,
-    5,
-    18
+    2,
+    7,
+    18,
+    6
   ],
   "load": {
     "loadavg": [
-      0.82,
-      0.34,
-      0.16
+      1.39,
+      0.57,
+      0.25
     ],
-    "ramPct": 47,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1995,11 +1983,11 @@
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2007,7 +1995,7 @@
         "tier": "local"
       },
       "demand_validator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security-officer": {
@@ -2787,7 +2775,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 27,
+        "utilPct": 40,
         "vramPct": 18
       },
       {
@@ -2803,13 +2791,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 65,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 59
       }
     ],
-    "selfHostedInferencePct": 78,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 179
   }
 }
