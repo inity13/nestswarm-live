@@ -1,5 +1,5 @@
 {
-  "generated": 1788845026528,
+  "generated": 1788845071888,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788845027091,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788845027091,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1788845019649,
       "type": "bench"
@@ -1583,21 +1595,21 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1788842622136,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788842622135,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1788842619292,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788845027091,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788845027091,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1627,30 +1639,6 @@
       "text": "distributor: 5/5 channels reachable",
       "t": 1788845002948,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 3 product ideas, 2 optimizations",
-      "t": 1788844978996,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788844973290,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
-      "t": 1788844973290,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/62 channels active · 0 new discovered",
-      "t": 1788844953720,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1880,16 +1868,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    13,
     1,
     0,
     0,
@@ -1908,16 +1886,26 @@
     1,
     0,
     0,
-    18,
-    11
+    1,
+    13,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    16,
+    9,
+    7
   ],
   "load": {
     "loadavg": [
-      1.22,
-      0.35,
+      0.71,
+      0.33,
       0.17
     ],
-    "ramPct": 62,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2776,9 +2764,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 68,
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
         "vramPct": 49
       },
       {
@@ -2794,10 +2782,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 2
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 79,
