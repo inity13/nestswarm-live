@@ -1,5 +1,5 @@
 {
-  "generated": 1788884545641,
+  "generated": 1788884590638,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1832,7 +1832,6 @@
     "priority": "Product #17: TaskFlow Automator (already built, validated in internal testing, scoring 8.2/10)"
   },
   "throughput": [
-    0,
     15,
     1,
     0,
@@ -1861,15 +1860,16 @@
     1,
     0,
     0,
-    6
+    3,
+    17
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.12,
-      0.09
+      0.19,
+      0.13,
+      0.1
     ],
-    "ramPct": 56,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1895,7 +1895,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1927,11 +1927,11 @@
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -1939,7 +1939,7 @@
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2725,9 +2725,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
+        "busy": true,
+        "warm": false,
+        "utilPct": 90,
         "vramPct": 81
       },
       {
@@ -2745,8 +2745,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 15,
-        "vramPct": 92
+        "utilPct": 80,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 80,
