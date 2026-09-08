@@ -1,5 +1,5 @@
 {
-  "generated": 1788852315603,
+  "generated": 1788852360582,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing a `.map` failure. Please review and correct the `competitors` entry in the vault (likely under [path] or related JSON/YAML) so it is an array of competitor objects.",
+      "t": 1788852348289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing a `.map` failure. Please review and correct the `competitors` entry in the vault (likely under [path] or related JSON/YAML) so it is an array of competitor objects.",
+      "t": 1788852348288,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for researcher (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788852347083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788852347083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788852346267,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788852346267,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788852290789,
       "type": "event"
@@ -1559,45 +1595,45 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1788849835794,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788849835793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788849835792,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788849827953,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788849827952,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788849827952,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1788849827951,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing a `.map` failure. Please review and correct the `competitors` entry in the vault (likely under [path] or related JSON/YAML) so it is an array of competitor objects.",
+      "t": 1788852348289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing a `.map` failure. Please review and correct the `competitors` entry in the vault (likely under [path] or related JSON/YAML) so it is an array of competitor objects.",
+      "t": 1788852348288,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for researcher (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788852347083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788852347083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788852346267,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788852346267,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1892,7 +1928,7 @@
     }
   ],
   "ledger": {
-    "total": 746,
+    "total": 753,
     "revenue": 0,
     "effects": 128,
     "boundary": 1,
@@ -1904,7 +1940,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     0,
     1,
     0,
@@ -1931,17 +1966,18 @@
     0,
     0,
     10,
-    1,
-    4,
-    14
+    0,
+    5,
+    14,
+    13
   ],
   "load": {
     "loadavg": [
-      0.39,
-      0.27,
+      0.25,
+      0.24,
       0.2
     ],
-    "ramPct": 62,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1983,11 +2019,11 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "marketer": {
@@ -2032,7 +2068,6 @@
       }
     },
     "free": [
-      "gemini-flash-latest",
       "openai/gpt-oss-120b"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2802,7 +2837,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 50
       },
       {
@@ -2820,8 +2855,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 59
+        "utilPct": 3,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 79,
