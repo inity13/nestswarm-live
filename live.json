@@ -1,5 +1,5 @@
 {
-  "generated": 1788844936563,
+  "generated": 1788844981762,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 2 optimizations",
+      "t": 1788844978996,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1788844973290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788844973290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/62 channels active · 0 new discovered",
+      "t": 1788844953720,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "conductor: 4 operational improvement(s) recommended",
       "t": 1788844925434,
       "type": "event"
@@ -1571,33 +1595,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788842212072,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788842031374,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788842029208,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788842029208,
-      "type": "event"
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 2 optimizations",
+      "t": 1788844978996,
+      "type": "trending"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1788842029207,
+      "t": 1788844973290,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1788844973290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/62 channels active · 0 new discovered",
+      "t": 1788844953720,
+      "type": "scout"
+    },
     {
       "who": "swarm",
       "text": "conductor: 4 operational improvement(s) recommended",
@@ -1916,7 +1940,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
     15,
     1,
     0,
@@ -1945,15 +1968,16 @@
     1,
     0,
     0,
-    16
+    3,
+    20
   ],
   "load": {
     "loadavg": [
-      0,
-      0.02,
-      0.06
+      0.35,
+      0.1,
+      0.08
     ],
-    "ramPct": 45,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2015,7 +2039,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2074,11 +2098,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 6,
+        "total": 7,
         "active": 0
       },
       "subscription": {
-        "total": 5,
+        "total": 4,
         "active": 0
       },
       "other": {
@@ -2367,7 +2391,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
@@ -2813,9 +2837,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 1,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2832,7 +2856,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 3,
         "vramPct": 1
       }
     ],
