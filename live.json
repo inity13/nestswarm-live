@@ -1,5 +1,5 @@
 {
-  "generated": 1788964795611,
+  "generated": 1788964840401,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788964802617,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3613MB free)",
+      "t": 1788964802611,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788964775320,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788961769466,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788961769466,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
-      "t": 1788961769466,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788964802617,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3613MB free)",
+      "t": 1788964802611,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1898,7 +1910,6 @@
     "priority": "AI-driven personal productivity coaching for professionals and students"
   },
   "throughput": [
-    2,
     0,
     1,
     0,
@@ -1927,15 +1938,16 @@
     1,
     0,
     0,
-    14
+    14,
+    2
   ],
   "load": {
     "loadavg": [
-      0.85,
-      0.3,
-      0.22
+      0.48,
+      0.28,
+      0.21
     ],
-    "ramPct": 47,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2798,9 +2810,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 19
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
