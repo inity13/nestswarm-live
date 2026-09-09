@@ -1,11 +1,11 @@
 {
-  "generated": 1788919748689,
+  "generated": 1788919792543,
   "status": "passive",
   "stats": {
     "products": 160,
-    "listed": 20,
+    "listed": 18,
     "agents": 23,
-    "avgScore": "5.3"
+    "avgScore": "6.0"
   },
   "agents": [
     {
@@ -274,6 +274,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Meeting actions executed: paused new builds (focus mode); archived 2 products below score 6; marketed the top product",
+      "t": 1788919763914,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "payment-integrator",
       "text": "Let's produce: \"I agree that breadth is a drain and that quality must be our priority, but postponing the payment gateway until after the product is finalized risks delaying revenue; the next single step is toI agree that breadth is a drain and that quality must be our priority, but postponing the payment gateway until after the product is finalized risks delaying revenue; the next single step is to implement a secure, test‑net payment flow for the flagship product and validate it with a small pilot customer.",
@@ -1106,16 +1113,93 @@
       "t": 1788884712614,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "I agree the swarm must abandon the scattershot catalog and lock onto one flagship—no more new ideas while a product is unfinished—and I insist that we stop treating payment integration as a nice‑to‑have and make it the core of our launch plan, otherwise no revenue can flow. The single most important next step is to take the chosen concept, build a minimal viable product that satisfies the core promise, wire in Stripe for real checkout, and push it live to a proven sales channel so we can start collecting money.",
-      "t": 1788884712613,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: coherefreetrial step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up\"}",
+      "t": 1788919785551,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Millo (revenue)",
+      "t": 1788919776914,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Creator Monetization Platforms step 1 -> {\"action\":\"fail\",\"reason\":\"Access denied. Unable to proceed.\"}",
+      "t": 1788919776913,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We cannot proceed with creating an account or obtain",
+      "t": 1788919776531,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting coherefreetrial (https://cohere.com/signup)",
+      "t": 1788919776531,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1788919772091,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "meeting actions taken: paused new builds (focus mode); archived 2 products below score 6; marketed the top product",
+      "t": 1788919763913,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"type\",\"selector\":\"address-bar\",\"value\":\"https://creativemoneymaking.com/2026-guide/\"}",
+      "t": 1788919757523,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for distributor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788919756195,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788919751618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that the field 'b.competitors' is not an array, causing a .map call to fail. Please verify and correct the data structure for 'competitors' in the vault so it is always an array (e.g., [] if empty).",
+      "t": 1788919751618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: The vault sync error indicates that the field 'b.competitors' is not an array, causing a .map call to fail. Please verify and correct the data structure for 'competitors' in the vault so it is always an array (e.g., [] if empty).",
+      "t": 1788919751618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788919751615,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788919750381,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
@@ -1505,63 +1589,93 @@
       "text": "keyhunter: openrouter step 8 -> {\"action\":\"type\",\"selector\":\"#firstName-field\",\"value\":\"Opti\"}",
       "t": 1788917145168,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 7 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
-      "t": 1788917143733,
+      "text": "keyhunter: coherefreetrial step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up\"}",
+      "t": 1788919785551,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788917116064,
+      "text": "registrar: registering Millo (revenue)",
+      "t": 1788919776914,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788917114935,
+      "text": "registrar: Creator Monetization Platforms step 1 -> {\"action\":\"fail\",\"reason\":\"Access denied. Unable to proceed.\"}",
+      "t": 1788919776913,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 6 -> {}",
-      "t": 1788917114687,
+      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We cannot proceed with creating an account or obtain",
+      "t": 1788919776531,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788917113417,
+      "text": "keyhunter: attempting coherefreetrial (https://cohere.com/signup)",
+      "t": 1788919776531,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788917097254,
+      "t": 1788919772091,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"#firstName-field\",\"value\":\"Opti\"}",
-      "t": 1788917088034,
+      "text": "meeting actions taken: paused new builds (focus mode); archived 2 products below score 6; marketed the top product",
+      "t": 1788919763913,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter step 4 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
-      "t": 1788917086656,
+      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"type\",\"selector\":\"address-bar\",\"value\":\"https://creativemoneymaking.com/2026-guide/\"}",
+      "t": 1788919757523,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1788917085832,
+      "text": "free provider gemini-flash-latest failed for distributor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788919756195,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788919751618,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that the field 'b.competitors' is not an array, causing a .map call to fail. Please verify and correct the data structure for 'competitors' in the vault so it is always an array (e.g., [] if empty).",
+      "t": 1788919751618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider groq; requested owner: The vault sync error indicates that the field 'b.competitors' is not an array, causing a .map call to fail. Please verify and correct the data structure for 'competitors' in the vault so it is always an array (e.g., [] if empty).",
+      "t": 1788919751618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1788919751615,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1788919750381,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
@@ -1828,8 +1942,8 @@
     "receipts": 0
   },
   "meeting": {
-    "direction": "Focus on building a single, high-margin, subscription-driven API product that solves a concrete pain point and ships with a working Stripe checkout.",
-    "priority": "A subscription-driven API product that integrates with existing marketplaces (e.g., Gumroad, Etsy) and can be monetized via Stripe"
+    "direction": "Halt catalog expansion, prune low-scoring products, and direct all swarm resources into polishing and launching a single sellable flagship with working checkout.",
+    "priority": "Highest-scoring existing developer tool or workflow automation product"
   },
   "throughput": [
     0,
@@ -1861,15 +1975,15 @@
     0,
     0,
     0,
-    8
+    29
   ],
   "load": {
     "loadavg": [
-      167.25,
-      183.33,
-      163.04
+      87.4,
+      160.76,
+      156.3
     ],
-    "ramPct": 64,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1911,8 +2025,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "researcher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
@@ -1923,7 +2037,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -1959,13 +2073,10 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 20,
+      "listed": 18,
       "cap": 20
     }
   },
@@ -2630,7 +2741,7 @@
     },
     {
       "name": "HomeMate MT",
-      "status": "listed",
+      "status": "archived",
       "niche": "home, cooking & household helpers",
       "price": 49.95,
       "score": 5
@@ -2687,12 +2798,6 @@
   ],
   "building": [
     {
-      "name": "MindMate",
-      "niche": "freelancers & solopreneurs",
-      "stage": "shipped",
-      "status": "listed"
-    },
-    {
       "name": "InsightMentor",
       "niche": "travel, trip planning & remote work",
       "stage": "shipped",
@@ -2709,6 +2814,12 @@
       "niche": "real estate, renting & property",
       "stage": "shipped",
       "status": "listed"
+    },
+    {
+      "name": "InsightCraft",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed"
     }
   ],
   "nodes": [
@@ -2721,7 +2832,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -2736,14 +2847,14 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 25,
-        "vramPct": 78
+        "utilPct": 9,
+        "vramPct": 69
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "offline",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -2752,10 +2863,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 3,
-        "vramPct": 92
+        "busy": true,
+        "warm": false,
+        "utilPct": 66,
+        "vramPct": 59
       }
     ],
     "selfHostedInferencePct": 81,
