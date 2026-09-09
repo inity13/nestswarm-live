@@ -1,5 +1,5 @@
 {
-  "generated": 1788923302661,
+  "generated": 1788923348587,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788923347299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788923347299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788923347256,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788923188951,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3660MB free)",
       "t": 1788920061286,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788920053430,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1788923347299,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 3 -> {}",
-      "t": 1788920038105,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788923347299,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1788920035217,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788923347256,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1826,18 +1845,26 @@
   },
   "throughput": [
     13,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
+    10,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    14,
-    0,
-    0,
+    10,
     1,
     0,
     0,
@@ -1845,24 +1872,16 @@
     0,
     0,
     1,
-    13,
     0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0
+    3
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.04,
-      3.62
+      0.09,
+      0.05,
+      3.45
     ],
-    "ramPct": 46,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -2726,7 +2745,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 17
       },
       {
@@ -2742,8 +2761,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
