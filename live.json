@@ -1,5 +1,5 @@
 {
-  "generated": 1788967315710,
+  "generated": 1788967360648,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788967340618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The field `b.competitors` in the vault sync data is not an array, causing a `.map` failure. Please ensure it is stored as a JSON array (e.g., [] or [\"comp1\",\"comp2\"]). Update the relevant file in [path] to correct the format.",
+      "t": 1788967340618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; requested owner: The field `b.competitors` in the vault sync data is not an array, causing a `.map` failure. Please ensure it is stored as a JSON array (e.g., [] or [\"comp1\",\"comp2\"]). Update the relevant file in [path] to correct the format.",
+      "t": 1788967340618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 0 zen free models",
+      "t": 1788967339090,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1788967339090,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788967320186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788967320186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1788967292970,
       "type": "event"
@@ -1553,51 +1595,51 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1788964759054,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1788967340618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The field `b.competitors` in the vault sync data is not an array, causing a `.map` failure. Please ensure it is stored as a JSON array (e.g., [] or [\"comp1\",\"comp2\"]). Update the relevant file in [path] to correct the format.",
+      "t": 1788967340618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; requested owner: The field `b.competitors` in the vault sync data is not an array, causing a `.map` failure. Please ensure it is stored as a JSON array (e.g., [] or [\"comp1\",\"comp2\"]). Update the relevant file in [path] to correct the format.",
+      "t": 1788967340618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 0 zen free models",
+      "t": 1788967339090,
+      "type": "scout"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1788964758974,
+      "t": 1788967339090,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788964595369,
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1788967320186,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788964415769,
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1788967320186,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1788964234109,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788964163027,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1788964163027,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788964163026,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1833,7 +1875,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1861,15 +1902,16 @@
     1,
     13,
     0,
-    1
+    1,
+    9
   ],
   "load": {
     "loadavg": [
-      0.25,
-      0.25,
-      0.2
+      0.16,
+      0.23,
+      0.19
     ],
-    "ramPct": 55,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1911,7 +1953,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -2733,7 +2775,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
