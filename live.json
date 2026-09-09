@@ -1,5 +1,5 @@
 {
-  "generated": 1788966595706,
+  "generated": 1788966640672,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788966604348,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3552MB free)",
+      "t": 1788966604346,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1788966576766,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1788963572803,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1788963570704,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1788963570704,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1788966604348,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3552MB free)",
+      "t": 1788966604346,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1898,7 +1910,6 @@
     "priority": "AI-driven personal productivity coaching for professionals and students"
   },
   "throughput": [
-    2,
     0,
     1,
     0,
@@ -1927,15 +1938,16 @@
     1,
     0,
     0,
-    14
+    14,
+    2
   ],
   "load": {
     "loadavg": [
-      1.03,
-      0.32,
-      0.17
+      0.79,
+      0.37,
+      0.2
     ],
-    "ramPct": 50,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2798,9 +2810,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 4,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
