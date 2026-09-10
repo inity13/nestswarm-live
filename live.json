@@ -1,5 +1,5 @@
 {
-  "generated": 1789047607139,
+  "generated": 1789047652143,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789047619621,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3662MB free)",
+      "t": 1789047619620,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1789047591512,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
       "t": 1789046616653,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter entering verification code from inbox",
-      "t": 1789046606071,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Beehiiv (revenue)",
-      "t": 1789046602292,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789047619621,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3662MB free)",
+      "t": 1789047619620,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1886,7 +1898,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
     0,
     1,
     0,
@@ -1898,32 +1909,33 @@
     13,
     0,
     1,
-    93,
-    9,
-    21,
-    41,
-    48,
-    0,
-    4,
-    10,
+    70,
+    32,
+    6,
+    36,
+    68,
     0,
     0,
-    1,
+    14,
     0,
     0,
     1,
     0,
     0,
     1,
-    12
+    0,
+    0,
+    1,
+    12,
+    2
   ],
   "load": {
     "loadavg": [
-      0.73,
-      3.93,
-      6.44
+      0.65,
+      3.47,
+      6.16
     ],
-    "ramPct": 51,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2797,10 +2809,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 90,
-        "vramPct": 75
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
