@@ -1,5 +1,5 @@
 {
-  "generated": 1789075690308,
+  "generated": 1789075735337,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1609,24 +1609,6 @@
       "text": "revenue scout: 2/68 channels active · 0 new discovered",
       "t": 1789075651597,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789075641967,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789075639966,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789075635975,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1856,19 +1838,18 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    0,
-    14,
-    0,
-    0,
-    1,
-    0,
+    9,
+    5,
     0,
     1,
     0,
     0,
     1,
-    15,
     0,
+    0,
+    1,
+    13,
+    2,
     1,
     0,
     0,
@@ -1885,15 +1866,16 @@
     0,
     0,
     1,
-    7
+    7,
+    2
   ],
   "load": {
     "loadavg": [
-      0.5,
       0.23,
-      0.14
+      0.2,
+      0.13
     ],
-    "ramPct": 54,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1935,8 +1917,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
@@ -1947,7 +1929,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2806,10 +2788,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 3,
-        "vramPct": 0
+        "busy": false,
+        "warm": true,
+        "utilPct": 1,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 80,
