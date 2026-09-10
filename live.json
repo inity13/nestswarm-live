@@ -1,5 +1,5 @@
 {
-  "generated": 1789082532054,
+  "generated": 1789082576253,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789082542172,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789082542172,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789082421594,
       "type": "event"
@@ -1583,21 +1595,22 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789079409563,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789082542172,
+      "type": "scout"
     },
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789079409563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789079409561,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789082542172,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1838,6 @@
     "priority": "Low-code SaaS integrations for open-source project workflows"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1842,8 +1854,8 @@
     0,
     0,
     1,
-    15,
-    0,
+    13,
+    2,
     1,
     0,
     0,
@@ -1854,15 +1866,16 @@
     0,
     13,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.22,
-      0.24
+      0.18,
+      0.2,
+      0.23
     ],
-    "ramPct": 70,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1952,7 +1965,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2772,9 +2788,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
