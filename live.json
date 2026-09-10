@@ -1,5 +1,5 @@
 {
-  "generated": 1789035745391,
+  "generated": 1789035790274,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1832,7 +1832,6 @@
     "priority": "The most promising niche identified through market research and buyer intent data"
   },
   "throughput": [
-    0,
     1,
     1,
     0,
@@ -1849,8 +1848,8 @@
     1,
     0,
     0,
-    16,
-    0,
+    14,
+    2,
     0,
     1,
     0,
@@ -1861,15 +1860,16 @@
     1,
     13,
     0,
-    3
+    1,
+    5
   ],
   "load": {
     "loadavg": [
-      0.45,
-      0.33,
-      0.28
+      1.2,
+      0.55,
+      0.36
     ],
-    "ramPct": 65,
+    "ramPct": 73,
     "cpus": 12
   },
   "brain": {
@@ -1883,7 +1883,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -1891,7 +1891,7 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
@@ -2743,10 +2743,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 18
+        "utilPct": 56,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
