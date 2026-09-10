@@ -1,5 +1,5 @@
 {
-  "generated": 1789036150308,
+  "generated": 1789036195325,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,72 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789036175343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789036175343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789036175342,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789036175341,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789036173492,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789036173492,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789036173491,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789036173490,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789036170955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789036170955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789036170907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789036065551,
       "type": "event"
@@ -1529,79 +1595,73 @@
       "text": "self-heal complete: 2 fix(es) — requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.; requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
       "t": 1789033171706,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.",
-      "t": 1789033171705,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
-      "t": 1789033171583,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
-      "t": 1789033171583,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789033170426,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789033170425,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789033170414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789033003632,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789032824291,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "ownerreq: emailed 2 new request(s) to [email]",
-      "t": 1789032812557,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789032644718,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync failed because the field `b.competitors` is not an array, causing a `.map` call to break. Please inspect `[path] (or the relevant JSON/YAML file) and ensure `competitors` is defined as an array (e.g., `[]` or `[{...}, {...}]`). After correcting the format, trigger a vault resync.",
-      "t": 1789032571351,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789036065551,
+      "text": "self-heal: disabled provider groq",
+      "t": 1789036175343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789036175343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789036175342,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789036175341,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789036173492,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789036173492,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789036173491,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789036173490,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789036170955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789036170955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789036170907,
       "type": "event"
     }
   ],
@@ -1832,7 +1892,6 @@
     "priority": "customized data privacy management tool"
   },
   "throughput": [
-    13,
     1,
     0,
     0,
@@ -1855,21 +1914,22 @@
     13,
     0,
     1,
-    5,
-    14,
+    3,
     6,
-    10,
-    8,
+    14,
+    4,
+    16,
     1,
-    0
+    0,
+    13
   ],
   "load": {
     "loadavg": [
-      0.36,
-      0.88,
-      0.65
+      0.35,
+      0.81,
+      0.63
     ],
-    "ramPct": 81,
+    "ramPct": 86,
     "cpus": 12
   },
   "brain": {
@@ -2745,7 +2805,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 78
       },
       {
@@ -2761,9 +2821,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 36,
+        "busy": false,
+        "warm": true,
+        "utilPct": 7,
         "vramPct": 78
       }
     ],
