@@ -1,5 +1,5 @@
 {
-  "generated": 1789033161890,
+  "generated": 1789033224837,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,72 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789033195339,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2110MB free)",
+      "t": 1789033195337,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789033182812,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
+      "t": 1789033171706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.; requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
+      "t": 1789033171706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.",
+      "t": 1789033171705,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
+      "t": 1789033171583,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
+      "t": 1789033171583,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789033170426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789033170425,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789033170414,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789033003632,
       "type": "event"
@@ -1529,75 +1595,76 @@
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1789030770008,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789033195339,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2110MB free)",
+      "t": 1789033195337,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789033182812,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
+      "t": 1789033171706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.; requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
+      "t": 1789033171706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.",
+      "t": 1789033171705,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
+      "t": 1789033171583,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
+      "t": 1789033171583,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789030770008,
+      "t": 1789033170426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789033170425,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789030769956,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789030663209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789030482825,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789030302696,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789030183332,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789030183332,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789030183331,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789030183330,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789030181231,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789030181231,
+      "t": 1789033170414,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1892,6 @@
     "priority": "The most promising niche identified through market research and buyer intent data"
   },
   "throughput": [
-    16,
     0,
     0,
     1,
@@ -1837,8 +1903,8 @@
     1,
     13,
     0,
-    6,
-    12,
+    8,
+    10,
     0,
     1,
     1,
@@ -1854,15 +1920,16 @@
     0,
     1,
     0,
-    0
+    0,
+    13
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.16,
-      0.17
+      0.53,
+      0.29,
+      0.22
     ],
-    "ramPct": 64,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2741,7 +2808,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 78
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
