@@ -1,5 +1,5 @@
 {
-  "generated": 1789014079100,
+  "generated": 1789014142034,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789014098477,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1789013975260,
       "type": "event"
@@ -1589,15 +1595,16 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789010974104,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789010974103,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789014098477,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1832,6 @@
     "priority": "AI-driven content personalization platform tailored for small businesses"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1854,13 +1860,14 @@
     0,
     1,
     13,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.35,
-      0.14,
-      0.1
+      0.27,
+      0.16,
+      0.11
     ],
     "ramPct": 55,
     "cpus": 12
@@ -1868,7 +1875,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -2754,8 +2761,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 92
       }
