@@ -1,5 +1,5 @@
 {
-  "generated": 1789033224837,
+  "generated": 1789033269847,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1615,54 +1615,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789033182812,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
-      "t": 1789033171706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.; requested owner: The Groq provider is marked as enabled but has a recent failure timestamp. Verify the API key and endpoint health; if the service is unreliable, consider disabling it until stability is confirmed.",
-      "t": 1789033171706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync error originates from code assuming `b.competitors` is always an array. Update the sync routine to safely handle non‑array values, e.g.: `const competitors = Array.isArray(b.competitors) ? b.competitors : []; const result = competitors.map(...);`. This will prevent the \"map is not a function\" crash.",
-      "t": 1789033171705,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
-      "t": 1789033171583,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: The vault sync error indicates that the field `b.competitors` is not an array, causing `.map` to fail. Please ensure that `competitors` is stored as a JSON array (e.g., [] or [\"comp1\", \"comp2\"]). If the data is currently an object or string, convert it to an array format in `[path] or the relevant product file.",
-      "t": 1789033171583,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789033170426,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789033170425,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789033170414,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1893,7 +1845,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1903,8 +1854,8 @@
     1,
     13,
     0,
-    8,
-    10,
+    1,
+    17,
     0,
     1,
     1,
@@ -1921,15 +1872,16 @@
     1,
     0,
     0,
-    13
+    13,
+    0
   ],
   "load": {
     "loadavg": [
-      0.53,
-      0.29,
+      0.38,
+      0.3,
       0.22
     ],
-    "ramPct": 68,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
