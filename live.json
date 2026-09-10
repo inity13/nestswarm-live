@@ -1,5 +1,5 @@
 {
-  "generated": 1789035682389,
+  "generated": 1789035745391,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789035704457,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1789035584660,
       "type": "event"
@@ -1589,15 +1595,16 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; requested owner: The vault sync error indicates that 'b.competitors' is not an array. Please verify the structure of the 'competitors' field in [path] (or related product files) and ensure it is an array (e.g., []), then re‑run the sync.",
       "t": 1789032571332,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789032571331,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789035704457,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1832,6 @@
     "priority": "The most promising niche identified through market research and buyer intent data"
   },
   "throughput": [
-    1,
     0,
     1,
     1,
@@ -1854,15 +1860,16 @@
     0,
     1,
     13,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.3,
-      0.27
+      0.45,
+      0.33,
+      0.28
     ],
-    "ramPct": 71,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1872,7 +1879,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "coder": {
@@ -2737,9 +2744,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 78
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
