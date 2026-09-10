@@ -1,5 +1,5 @@
 {
-  "generated": 1789062008691,
+  "generated": 1789062053677,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789062023524,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2712MB free)",
+      "t": 1789062023522,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1789061993431,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789059574442,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789059557931,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789059378052,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789062023524,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2712MB free)",
+      "t": 1789062023522,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1892,7 +1904,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1921,15 +1932,16 @@
     0,
     0,
     1,
-    13
+    13,
+    2
   ],
   "load": {
     "loadavg": [
-      1.65,
-      0.59,
+      0.91,
+      0.55,
       0.32
     ],
-    "ramPct": 63,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2821,10 +2833,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 89,
-        "vramPct": 76
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
