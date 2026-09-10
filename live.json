@@ -1,5 +1,5 @@
 {
-  "generated": 1789071009612,
+  "generated": 1789071054597,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789071023758,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3594MB free)",
+      "t": 1789071023755,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider groq",
       "t": 1789070993976,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
       "t": 1789068482565,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
-      "t": 1789068481535,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789068480317,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789071023758,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3594MB free)",
+      "t": 1789071023755,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
@@ -1892,7 +1904,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1921,15 +1932,16 @@
     0,
     0,
     1,
-    13
+    13,
+    2
   ],
   "load": {
     "loadavg": [
-      1.21,
-      0.37,
-      0.22
+      0.83,
+      0.39,
+      0.23
     ],
-    "ramPct": 48,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -2821,10 +2833,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 84,
-        "vramPct": 75
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
