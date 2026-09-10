@@ -1,5 +1,5 @@
 {
-  "generated": 1789017742931,
+  "generated": 1789017787954,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789017756871,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789017751324,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1789017751324,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/65 channels active · 0 new discovered",
+      "t": 1789017749539,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789017748169,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
       "t": 1789017738412,
       "type": "event"
@@ -1565,39 +1595,39 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789015182981,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789015182981,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789015182980,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789017756871,
+      "type": "launch"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1789015182979,
+      "t": 1789017751324,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789015179228,
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1789017751324,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789015168114,
-      "type": "event"
-    }
-  ],
-  "recent": [
+      "text": "revenue scout: 2/65 channels active · 0 new discovered",
+      "t": 1789017749539,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789017748169,
+      "type": "trending"
+    },
     {
       "who": "swarm",
       "text": "conductor: 3 operational improvement(s) recommended",
@@ -1893,7 +1923,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1921,15 +1950,16 @@
     1,
     13,
     0,
-    13
+    1,
+    21
   ],
   "load": {
     "loadavg": [
-      0.72,
-      0.23,
+      0.41,
+      0.21,
       0.13
     ],
-    "ramPct": 56,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1975,7 +2005,7 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "marketer": {
@@ -2050,11 +2080,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 8,
+        "total": 6,
         "active": 0
       },
       "subscription": {
-        "total": 4,
+        "total": 6,
         "active": 0
       },
       "other": {
@@ -2265,7 +2295,7 @@
       },
       {
         "name": "C3.ai Creator Economy Platform",
-        "kind": "marketplace",
+        "kind": "subscription",
         "active": false,
         "captcha": false
       },
@@ -2343,7 +2373,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "marketplace",
+        "kind": "subscription",
         "active": false,
         "captcha": false
       },
@@ -2806,10 +2836,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 4,
-        "vramPct": 71
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2824,13 +2854,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 92
       }
     ],
-    "selfHostedInferencePct": 80,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 179
   }
 }
