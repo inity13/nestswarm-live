@@ -1,5 +1,5 @@
 {
-  "generated": 1789054763124,
+  "generated": 1789054808185,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,72 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789054797984,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3631MB free)",
+      "t": 1789054797982,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Add at least one free model entry (for example, `{ \"name\": \"groq\", \"model\": \"openai/gpt-oss-120b\" }`) and ensure the corresponding provider is operational.",
+      "t": 1789054776073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: Correct the vault sync data so that `b.competitors` is an array (e.g., [] or a list of objects) to prevent the `.map` failure.; requested owner: Add at least one free model entry (for example, `{ \"name\": \"groq\", \"model\": \"openai/gpt-oss-120b\" }`) and ensure the corresponding provider is operational.",
+      "t": 1789054776073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Correct the vault sync data so that `b.competitors` is an array (e.g., [] or a list of objects) to prevent the `.map` failure.",
+      "t": 1789054776072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: The field `b.competitors` in the vault is not an array, causing `.map` to fail. Please correct the vault entry so that `competitors` is an array (e.g., [] or a list of competitor objects).; requested owner: The `freeModels` list is empty despite an enabled free provider (groq). Add at least one free model entry, for example: {\"model\":\"openai/gpt-oss-120b\",\"provider\":\"groq\"}.",
+      "t": 1789054775677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The field `b.competitors` in the vault is not an array, causing `.map` to fail. Please correct the vault entry so that `competitors` is an array (e.g., [] or a list of competitor objects).",
+      "t": 1789054775676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The `freeModels` list is empty despite an enabled free provider (groq). Add at least one free model entry, for example: {\"model\":\"openai/gpt-oss-120b\",\"provider\":\"groq\"}.",
+      "t": 1789054775676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789054774083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789054774083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789054774002,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789054698785,
       "type": "event"
@@ -1529,79 +1595,73 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789052177468,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789051997092,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789051802803,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789051787194,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789051787194,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789051787193,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789051787192,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789051785312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789051785311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789051785311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789051785310,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789051773694,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789054698785,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789054797984,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3631MB free)",
+      "t": 1789054797982,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Add at least one free model entry (for example, `{ \"name\": \"groq\", \"model\": \"openai/gpt-oss-120b\" }`) and ensure the corresponding provider is operational.",
+      "t": 1789054776073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: Correct the vault sync data so that `b.competitors` is an array (e.g., [] or a list of objects) to prevent the `.map` failure.; requested owner: Add at least one free model entry (for example, `{ \"name\": \"groq\", \"model\": \"openai/gpt-oss-120b\" }`) and ensure the corresponding provider is operational.",
+      "t": 1789054776073,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Correct the vault sync data so that `b.competitors` is an array (e.g., [] or a list of objects) to prevent the `.map` failure.",
+      "t": 1789054776072,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — requested owner: The field `b.competitors` in the vault is not an array, causing `.map` to fail. Please correct the vault entry so that `competitors` is an array (e.g., [] or a list of competitor objects).; requested owner: The `freeModels` list is empty despite an enabled free provider (groq). Add at least one free model entry, for example: {\"model\":\"openai/gpt-oss-120b\",\"provider\":\"groq\"}.",
+      "t": 1789054775677,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The field `b.competitors` in the vault is not an array, causing `.map` to fail. Please correct the vault entry so that `competitors` is an array (e.g., [] or a list of competitor objects).",
+      "t": 1789054775676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: The `freeModels` list is empty despite an enabled free provider (groq). Add at least one free model entry, for example: {\"model\":\"openai/gpt-oss-120b\",\"provider\":\"groq\"}.",
+      "t": 1789054775676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789054774083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789054774083,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789054774002,
       "type": "event"
     }
   ],
@@ -1832,42 +1892,42 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    15,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    14,
-    0,
-    4,
-    6,
-    0,
-    0,
     2,
-    0,
-    0,
-    1,
-    12,
-    0,
-    1,
-    0,
-    1,
     1,
     0,
     0,
     1,
-    0
+    0,
+    0,
+    1,
+    0,
+    13,
+    1,
+    0,
+    9,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    13,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    13
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.06,
-      0.08
+      0.78,
+      0.26,
+      0.15
     ],
     "ramPct": 54,
     "cpus": 12
@@ -2748,7 +2808,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 80
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
