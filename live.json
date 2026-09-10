@@ -1,5 +1,5 @@
 {
-  "generated": 1789072719970,
+  "generated": 1789072764900,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "hybrid: node nest-node-5090 set to online",
+      "t": 1789072743423,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789072698684,
       "type": "event"
@@ -1589,15 +1595,15 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3628MB free)",
       "t": 1789069221828,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789069192546,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "hybrid: node nest-node-5090 set to online",
+      "t": 1789072743423,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1832,18 +1838,8 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    3,
-    12,
+    15,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    3,
-    11,
     0,
     0,
     1,
@@ -1861,13 +1857,23 @@
     1,
     0,
     0,
+    1,
+    13,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
     1
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.08,
-      0.11
+      0.02,
+      0.07,
+      0.1
     ],
     "ramPct": 53,
     "cpus": 12
@@ -2748,7 +2754,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -2763,14 +2769,14 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "offline",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -2782,7 +2788,7 @@
         "busy": false,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 5
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 80,
