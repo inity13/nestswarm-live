@@ -1,5 +1,5 @@
 {
-  "generated": 1789060208675,
+  "generated": 1789060253626,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789060218594,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3535MB free)",
+      "t": 1789060218593,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: provider b.competitors not found",
       "t": 1789060189421,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1789057185063,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789057174258,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789057174258,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789060218594,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3535MB free)",
+      "t": 1789060218593,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: provider b.competitors not found",
@@ -1880,7 +1892,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1909,15 +1920,16 @@
     0,
     0,
     1,
-    11
+    11,
+    2
   ],
   "load": {
     "loadavg": [
-      1.09,
-      0.32,
+      0.6,
+      0.3,
       0.18
     ],
-    "ramPct": 54,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2792,9 +2804,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 20
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
