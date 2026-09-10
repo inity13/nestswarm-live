@@ -1,5 +1,5 @@
 {
-  "generated": 1789032081734,
+  "generated": 1789032144661,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "revenue scout: 2/65 channels active · 0 new discovered",
+      "t": 1789032142206,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1789032132400,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789032132348,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789032132347,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789032103466,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1789031983827,
       "type": "event"
@@ -1565,39 +1595,40 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789029221738,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/65 channels active · 0 new discovered",
+      "t": 1789032142206,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1789032132400,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789032132348,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789032132347,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789029042568,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789028984706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789028984705,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789028984705,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789028984704,
+      "t": 1789032103466,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1856,6 @@
     "priority": "The most promising niche identified through market research and buyer intent data"
   },
   "throughput": [
-    1,
     0,
     0,
     1,
@@ -1854,15 +1884,16 @@
     0,
     1,
     13,
-    0
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.22,
-      0.14
+      1.03,
+      0.39,
+      0.2
     ],
-    "ramPct": 56,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1908,7 +1939,7 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -1916,7 +1947,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -1952,7 +1983,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2736,9 +2769,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
+        "busy": true,
+        "warm": false,
+        "utilPct": 86,
         "vramPct": 78
       },
       {
