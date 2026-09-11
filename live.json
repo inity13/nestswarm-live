@@ -1,5 +1,5 @@
 {
-  "generated": 1789121072363,
+  "generated": 1789121117744,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789121080693,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789121080693,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789121080692,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789121080691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1789121071147,
       "type": "event"
@@ -1571,33 +1595,33 @@
       "text": "conductor created skill payment-first-build-gate",
       "t": 1789118632584,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-sandbox-checkout",
-      "t": 1789118632584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-alternative-fallback",
-      "t": 1789118632584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill financial-analysis",
-      "t": 1789118632584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill compliance",
-      "t": 1789118632584,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789121080693,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789121080693,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789121080692,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789121080691,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1868,27 +1892,26 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    3,
+    13,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
     10,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    8,
-    8,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    9,
-    5,
     0,
     1,
     0,
@@ -1897,15 +1920,16 @@
     0,
     0,
     1,
-    8
+    3,
+    10
   ],
   "load": {
     "loadavg": [
-      0.21,
-      0.17,
-      0.18
+      0.18,
+      0.16,
+      0.17
     ],
-    "ramPct": 69,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2798,9 +2822,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 48
+        "warm": false,
+        "utilPct": 10,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2815,8 +2839,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 93
       }
