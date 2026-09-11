@@ -1,5 +1,5 @@
 {
-  "generated": 1789132954862,
+  "generated": 1789133000300,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789132969994,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 0 zen free models",
+      "t": 1789132963246,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789132963246,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
       "t": 1789132943378,
       "type": "event"
@@ -1577,27 +1595,27 @@
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1789130058886,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789130058886,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789130058871,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789129960922,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789132969994,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 1 free providers live (groq) · 0 zen free models",
+      "t": 1789132963246,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789132963246,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
@@ -1850,19 +1868,18 @@
     "priority": "A niche solving an unmet need in trending GitHub repositories with clear demand signals and low competition"
   },
   "throughput": [
-    0,
-    9,
-    5,
-    0,
-    1,
-    0,
+    4,
+    10,
     0,
     1,
     0,
     0,
     1,
-    8,
-    5,
+    0,
+    0,
+    1,
+    3,
+    10,
     1,
     0,
     0,
@@ -1879,21 +1896,22 @@
     0,
     0,
     1,
-    4
+    0,
+    10
   ],
   "load": {
     "loadavg": [
-      0.36,
-      0.32,
-      0.27
+      0.75,
+      0.46,
+      0.32
     ],
-    "ramPct": 74,
+    "ramPct": 79,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
@@ -1917,7 +1935,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -2781,10 +2799,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 17
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2801,8 +2819,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 4
+        "utilPct": 5,
+        "vramPct": 54
       }
     ],
     "selfHostedInferencePct": 81,
