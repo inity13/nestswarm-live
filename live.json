@@ -1,5 +1,5 @@
 {
-  "generated": 1789103609544,
+  "generated": 1789103655153,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789103654175,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789103654175,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789103654131,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789103495713,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789100253289,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789103654175,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789100083844,
-      "type": "bench"
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789103654175,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3533MB free)",
-      "t": 1789100083843,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789100073054,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789103654131,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,28 +1844,18 @@
     "priority": "The flagship product must be selected from the top 3 highest-scoring entries in the vault based on market research and internal validation metrics."
   },
   "throughput": [
-    8,
-    8,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    9,
-    5,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
     13,
     0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
+    10,
+    0,
     1,
     0,
     0,
@@ -1854,15 +1863,25 @@
     0,
     0,
     1,
-    0
+    3,
+    10,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.01,
+      0.05,
       0.05,
       0.07
     ],
-    "ramPct": 46,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -2772,8 +2791,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 91
       }
