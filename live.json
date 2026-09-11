@@ -1,5 +1,5 @@
 {
-  "generated": 1789105409855,
+  "generated": 1789105455289,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789105454441,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789105454441,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789105454433,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789105294962,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1789102465786,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789102465785,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789102453967,
+      "t": 1789105454441,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789102453967,
+      "t": 1789105454441,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789105454433,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,19 +1844,18 @@
     "priority": "The flagship product must be selected from the top 3 highest-scoring entries in the vault based on market research and internal validation metrics."
   },
   "throughput": [
-    8,
-    8,
+    13,
     0,
     0,
     1,
     0,
     0,
     1,
-    2,
-    11,
+    0,
+    13,
     3,
-    6,
-    6,
+    5,
+    7,
     1,
     0,
     0,
@@ -1854,15 +1872,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.2,
-      0.18
+      0.28,
+      0.22,
+      0.19
     ],
-    "ramPct": 58,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2756,7 +2775,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 16
       },
       {
@@ -2772,8 +2791,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 91
       }
