@@ -1,5 +1,5 @@
 {
-  "generated": 1789087166511,
+  "generated": 1789087211546,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789087199487,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2509MB free)",
+      "t": 1789087199486,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789087177333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789087177333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789087177324,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789087098016,
       "type": "event"
@@ -1565,43 +1595,37 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789084042908,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789083858897,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789083678356,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789083599300,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2816MB free)",
-      "t": 1789083599299,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789083591552,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789087098016,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789087199487,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2509MB free)",
+      "t": 1789087199486,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789087177333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789087177333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789087177324,
       "type": "event"
     }
   ],
@@ -1832,7 +1856,16 @@
     "priority": "Low-code SaaS integrations for open-source project workflows"
   },
   "throughput": [
-    15,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    13,
     1,
     0,
     0,
@@ -1852,24 +1885,15 @@
     0,
     0,
     1,
-    13,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0
+    5
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.26,
-      0.24
+      0.68,
+      0.38,
+      0.28
     ],
-    "ramPct": 60,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -2762,9 +2786,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 6,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2779,9 +2803,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 11,
         "vramPct": 91
       }
     ],
