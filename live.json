@@ -1,5 +1,5 @@
 {
-  "generated": 1789130074336,
+  "generated": 1789130119679,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789130079058,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789130079058,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789130079057,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789130079056,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1789130070223,
       "type": "event"
@@ -1571,33 +1595,33 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789127078748,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789130079058,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789127075487,
+      "t": 1789130079058,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
-      "t": 1789127075486,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789127075486,
+      "t": 1789130079057,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1789127075485,
+      "t": 1789130079056,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
@@ -1868,27 +1892,26 @@
     "priority": "A niche solving an unmet need in trending GitHub repositories with clear demand signals and low competition"
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    3,
+    13,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
     10,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    8,
-    8,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    9,
-    5,
     0,
     1,
     0,
@@ -1897,15 +1920,16 @@
     0,
     0,
     1,
-    8
+    3,
+    10
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.29,
+      0.23,
+      0.28,
       0.22
     ],
-    "ramPct": 70,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -2798,9 +2822,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 10,
-        "vramPct": 49
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2815,9 +2839,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 32,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 96
       }
     ],
