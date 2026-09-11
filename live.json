@@ -1,5 +1,5 @@
 {
-  "generated": 1789165495085,
+  "generated": 1789165539815,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789165539364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789165539364,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789165539356,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789165381116,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
       "t": 1789162002978,
       "type": "trending"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789165539364,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789161993157,
-      "type": "bench"
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789165539364,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2842MB free)",
-      "t": 1789161993156,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789161988563,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789165539356,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1844,6 @@
     "priority": "A self-contained crypto payment checkout page built in Node.js with Express and Stripe integration"
   },
   "throughput": [
-    3,
     8,
     5,
     0,
@@ -1835,8 +1853,8 @@
     1,
     0,
     0,
-    9,
-    5,
+    4,
+    10,
     0,
     1,
     0,
@@ -1845,24 +1863,25 @@
     0,
     0,
     1,
-    8,
-    5,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     3,
-    3
+    10,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    2,
+    7
   ],
   "load": {
     "loadavg": [
-      0.36,
-      0.23,
-      0.21
+      0.21,
+      0.21,
+      0.2
     ],
-    "ramPct": 68,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2755,9 +2774,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 3,
-        "vramPct": 78
+        "warm": false,
+        "utilPct": 10,
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
@@ -2774,8 +2793,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 81
+        "utilPct": 3,
+        "vramPct": 95
       }
     ],
     "selfHostedInferencePct": 81,
