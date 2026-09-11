@@ -1,5 +1,5 @@
 {
-  "generated": 1789118777499,
+  "generated": 1789118822081,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789118813275,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789118797890,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1789118656668,
       "type": "event"
@@ -1583,21 +1595,22 @@
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1789116256390,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789118813275,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789116256390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789116256281,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789118797890,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,16 +1838,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    3,
-    10,
-    1,
     0,
     0,
     1,
@@ -1842,8 +1845,17 @@
     0,
     1,
     0,
-    3,
     13,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    16,
     0,
     0,
     1,
@@ -1852,17 +1864,18 @@
     1,
     0,
     2,
-    18,
+    16,
+    2,
     0,
-    0
+    3
   ],
   "load": {
     "loadavg": [
-      0,
-      0.03,
-      0.06
+      0.91,
+      0.25,
+      0.13
     ],
-    "ramPct": 54,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -1916,7 +1929,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2759,8 +2772,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 48
+        "utilPct": 10,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2777,8 +2790,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
-        "vramPct": 52
+        "utilPct": 33,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 80,
