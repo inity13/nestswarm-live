@@ -1,5 +1,5 @@
 {
-  "generated": 1789111306025,
+  "generated": 1789111351039,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789111339659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 8m ago) — skip",
+      "t": 1789111339647,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789111339647,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789111339297,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789111238519,
       "type": "event"
@@ -1571,38 +1595,32 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789107995297,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789107869224,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789107869224,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789107869223,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789107869222,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789111238519,
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789111339659,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 8m ago) — skip",
+      "t": 1789111339647,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789111339647,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789111339297,
+      "type": "security"
     }
   ],
   "capabilities": [
@@ -1652,7 +1670,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 71×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 72×"
     },
     {
       "name": "Shared memory",
@@ -1833,43 +1851,43 @@
   },
   "throughput": [
     0,
-    1,
-    13,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    13,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     14,
-    2,
+    0,
+    0,
+    1,
+    0,
     0,
     1,
     0,
     0,
     1,
-    0
+    13,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    13,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    4
   ],
   "load": {
     "loadavg": [
-      0.69,
-      0.45,
+      0.54,
+      0.43,
       0.37
     ],
-    "ramPct": 66,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1959,7 +1977,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2761,10 +2781,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 48
+        "busy": true,
+        "warm": false,
+        "utilPct": 14,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2781,7 +2801,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 27,
         "vramPct": 2
       }
     ],
