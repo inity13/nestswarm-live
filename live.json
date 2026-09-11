@@ -1,5 +1,5 @@
 {
-  "generated": 1789086581511,
+  "generated": 1789086626540,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789086593071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789086593071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789086593070,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789086593069,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789086587629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789086587629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789086587629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789086587627,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
       "t": 1789086577316,
       "type": "event"
@@ -1547,57 +1595,57 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789083591551,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
-      "t": 1789083584803,
+      "t": 1789086593071,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789083584803,
+      "t": 1789086593071,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
-      "t": 1789083584802,
+      "t": 1789086593070,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1789083584801,
+      "t": 1789086593069,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789083577199,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789086587629,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789083577199,
+      "text": "self-heal: disabled provider groq",
+      "t": 1789086587629,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789083577185,
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789086587629,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789083498791,
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789086587627,
       "type": "event"
-    }
-  ],
-  "recent": [
+    },
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
@@ -1850,7 +1898,6 @@
     "priority": "Low-code SaaS integrations for open-source project workflows"
   },
   "throughput": [
-    10,
     0,
     1,
     0,
@@ -1859,8 +1906,8 @@
     0,
     0,
     1,
-    3,
-    12,
+    0,
+    15,
     1,
     0,
     0,
@@ -1869,8 +1916,8 @@
     0,
     1,
     0,
-    3,
-    11,
+    0,
+    14,
     0,
     0,
     1,
@@ -1879,15 +1926,16 @@
     1,
     0,
     0,
-    4
+    1,
+    13
   ],
   "load": {
     "loadavg": [
+      0.12,
       0.16,
-      0.18,
       0.17
     ],
-    "ramPct": 69,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -2780,9 +2828,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 9,
-        "vramPct": 50
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2797,8 +2845,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 91
       }
