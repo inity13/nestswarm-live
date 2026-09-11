@@ -1,5 +1,5 @@
 {
-  "generated": 1789133044909,
+  "generated": 1789133089906,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789133059427,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789133059413,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789133024353,
       "type": "event"
@@ -1583,43 +1595,25 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789130070222,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789130070222,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789130070221,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789133024353,
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789133059427,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789132969994,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 1 free providers live (groq) · 0 zen free models",
-      "t": 1789132963246,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789132963246,
+      "t": 1789133059413,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789133024353,
       "type": "event"
     }
   ],
@@ -1850,7 +1844,6 @@
     "priority": "A niche solving an unmet need in trending GitHub repositories with clear demand signals and low competition"
   },
   "throughput": [
-    13,
     0,
     1,
     0,
@@ -1870,24 +1863,25 @@
     1,
     0,
     0,
-    16,
+    14,
+    2,
+    0,
+    1,
     0,
     0,
     1,
     0,
-    0,
-    1,
-    0,
-    10,
-    2
+    8,
+    3,
+    3
   ],
   "load": {
     "loadavg": [
-      0.41,
-      0.41,
-      0.31
+      0.69,
+      0.51,
+      0.35
     ],
-    "ramPct": 84,
+    "ramPct": 86,
     "cpus": 12
   },
   "brain": {
@@ -2783,7 +2777,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
@@ -2801,8 +2795,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 54
+        "utilPct": 38,
+        "vramPct": 95
       }
     ],
     "selfHostedInferencePct": 81,
