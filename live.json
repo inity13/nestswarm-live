@@ -1,5 +1,5 @@
 {
-  "generated": 1789168915555,
+  "generated": 1789168960531,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789168956154,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789168956153,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789168802782,
       "type": "event"
@@ -1583,21 +1595,22 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (2602MB free)",
       "t": 1789165574157,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789165563247,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789165563247,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789168956154,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789168956153,
+      "type": "scout"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,11 +1838,10 @@
     "priority": "AI-powered content creation tool for small business owners who struggle with social media consistency"
   },
   "throughput": [
-    0,
     1,
     0,
-    13,
     3,
+    13,
     0,
     0,
     1,
@@ -1838,8 +1850,8 @@
     1,
     0,
     0,
-    9,
-    5,
+    4,
+    10,
     0,
     1,
     0,
@@ -1848,19 +1860,20 @@
     0,
     0,
     1,
-    8,
-    5,
+    3,
+    10,
     1,
     0,
     0,
     1,
-    0
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.17,
-      0.21
+      0.11,
+      0.16,
+      0.2
     ],
     "ramPct": 56,
     "cpus": 12
@@ -1952,7 +1965,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2756,7 +2772,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 16
       },
       {
@@ -2772,9 +2788,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 52,
         "vramPct": 95
       }
     ],
