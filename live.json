@@ -1,5 +1,5 @@
 {
-  "generated": 1789154783310,
+  "generated": 1789154828337,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 6 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789154822571,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up\"}",
+      "t": 1789154821769,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 5 -> {}",
+      "t": 1789154799531,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider mistral",
       "t": 1789154768185,
       "type": "event"
@@ -1577,27 +1595,27 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789152948311,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789152948311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789152948311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789152948310,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 6 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789154822571,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up\"}",
+      "t": 1789154821769,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 5 -> {}",
+      "t": 1789154799531,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
@@ -1638,24 +1656,6 @@
       "who": "swarm",
       "text": "keyhunter: openrouter step 4 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
       "t": 1789154747532,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789154737921,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789154737921,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789154737904,
       "type": "event"
     }
   ],
@@ -1887,7 +1887,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1913,17 +1912,18 @@
     0,
     0,
     17,
+    0,
+    21,
     15,
-    6,
-    15
+    9
   ],
   "load": {
     "loadavg": [
-      0.61,
-      0.31,
-      0.23
+      0.87,
+      0.43,
+      0.27
     ],
-    "ramPct": 52,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1941,11 +1941,11 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security": {
@@ -1977,7 +1977,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -2818,9 +2818,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 17
       },
       {
@@ -2838,7 +2838,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 6,
         "vramPct": 95
       }
     ],
