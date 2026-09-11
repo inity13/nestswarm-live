@@ -1,5 +1,5 @@
 {
-  "generated": 1789126428467,
+  "generated": 1789126473563,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789126468722,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1789126468722,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789126468721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789126458045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789126458045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789126458036,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789126358935,
       "type": "event"
@@ -1559,49 +1595,43 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789123492794,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2353MB free)",
-      "t": 1789123492793,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789123489801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789123489801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789123489801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789123489800,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789123479744,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789126358935,
+      "text": "self-heal: disabled provider groq",
+      "t": 1789126468722,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1789126468722,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789126468721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789126458045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789126458045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789126458036,
       "type": "event"
     }
   ],
@@ -1832,7 +1862,7 @@
     "priority": "A niche solving an unmet need in trending GitHub repositories with clear demand signals and low competition"
   },
   "throughput": [
-    13,
+    5,
     1,
     0,
     0,
@@ -1841,18 +1871,18 @@
     0,
     1,
     0,
+    8,
+    8,
     0,
-    14,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    2,
-    1,
-    23,
+    18,
+    6,
     0,
     1,
     0,
@@ -1861,13 +1891,13 @@
     0,
     0,
     1,
-    0
+    7
   ],
   "load": {
     "loadavg": [
-      0.14,
+      0.11,
       0.13,
-      0.21
+      0.2
     ],
     "ramPct": 67,
     "cpus": 12
@@ -1959,10 +1989,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2766,7 +2793,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 48
       },
       {
@@ -2782,9 +2809,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 7,
         "vramPct": 95
       }
     ],
