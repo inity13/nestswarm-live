@@ -1,5 +1,5 @@
 {
-  "generated": 1789116211792,
+  "generated": 1789116257398,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789116256390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789116256390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789116256281,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789116101759,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789112856294,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789116256390,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789112691974,
-      "type": "bench"
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789116256390,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3691MB free)",
-      "t": 1789112691973,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789112676683,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789116256281,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,7 +1844,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    3,
     13,
     0,
     0,
@@ -1845,8 +1863,8 @@
     0,
     0,
     1,
-    8,
-    5,
+    3,
+    10,
     1,
     0,
     0,
@@ -1854,15 +1872,16 @@
     0,
     0,
     1,
-    0
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.04,
+      0.07,
+      0.05,
       0.07
     ],
-    "ramPct": 46,
+    "ramPct": 47,
     "cpus": 12
   },
   "brain": {
@@ -2756,7 +2775,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 17
       },
       {
@@ -2772,8 +2791,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 93
       }
