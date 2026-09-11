@@ -1,5 +1,5 @@
 {
-  "generated": 1789089911516,
+  "generated": 1789089956566,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789089944551,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789089943343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Create\"}",
+      "t": 1789089943101,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 2 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
+      "t": 1789089941544,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789089923532,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1789089923532,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "revenue scout: 2/68 channels active · 0 new discovered",
       "t": 1789089890926,
       "type": "scout"
@@ -1559,56 +1595,50 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789087786268,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789087786268,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789087786267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789087777385,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789087777385,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789087777351,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789087638252,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "revenue scout: 2/68 channels active · 0 new discovered",
-      "t": 1789089890926,
-      "type": "scout"
+      "text": "keyhunter: openrouter step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789089944551,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789089831840,
-      "type": "launch"
+      "text": "keyhunter: openrouter step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789089943343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Create\"}",
+      "t": 1789089943101,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 2 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
+      "t": 1789089941544,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789089923532,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
+      "t": 1789089923532,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789089890926,
+      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1826,7 +1856,7 @@
     }
   ],
   "ledger": {
-    "total": 850,
+    "total": 852,
     "revenue": 0,
     "effects": 128,
     "boundary": 1,
@@ -1838,7 +1868,6 @@
     "priority": "Low-code SaaS integrations for open-source project workflows"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1852,8 +1881,8 @@
     0,
     0,
     1,
-    15,
-    0,
+    13,
+    2,
     1,
     0,
     0,
@@ -1867,15 +1896,16 @@
     0,
     15,
     14,
-    2
+    2,
+    13
   ],
   "load": {
     "loadavg": [
-      0.36,
-      0.46,
-      0.35
+      0.92,
+      0.57,
+      0.39
     ],
-    "ramPct": 83,
+    "ramPct": 85,
     "cpus": 12
   },
   "brain": {
@@ -1929,7 +1959,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -2772,7 +2802,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
