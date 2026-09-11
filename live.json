@@ -1,5 +1,5 @@
 {
-  "generated": 1789133948603,
+  "generated": 1789133993567,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789133961875,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 25m ago) — skip",
+      "t": 1789133960149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
+      "t": 1789133960149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
+      "t": 1789133955948,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: nvidia entering verification code from inbox",
       "t": 1789133945558,
       "type": "event"
@@ -1571,33 +1595,33 @@
       "text": "conductor created skill stripe-owner-onboarding",
       "t": 1789133174833,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-first-build-gate",
-      "t": 1789133174833,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-sandbox-checkout",
-      "t": 1789133174833,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-alternative-fallback",
-      "t": 1789133174833,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill financial-analysis",
-      "t": 1789133174833,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789133961875,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 25m ago) — skip",
+      "t": 1789133960149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
+      "t": 1789133960149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Beehiiv step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
+      "t": 1789133955948,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: nvidia entering verification code from inbox",
@@ -1875,7 +1899,6 @@
   },
   "throughput": [
     0,
-    0,
     1,
     0,
     0,
@@ -1888,30 +1911,31 @@
     1,
     0,
     10,
-    2,
-    2,
+    1,
+    3,
     0,
     20,
     19,
     1,
     7,
-    6,
-    8,
-    7,
-    8,
-    8,
-    11,
-    46,
     1,
-    17
+    9,
+    11,
+    4,
+    10,
+    12,
+    41,
+    7,
+    15,
+    9
   ],
   "load": {
     "loadavg": [
-      17.68,
-      10.02,
-      4.08
+      8.4,
+      8.63,
+      3.89
     ],
-    "ramPct": 94,
+    "ramPct": 88,
     "cpus": 12
   },
   "brain": {
@@ -1965,7 +1989,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
