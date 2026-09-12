@@ -1,5 +1,5 @@
 {
-  "generated": 1789204950761,
+  "generated": 1789204995799,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789204983682,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789204978823,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789204961773,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789204961773,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789204879250,
       "type": "event"
@@ -1571,37 +1595,31 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789201639114,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789201577246,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3650MB free)",
-      "t": 1789201577245,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789201571499,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789201571499,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789204879250,
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789204983682,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789204978823,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789204961773,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789204961773,
       "type": "event"
     }
   ],
@@ -1834,8 +1852,17 @@
   "throughput": [
     0,
     1,
+    13,
+    2,
+    1,
     0,
-    15,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    13,
     1,
     0,
     0,
@@ -1852,24 +1879,15 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
-    13,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0
+    7
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.16,
-      0.15
+      0.6,
+      0.28,
+      0.19
     ],
-    "ramPct": 47,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1899,7 +1917,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1931,7 +1949,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "automation_operator": {
@@ -1959,7 +1977,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2762,9 +2783,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2779,9 +2800,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 7,
         "vramPct": 95
       }
     ],
