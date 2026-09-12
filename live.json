@@ -1,5 +1,5 @@
 {
-  "generated": 1789230654396,
+  "generated": 1789230700123,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Real Risks (Severity)** - **High – Arb",
         "t": 1789230580193
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789230699377,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789230699377,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789230699376,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/67 channels active · 0 new discovered",
+      "t": 1789230677878,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789230670307,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2961MB free)",
+      "t": 1789230670304,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
+      "t": 1789230660926,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789230650749,
       "type": "launch"
@@ -1198,6 +1240,48 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789230699377,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789230699377,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789230699376,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/67 channels active · 0 new discovered",
+      "t": 1789230677878,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789230670307,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2961MB free)",
+      "t": 1789230670304,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
+      "t": 1789230660926,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789230650749,
       "type": "launch"
@@ -1206,13 +1290,6 @@
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in checkout and easy customer management. It offers robust features like subscriptions and a dedicated support page. 2. **Patreon**: Perfect for subscription-based models or those seeking recurring income from their product. It provides a platform for building a community around your work and offering different tiers of access. 3. **GitHub Marketplace**: Suitable for software developers, as it aligns with their workflow and helps them discover and purchase tools and services directly within the development environment. It also …",
       "t": 1789230634689,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Real Risks (Severity)** - **High – Arbitrary Child‑Process Execution** The build spawns child processes without input validation or sandboxing. An attacker could inject commands via environment variables or build parameters, leading to remote code execution (RCE). - **Medium – Unsanitized innerHTML Assignment** The UI renders user‑supplied content directly into `innerHTML`. If the content is not properly escaped, it allows cross‑site scripting (XSS) that can steal session tokens or perform actions on behalf of the user. - **Low – …",
-      "t": 1789230580193,
       "system": false,
       "type": "chat"
     }
@@ -1478,18 +1555,18 @@
     0,
     0,
     0,
-    0,
     6,
-    13,
-    5
+    10,
+    7,
+    13
   ],
   "load": {
     "loadavg": [
-      1.97,
-      0.97,
-      0.58
+      1.99,
+      1.08,
+      0.63
     ],
-    "ramPct": 62,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1503,7 +1580,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "coder": {
@@ -1511,7 +1588,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "designer": {
@@ -1535,6 +1612,14 @@
         "tier": "local"
       },
       "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -2342,8 +2427,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 73
+        "utilPct": 89,
+        "vramPct": 82
       },
       {
         "alias": "GPU-Node-2",
@@ -2361,7 +2446,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 91
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 100,
