@@ -1,5 +1,5 @@
 {
-  "generated": 1789222648592,
+  "generated": 1789222693470,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789222692012,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789222690801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {}",
+      "t": 1789222688736,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1789222680679,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789222668563,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789222650056,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: groq already has a working key — skip",
       "t": 1789222647874,
       "type": "event"
@@ -1234,6 +1270,42 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789222692012,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789222690801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 0 -> {}",
+      "t": 1789222688736,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1789222680679,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789222668563,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789222650056,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: groq already has a working key — skip",
       "t": 1789222647874,
       "type": "event"
@@ -1243,24 +1315,6 @@
       "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
       "t": 1789222647874,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789222595792,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789222590802,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3473MB free)",
-      "t": 1789222590791,
-      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1516,18 +1570,18 @@
     0,
     0,
     0,
-    6,
-    9,
+    14,
     3,
-    6
+    5,
+    15
   ],
   "load": {
     "loadavg": [
-      1.33,
-      1.02,
-      0.77
+      1.56,
+      1.12,
+      0.81
     ],
-    "ramPct": 63,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1549,6 +1603,22 @@
         "tier": "local"
       },
       "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -1576,7 +1646,7 @@
         "active": 1
       },
       "donation": {
-        "total": 10,
+        "total": 9,
         "active": 0
       },
       "bounty": {
@@ -1588,7 +1658,7 @@
         "active": 0
       },
       "subscription": {
-        "total": 4,
+        "total": 5,
         "active": 0
       },
       "other": {
@@ -1877,7 +1947,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "donation",
+        "kind": "subscription",
         "active": false,
         "captcha": false
       },
@@ -2360,8 +2430,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 27,
-        "vramPct": 51
+        "utilPct": 38,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2378,8 +2448,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 91
+        "utilPct": 2,
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 100,
