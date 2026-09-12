@@ -1,5 +1,5 @@
 {
-  "generated": 1789191313696,
+  "generated": 1789191358922,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789191350820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1789191350820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789191350819,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789191343833,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789191343833,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789191343787,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789191197650,
       "type": "event"
@@ -1559,45 +1595,46 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789188960023,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789191350820,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789188960022,
+      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
+      "t": 1789191350820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789191350819,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789188943516,
+      "t": 1789191343833,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789188943516,
+      "t": 1789191343833,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789188943464,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789188856368,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789188677323,
+      "t": 1789191343787,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,8 +1862,7 @@
     "priority": "A product solving a clear, high-demand customer pain point, validated by at least 30 purchase-intent commitments"
   },
   "throughput": [
-    13,
-    1,
+    6,
     0,
     0,
     1,
@@ -1835,34 +1871,35 @@
     1,
     0,
     0,
-    14,
-    0,
+    9,
+    5,
     0,
     1,
     0,
     0,
     1,
     2,
+    0,
+    16,
+    5,
     15,
     1,
-    7,
-    13,
-    1,
     0,
     0,
     1,
     0,
     0,
     1,
-    0
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.31,
-      0.2,
-      0.13
+      0.4,
+      0.23,
+      0.14
     ],
-    "ramPct": 66,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1952,10 +1989,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2775,9 +2809,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 8,
         "vramPct": 95
       }
     ],
