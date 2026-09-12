@@ -1,5 +1,5 @@
 {
-  "generated": 1789208731947,
+  "generated": 1789208776911,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789208774434,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789208774434,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789208774434,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789208774433,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789208746903,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789208746903,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789208746893,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789208660177,
       "type": "event"
@@ -1553,55 +1595,49 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789205745990,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789205745945,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789205599351,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789205421226,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789205239452,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789205180761,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2324MB free)",
-      "t": 1789205180758,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789205163310,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789208660177,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789208774434,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789208774434,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789208774434,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789208774433,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789208746903,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789208746903,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789208746893,
       "type": "event"
     }
   ],
@@ -1832,7 +1868,16 @@
     "priority": "Cognitive Concierge"
   },
   "throughput": [
-    15,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    13,
     1,
     0,
     0,
@@ -1849,27 +1894,18 @@
     0,
     0,
     1,
-    0,
-    0,
     1,
-    13,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1,
-    5,
-    4
+    2,
+    4,
+    15
   ],
   "load": {
     "loadavg": [
-      0.29,
-      0.27,
-      0.24
+      0.66,
+      0.36,
+      0.28
     ],
-    "ramPct": 70,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1899,7 +1935,7 @@
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -1923,7 +1959,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2762,9 +2798,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 80
+        "warm": false,
+        "utilPct": 1,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2781,7 +2817,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 22,
         "vramPct": 95
       }
     ],
