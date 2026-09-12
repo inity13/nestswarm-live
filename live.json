@@ -1,5 +1,5 @@
 {
-  "generated": 1789231637672,
+  "generated": 1789231741896,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -122,10 +122,10 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I get it—clarity and polish are the new mantra, not a scatter‑gun of prototypes. But unles",
-        "t": 1789230995774
+        "text": "\"DeepInfra\" maybe? They have \"DeepInfra\" with /v1/chat/completions? They provide an Open{\"",
+        "t": 1789231672309
       }
     },
     {
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree we must stop churning and focus on one polished, revenue‑ready product, but I cann",
-        "t": 1789230995776
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: Critical – Arbitrary Child‑P",
+        "t": 1789231716489
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We need to perform actions to sign up on Paddle. We have to use the Gmail account [email] ",
-        "t": 1789231100822
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software tools",
+        "t": 1789231735471
       }
     },
     {
@@ -274,6 +274,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software tools. Easy setup and robust payment processing capabilities make it a strong choice for ScopeSage. 2. **Payhip**: Offers a wide range of payment options and a user-friendly interface, making it suitable for various product categories including FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. 3. **Product Hunt**: Perfect for gaining initial traction and exposure to potential users. By launching on Product Hunt, you can quickly build buzz around your flagship product, like ScopeSage, attracting early …",
+      "t": 1789231735471,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: Critical – Arbitrary Child‑Process Execution** *Risk:* The build spawns child processes without input validation or command whitelisting. If an attacker can influence the command or its arguments, they can execute arbitrary code, potentially gaining full system compromise. *Fix:* Replace `child_process.exec`/`spawn` with `child_process.execFile` or `spawn` using a strict whitelist of allowed binaries and arguments. Validate all inputs against a safe list and reject any that contain shell metacharacters. 2. **Severity: High – …",
+      "t": 1789231716489,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Quark",
+      "text": "\"DeepInfra\" maybe? They have \"DeepInfra\" with /v1/chat/completions? They provide an Open{\"providers\":[{\"name\":\"DeepInfra\",\"baseUrl\":\"https://api.deepinfra.com/v1\",\"model\":\"gpt-3.5-turbo-free\",\"needsKey\":true,\"signup\":\"https://deepinfra.com/signup\"}]}",
+      "t": 1789231672309,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "We need to perform actions to sign up on Paddle. We have to use the Gmail account [email] and password C0de122122. We need to use \"Sign up with Google\" if available. We need to respond with a single action JSON. We need to think about the current page. The page shows \"Get started\" button. We need to click \"Get started\". Then likely a sign-up page appears. We need to click \"Sign up with Google\". But we need to check if the page has that button. The page text shows \"Get started\" as an <a> tag. We need to click it. So first action: click \"Get started\". That will navigate to sign-up page. Then we …",
@@ -1092,30 +1113,33 @@
       "t": 1789225219561,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "As Publisher Chandler, I see us veering off course with too many half-baked ideas. Let's focus on one standout product that delivers real value and has a clear path to profitability. The team must work together to polish this flagship product to perfection before we launch it and start making money. We can't afford another misfire in the pipeline. Let's get focused, make a masterpiece, and turn those critics' praise into hard cash.",
-      "t": 1789225219560,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Nest Concord</title> <link rel=\"stylesheet\" href=\"[path] <style> body { font-family: 'Arial', sans-serif; } header { background-color: #3498db; color: white; padding: 20px 0; text-align: center; } nav { display: flex; justify-content: space-around; background-color: #ecf0f1; padding: 10px 0; } nav a { color: #3498db; text-decoration: none; font-weight: bold; } .hero { text-align: center; padding: 50px 0; } .hero h1 { font-size: 2.5em; …",
-      "t": 1789225219558,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "My stance is that we must lock onto a single, market‑ready MVP and ship it end‑to‑end before any other idea gets any more bandwidth; without a live checkout the catalog is just noise. The team must produce a concrete, validated pricing and payment flow (Stripe checkout URL or crypto address) for the chosen flagship within the next 48 hours so we can actually capture revenue.",
-      "t": 1789225219557,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: deepinfra — queued for key hunter",
+      "t": 1789231672314,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789231651890,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
+      "t": 1789231639935,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789231639654,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1173,58 +1197,31 @@
   ],
   "recent": [
     {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789231636891,
-      "type": "event"
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software tools. Easy setup and robust payment processing capabilities make it a strong choice for ScopeSage. 2. **Payhip**: Offers a wide range of payment options and a user-friendly interface, making it suitable for various product categories including FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. 3. **Product Hunt**: Perfect for gaining initial traction and exposure to potential users. By launching on Product Hunt, you can quickly build buzz around your flagship product, like ScopeSage, attracting early …",
+      "t": 1789231735471,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: Critical – Arbitrary Child‑Process Execution** *Risk:* The build spawns child processes without input validation or command whitelisting. If an attacker can influence the command or its arguments, they can execute arbitrary code, potentially gaining full system compromise. *Fix:* Replace `child_process.exec`/`spawn` with `child_process.execFile` or `spawn` using a strict whitelist of allowed binaries and arguments. Validate all inputs against a safe list and reject any that contain shell metacharacters. 2. **Severity: High – …",
+      "t": 1789231716489,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789231631910,
+      "text": "scout discovered key-gated free provider: deepinfra — queued for key hunter",
+      "t": 1789231672314,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789231626886,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789231606892,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789231606877,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789231606856,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789231606856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789231606685,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789231606638,
-      "type": "event"
+      "who": "Quark",
+      "text": "\"DeepInfra\" maybe? They have \"DeepInfra\" with /v1/chat/completions? They provide an Open{\"providers\":[{\"name\":\"DeepInfra\",\"baseUrl\":\"https://api.deepinfra.com/v1\",\"model\":\"gpt-3.5-turbo-free\",\"needsKey\":true,\"signup\":\"https://deepinfra.com/signup\"}]}",
+      "t": 1789231672309,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1489,17 +1486,17 @@
     0,
     0,
     0,
-    0,
-    0,
-    10
+    6,
+    11,
+    6
   ],
   "load": {
     "loadavg": [
-      0.65,
-      0.38,
-      0.41
+      2.19,
+      0.9,
+      0.6
     ],
-    "ramPct": 47,
+    "ramPct": 52,
     "cpus": 12
   },
   "brain": {
@@ -1507,10 +1504,47 @@
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2310,8 +2344,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 44,
-        "vramPct": 85
+        "utilPct": 8,
+        "vramPct": 26
       },
       {
         "alias": "GPU-Node-2",
@@ -2328,8 +2362,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 0
+        "utilPct": 12,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
