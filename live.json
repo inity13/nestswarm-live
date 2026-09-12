@@ -1,5 +1,5 @@
 {
-  "generated": 1789205175870,
+  "generated": 1789205220951,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789205180761,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2324MB free)",
+      "t": 1789205180758,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1789205163310,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789203260345,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789203079589,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789202899517,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789205180761,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2324MB free)",
+      "t": 1789205180758,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1663,24 +1675,6 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789205145797,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789205114302,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — disabled provider mistral",
-      "t": 1789205114302,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/68 channels active · 0 new discovered",
-      "t": 1789205106993,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1910,7 +1904,6 @@
     "priority": "Cognitive Concierge"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1919,35 +1912,36 @@
     0,
     1,
     0,
-    13,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    14,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    7,
-    15,
+    8,
     6,
-    13
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    9,
+    5,
+    0,
+    1,
+    0,
+    0,
+    1,
+    6,
+    1,
+    16,
+    13,
+    7
   ],
   "load": {
     "loadavg": [
-      0.66,
+      0.5,
       0.33,
-      0.21
+      0.22
     ],
-    "ramPct": 63,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -2839,10 +2833,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 88,
-        "vramPct": 45
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2859,7 +2853,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 6,
+        "utilPct": 0,
         "vramPct": 95
       }
     ],
