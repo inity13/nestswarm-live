@@ -1,5 +1,5 @@
 {
-  "generated": 1789219578797,
+  "generated": 1789219623831,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3031MB free)",
+      "t": 1789219583509,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789219583509,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "ownerreq: emailed 2 new request(s) to [email]",
       "t": 1789219565366,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1789217159036,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789217159035,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789217148450,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3031MB free)",
+      "t": 1789219583509,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789219583509,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "ownerreq: emailed 2 new request(s) to [email]",
@@ -1910,7 +1922,6 @@
     "priority": "Top-rated product in vault (currently ranked 8.5) with verified willingness-to-pay"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1919,35 +1930,36 @@
     0,
     1,
     0,
+    8,
+    6,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    9,
+    5,
+    0,
+    1,
+    0,
+    0,
+    1,
     13,
-    1,
-    0,
     0,
     1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    14,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13,
-    0,
-    1,
-    16
+    15,
+    3
   ],
   "load": {
     "loadavg": [
-      0.86,
-      0.49,
-      0.31
+      0.45,
+      0.43,
+      0.3
     ],
-    "ramPct": 55,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -2839,10 +2851,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 87,
-        "vramPct": 43
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
