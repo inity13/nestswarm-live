@@ -1,5 +1,5 @@
 {
-  "generated": 1789233768024,
+  "generated": 1789233858732,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We need to perform actions to sign up on Paddle. We have to use the Gmail account [email].",
         "t": 1789233720908
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "launcher: gumroad failed for RealFlow MT: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
+      "t": 1789233858341,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1789233739646,
       "type": "event"
@@ -1589,165 +1595,14 @@
       "text": "keyhunter: googleailanguagemodels key validation -> invalid ❌",
       "t": 1789233372021,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"403 Forbidden error encountered. Unable to proceed.\"}",
-      "t": 1789233369960,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789233739646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider googleailanguagemodels",
-      "t": 1789233739646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider googleailanguagemodels",
-      "t": 1789233739646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789233739645,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789233738042,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789233737975,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle needs email verification — reading inbox",
-      "t": 1789233737058,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233737057,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233735903,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233734759,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233733611,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233732463,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233731309,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233730161,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233729019,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233727867,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789233726723,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789233725573,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789233720911,
-      "type": "event"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to perform actions to sign up on Paddle. We have to use the Gmail account [email]. We have password C0de122122. We should use \"Sign up with Google\" if available. We need to produce a single action in JSON. We need to inspect the page. The current page text shows \"Get started\" and \"Book a demo\". There's likely a \"Sign up\" button. We need to click \"Get started\" maybe. But we need to sign up. Let's think: On Paddle, the sign up process likely involves clicking \"Get started\" then \"Sign up\" or \"Create account\". There might be a \"Sign up with Google\" button. We need to click that. So first …",
-      "t": 1789233720908,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Paddle (revenue)",
-      "t": 1789233716290,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 11 -> {}",
-      "t": 1789233693640,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1789233693640,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: focus niche: Ultimate Swarm Security Suite; paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
-      "t": 1789233685353,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789233680649,
-      "type": "event"
+      "text": "launcher: gumroad failed for RealFlow MT: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
+      "t": 1789233858341,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -2010,27 +1865,27 @@
     0,
     0,
     0,
-    0,
-    0,
-    15,
-    14,
-    7,
-    15,
-    19,
     6,
-    16,
-    34,
-    39,
-    7,
-    33
+    14,
+    15,
+    9,
+    19,
+    11,
+    2,
+    40,
+    22,
+    27,
+    35,
+    5,
+    1
   ],
   "load": {
     "loadavg": [
-      0.73,
-      1.14,
-      1.37
+      0.51,
+      0.97,
+      1.28
     ],
-    "ramPct": 65,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2916,9 +2771,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 1,
+        "busy": true,
+        "warm": false,
+        "utilPct": 17,
         "vramPct": 82
       },
       {
