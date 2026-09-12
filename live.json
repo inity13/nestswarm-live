@@ -1,5 +1,5 @@
 {
-  "generated": 1789223951168,
+  "generated": 1789224055361,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789224036361,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3709MB free)",
+      "t": 1789224036357,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789223965328,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789223953256,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1789223950381,
       "type": "event"
@@ -1180,63 +1204,15 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789223950381,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789224036361,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "scout: 3 free providers live (groq, nvidia, gemini) · 0 zen free models",
-      "t": 1789223948166,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789223945366,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789223940339,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789223920354,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789223920314,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789223920273,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789223920272,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789223920084,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789223920046,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3709MB free)",
+      "t": 1789224036357,
+      "type": "bench"
     }
   ],
   "capabilities": [
@@ -1493,21 +1469,46 @@
     0,
     0,
     0,
-    0,
-    0,
-    10
+    6,
+    9,
+    5
   ],
   "load": {
     "loadavg": [
-      1.04,
-      1.31,
-      1.25
+      2.04,
+      1.64,
+      1.38
     ],
-    "ramPct": 44,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      }
+    },
     "free": [
       "gemini-flash-latest",
       "openai/gpt-oss-120b",
@@ -2316,8 +2317,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 42,
-        "vramPct": 18
+        "utilPct": 1,
+        "vramPct": 27
       },
       {
         "alias": "GPU-Node-2",
@@ -2334,11 +2335,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 91
+        "utilPct": 79,
+        "vramPct": 77
       }
     ],
-    "selfHostedInferencePct": 0,
+    "selfHostedInferencePct": 100,
     "jobsProcessed": 179
   }
 }
