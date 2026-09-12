@@ -1,5 +1,5 @@
 {
-  "generated": 1789197974544,
+  "generated": 1789198019617,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789197990067,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
       "t": 1789197968967,
       "type": "event"
@@ -1589,15 +1595,15 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789195572863,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789195572863,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789197990067,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
@@ -1632,18 +1638,6 @@
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789197944512,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789197888543,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 0 -> {}",
-      "t": 1789197886628,
       "type": "event"
     }
   ],
@@ -1874,7 +1868,6 @@
     "priority": "A product solving a clear, high-demand customer pain point, validated by at least 30 purchase-intent commitments"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1883,8 +1876,8 @@
     0,
     1,
     0,
-    13,
-    1,
+    8,
+    6,
     0,
     0,
     1,
@@ -1893,8 +1886,8 @@
     1,
     0,
     0,
-    14,
-    0,
+    4,
+    10,
     0,
     1,
     0,
@@ -1903,15 +1896,16 @@
     11,
     0,
     20,
-    9
+    7,
+    4
   ],
   "load": {
     "loadavg": [
-      0.56,
-      0.35,
-      0.27
+      0.84,
+      0.46,
+      0.31
     ],
-    "ramPct": 59,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1965,7 +1959,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -2808,8 +2802,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 18
+        "utilPct": 55,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2826,8 +2820,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 40,
-        "vramPct": 81
+        "utilPct": 5,
+        "vramPct": 95
       }
     ],
     "selfHostedInferencePct": 82,
