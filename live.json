@@ -1,5 +1,5 @@
 {
-  "generated": 1789231741896,
+  "generated": 1789231787659,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "\"DeepInfra\" maybe? They have \"DeepInfra\" with /v1/chat/completions? They provide an Open{\"",
         "t": 1789231672309
@@ -1118,6 +1118,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789231786876,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789231786876,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789231786875,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/67 channels active · 0 new discovered",
+      "t": 1789231774410,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789231772458,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2911MB free)",
+      "t": 1789231772456,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789231761838,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789231751488,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: deepinfra — queued for key hunter",
       "t": 1789231672314,
       "type": "event"
@@ -1197,6 +1245,54 @@
   ],
   "recent": [
     {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789231786876,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789231786876,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789231786875,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/67 channels active · 0 new discovered",
+      "t": 1789231774410,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789231772458,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2911MB free)",
+      "t": 1789231772456,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789231761838,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789231751488,
+      "type": "launch"
+    },
+    {
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software tools. Easy setup and robust payment processing capabilities make it a strong choice for ScopeSage. 2. **Payhip**: Offers a wide range of payment options and a user-friendly interface, making it suitable for various product categories including FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. 3. **Product Hunt**: Perfect for gaining initial traction and exposure to potential users. By launching on Product Hunt, you can quickly build buzz around your flagship product, like ScopeSage, attracting early …",
       "t": 1789231735471,
@@ -1207,19 +1303,6 @@
       "who": "Sentinel",
       "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: Critical – Arbitrary Child‑Process Execution** *Risk:* The build spawns child processes without input validation or command whitelisting. If an attacker can influence the command or its arguments, they can execute arbitrary code, potentially gaining full system compromise. *Fix:* Replace `child_process.exec`/`spawn` with `child_process.execFile` or `spawn` using a strict whitelist of allowed binaries and arguments. Validate all inputs against a safe list and reject any that contain shell metacharacters. 2. **Severity: High – …",
       "t": 1789231716489,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: deepinfra — queued for key hunter",
-      "t": 1789231672314,
-      "type": "event"
-    },
-    {
-      "who": "Quark",
-      "text": "\"DeepInfra\" maybe? They have \"DeepInfra\" with /v1/chat/completions? They provide an Open{\"providers\":[{\"name\":\"DeepInfra\",\"baseUrl\":\"https://api.deepinfra.com/v1\",\"model\":\"gpt-3.5-turbo-free\",\"needsKey\":true,\"signup\":\"https://deepinfra.com/signup\"}]}",
-      "t": 1789231672309,
       "system": false,
       "type": "chat"
     }
@@ -1485,18 +1568,18 @@
     0,
     0,
     0,
-    0,
     6,
-    11,
-    6
+    8,
+    7,
+    13
   ],
   "load": {
     "loadavg": [
-      2.19,
-      0.9,
-      0.6
+      1.94,
+      1.05,
+      0.66
     ],
-    "ramPct": 52,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1540,6 +1623,14 @@
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       }
     },
     "free": [
@@ -1566,7 +1657,7 @@
         "active": 1
       },
       "donation": {
-        "total": 9,
+        "total": 10,
         "active": 0
       },
       "bounty": {
@@ -1574,7 +1665,7 @@
         "active": 0
       },
       "marketplace": {
-        "total": 10,
+        "total": 9,
         "active": 0
       },
       "subscription": {
@@ -1783,7 +1874,7 @@
       },
       {
         "name": "C3.ai Creator Economy Platform",
-        "kind": "marketplace",
+        "kind": "subscription",
         "active": false,
         "captcha": false
       },
@@ -1861,7 +1952,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "donation",
         "active": false,
         "captcha": false
       },
@@ -2344,8 +2435,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 8,
-        "vramPct": 26
+        "utilPct": 21,
+        "vramPct": 22
       },
       {
         "alias": "GPU-Node-2",
@@ -2360,9 +2451,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 12,
+        "busy": false,
+        "warm": true,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
