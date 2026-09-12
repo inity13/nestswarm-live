@@ -1,5 +1,5 @@
 {
-  "generated": 1789254830778,
+  "generated": 1789254921445,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Child‑process spawning** – *Critical* ",
         "t": 1789254750365
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**1. Product Hunt** – the go‑to launchpad for early‑adopter tech users. A well‑timed post ",
-        "t": 1789247666331
+        "text": "We need to create a Substack account. We have to use the shared Gmail [email]. We need to ",
+        "t": 1789254907476
       }
     },
     {
@@ -274,6 +274,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "We need to create a Substack account. We have to use the shared Gmail [email]. We need to use password C0de122122. Prefer sign up with Google. We need to simulate actions. We need to output a single JSON action. We need to decide which action to take next. The page shows \"Create account\" button. We can click that. Then likely a modal appears with options. We can click \"Sign up with Google\". Since we are logged into Gmail? The instruction says prefer \"Sign up with Google\" / OAuth if available (the Gmail is already logged in). So we should click \"Sign up with Google\". But we need to confirm the …",
+      "t": 1789254907476,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Sentinel",
       "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Child‑process spawning** – *Critical* - **Risk**: Arbitrary code execution if input to the spawned command is not strictly validated. - **Fix**: Replace `spawn` with a sandboxed executor (e.g., `child_process.execFile` with a whitelist of allowed binaries). Validate all arguments against a strict regex or a predefined list before execution. **2. `innerHTML` assignment** – *High* - **Risk**: XSS if the source string contains unsanitized user data. - **Fix**: Use textContent or a templating engine that auto‑escapes, or sanitize the string with …",
@@ -1106,16 +1113,69 @@
       "t": 1789230995784,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "Team, I see the consensus is clear—we need to stop churning raw count and focus on delivering one outstanding product that truly earns money. Quality over quantity is the way forward. Let's make every effort to polish our flagship to perfection before moving on to new ideas. The single most important thing we must do next is finalize the launch of our current flagship product with real customer-facing channels, ensuring it’s SELLABLE and generates revenue for the Swarm Protector right away.",
-      "t": 1789230995782,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789254907479,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"403 blocked\"}",
+      "t": 1789254859790,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: googleailanguagemodels in cooldown (last attempt 112m ago) — skip",
+      "t": 1789254859790,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider deepinfra",
+      "t": 1789254846281,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 6 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter; disabled provider deepinfra",
+      "t": 1789254846281,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789254846280,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789254846279,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789254846278,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789254846278,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789254846277,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1535,182 +1595,74 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789248159926,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789248159926,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789248159925,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1789248140561,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789248140361,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789248083381,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789247903384,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789247723374,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789247682232,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789247657267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider googleailanguagemodels",
-      "t": 1789247657267,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789254811797,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2512MB free)",
-      "t": 1789254811792,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 operational improvement(s) recommended",
-      "t": 1789254798290,
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789254907479,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789254798236,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-link-metadata-fix",
-      "t": 1789254798023,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill fulfillment-loop-end-to-end",
-      "t": 1789254798023,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill checkout-session-metadata-propagation",
-      "t": 1789254798023,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: checkout-session-metadata-propagation",
-      "t": 1789254798020,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: fulfillment-loop-end-to-end",
-      "t": 1789254798019,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: payment-link-metadata-fix",
-      "t": 1789254798018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789254779135,
-      "type": "event"
-    },
-    {
-      "who": "Sentinel",
-      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Child‑process spawning** – *Critical* - **Risk**: Arbitrary code execution if input to the spawned command is not strictly validated. - **Fix**: Replace `spawn` with a sandboxed executor (e.g., `child_process.execFile` with a whitelist of allowed binaries). Validate all arguments against a strict regex or a predefined list before execution. **2. `innerHTML` assignment** – *High* - **Risk**: XSS if the source string contains unsanitized user data. - **Fix**: Use textContent or a templating engine that auto‑escapes, or sanitize the string with …",
-      "t": 1789254750365,
+      "who": "LaForge",
+      "text": "We need to create a Substack account. We have to use the shared Gmail [email]. We need to use password C0de122122. Prefer sign up with Google. We need to simulate actions. We need to output a single JSON action. We need to decide which action to take next. The page shows \"Create account\" button. We can click that. Then likely a modal appears with options. We can click \"Sign up with Google\". Since we are logged into Gmail? The instruction says prefer \"Sign up with Google\" / OAuth if available (the Gmail is already logged in). So we should click \"Sign up with Google\". But we need to confirm the …",
+      "t": 1789254907476,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789254748395,
+      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"403 blocked\"}",
+      "t": 1789254859790,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789254748394,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789254743630,
+      "text": "keyhunter: googleailanguagemodels in cooldown (last attempt 112m ago) — skip",
+      "t": 1789254859790,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: nvidia in cooldown (last attempt 110m ago) — skip",
-      "t": 1789254742037,
+      "text": "self-heal: disabled provider deepinfra",
+      "t": 1789254846281,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
-      "t": 1789254742037,
+      "text": "self-heal complete: 6 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter; disabled provider deepinfra",
+      "t": 1789254846281,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 110m ago) — skip",
-      "t": 1789254742037,
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789254846280,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join?next=/models)",
-      "t": 1789254742037,
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789254846279,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789254846278,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789254846278,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789254846277,
       "type": "event"
     }
   ],
@@ -1961,7 +1913,7 @@
     }
   ],
   "ledger": {
-    "total": 1097,
+    "total": 1099,
     "revenue": 0,
     "effects": 160,
     "boundary": 1,
@@ -1973,7 +1925,6 @@
     "priority": "A unique, underserved customer problem with clear willingness-to-pay and a real path to revenue"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -2000,17 +1951,18 @@
     0,
     1,
     0,
-    0,
-    14,
-    14
+    5,
+    20,
+    15,
+    3
   ],
   "load": {
     "loadavg": [
-      1.16,
+      0.87,
       0.68,
-      0.39
+      0.41
     ],
-    "ramPct": 63,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2020,7 +1972,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
@@ -2060,7 +2012,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2096,12 +2048,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2899,8 +2846,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 13,
-        "vramPct": 52
+        "utilPct": 7,
+        "vramPct": 83
       },
       {
         "alias": "GPU-Node-2",
@@ -2917,11 +2864,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 1
+        "utilPct": 9,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 94,
+    "selfHostedInferencePct": 95,
     "jobsProcessed": 179
   }
 }
