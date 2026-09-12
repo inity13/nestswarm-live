@@ -1,5 +1,5 @@
 {
-  "generated": 1789219893830,
+  "generated": 1789219938750,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: nvidia step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789219901679,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Beehiiv step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789219901005,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789219900045,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Beehiiv step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789219864106,
       "type": "event"
@@ -1577,27 +1595,27 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1789218962849,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789218962848,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789218948617,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789218948617,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789219901679,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Beehiiv step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789219901005,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789219900045,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: Beehiiv step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
@@ -1620,54 +1638,6 @@
       "who": "swarm",
       "text": "keyhunter: openrouter entering verification code from inbox",
       "t": 1789219848984,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Beehiiv (revenue)",
-      "t": 1789219841520,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter needs email verification — reading inbox",
-      "t": 1789219826678,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789219822183,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 9 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789219819095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack needs email verification — reading inbox",
-      "t": 1789219818683,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789219818681,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 8 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789219813993,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789219813175,
       "type": "event"
     }
   ],
@@ -1901,6 +1871,15 @@
     0,
     1,
     0,
+    13,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     0,
     14,
     0,
@@ -1909,31 +1888,22 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     13,
     0,
     1,
-    0,
-    0,
-    1,
-    0,
+    16,
+    2,
+    39,
+    15,
+    12,
     13,
-    1,
-    0,
-    18,
-    1,
-    49,
-    6,
-    17,
-    6
+    8
   ],
   "load": {
     "loadavg": [
-      3.62,
-      1.92,
-      0.93
+      3.03,
+      2.01,
+      1
     ],
     "ramPct": 82,
     "cpus": 12
@@ -1973,7 +1943,7 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "conductor": {
@@ -2829,8 +2799,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 18
+        "utilPct": 8,
+        "vramPct": 69
       },
       {
         "alias": "GPU-Node-2",
