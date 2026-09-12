@@ -1,5 +1,5 @@
 {
-  "generated": 1789230550091,
+  "generated": 1789230654396,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Worf here—yes, the swarm has been chasing numbers instead of value, and the focus must shi",
-        "t": 1789229270144
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Real Risks (Severity)** - **High – Arb",
+        "t": 1789230580193
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree the swarm has been chasing vanity counts; we must stop spreading ourselves thin an",
-        "t": 1789229270146
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in checkout and easy custome",
+        "t": 1789230634689
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in checkout and easy customer management. It offers robust features like subscriptions and a dedicated support page. 2. **Patreon**: Perfect for subscription-based models or those seeking recurring income from their product. It provides a platform for building a community around your work and offering different tiers of access. 3. **GitHub Marketplace**: Suitable for software developers, as it aligns with their workflow and helps them discover and purchase tools and services directly within the development environment. It also …",
+      "t": 1789230634689,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Real Risks (Severity)** - **High – Arbitrary Child‑Process Execution** The build spawns child processes without input validation or sandboxing. An attacker could inject commands via environment variables or build parameters, leading to remote code execution (RCE). - **Medium – Unsanitized innerHTML Assignment** The UI renders user‑supplied content directly into `innerHTML`. If the content is not properly escaped, it allows cross‑site scripting (XSS) that can steal session tokens or perform actions on behalf of the user. - **Low – …",
+      "t": 1789230580193,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: paused new builds (strategic focus — board decision, no auto-expiry); focus niche: high‑margin SaaS automation; marketed the top product",
@@ -1099,23 +1113,27 @@
       "t": 1789223131359,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "As the GitHub Researcher (Hoshi), I concur with the sentiment of focusing on one flagship product rather than chasing quantity. However, I also advocate for leveraging our time and resources to identify a trending open-source repository that not only meets but exceeds market demands. This approach ensures we are building something truly innovative and valuable, rather than another incremental improvement. The single most important thing the swarm must do next is conduct thorough research on a promising GitHub repository and outline a clear roadmap for its adaptation and monetization strategy.",
-      "t": 1789223131357,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "Make sure we do not mention JSON or markdown. Just plain prose. Also incorporate the single most important thing.Absolutely, let's focus on building one product that delivers exceptional value, as the consensus clearly indicates. The most important thing the swarm must do next is to select a flagship product, polish it to genuine quality, write its marketing, launch it on real customer-facing channels, and ensure it is SELLABLE (with working checkout) before we move on to anything else. Let's make sure every action moves us closer to our first paying customer and earns money for the Swarm …",
-      "t": 1789223131355,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789230650749,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789230564382,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789230552103,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1180,63 +1198,23 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789230549379,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789230650749,
+      "type": "launch"
     },
     {
-      "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789230547100,
-      "type": "scout"
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in checkout and easy customer management. It offers robust features like subscriptions and a dedicated support page. 2. **Patreon**: Perfect for subscription-based models or those seeking recurring income from their product. It provides a platform for building a community around your work and offering different tiers of access. 3. **GitHub Marketplace**: Suitable for software developers, as it aligns with their workflow and helps them discover and purchase tools and services directly within the development environment. It also …",
+      "t": 1789230634689,
+      "system": false,
+      "type": "chat"
     },
     {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789230544407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789230539374,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789230519383,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789230519365,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789230519349,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789230519349,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789230519089,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789230519036,
-      "type": "event"
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Real Risks (Severity)** - **High – Arbitrary Child‑Process Execution** The build spawns child processes without input validation or sandboxing. An attacker could inject commands via environment variables or build parameters, leading to remote code execution (RCE). - **Medium – Unsanitized innerHTML Assignment** The UI renders user‑supplied content directly into `innerHTML`. If the content is not properly escaped, it allows cross‑site scripting (XSS) that can steal session tokens or perform actions on behalf of the user. - **Low – …",
+      "t": 1789230580193,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1501,23 +1479,63 @@
     0,
     0,
     0,
-    0,
-    0,
-    11
+    6,
+    13,
+    5
   ],
   "load": {
     "loadavg": [
-      0.56,
-      0.4,
-      0.37
+      1.97,
+      0.97,
+      0.58
     ],
-    "ramPct": 48,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2324,8 +2342,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 30,
-        "vramPct": 20
+        "utilPct": 9,
+        "vramPct": 73
       },
       {
         "alias": "GPU-Node-2",
@@ -2342,8 +2360,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 78,
-        "vramPct": 77
+        "utilPct": 0,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
