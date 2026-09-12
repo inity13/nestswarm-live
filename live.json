@@ -1,5 +1,5 @@
 {
-  "generated": 1789185373050,
+  "generated": 1789185418296,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789185374454,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3463MB free)",
+      "t": 1789185374453,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1789185366047,
       "type": "event"
@@ -1583,21 +1595,21 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1789182963190,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789182956455,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789182956455,
-      "type": "event"
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789185374454,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3463MB free)",
+      "t": 1789185374453,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1892,7 +1904,6 @@
     "priority": "the top product or niche to focus next"
   },
   "throughput": [
-    2,
     1,
     0,
     0,
@@ -1901,8 +1912,8 @@
     0,
     1,
     0,
-    13,
-    1,
+    8,
+    6,
     0,
     0,
     1,
@@ -1911,25 +1922,26 @@
     1,
     0,
     0,
-    14,
-    0,
-    0,
-    1,
-    0,
+    9,
+    5,
     0,
     1,
     0,
     0,
     1,
-    13
+    0,
+    0,
+    1,
+    8,
+    7
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.09,
-      0.07
+      0.2,
+      0.1,
+      0.08
     ],
-    "ramPct": 55,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2822,9 +2834,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 16
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
@@ -2841,7 +2853,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 3,
+        "utilPct": 0,
         "vramPct": 95
       }
     ],
