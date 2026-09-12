@@ -1,5 +1,5 @@
 {
-  "generated": 1789233037770,
+  "generated": 1789233083555,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity Ranking** - **High – Child‑pr",
         "t": 1789232956424
@@ -1118,6 +1118,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789233082757,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789233082757,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789233082757,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789233073870,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2979MB free)",
+      "t": 1789233073867,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789233068810,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789233064158,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789233051646,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "launcher: 2 distribution action(s) this pass",
       "t": 1789232964025,
       "type": "launch"
@@ -1221,40 +1269,57 @@
   ],
   "recent": [
     {
-      "who": "LaForge",
-      "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built‑in analytics and coupon system let us test pricing and run limited‑time**1. Gumroad** – It offers instant, no-friction checkout for single-price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built-in analytics and coupon system let us test pricing and run limited-time promotions to drive initial sales. **2. Product Hunt** – With over 50 …",
-      "t": 1789233035763,
-      "system": false,
-      "type": "chat"
-    },
-    {
       "who": "swarm",
-      "text": "launcher: 2 distribution action(s) this pass",
-      "t": 1789232964025,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "dev.to: published \"CryptoPilot MT: Your Personal Crypto Navigator | Simplify Trading\" -> https://dev.to/nest_swarm/cryptopilot-mt-your-personal-crypto-navigator-simplify-trading-49cg",
-      "t": 1789232964023,
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789233082757,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launcher: published CryptoPilot MT on dev.to → https://dev.to/nest_swarm/cryptopilot-mt-your-personal-crypto-navigator-simplify-trading-49cg",
-      "t": 1789232964023,
-      "type": "launch"
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789233082757,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launcher: gumroad failed for InsightCraft: gumroad create failed: New products should be created with a price",
-      "t": 1789232963075,
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789233082757,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789233073870,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2979MB free)",
+      "t": 1789233073867,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789233068810,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789233064158,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789233051646,
       "type": "launch"
     },
     {
-      "who": "Sentinel",
-      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity Ranking** - **High – Child‑process spawning**: arbitrary commands can be injected, leading to privilege escalation or DoS. - **High – `innerHTML` assignment**: unsanitized data can inject scripts → XSS. - **Medium – Static‑serve tool exposure**: default config may expose source files and logs. 2. **Concrete Fixes** - **Child processes**: replace `child_process.exec` with a whitelist‑only wrapper (e.g., `child_process.spawn` with a fixed command list). Validate all arguments server‑side and run under least‑privileged user. - …",
-      "t": 1789232956424,
+      "who": "LaForge",
+      "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built‑in analytics and coupon system let us test pricing and run limited‑time**1. Gumroad** – It offers instant, no-friction checkout for single-price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built-in analytics and coupon system let us test pricing and run limited-time promotions to drive initial sales. **2. Product Hunt** – With over 50 …",
+      "t": 1789233035763,
       "system": false,
       "type": "chat"
     }
@@ -1520,18 +1585,18 @@
     0,
     0,
     0,
-    0,
     6,
-    15,
-    4
+    11,
+    6,
+    13
   ],
   "load": {
     "loadavg": [
-      3.22,
-      2.11,
-      1.59
+      2.76,
+      2.18,
+      1.64
     ],
-    "ramPct": 46,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1567,6 +1632,18 @@
       "publisher": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       }
     },
     "free": [
@@ -1592,7 +1669,7 @@
         "active": 1
       },
       "donation": {
-        "total": 9,
+        "total": 10,
         "active": 1
       },
       "bounty": {
@@ -1600,7 +1677,7 @@
         "active": 0
       },
       "marketplace": {
-        "total": 11,
+        "total": 10,
         "active": 1
       },
       "subscription": {
@@ -1887,7 +1964,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "marketplace",
+        "kind": "donation",
         "active": false,
         "captcha": false
       },
@@ -2368,10 +2445,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 89,
-        "vramPct": 82
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
@@ -2388,8 +2465,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 77
+        "utilPct": 2,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
