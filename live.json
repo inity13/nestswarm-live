@@ -1,5 +1,5 @@
 {
-  "generated": 1789233407978,
+  "generated": 1789233498721,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We need to interact with the page. The page is empty? Maybe the page hasn't loaded. We nee",
         "t": 1789233348913
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789233437958,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789233379369,
       "type": "bench"
@@ -1366,105 +1372,8 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789233379369,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3606MB free)",
-      "t": 1789233379368,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 2 distribution action(s) this pass",
-      "t": 1789233379321,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: published InsightCraft on dev.to → https://dev.to/nest_swarm/revolutionize-your-legal-practice-with-insightcraft-5h30",
-      "t": 1789233379318,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "dev.to: published \"Revolutionize Your Legal Practice with InsightCraft\" -> https://dev.to/nest_swarm/revolutionize-your-legal-practice-with-insightcraft-5h30",
-      "t": 1789233379317,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: gumroad failed for InsightDraft: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
-      "t": 1789233378387,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: googleailanguagemodels scraped an invalid key — not enabling (cooldown)",
-      "t": 1789233372022,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: googleailanguagemodels key validation -> invalid ❌",
-      "t": 1789233372021,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"403 Forbidden error encountered. Unable to proceed.\"}",
-      "t": 1789233369960,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting googleailanguagemodels (https://cloud.google.com/ai-platform)",
-      "t": 1789233369960,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name=\\\"email\\\"]\",\"value\":\"[email]\"}",
-      "t": 1789233348918,
-      "type": "event"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to interact with the page. The page is empty? Maybe the page hasn't loaded. We need to click \"Sign up\" or \"Join\". The URL is https://huggingface.co/join?next=/models. We need to create account with email [email]. We need to type email, password, maybe confirm. Let's inspect typical join page. Usually there is a form with email, password, confirm password, maybe \"Sign up\" button. We need to type email into input with placeholder \"Email\" or name \"email\". Let's guess selector: input[name=\"email\"] or input[type=\"email\"]. We'll type email. Then click next. But we might need to click …",
-      "t": 1789233348913,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789233320664,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia already has a working key — skip",
-      "t": 1789233319111,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
-      "t": 1789233319111,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 12m ago) — skip",
-      "t": 1789233319111,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join?next=/models)",
-      "t": 1789233319111,
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789233437958,
       "type": "event"
     }
   ],
@@ -1691,7 +1600,7 @@
     }
   ],
   "ledger": {
-    "total": 1073,
+    "total": 1077,
     "revenue": 0,
     "effects": 148,
     "boundary": 1,
@@ -1726,21 +1635,21 @@
     0,
     0,
     0,
-    0,
-    0,
-    13,
-    16,
-    7,
+    6,
+    14,
     15,
-    19
+    9,
+    19,
+    11,
+    2
   ],
   "load": {
     "loadavg": [
-      1.01,
-      1.75,
-      1.63
+      0.29,
+      1.33,
+      1.49
     ],
-    "ramPct": 54,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1754,7 +1663,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
@@ -2624,8 +2533,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 52
+        "utilPct": 2,
+        "vramPct": 84
       },
       {
         "alias": "GPU-Node-2",
@@ -2642,11 +2551,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 91,
+    "selfHostedInferencePct": 92,
     "jobsProcessed": 179
   }
 }
