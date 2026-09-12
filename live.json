@@ -1,5 +1,5 @@
 {
-  "generated": 1789232933549,
+  "generated": 1789233037770,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: High – Child‑process spawnin",
-        "t": 1789232587304
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity Ranking** - **High – Child‑pr",
+        "t": 1789232956424
       }
     },
     {
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": true,
       "last": {
-        "text": "We need to interact with replicate.com sign in. We have to use email [email] and password.",
-        "t": 1789232862774
+        "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, p",
+        "t": 1789233035763
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built‑in analytics and coupon system let us test pricing and run limited‑time**1. Gumroad** – It offers instant, no-friction checkout for single-price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built-in analytics and coupon system let us test pricing and run limited-time promotions to drive initial sales. **2. Product Hunt** – With over 50 …",
+      "t": 1789233035763,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity Ranking** - **High – Child‑process spawning**: arbitrary commands can be injected, leading to privilege escalation or DoS. - **High – `innerHTML` assignment**: unsanitized data can inject scripts → XSS. - **Medium – Static‑serve tool exposure**: default config may expose source files and logs. 2. **Concrete Fixes** - **Child processes**: replace `child_process.exec` with a whitelist‑only wrapper (e.g., `child_process.spawn` with a fixed command list). Validate all arguments server‑side and run under least‑privileged user. - …",
+      "t": 1789232956424,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "ChatGPT image generation is available for marketing — I use the ChatGPT bridge to create hero/social images for products (saved under marketing/assets/).",
@@ -1099,23 +1113,51 @@
       "t": 1789225219597,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "We stop chasing ideas and lock onto one shipped product—anywhere in the catalog—and make it better, not bigger. The single most important thing: pick a flagship, polish it to revenue-ready perfection, and launch it with working checkout. No more half-baked catalogs, no more idea-spam. Just one product, done right.",
-      "t": 1789225219595,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "You’re all correct to demand an end to idea-spam, but let’s not confuse \"simple\" with \"basic\"—the flagship must be lean, *not* barebones. The single most important thing the swarm must do next is lock onto one product, build it to working, revenue-ready MVP status, and get it listed on at least one marketplace or with a functioning checkout—no more half-finished ideas, no more chasing breadth, only execution.",
-      "t": 1789225219594,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789232964025,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"CryptoPilot MT: Your Personal Crypto Navigator | Simplify Trading\" -> https://dev.to/nest_swarm/cryptopilot-mt-your-personal-crypto-navigator-simplify-trading-49cg",
+      "t": 1789232964023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published CryptoPilot MT on dev.to → https://dev.to/nest_swarm/cryptopilot-mt-your-personal-crypto-navigator-simplify-trading-49cg",
+      "t": 1789232964023,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for InsightCraft: gumroad create failed: New products should be created with a price",
+      "t": 1789232963075,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789232947745,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, openrouter) · 0 zen free models",
+      "t": 1789232943431,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789232935552,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1179,69 +1221,40 @@
   ],
   "recent": [
     {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789232932786,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789232932784,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789232927771,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789232922736,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789232902750,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789232902730,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789232902711,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789232902711,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789232902554,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789232902509,
-      "type": "event"
-    },
-    {
       "who": "LaForge",
-      "text": "We need to interact with replicate.com sign in. We have to use email [email] and password. We need to sign in via GitHub? The page shows \"Sign in with GitHub\". But we can also sign up. We need to get API key. We need to use headless browser. We need to produce JSON action. We need to decide next step: click \"Sign in with GitHub\" or maybe sign up. We have email and password. But replicate uses GitHub sign in. We might need to sign up with email? Let's inspect the page. The text shows \"Sign in with GitHub\". There's no email field. So we need to click \"Sign in with GitHub\". Then we need to …",
-      "t": 1789232862774,
+      "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built‑in analytics and coupon system let us test pricing and run limited‑time**1. Gumroad** – It offers instant, no-friction checkout for single-price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built-in analytics and coupon system let us test pricing and run limited-time promotions to drive initial sales. **2. Product Hunt** – With over 50 …",
+      "t": 1789233035763,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789232964025,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"CryptoPilot MT: Your Personal Crypto Navigator | Simplify Trading\" -> https://dev.to/nest_swarm/cryptopilot-mt-your-personal-crypto-navigator-simplify-trading-49cg",
+      "t": 1789232964023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published CryptoPilot MT on dev.to → https://dev.to/nest_swarm/cryptopilot-mt-your-personal-crypto-navigator-simplify-trading-49cg",
+      "t": 1789232964023,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for InsightCraft: gumroad create failed: New products should be created with a price",
+      "t": 1789232963075,
+      "type": "launch"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity Ranking** - **High – Child‑process spawning**: arbitrary commands can be injected, leading to privilege escalation or DoS. - **High – `innerHTML` assignment**: unsanitized data can inject scripts → XSS. - **Medium – Static‑serve tool exposure**: default config may expose source files and logs. 2. **Concrete Fixes** - **Child processes**: replace `child_process.exec` with a whitelist‑only wrapper (e.g., `child_process.spawn` with a fixed command list). Validate all arguments server‑side and run under least‑privileged user. - …",
+      "t": 1789232956424,
       "system": false,
       "type": "chat"
     }
@@ -1469,9 +1482,9 @@
     }
   ],
   "ledger": {
-    "total": 1064,
+    "total": 1065,
     "revenue": 0,
-    "effects": 144,
+    "effects": 145,
     "boundary": 1,
     "artifacts": 97,
     "receipts": 0
@@ -1508,24 +1521,56 @@
     0,
     0,
     0,
-    0,
-    0,
-    10
+    6,
+    15,
+    4
   ],
   "load": {
     "loadavg": [
-      1.42,
-      1.73,
-      1.43
+      3.22,
+      2.11,
+      1.59
     ],
-    "ramPct": 45,
+    "ramPct": 46,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      }
+    },
     "free": [
       "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2325,8 +2370,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 21,
-        "vramPct": 49
+        "utilPct": 89,
+        "vramPct": 82
       },
       {
         "alias": "GPU-Node-2",
@@ -2343,11 +2388,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 18,
-        "vramPct": 91
+        "utilPct": 0,
+        "vramPct": 77
       }
     ],
-    "selfHostedInferencePct": 0,
+    "selfHostedInferencePct": 100,
     "jobsProcessed": 179
   }
 }
