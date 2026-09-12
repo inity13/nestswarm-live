@@ -1,5 +1,5 @@
 {
-  "generated": 1789232105907,
+  "generated": 1789232210184,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -122,10 +122,10 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "\"DeepInfra\" maybe? They have \"DeepInfra\" with /v1/chat/completions? They provide an Open{\"",
-        "t": 1789231672309
+        "text": "Let's search memory: \"OpenAI-compatible endpoint\" includes \"OpenRouter\" (excluded). \"Toget",
+        "t": 1789232164982
       }
     },
     {
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: Critical – Arbitrary Child‑P",
-        "t": 1789231716489
+        "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**:",
+        "t": 1789232140312
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We need to perform actions to create Substack account. We have email [email] and password.",
-        "t": 1789232006655
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software, maki",
+        "t": 1789232188006
       }
     },
     {
@@ -274,6 +274,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software, making it perfect for ScopeSage and FitCue's targeted markets. 2. **Payhip**: Offers a wide range of payment options and customizable checkout pages, ideal for reaching a broader audience across different demographics. 3. **GitHub**: Perfect for launching InsightMentor and CryptoPilot MT as premium software products with features like subscription plans and advanced access levels. These channels provide robust platforms with diverse user bases and built-in marketing tools to maximize reach and conversions.",
+      "t": 1789232188006,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Quark",
+      "text": "Let's search memory: \"OpenAI-compatible endpoint\" includes \"OpenRouter\" (excluded). \"Together.ai\" offers /v1/chat/completions. \"Cohere\" has /chat? They have /chat? They have /v1/chat? They have /chat? They have /v1/chat? They have /v1/chat? They have /vAlso \"{\"providers\":[{\"name\":\"Together.ai\",\"baseUrl\":\"https://api.together.xyz/v1/chat/completions\",\"model\":\"together/t5-base\",\"needsKey\":true,\"signup\":\"https://app.together.ai/signup\"},{\"name\":\"Cohere\",\"baseUrl\":\"https://api.cohere.ai/v1/chat\",\"model\":\"commander-xlarge\",\"needsKey\":true,\"signup\":\"https://cohere.com/pricing\"},{\"name\":\"Hugging …",
+      "t": 1789232164982,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not sanitized. 2. **Child Process Spawning**: This could lead to security vulnerabilities, including privilege escalation and resource exhaustion. 3. **Static-serve Tool Exposure**: If the static-serve tool is exposed without proper authentication, it could serve malicious content. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all user inputs before assigning them to innerHTML. 2. **Child Process Spawning Fix**: Review …",
+      "t": 1789232140312,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "We need to perform actions to create Substack account. We have email [email] and password. We need to use \"Sign up with Google\" if available. We need to output JSON action. We need to simulate step-by-step. We need to check if \"Sign up with Google\" button exists. The page text shows \"Sign in\", \"Create account\". Likely \"Create account\" leads to sign up page. Let's click \"Create account\". Then we need to choose \"Sign up with Google\". But we might need to click \"Create account\" first. So first action: click \"Create account\". Then wait for page load. Then click \"Sign up with Google\". But we need …",
@@ -1092,30 +1113,99 @@
       "t": 1789225219575,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "**LaForge (Distributor) Position:** I believe our focus should be on refining and launching a single flagship product that delivers real value to customers. We need to polish it to genuine quality, complete its market-ready launch, and start generating revenue before expanding the catalog. **Demand for Improvement:** The team must stop creating new product ideas until we have successfully launched and monetized our current flagship. Let’s lock onto a single MVP, iterate it until it is perfect, and then ship it live before moving on to anything else.",
-      "t": 1789225219571,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "My position: I insist that every line of code, every dependency, and every credential be verified for safety before any product ever leaves the build environment; no compromise on security for revenue. The team must adopt a mandatory CI pipeline that runs static analysis, secret scanning, and vulnerability checks, and blocks any merge or deployment that fails these checks.",
-      "t": 1789225219570,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "**Quark:** The swarm needs to focus on delivering a single, polished product that solves a real problem for customers. We should abandon half-baked ideas and instead iterate on our flagship offering until it’s selling like hotcakes. Let's demand nothing less than absolute perfection before moving on.",
-      "t": 1789225219568,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789232208042,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3107MB free)",
+      "t": 1789232208041,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789232203873,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789232184946,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
+      "t": 1789232184946,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789232184945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789232165119,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
+      "t": 1789232165118,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789232164987,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: togetherai — queued for key hunter",
+      "t": 1789232164986,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1789232164986,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 1 distribution action(s) this pass",
+      "t": 1789232135454,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for ScopeSage: gumroad create failed: New products should be created with a price",
+      "t": 1789232135450,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789232120171,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789232108051,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1180,63 +1270,102 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789232105219,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789232208042,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3107MB free)",
+      "t": 1789232208041,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789232203873,
+      "type": "launch"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software, making it perfect for ScopeSage and FitCue's targeted markets. 2. **Payhip**: Offers a wide range of payment options and customizable checkout pages, ideal for reaching a broader audience across different demographics. 3. **GitHub**: Perfect for launching InsightMentor and CryptoPilot MT as premium software products with features like subscription plans and advanced access levels. These channels provide robust platforms with diverse user bases and built-in marketing tools to maximize reach and conversions.",
+      "t": 1789232188006,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789232184946,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
-      "t": 1789232102146,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789232100200,
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
+      "t": 1789232184946,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789232095182,
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789232184945,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789232075175,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789232165119,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789232075157,
+      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
+      "t": 1789232165118,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789232075126,
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789232164987,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789232075125,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789232074918,
+      "text": "scout discovered key-gated free provider: togetherai — queued for key hunter",
+      "t": 1789232164986,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789232074871,
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1789232164986,
       "type": "event"
+    },
+    {
+      "who": "Quark",
+      "text": "Let's search memory: \"OpenAI-compatible endpoint\" includes \"OpenRouter\" (excluded). \"Together.ai\" offers /v1/chat/completions. \"Cohere\" has /chat? They have /chat? They have /v1/chat? They have /chat? They have /v1/chat? They have /v1/chat? They have /vAlso \"{\"providers\":[{\"name\":\"Together.ai\",\"baseUrl\":\"https://api.together.xyz/v1/chat/completions\",\"model\":\"together/t5-base\",\"needsKey\":true,\"signup\":\"https://app.together.ai/signup\"},{\"name\":\"Cohere\",\"baseUrl\":\"https://api.cohere.ai/v1/chat\",\"model\":\"commander-xlarge\",\"needsKey\":true,\"signup\":\"https://cohere.com/pricing\"},{\"name\":\"Hugging …",
+      "t": 1789232164982,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not sanitized. 2. **Child Process Spawning**: This could lead to security vulnerabilities, including privilege escalation and resource exhaustion. 3. **Static-serve Tool Exposure**: If the static-serve tool is exposed without proper authentication, it could serve malicious content. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all user inputs before assigning them to innerHTML. 2. **Child Process Spawning Fix**: Review …",
+      "t": 1789232140312,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 1 distribution action(s) this pass",
+      "t": 1789232135454,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for ScopeSage: gumroad create failed: New products should be created with a price",
+      "t": 1789232135450,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1501,23 +1630,63 @@
     0,
     0,
     0,
-    0,
-    0,
-    11
+    6,
+    14,
+    16
   ],
   "load": {
     "loadavg": [
-      1.36,
-      1.15,
-      0.81
+      2.67,
+      1.73,
+      1.07
     ],
-    "ramPct": 48,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2321,10 +2490,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 19,
-        "vramPct": 21
+        "busy": false,
+        "warm": true,
+        "utilPct": 8,
+        "vramPct": 45
       },
       {
         "alias": "GPU-Node-2",
@@ -2341,7 +2510,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 27,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
