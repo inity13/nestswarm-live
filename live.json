@@ -1,5 +1,5 @@
 {
-  "generated": 1789222558892,
+  "generated": 1789222603506,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789222595792,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789222590802,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3473MB free)",
+      "t": 1789222590791,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
       "t": 1789222538128,
       "type": "event"
@@ -1204,6 +1222,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789222595792,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789222590802,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3473MB free)",
+      "t": 1789222590791,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
       "t": 1789222538128,
       "type": "event"
@@ -1212,42 +1248,6 @@
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789222523947,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 157 products with flags, 1 with high-severity findings",
-      "t": 1789222512875,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789222497879,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (5 notes updated)",
-      "t": 1789222497876,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1789222494146,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789222492900,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789222487871,
       "type": "event"
     }
   ],
@@ -1505,17 +1505,17 @@
     0,
     0,
     0,
-    0,
-    12,
-    5
+    6,
+    11,
+    4
   ],
   "load": {
     "loadavg": [
-      1.5,
-      0.81,
-      0.68
+      2.14,
+      1.07,
+      0.77
     ],
-    "ramPct": 51,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1530,6 +1530,10 @@
       },
       "scout": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2340,8 +2344,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 8,
-        "vramPct": 43
+        "utilPct": 25,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2358,8 +2362,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 0
+        "utilPct": 75,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 100,
