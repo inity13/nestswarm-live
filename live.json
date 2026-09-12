@@ -1,5 +1,5 @@
 {
-  "generated": 1789222603506,
+  "generated": 1789222648592,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789222647874,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789222647874,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789222595792,
       "type": "launch"
@@ -1222,6 +1234,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789222647874,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789222647874,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789222595792,
       "type": "launch"
@@ -1237,18 +1261,6 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3473MB free)",
       "t": 1789222590791,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1789222538128,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789222523947,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1504,18 +1516,18 @@
     0,
     0,
     0,
-    0,
     6,
-    11,
-    4
+    9,
+    3,
+    6
   ],
   "load": {
     "loadavg": [
-      2.14,
-      1.07,
+      1.33,
+      1.02,
       0.77
     ],
-    "ramPct": 59,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1534,6 +1546,10 @@
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2344,8 +2360,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 25,
-        "vramPct": 50
+        "utilPct": 27,
+        "vramPct": 51
       },
       {
         "alias": "GPU-Node-2",
@@ -2362,8 +2378,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 75,
-        "vramPct": 77
+        "utilPct": 1,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
