@@ -1,5 +1,5 @@
 {
-  "generated": 1789232566168,
+  "generated": 1789232670366,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": true,
       "last": {
-        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Unrestricted Child Process Creation** ",
-        "t": 1789232490103
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: High – Child‑process spawnin",
+        "t": 1789232587304
       }
     },
     {
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": true,
       "last": {
-        "text": "1. **Gumroad** - Ideal for digital products with direct sales, especially since ScopeSage ",
-        "t": 1789232491749
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software. It h",
+        "t": 1789232639513
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software. It has a focus on premium items that fit ScopeSage's target market of freelancers and solopreneurs. 2. **Product Hunt**: A great platform to introduce FitCue to potential customers who are looking for productivity tools in health, fitness, and habit tracking. It can help drive initial traffic and generate buzz. 3. **Buy Me a Coffee**: Perfect for InsightMentor, especially since it’s a subscription-based product with a focus on travel, trip planning, and remote work. It allows for ongoing revenue generation …",
+      "t": 1789232639513,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: High – Child‑process spawning** *Risk:* Arbitrary code execution if attacker controls input to the spawn command. *Fix:* Replace `child_process.spawn` with a sandboxed wrapper that validates arguments against a whitelist and runs the process with the least privilege (e.g., `--no-privileges`, `--user=appuser`). Use `spawnSync` with `shell: false` and explicit `cwd`/`env` restrictions. 2. **Severity: High – `innerHTML` assignment** *Risk:* XSS if data is not fully sanitized. *Fix:* Switch to `textContent` or a templating engine that …",
+      "t": 1789232587304,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "1. **Gumroad** - Ideal for digital products with direct sales, especially since ScopeSage is priced at $79. 2. **Product Hunt** - Perfect for visibility and early traction, attracting potential customers through organic discovery. 3. **dev.to** - Suitable for technical audiences interested in freelancers and productivity tools like ScopeSage. These channels offer a combination of direct sales, exposure to niche communities, and easy integration with existing accounts.",
@@ -1099,23 +1113,117 @@
       "t": 1789225219587,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "I agree we must stop the idea‑spam and lock on a single revenue‑ready stack, but obsessing over checkout first will leave a product that looks great but never sells. The next step is to pick the highest‑margin, underserved vertical, draft a problem‑statement that no existing tool solves, and craft a one‑page MVP spec that turns that gap into a payable promise.",
-      "t": 1789225219585,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "payment-integrator",
-      "text": "I believe the flagship’s success hinges on a friction‑free, secure checkout that supports both traditional credit‑card/Stripe and a vetted crypto gateway; without that, polished features turn into lost leads. The team must implement a PCI‑compliant payment flow—Stripe integration with a reliable webhook for order fulfillment, plus a crypto payment processor, all tested end‑to‑end—before we ship the flagship.",
-      "t": 1789225219583,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789232655565,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789232649890,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3366MB free)",
+      "t": 1789232649889,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789232616382,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
+      "t": 1789232616382,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789232616381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789232596634,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published FitCue on dev.to → https://dev.to/nest_swarm/fitcue-micro-workouts-max-results-2a8i",
+      "t": 1789232596632,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"FitCue: Micro-Workouts, Max Results\" -> https://dev.to/nest_swarm/fitcue-micro-workouts-max-results-2a8i",
+      "t": 1789232596631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for CryptoPilot MT: gumroad create failed: New products should be created with a price",
+      "t": 1789232595711,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: vercelai — queued for key hunter",
+      "t": 1789232593618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: replicate — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: aidungeon — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789232580341,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789232568138,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1186,81 +1294,111 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789232565377,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789232655565,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1789232565373,
-      "type": "vault"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789232649890,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
-      "t": 1789232564940,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789232560360,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789232555334,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789232535333,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789232535320,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789232535296,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789232535295,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789232535140,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789232535100,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3366MB free)",
+      "t": 1789232649889,
+      "type": "bench"
     },
     {
       "who": "LaForge",
-      "text": "1. **Gumroad** - Ideal for digital products with direct sales, especially since ScopeSage is priced at $79. 2. **Product Hunt** - Perfect for visibility and early traction, attracting potential customers through organic discovery. 3. **dev.to** - Suitable for technical audiences interested in freelancers and productivity tools like ScopeSage. These channels offer a combination of direct sales, exposure to niche communities, and easy integration with existing accounts.",
-      "t": 1789232491749,
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like software. It has a focus on premium items that fit ScopeSage's target market of freelancers and solopreneurs. 2. **Product Hunt**: A great platform to introduce FitCue to potential customers who are looking for productivity tools in health, fitness, and habit tracking. It can help drive initial traffic and generate buzz. 3. **Buy Me a Coffee**: Perfect for InsightMentor, especially since it’s a subscription-based product with a focus on travel, trip planning, and remote work. It allows for ongoing revenue generation …",
+      "t": 1789232639513,
       "system": false,
       "type": "chat"
     },
     {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789232616382,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider mistral; disabled provider gemini",
+      "t": 1789232616382,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789232616381,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789232596634,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published FitCue on dev.to → https://dev.to/nest_swarm/fitcue-micro-workouts-max-results-2a8i",
+      "t": 1789232596632,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"FitCue: Micro-Workouts, Max Results\" -> https://dev.to/nest_swarm/fitcue-micro-workouts-max-results-2a8i",
+      "t": 1789232596631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for CryptoPilot MT: gumroad create failed: New products should be created with a price",
+      "t": 1789232595711,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: vercelai — queued for key hunter",
+      "t": 1789232593618,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: replicate — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: aidungeon — queued for key hunter",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789232593340,
+      "type": "event"
+    },
+    {
       "who": "Sentinel",
-      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Unrestricted Child Process Creation** – *Severity: Critical* *Risk:* Arbitrary code execution if an attacker can influence the command string. *Fix:* Replace `child_process.exec` with `child_process.spawn` using a whitelist of allowed commands and arguments. Validate all inputs against a strict schema; reject any non‑literal values. 2. **Unsanitized `innerHTML` Assignment** – *Severity: High* *Risk:* XSS if user‑supplied data reaches the DOM. *Fix:* Use `textContent` or a templating engine that auto‑escapes. If `innerHTML` is unavoidable, …",
-      "t": 1789232490103,
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity: High – Child‑process spawning** *Risk:* Arbitrary code execution if attacker controls input to the spawn command. *Fix:* Replace `child_process.spawn` with a sandboxed wrapper that validates arguments against a whitelist and runs the process with the least privilege (e.g., `--no-privileges`, `--user=appuser`). Use `spawnSync` with `shell: false` and explicit `cwd`/`env` restrictions. 2. **Severity: High – `innerHTML` assignment** *Risk:* XSS if data is not fully sanitized. *Fix:* Switch to `textContent` or a templating engine that …",
+      "t": 1789232587304,
       "system": false,
       "type": "chat"
     }
@@ -1488,9 +1626,9 @@
     }
   ],
   "ledger": {
-    "total": 1054,
+    "total": 1055,
     "revenue": 0,
-    "effects": 141,
+    "effects": 142,
     "boundary": 1,
     "artifacts": 97,
     "receipts": 0
@@ -1527,21 +1665,70 @@
     0,
     0,
     0,
-    0,
-    0,
-    11
+    6,
+    21,
+    14
   ],
   "load": {
     "loadavg": [
-      0.81,
-      1.38,
-      1.15
+      2.93,
+      1.87,
+      1.34
     ],
-    "ramPct": 46,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      }
+    },
     "free": [
       "openai/gpt-oss-120b",
       "nvidia/nemotron-3.5-lightning-30b-a3b",
@@ -2344,8 +2531,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 28,
-        "vramPct": 23
+        "utilPct": 2,
+        "vramPct": 20
       },
       {
         "alias": "GPU-Node-2",
@@ -2362,11 +2549,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 0,
+    "selfHostedInferencePct": 100,
     "jobsProcessed": 179
   }
 }
