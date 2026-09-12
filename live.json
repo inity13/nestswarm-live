@@ -1,5 +1,5 @@
 {
-  "generated": 1789224855295,
+  "generated": 1789224944550,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789224924124,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3778MB free)",
+      "t": 1789224924122,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789224857546,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789224855700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 2m ago) — skip",
+      "t": 1789224855700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: groq already has a working key — skip",
       "t": 1789224854528,
       "type": "event"
@@ -1234,39 +1264,33 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: groq already has a working key — skip",
-      "t": 1789224854528,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789224924124,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3778MB free)",
+      "t": 1789224924122,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789224857546,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter already has a working key — skip",
-      "t": 1789224854528,
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789224855700,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789224854528,
+      "text": "keyhunter: gemini in cooldown (last attempt 2m ago) — skip",
+      "t": 1789224855700,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/67 channels active · 0 new discovered",
-      "t": 1789224842920,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1789224828989,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789224790065,
-      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1488,7 +1512,7 @@
     }
   ],
   "ledger": {
-    "total": 973,
+    "total": 975,
     "revenue": 0,
     "effects": 133,
     "boundary": 1,
@@ -1525,19 +1549,19 @@
     0,
     0,
     0,
-    0,
+    14,
+    10,
     6,
-    16,
-    7,
-    8
+    12,
+    7
   ],
   "load": {
     "loadavg": [
-      2.49,
-      1.62,
-      1.34
+      1.74,
+      1.67,
+      1.39
     ],
-    "ramPct": 57,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -1595,7 +1619,27 @@
         "tier": "local"
       },
       "github_researcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "payment-integrator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
     },
@@ -2399,10 +2443,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 17
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2417,13 +2461,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 11,
+        "busy": true,
+        "warm": false,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 83,
+    "selfHostedInferencePct": 87,
     "jobsProcessed": 179
   }
 }
