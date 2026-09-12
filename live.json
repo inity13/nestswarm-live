@@ -1,5 +1,5 @@
 {
-  "generated": 1789222498661,
+  "generated": 1789222528522,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789222523947,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789222512875,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1789222497879,
       "type": "event"
@@ -1184,6 +1196,18 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789222523947,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789222512875,
+      "type": "security"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1506,22 +1530,26 @@
     0,
     0,
     0,
-    0,
-    12
+    6,
+    9
   ],
   "load": {
     "loadavg": [
-      1.45,
-      0.65,
-      0.62
+      1.38,
+      0.72,
+      0.64
     ],
-    "ramPct": 48,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2332,8 +2360,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
-        "vramPct": 50
+        "utilPct": 8,
+        "vramPct": 20
       },
       {
         "alias": "GPU-Node-2",
@@ -2350,8 +2378,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 1
+        "utilPct": 78,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 100,
