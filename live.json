@@ -1,5 +1,5 @@
 {
-  "generated": 1789238539363,
+  "generated": 1789238628666,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789238574962,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3436MB free)",
+      "t": 1789238574960,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789238541343,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789238361206,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "launcher: gumroad failed for RealFlow MT: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
       "t": 1789233858341,
       "type": "launch"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789238574962,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789233739646,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3436MB free)",
+      "t": 1789238574960,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider googleailanguagemodels",
-      "t": 1789233739646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider googleailanguagemodels",
-      "t": 1789233739646,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789238541343,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1841,8 +1860,6 @@
     "priority": "Ultimate Swarm Security Suite"
   },
   "throughput": [
-    3,
-    0,
     0,
     1,
     0,
@@ -1870,15 +1887,17 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.09,
-      0.16
+      0.39,
+      0.24,
+      0.21
     ],
-    "ramPct": 49,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2765,9 +2784,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 23
+        "vramPct": 55
       },
       {
         "alias": "GPU-Node-2",
