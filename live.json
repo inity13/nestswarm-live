@@ -1,5 +1,5 @@
 {
-  "generated": 1789251141578,
+  "generated": 1789251230828,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789251177563,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2441MB free)",
+      "t": 1789251177560,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789251143700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789250963505,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "meeting actions taken: paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
       "t": 1789244204341,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789251177563,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2441MB free)",
+      "t": 1789251177560,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789244122959,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789244082095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — disabled provider gemini; disabled provider groq",
-      "t": 1789244082095,
+      "t": 1789251143700,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1845,8 +1864,6 @@
     "priority": "A unique, underserved customer problem with clear willingness-to-pay and a real path to revenue"
   },
   "throughput": [
-    3,
-    0,
     0,
     1,
     0,
@@ -1874,15 +1891,17 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.17,
-      0.29
+      0.55,
+      0.34,
+      0.34
     ],
-    "ramPct": 66,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -2765,9 +2784,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 21
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
