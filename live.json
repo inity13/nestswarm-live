@@ -1,5 +1,5 @@
 {
-  "generated": 1789208776911,
+  "generated": 1789208822188,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789208781945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789208781945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789208781944,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789208781944,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider gemini",
       "t": 1789208774434,
       "type": "event"
@@ -1571,33 +1595,33 @@
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
       "t": 1789205758760,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789208781945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789208781945,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1789205758759,
+      "t": 1789208781944,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
-      "t": 1789205758759,
+      "t": 1789208781944,
       "type": "event"
     },
-    {
-      "who": "swarm",
-      "text": "vault sync error: (b.competitors || []).map is not a function",
-      "t": 1789205745990,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789205745990,
-      "type": "event"
-    }
-  ],
-  "recent": [
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
@@ -1868,44 +1892,44 @@
     "priority": "Cognitive Concierge"
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    8,
+    6,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    9,
+    5,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
     2,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    13,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    14,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    2,
-    4,
-    15
+    5,
+    9,
+    14
   ],
   "load": {
     "loadavg": [
-      0.66,
-      0.36,
-      0.28
+      0.84,
+      0.45,
+      0.31
     ],
-    "ramPct": 64,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1967,15 +1991,15 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
-      },
-      "automation_operator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
-      "preflight": {
+      "automation_operator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2797,10 +2821,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 18
+        "utilPct": 7,
+        "vramPct": 43
       },
       {
         "alias": "GPU-Node-2",
@@ -2815,10 +2839,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 22,
-        "vramPct": 95
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 81
       }
     ],
     "selfHostedInferencePct": 82,
