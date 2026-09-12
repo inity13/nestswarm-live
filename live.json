@@ -1,5 +1,5 @@
 {
-  "generated": 1789254741690,
+  "generated": 1789254830778,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree that a single, well-polished flagship product is our best path to revenue and grow",
-        "t": 1789244158183
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Child‑process spawning** – *Critical* ",
+        "t": 1789254750365
       }
     },
     {
@@ -274,6 +274,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Child‑process spawning** – *Critical* - **Risk**: Arbitrary code execution if input to the spawned command is not strictly validated. - **Fix**: Replace `spawn` with a sandboxed executor (e.g., `child_process.execFile` with a whitelist of allowed binaries). Validate all arguments against a strict regex or a predefined list before execution. **2. `innerHTML` assignment** – *High* - **Risk**: XSS if the source string contains unsanitized user data. - **Fix**: Use textContent or a templating engine that auto‑escapes, or sanitize the string with …",
+      "t": 1789254750365,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Picard",
       "text": "```json { \"actions\": [ { \"type\": \"disable_provider\", \"name\": \"gemini\" }, { \"type\": \"disable_provider\", \"name\": \"groq\" }, { \"type\": \"disable_provider\", \"name\": \"nvidia\" }, { \"type\": \"disable_provider\", \"name\": \"openrouter\" }, { \"type\": \"disable_provider\", \"name\": \"deepinfra\" }, { \"type\": \"disable_provider\", \"name\": \"googleailanguagemodels\" } ] } ```",
@@ -1106,16 +1113,117 @@
       "t": 1789230995782,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "The swarm is indeed on the right track by focusing on clarity, quality, and delivering one outstanding product that earns revenue. However, we must be careful not to become overly cautious or perfectionist. The single most important thing we need to do next is **identify a zero-cost inference model** to streamline our process and reduce waste. This will help us stay agile while ensuring every decision aligns with the goal of generating revenue for the Swarm Protector.",
-      "t": 1789230995781,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789254811797,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2512MB free)",
+      "t": 1789254811792,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 4 operational improvement(s) recommended",
+      "t": 1789254798290,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789254798236,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-link-metadata-fix",
+      "t": 1789254798023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill fulfillment-loop-end-to-end",
+      "t": 1789254798023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill checkout-session-metadata-propagation",
+      "t": 1789254798023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: checkout-session-metadata-propagation",
+      "t": 1789254798020,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: fulfillment-loop-end-to-end",
+      "t": 1789254798019,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-link-metadata-fix",
+      "t": 1789254798018,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789254779135,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789254748395,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789254748394,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789254743630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 110m ago) — skip",
+      "t": 1789254742037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789254742037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 110m ago) — skip",
+      "t": 1789254742037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join?next=/models)",
+      "t": 1789254742037,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
@@ -1487,146 +1595,123 @@
       "text": "self-heal: disabled provider googleailanguagemodels",
       "t": 1789247657267,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider googleailanguagemodels",
-      "t": 1789247657267,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789247657266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789247657265,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789247631929,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789247613024,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3427MB free)",
-      "t": 1789247613022,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1789247592171,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 request(s) logged for the Swarm Protector",
-      "t": 1789247592125,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill chatgpt-image-generation-bridge",
-      "t": 1789247591884,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1789247591884,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill native-binary-toolchain-gate",
-      "t": 1789247591884,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: native-binary-toolchain-gate",
-      "t": 1789247591883,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1789247591880,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: chatgpt-image-generation-bridge",
-      "t": 1789247591878,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789247582358,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1789247582356,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1789247574044,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789247543371,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789254740580,
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789254811797,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2512MB free)",
+      "t": 1789254811792,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 4 operational improvement(s) recommended",
+      "t": 1789254798290,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789254740577,
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789254798236,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
-      "t": 1789254740576,
+      "text": "conductor created skill payment-link-metadata-fix",
+      "t": 1789254798023,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
-      "t": 1789254740576,
+      "text": "conductor created skill fulfillment-loop-end-to-end",
+      "t": 1789254798023,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "security scan: 157 products with flags, 1 with high-severity findings",
-      "t": 1789254740570,
-      "type": "security"
+      "text": "conductor created skill checkout-session-metadata-propagation",
+      "t": 1789254798023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: checkout-session-metadata-propagation",
+      "t": 1789254798020,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: fulfillment-loop-end-to-end",
+      "t": 1789254798019,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-link-metadata-fix",
+      "t": 1789254798018,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789254779135,
+      "type": "event"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Child‑process spawning** – *Critical* - **Risk**: Arbitrary code execution if input to the spawned command is not strictly validated. - **Fix**: Replace `spawn` with a sandboxed executor (e.g., `child_process.execFile` with a whitelist of allowed binaries). Validate all arguments against a strict regex or a predefined list before execution. **2. `innerHTML` assignment** – *High* - **Risk**: XSS if the source string contains unsanitized user data. - **Fix**: Use textContent or a templating engine that auto‑escapes, or sanitize the string with …",
+      "t": 1789254750365,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789254748395,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789254748394,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789254743630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 110m ago) — skip",
+      "t": 1789254742037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789254742037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 110m ago) — skip",
+      "t": 1789254742037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join?next=/models)",
+      "t": 1789254742037,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1676,7 +1761,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 1×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 2×"
     },
     {
       "name": "Shared memory",
@@ -1720,7 +1805,7 @@
     },
     {
       "name": "Reusable skills",
-      "desc": "49 skill(s) in the refinery"
+      "desc": "52 skill(s) in the refinery"
     },
     {
       "name": "buyer-intent-mining",
@@ -1861,10 +1946,22 @@
     {
       "name": "distribution-channel-mapping",
       "desc": "Map each product type to concrete, reachable distribution channels."
+    },
+    {
+      "name": "payment-link-metadata-fix",
+      "desc": "Ensure product_id propagates from price metadata to checkout sessions for fulfillment tracking."
+    },
+    {
+      "name": "fulfillment-loop-end-to-end",
+      "desc": "End-to-end purchase fulfillment pipeline including email delivery of digital products."
+    },
+    {
+      "name": "checkout-session-metadata-propagation",
+      "desc": "Identify which Stripe metadata fields propagate from Payment Link to Checkout Session."
     }
   ],
   "ledger": {
-    "total": 1095,
+    "total": 1097,
     "revenue": 0,
     "effects": 160,
     "boundary": 1,
@@ -1876,8 +1973,6 @@
     "priority": "A unique, underserved customer problem with clear willingness-to-pay and a real path to revenue"
   },
   "throughput": [
-    3,
-    0,
     0,
     1,
     0,
@@ -1905,15 +2000,17 @@
     0,
     1,
     0,
-    5
+    0,
+    14,
+    14
   ],
   "load": {
     "loadavg": [
-      0.34,
-      0.27,
-      0.23
+      1.16,
+      0.68,
+      0.39
     ],
-    "ramPct": 62,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1955,7 +2052,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "marketer": {
@@ -1963,7 +2060,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -1999,7 +2096,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2795,10 +2897,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 13,
-        "vramPct": 21
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
@@ -2816,7 +2918,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 0
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 94,
