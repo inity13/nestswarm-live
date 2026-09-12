@@ -1,5 +1,5 @@
 {
-  "generated": 1789222738463,
+  "generated": 1789222783495,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789222770070,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789222767883,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789222728854,
       "type": "event"
@@ -1288,6 +1300,18 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789222770070,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789222767883,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789222728854,
       "type": "event"
@@ -1303,42 +1327,6 @@
       "text": "keyhunter: openrouter step 3 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
       "t": 1789222695112,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789222692012,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789222690801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter step 0 -> {}",
-      "t": 1789222688736,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
-      "t": 1789222680679,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789222668563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/68 channels active · 0 new discovered",
-      "t": 1789222650056,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1556,7 +1544,7 @@
     }
   ],
   "ledger": {
-    "total": 922,
+    "total": 924,
     "revenue": 0,
     "effects": 129,
     "boundary": 1,
@@ -1592,20 +1580,20 @@
     0,
     0,
     0,
-    0,
-    12,
+    6,
+    11,
+    4,
     5,
-    5,
-    5,
-    18
+    15,
+    9
   ],
   "load": {
     "loadavg": [
-      1.66,
-      1.21,
-      0.86
+      0.95,
+      1.1,
+      0.84
     ],
-    "ramPct": 64,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1651,6 +1639,10 @@
         "tier": "local"
       },
       "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
@@ -2462,7 +2454,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
+        "utilPct": 46,
         "vramPct": 81
       },
       {
@@ -2480,8 +2472,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 30,
-        "vramPct": 91
+        "utilPct": 0,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 100,
