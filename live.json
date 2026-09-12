@@ -1,5 +1,5 @@
 {
-  "generated": 1789233168927,
+  "generated": 1789233272973,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -122,10 +122,10 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Let's search memory: \"OpenAI-compatible endpoint\" includes \"OpenRouter\" (excluded). \"Toget",
-        "t": 1789232164982
+        "text": "OpenAI-compatible endpoint means{\"providers\":[{\"name\":\"Cerebras\",\"baseUrl\":\"https://api.ce",
+        "t": 1789233207465
       }
     },
     {
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Severity Ranking** - **High – Child‑pr",
-        "t": 1789232956424
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Child‑process spawning** – *High sever",
+        "t": 1789233210313
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, p",
-        "t": 1789233035763
+        "text": "1. **Gumroad**: Ideal for direct-to-customer sales, especially for software products with ",
+        "t": 1789233230792
       }
     },
     {
@@ -274,6 +274,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-customer sales, especially for software products with one-time purchases like ScopeSage and CryptoPilot MT. Gumroad provides a simple interface and easy integration with Stripe. 2. **Product Hunt**: Perfect for gaining early traction and visibility through organic traffic and media attention. Product Hunt is particularly effective for niche markets like freelancers, fitness, travel, and real estate. 3. **GitHub**: Excellent for developers and tech enthusiasts who are likely to be your primary customer base. GitHub offers a platform where users can easily …",
+      "t": 1789233230792,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Child‑process spawning** – *High severity.* *Risk:* Arbitrary code execution if the command string is built from user input or untrusted data. *Fix:* Replace all `child_process.exec`/`spawn` calls with a whitelist of allowed commands and arguments. Use `child_process.spawn` with `shell: false` and validate/escape every argument. 2. **`innerHTML` assignment** – *High severity.* *Risk:* XSS if the inserted string contains unsanitized user data. *Fix:* Switch to `textContent` or a templating engine that auto‑escapes. If `innerHTML` is …",
+      "t": 1789233210313,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Quark",
+      "text": "OpenAI-compatible endpoint means{\"providers\":[{\"name\":\"Cerebras\",\"baseUrl\":\"https://api.cerebras.ai/v1/chat/completions\",\"model\":\"cerebras-llama-2-7b\",\"needsKey\":true,\"signup\":\"https://www.cerebras.ai/signup/\"},{\"name\":\"OpenAI Beta\",\"baseUrl\":\"https://api.openai.com/v1/chat/completions\",\"model\":\"text-davinci-003\",\"needsKey\":true,\"signup\":\"https://beta.openai.com/signup/\"},{\"name\":\"Anthropic Claude\",\"baseUrl\":\"https://api.anthropic.com/v1/llama_chat\",\"model\":\"claude-instant-v1\",\"needsKey\":true,\"signup\":\"https://www.anthropic.com/join\"},{\"name\":\"Hugging Face Inference …",
+      "t": 1789233207465,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "**1. Gumroad** – It offers instant, no‑friction checkout for single‑price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built‑in analytics and coupon system let us test pricing and run limited‑time**1. Gumroad** – It offers instant, no-friction checkout for single-price digital goods, perfect for ScopeSage, FitCue, InsightMentor, CryptoPilot MT, and RealPilot MT. The platform’s built-in analytics and coupon system let us test pricing and run limited-time promotions to drive initial sales. **2. Product Hunt** – With over 50 …",
@@ -1092,30 +1113,69 @@
       "t": 1789225219604,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "The swarm must halt all non-flagship product development immediately. Zeroing in on a single, revenue-ready MVP is our top priority to ensure absolute safety and quality control. Let's focus on securing and launching that flagship before expanding further.",
-      "t": 1789225219602,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "**Joey:** I appreciate everyone's insights, and we're all on the same page about ending idea spam. Let’s lock onto a single MVP that’s revenue-ready and focus every resource on polishing it to perfection. Once that flagship is ready for prime time, we can start making real money. The most important thing right now? Devoting all energy to getting that first product sellable and shipping it to customers.",
-      "t": 1789225219598,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "You’re all right about stopping the idea-spam, but let’s not trade quantity for vanity—simplicity doesn’t mean settling for half-baked. The single most important thing is to pick a *market-ready* product from the catalog that already has evidence of willingness-to-pay and start shipping it with a working checkout, not building another MVP.",
-      "t": 1789225219597,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789233246805,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: googleailanguagemodels — queued for key hunter",
+      "t": 1789233207469,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789233207468,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789233198830,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"RealPilot MT - Take Control Like a Pro\" -> https://dev.to/nest_swarm/realpilot-mt-take-control-like-a-pro-6h2",
+      "t": 1789233198826,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published RealPilot MT on dev.to → https://dev.to/nest_swarm/realpilot-mt-take-control-like-a-pro-6h2",
+      "t": 1789233198826,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for EvoSage: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
+      "t": 1789233198279,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789233182948,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
+      "t": 1789233174239,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789233171106,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1180,63 +1240,66 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789233167983,
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789233246805,
+      "type": "launch"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-customer sales, especially for software products with one-time purchases like ScopeSage and CryptoPilot MT. Gumroad provides a simple interface and easy integration with Stripe. 2. **Product Hunt**: Perfect for gaining early traction and visibility through organic traffic and media attention. Product Hunt is particularly effective for niche markets like freelancers, fitness, travel, and real estate. 3. **GitHub**: Excellent for developers and tech enthusiasts who are likely to be your primary customer base. GitHub offers a platform where users can easily …",
+      "t": 1789233230792,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Child‑process spawning** – *High severity.* *Risk:* Arbitrary code execution if the command string is built from user input or untrusted data. *Fix:* Replace all `child_process.exec`/`spawn` calls with a whitelist of allowed commands and arguments. Use `child_process.spawn` with `shell: false` and validate/escape every argument. 2. **`innerHTML` assignment** – *High severity.* *Risk:* XSS if the inserted string contains unsanitized user data. *Fix:* Switch to `textContent` or a templating engine that auto‑escapes. If `innerHTML` is …",
+      "t": 1789233210313,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: googleailanguagemodels — queued for key hunter",
+      "t": 1789233207469,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1789233167981,
-      "type": "vault"
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789233207468,
+      "type": "event"
+    },
+    {
+      "who": "Quark",
+      "text": "OpenAI-compatible endpoint means{\"providers\":[{\"name\":\"Cerebras\",\"baseUrl\":\"https://api.cerebras.ai/v1/chat/completions\",\"model\":\"cerebras-llama-2-7b\",\"needsKey\":true,\"signup\":\"https://www.cerebras.ai/signup/\"},{\"name\":\"OpenAI Beta\",\"baseUrl\":\"https://api.openai.com/v1/chat/completions\",\"model\":\"text-davinci-003\",\"needsKey\":true,\"signup\":\"https://beta.openai.com/signup/\"},{\"name\":\"Anthropic Claude\",\"baseUrl\":\"https://api.anthropic.com/v1/llama_chat\",\"model\":\"claude-instant-v1\",\"needsKey\":true,\"signup\":\"https://www.anthropic.com/join\"},{\"name\":\"Hugging Face Inference …",
+      "t": 1789233207465,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789233162971,
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789233198830,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"RealPilot MT - Take Control Like a Pro\" -> https://dev.to/nest_swarm/realpilot-mt-take-control-like-a-pro-6h2",
+      "t": 1789233198826,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789233157941,
-      "type": "event"
+      "text": "launcher: published RealPilot MT on dev.to → https://dev.to/nest_swarm/realpilot-mt-take-control-like-a-pro-6h2",
+      "t": 1789233198826,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789233138024,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789233137933,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789233137914,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789233137914,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789233137753,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789233137711,
-      "type": "event"
+      "text": "launcher: gumroad failed for EvoSage: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
+      "t": 1789233198279,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1462,9 +1525,9 @@
     }
   ],
   "ledger": {
-    "total": 1069,
+    "total": 1070,
     "revenue": 0,
-    "effects": 146,
+    "effects": 147,
     "boundary": 1,
     "artifacts": 97,
     "receipts": 0
@@ -1501,17 +1564,17 @@
     0,
     0,
     0,
-    0,
-    0,
-    15
+    7,
+    22,
+    6
   ],
   "load": {
     "loadavg": [
-      1.38,
-      1.89,
-      1.59
+      2.07,
+      2.06,
+      1.69
     ],
-    "ramPct": 47,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1535,10 +1598,39 @@
       "publisher": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
       }
     },
     "free": [
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2338,8 +2430,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 24,
-        "vramPct": 20
+        "utilPct": 9,
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
@@ -2356,11 +2448,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 77
+        "utilPct": 18,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 60,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 179
   }
 }
