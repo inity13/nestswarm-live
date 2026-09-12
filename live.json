@@ -1,5 +1,5 @@
 {
-  "generated": 1789222693470,
+  "generated": 1789222738463,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789222728854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 4 -> {}",
+      "t": 1789222727326,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 3 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
+      "t": 1789222695112,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789222692012,
       "type": "event"
@@ -1270,6 +1288,24 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789222728854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 4 -> {}",
+      "t": 1789222727326,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter step 3 -> {\"action\":\"clickText\",\"text\":\"Sign Up\"}",
+      "t": 1789222695112,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: openrouter step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789222692012,
       "type": "event"
@@ -1303,18 +1339,6 @@
       "text": "revenue scout: 2/68 channels active · 0 new discovered",
       "t": 1789222650056,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq already has a working key — skip",
-      "t": 1789222647874,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
-      "t": 1789222647874,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1569,19 +1593,19 @@
     0,
     0,
     0,
-    0,
-    14,
-    3,
+    12,
     5,
-    15
+    5,
+    5,
+    18
   ],
   "load": {
     "loadavg": [
-      1.56,
-      1.12,
-      0.81
+      1.66,
+      1.21,
+      0.86
     ],
-    "ramPct": 66,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1620,6 +1644,14 @@
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2448,8 +2480,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 1
+        "utilPct": 30,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
