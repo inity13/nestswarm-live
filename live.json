@@ -1,5 +1,5 @@
 {
-  "generated": 1789224055361,
+  "generated": 1789224101028,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789224100374,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789224100311,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789224100311,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789224071989,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789224064305,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789224036361,
       "type": "bench"
@@ -1202,6 +1232,36 @@
     }
   ],
   "recent": [
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789224100374,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789224100311,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789224100311,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789224071989,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789224064305,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1468,18 +1528,18 @@
     0,
     0,
     0,
-    0,
     6,
-    9,
-    5
+    7,
+    5,
+    18
   ],
   "load": {
     "loadavg": [
-      2.04,
-      1.64,
-      1.38
+      1.84,
+      1.66,
+      1.4
     ],
-    "ramPct": 51,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1505,12 +1565,39 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
-      "gemini-flash-latest",
       "openai/gpt-oss-120b",
       "nvidia/nemotron-3.5-lightning-30b-a3b"
     ],
@@ -1525,15 +1612,15 @@
     "active": 2,
     "byKind": {
       "crypto": {
-        "total": 7,
+        "total": 8,
         "active": 1
       },
       "card": {
-        "total": 3,
+        "total": 2,
         "active": 1
       },
       "donation": {
-        "total": 10,
+        "total": 9,
         "active": 0
       },
       "bounty": {
@@ -1541,11 +1628,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 9,
+        "total": 11,
         "active": 0
       },
       "subscription": {
-        "total": 4,
+        "total": 3,
         "active": 0
       },
       "other": {
@@ -1756,7 +1843,7 @@
       },
       {
         "name": "C3.ai Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
@@ -1834,7 +1921,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "donation",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
@@ -1882,7 +1969,7 @@
       },
       {
         "name": "Radix Pay Hosted Checkout",
-        "kind": "card",
+        "kind": "crypto",
         "active": false,
         "captcha": false
       },
@@ -2315,10 +2402,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 27
+        "busy": false,
+        "warm": true,
+        "utilPct": 13,
+        "vramPct": 87
       },
       {
         "alias": "GPU-Node-2",
@@ -2335,11 +2422,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 79,
-        "vramPct": 77
+        "utilPct": 0,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 100,
+    "selfHostedInferencePct": 85,
     "jobsProcessed": 179
   }
 }
