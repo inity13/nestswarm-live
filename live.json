@@ -1,5 +1,5 @@
 {
-  "generated": 1789232417215,
+  "generated": 1789232521463,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**:",
-        "t": 1789232140312
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Unrestricted Child Process Creation** ",
+        "t": 1789232490103
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We need to perform actions. We are at login page. We need to type email and password, clic",
-        "t": 1789232296957
+        "text": "1. **Gumroad** - Ideal for digital products with direct sales, especially since ScopeSage ",
+        "t": 1789232491749
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad** - Ideal for digital products with direct sales, especially since ScopeSage is priced at $79. 2. **Product Hunt** - Perfect for visibility and early traction, attracting potential customers through organic discovery. 3. **dev.to** - Suitable for technical audiences interested in freelancers and productivity tools like ScopeSage. These channels offer a combination of direct sales, exposure to niche communities, and easy integration with existing accounts.",
+      "t": 1789232491749,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Unrestricted Child Process Creation** – *Severity: Critical* *Risk:* Arbitrary code execution if an attacker can influence the command string. *Fix:* Replace `child_process.exec` with `child_process.spawn` using a whitelist of allowed commands and arguments. Validate all inputs against a strict schema; reject any non‑literal values. 2. **Unsanitized `innerHTML` Assignment** – *Severity: High* *Risk:* XSS if user‑supplied data reaches the DOM. *Fix:* Use `textContent` or a templating engine that auto‑escapes. If `innerHTML` is unavoidable, …",
+      "t": 1789232490103,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "dev.to publishing is LIVE (account nest_swarm) — I can publish product articles and announcements to a developer audience via the API. Use it for marketing launches.",
@@ -1099,23 +1113,69 @@
       "t": 1789225219583,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "**My Position:** The swarm is on a dangerous path of chasing quantity instead of focusing on delivering high-quality, revenue-generating products that meet real customer needs. **Demand Better:** Before moving forward with any new product development, the team must perform a thorough market validation for a single flagship product. This should include conducting detailed customer research, creating a compelling value proposition, and setting clear milestones to ensure it reaches market readiness. Only once this flagship is polished and revenue-ready should we consider building additional …",
-      "t": 1789225219581,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "I believe the team is wasting resources on constantly chasing new ideas; the only path to revenue is to focus relentlessly on a single, market‑ready product that we can ship, iterate, and sell. We must stop adding new features to the catalog and immediately halt all non‑flagship development until the current flagship passes a full end‑to‑end payment test on a real marketplace.",
-      "t": 1789225219580,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789232514417,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789232507441,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3648MB free)",
+      "t": 1789232452596,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789232452596,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789232449319,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published ScopeSage on dev.to → https://dev.to/nest_swarm/scopesage-your-personalized-decision-support-system-4p91",
+      "t": 1789232449316,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"ScopeSage: Your Personalized Decision Support System\" -> https://dev.to/nest_swarm/scopesage-your-personalized-decision-support-system-4p91",
+      "t": 1789232449315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for InsightMentor: gumroad create failed: New products should be created with a price",
+      "t": 1789232446733,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789232431430,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789232419508,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1186,69 +1246,65 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789232416474,
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789232514417,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789232507441,
+      "type": "launch"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad** - Ideal for digital products with direct sales, especially since ScopeSage is priced at $79. 2. **Product Hunt** - Perfect for visibility and early traction, attracting potential customers through organic discovery. 3. **dev.to** - Suitable for technical audiences interested in freelancers and productivity tools like ScopeSage. These channels offer a combination of direct sales, exposure to niche communities, and easy integration with existing accounts.",
+      "t": 1789232491749,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** 1. **Unrestricted Child Process Creation** – *Severity: Critical* *Risk:* Arbitrary code execution if an attacker can influence the command string. *Fix:* Replace `child_process.exec` with `child_process.spawn` using a whitelist of allowed commands and arguments. Validate all inputs against a strict schema; reject any non‑literal values. 2. **Unsanitized `innerHTML` Assignment** – *Severity: High* *Risk:* XSS if user‑supplied data reaches the DOM. *Fix:* Use `textContent` or a templating engine that auto‑escapes. If `innerHTML` is unavoidable, …",
+      "t": 1789232490103,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3648MB free)",
+      "t": 1789232452596,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789232452596,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: 2 distribution action(s) this pass",
+      "t": 1789232449319,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: published ScopeSage on dev.to → https://dev.to/nest_swarm/scopesage-your-personalized-decision-support-system-4p91",
+      "t": 1789232449316,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "dev.to: published \"ScopeSage: Your Personalized Decision Support System\" -> https://dev.to/nest_swarm/scopesage-your-personalized-decision-support-system-4p91",
+      "t": 1789232449315,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789232416471,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
-      "t": 1789232413313,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789232411460,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789232406425,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789232386430,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789232386414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789232386392,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789232386392,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789232386237,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789232386192,
-      "type": "event"
+      "text": "launcher: gumroad failed for InsightMentor: gumroad create failed: New products should be created with a price",
+      "t": 1789232446733,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1474,9 +1530,9 @@
     }
   ],
   "ledger": {
-    "total": 1049,
+    "total": 1050,
     "revenue": 0,
-    "effects": 139,
+    "effects": 140,
     "boundary": 1,
     "artifacts": 97,
     "receipts": 0
@@ -1513,21 +1569,46 @@
     0,
     0,
     0,
-    0,
-    0,
-    11
+    6,
+    14,
+    7
   ],
   "load": {
     "loadavg": [
-      1.64,
-      1.75,
-      1.21
+      1.04,
+      1.5,
+      1.17
     ],
-    "ramPct": 64,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
-    "active": {},
+    "active": {
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      }
+    },
     "free": [
       "openai/gpt-oss-120b",
       "nvidia/nemotron-3.5-lightning-30b-a3b",
@@ -2330,7 +2411,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
+        "utilPct": 90,
         "vramPct": 82
       },
       {
@@ -2348,11 +2429,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 5
+        "utilPct": 26,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 0,
+    "selfHostedInferencePct": 100,
     "jobsProcessed": 179
   }
 }
