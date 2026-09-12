@@ -1,5 +1,5 @@
 {
-  "generated": 1789214718367,
+  "generated": 1789214763395,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789214759915,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
+      "t": 1789214759915,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789214759914,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789214759913,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789214748210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789214748210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789214748200,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789214603136,
       "type": "event"
@@ -1553,51 +1595,52 @@
       "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
       "t": 1789212163838,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789212163838,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789212082207,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789211902284,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "self-heal: disabled provider groq",
-      "t": 1789211766199,
+      "t": 1789214759915,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal complete: 3 fix(es) — disabled provider mistral; disabled provider gemini; disabled provider groq",
-      "t": 1789211766199,
+      "t": 1789214759915,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider gemini",
-      "t": 1789211766198,
+      "t": 1789214759914,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider mistral",
-      "t": 1789211766197,
+      "t": 1789214759913,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault sync error: (b.competitors || []).map is not a function",
+      "t": 1789214748210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789214748210,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789214748200,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1825,8 +1868,7 @@
     "priority": "Top-rated product in vault (currently ranked 8.5) with verified willingness-to-pay"
   },
   "throughput": [
-    11,
-    1,
+    5,
     0,
     0,
     1,
@@ -1835,18 +1877,9 @@
     1,
     0,
     0,
-    14,
+    9,
+    5,
     0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    13,
-    2,
     1,
     0,
     0,
@@ -1854,15 +1887,25 @@
     0,
     0,
     1,
-    0
+    8,
+    7,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.24,
-      0.24
+      0.21,
+      0.23,
+      0.23
     ],
-    "ramPct": 65,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2772,9 +2815,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 6,
         "vramPct": 95
       }
     ],
