@@ -1,5 +1,5 @@
 {
-  "generated": 1789230700123,
+  "generated": 1789230789395,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in checkout and easy custome",
         "t": 1789230634689
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789230702476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789230700341,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini already has a working key — skip",
+      "t": 1789230700341,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: openrouter already has a working key — skip",
       "t": 1789230699377,
       "type": "event"
@@ -1240,58 +1258,21 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter already has a working key — skip",
-      "t": 1789230699377,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789230702476,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789230699377,
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789230700341,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq already has a working key — skip",
-      "t": 1789230699376,
+      "text": "keyhunter: gemini already has a working key — skip",
+      "t": 1789230700341,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 2/67 channels active · 0 new discovered",
-      "t": 1789230677878,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789230670307,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2961MB free)",
-      "t": 1789230670304,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 3 product ideas, 3 optimizations",
-      "t": 1789230660926,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789230650749,
-      "type": "launch"
-    },
-    {
-      "who": "LaForge",
-      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in checkout and easy customer management. It offers robust features like subscriptions and a dedicated support page. 2. **Patreon**: Perfect for subscription-based models or those seeking recurring income from their product. It provides a platform for building a community around your work and offering different tiers of access. 3. **GitHub Marketplace**: Suitable for software developers, as it aligns with their workflow and helps them discover and purchase tools and services directly within the development environment. It also …",
-      "t": 1789230634689,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1517,7 +1498,7 @@
     }
   ],
   "ledger": {
-    "total": 1005,
+    "total": 1007,
     "revenue": 0,
     "effects": 135,
     "boundary": 1,
@@ -1554,19 +1535,19 @@
     0,
     0,
     0,
-    0,
-    6,
-    10,
+    11,
+    9,
     7,
-    13
+    21,
+    5
   ],
   "load": {
     "loadavg": [
-      1.99,
-      1.08,
-      0.63
+      1.14,
+      1.05,
+      0.66
     ],
-    "ramPct": 65,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1596,7 +1577,7 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1612,7 +1593,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "marketer": {
@@ -1620,6 +1601,30 @@
         "tier": "local"
       },
       "github_researcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "payment-integrator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -2425,9 +2430,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 89,
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
         "vramPct": 82
       },
       {
@@ -2445,8 +2450,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 77
+        "utilPct": 8,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
