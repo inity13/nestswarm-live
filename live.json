@@ -1,5 +1,5 @@
 {
-  "generated": 1789229007639,
+  "generated": 1789229053315,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789229052611,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789229052611,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789229052610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/67 channels active · 0 new discovered",
+      "t": 1789229044142,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789229034006,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3085MB free)",
+      "t": 1789229034002,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789229016033,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789229003947,
       "type": "launch"
@@ -1216,27 +1258,51 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789229052611,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789229052611,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789229052610,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/67 channels active · 0 new discovered",
+      "t": 1789229044142,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789229034006,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3085MB free)",
+      "t": 1789229034002,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789229016033,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789229003947,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: qwenbyalibabacloud — queued for key hunter",
-      "t": 1789228940398,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1789228940398,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1789228940002,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1496,18 +1562,18 @@
     0,
     0,
     0,
-    0,
     6,
-    14,
-    3
+    8,
+    8,
+    11
   ],
   "load": {
     "loadavg": [
-      2.16,
-      1.22,
-      0.65
+      1.82,
+      1.3,
+      0.71
     ],
-    "ramPct": 58,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1537,6 +1603,18 @@
         "tier": "local"
       },
       "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "publisher": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -2342,10 +2420,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 20
+        "busy": false,
+        "warm": true,
+        "utilPct": 14,
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
@@ -2362,8 +2440,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 77
+        "utilPct": 1,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 100,
