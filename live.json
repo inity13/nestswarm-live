@@ -1,5 +1,5 @@
 {
-  "generated": 1789226475208,
+  "generated": 1789226564482,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789226509727,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3520MB free)",
+      "t": 1789226509722,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789226477189,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789226297296,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "keyhunter: gemini in cooldown (last attempt 2m ago) — skip",
       "t": 1789224855700,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789226509727,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq already has a working key — skip",
-      "t": 1789224854528,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3520MB free)",
+      "t": 1789226509722,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter already has a working key — skip",
-      "t": 1789224854528,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789224854528,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789226477189,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1829,27 +1848,16 @@
     "priority": "The highest-margin, underserved niche with existing demand signals from the 18 listed products"
   },
   "throughput": [
-    16,
+    6,
+    12,
     7,
     8,
-    7,
+    14,
     8,
-    15,
-    8,
-    7,
+    6,
+    30,
     25,
-    21,
-    27,
-    26,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    0,
+    41,
     1,
     0,
     0,
@@ -1858,15 +1866,26 @@
     0,
     1,
     0,
-    0
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.08,
-      0.36
+      0.32,
+      0.2,
+      0.37
     ],
-    "ramPct": 49,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2753,9 +2772,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 17
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
