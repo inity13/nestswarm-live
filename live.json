@@ -1,5 +1,5 @@
 {
-  "generated": 1789224281333,
+  "generated": 1789224370358,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,72 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1789224336754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789224307362,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 4 operational improvement(s) recommended",
+      "t": 1789224299489,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789224299365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-first-build-gate",
+      "t": 1789224299308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill preflight-go-no-go",
+      "t": 1789224299308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill catalog-quality-gate",
+      "t": 1789224299308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: catalog-quality-gate",
+      "t": 1789224299307,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: preflight-go-no-go",
+      "t": 1789224299306,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-first-build-gate",
+      "t": 1789224299305,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789224283385,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
       "t": 1789224220320,
       "type": "event"
@@ -1342,8 +1408,68 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789224220320,
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1789224336754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789224307362,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 4 operational improvement(s) recommended",
+      "t": 1789224299489,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789224299365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-first-build-gate",
+      "t": 1789224299308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill preflight-go-no-go",
+      "t": 1789224299308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill catalog-quality-gate",
+      "t": 1789224299308,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: catalog-quality-gate",
+      "t": 1789224299307,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: preflight-go-no-go",
+      "t": 1789224299306,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-first-build-gate",
+      "t": 1789224299305,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789224283385,
       "type": "event"
     }
   ],
@@ -1450,7 +1576,7 @@
     },
     {
       "name": "payment-first-build-gate",
-      "desc": "Block paid product builds until Stripe or MoR fallback is confirmed"
+      "desc": "Blocks paid product builds until Stripe/MoR is confirmed ready."
     },
     {
       "name": "agent-toggle-review",
@@ -1470,7 +1596,7 @@
     },
     {
       "name": "preflight-go-no-go",
-      "desc": "Gate every build candidate on payment, distribution, and toolchain readiness before coding starts."
+      "desc": "Ensures build readiness before code starts."
     },
     {
       "name": "offload-limit-failover",
@@ -1559,10 +1685,14 @@
     {
       "name": "compliance",
       "desc": "Ensures all operations comply with relevant regulations and standards"
+    },
+    {
+      "name": "catalog-quality-gate",
+      "desc": "Enforces a minimum critic score before listing."
     }
   ],
   "ledger": {
-    "total": 964,
+    "total": 967,
     "revenue": 0,
     "effects": 132,
     "boundary": 1,
@@ -1596,22 +1726,22 @@
     0,
     0,
     0,
-    0,
+    9,
     6,
-    7,
-    5,
-    18,
-    36,
-    11,
-    1
+    13,
+    33,
+    17,
+    6,
+    12,
+    6
   ],
   "load": {
     "loadavg": [
-      0.48,
-      1.31,
-      1.32
+      0.19,
+      0.98,
+      1.2
     ],
-    "ramPct": 66,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -1621,7 +1751,7 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "ideator": {
@@ -1690,6 +1820,10 @@
       },
       "payment-integrator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2498,9 +2632,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 12,
+        "busy": true,
+        "warm": false,
+        "utilPct": 0,
         "vramPct": 87
       },
       {
@@ -2518,11 +2652,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 91
+        "utilPct": 76,
+        "vramPct": 77
       }
     ],
-    "selfHostedInferencePct": 91,
+    "selfHostedInferencePct": 92,
     "jobsProcessed": 179
   }
 }
