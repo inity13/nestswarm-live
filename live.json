@@ -1,5 +1,5 @@
 {
-  "generated": 1789223448261,
+  "generated": 1789223494009,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789223493246,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789223493246,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789223468311,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789223459947,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3044MB free)",
+      "t": 1789223459945,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789223453527,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
       "text": "scout discovered key-gated free provider: stabilityai — queued for key hunter",
       "t": 1789223384621,
       "type": "event"
@@ -1204,21 +1240,39 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "scout discovered key-gated free provider: stabilityai — queued for key hunter",
-      "t": 1789223384621,
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789223493246,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1789223384162,
+      "text": "keyhunter: attempting openrouter (https://openrouter.ai)",
+      "t": 1789223493246,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789223368052,
-      "type": "event"
+      "text": "revenue scout: 2/68 channels active · 0 new discovered",
+      "t": 1789223468311,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789223459947,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3044MB free)",
+      "t": 1789223459945,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789223453527,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1474,18 +1528,18 @@
     0,
     0,
     0,
-    0,
     6,
-    13,
-    4
+    8,
+    7,
+    10
   ],
   "load": {
     "loadavg": [
-      2.58,
-      1.93,
-      1.31
+      1.69,
+      1.78,
+      1.28
     ],
-    "ramPct": 56,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1525,6 +1579,14 @@
       "distributor": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       }
     },
     "free": [
@@ -1542,15 +1604,15 @@
     "active": 2,
     "byKind": {
       "crypto": {
-        "total": 8,
+        "total": 7,
         "active": 1
       },
       "card": {
-        "total": 2,
+        "total": 3,
         "active": 1
       },
       "donation": {
-        "total": 9,
+        "total": 10,
         "active": 0
       },
       "bounty": {
@@ -1562,7 +1624,7 @@
         "active": 0
       },
       "subscription": {
-        "total": 5,
+        "total": 4,
         "active": 0
       },
       "other": {
@@ -1851,7 +1913,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "donation",
         "active": false,
         "captcha": false
       },
@@ -1899,7 +1961,7 @@
       },
       {
         "name": "Radix Pay Hosted Checkout",
-        "kind": "crypto",
+        "kind": "card",
         "active": false,
         "captcha": false
       },
@@ -2332,10 +2394,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 4,
-        "vramPct": 21
+        "utilPct": 24,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2352,8 +2414,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 91
+        "utilPct": 19,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 100,
