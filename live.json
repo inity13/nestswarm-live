@@ -1,5 +1,5 @@
 {
-  "generated": 1789224705307,
+  "generated": 1789224809570,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789224790065,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789224719557,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789224709899,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789224707391,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1789224704557,
       "type": "event"
@@ -1180,63 +1204,9 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789224704557,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789224702779,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789224699578,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789224694576,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789224674558,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 18 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789224674538,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789224674522,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789224674522,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789224674355,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789224674301,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789224790065,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1497,17 +1467,17 @@
     0,
     0,
     0,
-    0,
-    0,
-    15
+    6,
+    17,
+    7
   ],
   "load": {
     "loadavg": [
-      1.15,
-      0.94,
-      1.11
+      2.36,
+      1.43,
+      1.27
     ],
-    "ramPct": 71,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1531,10 +1501,41 @@
       "publisher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
       }
     },
     "free": [
-      "gemini-flash-latest",
       "openai/gpt-oss-120b",
       "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
@@ -2336,8 +2337,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 80,
-        "vramPct": 79
+        "utilPct": 4,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2354,11 +2355,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 73,
-        "vramPct": 77
+        "utilPct": 29,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 67,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 179
   }
 }
