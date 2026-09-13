@@ -1,5 +1,5 @@
 {
-  "generated": 1789303249953,
+  "generated": 1789303399785,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,66 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789303399071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 20m ago) — skip",
+      "t": 1789303399071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789303399071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789303285244,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3282MB free)",
+      "t": 1789303285243,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789303264042,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai/gpt-oss-120b failed for scout (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7278, Requested 1748. Please try again in 7.695s. Need more tokens? Upgrade to Dev Tier today at https://cons)",
+      "t": 1789303262225,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for scout (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789303255096,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, nvidia, gemini) · 0 zen free models",
+      "t": 1789303253645,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789303252369,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1789303249067,
       "type": "event"
@@ -1174,56 +1234,20 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789303249067,
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789303399071,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789303244057,
+      "text": "keyhunter: openrouter in cooldown (last attempt 20m ago) — skip",
+      "t": 1789303399071,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789303239027,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789303219027,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789303219005,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1789303218989,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789303218989,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789303218797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789303218745,
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789303399071,
       "type": "event"
     }
   ],
@@ -1516,18 +1540,18 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    10
+    6,
+    13,
+    2,
+    4
   ],
   "load": {
     "loadavg": [
-      1.16,
-      0.61,
-      0.45
+      0.24,
+      0.49,
+      0.43
     ],
-    "ramPct": 50,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1535,10 +1559,32 @@
       "ideator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2335,10 +2381,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 24,
-        "vramPct": 22
+        "busy": false,
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 54
       },
       {
         "alias": "GPU-Node-2",
@@ -2353,13 +2399,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 77
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 100,
+    "selfHostedInferencePct": 43,
     "jobsProcessed": 179
   }
 }
