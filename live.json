@@ -1,5 +1,5 @@
 {
-  "generated": 1789291643170,
+  "generated": 1789291808156,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Let's craftWorf here, Security Sentinel: We must not only eliminate known vulnerabilities ",
-        "t": 1789287418656
+        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Risks (severity)** - **High – XSS via ",
+        "t": 1789291654397
       }
     },
     {
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "1. **Gumroad**: Ideal for direct sales of digital products like software subscriptions and",
-        "t": 1789290761189
+        "text": "Given we have seeded accounts on Gumroad, Lemon Squeezy, Payhip, Ko-fi, itch.io, Product H",
+        "t": 1789291716444
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "Given we have seeded accounts on Gumroad, Lemon Squeezy, Payhip, Ko-fi, itch.io, Product Hunt, dev.to, Buy Me a Coffee,- **Gumroad** – It offers a turnkey checkout flow, instant delivery, and built‑in analytics, letting us ship InsightMentor or CryptoPilot MT in minutes. The platform’s pricing‑per‑product model matches our $49 launch price and its discoverability in the “Tools & Apps” category can surface the product to a ready‑made audience. - **Product Hunt** – The first‑day community of tech enthusiasts and early adopters is perfect for a beta‑ready flagship like RealPilot MT. A launch …",
+      "t": 1789291716444,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Risks (severity)** - **High – XSS via `innerHTML`**: Unsanitized data injected into the DOM can execute arbitrary scripts. - **Medium – Unrestricted child‑process spawning**: Arbitrary commands can be executed, enabling privilege escalation or data exfiltration. - **Low – Static‑serve exposure**: Default configuration may expose source files, logs, or debug endpoints. **2. Concrete Fixes** - **XSS**: Replace all `innerHTML` assignments with `textContent` or a templating engine that auto‑escapes. If HTML is required, sanitize with a library …",
+      "t": 1789291654397,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for direct sales of digital products like software subscriptions and one-time purchases. It offers easy setup, secure payment processing, and robust analytics. 2. **dev.to**: Perfect for reaching developers and tech enthusiasts who are likely to be your target audience. dev.to has a large user base interested in software development tools and solutions. 3. **Product Hunt**: High visibility for generating buzz and organic traffic through social sharing. It attracts users looking for new and innovative products, which can drive initial sales and build credibility. These …",
@@ -1099,23 +1113,87 @@
       "t": 1789265804372,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Guinan",
-      "text": "I insist that we stop spinning variations of the same patterns and instead commit to a single, unmistakably original flagship that solves a pain no one has addressed before. To make that happen, the team must implement a pre‑development originality audit: every concept must be scored against a matrix of unmet needs, existing solutions, and name uniqueness before any design or code begins.",
-      "t": 1789265804020,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "\"OpenAI\" may require credit card but free trial. But{\"providers\":[{\"name\":\"Cerebras\",\"baseUrl\":\"https://api.cerebras.ai/v1/llm_chat/completions\",\"model\":\"cerebras-gpt-2\",\"needsKey\":true,\"signup\":\"https://www.cerebras.ai/signup/\"},{\"name\":\"OpenAI Free Trial\",\"baseUrl\":\"https://api.openai.com/v1/chat/completions\",\"model\":\"text-davinci-003\",\"needsKey\":true,\"signup\":\"https://beta.openai.com/signup/\"}]}",
-      "t": 1789262064193,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite error: upload live.json failed 500",
+      "t": 1789291765219,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789291764099,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini already has a working key — skip",
+      "t": 1789291764099,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789291764098,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789291763127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789291763127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789291763127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789291752131,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2652MB free)",
+      "t": 1789291752130,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789291751420,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789291742126,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789291732570,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite data push: upload live.json failed 500",
+      "t": 1789291719889,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite data push: upload live.json failed 500",
@@ -1204,86 +1282,80 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite data push: upload live.json failed 500",
-      "t": 1789291632073,
+      "text": "publicsite error: upload live.json failed 500",
+      "t": 1789291765219,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "security scan: 157 products with flags, 1 with high-severity findings",
-      "t": 1789291628129,
-      "type": "security"
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789291764099,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789291625826,
+      "text": "keyhunter: gemini already has a working key — skip",
+      "t": 1789291764099,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789291764098,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789291763127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789291763127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789291763127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789291752131,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2652MB free)",
+      "t": 1789291752130,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789291751420,
       "type": "scout"
     },
     {
       "who": "swarm",
-      "text": "publicsite error: upload live.json failed 502",
-      "t": 1789291625447,
-      "type": "event"
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789291742126,
+      "type": "trending"
     },
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789291613128,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789291732570,
+      "type": "launch"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789291613125,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789291608160,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789291603142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789291583134,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789291583116,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1789291583097,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789291583097,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789291582880,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789291582818,
+      "text": "publicsite data push: upload live.json failed 500",
+      "t": 1789291719889,
       "type": "event"
     }
   ],
@@ -1576,23 +1648,83 @@
     0,
     0,
     0,
-    0,
-    0,
-    6,
-    9
+    14,
+    5,
+    8,
+    21
   ],
   "load": {
     "loadavg": [
-      1.57,
-      1.27,
-      0.71
+      1.9,
+      1.53,
+      0.91
     ],
-    "ramPct": 55,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "coder": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "marketer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "preflight": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       }
@@ -1630,11 +1762,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 10,
+        "total": 11,
         "active": 1
       },
       "subscription": {
-        "total": 4,
+        "total": 3,
         "active": 0
       },
       "ads": {
@@ -1839,7 +1971,7 @@
       },
       {
         "name": "C3.ai Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
@@ -2400,8 +2532,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 18,
-        "vramPct": 79
+        "utilPct": 89,
+        "vramPct": 84
       },
       {
         "alias": "GPU-Node-2",
@@ -2418,8 +2550,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 7,
-        "vramPct": 91
+        "utilPct": 82,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 100,
