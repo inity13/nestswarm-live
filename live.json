@@ -1,5 +1,5 @@
 {
-  "generated": 1789291808156,
+  "generated": 1789291943918,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Given we have seeded accounts on Gumroad, Lemon Squeezy, Payhip, Ko-fi, itch.io, Product H",
-        "t": 1789291716444
+        "text": "We need to simulate interacting with Substack signup. We need to produce a JSON action. We",
+        "t": 1789291941385
       }
     },
     {
@@ -274,6 +274,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "We need to simulate interacting with Substack signup. We need to produce a JSON action. We need to check the current page: about:blank. We need to navigate to substack.com. But the instruction: \"You are creating a NEW account for the swarm on Substack (https://substack.com/).\" So we need to open that URL. The current page is about:blank. So first action: click or navigate? We can use \"click\" with selector? But we need to navigate to substack.com. There's no direct navigation action defined. But we can use \"click\" on a link? But we are at about:blank. We need to load substack.com. Maybe we can …",
+      "t": 1789291941385,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "Given we have seeded accounts on Gumroad, Lemon Squeezy, Payhip, Ko-fi, itch.io, Product Hunt, dev.to, Buy Me a Coffee,- **Gumroad** – It offers a turnkey checkout flow, instant delivery, and built‑in analytics, letting us ship InsightMentor or CryptoPilot MT in minutes. The platform’s pricing‑per‑product model matches our $49 launch price and its discoverability in the “Tools & Apps” category can surface the product to a ready‑made audience. - **Product Hunt** – The first‑day community of tech enthusiasts and early adopters is perfect for a beta‑ready flagship like RealPilot MT. A launch …",
@@ -1106,16 +1113,81 @@
       "t": 1789265804726,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "We stop chasing volume and start chasing verifiable value. The swarm’s output must be testable, installable, and revenue-generating—no more half-baked variations. We pick one product from the catalog, polish it to working reality, and ship it with a real checkout—no exceptions. The team must commit to launching one flagship product immediately, with full working checkout, before building anything new. No more \"ideas\" until we’ve earned our first customer.",
-      "t": 1789265804372,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "registrar: registering Creator Monetization Platforms (revenue)",
+      "t": 1789291942383,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"fail\",\"reason\":\"Unable to navigate directly to Substack from about:blank. Manual intervention required.\"}",
+      "t": 1789291941407,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Product Hunt (revenue)",
+      "t": 1789291941407,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 3 operational improvement(s) recommended",
+      "t": 1789291933008,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789291932904,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill go-rust-exe-build-checklist",
+      "t": 1789291932861,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill stripe-owner-onboarding",
+      "t": 1789291932860,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: go-rust-exe-build-checklist",
+      "t": 1789291932859,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: stripe-owner-onboarding",
+      "t": 1789291932858,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Provide Stripe API keys or approve MoR fallback for payment integration",
+      "t": 1789291932839,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite data push: upload live.json failed 500",
+      "t": 1789291902209,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789291883146,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite error: upload live.json failed 500",
@@ -1282,80 +1354,81 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "publicsite error: upload live.json failed 500",
-      "t": 1789291765219,
+      "text": "registrar: registering Creator Monetization Platforms (revenue)",
+      "t": 1789291942383,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
-      "t": 1789291764099,
+      "text": "registrar: Substack step 0 -> {\"action\":\"fail\",\"reason\":\"Unable to navigate directly to Substack from about:blank. Manual intervention required.\"}",
+      "t": 1789291941407,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: gemini already has a working key — skip",
-      "t": 1789291764099,
+      "text": "registrar: registering Product Hunt (revenue)",
+      "t": 1789291941407,
+      "type": "event"
+    },
+    {
+      "who": "LaForge",
+      "text": "We need to simulate interacting with Substack signup. We need to produce a JSON action. We need to check the current page: about:blank. We need to navigate to substack.com. But the instruction: \"You are creating a NEW account for the swarm on Substack (https://substack.com/).\" So we need to open that URL. The current page is about:blank. So first action: click or navigate? We can use \"click\" with selector? But we need to navigate to substack.com. There's no direct navigation action defined. But we can use \"click\" on a link? But we are at about:blank. We need to load substack.com. Maybe we can …",
+      "t": 1789291941385,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 3 operational improvement(s) recommended",
+      "t": 1789291933008,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: nvidia already has a working key — skip",
-      "t": 1789291764098,
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789291932904,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq already has a working key — skip",
-      "t": 1789291763127,
+      "text": "conductor created skill go-rust-exe-build-checklist",
+      "t": 1789291932861,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter already has a working key — skip",
-      "t": 1789291763127,
+      "text": "conductor created skill stripe-owner-onboarding",
+      "t": 1789291932860,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789291763127,
+      "text": "conductor created skill: go-rust-exe-build-checklist",
+      "t": 1789291932859,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789291752131,
-      "type": "bench"
+      "text": "conductor created skill: stripe-owner-onboarding",
+      "t": 1789291932858,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2652MB free)",
-      "t": 1789291752130,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789291751420,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1789291742126,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789291732570,
-      "type": "launch"
+      "text": "conductor: dropping already-satisfied request: Provide Stripe API keys or approve MoR fallback for payment integration",
+      "t": 1789291932839,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "publicsite data push: upload live.json failed 500",
-      "t": 1789291719889,
+      "t": 1789291902209,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789291883146,
       "type": "event"
     }
   ],
@@ -1526,7 +1599,7 @@
     },
     {
       "name": "go-rust-exe-build-checklist",
-      "desc": "Check that native compiler toolchain exists before committing to .exe build targets"
+      "desc": "Check that native compiler toolchain exists before committing to .exe build targets."
     },
     {
       "name": "chatgpt-account-signup",
@@ -1610,7 +1683,7 @@
     }
   ],
   "ledger": {
-    "total": 1122,
+    "total": 1126,
     "revenue": 0,
     "effects": 161,
     "boundary": 1,
@@ -1645,32 +1718,32 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
+    6,
+    9,
+    6,
     14,
-    5,
-    8,
-    21
+    18,
+    3,
+    15
   ],
   "load": {
     "loadavg": [
-      1.9,
-      1.53,
-      0.91
+      0.84,
+      1.2,
+      0.87
     ],
-    "ramPct": 62,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "scout": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -1681,11 +1754,11 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
@@ -1697,7 +1770,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1726,6 +1799,22 @@
       },
       "preflight": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "payment-integrator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -2530,9 +2619,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 89,
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
         "vramPct": 84
       },
       {
@@ -2550,11 +2639,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 82,
+        "utilPct": 58,
         "vramPct": 77
       }
     ],
-    "selfHostedInferencePct": 100,
+    "selfHostedInferencePct": 95,
     "jobsProcessed": 179
   }
 }
