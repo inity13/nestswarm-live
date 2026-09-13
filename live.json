@@ -1,5 +1,5 @@
 {
-  "generated": 1789338575496,
+  "generated": 1789338755620,
   "status": "running",
   "stats": {
     "products": 165,
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "<div class=\"container\"> <div class=\"card\"> <div class=\"row\"> <div> <label for=\"homeCity\">H",
         "t": 1789338560028
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "```json { \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a ",
         "t": 1789338569989
@@ -1142,6 +1142,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
+      "t": 1789338577859,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "packaged WorkTripSync → worktripsync.zip (10807 bytes)",
       "t": 1789338575355,
       "type": "event"
@@ -1613,72 +1619,9 @@
       "text": "self-heal: already disabled: openrouter (no-op)",
       "t": 1789335651157,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789335651157,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "packaged WorkTripSync → worktripsync.zip (10807 bytes)",
-      "t": 1789338575355,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revise-before-reject: repairing WorkTripSync (critic 3) from feedback",
-      "t": 1789338575262,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> WorkTripSync",
-      "t": 1789338575252,
-      "type": "building"
-    },
-    {
-      "who": "Chandler",
-      "text": "```json { \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a call or a reservation again—WorkTripSync turns your travel plans into a flawless remote‑work calendar.\", \"headline\":{ \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a call or a reservation again—WorkTripSync turns your travel plans into a flawless remote‑work calendar.\", \"headline\": \"Stay connected, stay organized: Your ultimate remote work companion on the go.\" }",
-      "t": 1789338569989,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> WorkTripSync",
-      "t": 1789338565251,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for WorkTripSync",
-      "t": 1789338560032,
-      "type": "event"
-    },
-    {
-      "who": "Monica",
-      "text": "<div class=\"container\"> <div class=\"card\"> <div class=\"row\"> <div> <label for=\"homeCity\">Home base city</label> <input id=\"homeCity\" value=\"New York\" placeholder=\"e.g. New York\"> </div> <div> <label for=\"city\">Destination city</label> <input id=\"city\" value=\"London\" placeholder=\"e.g. London\"> </div> </div> <div class=\"row\"> <div> <label for=\"departureDate\">Departure date</label> <input type=\"date\" id=\"departureDate\"> </div> <div> <label for=\"returnDate\">Return date</label> <input type=\"date\" id=\"returnDate\"> </div> </div> <div class=\"row\"> <div> <label for=\"flightNumber\">Flight number</label> …",
-      "t": 1789338560028,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> WorkTripSync",
-      "t": 1789338495229,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for WorkTripSync",
-      "t": 1789338487521,
-      "type": "test"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1942,9 +1885,6 @@
     "priority": "AI-powered analytics dashboard for small businesses"
   },
   "throughput": [
-    2,
-    3,
-    0,
     1,
     0,
     0,
@@ -1971,15 +1911,18 @@
     0,
     1,
     6,
-    8
+    8,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      1.73,
-      0.55,
-      0.32
+      2.48,
+      1.96,
+      0.94
     ],
-    "ramPct": 56,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2894,8 +2837,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 6,
-        "vramPct": 78
+        "utilPct": 9,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
@@ -2912,8 +2855,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 79,
-        "vramPct": 77
+        "utilPct": 10,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 89,
