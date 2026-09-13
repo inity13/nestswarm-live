@@ -1,5 +1,5 @@
 {
-  "generated": 1789320933073,
+  "generated": 1789321113097,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewpor",
         "t": 1789320866857
@@ -1142,6 +1142,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789320935337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: already disabled: gemini (no-op)",
       "t": 1789320883929,
       "type": "event"
@@ -1613,96 +1619,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789319315529,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789319176458,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789320883929,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789320883929,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789320883929,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789320883929,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789320883929,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789320883928,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship WorkflowGenius (score 0/8, attempt 1/3)",
-      "t": 1789320882530,
-      "type": "event"
-    },
-    {
-      "who": "launcher",
-      "text": "SmartDoc AI SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789320872543,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SmartDoc AI SHIPPED (polished 1×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789320872543,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SmartDoc AI plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789320872529,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789320872104,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for SmartDoc AI — skipping",
-      "t": 1789320866859,
-      "type": "event"
-    },
-    {
-      "who": "Worf",
-      "text": "```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>SmartDoc AI - Contract Template Generator</title> <style> * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; } body { min-height: 100vh; background: #fafafa; color: #333; padding: 2rem; } header { font-size: 2rem; font-weight: bold; margin-bottom: 1rem; letter-spacing: 0.1em; text-align: center; } .container { max-width: 800px; margin: 0 auto; text-align: …",
-      "t": 1789320866857,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1966,9 +1885,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    0,
-    0,
     15,
     4,
     4,
@@ -1995,15 +1911,18 @@
     4,
     1,
     5,
-    8
+    8,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.07,
+      0.22,
       0.16,
-      0.88
+      0.74
     ],
-    "ramPct": 55,
+    "ramPct": 49,
     "cpus": 12
   },
   "brain": {
@@ -2938,9 +2857,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 91
+        "warm": false,
+        "utilPct": 11,
+        "vramPct": 15
       },
       {
         "alias": "GPU-Node-2",
