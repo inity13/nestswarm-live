@@ -1,5 +1,5 @@
 {
-  "generated": 1789320033092,
+  "generated": 1789320213142,
   "status": "running",
   "stats": {
     "products": 160,
@@ -88,8 +88,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "```javascript const mediaRecorder = new MediaRecorder(stream); let audioChunks = []; media",
-        "t": 1789319897830
+        "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); cons",
+        "t": 1789320093854
       }
     },
     {
@@ -298,6 +298,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); // Simple in-memory storage for demo purposes const priceCache = new Map(); const checkoutSessions = new Map(); // Mock crypto price API (in production, this would call a real API) function fetchCryptoPrice(symbol) { // Simulate API delay return new Promise((resolve) => { setTimeout(() => { const prices = { btc: 43250.75, …",
+      "t": 1789320093854,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "launcher",
       "text": "InsightMentor SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
@@ -1130,16 +1137,39 @@
       "t": 1789302379655,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to perform actions to sign up on Paddle. We have to use the Gmail account [email]. We need to use \"Sign up with Google\" if available. We need to produce a single action JSON. We need to inspect the page. The page text includes \"Get started\" link. We need to click \"Get started\". Then likely a sign-up page appears. We need to click \"Sign up with Google\". But we need to check if the page has that button. The page text includes \"Get started\" as a link. We need to click that. So first action: click \"Get started\". The selector? We can use link text \"Get started\". So action: clickText with …",
-      "t": 1789302361219,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship CryptoPilot MT (score 0/8, attempt 2/3)",
+      "t": 1789320102519,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged CryptoPilot MT → cryptopilot-mt.zip (7625 bytes)",
+      "t": 1789320093975,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for CryptoPilot MT: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789320093946,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "council demands satisfied for CryptoPilot MT",
+      "t": 1789320093946,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789320035424,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship CryptoPilot MT (score 0/8, attempt 1/3)",
@@ -1589,36 +1619,6 @@
       "text": "conductor created skill stripe-owner-onboarding",
       "t": 1789318125537,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill go-rust-exe-build-checklist",
-      "t": 1789318125537,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1789318125535,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback to enable payment integration",
-      "t": 1789318125525,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789318095291,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789318095291,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1885,9 +1885,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    0,
-    0,
     4,
     0,
     2,
@@ -1914,13 +1911,16 @@
     7,
     6,
     0,
+    0,
+    1,
+    5,
     0
   ],
   "load": {
     "loadavg": [
-      0.43,
-      1.82,
-      2.23
+      0.08,
+      1,
+      1.84
     ],
     "ramPct": 55,
     "cpus": 12
@@ -1960,7 +1960,7 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
@@ -2805,6 +2805,13 @@
   ],
   "building": [
     {
+      "name": "CryptoPilot MT",
+      "niche": "crypto, web3 & trading",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtpckqw31h90/"
+    },
+    {
       "name": "RealFlow MT",
       "niche": "real estate, renting & property",
       "stage": "shipped",
@@ -2824,13 +2831,6 @@
       "stage": "shipped",
       "status": "listed",
       "url": "https://inity13.github.io/nestswarm-store/pmtp9s0dgv0fg/"
-    },
-    {
-      "name": "InsightDraft",
-      "niche": "developer productivity tools & services",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtp995cycd24/"
     }
   ],
   "nodes": [
@@ -2858,7 +2858,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 12,
         "vramPct": 91
       },
       {
