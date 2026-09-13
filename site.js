@@ -127,7 +127,9 @@ function render() {
   const best = (data.products || []).filter((p) => p.status === 'listed').sort((a, b) => (b.score || 0) - (a.score || 0))[0];
   fe.innerHTML = best
     ? `<div class="ft-score" style="color:${best.score >= 7 ? '#37d39b' : best.score >= 5 ? '#00e5ff' : '#ffb454'}">${best.score ?? '-'}</div>` +
-      `<div class="ft-body"><div class="ft-name">${esc(best.name)}</div><div class="ft-meta">${esc(best.niche || '')} · $${best.price || 0}</div></div>`
+      `<div class="ft-body"><div class="ft-name">${esc(best.name)}</div><div class="ft-meta">${esc(best.niche || '')} · $${best.price || 0}</div>` +
+      (best.url ? `<a class="ft-link" href="${esc(best.url)}" target="_blank" rel="noopener noreferrer">view product →</a>` : '') +
+      `</div>`
     : '<div class="ft-empty">no listed product yet</div>';
 
   // chat
