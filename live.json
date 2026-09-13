@@ -1,5 +1,5 @@
 {
-  "generated": 1789311571878,
+  "generated": 1789311751982,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
-        "t": 1789310399664
+        "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); cons",
+        "t": 1789311742197
       }
     },
     {
@@ -292,6 +292,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error loading index.html'); } else { res.writeHead(200, { 'Content-Type': 'text/html' }); res.end(data); } }); } else if (req.method === 'POST' && …",
+      "t": 1789311742197,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Sentinel",
       "text": "### Security Assessment **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment in MTN1 is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. - **Fix**: Sanitize all user inputs before assigning them to innerHTML. 2. **Child Process Spawning**: MTN1 spawns child processes, which could be exploited for privilege escalation or resource exhaustion. - **Fix**: Implement strict access controls and ensure only authorized code can spawn child processes. 3. **Static-Serve Tool Exposure**: The static-serve tool is exposed directly to the internet …",
@@ -1124,16 +1131,273 @@
       "t": 1789295543802,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "As the Scout I see our biggest lever: free and heavily discounted model access. Every launch should consume the cheapest compute available, and the swarm must actively harvest provider trial credits and discount programs before we even touch a pricing model. **Demand:** Institute a daily audit of all open-source,Sure. As the Scout I see our biggest lever: free and heavily discounted model access. Every launch should consume the cheapest compute available, and the swarm must actively harvest provider trial credits and discount programs before we even touch a pricing model. **Demand:** …",
-      "t": 1789295543448,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship InsightDraft (score 0/8, attempt 2/3)",
+      "t": 1789311751218,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged InsightDraft → insightdraft.zip (10734 bytes)",
+      "t": 1789311742335,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for InsightDraft: [path] ``` SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789311742298,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"fail\",\"reason\":\"Access denied. The provided URL does not lead to a signup page.\"}",
+      "t": 1789311625861,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Millo (revenue)",
+      "t": 1789311625861,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Creator Monetization Platforms (revenue)",
+      "t": 1789311623889,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Product Hunt (revenue)",
+      "t": 1789311622931,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cohere (https://cohere.com/signup)",
+      "t": 1789311621892,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs entering verification code from inbox",
+      "t": 1789311618726,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack needs email verification — reading inbox",
+      "t": 1789311599505,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311599504,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311598361,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789311597213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311596071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs needs email verification — reading inbox",
+      "t": 1789311595176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311595145,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789311594871,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311593930,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311593657,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311592733,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 5 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311592461,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311591540,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789311591268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311590389,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311590071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311589286,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311588876,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311588192,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789311587665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789311587004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789311587004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789311587004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789311587004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789311587004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789311587004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789311583202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1789311583199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311583198,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311583184,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789311583184,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311581267,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789311580672,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789311578062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789311574452,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
@@ -1349,308 +1613,33 @@
       "text": "revenue scout: 4/67 channels active · 0 new discovered",
       "t": 1789311132454,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789311092570,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789311092555,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789311034118,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789311016661,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for architect (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789310986716,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for architect (fetch failed) — falling to external/free",
-      "t": 1789310986697,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789310971575,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789310971048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310971039,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789310970960,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789310912450,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310912449,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1789310912449,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310912432,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789310912432,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789310853876,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
-      "t": 1789310851883,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 2m ago) — skip",
-      "t": 1789310851883,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting ai21labs (https://ai21labs.com/signup)",
-      "t": 1789310851883,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia in cooldown (last attempt 2m ago) — skip",
-      "t": 1789310851882,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 2m ago) — skip",
-      "t": 1789310850939,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 2m ago) — skip",
-      "t": 1789310850939,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789310850939,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1789310812290,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789310798202,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3276MB free)",
-      "t": 1789310792803,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789310792803,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789310791745,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310791732,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789310737241,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789310737241,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 6 fix(es) — provider claude not found; provider chatgpt not found; disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789310737241,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789310737240,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789310737240,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider claude not found",
-      "t": 1789310737239,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider chatgpt not found",
-      "t": 1789310737239,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789310735225,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: elevenlabs — queued for key hunter",
-      "t": 1789310730317,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1789310730317,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789310730316,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1789310730315,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1789310730315,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 157 products with flags, 1 with high-severity findings",
-      "t": 1789310715922,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
-      "t": 1789310707945,
-      "type": "scout"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789311571630,
+      "text": "launch-discipline: polishing flagship InsightDraft (score 0/8, attempt 2/3)",
+      "t": 1789311751218,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789311571572,
+      "text": "packaged InsightDraft → insightdraft.zip (10734 bytes)",
+      "t": 1789311742335,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "desktop fallback failed for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789311516683,
+      "text": "polish syntax fail for InsightDraft: [path] ``` SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789311742298,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789311516662,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789311516659,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789311516636,
-      "type": "event"
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error loading index.html'); } else { res.writeHead(200, { 'Content-Type': 'text/html' }); res.end(data); } }); } else if (req.method === 'POST' && …",
+      "t": 1789311742197,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1904,7 +1893,7 @@
     }
   ],
   "ledger": {
-    "total": 1200,
+    "total": 1202,
     "revenue": 0,
     "effects": 167,
     "boundary": 1,
@@ -1927,14 +1916,11 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     15,
     12,
-    8,
-    5,
+    12,
+    1,
     9,
     3,
     1,
@@ -1945,15 +1931,18 @@
     0,
     3,
     1,
-    6
+    6,
+    64,
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      4.71,
-      2.94,
-      1.95
+      0.42,
+      1.84,
+      1.7
     ],
-    "ramPct": 60,
+    "ramPct": 75,
     "cpus": 12
   },
   "brain": {
@@ -1988,6 +1977,10 @@
       },
       "researcher": {
         "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "polisher": {
+        "model": "deepseek-r1:8b",
         "tier": "local"
       }
     },
@@ -2780,6 +2773,13 @@
   ],
   "building": [
     {
+      "name": "InsightDraft",
+      "niche": "developer productivity tools & services",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtp995cycd24/"
+    },
+    {
       "name": "RealPilot MT",
       "niche": "real estate, renting & property",
       "stage": "shipped",
@@ -2799,13 +2799,6 @@
       "stage": "shipped",
       "status": "listed",
       "url": "https://inity13.github.io/nestswarm-store/pmtpckqw31h90/"
-    },
-    {
-      "name": "InsightCraft",
-      "niche": "legal, contracts & compliance",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtpahy0j0lpn/"
     }
   ],
   "nodes": [
@@ -2831,10 +2824,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 17
+        "busy": false,
+        "warm": true,
+        "utilPct": 13,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2851,11 +2844,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 26,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 57,
+    "selfHostedInferencePct": 74,
     "jobsProcessed": 179
   }
 }
