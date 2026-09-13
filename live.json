@@ -1,5 +1,5 @@
 {
-  "generated": 1789340556269,
+  "generated": 1789340736112,
   "status": "running",
   "stats": {
     "products": 166,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
         "t": 1789340539415
@@ -1142,6 +1142,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> LedgerLens AI",
+      "t": 1789340575848,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789340568527,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 166 products)",
+      "t": 1789340558583,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> LedgerLens AI",
       "t": 1789340545836,
       "type": "building"
@@ -1601,54 +1619,9 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3165MB free)",
       "t": 1789337706167,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
-      "t": 1789337677637,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
-      "t": 1789337497639,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
-      "t": 1789337317949,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> LedgerLens AI",
-      "t": 1789340545836,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for LedgerLens AI — 2 files, working node app. Handing off to test.",
-      "t": 1789340539417,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789340539417,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML_PATH = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); const pathname = parsedUrl.pathname; if (pathname === '/' && req.method === 'GET') { fs.readFile(INDEX_HTML_PATH, 'utf8', (err, data) => { if (err) { res.writeHead(500, { 'Content-Type': 'text/plain' }); res.end('Internal Server …",
-      "t": 1789340539415,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1916,9 +1889,6 @@
     1,
     0,
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1941,15 +1911,18 @@
     0,
     1,
     0,
-    3
+    3,
+    4,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.27,
-      0.68
+      0.55,
+      0.38,
+      0.65
     ],
-    "ramPct": 77,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -2834,7 +2807,7 @@
     {
       "name": "LedgerLens AI",
       "niche": "small-business operations & accounting",
-      "stage": "test",
+      "stage": "build",
       "status": "building",
       "url": ""
     }
@@ -2864,7 +2837,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 77
       },
       {
@@ -2880,13 +2853,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 26,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 88,
-    "jobsProcessed": 195
+    "jobsProcessed": 196
   }
 }
