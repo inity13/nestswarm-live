@@ -1,5 +1,5 @@
 {
-  "generated": 1789334254667,
+  "generated": 1789334434745,
   "status": "running",
   "stats": {
     "products": 164,
@@ -41,7 +41,7 @@
       "active": false,
       "last": {
         "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789333419431
+        "t": 1789334326854
       }
     },
     {
@@ -298,6 +298,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for FurFit Coach — 2 files, working node app. Handing off to test.",
+      "t": 1789334326858,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = parsedUrl.pathname; if (pathname === '/') { pathname = '/index.html'; } const filepath = path.join(__dirname, pathname); fs.readFile(filepath, (err, data) => { if (err) { res.writeHead(404, { 'Content-Type': 'text/plain' }); res.end('File not found'); return; } let contentType = 'text/html'; if …",
+      "t": 1789334326854,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for FurFit Coach — 2 files, working node app. Handing off to test.",
@@ -1123,23 +1137,45 @@
       "t": 1789329726268,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "compliance_officer",
-      "text": "I agree that CalmZone AI must ship with fully functional, end-to-end tested features. The single most important quality requirement is that every core feature—timer, AI chat, journal, and consultation—must work flawlessly without any issues. Safety and reliability are paramount for a product designed to support mental health.",
-      "t": 1789329724253,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "payment-integrator",
-      "text": "I agree with your concerns about the critical nature of CalmZone AI for remote workers needing mental health support. The single most important quality requirement this product must meet to ship is that every core feature—Calm Down Timer, AI chatbot, journal, and communication tools—must function flawlessly, without any placeholders or untested components. Every feature should be rigorously tested and ready to go before we launch.",
-      "t": 1789329722215,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> FurFit Coach",
+      "t": 1789334344418,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for FurFit Coach is stuck (attempt 2) — trying a stronger model",
+      "t": 1789334344418,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789334334510,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> FurFit Coach",
+      "t": 1789334334421,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789334326858,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 164 products)",
+      "t": 1789334256964,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3256MB free)",
@@ -1487,30 +1523,6 @@
       "text": "registrar: registering Paddle (revenue)",
       "t": 1789332536585,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cohere (https://cohere.com/signup)",
-      "t": 1789332509930,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs entering verification code from inbox",
-      "t": 1789332506763,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> FurFit Coach",
-      "t": 1789332494076,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1789332492809,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1777,9 +1789,6 @@
     "priority": "AI-powered analytics dashboard for small businesses"
   },
   "throughput": [
-    48,
-    10,
-    8,
     15,
     49,
     20,
@@ -1806,13 +1815,16 @@
     0,
     3,
     0,
+    0,
+    1,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.28,
-      0.32
+      0.11,
+      0.19,
+      0.27
     ],
     "ramPct": 58,
     "cpus": 12
@@ -2729,7 +2741,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 11,
         "vramPct": 47
       },
       {
@@ -2745,13 +2757,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 89,
-    "jobsProcessed": 190
+    "jobsProcessed": 191
   }
 }
