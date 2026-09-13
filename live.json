@@ -1,5 +1,5 @@
 {
-  "generated": 1789276524073,
+  "generated": 1789276613357,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "1. **Gumroad**: Ideal for ScopeSage due to its direct-to-consumer model, allowing immediat",
-        "t": 1789276358547
+        "text": "We need to produce a single action JSON. We can choose to click \"Create account\" first. Bu",
+        "t": 1789276535134
       }
     },
     {
@@ -274,6 +274,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "We need to produce a single action JSON. We can choose to click \"Create account\" first. But we need to sign{\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
+      "t": 1789276535134,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for ScopeSage due to its direct-to-consumer model, allowing immediate sales without additional fees once launched. Perfect for reaching freelancers and solopreneurs directly. 2. **Product Hunt**: A great platform for FitCue as it helps build buzz through press coverage and user-generated content, essential for acquiring early adopters interested in health and fitness tech. 3. **Patreon**: Best for InsightMentor since it encourages recurring revenue by allowing users to support the product over time. Perfect for remote work enthusiasts seeking long-term engagement and …",
@@ -1106,16 +1113,21 @@
       "t": 1789244150074,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "The swarm’s energy is best spent on a single, unmistakably differentiated product that solves a real customer problem with ruthless precision. We stop chasing quantity and start building one product so polished it cannot be ignored. The team must commit to a single flagship product now and launch it with a working checkout—no more half-baked ideas or endless refinement cycles. The evidence is clear: 160 products, 18 listed, avg critic 6.0. This is not a problem of quality—it’s a problem of direction. We are not here to build a portfolio; we are here to earn money for the Swarm Protector. The …",
-      "t": 1789244149723,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
+      "t": 1789276535136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789276526197,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"Access to https://huggingface.co/join is blocked with a 403 error. Unable to proceed with acc",
@@ -1583,62 +1595,27 @@
       "text": "self-heal: disabled provider openrouter",
       "t": 1789269752680,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789269752678,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1789269742030,
-      "type": "vault"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"Access to https://huggingface.co/join is blocked with a 403 error. Unable to proceed with acc",
-      "t": 1789276498777,
+      "text": "registrar: Substack step 0 -> {\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
+      "t": 1789276535136,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "keyhunter: googleailanguagemodels in cooldown (last attempt 112m ago) — skip",
-      "t": 1789276498777,
-      "type": "event"
+      "who": "LaForge",
+      "text": "We need to produce a single action JSON. We can choose to click \"Create account\" first. But we need to sign{\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
+      "t": 1789276535134,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider mistral",
-      "t": 1789276480138,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789276526197,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider nvidia; disabled provider openrouter; disabled provider mistral",
-      "t": 1789276480138,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789276480137,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789276480136,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789276435868,
-      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1892,7 +1869,7 @@
     }
   ],
   "ledger": {
-    "total": 1109,
+    "total": 1114,
     "revenue": 0,
     "effects": 160,
     "boundary": 1,
@@ -1904,8 +1881,6 @@
     "priority": "A high-margin niche with verified willingness-to-pay, validated through micro-prototype and paid pilot"
   },
   "throughput": [
-    1,
-    0,
     0,
     1,
     0,
@@ -1930,16 +1905,18 @@
     0,
     1,
     0,
-    5,
-    24,
-    5,
-    9
+    0,
+    16,
+    15,
+    9,
+    8,
+    4
   ],
   "load": {
     "loadavg": [
-      0.49,
-      0.45,
-      0.3
+      0.23,
+      0.39,
+      0.29
     ],
     "ramPct": 55,
     "cpus": 12
@@ -2827,7 +2804,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 9,
         "vramPct": 85
       },
       {
@@ -2845,7 +2822,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
