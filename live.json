@@ -1,5 +1,5 @@
 {
-  "generated": 1789321113097,
+  "generated": 1789321293132,
   "status": "running",
   "stats": {
     "products": 160,
@@ -88,8 +88,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewpor",
-        "t": 1789320866857
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789321149214
       }
     },
     {
@@ -298,6 +298,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "polisher",
+      "text": "Polished WorkflowGenius (pass 2) — tighter, cleaner, closer to ship-ready.",
+      "t": 1789321151529,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error: Could not load index.html'); return; } res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } else { res.writeHead(404, { …",
+      "t": 1789321149214,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "launcher",
       "text": "SmartDoc AI SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
@@ -1123,23 +1137,39 @@
       "t": 1789303858783,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "I’ll keep the swarm’s budget as lean as a razor‑edge blade: hunt for every free‑tier or 30‑day trial that can power our flagship, and map the “no‑cost” corners of every platform we plan to sell on. What the team must do right now is build a single, fully‑functional prototype that runs on at least one zero‑cost provider, then lock in that free tier’s terms—otherwise we’ll be chasing dollars without a concrete revenue path.",
-      "t": 1789303858429,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Let's craft: \"Our focus must be on turning a single, deeply desired product into a revenue engine, not a portfolio of unvalidated features. The team must immediately create a validated buyer persona and a headline thatOur focus must be on turning a single, deeply desired product into a revenue engine, not a portfolio of unvalidated features. The team must immediately create a validated buyer persona and a headline that captures the core problem and the unique value of the chosen flagship, and publish it across all channels before any code changes.",
-      "t": 1789303858077,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship WorkflowGenius (score 0/8, attempt 2/3)",
+      "t": 1789321152557,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: WorkflowGenius -> http://localhost:5339",
+      "t": 1789321151529,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: WorkflowGenius (pass #2)",
+      "t": 1789321151529,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged WorkflowGenius → workflowgenius.zip (10239 bytes)",
+      "t": 1789321149309,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789321115287,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1589,36 +1619,6 @@
       "text": "self-heal: already disabled: gemini (no-op)",
       "t": 1789319316527,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789319316527,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789319316527,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789319316527,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789319316527,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789319315529,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1885,9 +1885,6 @@
     "priority": ""
   },
   "throughput": [
-    15,
-    4,
-    4,
     1,
     0,
     3,
@@ -1914,13 +1911,16 @@
     8,
     1,
     0,
+    0,
+    6,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.16,
-      0.74
+      0.11,
+      0.13,
+      0.62
     ],
     "ramPct": 49,
     "cpus": 12
@@ -2805,6 +2805,13 @@
   ],
   "building": [
     {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmjjxof92pf/"
+    },
+    {
       "name": "SmartDoc AI",
       "niche": "legal, contracts & compliance",
       "stage": "shipped",
@@ -2824,13 +2831,6 @@
       "stage": "shipped",
       "status": "listed",
       "url": "https://inity13.github.io/nestswarm-store/pmtp7ocnyrgtz/"
-    },
-    {
-      "name": "InsightForge",
-      "niche": "e-commerce, dropshipping & reselling",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtp8wepbaikd/"
     }
   ],
   "nodes": [
@@ -2858,7 +2858,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 11,
+        "utilPct": 9,
         "vramPct": 15
       },
       {
