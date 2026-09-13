@@ -1,8 +1,8 @@
 {
-  "generated": 1789322193236,
+  "generated": 1789322373277,
   "status": "running",
   "stats": {
-    "products": 160,
+    "products": 161,
     "listed": 16,
     "agents": 25,
     "avgScore": "-"
@@ -298,6 +298,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: MindCalm — travel, trip planning & remote work. Let's see if it's worth building.",
+      "t": 1789322365420,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: remote worker productivity tools; paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
@@ -1130,16 +1137,45 @@
       "t": 1789312342550,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "InsightDraft SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789312341452,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> MindCalm",
+      "t": 1789322372699,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: MindCalm [travel, trip planning & remote work]",
+      "t": 1789322365420,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789322362718,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: travel, trip planning & remote work",
+      "t": 1789322362717,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789322352699,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789322195533,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1583,45 +1619,47 @@
       "text": "self-heal: already disabled: deepinfra (no-op)",
       "t": 1789319797408,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> MindCalm",
+      "t": 1789322372699,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: MindCalm — travel, trip planning & remote work. Let's see if it's worth building.",
+      "t": 1789322365420,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789319742660,
+      "text": "ideated: MindCalm [travel, trip planning & remote work]",
+      "t": 1789322365420,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789322362718,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: travel, trip planning & remote work",
+      "t": 1789322362717,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3329MB free)",
-      "t": 1789319705058,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789319705058,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789319675509,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789319672104,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789319672091,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789322352699,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1887,9 +1925,6 @@
   "throughput": [
     1,
     0,
-    8,
-    1,
-    0,
     4,
     1,
     5,
@@ -1914,13 +1949,16 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0,
-      0.16,
-      0.41
+      0.01,
+      0.09,
+      0.33
     ],
     "ramPct": 72,
     "cpus": 12
@@ -1928,7 +1966,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -2805,32 +2843,11 @@
   ],
   "building": [
     {
-      "name": "WorkflowGenius",
-      "niche": "recruiting, HR & team tools",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtmjjxof92pf/"
-    },
-    {
-      "name": "SmartDoc AI",
-      "niche": "legal, contracts & compliance",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtmklnygn2gg/"
-    },
-    {
-      "name": "CryptoPilot MT",
-      "niche": "crypto, web3 & trading",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtpckqw31h90/"
-    },
-    {
-      "name": "RealFlow MT",
-      "niche": "real estate, renting & property",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtp7ocnyrgtz/"
+      "name": "MindCalm",
+      "niche": "travel, trip planning & remote work",
+      "stage": "spec",
+      "status": "building",
+      "url": ""
     }
   ],
   "nodes": [
@@ -2874,8 +2891,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 91
       }
