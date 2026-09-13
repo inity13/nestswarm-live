@@ -1,5 +1,5 @@
 {
-  "generated": 1789325973581,
+  "generated": 1789326153591,
   "status": "running",
   "stats": {
     "products": 162,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
         "t": 1789325940205
@@ -1142,6 +1142,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> CalmZone AI",
+      "t": 1789325993093,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789325991504,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
+      "t": 1789325975820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'test' -> CalmZone AI",
       "t": 1789325943090,
       "type": "building"
@@ -1601,54 +1619,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789322015423,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: focus niche: remote worker productivity tools; paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
-      "t": 1789321837577,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789321835785,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789321655513,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> CalmZone AI",
-      "t": 1789325943090,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for CalmZone AI — 2 files, working node app. Handing off to test.",
-      "t": 1789325940208,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789325940207,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML_PATH = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = parsedUrl.pathname; if (pathname === '/') { pathname = '/index.html'; } const filePath = path.join(__dirname, pathname); fs.readFile(filePath, 'utf8', (err, data) => { if (err) { res.writeHead(404, { 'Content-Type': …",
-      "t": 1789325940205,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1912,9 +1885,6 @@
     "priority": "AI-powered task manager tailored for remote workers"
   },
   "throughput": [
-    5,
-    2,
-    0,
     1,
     0,
     0,
@@ -1941,13 +1911,16 @@
     0,
     1,
     0,
-    3
+    3,
+    4,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
       0.25,
-      0.23,
-      0.19
+      0.18,
+      0.17
     ],
     "ramPct": 73,
     "cpus": 12
@@ -2834,7 +2807,7 @@
     {
       "name": "CalmZone AI",
       "niche": "legal, contracts & compliance",
-      "stage": "test",
+      "stage": "build",
       "status": "building",
       "url": ""
     }
@@ -2880,13 +2853,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 84,
-    "jobsProcessed": 183
+    "jobsProcessed": 184
   }
 }
