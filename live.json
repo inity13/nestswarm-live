@@ -1,5 +1,5 @@
 {
-  "generated": 1789311031766,
+  "generated": 1789311211757,
   "status": "running",
   "stats": {
     "products": 160,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking** 1. **Unsanitized `i",
-        "t": 1789310408336
+        "text": "### Security Assessment **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML ",
+        "t": 1789311123277
       }
     },
     {
@@ -292,6 +292,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "### Security Assessment **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment in MTN1 is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. - **Fix**: Sanitize all user inputs before assigning them to innerHTML. 2. **Child Process Spawning**: MTN1 spawns child processes, which could be exploited for privilege escalation or resource exhaustion. - **Fix**: Implement strict access controls and ensure only authorized code can spawn child processes. 3. **Static-Serve Tool Exposure**: The static-serve tool is exposed directly to the internet …",
+      "t": 1789311123277,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing, making it straightforward to start earning revenue immediately. 2. **dev.to**: Perfect for launching InsightMentor as a premium article or course, leveraging the platform's audience and community to drive organic growth. 3. **Patreon**: Suitable for InsightCraft and EvoSage, offering recurring support that can provide steady income while building a loyal customer base. These channels offer immediate launch capabilities, direct access to potential customers, and built-in tools to manage sales and payments …",
@@ -1124,16 +1131,51 @@
       "t": 1789295543448,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Team, we’ve got 50 great products ready to roll out this month—time to kick raw count metrics to the curb! My job? To make sure every product is a standout hit, not just another face on the shelf. But here's what I really want you to focus on: **let’s nail down our pricing strategy**. We need clear, compelling reasons for customers to buy now—be it exclusive discounts, limited-time offers, or simply positioning our products as must-haves. Once we’ve got that nailed down, let’s roll those babies out and watch the money roll in!",
-      "t": 1789295543096,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311155535,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789311154222,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789311153470,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789311132454,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "desktop fallback failed for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
+      "t": 1789311092570,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
+      "t": 1789311092555,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789311034118,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
@@ -1462,45 +1504,34 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789311155535,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789311154222,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789311016661,
+      "t": 1789311153470,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "desktop fallback failed for architect (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789310986716,
-      "type": "event"
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789311132454,
+      "type": "scout"
     },
     {
-      "who": "swarm",
-      "text": "compute-node route failed for architect (fetch failed) — falling to external/free",
-      "t": 1789310986697,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789310971575,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789310971048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310971039,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789310970960,
-      "type": "event"
+      "who": "Sentinel",
+      "text": "### Security Assessment **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment in MTN1 is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. - **Fix**: Sanitize all user inputs before assigning them to innerHTML. 2. **Child Process Spawning**: MTN1 spawns child processes, which could be exploited for privilege escalation or resource exhaustion. - **Fix**: Implement strict access controls and ensure only authorized code can spawn child processes. 3. **Static-Serve Tool Exposure**: The static-serve tool is exposed directly to the internet …",
+      "t": 1789311123277,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1786,24 +1817,24 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     15,
     12,
     8,
     5,
     9,
-    3
+    3,
+    1,
+    6,
+    5
   ],
   "load": {
     "loadavg": [
-      3.46,
-      1.66,
-      1.22
+      1.34,
+      2.12,
+      1.53
     ],
-    "ramPct": 64,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1826,6 +1857,18 @@
       },
       "github_researcher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "architect": {
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2669,10 +2712,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 59,
-        "vramPct": 92
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2693,7 +2736,7 @@
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 80,
+    "selfHostedInferencePct": 70,
     "jobsProcessed": 179
   }
 }
