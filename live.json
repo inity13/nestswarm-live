@@ -1,5 +1,5 @@
 {
-  "generated": 1789322373277,
+  "generated": 1789322553470,
   "status": "running",
   "stats": {
     "products": 161,
@@ -1142,6 +1142,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "stage 'build' -> MindCalm",
+      "t": 1789322392701,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 161 products)",
+      "t": 1789322375576,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'spec' -> MindCalm",
       "t": 1789322372699,
       "type": "building"
@@ -1607,59 +1619,9 @@
       "text": "self-heal: already disabled: nvidia (no-op)",
       "t": 1789319797408,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789319797408,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789319797408,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> MindCalm",
-      "t": 1789322372699,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: MindCalm — travel, trip planning & remote work. Let's see if it's worth building.",
-      "t": 1789322365420,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: MindCalm [travel, trip planning & remote work]",
-      "t": 1789322365420,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1789322362718,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: travel, trip planning & remote work",
-      "t": 1789322362717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789322352699,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1924,9 +1886,6 @@
   },
   "throughput": [
     1,
-    0,
-    4,
-    1,
     5,
     8,
     1,
@@ -1952,13 +1911,16 @@
     0,
     1,
     0,
-    6
+    6,
+    3,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.09,
-      0.33
+      0.03,
+      0.07,
+      0.28
     ],
     "ramPct": 72,
     "cpus": 12
@@ -2845,7 +2807,7 @@
     {
       "name": "MindCalm",
       "niche": "travel, trip planning & remote work",
-      "stage": "spec",
+      "stage": "build",
       "status": "building",
       "url": ""
     }
@@ -2891,13 +2853,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 84,
-    "jobsProcessed": 179
+    "jobsProcessed": 180
   }
 }
