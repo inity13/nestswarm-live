@@ -1,5 +1,5 @@
 {
-  "generated": 1789308621275,
+  "generated": 1789308801408,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789308651516,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3288MB free)",
+      "t": 1789308651513,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789308623704,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789308443937,
       "type": "event"
@@ -1595,24 +1613,6 @@
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
       "t": 1789303249067,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789303244057,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789303239027,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789303219027,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1879,44 +1879,44 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
     0,
     0
   ],
   "load": {
     "loadavg": [
-      0.02,
       0.07,
-      0.08
+      0.12,
+      0.09
     ],
-    "ramPct": 52,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2799,9 +2799,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
