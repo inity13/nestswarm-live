@@ -1,5 +1,5 @@
 {
-  "generated": 1789260141843,
+  "generated": 1789260231142,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789260175213,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3450MB free)",
+      "t": 1789260175209,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789260143809,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789259964015,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "security scan: 157 products with flags, 1 with high-severity findings",
       "t": 1789254740570,
       "type": "security"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789260175213,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3450MB free)",
+      "t": 1789260175209,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789254563717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789254383540,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789254203379,
+      "t": 1789260143809,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1857,8 +1876,6 @@
     "priority": "the highest-potential product from the 18-listed catalog with demonstrated demand and clear willingness-to-pay"
   },
   "throughput": [
-    3,
-    0,
     0,
     1,
     0,
@@ -1886,15 +1903,17 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.09,
-      0.09
+      0.29,
+      0.21,
+      0.13
     ],
-    "ramPct": 49,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2777,9 +2796,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 21
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 52
       },
       {
         "alias": "GPU-Node-2",
