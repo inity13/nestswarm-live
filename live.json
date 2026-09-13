@@ -1,5 +1,5 @@
 {
-  "generated": 1789341456315,
+  "generated": 1789341636394,
   "status": "running",
   "stats": {
     "products": 166,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
         "t": 1789341415581
@@ -1142,6 +1142,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 166 products)",
+      "t": 1789341459108,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "EXTREME elevation: build for LedgerLens AI is stuck (attempt 2) — trying a stronger model",
       "t": 1789341426105,
       "type": "event"
@@ -1613,60 +1619,9 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1789338476250,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1789338476245,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for LedgerLens AI is stuck (attempt 2) — trying a stronger model",
-      "t": 1789341426105,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> LedgerLens AI",
-      "t": 1789341426104,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789341416214,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> LedgerLens AI",
-      "t": 1789341416104,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for LedgerLens AI — 2 files, working node app. Handing off to test.",
-      "t": 1789341415585,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789341415585,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_HTML_PATH = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = parsedUrl.pathname; if (pathname === '/') { pathname = '/index.html'; } const filePath = path.join(__dirname, pathname); fs.readFile(filePath, 'utf8', (err, data) => { if (err) { res.writeHead(404, { 'Content-Type': 'text/plain' }); res.end('File not found'); …",
-      "t": 1789341415581,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1930,9 +1885,6 @@
     "priority": "AI-powered analytics dashboard for small businesses"
   },
   "throughput": [
-    5,
-    0,
-    0,
     1,
     0,
     0,
@@ -1959,15 +1911,18 @@
     0,
     3,
     0,
-    6
+    6,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.27,
-      0.41
+      0.28,
+      0.28,
+      0.39
     ],
-    "ramPct": 71,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -2882,7 +2837,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 12,
         "vramPct": 47
       },
       {
