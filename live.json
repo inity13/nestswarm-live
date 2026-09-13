@@ -1,5 +1,5 @@
 {
-  "generated": 1789300345963,
+  "generated": 1789300435262,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789300376763,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3194MB free)",
+      "t": 1789300376761,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789300348227,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789300168036,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "conductor created skill go-rust-exe-build-checklist",
       "t": 1789295303363,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789300376763,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1789295303362,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3194MB free)",
+      "t": 1789300376761,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill: go-rust-exe-build-checklist",
-      "t": 1789295303362,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Provide Stripe API keys or approve MoR fallback for payment integration",
-      "t": 1789295303360,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789300348227,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1861,8 +1880,6 @@
     "priority": "The highest‑potential underserved niche uncovered by the gap analysis (to be defined after step 1)."
   },
   "throughput": [
-    3,
-    0,
     0,
     1,
     0,
@@ -1890,15 +1907,17 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.08,
-      0.08
+      0.2,
+      0.15,
+      0.11
     ],
-    "ramPct": 53,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2785,9 +2804,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 23
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 55
       },
       {
         "alias": "GPU-Node-2",
