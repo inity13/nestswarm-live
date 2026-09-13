@@ -1,5 +1,5 @@
 {
-  "generated": 1789316972592,
+  "generated": 1789317152642,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789317125505,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789317112513,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789316974837,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789316795033,
       "type": "event"
@@ -1595,27 +1613,22 @@
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789315471691,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789315471691,
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789317125505,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789315471665,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789315471650,
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789317112513,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1879,9 +1892,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    7,
-    0,
-    0,
     1,
     6,
     1,
@@ -1908,15 +1918,18 @@
     14,
     2,
     0,
-    0
+    0,
+    1,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.48,
-      1.57,
-      1.5
+      2.42,
+      1.44,
+      1.42
     ],
-    "ramPct": 57,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2850,10 +2863,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 12,
-        "vramPct": 79
+        "busy": true,
+        "warm": false,
+        "utilPct": 61,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
@@ -2868,9 +2881,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 2,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
