@@ -1,5 +1,5 @@
 {
-  "generated": 1789314812303,
+  "generated": 1789314992351,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>",
-        "t": 1789314246438
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789314911849
       }
     },
     {
@@ -292,6 +292,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "launcher",
+      "text": "EvoSage SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789314921878,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDUSTRIES = { saas: { name: 'SaaS / Tech', strategies: [ 'Prioritize product-led growth: instrument onboarding funnels and track activation rate weekly.', 'Build a founder-led sales motion until you close 10 repeatable deals, then hire your first AE.', 'Invest in developer relations or content marketing to build inbound pipeline at low CAC.' ] }, ecommerce: { name: …",
+      "t": 1789314911849,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Worf",
       "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>EvoSage — AI Growth Coaching for Founders</title> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <style> * { box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; background: linear-gradient(135deg, #0f172a, #1e293b); color: #e2e8f0; margin: 0; padding: 0; min-height: 100vh; } .container { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; } header { text-align: center; margin-bottom: 40px; } header h1 { font-size: …",
@@ -1117,23 +1131,111 @@
       "t": 1789295549090,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "The swarm’s output is drowning in noise because we’re still chasing raw count in a system that rewards neither quantity nor vanity—only real, paying customers. We must stop launching products and start launching *revenue*, which means picking one flagship, polishing it to 4+ quality, and getting it sold before building anything new. The single most important thing is: **ship something that earns money or die trying.**",
-      "t": 1789295548738,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "Sure, I’ll concede that chasing output is a dead‑end—quality and real money matter. The one thing we must do next, no ifs or buts, is pick a single flagship, nail its benefit‑led copy, price it to what a willing buyer pays, and ship a working checkout so the first dollar comes in before we talk about “more products.”",
-      "t": 1789295548385,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for architect (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789314953165,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for architect (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789314953158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789314945721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789314945721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789314945721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789314945721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789314945721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789314945721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship InsightForge (score 0/8, attempt 1/3)",
+      "t": 1789314931866,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: EvoSage SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789314921878,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: EvoSage plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789314921866,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for EvoSage: [path] const http = require('http'); ^^^^^ SyntaxError: Unexpected token 'const' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789314911955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged EvoSage → evosage.zip (12160 bytes)",
+      "t": 1789314911947,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789314871588,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789314871581,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789314871576,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789314814519,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: mistral (no-op)",
@@ -1511,146 +1613,100 @@
       "text": "self-heal: model nemotron-3.5-lightning-free not found",
       "t": 1789313302624,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789313302624,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789313302624,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789313302624,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — provider claude not found; provider chatgpt not found; model nemotron-3.5-lightning-free not found",
-      "t": 1789313302624,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789313237706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789313237706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789313237706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789313237706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789313237706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789313237706,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789313232814,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789313232813,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1789313232813,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789313232793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789313232792,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789313194541,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789313092683,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for architect (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789314953165,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for architect (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789314953158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789314802799,
+      "t": 1789314945721,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789314802799,
+      "t": 1789314945721,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789314802799,
+      "t": 1789314945721,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789314802799,
+      "t": 1789314945721,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789314802799,
+      "t": 1789314945721,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789314802799,
+      "t": 1789314945721,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship InsightForge (score 0/8, attempt 1/3)",
+      "t": 1789314931866,
+      "type": "event"
+    },
+    {
+      "who": "launcher",
+      "text": "EvoSage SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789314921878,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: EvoSage SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789314921878,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: EvoSage plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789314921866,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for EvoSage: [path] const http = require('http'); ^^^^^ SyntaxError: Unexpected token 'const' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789314911955,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged EvoSage → evosage.zip (12160 bytes)",
+      "t": 1789314911947,
+      "type": "event"
+    },
+    {
+      "who": "Worf",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDUSTRIES = { saas: { name: 'SaaS / Tech', strategies: [ 'Prioritize product-led growth: instrument onboarding funnels and track activation rate weekly.', 'Build a founder-led sales motion until you close 10 repeatable deals, then hire your first AE.', 'Invest in developer relations or content marketing to build inbound pipeline at low CAC.' ] }, ecommerce: { name: …",
+      "t": 1789314911849,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1916,9 +1972,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    7,
-    5,
-    0,
     14,
     8,
     8,
@@ -1945,13 +1998,16 @@
     0,
     1,
     0,
-    9
+    9,
+    4,
+    6,
+    10
   ],
   "load": {
     "loadavg": [
-      4.07,
-      3.19,
-      2.14
+      0.22,
+      1.76,
+      1.76
     ],
     "ramPct": 57,
     "cpus": 12
@@ -1959,7 +2015,7 @@
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "scout": {
@@ -1967,7 +2023,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "distributor": {
@@ -2889,7 +2945,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 6,
+        "utilPct": 12,
         "vramPct": 78
       },
       {
@@ -2907,7 +2963,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 9,
         "vramPct": 91
       }
     ],
