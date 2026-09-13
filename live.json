@@ -1,5 +1,5 @@
 {
-  "generated": 1789339295704,
+  "generated": 1789339475696,
   "status": "running",
   "stats": {
     "products": 165,
@@ -1142,6 +1142,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789339414918,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
+      "t": 1789339297836,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
       "t": 1789339117886,
       "type": "event"
@@ -1607,21 +1619,16 @@
       "text": "launch-discipline: FurFit Coach plateaued at 5/8 after 0 polish passes — accepting best effort and proceeding to launch.",
       "t": 1789335764587,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "polisher returned no usable files for FurFit Coach — skipping",
-      "t": 1789335759274,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 164 products)",
-      "t": 1789335697153,
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789339414918,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1885,9 +1892,6 @@
     "priority": "AI-powered analytics dashboard for small businesses"
   },
   "throughput": [
-    1,
-    0,
-    0,
     9,
     0,
     0,
@@ -1914,13 +1918,16 @@
     0,
     1,
     0,
+    0,
+    1,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.28,
-      1.41,
-      1.12
+      3.94,
+      1.93,
+      1.32
     ],
     "ramPct": 57,
     "cpus": 12
@@ -2016,7 +2023,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 19,
@@ -2835,9 +2845,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
+        "busy": true,
+        "warm": false,
+        "utilPct": 54,
         "vramPct": 91
       },
       {
@@ -2855,7 +2865,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
