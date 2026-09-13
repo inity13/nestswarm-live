@@ -1,5 +1,5 @@
 {
-  "generated": 1789314452268,
+  "generated": 1789314632311,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
+      "t": 1789314572235,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789314572205,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789314554197,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789314552201,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789314454893,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789314304447,
       "type": "bench"
@@ -1583,39 +1613,34 @@
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
       "t": 1789313071280,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789313071266,
+      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
+      "t": 1789314572235,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789313071266,
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789314572205,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789313071257,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789314554197,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789313014897,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789312834244,
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789314552201,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1879,9 +1904,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    3,
-    9,
-    25,
     1,
     0,
     0,
@@ -1901,20 +1923,23 @@
     7,
     12,
     1,
-    0,
-    2,
+    1,
+    1,
     1,
     0,
     9,
     3,
     0,
+    0,
+    1,
+    4,
     0
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.78,
-      1.29
+      4.06,
+      1.63,
+      1.47
     ],
     "ramPct": 55,
     "cpus": 12
@@ -2842,10 +2867,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 48
+        "busy": true,
+        "warm": false,
+        "utilPct": 34,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
@@ -2860,8 +2885,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 1,
         "vramPct": 91
       }
