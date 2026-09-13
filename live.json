@@ -1,5 +1,5 @@
 {
-  "generated": 1789276704076,
+  "generated": 1789276793405,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789276706122,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "bounty scout: 5 eligible task card(s) (Algora)",
       "t": 1789276639104,
       "type": "scout"
@@ -1589,20 +1595,14 @@
       "text": "self-heal: disabled provider deepinfra",
       "t": 1789269752681,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789269752680,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "bounty scout: 5 eligible task card(s) (Algora)",
-      "t": 1789276639104,
-      "type": "scout"
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789276706122,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1868,8 +1868,6 @@
     "priority": "A high-margin niche with verified willingness-to-pay, validated through micro-prototype and paid pilot"
   },
   "throughput": [
-    1,
-    0,
     0,
     1,
     0,
@@ -1891,21 +1889,23 @@
     0,
     1,
     0,
-    5,
-    24,
-    5,
+    0,
+    16,
+    15,
     9,
-    7,
-    6,
-    13
+    8,
+    4,
+    9,
+    13,
+    10
   ],
   "load": {
     "loadavg": [
-      0.42,
-      0.43,
-      0.31
+      1.79,
+      0.76,
+      0.42
     ],
-    "ramPct": 59,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1915,7 +1915,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
@@ -1923,11 +1923,11 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
@@ -1963,7 +1963,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2789,9 +2789,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 6,
+        "busy": true,
+        "warm": false,
+        "utilPct": 42,
         "vramPct": 85
       },
       {
@@ -2807,10 +2807,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 2,
-        "vramPct": 91
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 96,
