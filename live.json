@@ -1,5 +1,5 @@
 {
-  "generated": 1789320213142,
+  "generated": 1789320393184,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
         "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); cons",
-        "t": 1789320093854
+        "t": 1789320316262
       }
     },
     {
@@ -298,6 +298,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); // Simple in-memory storage for demo purposes const priceCache = new Map(); const checkoutSessions = new Map(); // Mock crypto price API (in production, this would call a real API) function fetchCryptoPrice(symbol) { // Simulate API delay return new Promise((resolve) => { setTimeout(() => { const prices = { btc: 43250.75, …",
+      "t": 1789320316262,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Worf",
       "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); // Simple in-memory storage for demo purposes const priceCache = new Map(); const checkoutSessions = new Map(); // Mock crypto price API (in production, this would call a real API) function fetchCryptoPrice(symbol) { // Simulate API delay return new Promise((resolve) => { setTimeout(() => { const prices = { btc: 43250.75, …",
@@ -1130,16 +1137,87 @@
       "t": 1789303855253,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "But we need to be careful: there might be multiple \"Get started\" links. We might need to specify{\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789302379655,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789320329254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789320329254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789320329254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789320329254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789320329254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789320329254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship CryptoPilot MT (score 0/8, attempt 3/3)",
+      "t": 1789320322544,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged CryptoPilot MT → cryptopilot-mt.zip (7713 bytes)",
+      "t": 1789320316312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for CryptoPilot MT: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789320316293,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789320272137,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789320272130,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789320272120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789320215649,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship CryptoPilot MT (score 0/8, attempt 2/3)",
@@ -1541,87 +1619,71 @@
       "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
       "t": 1789318471964,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789318471955,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789318415534,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789318235447,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789318135343,
+      "t": 1789320329254,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789318135343,
+      "t": 1789320329254,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789318135343,
+      "t": 1789320329254,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789318135343,
+      "t": 1789320329254,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789318135343,
+      "t": 1789320329254,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789318135343,
+      "t": 1789320329254,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1789318125744,
+      "text": "launch-discipline: polishing flagship CryptoPilot MT (score 0/8, attempt 3/3)",
+      "t": 1789320322544,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789318125687,
+      "text": "packaged CryptoPilot MT → cryptopilot-mt.zip (7713 bytes)",
+      "t": 1789320316312,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "conductor created skill: go-rust-exe-build-checklist",
-      "t": 1789318125537,
+      "text": "polish syntax fail for CryptoPilot MT: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789320316293,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1789318125537,
-      "type": "event"
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); // Simple in-memory storage for demo purposes const priceCache = new Map(); const checkoutSessions = new Map(); // Mock crypto price API (in production, this would call a real API) function fetchCryptoPrice(symbol) { // Simulate API delay return new Promise((resolve) => { setTimeout(() => { const prices = { btc: 43250.75, …",
+      "t": 1789320316262,
+      "system": false,
+      "type": "chat"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1885,9 +1947,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    0,
-    2,
     1,
     7,
     0,
@@ -1914,13 +1973,16 @@
     0,
     1,
     5,
+    0,
+    4,
+    11,
     0
   ],
   "load": {
     "loadavg": [
-      0.08,
-      1,
-      1.84
+      0.27,
+      0.63,
+      1.54
     ],
     "ramPct": 55,
     "cpus": 12
@@ -2858,7 +2920,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
+        "utilPct": 11,
         "vramPct": 91
       },
       {
@@ -2876,11 +2938,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 78,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 179
   }
 }
