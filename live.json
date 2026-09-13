@@ -1,5 +1,5 @@
 {
-  "generated": 1789331194171,
+  "generated": 1789331374178,
   "status": "running",
   "stats": {
     "products": 163,
@@ -41,7 +41,7 @@
       "active": false,
       "last": {
         "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789330386403
+        "t": 1789331226987
       }
     },
     {
@@ -298,6 +298,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
+      "t": 1789331226991,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML_PATH = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); const pathname = parsedUrl.pathname; if (pathname === '/' && req.method === 'GET') { fs.readFile(INDEX_HTML_PATH, 'utf8', (err, data) => { if (err) { res.writeHead(500, { 'Content-Type': 'text/plain' }); res.end('Internal Server …",
+      "t": 1789331226987,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
@@ -1123,23 +1137,45 @@
       "t": 1789320702722,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "Flockly SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789320542596,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "CryptoPilot MT SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789320532590,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for SmallForge MU is stuck (attempt 2) — trying a stronger model",
+      "t": 1789331243840,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SmallForge MU",
+      "t": 1789331243839,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789331233883,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmallForge MU",
+      "t": 1789331233837,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789331226991,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
+      "t": 1789331196408,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
@@ -1583,42 +1619,6 @@
       "text": "self-heal: already disabled: openrouter (no-op)",
       "t": 1789328753521,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789328753521,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789328753520,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789328743116,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789328743116,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789328743116,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789328743116,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1885,9 +1885,6 @@
     "priority": "AI-powered task manager tailored for remote workers"
   },
   "throughput": [
-    1,
-    6,
-    31,
     2,
     7,
     10,
@@ -1914,13 +1911,16 @@
     0,
     1,
     0,
+    0,
+    7,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.15,
-      0.37
+      0.08,
+      0.11,
+      0.31
     ],
     "ramPct": 65,
     "cpus": 12
@@ -2837,7 +2837,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 47
       },
       {
@@ -2853,13 +2853,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 86,
-    "jobsProcessed": 187
+    "jobsProcessed": 188
   }
 }
