@@ -1,5 +1,5 @@
 {
-  "generated": 1789314632311,
+  "generated": 1789314812303,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789314634604,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
       "t": 1789314572235,
       "type": "event"
@@ -1571,73 +1613,43 @@
       "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
       "t": 1789313092683,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789313092671,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789313092670,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789313092641,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789313082153,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789313071284,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789313071280,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1789313071280,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789314572235,
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789314802799,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789314572205,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789314802799,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789314554197,
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789314802799,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789314552201,
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789314802799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789314802799,
       "type": "event"
     }
   ],
@@ -1904,9 +1916,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    1,
-    0,
-    0,
     7,
     5,
     0,
@@ -1933,15 +1942,18 @@
     0,
     1,
     4,
-    0
+    0,
+    1,
+    0,
+    9
   ],
   "load": {
     "loadavg": [
-      4.06,
-      1.63,
-      1.47
+      4.07,
+      3.19,
+      2.14
     ],
-    "ramPct": 55,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1955,7 +1967,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -2024,6 +2036,14 @@
       },
       "payment-integrator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "compliance_officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "go_toolchain_installer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2867,10 +2887,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 34,
-        "vramPct": 92
+        "busy": false,
+        "warm": true,
+        "utilPct": 6,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2885,8 +2905,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 1,
         "vramPct": 91
       }
