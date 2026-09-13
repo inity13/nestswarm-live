@@ -1,6 +1,6 @@
 {
-  "generated": 1789309896042,
-  "status": "passive",
+  "generated": 1789310078953,
+  "status": "running",
   "stats": {
     "products": 160,
     "listed": 16,
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We need to find providers that fit. Must be currently operating, free tier, no credit card",
         "t": 1789309812307
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We need to recommend top 3 channels to launch first. We have products: InsightMentor (trav",
         "t": 1789309818298
@@ -172,8 +172,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Absolutely, let's focus on quality over quantity. However, I believe we need to define wha",
-        "t": 1789303866546
+        "text": "We need to output JSON. Ensure no trailing commas{\"themes\":[\"Agentic AI frameworks\",\"Workf",
+        "t": 1789309906396
       }
     },
     {
@@ -292,6 +292,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Hoshi",
+      "text": "We need to output JSON. Ensure no trailing commas{\"themes\":[\"Agentic AI frameworks\",\"Workflow automation\",\"AI-powered knowledge graphs\",\"Low‑code AI UI\",\"Web‑scraping context APIs\"],\"productIdeas\":[{\"name\":\"AI Workflow Studio\",\"why\":\"Combines LangChain’s agentic engine with Dify’s RAG and Supabase backend to let teams build, test, and deploy production‑ready AI workflows without writing code. It addresses the high demand for internal AI automation and offers a clear subscription path.\"},{\"name\":\"Codebase Knowledge Graph\",\"why\":\"Leverages Graphify’s AST parsing to turn any repo into a …",
+      "t": 1789309906396,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "We need to recommend top 3 channels to launch first. We have products: InsightMentor (travel, trip planning & remote work, $49); CryptoPilot MT (crypto, web3 & trading, $49); RealPilot MT (real estate, renting & property, $299); InsightCraft (legal, contracts & compliance, $99); EvoSage (health, fitness & habit tracking, $99). We have seeded accounts: github, email, gmail-imap, openai, anthropic, Gumroad, dev.to. Channels available: Gumroad, Lemon Squeezy, Payhip, Ko-fi, itch.io, Product Hunt, dev.to, Buy Me a Coffee, Patreon, GitHub.**Gumroad** – instant checkout, minimal setup, and built‑in …",
@@ -1124,301 +1131,142 @@
       "t": 1789295522657,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to perform actions to sign up on Substack. We have a Gmail account [email]. We need to use \"Sign up with Google\" if available. The current page is onboarding page with topics selection. We need to sign up. Usually Substack has a sign up page with email/password or Google. But we are on onboarding page after sign up? Actually the URL is https://substack.com/onboarding. That is after sign up. But we need to create account. We might need to click \"Sign up with Google\" on the main page. But we are at onboarding page. So maybe we need to go back to sign up page. But we can click \"Sign up …",
-      "t": 1789295457246,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 1m ago) — skip",
-      "t": 1789309895142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 1m ago) — skip",
-      "t": 1789309895142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789309895142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789309885780,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789309835409,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789309813510,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789309813509,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789309813509,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789309813508,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789309813508,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: stabilityai — queued for key hunter",
-      "t": 1789309812313,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1789309812313,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: qwen — queued for key hunter",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for architect (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789309771515,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 157 products with flags, 1 with high-severity findings",
-      "t": 1789309760135,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789309748232,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789309745107,
+      "t": 1789310078130,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789310078127,
+      "type": "vault"
     },
     {
       "who": "swarm",
       "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789309740136,
+      "t": 1789310073112,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout: 3 free providers live (groq, nvidia, gemini) · 0 zen free models",
-      "t": 1789309739532,
-      "type": "scout"
+      "text": "shadow pilot: 4/4 checks passed",
+      "t": 1789310068091,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789309735101,
+      "text": "launch-discipline: polishing flagship RealPilot MT (score 0/8, attempt 1/3)",
+      "t": 1789310048131,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789309715097,
+      "t": 1789310048094,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789309715081,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789309715061,
+      "t": 1789310048071,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1789309715060,
+      "t": 1789310048054,
       "type": "cap"
     },
     {
       "who": "swarm",
+      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
+      "t": 1789310048054,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789309714817,
+      "t": 1789310047742,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789309714744,
+      "t": 1789310047708,
       "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 1m ago) — skip",
-      "t": 1789309895142,
+      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
+      "t": 1789310078130,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 1m ago) — skip",
-      "t": 1789309895142,
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789310078127,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
+      "t": 1789310073112,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789309895142,
+      "text": "shadow pilot: 4/4 checks passed",
+      "t": 1789310068091,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789309885780,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789309835409,
-      "type": "launch"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to recommend top 3 channels to launch first. We have products: InsightMentor (travel, trip planning & remote work, $49); CryptoPilot MT (crypto, web3 & trading, $49); RealPilot MT (real estate, renting & property, $299); InsightCraft (legal, contracts & compliance, $99); EvoSage (health, fitness & habit tracking, $99). We have seeded accounts: github, email, gmail-imap, openai, anthropic, Gumroad, dev.to. Channels available: Gumroad, Lemon Squeezy, Payhip, Ko-fi, itch.io, Product Hunt, dev.to, Buy Me a Coffee, Patreon, GitHub.**Gumroad** – instant checkout, minimal setup, and built‑in …",
-      "t": 1789309818298,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789309813510,
+      "text": "launch-discipline: polishing flagship RealPilot MT (score 0/8, attempt 1/3)",
+      "t": 1789310048131,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789309813509,
+      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
+      "t": 1789310048094,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789309813509,
+      "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
+      "t": 1789310048071,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789309813508,
+      "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
+      "t": 1789310048054,
+      "type": "cap"
+    },
+    {
+      "who": "swarm",
+      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
+      "t": 1789310048054,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789309813508,
+      "text": "reconciled 160 products from disk (next port 5408)",
+      "t": 1789310047742,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "scout discovered key-gated free provider: stabilityai — queued for key hunter",
-      "t": 1789309812313,
+      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
+      "t": 1789310047708,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1789309812313,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: qwen — queued for key hunter",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789309812312,
-      "type": "event"
-    },
-    {
-      "who": "Quark",
-      "text": "We need to find providers that fit. Must be currently operating, free tier, no credit card, global, well-known. Excluding those listed. Let's think of providers:{ \"providers\": [ { \"name\": \"AI21 Labs\", \"baseUrl\": \"https://api.ai21.com/studio/v1\", \"model\": \"j1-jumbo-instruct\", \"needsKey\": true, \"signup\": \"https://studio.ai21.com/signup\" }, { \"name\": \"Anthropic\", \"baseUrl\": \"https://api.anthropic.com/v1/llama-2\", \"model\": \"claude-2\", \"needsKey\": true, \"signup\": \"https://www.anthropic.com/jobs\" }, { \"name\": \"Qwen\", \"baseUrl\": \"https://qwen-api.hf.co/models/Qwen/Qwen-7B-Chat\", \"model\": …",
-      "t": 1789309812307,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1672,9 +1520,9 @@
     }
   ],
   "ledger": {
-    "total": 1182,
+    "total": 1192,
     "revenue": 0,
-    "effects": 165,
+    "effects": 166,
     "boundary": 1,
     "artifacts": 97,
     "receipts": 0
@@ -1710,84 +1558,39 @@
     0,
     0,
     0,
-    6,
-    10,
-    25,
-    7
+    0,
+    0,
+    0,
+    14
   ],
   "load": {
     "loadavg": [
-      3.37,
-      1.69,
-      0.84
+      1.46,
+      1.83,
+      1.07
     ],
-    "ramPct": 61,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "coder": {
         "model": "openai/gpt-oss-120b",
         "tier": "local"
-      },
-      "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "critic": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
-      },
-      "polisher": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
-      },
-      "researcher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
-      },
-      "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
-      },
-      "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
-      },
-      "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "conductor": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
-      },
-      "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "launcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
-      },
-      "github_researcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 16,
@@ -2585,8 +2388,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 16,
-        "vramPct": 20
+        "utilPct": 19,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
@@ -2603,11 +2406,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 0
+        "utilPct": 0,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 77,
+    "selfHostedInferencePct": 33,
     "jobsProcessed": 179
   }
 }
