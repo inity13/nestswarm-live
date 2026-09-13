@@ -1,5 +1,5 @@
 {
-  "generated": 1789276613357,
+  "generated": 1789276704076,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We need to produce a single action JSON. We can choose to click \"Create account\" first. Bu",
         "t": 1789276535134
@@ -1118,6 +1118,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "bounty scout: 5 eligible task card(s) (Algora)",
+      "t": 1789276639104,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Substack step 0 -> {\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
       "t": 1789276535136,
       "type": "event"
@@ -1589,33 +1595,14 @@
       "text": "self-heal: disabled provider nvidia",
       "t": 1789269752680,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789269752680,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Substack step 0 -> {\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
-      "t": 1789276535136,
-      "type": "event"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to produce a single action JSON. We can choose to click \"Create account\" first. But we need to sign{\"action\":\"click\",\"selector\":\"button:contains('Create')\"}",
-      "t": 1789276535134,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789276526197,
-      "type": "event"
+      "text": "bounty scout: 5 eligible task card(s) (Algora)",
+      "t": 1789276639104,
+      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1869,7 +1856,7 @@
     }
   ],
   "ledger": {
-    "total": 1114,
+    "total": 1118,
     "revenue": 0,
     "effects": 160,
     "boundary": 1,
@@ -1881,7 +1868,6 @@
     "priority": "A high-margin niche with verified willingness-to-pay, validated through micro-prototype and paid pilot"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1905,20 +1891,21 @@
     0,
     1,
     0,
-    0,
-    16,
-    15,
+    5,
+    24,
+    5,
     9,
-    8,
-    4
+    7,
+    6,
+    13
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.39,
-      0.29
+      0.42,
+      0.43,
+      0.31
     ],
-    "ramPct": 55,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1968,11 +1955,11 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1980,7 +1967,7 @@
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "preflight": {
@@ -1988,7 +1975,7 @@
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "demand_validator": {
@@ -1996,7 +1983,7 @@
         "tier": "local"
       },
       "payment-integrator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "conductor": {
@@ -2804,7 +2791,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 6,
         "vramPct": 85
       },
       {
@@ -2822,11 +2809,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 2,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 95,
+    "selfHostedInferencePct": 96,
     "jobsProcessed": 179
   }
 }
