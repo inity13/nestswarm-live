@@ -1,5 +1,5 @@
 {
-  "generated": 1789295079155,
+  "generated": 1789295124889,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -122,7 +122,7 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "Candidates:{ \"providers\": [ { \"name\": \"AI21 Labs\", \"baseUrl\": \"https://api.ai21.com/studio",
         "t": 1789295013295
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking** 1. **XSS via `inner",
         "t": 1789295024336
@@ -1118,6 +1118,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789295124115,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789295124115,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789295124115,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789295118726,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789295062629,
       "type": "launch"
@@ -1258,6 +1282,30 @@
   "recent": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789295124115,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789295124115,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789295124115,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789295118726,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789295062629,
       "type": "launch"
@@ -1286,62 +1334,6 @@
       "text": "self-heal: already disabled: googleailanguagemodels (no-op)",
       "t": 1789295042227,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789295033666,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3345MB free)",
-      "t": 1789295033663,
-      "type": "bench"
-    },
-    {
-      "who": "Sentinel",
-      "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking** 1. **XSS via `innerHTML`** – Highest risk. If any user‑supplied data reaches this assignment, arbitrary code can execute in the client’s browser, enabling data theft, session hijacking, or defacement. 2. **Unrestricted Child‑Process Spawning** – Medium risk. Arbitrary commands can be executed on the host, potentially leading to privilege escalation, data exfiltration, or denial of service. 3. **Static‑Serve Tool Exposure** – Low risk. The tool may expose internal files or logs if misconfigured, but the impact is limited to …",
-      "t": 1789295024336,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789295013727,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: mosaicml — queued for key hunter",
-      "t": 1789295013726,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1789295013726,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: eleutherai — queued for key hunter",
-      "t": 1789295013726,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
-      "t": 1789295013302,
-      "type": "event"
-    },
-    {
-      "who": "Quark",
-      "text": "Candidates:{ \"providers\": [ { \"name\": \"AI21 Labs\", \"baseUrl\": \"https://api.ai21.com/studio/v1/\", \"model\": \"j140b\", \"needsKey\": true, \"signup\": \"https://ai21labs.com/signup\" }, { \"name\": \"Anthropic\", \"baseUrl\": \"https://api.anthropic.com/v1/llama_chat/completions\", \"model\": \"claude-2\", \"needsKey\": true, \"signup\": \"https://www.anthropic.com/join\" }, { \"name\": \"Qwen\", \"baseUrl\": \"https://qwen-api.hf.space/--replicas/your-model-name/\", \"model\": \"qwen-7b\", \"needsKey\": false, \"signup\": \"https://huggingface.co/join\" }, { \"name\": \"MosaicML\", \"baseUrl\": \"https://api.mosaicml.com/v1/chat/completions\", …",
-      "t": 1789295013295,
-      "system": false,
-      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1633,18 +1625,18 @@
     0,
     0,
     0,
-    0,
     6,
-    15,
-    11
+    8,
+    18,
+    6
   ],
   "load": {
     "loadavg": [
-      1.08,
-      0.82,
-      0.49
+      0.59,
+      0.72,
+      0.46
     ],
-    "ramPct": 66,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1684,6 +1676,14 @@
       "publisher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "critic": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       }
     },
     "free": [
@@ -1719,11 +1719,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 11,
+        "total": 10,
         "active": 1
       },
       "subscription": {
-        "total": 3,
+        "total": 4,
         "active": 0
       },
       "ads": {
@@ -2006,7 +2006,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "marketplace",
+        "kind": "subscription",
         "active": false,
         "captcha": false
       },
@@ -2489,7 +2489,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 11,
         "vramPct": 85
       },
       {
