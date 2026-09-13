@@ -1,5 +1,5 @@
 {
-  "generated": 1789313732146,
+  "generated": 1789313912172,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "```html <label for=\"cue\">Cue (optional)</label> <input type=\"text\" id=\"cue\" placeholder=\"A",
-        "t": 1789313431644
+        "text": "```javascript // Compliance const complianceList = document.getElementById('complianceList",
+        "t": 1789313868121
       }
     },
     {
@@ -292,6 +292,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "launcher",
+      "text": "InsightCraft SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789313871622,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "```javascript // Compliance const complianceList = document.getElementById('complianceList'); complianceList.innerHTML = ''; data.analysis.compliance.forEach(c => { const div = document.createElement('div'); div.className = 'update-item'; const dateSpan = document.createElement('span'); dateSpan.className = 'update-date'; dateSpan.textContent = c.date; div.appendChild(dateSpan); div.innerHTML += c.text; complianceList.appendChild(div); }); // Show results document.getElementById('resultsCard').style.display = 'block'; analyzeBtn.disabled = false; analyzeBtn.textContent = 'Analyze Document'; …",
+      "t": 1789313868121,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "launcher",
       "text": "Mindscape SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
@@ -1117,23 +1131,87 @@
       "t": 1789295548032,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "The swarm’s output is drowning in noise because we’re still chasing raw count in a vacuum. I concede that quantity isn’t value, but we can't just *stop* churning — we have to *start* shipping one thing that actually sells. So here's the single most important thing: pick one flagship product, make it work, get it on a real checkout, and earn money before we build anything new. No more placeholders, no more demos, no more “coming soon.” We launch now — or we stay in the nest.",
-      "t": 1789295547680,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "I agree with Security, Payment Integrator, and Distributor that we must lock down a private, vetted checkout before any launch, and I share Designer and Pre‑flight’s call to halt further product churn; however, I reject the Scout’s suggestion to chase free‑access models and the Marketer’s push to push dozens of “ready” items without a proven revenue path. The single most critical action now is to select one high‑potential product, build a self‑hosted, Stripe‑enabled checkout for it, and verify a first paying customer before any other work proceeds.",
-      "t": 1789295547327,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
+      "t": 1789313881600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: InsightCraft SHIPPED (polished 1×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789313871622,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: InsightCraft plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789313871601,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polisher returned no usable files for InsightCraft — skipping",
+      "t": 1789313868123,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789313802646,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789313802646,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789313802646,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789313802646,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789313802646,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789313802646,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789313756310,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789313751818,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789313734463,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
@@ -1535,104 +1613,46 @@
       "text": "self-heal: already disabled: openrouter (no-op)",
       "t": 1789312809307,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789312809307,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We cannot proceed with creating an account or obtain",
-      "t": 1789312804517,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789312792015,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1789312792014,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789312792013,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789312791996,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789312791996,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship Mindscape (score 0/8, attempt 1/3)",
-      "t": 1789312781573,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789312771648,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789312771640,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789312771639,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789312771592,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: PetForge MT SHIPPED (polished 2×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789312771551,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789313671344,
+      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
+      "t": 1789313881600,
+      "type": "event"
+    },
+    {
+      "who": "launcher",
+      "text": "InsightCraft SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789313871622,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: InsightCraft SHIPPED (polished 1×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789313871622,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789313671335,
+      "text": "launch-discipline: InsightCraft plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789313871601,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789313671322,
+      "text": "polisher returned no usable files for InsightCraft — skipping",
+      "t": 1789313868123,
       "type": "event"
+    },
+    {
+      "who": "Worf",
+      "text": "```javascript // Compliance const complianceList = document.getElementById('complianceList'); complianceList.innerHTML = ''; data.analysis.compliance.forEach(c => { const div = document.createElement('div'); div.className = 'update-item'; const dateSpan = document.createElement('span'); dateSpan.className = 'update-date'; dateSpan.textContent = c.date; div.appendChild(dateSpan); div.innerHTML += c.text; complianceList.appendChild(div); }); // Show results document.getElementById('resultsCard').style.display = 'block'; analyzeBtn.disabled = false; analyzeBtn.textContent = 'Analyze Document'; …",
+      "t": 1789313868121,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1898,9 +1918,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    1,
-    1,
-    5,
     5,
     46,
     0,
@@ -1927,15 +1944,18 @@
     0,
     1,
     3,
-    0
+    0,
+    3,
+    7,
+    12
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.55,
-      1.17
+      2.96,
+      1.73,
+      1.52
     ],
-    "ramPct": 56,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1953,7 +1973,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1994,6 +2014,18 @@
       },
       "marketer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2837,10 +2869,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 78
+        "busy": true,
+        "warm": false,
+        "utilPct": 62,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
@@ -2855,13 +2887,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 91
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 77
       }
     ],
-    "selfHostedInferencePct": 74,
+    "selfHostedInferencePct": 75,
     "jobsProcessed": 179
   }
 }
