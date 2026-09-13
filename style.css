@@ -117,12 +117,16 @@ main { position:relative; z-index:5; display:grid; grid-template-columns:1fr 340
 .ft-body { min-width:0; }
 .ft-name { font-weight:800; font-size:15px; color:var(--fg); }
 .ft-meta { font-size:11px; color:var(--dim); margin-top:2px; }
+.ft-link { display:inline-block; margin-top:5px; font-size:11px; font-weight:700; color:var(--cyan); text-decoration:none; }
+.ft-link:hover { text-decoration:underline; }
 .ft-empty { font-size:12px; color:var(--dim); }
 
 /* building */
 .building { display:flex; flex-direction:column; gap:8px; }
 .build { padding:10px; border-radius:9px; background:rgba(5,8,15,.6); border:1px solid rgba(0,229,255,.1); }
 .build .nm { font-weight:800; color:var(--cyan); }
+.build .plink { color:var(--green); text-decoration:none; font-size:12px; margin-left:4px; }
+.build .plink:hover { text-decoration:underline; }
 .build .meta { font-size:10.5px; color:var(--dim); margin-top:2px; }
 .build .bar { height:5px; border-radius:99px; background:rgba(5,8,15,.7); border:1px solid rgba(0,229,255,.2); overflow:hidden; margin-top:7px; }
 .build .bar i { display:block; height:100%; width:50%; background:linear-gradient(90deg,var(--cyan),var(--violet)); box-shadow:0 0 10px var(--cyan); animation:load 2s ease infinite; }
