@@ -1,5 +1,5 @@
 {
-  "generated": 1789321293132,
+  "generated": 1789321473225,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,10 +86,10 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
-        "t": 1789321149214
+        "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); cons",
+        "t": 1789321429787
       }
     },
     {
@@ -298,6 +298,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "launcher",
+      "text": "SensoryMate SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789321442602,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "launcher",
+      "text": "WorkflowGenius SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789321432601,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error: Could not load index.html'); return; } res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } else if (req.method === …",
+      "t": 1789321429787,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "polisher",
       "text": "Polished WorkflowGenius (pass 2) — tighter, cleaner, closer to ship-ready.",
@@ -1116,30 +1137,57 @@
       "t": 1789303860193,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "My stance: We need to identify and capitalize on a niche opportunity with strong market demand by leveraging trending technologies. One concrete thing the team must do better: Conduct a thorough competitive analysis to understand what existing products are succeeding in our target market and how we can differentiate ourselves effectively.",
-      "t": 1789303859841,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "LaForge: We need to focus on delivering a single, polished product that customers can actually use and pay for—no exceptions. Demand: The architect must prioritize clarity in design and functionality, ensuring the chosen flagship is not just technically sound but also user-friendly from the start.",
-      "t": 1789303859135,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "**Security Sentinel (Worf):** Security is non-negotiable. Zero known vulnerabilities are our absolute mandate. We must prioritize a single flagship product and ensure it runs end-to-end before moving on to new ventures. **Concrete Demand:** Implement continuous integration and deployment (CI/CD) with automated security scans for every code change, ensuring no unsafe code makes it to production.",
-      "t": 1789303858783,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "focus mode: 16 products listed — polishing, marketing & distributing",
+      "t": 1789321452589,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: SensoryMate SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789321442602,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: SensoryMate plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789321442583,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: WorkflowGenius SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789321432601,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: WorkflowGenius plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789321432584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged WorkflowGenius → workflowgenius.zip (13675 bytes)",
+      "t": 1789321429872,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for WorkflowGenius: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789321429823,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789321295455,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship WorkflowGenius (score 0/8, attempt 2/3)",
@@ -1571,57 +1619,73 @@
       "text": "polisher returned no usable files for TaskMaster Pro — skipping",
       "t": 1789319428426,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789319327390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789319327390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789319327390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789319327390,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789319327389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789319327389,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789319316527,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789319316527,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "focus mode: 16 products listed — polishing, marketing & distributing",
+      "t": 1789321452589,
+      "type": "event"
+    },
+    {
+      "who": "launcher",
+      "text": "SensoryMate SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789321442602,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: SensoryMate SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789321442602,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: SensoryMate plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789321442583,
+      "type": "event"
+    },
+    {
+      "who": "launcher",
+      "text": "WorkflowGenius SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
+      "t": 1789321432601,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: WorkflowGenius SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789321432601,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: WorkflowGenius plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789321432584,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged WorkflowGenius → workflowgenius.zip (13675 bytes)",
+      "t": 1789321429872,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "polish syntax fail for WorkflowGenius: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789321429823,
+      "type": "event"
+    },
+    {
+      "who": "Worf",
+      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error: Could not load index.html'); return; } res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } else if (req.method === …",
+      "t": 1789321429787,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1885,9 +1949,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    3,
     3,
     1,
     7,
@@ -1914,15 +1975,18 @@
     0,
     6,
     0,
-    0
+    0,
+    1,
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.13,
-      0.62
+      0.34,
+      0.22,
+      0.57
     ],
-    "ramPct": 49,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2856,7 +2920,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
         "utilPct": 9,
         "vramPct": 15
@@ -2874,9 +2938,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 1,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
