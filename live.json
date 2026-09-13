@@ -1,11 +1,11 @@
 {
-  "generated": 1789331914286,
+  "generated": 1789332094301,
   "status": "running",
   "stats": {
     "products": 163,
-    "listed": 17,
+    "listed": 18,
     "agents": 25,
-    "avgScore": "5.0"
+    "avgScore": "5.5"
   },
   "agents": [
     {
@@ -40,8 +40,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789331226987
+        "text": "// FILE: app.js const http = require(\"http\"); const fs = require(\"fs\"); const path = requi",
+        "t": 1789331990455
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "CalmZone AI demands an elegant, modern design that reflects its premium nature and attract",
-        "t": 1789327732197
+        "text": "try { const res = await fetch(\"/api/forge\", { method: \"POST\", headers: { \"Content-Type\": \"",
+        "t": 1789332040210
       }
     },
     {
@@ -62,10 +62,10 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Chandler (Publisher):** I see CalmZone AI as a critical tool for remote workers needing ",
-        "t": 1789329643347
+        "text": "```json { \"price\": 49, \"currency\": \"USD\", \"model\": \"one-time\", \"pitch\": \"SmallForge MU pac",
+        "t": 1789332047118
       }
     },
     {
@@ -298,6 +298,48 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1789332084010,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "SmallForge MU is LISTED at $49 (score 6). Time to get it in front of buyers.",
+      "t": 1789332083994,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Chandler",
+      "text": "```json { \"price\": 49, \"currency\": \"USD\", \"model\": \"one-time\", \"pitch\": \"SmallForge MU packs a full-featured engineering toolkit into a single, pocket‑sized package—no subscriptions, no hidden fees, just straightforward power for your small‑scale projects.\", \"headline\": \"Forge Your Small Projects Smarter\" } ```",
+      "t": 1789332047118,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "try { const res = await fetch(\"/api/forge\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({{ \"tool\": \"slugify\", \"input\": \"Hello World, this is SmallForge MU!\" }",
+      "t": 1789332040210,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
+      "t": 1789331990460,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require(\"http\"); const fs = require(\"fs\"); const path = require(\"path\"); const url = require(\"url\"); const querystring = require(\"querystring\"); const PORT = process.env.PORT || 4800; function slugify(s) { return s.toString().trim().toLowerCase() .replace(/[^a-z0-9\\s-]/g, \"\") .replace(/\\s+/g, \"-\") .replace(/-+/g, \"-\"); } function wordCount(s) { const trimmed = s.trim(); const words = trimmed.length ? trimmed.split(/\\s+/).length : 0; return { words, chars: s.length, lines: s.split(/\\n/).length }; } function caseConvert(s, mode) { switch (mode) { case \"upper\": …",
+      "t": 1789331990455,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
@@ -1095,51 +1137,87 @@
       "t": 1789321432601,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error: Could not load index.html'); return; } res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } else if (req.method === …",
-      "t": 1789321429787,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "polisher",
-      "text": "Polished WorkflowGenius (pass 2) — tighter, cleaner, closer to ship-ready.",
-      "t": 1789321151529,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error: Could not load index.html'); return; } res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } else { res.writeHead(404, { …",
-      "t": 1789321149214,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "SmartDoc AI SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789320872543,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>SmartDoc AI - Contract Template Generator</title> <style> * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; } body { min-height: 100vh; background: #fafafa; color: #333; padding: 2rem; } header { font-size: 2rem; font-weight: bold; margin-bottom: 1rem; letter-spacing: 0.1em; text-align: center; } .container { max-width: 800px; margin: 0 auto; text-align: …",
-      "t": 1789320866857,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "// FILE: app.js ```javascript // No changes needed in app.js as it's a self-contained frontend-only product. ``` // FILE: index.html ```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>SmartDoc AI - Contract Template Generator</title> <style> * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; } body { min-height: 100vh; background: #fafafa; color: #333; padding: 2rem; } header { font-size: 2rem; font-weight: …",
-      "t": 1789320702722,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SmallForge MU (score 6/8, attempt 1/3)",
+      "t": 1789332093979,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SmallForge MU → smallforge-mu.zip (8250 bytes)",
+      "t": 1789332084213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789332084008,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: SmallForge MU @ http://localhost:5410 ($49 one-time)",
+      "t": 1789332083994,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SmallForge MU -> http://localhost:5410",
+      "t": 1789332083993,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> SmallForge MU",
+      "t": 1789332083981,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> SmallForge MU",
+      "t": 1789332043978,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> SmallForge MU",
+      "t": 1789332003953,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for SmallForge MU",
+      "t": 1789331996202,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmallForge MU",
+      "t": 1789331993956,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789331990460,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789331990454,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
+      "t": 1789331916449,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
@@ -1541,87 +1619,73 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
       "t": 1789329036385,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship CalmZone AI (score 5/8, attempt 3/3)",
-      "t": 1789328933454,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for CalmZone AI: [path] ``` SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789328930974,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged CalmZone AI → calmzone-ai.zip (12767 bytes)",
-      "t": 1789328930961,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
-      "t": 1789328856372,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789328835809,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2746MB free)",
-      "t": 1789328835808,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789328802182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789328802182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789328802182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789328802182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789328802182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789328802182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789328753521,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship SmallForge MU (score 6/8, attempt 1/3)",
+      "t": 1789332093979,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged SmallForge MU → smallforge-mu.zip (8250 bytes)",
+      "t": 1789332084213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789332084008,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "SmallForge MU is LISTED at $49 (score 6). Time to get it in front of buyers.",
+      "t": 1789332083994,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: SmallForge MU @ http://localhost:5410 ($49 one-time)",
+      "t": 1789332083994,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: SmallForge MU -> http://localhost:5410",
+      "t": 1789332083993,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> SmallForge MU",
+      "t": 1789332083981,
+      "type": "building"
+    },
+    {
+      "who": "Chandler",
+      "text": "```json { \"price\": 49, \"currency\": \"USD\", \"model\": \"one-time\", \"pitch\": \"SmallForge MU packs a full-featured engineering toolkit into a single, pocket‑sized package—no subscriptions, no hidden fees, just straightforward power for your small‑scale projects.\", \"headline\": \"Forge Your Small Projects Smarter\" } ```",
+      "t": 1789332047118,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> SmallForge MU",
+      "t": 1789332043978,
+      "type": "building"
+    },
+    {
+      "who": "Monica",
+      "text": "try { const res = await fetch(\"/api/forge\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({{ \"tool\": \"slugify\", \"input\": \"Hello World, this is SmallForge MU!\" }",
+      "t": 1789332040210,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1669,7 +1733,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 3×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 4×"
     },
     {
       "name": "Shared memory",
@@ -1873,11 +1937,11 @@
     }
   ],
   "ledger": {
-    "total": 1212,
+    "total": 1213,
     "revenue": 0,
     "effects": 168,
     "boundary": 1,
-    "artifacts": 98,
+    "artifacts": 99,
     "receipts": 0
   },
   "meeting": {
@@ -1885,9 +1949,6 @@
     "priority": "AI-powered task manager tailored for remote workers"
   },
   "throughput": [
-    1,
-    0,
-    0,
     1,
     3,
     3,
@@ -1914,15 +1975,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    6,
+    11
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.07,
-      0.19
+      0.65,
+      0.23,
+      0.22
     ],
-    "ramPct": 55,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1964,15 +2028,15 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -2019,7 +2083,7 @@
     "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 17,
+      "listed": 18,
       "cap": 20
     }
   },
@@ -2555,6 +2619,14 @@
       "url": ""
     },
     {
+      "name": "SmallForge MU",
+      "status": "listed",
+      "niche": "small-business operations & accounting",
+      "price": 49,
+      "score": 6,
+      "url": ""
+    },
+    {
       "name": "ScopeSage",
       "status": "archived",
       "niche": "freelancers & solopreneurs",
@@ -2793,23 +2865,36 @@
       "price": 29,
       "score": 5,
       "url": "https://inity13.github.io/nestswarm-store/pmtnvq9gelgtx/"
-    },
-    {
-      "name": "SkillMap",
-      "status": "archived",
-      "niche": "study, learning & memory aids",
-      "price": 4.99,
-      "score": 5,
-      "url": "https://inity13.github.io/nestswarm-store/pmtntjhxffac9/"
     }
   ],
   "building": [
     {
       "name": "SmallForge MU",
       "niche": "small-business operations & accounting",
-      "stage": "build",
-      "status": "building",
+      "stage": "shipped",
+      "status": "listed",
       "url": ""
+    },
+    {
+      "name": "CalmZone AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmu05woinzoba/"
+    },
+    {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmjjxof92pf/"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmklnygn2gg/"
     }
   ],
   "nodes": [
@@ -2835,10 +2920,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 15
+        "utilPct": 89,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2853,8 +2938,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 91
       }
