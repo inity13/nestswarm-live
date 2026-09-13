@@ -1,5 +1,5 @@
 {
-  "generated": 1789330294055,
+  "generated": 1789330474087,
   "status": "running",
   "stats": {
     "products": 163,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: app.js npm install // This won't run because CalmZone AI must use built-in module",
-        "t": 1789329617190
+        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
+        "t": 1789330386403
       }
     },
     {
@@ -298,6 +298,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
+      "t": 1789330386409,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); const pathname = parsedUrl.pathname; if (pathname === '/' && req.method === 'GET') { fs.readFile(INDEX_HTML, 'utf8', (err, data) => { if (err) { res.writeHead(500, { 'Content-Type': 'text/plain' }); res.end('Internal Server Error'); …",
+      "t": 1789330386403,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for CalmZone AI.",
@@ -1123,23 +1137,39 @@
       "t": 1789320532590,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); // Simple in-memory storage for demo purposes const priceCache = new Map(); const checkoutSessions = new Map(); // Mock crypto price API (in production, this would call a real API) function fetchCryptoPrice(symbol) { // Simulate API delay return new Promise((resolve) => { setTimeout(() => { const prices = { btc: 43250.75, …",
-      "t": 1789320525182,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); // Simple in-memory storage for demo purposes const priceCache = new Map(); const checkoutSessions = new Map(); // Mock crypto price API (in production, this would call a real API) function fetchCryptoPrice(symbol) { // Simulate API delay return new Promise((resolve) => { setTimeout(() => { const prices = { btc: 43250.75, …",
-      "t": 1789320316262,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SmallForge MU",
+      "t": 1789330423651,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789330416479,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmallForge MU",
+      "t": 1789330393647,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789330386409,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
+      "t": 1789330296371,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
@@ -1589,39 +1619,48 @@
       "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
       "t": 1789328672876,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789328672858,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789328672858,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789328672821,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789328657311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789328657289,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> SmallForge MU",
+      "t": 1789330423651,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789330416479,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> SmallForge MU",
+      "t": 1789330393647,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
+      "t": 1789330386409,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789330386409,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); const pathname = parsedUrl.pathname; if (pathname === '/' && req.method === 'GET') { fs.readFile(INDEX_HTML, 'utf8', (err, data) => { if (err) { res.writeHead(500, { 'Content-Type': 'text/plain' }); res.end('Internal Server Error'); …",
+      "t": 1789330386403,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1886,9 +1925,6 @@
   },
   "throughput": [
     1,
-    0,
-    10,
-    1,
     14,
     11,
     1,
@@ -1914,15 +1950,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    3,
+    3
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.25,
-      0.71
+      0.4,
+      0.31,
+      0.65
     ],
-    "ramPct": 81,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1964,7 +2003,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
@@ -2836,9 +2875,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 77
+        "warm": false,
+        "utilPct": 9,
+        "vramPct": 15
       },
       {
         "alias": "GPU-Node-2",
@@ -2853,13 +2892,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 8,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 85,
-    "jobsProcessed": 186
+    "selfHostedInferencePct": 86,
+    "jobsProcessed": 187
   }
 }
