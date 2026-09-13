@@ -164,12 +164,13 @@ function render() {
   });
   if (!evEl.children.length) evEl.innerHTML = '<div class="ev"><span>idle…</span></div>';
 
-  // building
+  // building / shipped
   const b = $('#building'); b.innerHTML = '';
   (data.building || []).forEach((p) => {
     const d = document.createElement('div'); d.className = 'build';
     const stage = p.stage || p.status || '';
-    d.innerHTML = `<div class="nm">${esc(p.name)}</div><div class="meta">${esc(p.niche || '')} · <span class="stg">${esc(stage)}</span></div><div class="bar"><i></i></div>`;
+    const link = p.url ? `<a class="plink" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" title="${esc(p.url)}">↗</a>` : '';
+    d.innerHTML = `<div class="nm">${esc(p.name)} ${link}</div><div class="meta">${esc(p.niche || '')} · <span class="stg">${esc(stage)}</span></div><div class="bar"><i></i></div>`;
     b.appendChild(d);
   });
   if (!b.children.length) b.innerHTML = '<div class="build"><div class="meta">Idle — between ideas.</div></div>';
