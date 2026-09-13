@@ -1,5 +1,5 @@
 {
-  "generated": 1789315172442,
+  "generated": 1789315352633,
   "status": "running",
   "stats": {
     "products": 160,
@@ -88,8 +88,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
-        "t": 1789314911849
+        "text": "// FILE: app.js 'use strict'; const http = require('http'); const fs = require('fs'); cons",
+        "t": 1789315221074
       }
     },
     {
@@ -292,6 +292,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "polisher",
+      "text": "Polished InsightForge (pass 1) — tighter, cleaner, closer to ship-ready.",
+      "t": 1789315223323,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "// FILE: app.js 'use strict'; const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); function serveRes(res, code = 200) { fs.readFile(INDEX_PATH, (err, data) => { if (err) { res.writeHead(500); res.end('InsightForge — Error loading interface'); return; } res.writeHead(code, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } function analyzePost(text, industry) { const words = text.trim().split(/\\s+/).filter(w => w.length > …",
+      "t": 1789315221074,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "launcher",
       "text": "EvoSage SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
@@ -1117,23 +1131,39 @@
       "t": 1789295549794,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "The swarm’s output is drowning in noise because we’re still chasing raw count instead of revenue impact, and I’ll concede that quantity is not quality—but I reject the notion that we should chase “results” without evidence of willingness-to-pay. The single most important thing the swarm must do next is pick one flagship product, polish it to genuine quality, and launch it with a working checkout—no more half-finished ideas or vague “results.”",
-      "t": 1789295549442,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "The swarm’s output is drowning in noise because we’re still chasing raw count in — I concede that much. But “quality” without direction is just a nice way of saying “more work.” The single most important thing we must do next is pick one product, polish it until it sells, and ship it — not to the marketplace, but to real customers who pay for it. No more churning. No more quantity. Only revenue-ready.",
-      "t": 1789295549090,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship InsightForge (score 0/8, attempt 2/3)",
+      "t": 1789315231918,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: InsightForge -> http://localhost:5399",
+      "t": 1789315223322,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: InsightForge (pass #1)",
+      "t": 1789315223322,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged InsightForge → insightforge.zip (9811 bytes)",
+      "t": 1789315221112,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789315175105,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1583,36 +1613,6 @@
       "text": "self-heal: already disabled: mistral (no-op)",
       "t": 1789313317245,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789313317245,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789313317245,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — provider claude not found; provider chatgpt not found; model nemotron-3.5-lightning-free not found",
-      "t": 1789313317245,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider claude not found",
-      "t": 1789313302624,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider chatgpt not found",
-      "t": 1789313302624,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1879,9 +1879,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    3,
-    12,
-    0,
     1,
     3,
     0,
@@ -1908,13 +1905,16 @@
     10,
     1,
     0,
+    0,
+    7,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.07,
-      1,
-      1.46
+      0.05,
+      0.58,
+      1.21
     ],
     "ramPct": 57,
     "cpus": 12
@@ -1946,7 +1946,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "researcher": {
@@ -1954,7 +1954,7 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
@@ -2799,6 +2799,13 @@
   ],
   "building": [
     {
+      "name": "InsightForge",
+      "niche": "e-commerce, dropshipping & reselling",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtp8wepbaikd/"
+    },
+    {
       "name": "EvoSage",
       "niche": "health, fitness & habit tracking",
       "stage": "shipped",
@@ -2818,13 +2825,6 @@
       "stage": "shipped",
       "status": "listed",
       "url": "https://inity13.github.io/nestswarm-store/pmtpbee3e15o9/"
-    },
-    {
-      "name": "InsightMentor",
-      "niche": "travel, trip planning & remote work",
-      "stage": "shipped",
-      "status": "listed",
-      "url": "https://inity13.github.io/nestswarm-store/pmtpd1gqhluch/"
     }
   ],
   "nodes": [
@@ -2852,7 +2852,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 78
       },
       {
@@ -2874,7 +2874,7 @@
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 75,
+    "selfHostedInferencePct": 76,
     "jobsProcessed": 179
   }
 }
