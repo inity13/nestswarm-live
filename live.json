@@ -1,5 +1,5 @@
 {
-  "generated": 1789317872871,
+  "generated": 1789318053035,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789317985491,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789317982493,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3349MB free)",
+      "t": 1789317906483,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789317906483,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, nvidia, gemini) · 0 zen free models",
+      "t": 1789317887157,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789317875096,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789317872106,
       "type": "event"
@@ -1577,91 +1613,19 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789316615067,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789316435075,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for critic (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789316390099,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for critic (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789316390091,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789316311872,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789316311872,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789316311872,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789317872106,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789317985491,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789317872099,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789317872090,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789317872090,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789317872082,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789317871957,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789317871928,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789317871909,
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789317982493,
       "type": "event"
     }
   ],
@@ -1928,9 +1892,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    3,
-    0,
-    1,
     16,
     0,
     3,
@@ -1957,15 +1918,18 @@
     15,
     1,
     0,
-    8
+    8,
+    4,
+    2,
+    0
   ],
   "load": {
     "loadavg": [
-      0.38,
-      0.58,
-      1.07
+      3.96,
+      1.51,
+      1.3
     ],
-    "ramPct": 50,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2060,7 +2024,10 @@
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2901,10 +2868,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 11,
-        "vramPct": 79
+        "busy": true,
+        "warm": false,
+        "utilPct": 36,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
@@ -2921,7 +2888,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
