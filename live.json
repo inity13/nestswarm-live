@@ -1,5 +1,5 @@
 {
-  "generated": 1789285345368,
+  "generated": 1789285434754,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789285378579,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3523MB free)",
+      "t": 1789285378577,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789285347408,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789285167218,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789277246202,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789285378579,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3523MB free)",
+      "t": 1789285378577,
+      "type": "bench"
     },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789277066108,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789276951626,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789276951626,
+      "t": 1789285347408,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1861,8 +1880,6 @@
     "priority": "The top product or niche to focus next is one that has a clear buyer persona, existing demand signal, and a path to monetization — validated through market research and early user feedback."
   },
   "throughput": [
-    21,
-    0,
     0,
     1,
     0,
@@ -1870,8 +1887,8 @@
     5,
     0,
     0,
-    3,
-    7,
+    1,
+    9,
     0,
     1,
     0,
@@ -1890,15 +1907,17 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.08,
-      0.08
+      0.33,
+      0.23,
+      0.14
     ],
-    "ramPct": 48,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2784,9 +2803,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 12,
-        "vramPct": 22
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 54
       },
       {
         "alias": "GPU-Node-2",
