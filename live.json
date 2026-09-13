@@ -1,5 +1,5 @@
 {
-  "generated": 1789301843598,
+  "generated": 1789301993678,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -98,10 +98,10 @@
       "color": "#2dd4bf",
       "avatar": "avatars/seven.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm’s output is drowning in noise because we’re still chasing raw count instead of r",
-        "t": 1789295549442
+        "text": "We need to output JSON with channels array, each object with fields: name, kind (one of li",
+        "t": 1789301989306
       }
     },
     {
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "I stand as Worf, Security Sentinel. I agree with my colleagues that quantity is noise, qua",
-        "t": 1789295550499
+        "text": "The MTN1 build presents three genuine risks. First, unsanitized innerHTML assignment can i",
+        "t": 1789301864468
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Seven",
+      "text": "We need to output JSON with channels array, each object with fields: name, kind (one of listed), how (description), url, needs (wallet|account|api-key|account+api), captcha true/false, priority 1|2|3. Max 6, only genuinely new ones not already used by swarm. We have a long list of existing methods. Need to find new legitimate low-friction ways for autonomous software swarm to receive money not already used. Prefer no card/phone required to start, API or hosted checkout, global reach. Consider crypto rails, merchant-of-record checkouts, donation/tip pages, dev bounty platforms, …",
+      "t": 1789301989306,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "The MTN1 build presents three genuine risks. First, unsanitized innerHTML assignment can inject arbitrary JavaScript, yielding a high‑severity XSS that could steal sessions or deface the UI. Fix: replace innerHTML with textContent or a trusted templating library, and sanitize any user‑supplied markup with a DOMPurify‑style filter before insertion. Second, the build spawns child processes without strict validation, creating a medium‑high risk of command injection if attacker‑controlled data reaches the spawn call. Fix: eliminate dynamic spawning where possible; if required, restrict to a …",
+      "t": 1789301864468,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: paused new builds (strategic focus — board decision, no auto-expiry)",
@@ -1099,23 +1113,81 @@
       "t": 1789287414779,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "As the demand validator, I see our current approach as chasing numbers rather than focusing on quality and revenue generation. The team needs to prioritize selecting a single flagship product with concrete buyer intent and willingness to pay. Let's make sure every decision from now on aligns with this goal. The Nest Concord must focus on one product that can be polished, marketed effectively, and launched before building anything new. This will ensure we don't dilute our efforts and build products without a clear path to revenue.",
-      "t": 1789287414427,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "I’m the recovery engineer, so my focus is zero‑downtime, bug‑free releases that can actually be sold. Demand: Build a CI/CD pipeline that runs full test suites on every push and blocks any merge that fails—only then can we trust a product enough to ship and charge.",
-      "t": 1789287414072,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789301992907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789301992907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789301992907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789301989309,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 5 optimizations",
+      "t": 1789301954100,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789301919683,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789301875897,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3198MB free)",
+      "t": 1789301875895,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789301857889,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for scout (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789301854003,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789301849782,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789301845552,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1180,63 +1252,46 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789301842879,
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789301992907,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789301837909,
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789301992907,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789301832877,
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789301992907,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "free provider openai/gpt-oss-120b failed for scout (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7277, Requested 1028. Please try again in 2.2875s. Need more tokens? Upgrade to Dev Tier today at https://con)",
-      "t": 1789301831037,
-      "type": "event"
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789301989309,
+      "type": "scout"
+    },
+    {
+      "who": "Seven",
+      "text": "We need to output JSON with channels array, each object with fields: name, kind (one of listed), how (description), url, needs (wallet|account|api-key|account+api), captcha true/false, priority 1|2|3. Max 6, only genuinely new ones not already used by swarm. We have a long list of existing methods. Need to find new legitimate low-friction ways for autonomous software swarm to receive money not already used. Prefer no card/phone required to start, API or hosted checkout, global reach. Consider crypto rails, merchant-of-record checkouts, donation/tip pages, dev bounty platforms, …",
+      "t": 1789301989306,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789301812878,
-      "type": "event"
+      "text": "gh-researcher: 20 trending repos → 3 product ideas, 5 optimizations",
+      "t": 1789301954100,
+      "type": "trending"
     },
     {
       "who": "swarm",
-      "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789301812861,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789301812844,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1789301812843,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789301812516,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789301812413,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789301919683,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1528,18 +1583,18 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    19
+    6,
+    18,
+    4,
+    8
   ],
   "load": {
     "loadavg": [
-      0.83,
-      1.01,
-      0.67
+      0.23,
+      0.81,
+      0.66
     ],
-    "ramPct": 53,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -1573,17 +1628,33 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "tier": "free"
       },
       "marketer": {
         "model": "openai/gpt-oss-120b",
         "tier": "local"
+      },
+      "security": {
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "tier": "free"
+      },
+      "distributor": {
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "tier": "free"
+      },
+      "scout": {
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "tier": "free"
+      },
+      "github_researcher": {
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "tier": "free"
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2381,10 +2452,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 26,
-        "vramPct": 22
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 54
       },
       {
         "alias": "GPU-Node-2",
