@@ -1,5 +1,5 @@
 {
-  "generated": 1789334974802,
+  "generated": 1789335154770,
   "status": "running",
   "stats": {
     "products": 164,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789334326854
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789335097954
       }
     },
     {
@@ -298,6 +298,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for FurFit Coach — 2 files, working node app. Handing off to test.",
+      "t": 1789335097957,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const DATA_FILE = path.join(__dirname, 'furfit_data.json'); function loadData() { try { return JSON.parse(fs.readFileSync(DATA_FILE, 'utf8')); } catch (e) { return { pets: {}, logs: {} }; } } function saveData(data) { fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2)); } // --- Core routine generator --- function generateRoutine(pet) { const { species, breed, age, healthNotes …",
+      "t": 1789335097954,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for FurFit Coach — 2 files, working node app. Handing off to test.",
@@ -1123,23 +1137,45 @@
       "t": 1789329764289,
       "system": true,
       "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (5) recorded for CalmZone AI: The Calm Down Timer must function flawlessly 100% of the time with progressive muscle relaxation, breathing, and mindful meditation modes, validated through automated UI tests. | The AI-Powered Parental Support Chatbot must handle at least 95% of user inputs accurately with genuine conversational flow and be tested in a real environment before launch. | The Parent-Child Anger Management Journal must persist data reliably and allow users to create, edit, and review journal entries without technical failure or data loss. | A fully functional, …",
-      "t": 1789329764286,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "go_toolchain_installer",
-      "text": "I see CalmZone AI as a critical tool for remote workers needing mental health support, but it must ship with fully functional, end-to-end tested features. The single most important quality requirement is that the Calm Down Timer must run 100% of the time without any issues.",
-      "t": 1789329726268,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> FurFit Coach",
+      "t": 1789335114530,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for FurFit Coach",
+      "t": 1789335106829,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> FurFit Coach",
+      "t": 1789335104531,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789335097957,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789335097954,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 164 products)",
+      "t": 1789334976952,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 164 products)",
@@ -1523,27 +1559,54 @@
       "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
       "t": 1789332579980,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "stage 'build' -> FurFit Coach",
-      "t": 1789332544095,
+      "text": "stage 'design' -> FurFit Coach",
+      "t": 1789335114530,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789332538465,
-      "type": "event"
+      "text": "tests passed for FurFit Coach",
+      "t": 1789335106829,
+      "type": "test"
     },
     {
       "who": "swarm",
-      "text": "registrar: registering Paddle (revenue)",
-      "t": 1789332536585,
+      "text": "stage 'test' -> FurFit Coach",
+      "t": 1789335104531,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for FurFit Coach — 2 files, working node app. Handing off to test.",
+      "t": 1789335097957,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789335097957,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const DATA_FILE = path.join(__dirname, 'furfit_data.json'); function loadData() { try { return JSON.parse(fs.readFileSync(DATA_FILE, 'utf8')); } catch (e) { return { pets: {}, logs: {} }; } } function saveData(data) { fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2)); } // --- Core routine generator --- function generateRoutine(pet) { const { species, breed, age, healthNotes …",
+      "t": 1789335097954,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789335097954,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1591,7 +1654,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 5×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 6×"
     },
     {
       "name": "Shared memory",
@@ -1808,9 +1871,6 @@
   },
   "throughput": [
     1,
-    0,
-    0,
-    1,
     6,
     0,
     1,
@@ -1836,15 +1896,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.08,
-      0.17
+      0.68,
+      0.22,
+      0.2
     ],
-    "ramPct": 59,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1886,8 +1949,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2729,7 +2792,7 @@
     {
       "name": "FurFit Coach",
       "niche": "pet care & ownership",
-      "stage": "build",
+      "stage": "design",
       "status": "building",
       "url": ""
     }
@@ -2757,10 +2820,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 47
+        "busy": true,
+        "warm": false,
+        "utilPct": 90,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2778,7 +2841,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 91
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 89,
