@@ -1,5 +1,5 @@
 {
-  "generated": 1789338395435,
+  "generated": 1789338575496,
   "status": "running",
   "stats": {
     "products": 165,
@@ -40,8 +40,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789337713290
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789338476245
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: index.html ```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
-        "t": 1789335870838
+        "text": "<div class=\"container\"> <div class=\"card\"> <div class=\"row\"> <div> <label for=\"homeCity\">H",
+        "t": 1789338560028
       }
     },
     {
@@ -62,10 +62,10 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "```json { \"response\": { \"concession\": \"I agree that a robust calendar sync feature is cruc",
-        "t": 1789335873109
+        "text": "```json { \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a ",
+        "t": 1789338569989
       }
     },
     {
@@ -298,6 +298,34 @@
     }
   ],
   "chat": [
+    {
+      "who": "Chandler",
+      "text": "```json { \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a call or a reservation again—WorkTripSync turns your travel plans into a flawless remote‑work calendar.\", \"headline\":{ \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a call or a reservation again—WorkTripSync turns your travel plans into a flawless remote‑work calendar.\", \"headline\": \"Stay connected, stay organized: Your ultimate remote work companion on the go.\" }",
+      "t": 1789338569989,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "<div class=\"container\"> <div class=\"card\"> <div class=\"row\"> <div> <label for=\"homeCity\">Home base city</label> <input id=\"homeCity\" value=\"New York\" placeholder=\"e.g. New York\"> </div> <div> <label for=\"city\">Destination city</label> <input id=\"city\" value=\"London\" placeholder=\"e.g. London\"> </div> </div> <div class=\"row\"> <div> <label for=\"departureDate\">Departure date</label> <input type=\"date\" id=\"departureDate\"> </div> <div> <label for=\"returnDate\">Return date</label> <input type=\"date\" id=\"returnDate\"> </div> </div> <div class=\"row\"> <div> <label for=\"flightNumber\">Flight number</label> …",
+      "t": 1789338560028,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for WorkTripSync — 2 files, working node app. Handing off to test.",
+      "t": 1789338476250,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; // --- Core logic: WorkTripSync engine --- function timeZoneOffsetGuess(city) { const map = { 'new york': -5, 'nyc': -5, 'los angeles': -8, 'la': -8, 'san francisco': -8, 'chicago': -6, 'denver': -7, 'london': 0, 'paris': 1, 'berlin': 1, 'madrid': 1, 'rome': 1, 'tokyo': 9, 'singapore': 8, 'hong kong': 8, 'sydney': 11, 'dubai': 4, 'mumbai': 5.5, 'delhi': 5.5, 'toronto': -5, 'mexico …",
+      "t": 1789338476245,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for WorkTripSync — 2 files, working node app. Handing off to test.",
@@ -1109,37 +1137,75 @@
       "t": 1789332713075,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to perform actions to sign up or sign in to cohere.com to get API key. We have to use email [email] and password. We need to navigate the signup page. The current URL is https://cohere.com/signup but shows 404. We need to go to home page maybe https://cohere.com. Let's click \"Go back home\" maybe. But we can just navigate to https://cohere.com. Let's click \"Go back home\" link. The page text shows \"Go back home\". That is likely a link. We need to click it. Let's inspect the selector. We can clickText \"Go back home\". So action: clickText \"Go back home\".",
-      "t": 1789332692315,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "Council adjourned for FurFit Coach.",
-      "t": 1789332676707,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "swarm",
-      "text": "Council demands (5) recorded for FurFit Coach: Define a singular, unambiguous user problem that is currently unsolved or inadequately solved by existing products. | Create a clear value proposition that communicates why this solution is uniquely effective and elegant compared to alternatives. | Build a working prototype of the core feature within 72 hours that demonstrates the solution in under two minutes. | Ensure the product can be installed and run with zero configuration or setup steps. | Validate that the product solves a real need for a specific audience, not just a hypothetical use …",
-      "t": 1789332676703,
-      "system": true,
-      "type": "system"
-    },
-    {
-      "who": "Data",
-      "text": "SmallForge MU is a concept without definition, and it's not ready for any kind of launch or even a proper market evaluation. It needs clear features, a defined audience, and a concrete value proposition to be viable. The single most important quality requirement is that it must have specific, actionable functionality that solves a real problem for a clearly identified user group—otherwise, it’s just noise in the marketplace.",
-      "t": 1789332665543,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "packaged WorkTripSync → worktripsync.zip (10807 bytes)",
+      "t": 1789338575355,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing WorkTripSync (critic 3) from feedback",
+      "t": 1789338575262,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> WorkTripSync",
+      "t": 1789338575252,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> WorkTripSync",
+      "t": 1789338565251,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for WorkTripSync",
+      "t": 1789338560032,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> WorkTripSync",
+      "t": 1789338495229,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for WorkTripSync",
+      "t": 1789338487521,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> WorkTripSync",
+      "t": 1789338485213,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789338476250,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789338476245,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
+      "t": 1789338397735,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
@@ -1553,75 +1619,66 @@
       "text": "self-heal: already disabled: deepinfra (no-op)",
       "t": 1789335651157,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: 5 distribution action(s) this pass",
-      "t": 1789335648425,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789335647424,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789335647424,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789335647424,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789335647424,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789335647424,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789335647424,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789335646052,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: listing prepared for FurFit Coach",
-      "t": 1789335642635,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider claude not found",
-      "t": 1789335635510,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: provider chatgpt not found",
-      "t": 1789335635510,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "packaged WorkTripSync → worktripsync.zip (10807 bytes)",
+      "t": 1789338575355,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing WorkTripSync (critic 3) from feedback",
+      "t": 1789338575262,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> WorkTripSync",
+      "t": 1789338575252,
+      "type": "building"
+    },
+    {
+      "who": "Chandler",
+      "text": "```json { \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a call or a reservation again—WorkTripSync turns your travel plans into a flawless remote‑work calendar.\", \"headline\":{ \"price\": 99, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Never miss a call or a reservation again—WorkTripSync turns your travel plans into a flawless remote‑work calendar.\", \"headline\": \"Stay connected, stay organized: Your ultimate remote work companion on the go.\" }",
+      "t": 1789338569989,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> WorkTripSync",
+      "t": 1789338565251,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for WorkTripSync",
+      "t": 1789338560032,
+      "type": "event"
+    },
+    {
+      "who": "Monica",
+      "text": "<div class=\"container\"> <div class=\"card\"> <div class=\"row\"> <div> <label for=\"homeCity\">Home base city</label> <input id=\"homeCity\" value=\"New York\" placeholder=\"e.g. New York\"> </div> <div> <label for=\"city\">Destination city</label> <input id=\"city\" value=\"London\" placeholder=\"e.g. London\"> </div> </div> <div class=\"row\"> <div> <label for=\"departureDate\">Departure date</label> <input type=\"date\" id=\"departureDate\"> </div> <div> <label for=\"returnDate\">Return date</label> <input type=\"date\" id=\"returnDate\"> </div> </div> <div class=\"row\"> <div> <label for=\"flightNumber\">Flight number</label> …",
+      "t": 1789338560028,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> WorkTripSync",
+      "t": 1789338495229,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for WorkTripSync",
+      "t": 1789338487521,
+      "type": "test"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1669,7 +1726,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 6×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 7×"
     },
     {
       "name": "Shared memory",
@@ -1885,9 +1942,6 @@
     "priority": "AI-powered analytics dashboard for small businesses"
   },
   "throughput": [
-    1,
-    0,
-    2,
     2,
     3,
     0,
@@ -1914,15 +1968,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    6,
+    8
   ],
   "load": {
     "loadavg": [
-      0.04,
-      0.12,
-      0.19
+      1.73,
+      0.55,
+      0.32
     ],
-    "ramPct": 59,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -1964,15 +2021,15 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
@@ -2807,7 +2864,7 @@
     {
       "name": "WorkTripSync",
       "niche": "travel, trip planning & remote work",
-      "stage": "build",
+      "stage": "list",
       "status": "building",
       "url": ""
     }
@@ -2837,8 +2894,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 48
+        "utilPct": 6,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2853,10 +2910,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 91
+        "busy": true,
+        "warm": false,
+        "utilPct": 79,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 89,
