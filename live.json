@@ -1,5 +1,5 @@
 {
-  "generated": 1789314992351,
+  "generated": 1789315172442,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
         "t": 1789314911849
@@ -1136,6 +1136,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789314994791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for architect (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789314953165,
       "type": "event"
@@ -1607,108 +1613,9 @@
       "text": "self-heal: provider chatgpt not found",
       "t": 1789313302624,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: model nemotron-3.5-lightning-free not found",
-      "t": 1789313302624,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for architect (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789314953165,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for architect (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789314953158,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789314945721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789314945721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789314945721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789314945721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789314945721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789314945721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship InsightForge (score 0/8, attempt 1/3)",
-      "t": 1789314931866,
-      "type": "event"
-    },
-    {
-      "who": "launcher",
-      "text": "EvoSage SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789314921878,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: EvoSage SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789314921878,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: EvoSage plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789314921866,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for EvoSage: [path] const http = require('http'); ^^^^^ SyntaxError: Unexpected token 'const' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789314911955,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged EvoSage → evosage.zip (12160 bytes)",
-      "t": 1789314911947,
-      "type": "event"
-    },
-    {
-      "who": "Worf",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDUSTRIES = { saas: { name: 'SaaS / Tech', strategies: [ 'Prioritize product-led growth: instrument onboarding funnels and track activation rate weekly.', 'Build a founder-led sales motion until you close 10 repeatable deals, then hire your first AE.', 'Invest in developer relations or content marketing to build inbound pipeline at low CAC.' ] }, ecommerce: { name: …",
-      "t": 1789314911849,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1972,9 +1879,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    14,
-    8,
-    8,
     3,
     12,
     0,
@@ -2001,13 +1905,16 @@
     9,
     4,
     6,
-    10
+    10,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.22,
-      1.76,
-      1.76
+      0.07,
+      1,
+      1.46
     ],
     "ramPct": 57,
     "cpus": 12
@@ -2945,7 +2852,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
+        "utilPct": 9,
         "vramPct": 78
       },
       {
@@ -2963,7 +2870,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
