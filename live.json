@@ -1,5 +1,5 @@
 {
-  "generated": 1789316792655,
+  "generated": 1789316972592,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789316795033,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: already disabled: mistral (no-op)",
       "t": 1789316752388,
       "type": "event"
@@ -1607,88 +1613,9 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789315471650,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789315354963,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789316752388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789316752388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789316752388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789316752388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789316752388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789316752388,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789316741359,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789316741359,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789316741358,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789316741358,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789316741358,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789316741358,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1952,9 +1879,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    1,
-    0,
-    0,
     7,
     0,
     0,
@@ -1981,15 +1905,18 @@
     0,
     7,
     3,
-    14
+    14,
+    2,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      4.88,
-      2.34,
-      1.66
+      0.48,
+      1.57,
+      1.5
     ],
-    "ramPct": 55,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2043,7 +1970,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -2923,10 +2850,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 58,
-        "vramPct": 92
+        "busy": false,
+        "warm": true,
+        "utilPct": 12,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2941,9 +2868,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 2,
         "vramPct": 91
       }
     ],
