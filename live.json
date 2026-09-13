@@ -1,5 +1,5 @@
 {
-  "generated": 1789325793527,
+  "generated": 1789325973581,
   "status": "running",
   "stats": {
     "products": 162,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "They're spot‑on that we can't build anything useful without a concrete problem and audienc",
-        "t": 1789325187810
+        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
+        "t": 1789325940205
       }
     },
     {
@@ -298,6 +298,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for CalmZone AI — 2 files, working node app. Handing off to test.",
+      "t": 1789325940208,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML_PATH = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = parsedUrl.pathname; if (pathname === '/') { pathname = '/index.html'; } const filePath = path.join(__dirname, pathname); fs.readFile(filePath, 'utf8', (err, data) => { if (err) { res.writeHead(404, { 'Content-Type': …",
+      "t": 1789325940205,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for CalmZone AI.",
@@ -1123,23 +1137,27 @@
       "t": 1789317434621,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsed = url.parse(req.url, true); if (req.method === 'GET' && parsed.pathname === '/') { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); fs.createReadStream(path.join(__dirname, 'index.html')).pipe(res); } else if (req.method === 'GET' && parsed.pathname === '/api/transform') { const text = parsed.query.text || ''; const mode = parsed.query.mode || …",
-      "t": 1789317432314,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "InsightForge SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789317252222,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CalmZone AI",
+      "t": 1789325943090,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789325940207,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
+      "t": 1789325795854,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: disabled provider openrouter",
@@ -1601,27 +1619,36 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789321655513,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789321561783,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3353MB free)",
-      "t": 1789321561782,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789321475671,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> CalmZone AI",
+      "t": 1789325943090,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for CalmZone AI — 2 files, working node app. Handing off to test.",
+      "t": 1789325940208,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789325940207,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML_PATH = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); let pathname = parsedUrl.pathname; if (pathname === '/') { pathname = '/index.html'; } const filePath = path.join(__dirname, pathname); fs.readFile(filePath, 'utf8', (err, data) => { if (err) { res.writeHead(404, { 'Content-Type': …",
+      "t": 1789325940205,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1885,9 +1912,6 @@
     "priority": "AI-powered task manager tailored for remote workers"
   },
   "throughput": [
-    1,
-    0,
-    0,
     5,
     2,
     0,
@@ -1914,15 +1938,18 @@
     0,
     9,
     0,
-    0
+    0,
+    1,
+    0,
+    3
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.26,
-      0.2
+      0.25,
+      0.23,
+      0.19
     ],
-    "ramPct": 71,
+    "ramPct": 73,
     "cpus": 12
   },
   "brain": {
@@ -1964,7 +1991,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
@@ -2807,7 +2834,7 @@
     {
       "name": "CalmZone AI",
       "niche": "legal, contracts & compliance",
-      "stage": "build",
+      "stage": "test",
       "status": "building",
       "url": ""
     }
@@ -2855,7 +2882,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 29,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
