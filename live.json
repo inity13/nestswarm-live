@@ -1,5 +1,5 @@
 {
-  "generated": 1789325613589,
+  "generated": 1789325793527,
   "status": "running",
   "stats": {
     "products": 162,
@@ -1142,6 +1142,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789325673449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789325673449,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789325673448,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789325673447,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789325673447,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789325672815,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789325672544,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
+      "t": 1789325615877,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
       "t": 1789325436191,
       "type": "event"
@@ -1571,54 +1619,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789321475671,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 16 products listed — polishing, marketing & distributing",
-      "t": 1789321452589,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SensoryMate SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789321442602,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: SensoryMate plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789321442583,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: WorkflowGenius SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789321432601,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: WorkflowGenius plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789321432584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged WorkflowGenius → workflowgenius.zip (13675 bytes)",
-      "t": 1789321429872,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for WorkflowGenius: [path] ```html ^^^^ SyntaxError: Unexpected identifier 'html' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789321429823,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789321295455,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1888,9 +1888,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     5,
     2,
     0,
@@ -1914,15 +1911,18 @@
     0,
     1,
     0,
+    0,
+    9,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.24,
+      0.2,
       0.26,
-      0.19
+      0.2
     ],
-    "ramPct": 67,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -2016,12 +2016,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 16,
@@ -2842,7 +2837,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 9,
         "vramPct": 48
       },
       {
@@ -2858,10 +2853,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 77
+        "busy": true,
+        "warm": false,
+        "utilPct": 29,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 84,
