@@ -1,5 +1,5 @@
 {
-  "generated": 1789314272332,
+  "generated": 1789314452268,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>",
         "t": 1789314246438
@@ -1136,6 +1136,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789314304447,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3482MB free)",
+      "t": 1789314304446,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789314274685,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789314271449,
       "type": "event"
@@ -1595,77 +1613,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789312834244,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789312814463,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789312813868,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789312813868,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789314271449,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789314271440,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789314271419,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 2/3)",
-      "t": 1789314251682,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged EvoSage → evosage.zip (12755 bytes)",
-      "t": 1789314246578,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council demands satisfied for EvoSage",
-      "t": 1789314246544,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polish syntax fail for EvoSage: [path] <button id=\"copyPlanBtn\" style=\"display: none; margin-top: 12px;\">Copy Plan to Clipboard</button> ^^ SyntaxError: Unexpected identifier 'id' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789314246543,
-      "type": "event"
-    },
-    {
-      "who": "Worf",
-      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>EvoSage — AI Growth Coaching for Founders</title> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <style> * { box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; background: linear-gradient(135deg, #0f172a, #1e293b); color: #e2e8f0; margin: 0; padding: 0; min-height: 100vh; } .container { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; } header { text-align: center; margin-bottom: 40px; } header h1 { font-size: …",
-      "t": 1789314246438,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1930,9 +1880,6 @@
   },
   "throughput": [
     3,
-    0,
-    1,
-    3,
     9,
     25,
     1,
@@ -1954,19 +1901,22 @@
     7,
     12,
     1,
-    1,
-    1,
+    0,
+    2,
     1,
     0,
-    9
+    9,
+    3,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.09,
-      1.31,
-      1.53
+      0.05,
+      0.78,
+      1.29
     ],
-    "ramPct": 48,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -2893,9 +2843,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2912,7 +2862,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
