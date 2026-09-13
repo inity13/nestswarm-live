@@ -1,5 +1,5 @@
 {
-  "generated": 1789272743367,
+  "generated": 1789272832683,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789272776720,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2031MB free)",
+      "t": 1789272776718,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789272746158,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789272565589,
       "type": "event"
@@ -1577,27 +1595,28 @@
       "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider openrouter",
       "t": 1789265660177,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789272776720,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789265660176,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2031MB free)",
+      "t": 1789272776718,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for critic (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
-      "t": 1789265659056,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789265659056,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789272746158,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1861,8 +1880,6 @@
     "priority": "A high-margin niche with verified willingness-to-pay, validated through micro-prototype and paid pilot"
   },
   "throughput": [
-    3,
-    0,
     0,
     1,
     0,
@@ -1890,15 +1907,17 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.21,
-      0.18
+      0.68,
+      0.43,
+      0.27
     ],
-    "ramPct": 67,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -2784,9 +2803,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 23
+        "vramPct": 55
       },
       {
         "alias": "GPU-Node-2",
