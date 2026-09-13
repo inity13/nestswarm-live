@@ -1,5 +1,5 @@
 {
-  "generated": 1789318232924,
+  "generated": 1789318412900,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789318235447,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: already disabled: mistral (no-op)",
       "t": 1789318135343,
       "type": "event"
@@ -1607,12 +1613,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789316795033,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789316752388,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1879,9 +1879,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    1,
-    0,
-    0,
     7,
     3,
     14,
@@ -1908,15 +1905,18 @@
     0,
     9,
     15,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      5.93,
-      3.52,
-      2.12
+      0.77,
+      2.42,
+      1.96
     ],
-    "ramPct": 56,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1998,7 +1998,7 @@
         "tier": "local"
       },
       "payment-integrator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "compliance_officer": {
@@ -2850,10 +2850,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 40,
-        "vramPct": 92
+        "busy": false,
+        "warm": true,
+        "utilPct": 13,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2868,13 +2868,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 78,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 179
   }
 }
