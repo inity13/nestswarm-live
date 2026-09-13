@@ -1,5 +1,5 @@
 {
-  "generated": 1789293924259,
+  "generated": 1789294013512,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider deepinfra",
+      "t": 1789294004187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider googleailanguagemodels",
+      "t": 1789294004187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — provider free not found; disabled provider mistral; disabled provider deepinfra; disabled provider googleailanguagemodels",
+      "t": 1789294004187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789294004186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider free not found",
+      "t": 1789294004185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789293983411,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789293926168,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789293746368,
       "type": "event"
@@ -1553,51 +1595,52 @@
       "text": "keyhunter: groq already has a working key — skip",
       "t": 1789291763127,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter already has a working key — skip",
-      "t": 1789291763127,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789291763127,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789291752131,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2652MB free)",
-      "t": 1789291752130,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789291751420,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1789291742126,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789291732570,
-      "type": "launch"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider deepinfra",
+      "t": 1789294004187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider googleailanguagemodels",
+      "t": 1789294004187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — provider free not found; disabled provider mistral; disabled provider deepinfra; disabled provider googleailanguagemodels",
+      "t": 1789294004187,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789294004186,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider free not found",
+      "t": 1789294004185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789293983411,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789293926168,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1861,9 +1904,7 @@
     "priority": "The flagship product with cleanest, most testable architecture and highest potential for immediate revenue"
   },
   "throughput": [
-    10,
-    23,
-    5,
+    21,
     1,
     0,
     0,
@@ -1871,34 +1912,36 @@
     0,
     0,
     1,
-    1,
     0,
     1,
     1,
     0,
     1,
-    0,
-    0,
     1,
-    0,
-    0,
-    3,
     0,
     0,
     1,
     0,
     0,
     1,
+    2,
     0,
-    0
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    7
   ],
   "load": {
     "loadavg": [
-      0.99,
-      0.51,
-      0.38
+      0.32,
+      0.43,
+      0.36
     ],
-    "ramPct": 59,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2785,10 +2828,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 34,
-        "vramPct": 54
+        "busy": false,
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 53
       },
       {
         "alias": "GPU-Node-2",
@@ -2806,7 +2849,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 77
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 98,
