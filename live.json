@@ -1,5 +1,5 @@
 {
-  "generated": 1789334074733,
+  "generated": 1789334254667,
   "status": "running",
   "stats": {
     "products": 164,
@@ -1142,6 +1142,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3256MB free)",
+      "t": 1789334107182,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789334107182,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 164 products)",
+      "t": 1789334076950,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 164 products)",
       "t": 1789333896992,
       "type": "event"
@@ -1493,12 +1511,6 @@
       "text": "registrar: Millo needs email verification — reading inbox",
       "t": 1789332492809,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789332492806,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1765,9 +1777,6 @@
     "priority": "AI-powered analytics dashboard for small businesses"
   },
   "throughput": [
-    26,
-    31,
-    36,
     48,
     10,
     8,
@@ -1794,15 +1803,18 @@
     0,
     1,
     0,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.14,
-      0.28
+      0.2,
+      0.28,
+      0.32
     ],
-    "ramPct": 51,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2716,9 +2728,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 15
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
@@ -2733,8 +2745,8 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
         "vramPct": 91
       }
