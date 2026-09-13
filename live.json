@@ -1,5 +1,5 @@
 {
-  "generated": 1789338935594,
+  "generated": 1789339115603,
   "status": "running",
   "stats": {
     "products": 165,
@@ -1142,6 +1142,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789339005390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 165 products)",
+      "t": 1789338937931,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (2 notes updated)",
       "t": 1789338874787,
       "type": "vault"
@@ -1607,28 +1619,9 @@
       "text": "self-heal: already disabled: mistral (no-op)",
       "t": 1789335651157,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789335651157,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789335651157,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789338874787,
-      "type": "vault"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1898,9 +1891,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     9,
     0,
     0,
@@ -1921,13 +1911,16 @@
     0,
     1,
     1,
+    0,
+    1,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.19,
-      1.1,
-      0.78
+      5.2,
+      2.53,
+      1.35
     ],
     "ramPct": 57,
     "cpus": 12
@@ -2842,9 +2835,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 12,
+        "busy": true,
+        "warm": false,
+        "utilPct": 54,
         "vramPct": 91
       },
       {
@@ -2862,7 +2855,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
