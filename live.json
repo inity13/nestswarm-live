@@ -1,5 +1,5 @@
 {
-  "generated": 1789315892515,
+  "generated": 1789316072536,
   "status": "running",
   "stats": {
     "products": 160,
@@ -89,7 +89,7 @@
       "active": false,
       "last": {
         "text": "// FILE: app.js 'use strict'; const http = require('http'); const fs = require('fs'); cons",
-        "t": 1789315221074
+        "t": 1789315937087
       }
     },
     {
@@ -292,6 +292,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "polisher",
+      "text": "Polished InsightForge (pass 2) — tighter, cleaner, closer to ship-ready.",
+      "t": 1789315939390,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "// FILE: app.js 'use strict'; const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); function serveRes(res, code = 200) { fs.readFile(INDEX_PATH, (err, data) => { if (err) { res.writeHead(500); res.end('InsightForge — Error loading interface'); return; } res.writeHead(code, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); }); } function analyzePost(text, industry) { const words = text.trim().split(/\\s+/).filter(w => w.length > …",
+      "t": 1789315937087,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "polisher",
       "text": "Polished InsightForge (pass 1) — tighter, cleaner, closer to ship-ready.",
@@ -1117,23 +1131,93 @@
       "t": 1789295550499,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "I’m with you on the “free‑first, profit‑later” mindset, but we’ll still need a hard checkout to turn that free access into cash; without Stripe‑enabled payments the moat remains a wall. The single most important next step is to spin up a Stripe account for our flagship, wire the checkout into the product, and launch thatContinue exactly where you left off and finish the complete output. Do not repeat what you already wrote. I’m with you on the “free‑first, profit‑later” mindset, but we’ll still need a hard checkout to turn that free access into cash; without Stripe‑enabled payments the moat …",
-      "t": 1789295550147,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "The swarm must prioritize quality over quantity and lock down every single product launch until it is ready to earn money for the Swarm Protector. Our top priority now is to polish one flagship product to genuine quality, write its marketing, and ensure it’s sellable before we consider any new projects.",
-      "t": 1789295549794,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789316071747,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789316071740,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789316071728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789316071728,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789316071716,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789316071698,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789315971430,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789315971415,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship InsightForge (score 0/8, attempt 3/3)",
+      "t": 1789315942003,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for InsightForge exited (null)",
+      "t": 1789315939428,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: InsightForge -> http://localhost:5399",
+      "t": 1789315939390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: InsightForge (pass #2)",
+      "t": 1789315939390,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged InsightForge → insightforge.zip (10022 bytes)",
+      "t": 1789315937181,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789315894896,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
@@ -1529,93 +1613,46 @@
       "text": "packaged EvoSage → evosage.zip (12755 bytes)",
       "t": 1789314246578,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "council demands satisfied for EvoSage",
-      "t": 1789314246544,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789316071747,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "polish syntax fail for EvoSage: [path] <button id=\"copyPlanBtn\" style=\"display: none; margin-top: 12px;\">Copy Plan to Clipboard</button> ^^ SyntaxError: Unexpected identifier 'id' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789314246543,
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789316071740,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789314094739,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789316071728,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789313914822,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789316071728,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
-      "t": 1789313881600,
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789316071716,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "launch-discipline: InsightCraft SHIPPED (polished 1×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789313871622,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: InsightCraft plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789313871601,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for InsightCraft — skipping",
-      "t": 1789313868123,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789313802646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789313802646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789313802646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789313802646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789313802646,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789313802646,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789316071698,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1879,9 +1916,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    1,
-    0,
-    9,
     3,
     0,
     0,
@@ -1908,15 +1942,18 @@
     0,
     1,
     0,
-    0
+    0,
+    7,
+    4,
+    6
   ],
   "load": {
     "loadavg": [
-      0.36,
-      1.22,
-      1.34
+      0.1,
+      0.72,
+      1.12
     ],
-    "ramPct": 54,
+    "ramPct": 48,
     "cpus": 12
   },
   "brain": {
@@ -1954,11 +1991,11 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
@@ -2851,9 +2888,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 10,
-        "vramPct": 91
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
