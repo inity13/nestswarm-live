@@ -1,5 +1,5 @@
 {
-  "generated": 1789313912172,
+  "generated": 1789314092267,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "```javascript // Compliance const complianceList = document.getElementById('complianceList",
         "t": 1789313868121
@@ -1136,6 +1136,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789313914822,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
       "t": 1789313881600,
       "type": "event"
@@ -1607,54 +1613,9 @@
       "text": "self-heal: already disabled: nvidia (no-op)",
       "t": 1789312809307,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789312809307,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 1/3)",
-      "t": 1789313881600,
-      "type": "event"
-    },
-    {
-      "who": "launcher",
-      "text": "InsightCraft SHIPPED — marketed, live, and sellable via stripe. Moving on to the next build.",
-      "t": 1789313871622,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: InsightCraft SHIPPED (polished 1×, marketed, live, sellable via stripe) — advancing to next.",
-      "t": 1789313871622,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: InsightCraft plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789313871601,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "polisher returned no usable files for InsightCraft — skipping",
-      "t": 1789313868123,
-      "type": "event"
-    },
-    {
-      "who": "Worf",
-      "text": "```javascript // Compliance const complianceList = document.getElementById('complianceList'); complianceList.innerHTML = ''; data.analysis.compliance.forEach(c => { const div = document.createElement('div'); div.className = 'update-item'; const dateSpan = document.createElement('span'); dateSpan.className = 'update-date'; dateSpan.textContent = c.date; div.appendChild(dateSpan); div.innerHTML += c.text; complianceList.appendChild(div); }); // Show results document.getElementById('resultsCard').style.display = 'block'; analyzeBtn.disabled = false; analyzeBtn.textContent = 'Analyze Document'; …",
-      "t": 1789313868121,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1918,9 +1879,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    5,
-    46,
-    0,
     12,
     26,
     11,
@@ -1947,15 +1905,18 @@
     0,
     3,
     7,
-    12
+    12,
+    1,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      2.96,
-      1.73,
-      1.52
+      1.65,
+      2.38,
+      1.86
     ],
-    "ramPct": 54,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2025,6 +1986,14 @@
         "tier": "local"
       },
       "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -2869,10 +2838,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 62,
-        "vramPct": 92
+        "busy": false,
+        "warm": true,
+        "utilPct": 13,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -2887,13 +2856,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 77
+        "busy": true,
+        "warm": false,
+        "utilPct": 1,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 75,
+    "selfHostedInferencePct": 76,
     "jobsProcessed": 179
   }
 }
