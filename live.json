@@ -1,5 +1,5 @@
 {
-  "generated": 1789330474087,
+  "generated": 1789330654037,
   "status": "running",
   "stats": {
     "products": 163,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
         "t": 1789330386403
@@ -1142,6 +1142,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789330506648,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2724MB free)",
+      "t": 1789330506647,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 163 products)",
+      "t": 1789330476374,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> SmallForge MU",
       "t": 1789330423651,
       "type": "building"
@@ -1601,66 +1619,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 162 products)",
       "t": 1789328676193,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789328672892,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1789328672877,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789328672876,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmallForge MU",
-      "t": 1789330423651,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789330416479,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SmallForge MU",
-      "t": 1789330393647,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for SmallForge MU — 2 files, working node app. Handing off to test.",
-      "t": 1789330386409,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789330386409,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const INDEX_HTML = path.join(__dirname, 'index.html'); const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url); const pathname = parsedUrl.pathname; if (pathname === '/' && req.method === 'GET') { fs.readFile(INDEX_HTML, 'utf8', (err, data) => { if (err) { res.writeHead(500, { 'Content-Type': 'text/plain' }); res.end('Internal Server Error'); …",
-      "t": 1789330386403,
-      "system": false,
-      "type": "chat"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1925,9 +1886,6 @@
   },
   "throughput": [
     1,
-    14,
-    11,
-    1,
     4,
     0,
     1,
@@ -1953,15 +1911,18 @@
     0,
     1,
     3,
-    3
+    3,
+    3,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.4,
-      0.31,
-      0.65
+      0.09,
+      0.27,
+      0.58
     ],
-    "ramPct": 58,
+    "ramPct": 67,
     "cpus": 12
   },
   "brain": {
@@ -2875,9 +2836,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 15
+        "warm": true,
+        "utilPct": 8,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
