@@ -1,5 +1,5 @@
 {
-  "generated": 1789319133022,
+  "generated": 1789319312993,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1142,6 +1142,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
+      "t": 1789319176458,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789319176431,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789319146962,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789319135300,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789319072104,
       "type": "event"
@@ -1595,70 +1619,9 @@
       "text": "self-heal: already disabled: gemini (no-op)",
       "t": 1789317452797,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789317452797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789317452797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789317452797,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789317452797,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789319072104,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789319072095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789319072085,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789319072085,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789319072077,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789319072059,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1923,9 +1886,6 @@
   },
   "throughput": [
     1,
-    14,
-    9,
-    1,
     0,
     15,
     1,
@@ -1951,15 +1911,18 @@
     0,
     1,
     6,
+    0,
+    4,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.06,
-      1.65,
-      2.06
+      5.52,
+      3.29,
+      2.6
     ],
-    "ramPct": 57,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2893,10 +2856,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 12,
-        "vramPct": 77
+        "busy": true,
+        "warm": false,
+        "utilPct": 39,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
@@ -2913,7 +2876,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
