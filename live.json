@@ -1,5 +1,5 @@
 {
-  "generated": 1789316072536,
+  "generated": 1789316252480,
   "status": "running",
   "stats": {
     "products": 160,
@@ -1136,6 +1136,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789316242596,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789316104721,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3444MB free)",
+      "t": 1789316104720,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789316074791,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789316071747,
       "type": "event"
@@ -1589,67 +1613,13 @@
       "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
       "t": 1789314271449,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789314271440,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789314271419,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship EvoSage (score 0/8, attempt 2/3)",
-      "t": 1789314251682,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged EvoSage → evosage.zip (12755 bytes)",
-      "t": 1789314246578,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789316071747,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789316071740,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789316071728,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789316071728,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789316071716,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789316071698,
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789316242596,
       "type": "event"
     }
   ],
@@ -1916,9 +1886,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     4,
     0,
@@ -1936,8 +1903,8 @@
     0,
     1,
     6,
-    1,
-    16,
+    0,
+    17,
     0,
     0,
     1,
@@ -1945,15 +1912,18 @@
     0,
     7,
     4,
-    6
+    6,
+    3,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.72,
-      1.12
+      0.26,
+      0.59,
+      1.01
     ],
-    "ramPct": 48,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2889,8 +2859,8 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 10,
-        "vramPct": 17
+        "utilPct": 0,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
@@ -2907,7 +2877,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
