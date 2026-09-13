@@ -1,5 +1,5 @@
 {
-  "generated": 1789262031323,
+  "generated": 1789262122056,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -122,10 +122,10 @@
       "color": "#a3e635",
       "avatar": "avatars/quark.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Everyone’s right that we need a single, razor‑sharp flagship and that we should keep spend",
-        "t": 1789255253773
+        "text": "\"OpenAI\" may require credit card but free trial. But{\"providers\":[{\"name\":\"Cerebras\",\"base",
+        "t": 1789262064193
       }
     },
     {
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing and em",
         "t": 1789261956081
@@ -170,10 +170,10 @@
       "color": "#ffb454",
       "avatar": "avatars/hoshi.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree we must collapse the catalog into a single, razor‑sharp flagship, but we shouldn’t",
-        "t": 1789255255181
+        "text": "SwarmOptimizations: Use private repos, stripe integration, use Gmail nestswarm.init for si",
+        "t": 1789262047786
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Quark",
+      "text": "\"OpenAI\" may require credit card but free trial. But{\"providers\":[{\"name\":\"Cerebras\",\"baseUrl\":\"https://api.cerebras.ai/v1/llm_chat/completions\",\"model\":\"cerebras-gpt-2\",\"needsKey\":true,\"signup\":\"https://www.cerebras.ai/signup/\"},{\"name\":\"OpenAI Free Trial\",\"baseUrl\":\"https://api.openai.com/v1/chat/completions\",\"model\":\"text-davinci-003\",\"needsKey\":true,\"signup\":\"https://beta.openai.com/signup/\"}]}",
+      "t": 1789262064193,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Hoshi",
+      "text": "SwarmOptimizations: Use private repos, stripe integration, use Gmail nestswarm.init for signups, CI/CD pipelines, automated tests, code coverage, static analysis, use AI to auto-generate docs, use modular architecture, use caching, use server{ \"themes\": [ \"AI-driven automation\", \"Developer tools\", \"Workflow management\" ], \"productIdeas\": [ { \"name\": \"AutoGPT for Developers\", \"why\": \"AutoGPT is an AI agent designed to assist developers with coding and problem-solving. By integrating it into a developer tool, we can provide users with a powerful assistant that helps them write code faster and …",
+      "t": 1789262047786,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing and email marketing tools. Perfect for ScopeSage as it caters to freelancers and solopreneurs who might prefer a straightforward purchase experience. 2. **Product Hunt**: Highly effective for reaching tech-savvy audiences interested in productivity and lifestyle tools. FitCue's health and fitness focus makes it a natural fit for this platform, potentially driving initial viral growth. 3. **GitHub**: Perfect for InsightMentor, as it appeals to developers looking for tools that integrate with existing workflows. …",
@@ -1099,23 +1113,45 @@
       "t": 1789233630117,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "I’m the publisher, so I’m all about a single, revenue‑ready product that sells. We need to stop building catalog fluff and start shipping a polished, market‑validated flagship that delivers real value and pulls in money. The team must stop chasing features and start a concrete pre‑launch campaign: build a minimal‑viable prototype, run a targeted outreach to a defined audience, and secure at least ten pre‑orders or sign‑ups before adding any more functionality.",
-      "t": 1789233629764,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "**Position:** As a Designer, my mission is to create an index.html that reflects the Nest Concord's commitment to quality and professionalism. I believe we should prioritize a strong hero section, a clear hierarchy, and consistent typography to convey a polished and trustworthy image. **Request for Improvement:** The team must conduct a thorough user experience audit to ensure that every element on the page is intuitive, visually appealing, and easy to navigate. This will demonstrate our dedication to customer satisfaction and help us retain users who appreciate a seamless browsing experience.",
-      "t": 1789233629411,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider deepinfra",
+      "t": 1789262051754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider googleailanguagemodels",
+      "t": 1789262051754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider mistral; disabled provider nvidia; disabled provider deepinfra; disabled provider googleailanguagemodels",
+      "t": 1789262051754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789262051753,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789262051753,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 5 optimizations",
+      "t": 1789262047792,
+      "type": "trending"
+    },
     {
       "who": "swarm",
       "text": "revenue scout: 4/67 channels active · 0 new discovered",
@@ -1559,99 +1595,58 @@
       "text": "self-heal: disabled provider mistral",
       "t": 1789254846277,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789254811797,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2512MB free)",
-      "t": 1789254811792,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 operational improvement(s) recommended",
-      "t": 1789254798290,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789254798236,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-link-metadata-fix",
-      "t": 1789254798023,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill fulfillment-loop-end-to-end",
-      "t": 1789254798023,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789262019821,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789261989427,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2873MB free)",
-      "t": 1789261989419,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1789261985422,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789261972043,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
-      "t": 1789261963169,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789261963169,
-      "type": "event"
-    },
-    {
-      "who": "LaForge",
-      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing and email marketing tools. Perfect for ScopeSage as it caters to freelancers and solopreneurs who might prefer a straightforward purchase experience. 2. **Product Hunt**: Highly effective for reaching tech-savvy audiences interested in productivity and lifestyle tools. FitCue's health and fitness focus makes it a natural fit for this platform, potentially driving initial viral growth. 3. **GitHub**: Perfect for InsightMentor, as it appeals to developers looking for tools that integrate with existing workflows. …",
-      "t": 1789261956081,
+      "who": "Quark",
+      "text": "\"OpenAI\" may require credit card but free trial. But{\"providers\":[{\"name\":\"Cerebras\",\"baseUrl\":\"https://api.cerebras.ai/v1/llm_chat/completions\",\"model\":\"cerebras-gpt-2\",\"needsKey\":true,\"signup\":\"https://www.cerebras.ai/signup/\"},{\"name\":\"OpenAI Free Trial\",\"baseUrl\":\"https://api.openai.com/v1/chat/completions\",\"model\":\"text-davinci-003\",\"needsKey\":true,\"signup\":\"https://beta.openai.com/signup/\"}]}",
+      "t": 1789262064193,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789261944748,
+      "text": "self-heal: disabled provider deepinfra",
+      "t": 1789262051754,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider googleailanguagemodels",
+      "t": 1789262051754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider mistral; disabled provider nvidia; disabled provider deepinfra; disabled provider googleailanguagemodels",
+      "t": 1789262051754,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider mistral",
+      "t": 1789262051753,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789262051753,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 5 optimizations",
+      "t": 1789262047792,
+      "type": "trending"
+    },
+    {
+      "who": "Hoshi",
+      "text": "SwarmOptimizations: Use private repos, stripe integration, use Gmail nestswarm.init for signups, CI/CD pipelines, automated tests, code coverage, static analysis, use AI to auto-generate docs, use modular architecture, use caching, use server{ \"themes\": [ \"AI-driven automation\", \"Developer tools\", \"Workflow management\" ], \"productIdeas\": [ { \"name\": \"AutoGPT for Developers\", \"why\": \"AutoGPT is an AI agent designed to assist developers with coding and problem-solving. By integrating it into a developer tool, we can provide users with a powerful assistant that helps them write code faster and …",
+      "t": 1789262047786,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1913,7 +1908,6 @@
     "priority": "the highest-potential product from the 18-listed catalog with demonstrated demand and clear willingness-to-pay"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1941,16 +1935,17 @@
     1,
     0,
     0,
-    4,
-    7
+    9,
+    10,
+    1
   ],
   "load": {
     "loadavg": [
-      0.73,
-      0.32,
-      0.17
+      0.85,
+      0.53,
+      0.26
     ],
-    "ramPct": 67,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -2838,8 +2833,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 52
+        "utilPct": 11,
+        "vramPct": 83
       },
       {
         "alias": "GPU-Node-2",
@@ -2854,9 +2849,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 87,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 77
       }
     ],
