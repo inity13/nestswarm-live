@@ -1,5 +1,5 @@
 {
-  "generated": 1789291943918,
+  "generated": 1789292033200,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "We need to simulate interacting with Substack signup. We need to produce a JSON action. We",
         "t": 1789291941385
@@ -1118,6 +1118,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: Creator Monetization Platforms step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789292010266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789291971399,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789291946371,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: registering Creator Monetization Platforms (revenue)",
       "t": 1789291942383,
       "type": "event"
@@ -1354,81 +1372,20 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: registering Creator Monetization Platforms (revenue)",
-      "t": 1789291942383,
+      "text": "registrar: Creator Monetization Platforms step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789292010266,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 0 -> {\"action\":\"fail\",\"reason\":\"Unable to navigate directly to Substack from about:blank. Manual intervention required.\"}",
-      "t": 1789291941407,
+      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789291971399,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: registering Product Hunt (revenue)",
-      "t": 1789291941407,
-      "type": "event"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to simulate interacting with Substack signup. We need to produce a JSON action. We need to check the current page: about:blank. We need to navigate to substack.com. But the instruction: \"You are creating a NEW account for the swarm on Substack (https://substack.com/).\" So we need to open that URL. The current page is about:blank. So first action: click or navigate? We can use \"click\" with selector? But we need to navigate to substack.com. There's no direct navigation action defined. But we can use \"click\" on a link? But we are at about:blank. We need to load substack.com. Maybe we can …",
-      "t": 1789291941385,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 3 operational improvement(s) recommended",
-      "t": 1789291933008,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789291932904,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill go-rust-exe-build-checklist",
-      "t": 1789291932861,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1789291932860,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: go-rust-exe-build-checklist",
-      "t": 1789291932859,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1789291932858,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Provide Stripe API keys or approve MoR fallback for payment integration",
-      "t": 1789291932839,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite data push: upload live.json failed 500",
-      "t": 1789291902209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789291883146,
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789291946371,
       "type": "event"
     }
   ],
@@ -1683,7 +1640,7 @@
     }
   ],
   "ledger": {
-    "total": 1126,
+    "total": 1130,
     "revenue": 0,
     "effects": 161,
     "boundary": 1,
@@ -1717,22 +1674,22 @@
     0,
     0,
     0,
-    0,
-    6,
-    9,
-    6,
-    14,
-    18,
-    3,
-    15
+    10,
+    8,
+    7,
+    19,
+    10,
+    5,
+    17,
+    4
   ],
   "load": {
     "loadavg": [
-      0.84,
-      1.2,
-      0.87
+      0.38,
+      0.98,
+      0.82
     ],
-    "ramPct": 66,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2621,7 +2578,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 13,
         "vramPct": 84
       },
       {
@@ -2639,11 +2596,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 58,
-        "vramPct": 77
+        "utilPct": 0,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 95,
+    "selfHostedInferencePct": 96,
     "jobsProcessed": 179
   }
 }
