@@ -1,5 +1,5 @@
 {
-  "generated": 1789265631584,
+  "generated": 1789265722396,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789265660177,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider openrouter",
+      "t": 1789265660177,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789265660176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789265659056,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789265659056,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789265576299,
       "type": "bench"
@@ -1565,55 +1595,37 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
       "t": 1789257083724,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789256903544,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789256723620,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789256575028,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3489MB free)",
-      "t": 1789256575026,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789256543722,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789265576299,
-      "type": "bench"
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789265660177,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2136MB free)",
-      "t": 1789265576294,
-      "type": "bench"
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider openrouter",
+      "t": 1789265660177,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789265544391,
+      "text": "self-heal: disabled provider groq",
+      "t": 1789265660176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789265659056,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789265659056,
       "type": "event"
     }
   ],
@@ -1876,7 +1888,6 @@
     "priority": "the highest-potential product from the 18-listed catalog with demonstrated demand and clear willingness-to-pay"
   },
   "throughput": [
-    0,
     1,
     0,
     0,
@@ -1904,16 +1915,17 @@
     1,
     0,
     0,
-    3,
-    2
+    5,
+    12,
+    14
   ],
   "load": {
     "loadavg": [
-      0.61,
-      0.39,
-      0.31
+      0.66,
+      0.49,
+      0.36
     ],
-    "ramPct": 74,
+    "ramPct": 80,
     "cpus": 12
   },
   "brain": {
@@ -1931,31 +1943,31 @@
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "publisher": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
+      "publisher": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "polisher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -1967,11 +1979,11 @@
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "automation_operator": {
@@ -1979,31 +1991,27 @@
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
-        "tier": "local"
-      },
-      "demand_validator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
-      "payment-integrator": {
+      "demand_validator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
+      "payment-integrator": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 18,
@@ -2801,8 +2809,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 55
+        "utilPct": 11,
+        "vramPct": 85
       },
       {
         "alias": "GPU-Node-2",
@@ -2820,10 +2828,10 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 91
+        "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 96,
+    "selfHostedInferencePct": 95,
     "jobsProcessed": 179
   }
 }
