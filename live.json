@@ -1,5 +1,5 @@
 {
-  "generated": 1789310701668,
+  "generated": 1789310851697,
   "status": "running",
   "stats": {
     "products": 160,
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "1. **Gumroad**: Offers a direct checkout process for digital products, making it ideal for",
-        "t": 1789310154176
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing, makin",
+        "t": 1789310781891
       }
     },
     {
@@ -292,6 +292,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing, making it straightforward to start earning revenue immediately. 2. **dev.to**: Perfect for launching InsightMentor as a premium article or course, leveraging the platform's audience and community to drive organic growth. 3. **Patreon**: Suitable for InsightCraft and EvoSage, offering recurring support that can provide steady income while building a loyal customer base. These channels offer immediate launch capabilities, direct access to potential customers, and built-in tools to manage sales and payments …",
+      "t": 1789310781891,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Sentinel",
       "text": "**Security Assessment – MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking** 1. **Unsanitized `innerHTML` (XSS)** – Highest risk; any user‑supplied data rendered here can execute arbitrary scripts in the client’s browser. 2. **Unrestricted child‑process spawning** – Medium risk; allows arbitrary command execution, potential privilege escalation, and resource exhaustion. 3. **Static‑serve tool exposure** – Low‑to‑medium risk; may inadvertentlymay inadvertently expose internal files or directories. **2. Concrete Fixes** - **XSS** – Replace `innerHTML` with `textContent` or a templating engine that …",
@@ -1124,16 +1131,159 @@
       "t": 1789295543096,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "The swarm is still optimizing for output quantity instead of revenue impact, and that’s a fatal flaw we can’t ignore anymore. We need to stop building things just because they’re technically possible and start asking: *Will people actually pay for this?* That means no more product churning until we have actual data on willingness-to-pay. I want us to pick one niche, deeply research it, and then build a sellable product in that space—*not* another half-baked tool nobody wants. What I demand: **A full market analysis and monetization plan for one specific, underserved segment within our current …",
-      "t": 1789295542743,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 2m ago) — skip",
+      "t": 1789310850939,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 2m ago) — skip",
+      "t": 1789310850939,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789310850939,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789310812290,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789310798202,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3276MB free)",
+      "t": 1789310792803,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789310792803,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310791745,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310791732,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789310737241,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789310737241,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 6 fix(es) — provider claude not found; provider chatgpt not found; disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789310737241,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789310737240,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789310737240,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider claude not found",
+      "t": 1789310737239,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1789310737239,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789310735225,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: elevenlabs — queued for key hunter",
+      "t": 1789310730317,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
+      "t": 1789310730317,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789310730316,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: ai21labs — queued for key hunter",
+      "t": 1789310730315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
+      "t": 1789310730315,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 157 products with flags, 1 with high-severity findings",
+      "t": 1789310715922,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, gemini) · 0 zen free models",
+      "t": 1789310707945,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789310707759,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1210,75 +1360,64 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789310700914,
+      "text": "keyhunter: groq in cooldown (last attempt 2m ago) — skip",
+      "t": 1789310850939,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789310695941,
+      "text": "keyhunter: openrouter in cooldown (last attempt 2m ago) — skip",
+      "t": 1789310850939,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789310690909,
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789310850939,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for architect (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789310686277,
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789310812290,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789310798202,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3276MB free)",
+      "t": 1789310792803,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789310792803,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310791745,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for architect (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310686268,
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310791732,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship InsightDraft (score 0/8, attempt 1/3)",
-      "t": 1789310670950,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789310670910,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789310670890,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1789310670873,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789310670873,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789310670676,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789310670644,
-      "type": "event"
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing, making it straightforward to start earning revenue immediately. 2. **dev.to**: Perfect for launching InsightMentor as a premium article or course, leveraging the platform's audience and community to drive organic growth. 3. **Patreon**: Suitable for InsightCraft and EvoSage, offering recurring support that can provide steady income while building a loyal customer base. These channels offer immediate launch capabilities, direct access to potential customers, and built-in tools to manage sales and payments …",
+      "t": 1789310781891,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1570,18 +1709,18 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    13
+    7,
+    15,
+    10,
+    10
   ],
   "load": {
     "loadavg": [
-      0.67,
-      0.82,
-      0.91
+      1.68,
+      1.3,
+      1.08
     ],
-    "ramPct": 48,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -1589,12 +1728,25 @@
       "ideator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "conductor": {
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
-    "free": [
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 16,
@@ -2434,10 +2586,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 18,
-        "vramPct": 19
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 81
       },
       {
         "alias": "GPU-Node-2",
@@ -2454,11 +2606,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 1,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 100,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 179
   }
 }
