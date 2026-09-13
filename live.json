@@ -1,5 +1,5 @@
 {
-  "generated": 1789311751982,
+  "generated": 1789311931886,
   "status": "running",
   "stats": {
     "products": 160,
@@ -86,7 +86,7 @@
       "color": "#ff6b6b",
       "avatar": "avatars/worf.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); cons",
         "t": 1789311742197
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales with built-in payment processing, makin",
-        "t": 1789310781891
+        "text": "We need to create a new account on Millo. We have to use the Gmail account [email] and pas",
+        "t": 1789311798577
       }
     },
     {
@@ -292,6 +292,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "We need to create a new account on Millo. We have to use the Gmail account [email] and password C0de122122. We need to sign up. We need to use \"Sign up with Google\" if available. We need to respond with a single action in JSON. We need to inspect the page. The page text shows a lot of product listings. There's a \"Login\" link. We need to click \"Login\" then maybe \"Sign up\" or \"Create account\". Let's think: On many e-commerce sites, there's a \"Login\" button that leads to login page with options to sign in or sign up. We need to find the \"Login\" button. The page text shows \"Login\" in the …",
+      "t": 1789311798577,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Worf",
       "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error loading index.html'); } else { res.writeHead(200, { 'Content-Type': 'text/html' }); res.end(data); } }); } else if (req.method === 'POST' && …",
@@ -1124,16 +1131,117 @@
       "t": 1789295544155,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "I stand as the Security Sentinel, insisting that zero known vulnerabilities be tolerated. The team must implement a mandatory, automated security audit pipeline that blocks release until all code passes static analysis, dependency checks, and penetration testing.",
-      "t": 1789295543802,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789311871203,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789311871147,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311871144,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1789311871144,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311871120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789311871120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789311871102,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Millo step 0 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
+      "t": 1789311798579,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789311786733,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311786721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789311773121,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789311773121,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789311773121,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — provider claude not found; provider chatgpt not found; model nemotron-3.5-lightning-free not found",
+      "t": 1789311773121,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider claude not found",
+      "t": 1789311773120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: provider chatgpt not found",
+      "t": 1789311773120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model nemotron-3.5-lightning-free not found",
+      "t": 1789311773120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789311754382,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "launch-discipline: polishing flagship InsightDraft (score 0/8, attempt 2/3)",
@@ -1505,141 +1613,50 @@
       "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
       "t": 1789311271837,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789311271012,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789311271004,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789311270994,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789311216952,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789311215964,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789311215963,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
-      "t": 1789311215963,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789311215947,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789311215947,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
-      "t": 1789311214168,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789311212928,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789311212922,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "desktop fallback failed for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — falling through",
-      "t": 1789311212921,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789311212912,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789311155535,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789311154222,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789311153470,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/67 channels active · 0 new discovered",
-      "t": 1789311132454,
-      "type": "scout"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "launch-discipline: polishing flagship InsightDraft (score 0/8, attempt 2/3)",
-      "t": 1789311751218,
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789311871203,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789311871147,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "packaged InsightDraft → insightdraft.zip (10734 bytes)",
-      "t": 1789311742335,
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311871144,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "polish syntax fail for InsightDraft: [path] ``` SyntaxError: Unexpected end of input at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789311742298,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt busy (single-flight)) — trying free providers",
+      "t": 1789311871144,
       "type": "event"
     },
     {
-      "who": "Worf",
-      "text": "```javascript // FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { const parsedUrl = url.parse(req.url, true); if (req.method === 'GET' && parsedUrl.pathname === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error loading index.html'); } else { res.writeHead(200, { 'Content-Type': 'text/html' }); res.end(data); } }); } else if (req.method === 'POST' && …",
-      "t": 1789311742197,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789311871120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789311871120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789311871102,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1893,7 +1910,7 @@
     }
   ],
   "ledger": {
-    "total": 1202,
+    "total": 1204,
     "revenue": 0,
     "effects": 167,
     "boundary": 1,
@@ -1905,9 +1922,6 @@
     "priority": "Product zero (the flagship) - chosen from the 16 listed products based on highest potential for immediate revenue generation"
   },
   "throughput": [
-    0,
-    0,
-    0,
     0,
     0,
     0,
@@ -1934,15 +1948,18 @@
     6,
     64,
     0,
-    4
+    4,
+    15,
+    7,
+    0
   ],
   "load": {
     "loadavg": [
-      0.42,
-      1.84,
-      1.7
+      0.17,
+      1.08,
+      1.42
     ],
-    "ramPct": 75,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -1956,11 +1973,11 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1976,10 +1993,14 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "polisher": {
+        "model": "deepseek-r1:8b",
+        "tier": "local"
+      },
+      "coder": {
         "model": "deepseek-r1:8b",
         "tier": "local"
       }
@@ -2826,7 +2847,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 13,
+        "utilPct": 11,
         "vramPct": 79
       },
       {
@@ -2844,11 +2865,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
+        "utilPct": 0,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 74,
+    "selfHostedInferencePct": 76,
     "jobsProcessed": 179
   }
 }
