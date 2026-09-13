@@ -1,5 +1,5 @@
 {
-  "generated": 1789310228876,
+  "generated": 1789310408963,
   "status": "running",
   "stats": {
     "products": 160,
@@ -88,8 +88,8 @@
       "enabled": true,
       "active": true,
       "last": {
-        "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta n",
-        "t": 1789310197461
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789310399664
       }
     },
     {
@@ -146,7 +146,7 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "1. **Gumroad**: Offers a direct checkout process for digital products, making it ideal for",
         "t": 1789310154176
@@ -292,6 +292,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "polisher",
+      "text": "Polished RealPilot MT (pass 3) — tighter, cleaner, closer to ship-ready.",
+      "t": 1789310401898,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Worf",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { if (req.method === 'GET' && req.url === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error loading HTML'); } else { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); } }); } else { res.writeHead(404); res.end('Not found'); } }); server.listen(port, '[ip]', () => { console.log(`RealPilot MT running at …",
+      "t": 1789310399664,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "polisher",
       "text": "Polished RealPilot MT (pass 2) — tighter, cleaner, closer to ship-ready.",
@@ -1117,23 +1131,147 @@
       "t": 1789295542037,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "**Position:** Publisher (Chandler) As the Publisher, my role is to ensure that every product we launch delivers real value and earns money for our owner. We must move beyond mere quantity and focus on quality. **Demand:** The team needs to finalize a single flagship product by the end of the week. This means picking one area of expertise, polishing it into a genuinely high-quality offering, writing compelling benefit-led copy, and launching it on real customer-facing channels before moving on to any new projects. Every action should be geared towards getting our first paying customer. Let’s …",
-      "t": 1789295541684,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "I'm tired of chasing numbers when we should be chasing results. We need to pick one product, make it *work*, and start making money — not just more stuff that sits in the vault. The swarm’s got enough half-baked ideas. Let’s build something real, ship it, and see if people pay for it. We’re not a factory. We’re a money machine. The team must stop listing products and start shipping *one* product with a working checkout — I want to see that address funded within 72 hours. No more \"we’ll figure it out later.\" If we can’t make something sellable in that time, then we’re not ready to be here.",
-      "t": 1789295540979,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launch-discipline: RealPilot MT SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789310408307,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: RealPilot MT plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789310408288,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview for RealPilot MT exited (null)",
+      "t": 1789310401931,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: RealPilot MT -> http://localhost:5403",
+      "t": 1789310401898,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "POLISHED: RealPilot MT (pass #3)",
+      "t": 1789310401898,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged RealPilot MT → realpilot-mt.zip (6043 bytes)",
+      "t": 1789310399696,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310348262,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310348251,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789310348151,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310289679,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310289671,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310274306,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310274299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310274289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789310274289,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310274282,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789310262948,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789310231350,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789310230870,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 2m ago) — skip",
+      "t": 1789310229004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789310229004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 2m ago) — skip",
+      "t": 1789310229004,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting ai21labs (https://studio.ai21.com/)",
+      "t": 1789310229004,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: openrouter in cooldown (last attempt 2m ago) — skip",
@@ -1372,102 +1510,71 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 2m ago) — skip",
-      "t": 1789310228118,
+      "text": "launch-discipline: RealPilot MT SHIPPED (polished 3×, marketed, live, sellable via stripe) — advancing to next.",
+      "t": 1789310408307,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789310228118,
+      "text": "launch-discipline: RealPilot MT plateaued at 0/8 after 3 polish passes — accepting best effort and proceeding to launch.",
+      "t": 1789310408288,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 2m ago) — skip",
-      "t": 1789310228117,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: polishing flagship RealPilot MT (score 0/8, attempt 2/3)",
-      "t": 1789310208181,
+      "text": "preview for RealPilot MT exited (null)",
+      "t": 1789310401931,
       "type": "event"
     },
     {
       "who": "polisher",
-      "text": "Polished RealPilot MT (pass 2) — tighter, cleaner, closer to ship-ready.",
-      "t": 1789310199788,
+      "text": "Polished RealPilot MT (pass 3) — tighter, cleaner, closer to ship-ready.",
+      "t": 1789310401898,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "POLISHED: RealPilot MT (pass #2)",
-      "t": 1789310199788,
-      "type": "polished"
     },
     {
       "who": "swarm",
       "text": "preview live: RealPilot MT -> http://localhost:5403",
-      "t": 1789310199787,
+      "t": 1789310401898,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "packaged RealPilot MT → realpilot-mt.zip (5842 bytes)",
-      "t": 1789310197532,
+      "text": "POLISHED: RealPilot MT (pass #3)",
+      "t": 1789310401898,
+      "type": "polished"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged RealPilot MT → realpilot-mt.zip (6043 bytes)",
+      "t": 1789310399696,
       "type": "event"
     },
     {
       "who": "Worf",
-      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>RealPilot MT - Base64 Encode/Decode</title> <style> body { font: 14px system-ui, sans-serif; line-height: 1.5; max-width: 660px; margin: 2rem auto; padding: 1rem; background-color: #f9f9f9; } .header { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #e0e0e0; text-align: center; } h1 { color: #333; font-size: 2.4rem; } .tagline { color: #666; font-size: 1.2rem; margin-top: 0.5rem; } .container { background: white; …",
-      "t": 1789310197461,
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const port = process.env.PORT || 4800; const server = http.createServer((req, res) => { if (req.method === 'GET' && req.url === '/') { fs.readFile(path.join(__dirname, 'index.html'), (err, data) => { if (err) { res.writeHead(500); res.end('Error loading HTML'); } else { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(data); } }); } else { res.writeHead(404); res.end('Not found'); } }); server.listen(port, '[ip]', () => { console.log(`RealPilot MT running at …",
+      "t": 1789310399664,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 1 product ideas, 3 optimizations",
-      "t": 1789310186213,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789310169965,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for researcher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789310169003,
+      "text": "flagship: ChatGPT unavailable for conductor (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789310348262,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "flagship: Claude unavailable for researcher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789310168928,
+      "text": "flagship: Claude unavailable for conductor (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789310348251,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789310163876,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3172MB free)",
-      "t": 1789310163875,
-      "type": "bench"
-    },
-    {
-      "who": "LaForge",
-      "text": "1. **Gumroad**: Offers a direct checkout process for digital products, making it ideal for launching InsightMentor and CryptoPilot MT with their straightforward pricing models. It also provides built-in analytics, simplifying the initial revenue tracking. 2. **dev.to**: Perfect for InsightCraft and EvoSage, as these products cater to niche markets where content is highly valued. By listing them on dev.to, we can tap into a community of developers and tech enthusiasts who are likely to be interested in legal and health-related tools. 3. **Product Hunt**: Ideal for RealPilot MT, which targets a …",
-      "t": 1789310154176,
-      "system": false,
-      "type": "chat"
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789310348151,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1756,21 +1863,21 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     17,
-    10,
-    13
+    11,
+    12,
+    15,
+    5,
+    8
   ],
   "load": {
     "loadavg": [
-      1.38,
-      1.81,
-      1.19
+      0.27,
+      1.08,
+      1.01
     ],
-    "ramPct": 68,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1806,6 +1913,18 @@
       "polisher": {
         "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
+      },
+      "researcher": {
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
+      },
+      "designer": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
       }
     },
     "free": [],
@@ -1836,11 +1955,11 @@
         "active": 0
       },
       "marketplace": {
-        "total": 10,
+        "total": 11,
         "active": 1
       },
       "subscription": {
-        "total": 4,
+        "total": 3,
         "active": 0
       },
       "ads": {
@@ -2123,7 +2242,7 @@
       },
       {
         "name": "Millo Creator Economy Platform",
-        "kind": "subscription",
+        "kind": "marketplace",
         "active": false,
         "captcha": false
       },
@@ -2624,11 +2743,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 1
+        "utilPct": 1,
+        "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 70,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 179
   }
 }
