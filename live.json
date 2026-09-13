@@ -1,5 +1,5 @@
 {
-  "generated": 1789343256792,
+  "generated": 1789343436779,
   "status": "running",
   "stats": {
     "products": 167,
@@ -1142,6 +1142,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
+      "t": 1789343259285,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> SmartLearn AI Tutor",
       "t": 1789343176550,
       "type": "building"
@@ -1613,28 +1619,9 @@
       "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback to enable payment integration",
       "t": 1789339534952,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1789339525565,
-      "type": "building"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmartLearn AI Tutor",
-      "t": 1789343176550,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789343174092,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1907,9 +1894,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     10,
     2,
     0,
@@ -1927,21 +1911,24 @@
     0,
     6,
     3,
+    6,
+    6,
+    13,
     6
   ],
   "load": {
     "loadavg": [
-      1.55,
-      0.72,
-      0.43
+      0.9,
+      0.89,
+      0.55
     ],
-    "ramPct": 72,
+    "ramPct": 80,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1953,15 +1940,15 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
@@ -1973,7 +1960,7 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
@@ -1989,7 +1976,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "marketer": {
@@ -2005,7 +1992,7 @@
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2013,15 +2000,15 @@
         "tier": "local"
       },
       "demand_validator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
-        "tier": "local"
-      },
-      "payment-integrator": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
-      "compliance_officer": {
+      "payment-integrator": {
         "model": "node/nest-node-5090/gpt-oss:20b",
+        "tier": "local"
+      },
+      "compliance_officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "go_toolchain_installer": {
@@ -2849,9 +2836,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 1,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2866,13 +2853,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 77
+        "vramPct": 0
       }
     ],
-    "selfHostedInferencePct": 88,
+    "selfHostedInferencePct": 89,
     "jobsProcessed": 199
   }
 }
