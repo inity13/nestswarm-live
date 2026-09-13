@@ -1,5 +1,5 @@
 {
-  "generated": 1789303399785,
+  "generated": 1789303579877,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -1118,6 +1118,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1789303565999,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider nvidia/nemotron-3.5-lightning-30b-a3b failed for github_researcher (The operation was aborted due to timeout)",
+      "t": 1789303548800,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1789303547665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789303524207,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789303519103,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789303509478,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789303401895,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: groq already has a working key — skip",
       "t": 1789303399071,
       "type": "event"
@@ -1234,21 +1276,39 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: groq already has a working key — skip",
-      "t": 1789303399071,
+      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
+      "t": 1789303565999,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider nvidia/nemotron-3.5-lightning-30b-a3b failed for github_researcher (The operation was aborted due to timeout)",
+      "t": 1789303548800,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 20m ago) — skip",
-      "t": 1789303399071,
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1789303547665,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789303399071,
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789303524207,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789303519103,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/67 channels active · 0 new discovered",
+      "t": 1789303509478,
+      "type": "scout"
     }
   ],
   "capabilities": [
@@ -1537,21 +1597,21 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     6,
     13,
     2,
-    4
+    4,
+    1,
+    5,
+    7
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.49,
+      0.73,
+      0.48,
       0.43
     ],
-    "ramPct": 59,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1579,6 +1639,26 @@
       "scout": {
         "model": "openai/gpt-oss-120b",
         "tier": "local"
+      },
+      "critic": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
+      },
+      "researcher": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
+      },
+      "distributor": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
+      },
+      "security": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
+      },
+      "github_researcher": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       }
     },
     "free": [
@@ -2383,8 +2463,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
-        "vramPct": 54
+        "utilPct": 14,
+        "vramPct": 84
       },
       {
         "alias": "GPU-Node-2",
@@ -2399,13 +2479,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 27,
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 43,
+    "selfHostedInferencePct": 29,
     "jobsProcessed": 179
   }
 }
