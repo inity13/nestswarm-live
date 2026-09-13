@@ -1,5 +1,5 @@
 {
-  "generated": 1789302353765,
+  "generated": 1789302533834,
   "status": "passive",
   "stats": {
     "products": 160,
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
-        "text": "We need to create a new account on Millo. We have to use email [email] and password C0de12",
-        "t": 1789302315405
+        "text": "But we need to be careful: there might be multiple \"Get started\" links. We might need to s",
+        "t": 1789302379655
       }
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "But we need to be careful: there might be multiple \"Get started\" links. We might need to specify{\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302379655,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "LaForge",
+      "text": "We need to perform actions to sign up on Paddle. We have to use the Gmail account [email]. We need to use \"Sign up with Google\" if available. We need to produce a single action JSON. We need to inspect the page. The page text includes \"Get started\" link. We need to click \"Get started\". Then likely a sign-up page appears. We need to click \"Sign up with Google\". But we need to check if the page has that button. The page text includes \"Get started\" as a link. We need to click that. So first action: click \"Get started\". The selector? We can use link text \"Get started\". So action: clickText with …",
+      "t": 1789302361219,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "We need to create a new account on Millo. We have to use email [email] and password C0de122122. We prefer Sign up with Google. We need to navigate to sign up page. The current page is home. We need to click \"Login\" maybe. Let's inspect the page. The \"Login\" link is in navigation. We need to click it. Then on login page, there might be \"Sign up\" or \"Create account\". Let's inspect typical e-commerce site. But we need to use the provided interface. We need to produce a single action JSON. We need to click the login link. So action: clickText \"Login\". That will open login page. Then we need to …",
@@ -1099,23 +1113,105 @@
       "t": 1789292122545,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "Our goal is to build a flagship product that solves a real problem and delivers genuine value, focusing on depth over breadth. The team must ensure that this flagship meets every verification criteria before moving forward with any new initiatives.",
-      "t": 1789292122192,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "My stance: Let's prioritize depth over breadth by focusing on one flagship product that stands out and delivers real value. However, I demand we ensure that every phase of development is thoroughly tested to avoid any potential bugs or issues before launching. Team must do better at: - Conducting rigorous testing at each stage of development to identify and fix problems early rather than trying to fix them after release. - Regularly reviewing the progress of the flagship product to stay on track with its launch timeline.",
-      "t": 1789292121841,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789302413060,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle needs email verification — reading inbox",
+      "t": 1789302395037,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302395026,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 10 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302391295,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789302387297,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789302385956,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 7 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302383390,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 6 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302379657,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789302376127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 4 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302374821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 3 -> {}",
+      "t": 1789302371683,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 2 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302368170,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789302364711,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
+      "t": 1789302361221,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Paddle (revenue)",
+      "t": 1789302356269,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 160 products)",
+      "t": 1789302356056,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: Millo needs email verification — reading inbox",
@@ -1487,137 +1583,9 @@
       "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
       "t": 1789301837909,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789301832877,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai/gpt-oss-120b failed for scout (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7277, Requested 1028. Please try again in 2.2875s. Need more tokens? Upgrade to Dev Tier today at https://con)",
-      "t": 1789301831037,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789301812878,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 16 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789301812861,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789301812844,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 10 tools · 7867MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe]",
-      "t": 1789301812843,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 160 products from disk (next port 5408)",
-      "t": 1789301812516,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789301812413,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1789302334126,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789302334125,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789302332984,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789302331852,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789302330721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 7 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
-      "t": 1789302329569,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789302325683,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"type\",\"selector\":\"#customer-authentication-web-email\",\"value\":\"[email]\"}",
-      "t": 1789302324269,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789302321247,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {}",
-      "t": 1789302319589,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Login\"}",
-      "t": 1789302315407,
-      "type": "event"
-    },
-    {
-      "who": "LaForge",
-      "text": "We need to create a new account on Millo. We have to use email [email] and password C0de122122. We prefer Sign up with Google. We need to navigate to sign up page. The current page is home. We need to click \"Login\" maybe. Let's inspect the page. The \"Login\" link is in navigation. We need to click it. Then on login page, there might be \"Sign up\" or \"Create account\". Let's inspect typical e-commerce site. But we need to use the provided interface. We need to produce a single action JSON. We need to click the login link. So action: clickText \"Login\". That will open login page. Then we need to …",
-      "t": 1789302315405,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
-      "t": 1789302306730,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1898,27 +1866,27 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     6,
     18,
     4,
-    8,
-    8,
+    11,
+    5,
     14,
     26,
     29,
     12,
-    24
+    24,
+    28,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.58,
-      0.47,
-      0.53
+      0.1,
+      0.36,
+      0.48
     ],
-    "ramPct": 69,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1964,7 +1932,7 @@
         "tier": "free"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "scout": {
@@ -2824,7 +2792,7 @@
         "vramPct": 77
       }
     ],
-    "selfHostedInferencePct": 37,
+    "selfHostedInferencePct": 49,
     "jobsProcessed": 179
   }
 }
