@@ -1,5 +1,5 @@
 {
-  "generated": 1789402655991,
+  "generated": 1789402836033,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
+      "t": 1789402821365,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789402658564,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789402578767,
       "type": "bench"
@@ -1655,32 +1667,14 @@
       "text": "keyhunter: attempting elevenlabs (https://elevenlabs.io/pricing)",
       "t": 1789400538848,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 6 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789400537734,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789400536824,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789402578767,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2928MB free)",
-      "t": 1789402578765,
-      "type": "bench"
+      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
+      "t": 1789402821365,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1947,9 +1941,6 @@
   },
   "throughput": [
     1,
-    0,
-    0,
-    1,
     21,
     6,
     1,
@@ -1975,13 +1966,16 @@
     6,
     4,
     9,
-    0
+    0,
+    1,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.36,
-      0.46,
-      0.41
+      0.25,
+      0.31,
+      0.36
     ],
     "ramPct": 63,
     "cpus": 12
@@ -3005,10 +2999,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 47
+        "busy": true,
+        "warm": false,
+        "utilPct": 72,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3026,7 +3020,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 49
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 86,
