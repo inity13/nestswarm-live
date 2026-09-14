@@ -1,5 +1,5 @@
 {
-  "generated": 1789398155839,
+  "generated": 1789398335835,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789398333236,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789398316744,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789398302387,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789398301247,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789398300761,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789398158411,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: ai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
       "t": 1789398032129,
       "type": "event"
@@ -1631,45 +1667,40 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789395256867,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789395098570,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789398333236,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789394918651,
+      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
+      "t": 1789398316744,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789394738633,
+      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789398302387,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789394559673,
+      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789398301247,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789394378299,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789394346877,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789398300761,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1941,9 +1972,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     6,
     25,
     2,
@@ -1962,15 +1990,18 @@
     0,
     13,
     0,
-    0
+    0,
+    1,
+    0,
+    7
   ],
   "load": {
     "loadavg": [
-      0.33,
-      0.24,
-      0.17
+      0.48,
+      0.26,
+      0.19
     ],
-    "ramPct": 76,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2979,7 +3010,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 2,
+    "online": 1,
     "total": 2,
     "nodes": [
       {
@@ -2992,16 +3023,16 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 12,
-        "vramPct": 77
+        "busy": true,
+        "warm": false,
+        "utilPct": 14,
+        "vramPct": 89
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "online",
+        "status": "degraded",
         "can": [
           "browser",
           "coding",
@@ -3012,7 +3043,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 11,
+        "utilPct": 100,
         "vramPct": 92
       }
     ],
