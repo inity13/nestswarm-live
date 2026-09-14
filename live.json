@@ -1,5 +1,5 @@
 {
-  "generated": 1789380876304,
+  "generated": 1789381056368,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1172,6 +1172,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789380909448,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2125MB free)",
+      "t": 1789380909446,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789380878697,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: elevenlabs step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789380812310,
       "type": "event"
@@ -1631,70 +1649,9 @@
       "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789378291778,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789378290860,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789378269841,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789378269386,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789380812310,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789380811050,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789380810655,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789380810325,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789380809493,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789380808826,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789380797346,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1958,9 +1915,6 @@
     "priority": "Workflow automation SaaS for boutique law firms combining legal-tech, AI drafting, and compliance checks"
   },
   "throughput": [
-    3,
-    0,
-    15,
     1,
     0,
     0,
@@ -1987,15 +1941,18 @@
     0,
     1,
     13,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.21,
-      0.21,
-      0.26
+      0.22,
+      0.32,
+      0.3
     ],
-    "ramPct": 70,
+    "ramPct": 73,
     "cpus": 12
   },
   "brain": {
@@ -2971,8 +2928,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
-        "vramPct": 78
+        "utilPct": 11,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2989,7 +2946,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 21,
+        "utilPct": 12,
         "vramPct": 92
       }
     ],
