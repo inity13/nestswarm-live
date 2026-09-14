@@ -1,5 +1,5 @@
 {
-  "generated": 1789392215861,
+  "generated": 1789392395906,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1191,6 +1191,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789392218252,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789392038647,
       "type": "event"
     },
@@ -1661,12 +1667,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789384658797,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789384511413,
-      "type": "bench"
     }
   ],
   "recent": [],
@@ -1933,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    2,
-    3,
-    0,
     1,
     2,
     0,
@@ -1955,6 +1952,9 @@
     2,
     0,
     3,
+    0,
+    0,
+    1,
     0,
     0,
     1,
@@ -1966,9 +1966,9 @@
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.11,
-      0.09
+      0.03,
+      0.07,
+      0.08
     ],
     "ramPct": 59,
     "cpus": 12
@@ -2983,7 +2983,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -2998,25 +2998,26 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 12,
         "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
-        "gpu": null,
-        "vramGb": null,
-        "status": "degraded",
+        "gpu": "RTX 5090 Laptop",
+        "vramGb": 24,
+        "status": "online",
         "can": [
           "browser",
           "coding",
+          "gpu",
           "llm",
           "python",
           "vision"
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 0
+        "utilPct": 1,
+        "vramPct": 1
       }
     ],
     "selfHostedInferencePct": 86,
