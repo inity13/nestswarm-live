@@ -1,5 +1,5 @@
 {
-  "generated": 1789389875865,
+  "generated": 1789390055936,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789389921861,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3389MB free)",
+      "t": 1789389921859,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789389892375,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789389888855,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789389888740,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789389888740,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback to enable payment integration.",
+      "t": 1789389888738,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789389879078,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789389786850,
       "type": "event"
@@ -1619,64 +1667,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789383578655,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789383398658,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node nest-node-5090 set to draining",
-      "t": 1789383381225,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789383376916,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789383366918,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789383285549,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789383284407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789383283810,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 5 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter; requested owner: Obtain an API key for the newly discovered free provider \"qwen\" to restore its availability.",
-      "t": 1789383280279,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789389786850,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1940,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1969,15 +1959,18 @@
     0,
     1,
     2,
+    0,
+    9,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.06,
-      0.11
+      0.24,
+      0.2,
+      0.16
     ],
-    "ramPct": 50,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2088,7 +2081,10 @@
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -3002,9 +2998,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 16
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -3021,8 +3017,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 2,
-        "vramPct": 92
+        "utilPct": 6,
+        "vramPct": 49
       }
     ],
     "selfHostedInferencePct": 87,
