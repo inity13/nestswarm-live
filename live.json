@@ -1,5 +1,5 @@
 {
-  "generated": 1789406976246,
+  "generated": 1789407156264,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789407097721,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789407087723,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789406978483,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789406799287,
       "type": "event"
@@ -1649,27 +1667,22 @@
       "text": "keyhunter: qwenai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
       "t": 1789403471732,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789403470692,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789407097721,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789403469655,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789403468617,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789407087723,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1934,9 +1947,6 @@
   },
   "throughput": [
     1,
-    5,
-    0,
-    1,
     1,
     0,
     1,
@@ -1962,15 +1972,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.13,
-      0.14
+      0.16,
+      0.11,
+      0.12
     ],
-    "ramPct": 59,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2979,7 +2992,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 2,
+    "online": 1,
     "total": 2,
     "nodes": [
       {
@@ -2994,14 +3007,14 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "online",
+        "status": "degraded",
         "can": [
           "browser",
           "coding",
@@ -3012,8 +3025,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 50
       }
     ],
     "selfHostedInferencePct": 86,
