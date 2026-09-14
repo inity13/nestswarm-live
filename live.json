@@ -1,10 +1,10 @@
 {
-  "generated": 1789346676919,
+  "generated": 1789346856921,
   "status": "running",
   "stats": {
     "products": 168,
     "listed": 19,
-    "agents": 25,
+    "agents": 26,
     "avgScore": "5.3"
   },
   "agents": [
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789346007134
+        "text": "// FILE: app.js const http = require('http'); const https = require('https'); const fs = r",
+        "t": 1789346773653
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree we must focus on one product, but we cannot let the design slip through the cracks",
-        "t": 1789343467691
+        "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta n",
+        "t": 1789346839688
       }
     },
     {
@@ -62,10 +62,10 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Thank you for your feedback, team. You're all spot on about focusing on one flagship produ",
-        "t": 1789343468044
+        "text": "```json { \"price\": 29, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Unlock the cl",
+        "t": 1789346850029
       }
     },
     {
@@ -295,9 +295,46 @@
         "text": "The swarm must solidify a single, pinned Go toolchain for every repo to ensure uniformity ",
         "t": 1789343473682
       }
+    },
+    {
+      "role": "security_officer",
+      "name": "security_officer",
+      "color": "#6c70e5",
+      "avatar": null,
+      "enabled": true,
+      "active": false,
+      "last": null
     }
   ],
   "chat": [
+    {
+      "who": "Chandler",
+      "text": "```json { \"price\": 29, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Unlock the clients you deserve, set rates that pay, and keep cash flowing.\", \"headline\": \"Freelance, but smarter.\" } ```",
+      "t": 1789346850029,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>LeadGenius – Slack Meeting‑Notes Poster</title> <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\"> <style> body{font-family:'Inter',sans-serif;margin:0;background:#fafafa;} .hero{background:linear-gradient(135deg,#0070f3,#00b4db);color:#fff;padding:4rem 1rem;text-align:center;} .hero-title{font-size:2.5rem;margin:0;font-weight:700;} …",
+      "t": 1789346839688,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for LeadGenius — 2 files, working node app. Handing off to test.",
+      "t": 1789346773657,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const https = require('https'); const fs = require('fs'); const path = require('path'); const url = require('url'); // ---------- Helper: simple arg parser ---------- function parseArgs() { const args = process.argv.slice(2); const result = {}; for (let i = 0; i < args.length; i++) { if (args[i].startsWith('--')) { const key = args[i].slice(2); const val = args[i + 1]; result[key] = val; i++; } } return result; } // ---------- Core: post to Slack ---------- function postToSlack(webhook, thread_ts, text, callback) { const payload = { text }; if …",
+      "t": 1789346773653,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for LeadGenius — 2 files, working node app. Handing off to test.",
@@ -1109,37 +1146,159 @@
       "t": 1789335800031,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "launcher",
-      "text": "FurFit Coach is now BUYABLE at https://inity13.github.io/[private-repo]/pmu0acj2zzpxi/ — real Stripe checkout live.",
-      "t": 1789335798831,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "FurFit Coach has great potential but needs a robust calendar sync feature to be truly useful. The team must prioritize developing and demonstrating a functional calendar integration in the next sprint. This will establish a solid foundation and ensure customer interest before moving forward with additional features.",
-      "t": 1789335797776,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "FurFit Coach aims to be the first pet fitness companion with real calendar integration and comprehensive health analytics. The team must deliver a working prototype that demonstrates seamless calendar sync with popular platforms within the next two weeks. This is a non-negotiable quality bar.",
-      "t": 1789335796134,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "FurFit Coach is an ambitious product with significant potential. We need to ensure it is not just functional but also user-friendly and engaging for pet owners. The team must deliver a fully polished, intuitive interface that demonstrates all key features before considering a launch. Launch only when the prototype is live on real platforms where users can interact with it.",
-      "t": 1789335794495,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing LeadGenius (critic 3) from feedback",
+      "t": 1789346856871,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> LeadGenius",
+      "t": 1789346856865,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> LeadGenius",
+      "t": 1789346846867,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for LeadGenius",
+      "t": 1789346839691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> LeadGenius",
+      "t": 1789346786869,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for LeadGenius",
+      "t": 1789346779180,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LeadGenius",
+      "t": 1789346776876,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789346773657,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789346767513,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 4 operational improvement(s) recommended",
+      "t": 1789346727508,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789346727459,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added security_officer (Enforces security gates on product builds and distribution channels)",
+      "t": 1789346727335,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill checkout-session-metadata-propagation",
+      "t": 1789346727335,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-link-metadata-propagation",
+      "t": 1789346727335,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill stripe-sandbox-checkout",
+      "t": 1789346727335,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill stripe-owner-onboarding",
+      "t": 1789346727335,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: stripe-sandbox-checkout",
+      "t": 1789346727334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: stripe-owner-onboarding",
+      "t": 1789346727334,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-link-metadata-propagation",
+      "t": 1789346727333,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: checkout-session-metadata-propagation",
+      "t": 1789346727332,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback to enable payment integration",
+      "t": 1789346727330,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789346707029,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2625MB free)",
+      "t": 1789346707027,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789346692551,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789346679145,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
@@ -1469,159 +1628,92 @@
       "text": "meeting actions taken: paused new builds (strategic focus — board decision, no auto-expiry); polished the weakest product; marketed the top product",
       "t": 1789343522648,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "no product available to polish",
-      "t": 1789343522636,
+      "text": "revise-before-reject: repairing LeadGenius (critic 3) from feedback",
+      "t": 1789346856871,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789343439030,
-      "type": "event"
+      "text": "stage 'list' -> LeadGenius",
+      "t": 1789346856865,
+      "type": "building"
+    },
+    {
+      "who": "Chandler",
+      "text": "```json { \"price\": 29, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Unlock the clients you deserve, set rates that pay, and keep cash flowing.\", \"headline\": \"Freelance, but smarter.\" } ```",
+      "t": 1789346850029,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789343259285,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmartLearn AI Tutor",
-      "t": 1789343176550,
+      "text": "stage 'package' -> LeadGenius",
+      "t": 1789346846867,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789343174092,
+      "text": "designer improved UI for LeadGenius",
+      "t": 1789346839691,
       "type": "event"
     },
     {
+      "who": "Monica",
+      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>LeadGenius – Slack Meeting‑Notes Poster</title> <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\"> <style> body{font-family:'Inter',sans-serif;margin:0;background:#fafafa;} .hero{background:linear-gradient(135deg,#0070f3,#00b4db);color:#fff;padding:4rem 1rem;text-align:center;} .hero-title{font-size:2.5rem;margin:0;font-weight:700;} …",
+      "t": 1789346839688,
+      "system": false,
+      "type": "chat"
+    },
+    {
       "who": "swarm",
-      "text": "stage 'test' -> SmartLearn AI Tutor",
-      "t": 1789343126535,
+      "text": "stage 'design' -> LeadGenius",
+      "t": 1789346786869,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for LeadGenius",
+      "t": 1789346779180,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> LeadGenius",
+      "t": 1789346776876,
+      "type": "building"
+    },
+    {
+      "who": "coder",
+      "text": "Build done for LeadGenius — 2 files, working node app. Handing off to test.",
+      "t": 1789346773657,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
       "text": "coder produced a functional build (2 files, node)",
-      "t": 1789343126124,
+      "t": 1789346773657,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789343109557,
-      "type": "bench"
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const https = require('https'); const fs = require('fs'); const path = require('path'); const url = require('url'); // ---------- Helper: simple arg parser ---------- function parseArgs() { const args = process.argv.slice(2); const result = {}; for (let i = 0; i < args.length; i++) { if (args[i].startsWith('--')) { const key = args[i].slice(2); const val = args[i + 1]; result[key] = val; i++; } } return result; } // ---------- Core: post to Slack ---------- function postToSlack(webhook, thread_ts, text, callback) { const payload = { text }; if …",
+      "t": 1789346773653,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2159MB free)",
-      "t": 1789343109556,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789343079125,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789342899012,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789342718965,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789342538898,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1789342475696,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789342358962,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmartLearn AI Tutor",
-      "t": 1789342276325,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> SmartLearn AI Tutor",
-      "t": 1789342216318,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: SmartLearn AI Tutor [education, tutoring & courses]",
-      "t": 1789342212479,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1789342186328,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: education, tutoring & courses",
-      "t": 1789342186327,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 166 products)",
-      "t": 1789342179070,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1789342178400,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1789342178386,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1789342178383,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 166 products)",
-      "t": 1789341998712,
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789346767513,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1765,7 +1857,7 @@
     },
     {
       "name": "stripe-owner-onboarding",
-      "desc": "Guide owner through providing Stripe keys or approving MoR fallback"
+      "desc": "Guides owner through providing Stripe keys or approving MoR fallback"
     },
     {
       "name": "stripe-sandbox-checkout",
@@ -1865,11 +1957,11 @@
     },
     {
       "name": "checkout-session-metadata-propagation",
-      "desc": "Identify which Stripe metadata fields propagate from Payment Link to Checkout Session"
+      "desc": "Ensures product_id propagates from Price metadata to checkout sessions for fulfillment tracking"
     },
     {
       "name": "payment-link-metadata-propagation",
-      "desc": "Ensure product_id propagates from Price metadata to checkout sessions for fulfillment tracking"
+      "desc": "Ensures product_id propagates from Price metadata to checkout sessions for fulfillment tracking"
     }
   ],
   "ledger": {
@@ -1885,9 +1977,6 @@
     "priority": "The top product from our current catalog that has demonstrated buyer intent and can be polished to revenue-readiness within 24 hours"
   },
   "throughput": [
-    10,
-    5,
-    13,
     12,
     3,
     0,
@@ -1914,15 +2003,18 @@
     0,
     1,
     0,
-    0
+    0,
+    17,
+    6,
+    7
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.16,
-      0.21
+      1.08,
+      0.46,
+      0.31
     ],
-    "ramPct": 61,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1964,7 +2056,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
@@ -1972,11 +2064,11 @@
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "marketer": {
@@ -2017,7 +2109,10 @@
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2809,7 +2904,7 @@
     {
       "name": "LeadGenius",
       "niche": "AI & automation utilities",
-      "stage": "build",
+      "stage": "list",
       "status": "building",
       "url": ""
     }
@@ -2838,9 +2933,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 15
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -2855,10 +2950,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 91
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 89,
