@@ -1,5 +1,5 @@
 {
-  "generated": 1789386636775,
+  "generated": 1789386815993,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789386799765,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3567MB free)",
+      "t": 1789386799762,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789386640397,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789386459042,
       "type": "event"
@@ -1640,27 +1658,22 @@
       "text": "revenue: queued NowPayments.io for account acquisition",
       "t": 1789382686352,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue: queued BitPay for account acquisition",
-      "t": 1789382686352,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue: queued BuySellAds for account acquisition",
-      "t": 1789382686352,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue: queued Bounties Network for account acquisition",
-      "t": 1789382686352,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789386799765,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3567MB free)",
+      "t": 1789386799762,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1924,9 +1937,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    0,
     2,
     0,
     0,
@@ -1952,16 +1962,19 @@
     0,
     2,
     3,
-    1,
-    2
+    0,
+    3,
+    4,
+    3,
+    7
   ],
   "load": {
     "loadavg": [
-      1.84,
-      1.33,
-      0.66
+      1.72,
+      1.43,
+      0.82
     ],
-    "ramPct": 55,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2973,8 +2986,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 18
+        "utilPct": 87,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2991,7 +3004,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 0,
+        "utilPct": 3,
         "vramPct": 92
       }
     ],
