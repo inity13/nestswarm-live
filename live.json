@@ -1,5 +1,5 @@
 {
-  "generated": 1789413276802,
+  "generated": 1789413456846,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789413312092,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2308MB free)",
+      "t": 1789413312089,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789413279223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789413187136,
       "type": "event"
@@ -1649,34 +1667,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789408598744,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for architect (fetch failed) — falling to external/free",
-      "t": 1789408489208,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789408419001,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789408239096,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789413187136,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1940,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    6,
-    0,
-    21,
     4,
     2,
     14,
@@ -1969,15 +1959,18 @@
     0,
     1,
     3,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.29,
-      0.25,
-      0.27
+      0.23,
+      0.32,
+      0.3
     ],
-    "ramPct": 66,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -3016,7 +3009,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 2,
+    "online": 1,
     "total": 2,
     "nodes": [
       {
@@ -3032,13 +3025,13 @@
         "busy": false,
         "warm": true,
         "utilPct": 11,
-        "vramPct": 78
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "online",
+        "status": "degraded",
         "can": [
           "browser",
           "coding",
@@ -3049,7 +3042,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 12,
+        "utilPct": 100,
         "vramPct": 92
       }
     ],
