@@ -1,5 +1,5 @@
 {
-  "generated": 1789407156264,
+  "generated": 1789407336346,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789407159406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789407097721,
       "type": "event"
@@ -1661,28 +1667,9 @@
       "text": "keyhunter: qwenai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
       "t": 1789403472774,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789403471732,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789407097721,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789407087723,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1947,9 +1934,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     4,
     0,
     2,
@@ -1975,15 +1959,18 @@
     0,
     1,
     1,
-    1
+    1,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.11,
-      0.12
+      0.13,
+      0.1,
+      0.11
     ],
-    "ramPct": 58,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2992,7 +2979,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -3006,15 +2993,15 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 11,
-        "vramPct": 48
+        "warm": false,
+        "utilPct": 12,
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "degraded",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -3023,10 +3010,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 50
+        "busy": true,
+        "warm": false,
+        "utilPct": 15,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 86,
