@@ -1,5 +1,5 @@
 {
-  "generated": 1789368456253,
+  "generated": 1789368636350,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789368458640,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
       "t": 1789368444707,
       "type": "trending"
@@ -1625,88 +1631,9 @@
       "text": "self-heal: disabled provider nvidia",
       "t": 1789361676175,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789361676173,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
-      "t": 1789368444707,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 operational improvement(s) recommended",
-      "t": 1789368424738,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789368424692,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill checkout-session-metadata-propagation",
-      "t": 1789368424584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-link-metadata-propagation",
-      "t": 1789368424584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-sandbox-checkout",
-      "t": 1789368424584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1789368424584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-owner-onboarding",
-      "t": 1789368424583,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: payment-link-metadata-propagation",
-      "t": 1789368424582,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-sandbox-checkout",
-      "t": 1789368424582,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: checkout-session-metadata-propagation",
-      "t": 1789368424581,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback to enable payment integration",
-      "t": 1789368424578,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1971,9 +1898,6 @@
   },
   "throughput": [
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1999,15 +1923,18 @@
     0,
     7,
     1,
-    14
+    14,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.2,
-      0.13
+      0.56,
+      0.35,
+      0.2
     ],
-    "ramPct": 71,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -2988,7 +2915,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
+        "utilPct": 11,
         "vramPct": 80
       },
       {
@@ -3004,10 +2931,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
-        "vramPct": 77
+        "busy": true,
+        "warm": false,
+        "utilPct": 16,
+        "vramPct": 78
       }
     ],
     "selfHostedInferencePct": 88,
