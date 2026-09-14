@@ -1,5 +1,5 @@
 {
-  "generated": 1789404816369,
+  "generated": 1789404996312,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1191,6 +1191,60 @@
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789404972460,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789404877571,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789404877570,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789404877569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789404877569,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789404877568,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789404876322,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789404875182,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789404818827,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789404668865,
       "type": "event"
     },
@@ -1613,63 +1667,16 @@
       "text": "keyhunter: fireworksai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789402558925,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789402547313,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"Request blocked by Hugging Face. Unable to proceed.\"}",
-      "t": 1789402537523,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting fireworksai (https://www.fireworksaichat.com/signup)",
-      "t": 1789402537523,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789402537316,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789402506781,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789402493302,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789402478786,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle needs email verification — reading inbox",
-      "t": 1789402473499,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789402473497,
+      "t": 1789404972460,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1935,9 +1942,6 @@
   "throughput": [
     1,
     0,
-    8,
-    1,
-    0,
     0,
     1,
     23,
@@ -1962,15 +1966,18 @@
     7,
     4,
     0,
-    0
+    0,
+    2,
+    7,
+    3
   ],
   "load": {
     "loadavg": [
-      0,
+      0.14,
       0.11,
-      0.18
+      0.17
     ],
-    "ramPct": 62,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1984,7 +1991,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "distributor": {
@@ -2080,12 +2087,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2999,7 +3001,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 9,
         "vramPct": 78
       },
       {
@@ -3017,8 +3019,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 21,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 87,
