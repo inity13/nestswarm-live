@@ -1,5 +1,5 @@
 {
-  "generated": 1789394375866,
+  "generated": 1789394556830,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789394378299,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789394346877,
       "type": "event"
@@ -1661,28 +1667,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789386818349,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789386799765,
-      "type": "bench"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789394346877,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789394336878,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1957,9 +1944,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     3,
     0,
@@ -1975,12 +1959,15 @@
     0,
     1,
     0,
-    2
+    2,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0,
-      0.05,
+      0.1,
+      0.06,
       0.07
     ],
     "ramPct": 59,
@@ -3011,17 +2998,18 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 11,
         "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
-        "gpu": null,
-        "vramGb": null,
+        "gpu": "RTX 5090 Laptop",
+        "vramGb": 24,
         "status": "online",
         "can": [
           "browser",
           "coding",
+          "gpu",
           "llm",
           "python",
           "vision"
@@ -3029,7 +3017,7 @@
         "busy": false,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 0
+        "vramPct": 2
       }
     ],
     "selfHostedInferencePct": 86,
