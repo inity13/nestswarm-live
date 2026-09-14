@@ -1,5 +1,5 @@
 {
-  "generated": 1789413456846,
+  "generated": 1789413636753,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789413490736,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789413468400,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789413459215,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789413458400,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789413312092,
       "type": "bench"
@@ -1643,30 +1667,6 @@
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789408918046,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789408908034,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
-      "t": 1789408791422,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789408779120,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789408598744,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1933,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    2,
-    14,
     1,
     0,
     6,
@@ -1962,15 +1959,18 @@
     0,
     3,
     0,
+    0,
+    6,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.32,
-      0.3
+      0.31,
+      0.38,
+      0.33
     ],
-    "ramPct": 72,
+    "ramPct": 75,
     "cpus": 12
   },
   "brain": {
@@ -3009,7 +3009,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -3025,13 +3025,13 @@
         "busy": false,
         "warm": true,
         "utilPct": 11,
-        "vramPct": 48
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "degraded",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -3042,8 +3042,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 100,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 78
       }
     ],
     "selfHostedInferencePct": 86,
