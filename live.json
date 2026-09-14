@@ -1,5 +1,5 @@
 {
-  "generated": 1789395275726,
+  "generated": 1789395455851,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789395306766,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3266MB free)",
+      "t": 1789395306765,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789395278733,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789395266865,
       "type": "event"
@@ -1649,40 +1667,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789387718626,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789387538573,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789387358356,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789387178276,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789395266865,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789395256867,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1946,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1975,15 +1959,18 @@
     0,
     1,
     0,
-    2
+    2,
+    3,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.05,
-      0.06
+      0.22,
+      0.16,
+      0.1
     ],
-    "ramPct": 52,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -3010,9 +2997,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 13,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -3027,9 +3014,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 40,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
