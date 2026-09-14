@@ -1,5 +1,5 @@
 {
-  "generated": 1789409676640,
+  "generated": 1789409856680,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789409828184,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789409818185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789409739293,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789409709383,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3349MB free)",
+      "t": 1789409709382,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789409680105,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789409499674,
       "type": "event"
@@ -1631,45 +1667,22 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3360MB free)",
       "t": 1789404309484,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "scout: 2 free providers live (groq, openrouter) · 0 zen free models",
-      "t": 1789404291924,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789404278690,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789409828184,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789404275214,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789404098613,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789404049773,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789403918580,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789409818185,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1933,44 +1946,44 @@
     "priority": ""
   },
   "throughput": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1,
+    1,
+    0,
+    0,
     3,
-    0,
     2,
-    1,
-    1,
-    1,
-    1,
-    0,
-    0,
-    1,
-    2,
-    0,
-    1,
-    0,
-    0,
-    2,
-    0,
-    2,
-    1,
-    0,
-    1,
-    1,
-    0,
-    0,
-    1,
-    2,
-    1,
-    1,
-    0,
-    0
+    2
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.14,
-      0.12
+      0.16,
+      0.24,
+      0.17
     ],
-    "ramPct": 50,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2979,7 +2992,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 2,
+    "online": 1,
     "total": 2,
     "nodes": [
       {
@@ -2994,14 +3007,14 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "online",
+        "status": "degraded",
         "can": [
           "browser",
           "coding",
@@ -3012,7 +3025,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 12,
+        "utilPct": 19,
         "vramPct": 92
       }
     ],
