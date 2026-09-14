@@ -1,5 +1,5 @@
 {
-  "generated": 1789424978817,
+  "generated": 1789425157727,
   "status": "running",
   "stats": {
     "products": 175,
@@ -40,8 +40,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
-        "t": 1789424622939
+        "text": "// FILE: install.bat @echo off setlocal if exist \"%USERPROFILE%\\AppData\\Local\\TripMatePro\"",
+        "t": 1789425034694
       }
     },
     {
@@ -343,6 +343,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "// FILE: install.bat @echo off setlocal if exist \"%USERPROFILE%\\AppData\\Local\\TripMatePro\" ( echo Existing installation detected. Cleaning up... rmdir /q /s \"%USERPROFILE%\\AppData\\Local\\TripMatePro\" 2>&1 >nul ) else ( mkdir \"%USERPROFILE%\\AppData\\Local\\TripMatePro\" ) echo Downloading TripMate Pro application and dependencies... if exist app.js del",
+      "t": 1789425034694,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Joey",
       "text": "### The Pain of Remote Work and Travel Imagine you're packing for a remote trip to Japan during rush hour in New York. You need to navigate time zones, book flights and hotels, and pack according to local customs—all while trying to stay within your budget. It's like juggling multiple tasks at once, leaving no room for mistakes. ### The Fix with TripMate Pro TripMate Pro is the ultimate solution to streamline your remote adventures. Our AI-driven itinerary optimization takes care of all the logistics, so you can focus on what really matters—enjoying your trip! #### Features That Make Your …",
@@ -1175,16 +1182,27 @@
       "t": 1789418979429,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "Understood, everyone. The swarm’s priority now is to halt catalog expansion and focus on securing our flagship product. We’ll finalize our decision with hard market data and a secure checkout before proceeding. This ensures we have a robust foundation for success.",
-      "t": 1789418979074,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "launcher: 6 distribution action(s) this pass",
+      "t": 1789425051631,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: listing prepared for TripMate Pro",
+      "t": 1789425047630,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 175 products)",
+      "t": 1789424981145,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
@@ -1646,58 +1664,9 @@
       "text": "stage 'build' -> PitchPerfect AI",
       "t": 1789422349494,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1789422347484,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 173 products)",
-      "t": 1789422279936,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1789422276907,
-      "type": "vault"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789424926839,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789424926830,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: skipping dev.to for TripMate Pro (no live URL)",
-      "t": 1789424926811,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: gumroad failed for TripMate Pro: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
-      "t": 1789424926810,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped TripMate Pro to https://github.com/inity13/[private-repo] (private)",
-      "t": 1789424926193,
-      "type": "launch"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1961,9 +1930,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    1,
-    2,
-    0,
     2,
     9,
     0,
@@ -1974,8 +1940,8 @@
     1,
     0,
     2,
-    18,
-    2,
+    16,
+    4,
     1,
     0,
     0,
@@ -1990,15 +1956,18 @@
     0,
     1,
     0,
-    5
+    5,
+    2,
+    3,
+    0
   ],
   "load": {
     "loadavg": [
-      6.13,
-      4.19,
-      3.43
+      6.63,
+      4.86,
+      3.81
     ],
-    "ramPct": 57,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2040,8 +2009,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3052,7 +3021,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 60,
+        "utilPct": 58,
         "vramPct": 91
       },
       {
