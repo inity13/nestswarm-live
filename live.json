@@ -1,5 +1,5 @@
 {
-  "generated": 1789366476308,
+  "generated": 1789366656500,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789366507406,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3315MB free)",
+      "t": 1789366507403,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789366478793,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789366298653,
       "type": "event"
@@ -1613,24 +1631,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789358739335,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789358706663,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789358696652,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789358559064,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1897,9 +1897,6 @@
     "priority": "Workflow automation SaaS for boutique law firms combining legal-tech, AI drafting, and compliance checks"
   },
   "throughput": [
-    6,
-    6,
-    16,
     7,
     13,
     3,
@@ -1926,15 +1923,18 @@
     0,
     1,
     0,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.1,
+      0.04,
+      0.12,
       0.11
     ],
-    "ramPct": 51,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2909,9 +2909,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
