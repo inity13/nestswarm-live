@@ -1,5 +1,5 @@
 {
-  "generated": 1789404456123,
+  "generated": 1789404636166,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789404593474,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789404578491,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789404578373,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback",
+      "t": 1789404578372,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789404578372,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789404575406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789404458566,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789404367478,
       "type": "event"
@@ -1625,55 +1667,43 @@
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789402471326,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789402298823,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789402205543,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789402169754,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1789402158938,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs entering verification code from inbox",
-      "t": 1789402155376,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789402132808,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789402131662,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789404367478,
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789404593474,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789404578491,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789404578373,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback",
+      "t": 1789404578372,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789404578372,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789404575406,
       "type": "event"
     }
   ],
@@ -1940,9 +1970,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    2,
     9,
     0,
     0,
@@ -1969,15 +1996,18 @@
     1,
     4,
     5,
-    0
+    0,
+    1,
+    1,
+    7
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.32,
-      0.27
+      0.08,
+      0.21,
+      0.23
     ],
-    "ramPct": 58,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1991,8 +2021,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3024,8 +3054,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 93
+        "utilPct": 6,
+        "vramPct": 92
       }
     ],
     "selfHostedInferencePct": 87,
