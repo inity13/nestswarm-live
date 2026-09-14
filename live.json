@@ -1,5 +1,5 @@
 {
-  "generated": 1789398335835,
+  "generated": 1789398515804,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: ai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789398352268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789398351218,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789398338191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789398333236,
       "type": "event"
@@ -1649,58 +1667,9 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3266MB free)",
       "t": 1789395306765,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789395278733,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789395266865,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789395256867,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789398333236,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789398316744,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789398302387,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789398301247,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789398300761,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1969,11 +1938,8 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
-    6,
-    25,
+    5,
+    26,
     2,
     0,
     2,
@@ -1993,15 +1959,18 @@
     0,
     1,
     0,
-    7
+    7,
+    5,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.48,
-      0.26,
-      0.19
+      0.16,
+      0.27,
+      0.21
     ],
-    "ramPct": 66,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -3010,7 +2979,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -3023,16 +2992,16 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 14,
-        "vramPct": 89
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "degraded",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -3043,7 +3012,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 100,
+        "utilPct": 24,
         "vramPct": 92
       }
     ],
