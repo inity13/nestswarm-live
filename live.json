@@ -1,5 +1,5 @@
 {
-  "generated": 1789424257723,
+  "generated": 1789424437774,
   "status": "running",
   "stats": {
     "products": 175,
@@ -40,8 +40,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: app.js ```javascript const http = require('http'); const fs = require('fs'); cons",
-        "t": 1789423988668
+        "text": "// FILE: app.js ```javascript const express = require('express'); const bodyParser = requi",
+        "t": 1789424288006
       }
     },
     {
@@ -346,6 +346,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js ```javascript const express = require('express'); const bodyParser = require('body-parser'); const cors = require('cors'); const app = express(); app.use(cors()); app.use(bodyParser.json()); // Sample hardcoded data for demonstration purposes const destinations = ['New York', 'Tokyo', 'London']; const activities = [ { name: 'Conference', cost: 'High' }, { name: 'Workshop', cost: 'Medium' }, { name: 'Networking', cost: 'Medium' } ]; // Function to generate recommendations based on input function generateRecommendations(input) { const preferences = parseInput(input); // Basic …",
+      "t": 1789424288006,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Council adjourned for LeadNest.",
@@ -1178,16 +1185,27 @@
       "t": 1789418976605,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "The market data and a hardened checkout are non‑negotiable, and the catalog must stop expanding; however, polishing a product without a live, secure payment flow is wasted effort, so the next decisive action is to integrate a fully vetted Stripe checkout into our chosen flagship before any further UI or feature tweaks.",
-      "t": 1789418976252,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> TripMate Pro",
+      "t": 1789424289596,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "build not functional — no working product (attempt 1)",
+      "t": 1789424288011,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 175 products)",
+      "t": 1789424259925,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 175 products)",
@@ -1649,24 +1667,6 @@
       "text": "new build started (ideating) — niche: study, learning & memory aids",
       "t": 1789421119894,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher brief: Solopreneur Business Growth (willingness: high) — 2 tool ideas",
-      "t": 1789421119874,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789421114833,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789421114833,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1933,9 +1933,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    2,
-    0,
-    1,
     5,
     12,
     7,
@@ -1962,15 +1959,18 @@
     4,
     1,
     0,
+    0,
+    4,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      2.96,
-      2.92,
-      3.15
+      3,
+      2.76,
+      3.02
     ],
-    "ramPct": 56,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -3003,7 +3003,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 87,
+        "utilPct": 90,
         "vramPct": 89
       },
       {
