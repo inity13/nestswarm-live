@@ -1,5 +1,5 @@
 {
-  "generated": 1789375296364,
+  "generated": 1789375476385,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789375475268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1789375475266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
+      "t": 1789375475266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789375475266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 165 products with flags, 1 with high-severity findings",
+      "t": 1789375475253,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789375298680,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789375137056,
       "type": "event"
@@ -1595,45 +1631,40 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789368458640,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 0 product ideas, 0 optimizations",
-      "t": 1789368444707,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 operational improvement(s) recommended",
-      "t": 1789368424738,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789368424692,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill checkout-session-metadata-propagation",
-      "t": 1789368424584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-link-metadata-propagation",
-      "t": 1789368424584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-sandbox-checkout",
-      "t": 1789368424584,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789375475268,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1789375475266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
+      "t": 1789375475266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789375475266,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 165 products with flags, 1 with high-severity findings",
+      "t": 1789375475253,
+      "type": "security"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1897,9 +1928,6 @@
     "priority": "Workflow automation SaaS for boutique law firms combining legal-tech, AI drafting, and compliance checks"
   },
   "throughput": [
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1926,15 +1954,18 @@
     0,
     3,
     0,
-    0
+    0,
+    1,
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.3,
-      0.23,
+      0.31,
+      0.22,
       0.19
     ],
-    "ramPct": 64,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -2032,7 +2063,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2908,9 +2941,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 13,
+        "utilPct": 12,
         "vramPct": 18
       },
       {
@@ -2926,9 +2959,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 13,
         "vramPct": 92
       }
     ],
