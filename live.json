@@ -1,5 +1,5 @@
 {
-  "generated": 1789383756168,
+  "generated": 1789383936114,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1181,6 +1181,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: requested owner: Obtain an API key for the newly discovered free provider 'qwen' to restore its availability.",
+      "t": 1789383876420,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Obtain an API key for the newly discovered free provider 'qwen' to restore its availability.",
+      "t": 1789383876420,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789383875210,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789383875102,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789383758978,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: qwenelevenlabs step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN error.\"}",
       "t": 1789383614742,
       "type": "event"
@@ -1628,39 +1658,34 @@
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789381537013,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789381527012,
+      "text": "self-heal: requested owner: Obtain an API key for the newly discovered free provider 'qwen' to restore its availability.",
+      "t": 1789383876420,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: fireworksai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789381449649,
+      "text": "self-heal complete: 1 fix(es) — requested owner: Obtain an API key for the newly discovered free provider 'qwen' to restore its availability.",
+      "t": 1789383876420,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. This could be due to too much traffic or a configura",
-      "t": 1789381447882,
-      "type": "event"
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789383875210,
+      "type": "vault"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting fireworksai (https://www.fireworksaichat.com/signup)",
-      "t": 1789381447882,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789381446895,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789383875102,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1925,9 +1950,6 @@
   },
   "throughput": [
     1,
-    8,
-    0,
-    1,
     0,
     0,
     9,
@@ -1953,15 +1975,18 @@
     0,
     9,
     0,
-    0
+    0,
+    1,
+    2,
+    3
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.18,
-      0.24
+      0.1,
+      0.17,
+      0.22
     ],
-    "ramPct": 61,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -1975,7 +2000,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
