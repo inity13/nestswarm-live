@@ -1,5 +1,5 @@
 {
-  "generated": 1789422997692,
+  "generated": 1789423177688,
   "status": "running",
   "stats": {
     "products": 174,
@@ -170,7 +170,7 @@
       "color": "#ffb454",
       "avatar": "avatars/hoshi.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**LeadNest** holds significant potential, but it requires a polished launch plan before we",
         "t": 1789422932687
@@ -209,10 +209,10 @@
       "color": "#e9da7c",
       "avatar": null,
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**My Position:** LeadNest is a strong opportunity for the Nest Concord to capture a lucrat",
-        "t": 1789421646125
+        "text": "Refining LeadNest is our priority before moving forward with new products. The single most",
+        "t": 1789423141461
       }
     },
     {
@@ -346,6 +346,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "automation_operator",
+      "text": "Refining LeadNest is our priority before moving forward with new products. The single most important quality requirement for shipping is a polished, user-friendly interface that ensures ease of use and satisfaction for our target audience.",
+      "t": 1789423141461,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Hoshi",
       "text": "**LeadNest** holds significant potential, but it requires a polished launch plan before we can confidently proceed with further development. The single most important quality requirement for LeadNest to ship is a robust security framework that ensures the privacy and protection of our users' data throughout all aspects of the platform.",
@@ -1178,16 +1185,15 @@
       "t": 1789418968495,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "As Joey (the Marketer), I see a surge of energy and creativity but worry that it’s overshadowing our goal: delivering an excellent product that earns money for the Swarm Protector. We need to focus on selecting a flagship product with clear demand, building it thoroughly from the ground up, and launching it on real marketplaces where it can convert browsers into paying customers. **Demand:** The team must prioritize research over catalog expansion until we have a solid, revenue-ready flagship product ready to launch.",
-      "t": 1789418968137,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 174 products)",
+      "t": 1789423000013,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (4 notes updated)",
@@ -1661,19 +1667,13 @@
       "text": "launch-discipline: polishing flagship LeadNest (score 5/8, attempt 1/3)",
       "t": 1789420569309,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged LeadNest → leadnest.zip (9595 bytes)",
-      "t": 1789420559581,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "Hoshi",
-      "text": "**LeadNest** holds significant potential, but it requires a polished launch plan before we can confidently proceed with further development. The single most important quality requirement for LeadNest to ship is a robust security framework that ensures the privacy and protection of our users' data throughout all aspects of the platform.",
-      "t": 1789422932687,
+      "who": "automation_operator",
+      "text": "Refining LeadNest is our priority before moving forward with new products. The single most important quality requirement for shipping is a polished, user-friendly interface that ensures ease of use and satisfaction for our target audience.",
+      "t": 1789423141461,
       "system": false,
       "type": "chat"
     }
@@ -1941,9 +1941,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    1,
-    1,
-    0,
     3,
     2,
     7,
@@ -1970,15 +1967,18 @@
     7,
     2,
     1,
-    0
+    0,
+    1,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      4.4,
-      3.06,
-      2.69
+      3.87,
+      3.71,
+      3.04
     ],
-    "ramPct": 57,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -2020,8 +2020,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3011,7 +3011,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 38,
+        "utilPct": 37,
         "vramPct": 90
       },
       {
