@@ -1,5 +1,5 @@
 {
-  "generated": 1789422097857,
+  "generated": 1789422277692,
   "status": "running",
   "stats": {
     "products": 173,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
         "t": 1789422019827
@@ -314,7 +314,7 @@
       "color": "#e08b61",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Position:** LeadNest has significant potential to streamline lead generation for freelan",
         "t": 1789422008492
@@ -326,7 +326,7 @@
       "color": "#ea6b61",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Position:** Payment gateway integration is critical to ensuring secure and efficient tra",
         "t": 1789422010116
@@ -338,7 +338,7 @@
       "color": "#5de9d9",
       "avatar": null,
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Position:** LeadNest has substantial potential but requires thorough legal and complianc",
         "t": 1789422012024
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault: synced (4 notes updated)",
+      "t": 1789422276907,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 173 products)",
+      "t": 1789422100493,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "stage 'build' -> PitchPerfect AI",
       "t": 1789422089435,
       "type": "building"
@@ -1655,103 +1667,14 @@
       "text": "coder produced a functional build (1 files, static)",
       "t": 1789420436500,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> LeadNest",
-      "t": 1789420429259,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> LeadNest",
-      "t": 1789420419259,
-      "type": "building"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "stage 'build' -> PitchPerfect AI",
-      "t": 1789422089435,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> PitchPerfect AI",
-      "t": 1789422059445,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: PitchPerfect AI — parenting & family organizers. Let's see if it's worth building.",
-      "t": 1789422049541,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: PitchPerfect AI [parenting & family organizers]",
-      "t": 1789422049541,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1789422029534,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: parenting & family organizers",
-      "t": 1789422029523,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1789422019847,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1789422019830,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; const DATA_FILE = path.join(__dirname, 'data.json'); function loadData() { try { return JSON.parse(fs.readFileSync(DATA_FILE, 'utf8')); } catch (e) { return { users: {} }; } } function saveData(data) { fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2)); } function getUser(data, userId) { if (!data.users[userId]) { data.users[userId] = { habits: [], plans: [], memoryScore: 0, …",
-      "t": 1789422019827,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1789422019826,
-      "type": "event"
-    },
-    {
-      "who": "compliance-officer",
-      "text": "**Position:** LeadNest has substantial potential but requires thorough legal and compliance checks to ensure it meets industry standards and protects users' data. **Demand:** Conduct a comprehensive legal review focusing on privacy policies, terms of service, and user consent mechanisms to safeguard against any legal risks before proceeding with the launch.",
-      "t": 1789422012024,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "payment-gateway-integration",
-      "text": "**Position:** Payment gateway integration is critical to ensuring secure and efficient transactions for LeadNest. **Demand:** The team must implement a robust security audit with vulnerability assessments from an independent third party before proceeding with payment gateway integration.",
-      "t": 1789422010116,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "go-toolchain-installer",
-      "text": "**Position:** LeadNest has significant potential to streamline lead generation for freelancers and small businesses. **Demand:** The team must conduct thorough security audits of the AI-driven client matching engine before proceeding with a launch.",
-      "t": 1789422008492,
-      "system": false,
-      "type": "chat"
+      "text": "vault: synced (4 notes updated)",
+      "t": 1789422276907,
+      "type": "vault"
     }
   ],
   "capabilities": [
@@ -2017,9 +1940,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    3,
-    14,
-    10,
     11,
     10,
     5,
@@ -2046,13 +1966,16 @@
     0,
     2,
     17,
-    5
+    5,
+    1,
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      2.4,
-      2.59,
-      2.49
+      2.02,
+      2.53,
+      2.5
     ],
     "ramPct": 52,
     "cpus": 12
@@ -2096,8 +2019,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "claude-sonnet-5",
-        "tier": "extreme"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3085,10 +3008,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 15
+        "utilPct": 0,
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
