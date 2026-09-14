@@ -1,5 +1,5 @@
 {
-  "generated": 1789409316644,
+  "generated": 1789409496638,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789409420140,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789409319033,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789409139213,
       "type": "event"
@@ -1655,21 +1667,16 @@
       "text": "keyhunter: qwen entering verification code from inbox",
       "t": 1789403839205,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: qwen needs email verification — reading inbox",
-      "t": 1789403815257,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwen step 9 -> {\"action\":\"clickText\",\"text\":\"Try Qwen Studio\"}",
-      "t": 1789403815206,
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789409420140,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1936,9 +1943,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     2,
@@ -1962,15 +1966,18 @@
     1,
     1,
     0,
-    0
+    0,
+    1,
+    2,
+    1
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.14,
-      0.12
+      0.26,
+      0.19,
+      0.14
     ],
-    "ramPct": 55,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2994,8 +3001,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
-        "vramPct": 91
+        "utilPct": 11,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
