@@ -1,10 +1,10 @@
 {
-  "generated": 1789375656349,
+  "generated": 1789375836377,
   "status": "running",
   "stats": {
     "products": 168,
     "listed": 20,
-    "agents": 26,
+    "agents": 28,
     "avgScore": "5.0"
   },
   "agents": [
@@ -134,7 +134,7 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Security Assessment – Rejected Build MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking & Fixe",
         "t": 1789375587387
@@ -307,6 +307,24 @@
         "text": "Agreed, concentrating on one flagship is critical; however, we cannot let speed eclipse se",
         "t": 1789364964303
       }
+    },
+    {
+      "role": "go-toolchain-installer",
+      "name": "go-toolchain-installer",
+      "color": "#e08b61",
+      "avatar": null,
+      "enabled": true,
+      "active": false,
+      "last": null
+    },
+    {
+      "role": "payment-gateway-integration",
+      "name": "payment-gateway-integration",
+      "color": "#ea6b61",
+      "avatar": null,
+      "enabled": true,
+      "active": false,
+      "last": null
     }
   ],
   "chat": [
@@ -1154,6 +1172,72 @@
   "events": [
     {
       "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789375834443,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789375813746,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789375792765,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789375792716,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added go-toolchain-installer (Manages the installation of Go/Rust toolchains on swarm's build nodes to support .exe build targets)",
+      "t": 1789375792597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added payment-gateway-integration (Integrates payment gateways for secure and efficient transactions)",
+      "t": 1789375792597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback",
+      "t": 1789375792595,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789375787538,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789375777789,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789375775795,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789375658704,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789375597299,
       "type": "bench"
@@ -1565,93 +1649,68 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789369538746,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789369515782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789369515782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789369515782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789369515782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789369515782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789369515782,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789369475148,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789369358880,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789369178788,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789368998826,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789368876631,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789375597299,
-      "type": "bench"
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789375834443,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2552MB free)",
-      "t": 1789375597297,
-      "type": "bench"
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789375813746,
+      "type": "event"
     },
     {
-      "who": "Sentinel",
-      "text": "**Security Assessment – Rejected Build MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking & Fixes** | Rank | Risk | Concrete Fix | |------|------|--------------| | **High** | Arbitrary child‑process execution (unfiltered `spawn`/`exec`) | Whitelist allowed commands; use `child_process.execFile` with explicit arguments; reject any user‑supplied command strings. | | **Medium** | XSS via `innerHTML` assignment | Sanitize all inserted content (e.g., DOMPurify) or replace `innerHTML` with `textContent`/`appendChild` for trusted data. | | **Low** | Static‑serve tool exposing internal files | Configure …",
-      "t": 1789375587387,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789375792765,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 2 request(s) logged for the Swarm Protector",
+      "t": 1789375792716,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added go-toolchain-installer (Manages the installation of Go/Rust toolchains on swarm's build nodes to support .exe build targets)",
+      "t": 1789375792597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor added payment-gateway-integration (Integrates payment gateways for secure and efficient transactions)",
+      "t": 1789375792597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback",
+      "t": 1789375792595,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789375787538,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789375777789,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789375775795,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1920,9 +1979,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1946,15 +2002,18 @@
     5,
     19,
     3,
-    2
+    2,
+    1,
+    1,
+    14
   ],
   "load": {
     "loadavg": [
-      0.39,
-      0.5,
-      0.32
+      0.2,
+      0.34,
+      0.28
     ],
-    "ramPct": 69,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -1968,7 +2027,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -1992,7 +2051,7 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "coder": {
@@ -2008,7 +2067,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "marketer": {
@@ -2935,8 +2994,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 50
+        "utilPct": 12,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -2953,7 +3012,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 48,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
