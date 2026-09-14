@@ -1,5 +1,5 @@
 {
-  "generated": 1789388075830,
+  "generated": 1789388255882,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789388109296,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3445MB free)",
+      "t": 1789388109293,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789388078576,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789387966744,
       "type": "event"
@@ -1649,24 +1667,6 @@
       "text": "conductor: 1 operational improvement(s) recommended",
       "t": 1789382982478,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 request(s) logged for the Swarm Protector",
-      "t": 1789382982431,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor added compliance-officer (Ensures all operations comply with relevant regulations and standards.)",
-      "t": 1789382982301,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe API keys or approval for Merchant-of-Record fallback to enable payment integration.",
-      "t": 1789382982300,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1935,9 +1935,6 @@
   "throughput": [
     3,
     0,
-    2,
-    3,
-    0,
     3,
     4,
     3,
@@ -1962,15 +1959,18 @@
     0,
     1,
     2,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.17,
+      0.07,
       0.14,
-      0.36
+      0.33
     ],
-    "ramPct": 49,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2994,8 +2994,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
-        "vramPct": 78
+        "utilPct": 10,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -3012,7 +3012,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 2,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
