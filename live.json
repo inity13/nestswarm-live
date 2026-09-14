@@ -1,5 +1,5 @@
 {
-  "generated": 1789378716419,
+  "generated": 1789378896432,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1172,6 +1172,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789378873025,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789378871524,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789378777140,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789378767141,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789378719137,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Millo step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789378596421,
       "type": "event"
@@ -1619,39 +1649,22 @@
       "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1789376448347,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789376447208,
-      "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789376445864,
+      "t": 1789378873025,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789376443871,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789376393444,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789376392399,
+      "text": "compute-node route failed for coder (fetch failed) — falling to external/free",
+      "t": 1789378871524,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1915,9 +1928,6 @@
     "priority": "Workflow automation SaaS for boutique law firms combining legal-tech, AI drafting, and compliance checks"
   },
   "throughput": [
-    3,
-    5,
-    11,
     1,
     0,
     0,
@@ -1942,17 +1952,20 @@
     1,
     0,
     0,
-    9,
+    11,
+    0,
+    0,
     2,
-    0
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.13,
-      0.15
+      1.28,
+      0.42,
+      0.25
     ],
-    "ramPct": 74,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1994,7 +2007,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2926,10 +2939,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 8,
-        "vramPct": 80
+        "busy": true,
+        "warm": false,
+        "utilPct": 1,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
@@ -2946,7 +2959,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 100,
         "vramPct": 92
       }
     ],
