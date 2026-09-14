@@ -1,5 +1,5 @@
 {
-  "generated": 1789405716148,
+  "generated": 1789405896231,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789405787399,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789405776081,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789405718573,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "meeting actions taken: focus niche: AI-driven content management system tailored for small businesses",
       "t": 1789405612726,
       "type": "event"
@@ -1649,24 +1667,6 @@
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789403163901,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789403136947,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789403018317,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. It may be due to too much traffic or a configuration",
-      "t": 1789402862594,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1935,9 +1935,6 @@
   "throughput": [
     1,
     0,
-    3,
-    1,
-    0,
     1,
     4,
     5,
@@ -1962,15 +1959,18 @@
     0,
     1,
     4,
+    0,
+    2,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.16,
-      0.14
+      0.26,
+      0.2,
+      0.16
     ],
-    "ramPct": 55,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2994,7 +2994,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 78
       },
       {
@@ -3012,8 +3012,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 92
+        "utilPct": 15,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 86,
