@@ -1,5 +1,5 @@
 {
-  "generated": 1789384476078,
+  "generated": 1789384656065,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1181,6 +1181,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789384511413,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3442MB free)",
+      "t": 1789384511410,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789384478337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: only for request_owner",
+      "t": 1789384476183,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: only for request_owner",
+      "t": 1789384476183,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789384475085,
       "type": "event"
@@ -1628,46 +1658,9 @@
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789382054559,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789382026095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789381958813,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789381778839,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We cannot proceed with creating an account or obtain",
-      "t": 1789381753216,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenai21labs (https://ai21labs.com/signup)",
-      "t": 1789381753216,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789384475085,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1931,9 +1924,6 @@
     "priority": ""
   },
   "throughput": [
-    14,
-    2,
-    0,
     1,
     5,
     12,
@@ -1960,15 +1950,18 @@
     1,
     2,
     0,
-    1
+    1,
+    6,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.07,
-      0.14
+      0.64,
+      0.25,
+      0.2
     ],
-    "ramPct": 62,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2981,7 +2974,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 10,
-        "vramPct": 78
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2998,7 +2991,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 0,
+        "utilPct": 10,
         "vramPct": 92
       }
     ],
