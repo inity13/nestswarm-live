@@ -1,5 +1,5 @@
 {
-  "generated": 1789352076851,
+  "generated": 1789352256828,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789352106211,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2666MB free)",
+      "t": 1789352106209,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789352079125,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789351899091,
       "type": "event"
@@ -1613,24 +1631,6 @@
       "text": "council demands satisfied for LeadGenius",
       "t": 1789347323431,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — model gemini-flash-latest not found; model openai/gpt-oss-120b not found",
-      "t": 1789347307063,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: model gemini-flash-latest not found",
-      "t": 1789347307062,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: model openai/gpt-oss-120b not found",
-      "t": 1789347307062,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1897,11 +1897,23 @@
     "priority": "The top product from our current catalog that has demonstrated buyer intent and can be polished to revenue-readiness within 24 hours"
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     3,
     0,
-    2,
-    1,
-    0,
     0,
     1,
     0,
@@ -1912,29 +1924,17 @@
     1,
     0,
     0,
-    1,
-    0,
-    1,
-    2,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
+    3,
     0,
     0
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.13,
-      0.1
+      0.08,
+      0.17,
+      0.12
     ],
-    "ramPct": 59,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2876,9 +2876,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 15
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
