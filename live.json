@@ -1,11 +1,11 @@
 {
-  "generated": 1789346856921,
+  "generated": 1789347036938,
   "status": "running",
   "stats": {
     "products": 168,
-    "listed": 19,
+    "listed": 20,
     "agents": 26,
-    "avgScore": "5.3"
+    "avgScore": "5.0"
   },
   "agents": [
     {
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js const http = require('http'); const https = require('https'); const fs = r",
-        "t": 1789346773653
+        "t": 1789346865032
       }
     },
     {
@@ -50,7 +50,7 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta n",
         "t": 1789346839688
@@ -62,7 +62,7 @@
       "color": "#b98cff",
       "avatar": "avatars/chandler.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "```json { \"price\": 29, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Unlock the cl",
         "t": 1789346850029
@@ -74,10 +74,10 @@
       "color": "#ff8f6b",
       "avatar": "avatars/data.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "You’re all correct that we stop listing and start shipping—this much is objectively true. ",
-        "t": 1789343468396
+        "text": "Here{\"score\":4,\"strengths\":[\"Uses Node.js built-in modules, no external dependencies\",\"Bas",
+        "t": 1789346969481
       }
     },
     {
@@ -110,10 +110,10 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I appreciate everyone's feedback. We all agree that we need to stop listing products and s",
-        "t": 1789343469453
+        "text": "Paragraph 2: \"The problem isn’t lack of talent; it’s a missing toolkit that turns chaotic ",
+        "t": 1789346990488
       }
     },
     {
@@ -307,6 +307,41 @@
     }
   ],
   "chat": [
+    {
+      "who": "Joey",
+      "text": "Paragraph 2: \"The problem isn’t lack of talent; it’s a missing toolkit that turns chaotic hunting into strategic play. That# Freelance, but Smarter. ## The Pain: Navigating Client Acquisition & Pricing Freelancers and solopreneurs often struggle to find high-paying clients, calculate optimal rates that cover their expenses while still providing a decent income, and keep cash flowing consistently. The process is manual, time-consuming, and fraught with uncertainty. ## The Fix: Introducing LeadGenius LeadGenius is your all-in-one solution to transform your freelance journey. Here’s how it …",
+      "t": 1789346990488,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1789346969545,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "LeadGenius is LISTED at $29 (score 4). Time to get it in front of buyers.",
+      "t": 1789346969488,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Data",
+      "text": "Here{\"score\":4,\"strengths\":[\"Uses Node.js built-in modules, no external dependencies\",\"Basic rate limiting to prevent abuse\",\"Slack webhook integration for notifications\"],\"weaknesses\":[\"Code is incomplete; https request callback lacks error handling and response processing\",\"HTML form has missing submit handler and incomplete CSS (orphan padding property)\",\"No input validation or sanitization\",\"Argument parser does not handle missing values, can crash\",\"Rate limiter implementation has logic flaw: initial count set to 1 instead of 0, and does not persist across restarts\",\"No business logic …",
+      "t": 1789346969481,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const https = require('https'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); // ---------- Simple argument parser ---------- function parseArgs() { const args = process.argv.slice(2); const result = {}; for (let i = 0; i < args.length; i++) { if (args[i].startsWith('--')) { const key = args[i].slice(2); const val = args[i + 1]; result[key] = val; i++; } } return result; } // ---------- Rate limiter (basic per‑IP token bucket) ---------- const RATE_LIMIT = { …",
+      "t": 1789346865032,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Chandler",
       "text": "```json { \"price\": 29, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Unlock the clients you deserve, set rates that pay, and keep cash flowing.\", \"headline\": \"Freelance, but smarter.\" } ```",
@@ -1111,44 +1146,87 @@
       "t": 1789335815712,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "payment-integrator",
-      "text": "FurFit Coach has great potential to disrupt the pet fitness market with its comprehensive features and user-centric design. However, to ensure the product is revenue-ready, the team must complete a full OWASP Top-10 security audit before proceeding further. This will help mitigate any potential vulnerabilities and build customer trust.",
-      "t": 1789335808857,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "I see great potential, but without proof that pet‑owners are willing to pay for a calendar‑synchronised fitness coach the product risks failing. Demand that we launch a minimal landing page with a clear pricing model and run a 48‑hour paid ad test to capture at least 200 qualified leads, then evaluate their conversion intent before proceeding.",
-      "t": 1789335807026,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "I'm inclined to support FurFit Coach as an innovative product with significant market potential. However, I demand that we complete a robust calendar sync proof-of-concept for at least one external calendar service before moving forward. This will ensure that the foundation is secure and meets high-quality standards before we invest further resources.",
-      "t": 1789335803772,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "FurFit Coach is an exciting opportunity to bring real-world fitness into pet care. The team should demand that the initial release include seamless calendar integration with at least two popular external calendars (Google Calendar and Apple Calendar) before moving on to additional features or iterations. This ensures the product has a functional core that meets its primary goal of being a personal fitness trainer on your calendar.",
-      "t": 1789335801983,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "FurFit Coach is poised to be a game-changer in pet fitness, but it requires an ironclad calendar sync feature to hit the ground running. The team must deliver a proof-of-concept demonstrating seamless integration with at least one major external calendar service within the next two weeks. This is not just about functionality; it's about proving that FurFit Coach can work and do so reliably. Fail to meet this deadline, and we risk falling behind in an increasingly competitive market.",
-      "t": 1789335800031,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "marketer image gen failed for LeadGenius: chatgpt image script failed (exit ENOENT): spawn cmd.exe ENOENT",
+      "t": 1789346990509,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for LeadGenius",
+      "t": 1789346990491,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789346984493,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789346984482,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship LeadGenius (score 4/8, attempt 1/3)",
+      "t": 1789346976860,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged LeadGenius → leadgenius.zip (10155 bytes)",
+      "t": 1789346969636,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789346969544,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: LeadGenius @ http://localhost:5415 ($29 subscription)",
+      "t": 1789346969488,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: LeadGenius -> http://localhost:5415",
+      "t": 1789346969487,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "re-critique LeadGenius: score 4",
+      "t": 1789346969483,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai/gpt-oss-120b failed for critic (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6599, Requested 2954. Please try again in 11.6475s. Need more tokens? Upgrade to Dev Tier today at https://co)",
+      "t": 1789346865127,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789346859294,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged LeadGenius → leadgenius.zip (9193 bytes)",
+      "t": 1789346856934,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "revise-before-reject: repairing LeadGenius (critic 3) from feedback",
@@ -1550,168 +1628,89 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
       "t": 1789344879444,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789344699422,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789344519251,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789344339263,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789344159187,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> SmartLearn AI Tutor",
-      "t": 1789344046747,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for SmartLearn AI Tutor is stuck (attempt 2) — trying a stronger model",
-      "t": 1789344046747,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789344036829,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> SmartLearn AI Tutor",
-      "t": 1789344036747,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789344029169,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789343979986,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789343799176,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 167 products)",
-      "t": 1789343619068,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: paused new builds (strategic focus — board decision, no auto-expiry); polished the weakest product; marketed the top product",
-      "t": 1789343522648,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "revise-before-reject: repairing LeadGenius (critic 3) from feedback",
-      "t": 1789346856871,
+      "text": "marketer image gen failed for LeadGenius: chatgpt image script failed (exit ENOENT): spawn cmd.exe ENOENT",
+      "t": 1789346990509,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'list' -> LeadGenius",
-      "t": 1789346856865,
-      "type": "building"
+      "text": "marketer produced a kit for LeadGenius",
+      "t": 1789346990491,
+      "type": "event"
     },
     {
-      "who": "Chandler",
-      "text": "```json { \"price\": 29, \"currency\": \"USD\", \"model\": \"subscription\", \"pitch\": \"Unlock the clients you deserve, set rates that pay, and keep cash flowing.\", \"headline\": \"Freelance, but smarter.\" } ```",
-      "t": 1789346850029,
+      "who": "Joey",
+      "text": "Paragraph 2: \"The problem isn’t lack of talent; it’s a missing toolkit that turns chaotic hunting into strategic play. That# Freelance, but Smarter. ## The Pain: Navigating Client Acquisition & Pricing Freelancers and solopreneurs often struggle to find high-paying clients, calculate optimal rates that cover their expenses while still providing a decent income, and keep cash flowing consistently. The process is manual, time-consuming, and fraught with uncertainty. ## The Fix: Introducing LeadGenius LeadGenius is your all-in-one solution to transform your freelance journey. Here’s how it …",
+      "t": 1789346990488,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "stage 'package' -> LeadGenius",
-      "t": 1789346846867,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for LeadGenius",
-      "t": 1789346839691,
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789346984493,
       "type": "event"
     },
     {
-      "who": "Monica",
-      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>LeadGenius – Slack Meeting‑Notes Poster</title> <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\"> <style> body{font-family:'Inter',sans-serif;margin:0;background:#fafafa;} .hero{background:linear-gradient(135deg,#0070f3,#00b4db);color:#fff;padding:4rem 1rem;text-align:center;} .hero-title{font-size:2.5rem;margin:0;font-weight:700;} …",
-      "t": 1789346839688,
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789346984482,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship LeadGenius (score 4/8, attempt 1/3)",
+      "t": 1789346976860,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged LeadGenius → leadgenius.zip (10155 bytes)",
+      "t": 1789346969636,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789346969544,
+      "type": "vault"
+    },
+    {
+      "who": "publisher",
+      "text": "LeadGenius is LISTED at $29 (score 4). Time to get it in front of buyers.",
+      "t": 1789346969488,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "stage 'design' -> LeadGenius",
-      "t": 1789346786869,
-      "type": "building"
+      "text": "LISTED: LeadGenius @ http://localhost:5415 ($29 subscription)",
+      "t": 1789346969488,
+      "type": "listed"
     },
     {
       "who": "swarm",
-      "text": "tests passed for LeadGenius",
-      "t": 1789346779180,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> LeadGenius",
-      "t": 1789346776876,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for LeadGenius — 2 files, working node app. Handing off to test.",
-      "t": 1789346773657,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789346773657,
+      "text": "preview live: LeadGenius -> http://localhost:5415",
+      "t": 1789346969487,
       "type": "event"
     },
     {
-      "who": "Scotty",
-      "text": "// FILE: app.js const http = require('http'); const https = require('https'); const fs = require('fs'); const path = require('path'); const url = require('url'); // ---------- Helper: simple arg parser ---------- function parseArgs() { const args = process.argv.slice(2); const result = {}; for (let i = 0; i < args.length; i++) { if (args[i].startsWith('--')) { const key = args[i].slice(2); const val = args[i + 1]; result[key] = val; i++; } } return result; } // ---------- Core: post to Slack ---------- function postToSlack(webhook, thread_ts, text, callback) { const payload = { text }; if …",
-      "t": 1789346773653,
-      "system": false,
-      "type": "chat"
+      "who": "swarm",
+      "text": "re-critique LeadGenius: score 4",
+      "t": 1789346969483,
+      "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for coder (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
-      "t": 1789346767513,
-      "type": "event"
+      "who": "Data",
+      "text": "Here{\"score\":4,\"strengths\":[\"Uses Node.js built-in modules, no external dependencies\",\"Basic rate limiting to prevent abuse\",\"Slack webhook integration for notifications\"],\"weaknesses\":[\"Code is incomplete; https request callback lacks error handling and response processing\",\"HTML form has missing submit handler and incomplete CSS (orphan padding property)\",\"No input validation or sanitization\",\"Argument parser does not handle missing values, can crash\",\"Rate limiter implementation has logic flaw: initial count set to 1 instead of 0, and does not persist across restarts\",\"No business logic …",
+      "t": 1789346969481,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1965,11 +1964,11 @@
     }
   ],
   "ledger": {
-    "total": 1217,
+    "total": 1218,
     "revenue": 0,
     "effects": 170,
     "boundary": 1,
-    "artifacts": 101,
+    "artifacts": 102,
     "receipts": 0
   },
   "meeting": {
@@ -1977,9 +1976,6 @@
     "priority": "The top product from our current catalog that has demonstrated buyer intent and can be polished to revenue-readiness within 24 hours"
   },
   "throughput": [
-    12,
-    3,
-    0,
     1,
     0,
     0,
@@ -2006,13 +2002,16 @@
     0,
     17,
     6,
-    7
+    8,
+    3,
+    8,
+    5
   ],
   "load": {
     "loadavg": [
-      1.08,
-      0.46,
-      0.31
+      0.27,
+      0.36,
+      0.29
     ],
     "ramPct": 68,
     "cpus": 12
@@ -2068,11 +2067,11 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       },
       "marketer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "launcher": {
@@ -2116,7 +2115,7 @@
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 19,
+      "listed": 20,
       "cap": 20
     }
   },
@@ -2904,9 +2903,30 @@
     {
       "name": "LeadGenius",
       "niche": "AI & automation utilities",
-      "stage": "list",
-      "status": "building",
+      "stage": "shipped",
+      "status": "listed",
       "url": ""
+    },
+    {
+      "name": "FurFit Coach",
+      "niche": "pet care & ownership",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmu0acj2zzpxi/"
+    },
+    {
+      "name": "SmallForge MU",
+      "niche": "small-business operations & accounting",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmu08lkk4mk7y/"
+    },
+    {
+      "name": "CalmZone AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmu05woinzoba/"
     }
   ],
   "nodes": [
