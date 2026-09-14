@@ -1,5 +1,5 @@
 {
-  "generated": 1789375476385,
+  "generated": 1789375656349,
   "status": "running",
   "stats": {
     "products": 168,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I understand our collective goal is to stop churning raw numbers and focus on quality and ",
-        "t": 1789364960424
+        "text": "**Security Assessment – Rejected Build MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking & Fixe",
+        "t": 1789375587387
       }
     },
     {
@@ -310,6 +310,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment – Rejected Build MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking & Fixes** | Rank | Risk | Concrete Fix | |------|------|--------------| | **High** | Arbitrary child‑process execution (unfiltered `spawn`/`exec`) | Whitelist allowed commands; use `child_process.execFile` with explicit arguments; reject any user‑supplied command strings. | | **Medium** | XSS via `innerHTML` assignment | Sanitize all inserted content (e.g., DOMPurify) or replace `innerHTML` with `textContent`/`appendChild` for trusted data. | | **Low** | Static‑serve tool exposing internal files | Configure …",
+      "t": 1789375587387,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "**1. Gumroad** – The quickest path to a working checkout. Its “buy now” button and instant delivery work for every product type, and we already have a seeded account. Once the listing is live, the first paying customer can be captured in minutes without any extra integration. **2. Product Hunt** – A launch‑day catalyst that pulls in a tech‑savvy, early‑adopter crowd. The community’s up‑vote system and comment threads**2. Product Hunt** – A launch-day catalyst that pulls in a tech-savvy, early-adopter crowd. The community’s up-vote system and comment threads can help generate organic traffic …",
@@ -1142,16 +1149,75 @@
       "t": 1789347574277,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "They’re right that a sleek UI and a checkout flow are essential, but without a working client‑matching engine the whole promise collapses—no UI can sell a product that never finds leads. The single must‑have is a dependable, end‑to‑end matching backend that returns relevant, high‑paying prospects in real time.",
-      "t": 1789347572184,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789375597299,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2552MB free)",
+      "t": 1789375597297,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789375536946,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789375514170,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789375493515,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: 6 eligible task card(s) (Algora)",
+      "t": 1789375484605,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789375479087,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 110m ago) — skip",
+      "t": 1789375476530,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789375476530,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 110m ago) — skip",
+      "t": 1789375476530,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting ai21labs (https://ai21labs.com/signup)",
+      "t": 1789375476530,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
@@ -1565,104 +1631,27 @@
       "text": "self-heal: disabled provider openrouter",
       "t": 1789368876631,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789368876631,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789368876630,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789368876630,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789368876629,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
-      "t": 1789368875596,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789368875146,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789368818771,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789368766747,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789368756746,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789368638792,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789368458640,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789375475268,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789375597299,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
-      "t": 1789375475266,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2552MB free)",
+      "t": 1789375597297,
+      "type": "bench"
     },
     {
-      "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
-      "t": 1789375475266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789375475266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 165 products with flags, 1 with high-severity findings",
-      "t": 1789375475253,
-      "type": "security"
+      "who": "Sentinel",
+      "text": "**Security Assessment – Rejected Build MTN1 (pmtn1ex5zetvr)** **1. Severity Ranking & Fixes** | Rank | Risk | Concrete Fix | |------|------|--------------| | **High** | Arbitrary child‑process execution (unfiltered `spawn`/`exec`) | Whitelist allowed commands; use `child_process.execFile` with explicit arguments; reject any user‑supplied command strings. | | **Medium** | XSS via `innerHTML` assignment | Sanitize all inserted content (e.g., DOMPurify) or replace `innerHTML` with `textContent`/`appendChild` for trusted data. | | **Low** | Static‑serve tool exposing internal files | Configure …",
+      "t": 1789375587387,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1712,7 +1701,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 10×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 11×"
     },
     {
       "name": "Shared memory",
@@ -1916,7 +1905,7 @@
     }
   ],
   "ledger": {
-    "total": 1224,
+    "total": 1236,
     "revenue": 0,
     "effects": 171,
     "boundary": 1,
@@ -1928,9 +1917,6 @@
     "priority": "Workflow automation SaaS for boutique law firms combining legal-tech, AI drafting, and compliance checks"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1957,21 +1943,24 @@
     0,
     1,
     0,
-    5
+    5,
+    19,
+    3,
+    2
   ],
   "load": {
     "loadavg": [
-      0.31,
-      0.22,
-      0.19
+      0.39,
+      0.5,
+      0.32
     ],
-    "ramPct": 65,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1983,7 +1972,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1991,11 +1980,11 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -2007,7 +1996,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
@@ -2064,7 +2053,10 @@
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2941,10 +2933,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 12,
-        "vramPct": 18
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
@@ -2961,11 +2953,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 13,
+        "utilPct": 48,
         "vramPct": 92
       }
     ],
-    "selfHostedInferencePct": 88,
+    "selfHostedInferencePct": 87,
     "jobsProcessed": 202
   }
 }
