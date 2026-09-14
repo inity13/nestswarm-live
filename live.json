@@ -1,5 +1,5 @@
 {
-  "generated": 1789368816253,
+  "generated": 1789368996280,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789368876631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789368876631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789368876630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789368876630,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789368876629,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789368875596,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789368875146,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789368818771,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789368766747,
       "type": "event"
@@ -1583,70 +1631,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789362698791,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789362518834,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789362376584,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789362366590,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789362338800,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789362158491,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789361978892,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789361798711,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789361676176,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789368766747,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789368756746,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1920,9 +1907,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     1,
     1,
     1,
@@ -1939,15 +1923,18 @@
     0,
     1,
     0,
-    2
+    2,
+    3,
+    6,
+    0
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.21,
-      0.17
+      0.33,
+      0.25,
+      0.19
     ],
-    "ramPct": 70,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1961,7 +1948,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "distributor": {
@@ -2045,12 +2032,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2928,7 +2910,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
+        "utilPct": 10,
         "vramPct": 80
       },
       {
