@@ -1,5 +1,5 @@
 {
-  "generated": 1789407876336,
+  "generated": 1789408056453,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789408007778,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789407997778,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789407907705,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3291MB free)",
+      "t": 1789407907702,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789407878819,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789407698794,
       "type": "event"
@@ -1637,39 +1667,22 @@
       "text": "keyhunter: qwen step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789403503276,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: attempting qwen (https://qwen.ai/signup)",
-      "t": 1789403502023,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789408007778,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: qwenelevenlabs step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN error.\"}",
-      "t": 1789403502022,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenelevenlabs (https://elevenlabs.com/signup)",
-      "t": 1789403500427,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs entering verification code from inbox",
-      "t": 1789403497278,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs needs email verification — reading inbox",
-      "t": 1789403474877,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789407997778,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1933,44 +1946,44 @@
     "priority": ""
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     3,
-    2,
     0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    1,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0
+    2
   ],
   "load": {
     "loadavg": [
-      0,
-      0.03,
-      0.07
+      0.48,
+      0.25,
+      0.15
     ],
-    "ramPct": 51,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2979,7 +2992,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 2,
+    "online": 1,
     "total": 2,
     "nodes": [
       {
@@ -2993,15 +3006,15 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 16
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "online",
+        "status": "degraded",
         "can": [
           "browser",
           "coding",
