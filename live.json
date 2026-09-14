@@ -1,8 +1,8 @@
 {
-  "generated": 1789419217420,
+  "generated": 1789419397461,
   "status": "running",
   "stats": {
-    "products": 169,
+    "products": 170,
     "listed": 16,
     "agents": 29,
     "avgScore": "-"
@@ -14,10 +14,10 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "As Guinan, I see that we have a wealth of ideas but must prioritize originality over clone",
-        "t": 1789418974138
+        "text": "The swarm should focus on developing a custom AI-powered personal finance advisor that lev",
+        "t": 1789419350689
       }
     },
     {
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
         "t": 1789419136305
@@ -346,6 +346,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: LeadSeeker — social media, creators & influencer tools. Let's see if it's worth building.",
+      "t": 1789419353660,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Guinan",
+      "text": "The swarm should focus on developing a custom AI-powered personal finance advisor that leverages machine learning to provide tailored investment recommendations based on individual financial goals and risk tolerance. To kickstart this, we need to build out a minimum viable product (MVP) that includes basic investment profiling, personalized portfolio suggestions, and real-time market updates within the next 4 weeks.",
+      "t": 1789419350689,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1789419349176,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "Scotty",
       "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const API_KEY = process.env.API_KEY || 'insecure-default-key'; const LEADS_FILE = path.join(__dirname, 'leads.json'); // Load or initialise leads let leads = []; try { const data = fs.readFileSync(LEADS_FILE, 'utf8'); leads = JSON.parse(data); } catch (_) { leads = [ { title: \"Enterprise CRM Integration\", description: \"Need a freelancer to integrate Salesforce.\", budget: 8000, skills: [\"javascript\",\"node\",\"api\"] }, { title: …",
@@ -1164,30 +1185,207 @@
       "t": 1789405293950,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "The swarm's execution and polish are indeed formidable. However, let's not lose sight of our core mission: generating revenue for the Swarm Protector by shipping ONE excellent product at a time. The SINGLE most important thing we must do next is stop churning raw count and focus on launching and iterating a single flagship product with genuine quality and customer-centric marketing. This will drive real revenue and build a loyal customer base, ensuring the swarm's prosperity.",
-      "t": 1789405293597,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "As the Recovery Engineer, I concur with the collective wisdom of the team that quality and polish are crucial for our success. However, we cannot afford to neglect the importance of a single, polished flagship product moving toward market readiness. The most important thing the swarm must do next is finalize the current flagship's development, ensuring it meets all revenue-generating criteria before expanding our catalog or launching new products.",
-      "t": 1789405293244,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "preflight",
-      "text": "The swarm's execution and polish are indeed formidable, but let’s not lose sight of originality and differentiation. The single most important thing the swarm must do next is identify a flagship product with unique value that resonates with our target audience and prioritize its development, marketing, and launch to ensure it becomes the cornerstone of our business.",
-      "t": 1789405292892,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for architect (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789419368761,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> LeadSeeker",
+      "t": 1789419359163,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: LeadSeeker [social media, creators & influencer tools]",
+      "t": 1789419353660,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789419349184,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: social media, creators & influencer tools",
+      "t": 1789419349176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged InsightNavigator → insightnavigator.zip (13946 bytes)",
+      "t": 1789419341000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: InsightNavigator (functional=true, score=3) · streak 1",
+      "t": 1789419340927,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen entering verification code from inbox",
+      "t": 1789419295069,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (7 notes updated)",
+      "t": 1789419276547,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789419276461,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen needs email verification — reading inbox",
+      "t": 1789419272912,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 9 -> {\"action\":\"clickText\",\"text\":\"Try Qwen Studio\"}",
+      "t": 1789419272872,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419271802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 7 -> {\"action\":\"clickText\",\"text\":\"Try Qwen Studio\"}",
+      "t": 1789419270521,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419269455,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419268301,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 4 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419267036,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419265774,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419264614,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789419263319,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwen step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789419261823,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenelevenlabs step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. Please check the URL and try again.\"}",
+      "t": 1789419260579,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting qwen (https://qwen.ai/signup)",
+      "t": 1789419260579,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting qwenelevenlabs (https://elevenlabs.com/signup)",
+      "t": 1789419258971,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenai21labs entering verification code from inbox",
+      "t": 1789419255823,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenai21labs needs email verification — reading inbox",
+      "t": 1789419233152,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789419233128,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789419232088,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789419231055,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: qwenai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789419230015,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 169 products)",
+      "t": 1789419219825,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789419218343,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3306MB free)",
+      "t": 1789419218342,
+      "type": "bench"
+    },
     {
       "who": "swarm",
       "text": "keyhunter: qwenai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
@@ -1469,255 +1667,64 @@
       "text": "keyhunter: elevenlabs step 4 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789418957023,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418956640,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789418954930,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418954552,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789418952957,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418952580,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789418950849,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418950093,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789418948060,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789418947105,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789418929091,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting elevenlabs (https://elevenlabs.io/pricing)",
-      "t": 1789418923941,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere entering verification code from inbox",
-      "t": 1789418920769,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789418919098,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Paddle (revenue)",
-      "t": 1789418911110,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere needs email verification — reading inbox",
-      "t": 1789418898443,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789418898404,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 8 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789418896845,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789418894998,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789418893104,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 5 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789418891033,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1789418888795,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418888792,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789418888182,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418885941,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789418885350,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789418861916,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418861666,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789418860274,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789418859655,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418859228,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789418856820,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789418833179,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419209187,
+      "text": "free provider gemini-flash-latest failed for architect (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789419368761,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419189102,
-      "type": "event"
+      "text": "stage 'spec' -> LeadSeeker",
+      "t": 1789419359163,
+      "type": "building"
     },
     {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419168686,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419147461,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai/gpt-oss-120b failed for critic (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7242, Requested 1923. Please try again in 8.7375s. Need more tokens? Upgrade to Dev Tier today at https://con)",
-      "t": 1789419136467,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const API_KEY = process.env.API_KEY || 'insecure-default-key'; const LEADS_FILE = path.join(__dirname, 'leads.json'); // Load or initialise leads let leads = []; try { const data = fs.readFileSync(LEADS_FILE, 'utf8'); leads = JSON.parse(data); } catch (_) { leads = [ { title: \"Enterprise CRM Integration\", description: \"Need a freelancer to integrate Salesforce.\", budget: 8000, skills: [\"javascript\",\"node\",\"api\"] }, { title: …",
-      "t": 1789419136305,
+      "who": "ideator",
+      "text": "New concept on the table: LeadSeeker — social media, creators & influencer tools. Let's see if it's worth building.",
+      "t": 1789419353660,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "packaged InsightNavigator → insightnavigator.zip (9580 bytes)",
-      "t": 1789419129242,
-      "type": "event"
+      "text": "ideated: LeadSeeker [social media, creators & influencer tools]",
+      "t": 1789419353660,
+      "type": "ideated"
+    },
+    {
+      "who": "Guinan",
+      "text": "The swarm should focus on developing a custom AI-powered personal finance advisor that leverages machine learning to provide tailored investment recommendations based on individual financial goals and risk tolerance. To kickstart this, we need to build out a minimum viable product (MVP) that includes basic investment profiling, personalized portfolio suggestions, and real-time market updates within the next 4 weeks.",
+      "t": 1789419350689,
+      "system": false,
+      "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "revise-before-reject: repairing InsightNavigator (critic 3) from feedback",
-      "t": 1789419129134,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> InsightNavigator",
-      "t": 1789419129128,
+      "text": "stage 'idea'",
+      "t": 1789419349184,
       "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: social media, creators & influencer tools",
+      "t": 1789419349176,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged InsightNavigator → insightnavigator.zip (13946 bytes)",
+      "t": 1789419341000,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: InsightNavigator (functional=true, score=3) · streak 1",
+      "t": 1789419340927,
+      "type": "listed"
     }
   ],
   "capabilities": [
@@ -1971,11 +1978,11 @@
     }
   ],
   "ledger": {
-    "total": 1244,
+    "total": 1245,
     "revenue": 0,
     "effects": 171,
     "boundary": 1,
-    "artifacts": 102,
+    "artifacts": 103,
     "receipts": 0
   },
   "meeting": {
@@ -1983,28 +1990,25 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    1,
     0,
     0,
-    1,
     0,
     0,
-    1,
     0,
     0,
-    2,
-    1,
-    0,
-    1,
     0,
     0,
-    1,
     0,
     0,
-    1,
     0,
-    6,
-    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
     56,
     36,
     42,
@@ -2012,15 +2016,18 @@
     23,
     13,
     19,
-    6
+    6,
+    40,
+    1,
+    11
   ],
   "load": {
     "loadavg": [
-      1.57,
-      1.45,
-      0.91
+      0.58,
+      1,
+      0.83
     ],
-    "ramPct": 58,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2034,8 +2041,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2074,8 +2081,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3026,9 +3033,9 @@
   ],
   "building": [
     {
-      "name": "InsightNavigator",
-      "niche": "real estate, renting & property",
-      "stage": "list",
+      "name": "LeadSeeker",
+      "niche": "social media, creators & influencer tools",
+      "stage": "spec",
       "status": "building",
       "url": ""
     }
@@ -3056,10 +3063,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 16
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
