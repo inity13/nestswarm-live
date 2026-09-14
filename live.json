@@ -1,5 +1,5 @@
 {
-  "generated": 1789404096101,
+  "generated": 1789404276124,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789404275214,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789404098613,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789404049773,
       "type": "event"
@@ -1655,26 +1667,14 @@
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789402125671,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789402118938,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789401938615,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789404049773,
-      "type": "event"
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789404275214,
+      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1940,9 +1940,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    6,
     4,
     9,
     0,
@@ -1969,15 +1966,18 @@
     0,
     1,
     0,
-    3
+    3,
+    1,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.39,
-      0.26,
-      0.24
+      0.1,
+      0.2,
+      0.22
     ],
-    "ramPct": 68,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2087,7 +2087,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3001,8 +3003,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 77
+        "utilPct": 12,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -3019,8 +3021,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 2,
-        "vramPct": 1
+        "utilPct": 0,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 87,
