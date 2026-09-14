@@ -1,5 +1,5 @@
 {
-  "generated": 1789405536208,
+  "generated": 1789405716148,
   "status": "running",
   "stats": {
     "products": 168,
@@ -346,6 +346,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "Meeting actions executed: focus niche: AI-driven content management system tailored for small businesses",
+      "t": 1789405612726,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "compliance-officer",
       "text": "I concur with my colleagues that focusing on quality and polish is paramount. However, I must emphasize that maintaining compliance with relevant regulations and standards remains our absolute top priority. The SINGLE most important thing the swarm must do next is to conduct a comprehensive review of all current operations to ensure they comply fully with all legal requirements. This includes updating any necessary policies, procedures, and systems to safeguard against potential non-compliance issues.",
@@ -1178,16 +1185,27 @@
       "t": 1789382644555,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "Guinan makes a compelling case for innovation and fresh thinking. I agree that we need to move beyond our collective inertia. However, let's not lose sight of our core goal: delivering value through one excellent product at a time. The SINGLE most important thing the swarm must do next is finalize and launch our flagship product. That's where all our efforts should be directed until it generates its first paying customer. We can then build from there with confidence.",
-      "t": 1789382644203,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "meeting actions taken: focus niche: AI-driven content management system tailored for small businesses",
+      "t": 1789405612726,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789405596839,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789405538570,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
@@ -1649,34 +1667,9 @@
       "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. It may be due to too much traffic or a configuration",
       "t": 1789402862594,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenai21labs (https://ai21labs.com/signup)",
-      "t": 1789402862594,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: fireworksai step 1 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN.\"}",
-      "t": 1789402861104,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenhuggingface (https://huggingface.co/join)",
-      "t": 1789402861104,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789405475231,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1940,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    5,
-    0,
     1,
     0,
     3,
@@ -1969,15 +1959,18 @@
     0,
     1,
     1,
+    0,
+    1,
+    4,
     0
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.09,
-      0.12
+      0.13,
+      0.16,
+      0.14
     ],
-    "ramPct": 66,
+    "ramPct": 55,
     "cpus": 12
   },
   "brain": {
@@ -1991,7 +1984,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -3020,10 +3013,10 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 93
+        "vramPct": 92
       }
     ],
-    "selfHostedInferencePct": 87,
+    "selfHostedInferencePct": 86,
     "jobsProcessed": 202
   }
 }
