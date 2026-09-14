@@ -1,5 +1,5 @@
 {
-  "generated": 1789410756650,
+  "generated": 1789410936763,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789410758951,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789410738205,
       "type": "event"
@@ -1661,34 +1667,9 @@
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789404593474,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 operational improvement(s) recommended",
-      "t": 1789404578491,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789410738205,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789410728208,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for polisher (fetch failed) — falling to external/free",
-      "t": 1789410678115,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1954,9 +1935,6 @@
   "throughput": [
     1,
     0,
-    1,
-    1,
-    0,
     0,
     1,
     2,
@@ -1981,13 +1959,16 @@
     0,
     1,
     1,
-    2
+    2,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.26,
-      0.2
+      0.15,
+      0.2,
+      0.18
     ],
     "ramPct": 55,
     "cpus": 12
@@ -2998,7 +2979,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -3013,14 +2994,14 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "degraded",
+        "status": "online",
         "can": [
           "browser",
           "coding",
