@@ -1,5 +1,5 @@
 {
-  "generated": 1789406076240,
+  "generated": 1789406256236,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789406187632,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789406177633,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789406108943,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3427MB free)",
+      "t": 1789406108939,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789406078824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789405898722,
       "type": "event"
@@ -1637,39 +1667,22 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789403447376,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789403441019,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789406187632,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789403378510,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789403198491,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789403165986,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789403164688,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789406177633,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1933,9 +1946,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    5,
-    0,
     1,
     1,
     7,
@@ -1962,15 +1972,18 @@
     0,
     1,
     0,
+    0,
+    3,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.15,
-      0.15
+      0.1,
+      0.2,
+      0.17
     ],
-    "ramPct": 49,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2995,25 +3008,24 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 78
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
-        "gpu": "RTX 5090 Laptop",
-        "vramGb": 24,
+        "gpu": null,
+        "vramGb": null,
         "status": "online",
         "can": [
           "browser",
           "coding",
-          "gpu",
           "llm",
           "python",
           "vision"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 11,
-        "vramPct": 92
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 86,
