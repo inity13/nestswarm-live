@@ -1,5 +1,5 @@
 {
-  "generated": 1789429837680,
+  "generated": 1789430017737,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1187,6 +1187,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789430007605,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2587MB free)",
+      "t": 1789430007602,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789429840090,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789429660181,
       "type": "event"
@@ -1640,33 +1658,22 @@
       "text": "self-heal: already disabled: mistral (no-op)",
       "t": 1789427216190,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> TaskMate AI",
-      "t": 1789427209717,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for TaskMate AI",
-      "t": 1789427202006,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> TaskMate AI",
-      "t": 1789427199714,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789427196061,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789430007605,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2587MB free)",
+      "t": 1789430007602,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1930,9 +1937,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    4,
-    3,
-    5,
     9,
     0,
     0,
@@ -1959,15 +1963,18 @@
     1,
     3,
     1,
-    3
+    3,
+    4,
+    3,
+    4
   ],
   "load": {
     "loadavg": [
-      1.62,
-      1.29,
-      1.1
+      1.67,
+      1.42,
+      1.17
     ],
-    "ramPct": 61,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -3027,7 +3034,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 4,
         "vramPct": 15
       },
       {
