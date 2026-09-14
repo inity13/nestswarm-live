@@ -1,5 +1,5 @@
 {
-  "generated": 1789402836033,
+  "generated": 1789403015997,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. It may be due to too much traffic or a configuration",
+      "t": 1789402862594,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting qwenai21labs (https://ai21labs.com/signup)",
+      "t": 1789402862594,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: fireworksai step 1 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN.\"}",
+      "t": 1789402861104,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting qwenhuggingface (https://huggingface.co/join)",
+      "t": 1789402861104,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789402860319,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789402838423,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
       "t": 1789402821365,
       "type": "event"
@@ -1631,52 +1667,9 @@
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789400727093,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789400717095,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789400708974,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (1494MB free)",
-      "t": 1789400708973,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789400678384,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 7 -> {\"action\":\"fail\",\"reason\":\"404 Error - Page not found.\"}",
-      "t": 1789400538848,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting elevenlabs (https://elevenlabs.io/pricing)",
-      "t": 1789400538848,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789402821365,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1941,9 +1934,6 @@
   },
   "throughput": [
     1,
-    21,
-    6,
-    1,
     0,
     0,
     1,
@@ -1969,13 +1959,16 @@
     0,
     1,
     0,
-    2
+    2,
+    9,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.25,
-      0.31,
-      0.36
+      0.24,
+      0.23,
+      0.31
     ],
     "ramPct": 63,
     "cpus": 12
@@ -2999,9 +2992,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 72,
+        "busy": false,
+        "warm": true,
+        "utilPct": 10,
         "vramPct": 77
       },
       {
