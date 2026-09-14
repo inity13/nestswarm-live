@@ -1,11 +1,11 @@
 {
-  "generated": 1789420477482,
+  "generated": 1789420657534,
   "status": "running",
   "stats": {
     "products": 171,
-    "listed": 16,
+    "listed": 17,
     "agents": 29,
-    "avgScore": "-"
+    "avgScore": "5.0"
   },
   "agents": [
     {
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>",
         "t": 1789420436498
@@ -52,8 +52,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>",
-        "t": 1789419099891
+        "text": "// FILE: index.html ```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
+        "t": 1789420515697
       }
     },
     {
@@ -346,6 +346,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1789420559453,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "LeadNest is LISTED at $99 (score 5). Time to get it in front of buyers.",
+      "t": 1789420559319,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "// FILE: index.html ```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>LeadNest – Find & Convert High-Paying Leads</title> <style> body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #333; } header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; } h1 { margin: 0; font-size: 2.5em; } p.tagline { margin: 5px 0 0; font-size: 1.2em; font-weight: 300; } .container { max-width: 960px; margin: 40px auto; padding: 0 15px; } section { background: #fff; padding: 20px; margin-bottom: 30px; border-radius: 8px; …",
+      "t": 1789420515697,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for LeadNest — 1 files, working static app. Handing off to test.",
@@ -1164,30 +1185,135 @@
       "t": 1789414719373,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "Monica: In our quest for polish and hierarchy, let's prioritize a clean, modern design that commands attention. Every element should speak to quality and professionalism. We need to ensure the hero section is a standout, pulling customers in with its elegance and clarity. // FILE: index.html The team must improve the visual consistency across the site, ensuring that every element feels like part of a cohesive whole.",
-      "t": 1789414719021,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "Alright team, let's parse this situation: We're currently building low-quality software at scale, with no clear revenue mechanism beyond placeholder listings. The architect and ideator agree we need to pivot toward quality, but that doesn't solve our fundamental problem—products not selling because they don't have Stripe checkout or obvious value propositions. So my position is starkly simple: **Ship ONE tested product with working checkout before building twenty more**. We're not just pivoting; we are defining a revenue-generating",
-      "t": 1789414718668,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "As Spock, I concur with the need to pivot from raw quantity to quality and focus on finding a niche market where we can build an exceptional product. The team must prioritize simplicity in its technical stack to ensure ease of use and installation for our customers. We should select the SIMPLEST stack that is genuinely buildable and verifiable.",
-      "t": 1789414718315,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789420607013,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789420607003,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: gumroad failed for LeadNest: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
+      "t": 1789420606979,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: skipping dev.to for LeadNest (no live URL)",
+      "t": 1789420606979,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped LeadNest to https://github.com/inity13/[private-repo] (private)",
+      "t": 1789420606716,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789420580956,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789420580945,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship LeadNest (score 5/8, attempt 1/3)",
+      "t": 1789420569309,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged LeadNest → leadnest.zip (9595 bytes)",
+      "t": 1789420559581,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789420559452,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: LeadNest -> http://localhost:5418",
+      "t": 1789420559319,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: LeadNest @ http://localhost:5418 ($99 one-time)",
+      "t": 1789420559319,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> LeadNest",
+      "t": 1789420559309,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> LeadNest",
+      "t": 1789420519290,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for LeadNest",
+      "t": 1789420515700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 171 products)",
+      "t": 1789420479920,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789420478537,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789420478537,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789420478536,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789420478536,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789420478535,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (4 notes updated)",
@@ -1541,251 +1667,55 @@
       "text": "keyhunter: attempting qwenelevenlabs (https://elevenlabs.com/signup)",
       "t": 1789419258971,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs entering verification code from inbox",
-      "t": 1789419255823,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs needs email verification — reading inbox",
-      "t": 1789419233152,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419233128,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419232088,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419231055,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419230015,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 169 products)",
-      "t": 1789419219825,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789419218343,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3306MB free)",
-      "t": 1789419218342,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419209187,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419189102,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419168686,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419147461,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai/gpt-oss-120b failed for critic (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7242, Requested 1923. Please try again in 8.7375s. Need more tokens? Upgrade to Dev Tier today at https://con)",
-      "t": 1789419136467,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged InsightNavigator → insightnavigator.zip (9580 bytes)",
-      "t": 1789419129242,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revise-before-reject: repairing InsightNavigator (critic 3) from feedback",
-      "t": 1789419129134,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> InsightNavigator",
-      "t": 1789419129128,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789419126261,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789419124663,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> InsightNavigator",
-      "t": 1789419109124,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by the server. It may be due to too much traffic or a configuration e",
-      "t": 1789419100625,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1789420476658,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789420476559,
+      "text": "flagship: ChatGPT unavailable for publisher (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789420607013,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'design' -> LeadNest",
-      "t": 1789420449275,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for LeadNest",
-      "t": 1789420441584,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> LeadNest",
-      "t": 1789420439276,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for LeadNest — 1 files, working static app. Handing off to test.",
-      "t": 1789420436500,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (1 files, static)",
-      "t": 1789420436500,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>LeadNest – Find & Convert High‑Paying Leads</title> <style> body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f7fa;color:#333} header{background:#2c3e50;color:#fff;padding:20px;text-align:center} h1{margin:0;font-size:2em} p.tagline{margin:5px 0 0;font-size:1.1em;font-weight:300} .container{max-width:960px;margin:20px auto;padding:0 15px} section{background:#fff;padding:20px;margin-bottom:20px;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,.1)} section h2{margin-top:0;color:#2c3e50} …",
-      "t": 1789420436498,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> LeadNest",
-      "t": 1789420429259,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> LeadNest",
-      "t": 1789420419259,
-      "type": "building"
-    },
-    {
-      "who": "ideator",
-      "text": "New concept on the table: LeadNest — developer productivity tools & services. Let's see if it's worth building.",
-      "t": 1789420415233,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: LeadNest [developer productivity tools & services]",
-      "t": 1789420415233,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "idea duplicate (InsightForge); re-ideating in a fresh niche",
-      "t": 1789420412803,
+      "text": "flagship: Claude unavailable for publisher (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789420607003,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "new build started (ideating) — niche: small-business operations & accounting",
-      "t": 1789420409270,
+      "text": "launcher: gumroad failed for LeadNest: gumroad account not onboarded to sell yet: New products should be created with a price — complete Gumroad payout/identity setup for the account, then retry",
+      "t": 1789420606979,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: skipping dev.to for LeadNest (no live URL)",
+      "t": 1789420606979,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "launcher: shipped LeadNest to https://github.com/inity13/[private-repo] (private)",
+      "t": 1789420606716,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
+      "t": 1789420580956,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1789420409270,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1789420400220,
+      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
+      "t": 1789420580945,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1789420400205,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const PORT = process.env.PORT || 4800; // --- Core logic (shared by web UI, API, CLI) --- function matchLeads({ skills, budgetMin, budgetMax, platform }) { const pool = [ { title: \"Full-stack Web App for SaaS Startup\", platform: \"LinkedIn\", budget: 8000, skills: [\"javascript\",\"react\",\"node\"] }, { title: \"Freelance Copywriter for Ad Campaigns\", platform: \"Job Board\", budget: 2500, skills: …",
-      "t": 1789420400202,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1789420400202,
+      "text": "launch-discipline: polishing flagship LeadNest (score 5/8, attempt 1/3)",
+      "t": 1789420569309,
       "type": "event"
     }
   ],
@@ -2040,11 +1970,11 @@
     }
   ],
   "ledger": {
-    "total": 1245,
+    "total": 1247,
     "revenue": 0,
-    "effects": 171,
+    "effects": 172,
     "boundary": 1,
-    "artifacts": 103,
+    "artifacts": 104,
     "receipts": 0
   },
   "meeting": {
@@ -2052,13 +1982,10 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    0,
-    8,
-    36,
     42,
     50,
-    23,
-    13,
+    25,
+    11,
     19,
     6,
     40,
@@ -2081,15 +2008,18 @@
     0,
     3,
     14,
-    10
+    10,
+    11,
+    10,
+    5
   ],
   "load": {
     "loadavg": [
-      1.66,
-      0.54,
-      0.44
+      3.5,
+      1.49,
+      0.81
     ],
-    "ramPct": 61,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2103,8 +2033,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2143,8 +2073,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2199,15 +2129,10 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 16,
+      "listed": 17,
       "cap": 20
     }
   },
@@ -3037,6 +2962,14 @@
       "url": ""
     },
     {
+      "name": "LeadNest",
+      "status": "listed",
+      "niche": "developer productivity tools & services",
+      "price": 99,
+      "score": 5,
+      "url": ""
+    },
+    {
       "name": "FurFit Coach",
       "status": "archived",
       "niche": "pet care & ownership",
@@ -3083,23 +3016,36 @@
       "price": 99,
       "score": 5,
       "url": "https://inity13.github.io/nestswarm-store/pmto1qtjzrvmo/"
-    },
-    {
-      "name": "LocateMate",
-      "status": "archived",
-      "niche": "travel, trip planning & remote work",
-      "price": 49,
-      "score": 5,
-      "url": "https://inity13.github.io/nestswarm-store/pmtnzqqfp7ys2/"
     }
   ],
   "building": [
     {
       "name": "LeadNest",
       "niche": "developer productivity tools & services",
-      "stage": "design",
-      "status": "building",
+      "stage": "shipped",
+      "status": "listed",
       "url": ""
+    },
+    {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmjjxof92pf/"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmklnygn2gg/"
+    },
+    {
+      "name": "CryptoPilot MT",
+      "niche": "crypto, web3 & trading",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtpckqw31h90/"
     }
   ],
   "nodes": [
@@ -3127,8 +3073,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 90,
-        "vramPct": 78
+        "utilPct": 64,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
@@ -3149,7 +3095,7 @@
         "vramPct": 49
       }
     ],
-    "selfHostedInferencePct": 86,
+    "selfHostedInferencePct": 85,
     "jobsProcessed": 202
   }
 }
