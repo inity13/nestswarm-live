@@ -1,5 +1,5 @@
 {
-  "generated": 1789412196774,
+  "generated": 1789412376730,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789412275379,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789412199944,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: disabled provider openrouter",
       "t": 1789412076648,
       "type": "event"
@@ -1655,18 +1667,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789407338911,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789407159406,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789407097721,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1934,9 +1934,6 @@
   },
   "throughput": [
     1,
-    0,
-    0,
-    1,
     1,
     2,
     1,
@@ -1962,15 +1959,18 @@
     6,
     8,
     0,
+    0,
+    1,
+    3,
     0
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.39,
-      0.34
+      0.13,
+      0.29,
+      0.31
     ],
-    "ramPct": 88,
+    "ramPct": 92,
     "cpus": 12
   },
   "brain": {
@@ -3009,7 +3009,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -3024,14 +3024,14 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 12,
         "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "degraded",
+        "status": "online",
         "can": [
           "browser",
           "coding",
