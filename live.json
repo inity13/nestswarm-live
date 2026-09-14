@@ -1,5 +1,5 @@
 {
-  "generated": 1789355676562,
+  "generated": 1789355856554,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789355705803,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3413MB free)",
+      "t": 1789355705802,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789355678874,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789355499005,
       "type": "event"
@@ -1565,12 +1583,6 @@
       "text": "keyhunter: ai21labs entering verification code from inbox",
       "t": 1789354020478,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789354016214,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1837,9 +1849,6 @@
     "priority": "lightweight invoicing tool for freelancers"
   },
   "throughput": [
-    40,
-    18,
-    14,
     13,
     23,
     52,
@@ -1866,15 +1875,18 @@
     0,
     1,
     0,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.11,
-      0.26
+      0.09,
+      0.16,
+      0.25
     ],
-    "ramPct": 50,
+    "ramPct": 56,
     "cpus": 12
   },
   "brain": {
@@ -2854,9 +2866,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
