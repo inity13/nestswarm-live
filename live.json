@@ -1,11 +1,11 @@
 {
-  "generated": 1789424617710,
+  "generated": 1789424797697,
   "status": "running",
   "stats": {
     "products": 175,
-    "listed": 17,
+    "listed": 18,
     "agents": 29,
-    "avgScore": "5.0"
+    "avgScore": "4.5"
   },
   "agents": [
     {
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
-        "text": "// FILE: app.js const express = require('express'); require('dotenv').config(); const path",
-        "t": 1789424572133
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789424622939
       }
     },
     {
@@ -52,8 +52,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: index.html ```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
-        "t": 1789422362209
+        "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
+        "t": 1789424673274
       }
     },
     {
@@ -107,10 +107,10 @@
       "color": "#f472b6",
       "avatar": "avatars/joey.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I appreciate your feedback, team. Let's focus on getting LeadNest polished and ready for l",
-        "t": 1789422751201
+        "text": "### The Pain of Remote Work and Travel Imagine you're packing for a remote trip to Japan d",
+        "t": 1789424732694
       }
     },
     {
@@ -343,6 +343,41 @@
     }
   ],
   "chat": [
+    {
+      "who": "Joey",
+      "text": "### The Pain of Remote Work and Travel Imagine you're packing for a remote trip to Japan during rush hour in New York. You need to navigate time zones, book flights and hotels, and pack according to local customs—all while trying to stay within your budget. It's like juggling multiple tasks at once, leaving no room for mistakes. ### The Fix with TripMate Pro TripMate Pro is the ultimate solution to streamline your remote adventures. Our AI-driven itinerary optimization takes care of all the logistics, so you can focus on what really matters—enjoying your trip! #### Features That Make Your …",
+      "t": 1789424732694,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is holding a review round-table for a freshly built product. Agents challenge each other and demand fixes where quality is lacking.",
+      "t": 1789424689630,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "publisher",
+      "text": "TripMate Pro is LISTED at $49 (score 4). Time to get it in front of buyers.",
+      "t": 1789424689620,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>TripMate Pro — AI Travel & Remote Work Planner</title> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <style> * { box-sizing: border-box; } body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #eee; min-height: 100vh; padding: 30px 15px; } .container { max-width: 780px; margin: 0 auto; } h1 { font-size: 2.5rem; margin-bottom: 20px; text-align: center; } …",
+      "t": 1789424673274,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const querystring = require('querystring'); const crypto = require('crypto'); const PORT = process.env.PORT || 4800; const DATA_DIR = path.join(__dirname, 'data'); if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true }); function safeId(id) { if (!id || typeof id !== 'string' || !/^[a-zA-Z0-9_-]+$/.test(id)) { return crypto.randomBytes(6).toString('hex'); } return id; } // --- Core logic: itinerary generation --- function generateItinerary(input) …",
+      "t": 1789424622939,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for TripMate Pro — 2 files, working node app. Handing off to test.",
@@ -1147,44 +1182,105 @@
       "t": 1789418979074,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "Acknowledged the critical need for hard market data and a secure checkout to ensure our flagship is both reliable and revenue-ready. The single most important thing the swarm must do next is finalize our flagship product choice based on thorough market research and align all efforts toward building and launching it with absolute focus and precision.",
-      "t": 1789418978722,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "Absolutely, security and a secure checkout are non-negotiable. The single most important thing we must do next is select a flagship product, verify its build, write the copy, set the price, publish the listing, and confirm it's live. This ensures we have a polished, revenue-ready offering before moving forward with any new products.",
-      "t": 1789418978369,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "I concur with our fellow swarm members that hard market data, a secure checkout process, and legal compliance are non-negotiable. The single most important thing the Nest Concord must do next is halt catalog expansion and focus on identifying and launching a revenue-ready flagship product that meets these critical criteria. LaForge will ensure every product we ship is published and live, reaching real buyers.",
-      "t": 1789418978016,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "Security Officer (Worf): We acknowledge your concerns regarding vulnerabilities and hard market data as crucial elements for our flagship product. However, we must prioritize ensuring that every product launched by the swarm is secure and meets legal standards before moving forward. The SINGLE most important thing the swarm must do next is to halt all catalog expansion and focus on selecting a single, well-researched product with a strong market position, followed by rigorous security audits and development to ensure it is revenue-ready and fully compliant.",
-      "t": 1789418977664,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "Understood. The swarm’s priority now is to halt catalog expansion and focus on selecting a single flagship product with rigorous market data to back it up. Let's dive deep into research and prioritize security from the ground up. The most important thing we need to do next is conduct thorough market research to identify the best product for our flagship, ensuring it meets all compliance requirements and has a solid foundation for secure checkout.",
-      "t": 1789418977311,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "marketer image gen failed for TripMate Pro: chatgpt image script failed (exit ENOENT): spawn cmd.exe ENOENT",
+      "t": 1789424732726,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "marketer produced a kit for TripMate Pro",
+      "t": 1789424732702,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "launch-discipline: polishing flagship TripMate Pro (score 4/8, attempt 1/3)",
+      "t": 1789424699607,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged TripMate Pro → tripmate-pro.zip (10535 bytes)",
+      "t": 1789424689811,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (2 notes updated)",
+      "t": 1789424689629,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "preview live: TripMate Pro -> http://localhost:5421",
+      "t": 1789424689620,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "LISTED: TripMate Pro @ http://localhost:5421 ($49 one-time)",
+      "t": 1789424689620,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> TripMate Pro",
+      "t": 1789424689607,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> TripMate Pro",
+      "t": 1789424679607,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for TripMate Pro",
+      "t": 1789424673277,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> TripMate Pro",
+      "t": 1789424639607,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for TripMate Pro",
+      "t": 1789424631851,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> TripMate Pro",
+      "t": 1789424629608,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789424622942,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789424622939,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 175 products)",
+      "t": 1789424619936,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
@@ -1568,158 +1664,25 @@
       "text": "new build started (ideating) — niche: parenting & family organizers",
       "t": 1789422029523,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "fallback already exists (JSON Forge) — rejecting this failed build instead of duplicating",
-      "t": 1789422019847,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 3)",
-      "t": 1789422019830,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
-      "t": 1789422019826,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for MindSage is stuck (attempt 2) — trying a stronger model",
-      "t": 1789421989435,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> MindSage",
-      "t": 1789421989434,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789421988972,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 172 products)",
-      "t": 1789421919927,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> MindSage",
-      "t": 1789421809403,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789421806656,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 172 products)",
-      "t": 1789421740278,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (3 notes updated)",
-      "t": 1789421676754,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 172 products)",
-      "t": 1789421560055,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 4 quality demands recorded for MindSage",
-      "t": 1789421545547,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> MindSage",
-      "t": 1789421539396,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 1)",
-      "t": 1789421530529,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789421416784,
-      "type": "bench"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789424594495,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3201MB free)",
-      "t": 1789424594494,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "EXTREME elevation: build for TripMate Pro is stuck (attempt 2) — trying a stronger model",
-      "t": 1789424589608,
+      "text": "marketer image gen failed for TripMate Pro: chatgpt image script failed (exit ENOENT): spawn cmd.exe ENOENT",
+      "t": 1789424732726,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "stage 'build' -> TripMate Pro",
-      "t": 1789424589607,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "serve fail (attempt 2): node:fs:440 return binding.readFileUtf8(path, stringToFlags(options.flag)); ^ Error: ENOENT: no such file or directory, open '[path] at Object.readFileSync (node:fs:440:20) at Object.<anonymous> ([path] at Module._compile (node:internal/modules/c",
-      "t": 1789424581874,
+      "text": "marketer produced a kit for TripMate Pro",
+      "t": 1789424732702,
       "type": "event"
     },
     {
-      "who": "swarm",
-      "text": "stage 'test' -> TripMate Pro",
-      "t": 1789424579607,
-      "type": "building"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for TripMate Pro — 2 files, working node app. Handing off to test.",
-      "t": 1789424572136,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789424572136,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js const express = require('express'); require('dotenv').config(); const path = require('path'); const app = express(); app.set('views', __dirname); app.set('view engine', 'ejs'); app.use(express.urlencoded({ extended: true })); app.use(express.static(path.join(__dirname, 'public'))); // Sample destinations data let destinations = [ { name: \"Paris\", attractions: [\"Eiffel Tower\", \"Louvre Museum\", \"Notre Dame Cathedral\"] }, { name: \"Tokyo\", attractions: [\"Shinjuku Gyoen National Garden\", \"Fushimi Inari Shrine\", \"Akihabara Electric Town\"] }, { name: \"New York\", attractions: [\"Statue …",
-      "t": 1789424572133,
+      "who": "Joey",
+      "text": "### The Pain of Remote Work and Travel Imagine you're packing for a remote trip to Japan during rush hour in New York. You need to navigate time zones, book flights and hotels, and pack according to local customs—all while trying to stay within your budget. It's like juggling multiple tasks at once, leaving no room for mistakes. ### The Fix with TripMate Pro TripMate Pro is the ultimate solution to streamline your remote adventures. Our AI-driven itinerary optimization takes care of all the logistics, so you can focus on what really matters—enjoying your trip! #### Features That Make Your …",
+      "t": 1789424732694,
       "system": false,
       "type": "chat"
     }
@@ -1771,7 +1734,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 16×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 17×"
     },
     {
       "name": "Shared memory",
@@ -1975,11 +1938,11 @@
     }
   ],
   "ledger": {
-    "total": 1247,
+    "total": 1248,
     "revenue": 0,
     "effects": 172,
     "boundary": 1,
-    "artifacts": 104,
+    "artifacts": 105,
     "receipts": 0
   },
   "meeting": {
@@ -1987,9 +1950,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    2,
-    1,
-    0,
     1,
     0,
     2,
@@ -2016,15 +1976,18 @@
     0,
     1,
     0,
-    8
+    8,
+    9,
+    13,
+    0
   ],
   "load": {
     "loadavg": [
-      1.82,
-      2.57,
-      2.91
+      4.21,
+      2.9,
+      2.95
     ],
-    "ramPct": 59,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -2066,8 +2029,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
-        "tier": "local"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2137,7 +2100,7 @@
     "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
-      "listed": 17,
+      "listed": 18,
       "cap": 20
     }
   },
@@ -3027,9 +2990,30 @@
     {
       "name": "TripMate Pro",
       "niche": "travel, trip planning & remote work",
-      "stage": "build",
-      "status": "building",
+      "stage": "shipped",
+      "status": "listed",
       "url": ""
+    },
+    {
+      "name": "LeadNest",
+      "niche": "developer productivity tools & services",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmu1qpkff84uj/"
+    },
+    {
+      "name": "WorkflowGenius",
+      "niche": "recruiting, HR & team tools",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmjjxof92pf/"
+    },
+    {
+      "name": "SmartDoc AI",
+      "niche": "legal, contracts & compliance",
+      "stage": "shipped",
+      "status": "listed",
+      "url": "https://inity13.github.io/nestswarm-store/pmtmklnygn2gg/"
     }
   ],
   "nodes": [
@@ -3055,10 +3039,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 46
+        "busy": true,
+        "warm": false,
+        "utilPct": 60,
+        "vramPct": 91
       },
       {
         "alias": "GPU-Node-2",
