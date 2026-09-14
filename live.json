@@ -1,5 +1,5 @@
 {
-  "generated": 1789395995815,
+  "generated": 1789396175732,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789396166882,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789395998378,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789395818334,
       "type": "event"
@@ -1655,21 +1667,16 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3445MB free)",
       "t": 1789388109293,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789388078576,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789387966744,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789396166882,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1935,9 +1942,6 @@
   "throughput": [
     1,
     0,
-    2,
-    1,
-    0,
     0,
     1,
     0,
@@ -1962,13 +1966,16 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
       0,
-      0.04,
-      0.06
+      0.02,
+      0.05
     ],
     "ramPct": 60,
     "cpus": 12
@@ -2998,7 +3005,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 13,
         "vramPct": 48
       },
       {
@@ -3014,9 +3021,9 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 22,
         "vramPct": 92
       }
     ],
