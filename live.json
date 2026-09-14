@@ -1,5 +1,5 @@
 {
-  "generated": 1789394195820,
+  "generated": 1789394375866,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789394346877,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789394336878,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789394198616,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789394018627,
       "type": "event"
@@ -1649,27 +1667,22 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789386799765,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3567MB free)",
-      "t": 1789386799762,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789386640397,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789394346877,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789386459042,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789394336878,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1934,9 +1947,6 @@
   },
   "throughput": [
     1,
-    1,
-    1,
-    1,
     0,
     0,
     1,
@@ -1962,15 +1972,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.1,
-      0.09
+      0,
+      0.05,
+      0.07
     ],
-    "ramPct": 58,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2998,26 +3011,25 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 9,
         "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
-        "gpu": "RTX 5090 Laptop",
-        "vramGb": 24,
+        "gpu": null,
+        "vramGb": null,
         "status": "online",
         "can": [
           "browser",
           "coding",
-          "gpu",
           "llm",
           "python",
           "vision"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 12,
-        "vramPct": 92
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 86,
