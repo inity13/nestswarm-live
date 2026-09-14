@@ -1,5 +1,5 @@
 {
-  "generated": 1789353696970,
+  "generated": 1789353876748,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 165 products with flags, 1 with high-severity findings",
+      "t": 1789353875676,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789353699394,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789353519084,
       "type": "event"
@@ -1595,45 +1631,40 @@
       "text": "self-heal: requested owner: Install a Windows command interpreter (e.g., enable cmd.exe via wine or switch to a Linux‑compatible wrapper) so the ChatGPT and Claude desktop publisher scripts can execute.",
       "t": 1789347536205,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 3 fix(es) — disabled provider gemini; disabled provider nvidia; requested owner: Install a Windows command interpreter (e.g., enable cmd.exe via wine or switch to a Linux‑compatible wrapper) so the ChatGPT and Claude desktop publisher scripts can execute.",
-      "t": 1789347536205,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789347536204,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789347536204,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: ChatGPT unavailable for marketer (chatgpt script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying free providers",
-      "t": 1789347534827,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789347534817,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "flagship: Claude unavailable for marketer (desktop script failed (exit ENOENT): spawn cmd.exe ENOENT) — trying ChatGPT/free",
-      "t": 1789347534816,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789353875691,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 165 products with flags, 1 with high-severity findings",
+      "t": 1789353875676,
+      "type": "security"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1897,9 +1928,6 @@
     "priority": "The top product from our current catalog that has demonstrated buyer intent and can be polished to revenue-readiness within 24 hours"
   },
   "throughput": [
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1926,15 +1954,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.13,
-      0.1
+      0,
+      0.07,
+      0.08
     ],
-    "ramPct": 55,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2875,9 +2906,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 17
       },
       {
@@ -2893,7 +2924,7 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
         "utilPct": 0,
         "vramPct": 0
