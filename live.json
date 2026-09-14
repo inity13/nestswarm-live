@@ -1,5 +1,5 @@
 {
-  "generated": 1789364676329,
+  "generated": 1789364856346,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1154,6 +1154,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789364730846,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3352MB free)",
+      "t": 1789364730845,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789364678731,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
       "t": 1789364498622,
       "type": "event"
@@ -1613,24 +1631,6 @@
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789356866697,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789356856702,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789356758851,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789356578733,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1897,9 +1897,6 @@
     "priority": "lightweight invoicing tool for freelancers"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1926,21 +1923,24 @@
     0,
     1,
     0,
-    0
+    0,
+    6,
+    6,
+    16
   ],
   "load": {
     "loadavg": [
-      0.19,
-      0.11,
-      0.09
+      1,
+      0.56,
+      0.28
     ],
-    "ramPct": 51,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "scout": {
@@ -1956,7 +1956,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
@@ -1964,20 +1964,20 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "researcher": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "polisher": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "coder": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-5090/gpt-oss:20b",
@@ -1988,11 +1988,11 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "tier": "local"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -2000,11 +2000,11 @@
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2028,7 +2028,7 @@
         "tier": "local"
       },
       "security_officer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -2908,10 +2908,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 17
+        "utilPct": 13,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
@@ -2926,10 +2926,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 0
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 87,
