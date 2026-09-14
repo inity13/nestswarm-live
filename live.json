@@ -1,5 +1,5 @@
 {
-  "generated": 1789400495820,
+  "generated": 1789400675816,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: cohere step 7 -> {\"action\":\"fail\",\"reason\":\"404 Error - Page not found.\"}",
+      "t": 1789400538848,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting elevenlabs (https://elevenlabs.io/pricing)",
+      "t": 1789400538848,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: cohere step 6 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789400537734,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789400536824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789400499373,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789400498145,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Millo step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789400482882,
       "type": "event"
@@ -1631,64 +1667,9 @@
       "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
       "t": 1789398300761,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
-      "t": 1789398158411,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789398032129,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789398031572,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for critic (fetch failed) — falling to external/free",
-      "t": 1789398014599,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 5 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789397999281,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789397998144,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789400482882,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789400481732,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789400480902,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1952,9 +1933,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    0,
     6,
     7,
     2,
@@ -1981,15 +1959,18 @@
     0,
     1,
     0,
-    5
+    5,
+    10,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.22,
+      0.25,
+      0.23,
       0.26
     ],
-    "ramPct": 80,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -3011,9 +2992,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 18,
+        "busy": false,
+        "warm": true,
+        "utilPct": 12,
         "vramPct": 77
       },
       {
@@ -3031,8 +3012,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 92
+        "utilPct": 10,
+        "vramPct": 51
       }
     ],
     "selfHostedInferencePct": 86,
