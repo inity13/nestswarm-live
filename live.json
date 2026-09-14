@@ -1,5 +1,5 @@
 {
-  "generated": 1789421557649,
+  "generated": 1789421737566,
   "status": "running",
   "stats": {
     "products": 172,
@@ -38,7 +38,7 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "// FILE: app.js ```javascript const http = require('http'); const fs = require('fs'); cons",
         "t": 1789421530526
@@ -158,7 +158,7 @@
       "color": "#7b5cff",
       "avatar": "avatars/obrien.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**My Position:** LeadNest has significant potential to solve a critical pain point for its",
         "t": 1789421543676
@@ -170,7 +170,7 @@
       "color": "#ffb454",
       "avatar": "avatars/hoshi.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
         "text": "**Position:** LeadNest is an excellent opportunity for the Nest Concord to enter the highl",
         "t": 1789421546799
@@ -211,8 +211,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Understood, everyone. The swarm’s priority now is to halt catalog expansion and focus on s",
-        "t": 1789418979074
+        "text": "**My Position:** LeadNest is a strong opportunity for the Nest Concord to capture a lucrat",
+        "t": 1789421646125
       }
     },
     {
@@ -346,6 +346,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "automation_operator",
+      "text": "**My Position:** LeadNest is a strong opportunity for the Nest Concord to capture a lucrative niche in freelancer lead generation. However, it requires a polished launch plan and a robust quality assurance process. **Demand:** Conduct a comprehensive user testing session with beta users to validate the AI matching engine's performance and ensure that the dynamic pricing calculator is intuitive and accurate before proceeding with a public launch.",
+      "t": 1789421646125,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Hoshi",
       "text": "**Position:** LeadNest is an excellent opportunity for the Nest Concord to enter the highly competitive freelancing and small business market with AI-driven automation. **Demand:** The team must complete a pilot test of the client matching engine on three major niche forums within the next two weeks to demonstrate its effectiveness and refine the algorithm before moving to full-scale development.",
@@ -1178,16 +1185,21 @@
       "t": 1789414727838,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "The team is right that we must abandon endless churn and lock onto a single, high‑value niche before we waste any more cycles, but I won’t agree that we can keep iterating on mock‑ups while the checkout isn’t wired—without a real payment flow the product will never earn. The one thing we must do now is build and integrate a secure, Stripe‑backed checkout for the chosen flagship so the first paying customer can be captured immediately.",
-      "t": 1789414727484,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1789421676754,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 172 products)",
+      "t": 1789421560055,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "council: 4 quality demands recorded for MindSage",
@@ -1655,59 +1667,14 @@
       "text": "stage 'build' -> LeadSeeker",
       "t": 1789420089213,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789420080557,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for coder (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789420022367,
-      "type": "event"
     }
   ],
   "recent": [
     {
-      "who": "Hoshi",
-      "text": "**Position:** LeadNest is an excellent opportunity for the Nest Concord to enter the highly competitive freelancing and small business market with AI-driven automation. **Demand:** The team must complete a pilot test of the client matching engine on three major niche forums within the next two weeks to demonstrate its effectiveness and refine the algorithm before moving to full-scale development.",
-      "t": 1789421546799,
-      "system": false,
-      "type": "chat"
-    },
-    {
       "who": "swarm",
-      "text": "council: 4 quality demands recorded for MindSage",
-      "t": 1789421545547,
-      "type": "event"
-    },
-    {
-      "who": "O'Brien",
-      "text": "**My Position:** LeadNest has significant potential to solve a critical pain point for its target audience, but it requires an ironclad launch plan to ensure success. **Demand:** The team must complete the AI-driven client matching engine on a brand new repository named \"nestswarm-LeadNest-Matcher\" before proceeding with any further development or launch activities.",
-      "t": 1789421543676,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> MindSage",
-      "t": 1789421539396,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "build not functional — no working product (attempt 1)",
-      "t": 1789421530529,
-      "type": "event"
-    },
-    {
-      "who": "Scotty",
-      "text": "// FILE: app.js ```javascript const http = require('http'); const fs = require('fs'); const path = require('path'); // Create server const server = http.createServer((req, res) => { // Serve static files from current directory const filePath = req.url === '/' ? path.join(__dirname, 'index.html') : '.' + req.url; if (filePath.endsWith('.html')) { fs.readFile(filePath, (err, data) => { if (err) { res.writeHead(500); res.end('Error loading HTML file'); return; } // Set content type for HTML let contentType = 'text/html'; if (filePath.endsWith('.css')) { contentType = 'text/css'; } else if …",
-      "t": 1789421530526,
-      "system": false,
-      "type": "chat"
+      "text": "vault: synced (3 notes updated)",
+      "t": 1789421676754,
+      "type": "vault"
     }
   ],
   "capabilities": [
@@ -1973,9 +1940,6 @@
     "priority": "AI‑driven virtual assistant for small‑business social‑media management (personalized SaaS assistant)."
   },
   "throughput": [
-    1,
-    4,
-    1,
     2,
     1,
     3,
@@ -2002,13 +1966,16 @@
     0,
     3,
     2,
-    7
+    7,
+    1,
+    2,
+    0
   ],
   "load": {
     "loadavg": [
-      2.81,
-      2.97,
-      2.44
+      2.84,
+      2.96,
+      2.53
     ],
     "ramPct": 52,
     "cpus": 12
@@ -3043,8 +3010,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 15
+        "utilPct": 91,
+        "vramPct": 89
       },
       {
         "alias": "GPU-Node-2",
