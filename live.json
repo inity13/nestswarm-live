@@ -1,5 +1,5 @@
 {
-  "generated": 1789388976038,
+  "generated": 1789389155859,
   "status": "running",
   "stats": {
     "products": 168,
@@ -1190,6 +1190,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789388978475,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789388876808,
       "type": "event"
@@ -1661,12 +1667,6 @@
       "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
       "t": 1789383279283,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789383275128,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1943,9 +1943,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     3,
@@ -1962,13 +1959,16 @@
     0,
     1,
     2,
+    0,
+    1,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.15,
-      0.2
+      0.05,
+      0.14,
+      0.18
     ],
     "ramPct": 57,
     "cpus": 12
@@ -2994,7 +2994,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 11,
         "vramPct": 48
       },
       {
@@ -3006,11 +3006,13 @@
           "browser",
           "coding",
           "gpu",
-          "python"
+          "llm",
+          "python",
+          "vision"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 0,
+        "busy": true,
+        "warm": false,
+        "utilPct": 15,
         "vramPct": 92
       }
     ],
