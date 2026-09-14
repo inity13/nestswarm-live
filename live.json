@@ -1,5 +1,5 @@
 {
-  "generated": 1789361076310,
+  "generated": 1789361256353,
   "status": "running",
   "stats": {
     "products": 168,
@@ -124,8 +124,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Let's write: \"I agree we must lock onto one polished flagship, but halting all new ideas s",
-        "t": 1789354391981
+        "text": "We need to list up to 6 real, currently-operating LLM inference providers with a free tier",
+        "t": 1789361113493
       }
     },
     {
@@ -310,6 +310,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Quark",
+      "text": "We need to list up to 6 real, currently-operating LLM inference providers with a free tier that expose an OpenAI-compatible /chat/completions endpoint. Exclude the ones already listed: groq, openrouter, cerebras, nvidia, deepinfra, mistral, gemini, ai21labs, cohere, elevenlabs, huggingfaceinferenceapi, fireworksai, qwenhuggingface, qwenai21labs, qwenelevenlabs.{ \"providers\": [ { \"name\": \"Anthropic\", \"baseUrl\": \"https://api.anthropic.com/v1/llama2\", \"model\": \"claude-2\", \"needsKey\": true, \"signup\": \"https://www.anthropic.com/jobs\" }, { \"name\": \"Cohere\", \"baseUrl\": …",
+      "t": 1789361113493,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: invoicing tool for freelancers; paused new builds (strategic focus — board decision, no auto-expiry)",
@@ -1142,16 +1149,45 @@
       "t": 1789344918592,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for SmartLearn AI Tutor — 2 files, working node app. Handing off to test.",
-      "t": 1789344029169,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789361132782,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3459MB free)",
+      "t": 1789361132781,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1789361083453,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789361081229,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
+      "t": 1789361078613,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789361077640,
+      "type": "scout"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 168 products)",
@@ -1595,42 +1631,6 @@
       "text": "keyhunter: elevenlabs step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789354225931,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 3 -> {\"action\":\"type\",\"selector\":\"input[name=\\\"password\\\"]\",\"value\":\"<your_password_here>\"}",
-      "t": 1789354224687,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789354223816,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789354222663,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789354220931,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 2 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789354219856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789354218671,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1897,9 +1897,6 @@
     "priority": "lightweight invoicing tool for freelancers"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     2,
@@ -1926,15 +1923,18 @@
     0,
     1,
     0,
+    0,
+    8,
+    0,
     0
   ],
   "load": {
     "loadavg": [
+      0.27,
       0.39,
-      0.17,
-      0.11
+      0.22
     ],
-    "ramPct": 49,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -1948,7 +1948,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "model": "gemini-flash-latest",
         "tier": "free"
       },
       "distributor": {
@@ -2914,9 +2914,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 17
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -2932,9 +2932,9 @@
           "vision"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 0
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 87,
