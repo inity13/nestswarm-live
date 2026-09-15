@@ -1,5 +1,5 @@
 {
-  "generated": 1789434157997,
+  "generated": 1789434338051,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789434277901,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 3 fix(es) — disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789434277901,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789434277900,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789434277899,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789434277069,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789434160180,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789433990122,
       "type": "event"
@@ -1598,12 +1634,6 @@
     },
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789427682454,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "self-heal: already disabled: gemini (no-op)",
       "t": 1789427682454,
       "type": "event"
@@ -1631,27 +1661,40 @@
       "text": "self-heal: already disabled: deepinfra (no-op)",
       "t": 1789427682454,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789427680346,
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789434277901,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (2 notes updated)",
-      "t": 1789427676872,
-      "type": "vault"
+      "text": "self-heal complete: 3 fix(es) — disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789434277901,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789434277900,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789434277899,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789427676803,
+      "t": 1789434277069,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1923,9 +1966,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     1,
     8,
     2,
@@ -1944,15 +1984,18 @@
     0,
     3,
     0,
+    0,
+    1,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      0.21,
-      0.12,
-      0.15
+      0.08,
+      0.09,
+      0.14
     ],
-    "ramPct": 67,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1966,8 +2009,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "gemini-flash-latest",
-        "tier": "free"
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2062,11 +2105,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3016,7 +3055,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 8,
+        "utilPct": 9,
         "vramPct": 47
       },
       {
