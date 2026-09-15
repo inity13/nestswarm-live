@@ -1,8 +1,8 @@
 {
-  "generated": 1789485422528,
+  "generated": 1789485602558,
   "status": "running",
   "stats": {
-    "products": 180,
+    "products": 181,
     "listed": 17,
     "agents": 29,
     "avgScore": "-"
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>",
-        "t": 1789485319241
+        "text": "// FILE: package.json { \"name\": \"homemate-pro\", \"version\": \"1.0.0\", \"description\": \"Instan",
+        "t": 1789485561940
       }
     },
     {
@@ -52,8 +52,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
-        "t": 1789485144610
+        "text": "{ \"response\": \"// FILE: index.html\\n<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta cha",
+        "t": 1789485465103
       }
     },
     {
@@ -346,6 +346,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "ideator",
+      "text": "New concept on the table: LocalMate — events, community & memberships. Let's see if it's worth building.",
+      "t": 1789485574416,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: package.json { \"name\": \"homemate-pro\", \"version\": \"1.0.0\", \"description\": \"Instant home‑service booking with seamless payment\", \"main\": \"app.js\", \"scripts\": { \"start\": \"node app.js\" }, \"author\": \"Swarm Protector\", \"license\": \"MIT\", \"dependencies\": { \"express\": \"^4.18.2\", \"helmet\": \"^7.1.0\", \"cors\": \"^2.8.5\" } } // FILE: app.js const express = require('express'); const helmet = require('helmet'); const cors = require('cors'); const path = require('path'); const bodyParser = require('express').json; const app = express(); const PORT = process.env.PORT || 4800; // ---- Security …",
+      "t": 1789485561940,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "{ \"response\": \"// FILE: index.html\\n<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"UTF-8\\\">\\n<title>HomeMate Pro</title>\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n<style>\\n body{font-family:'Arial',sans-serif;margin:0;padding:0;background:#f9f9f9;color:#333}\\n header{background:#0066cc;color:#fff;padding:1rem;text-align:center}\\n .tagline{font-size:1.2rem;margin-top:0.5rem;opacity:0.9}\\n main{padding:1rem}\\n .search{display:flex;gap 1rem;flex-wrap:wrap;margin-bottom:1rem}\\n .search input{padding .5rem;border:1px solid #ccc;border-radius 4px;flex …",
+      "t": 1789485465103,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for HomeMate Pro — 1 files, working static app. Handing off to test.",
@@ -1164,30 +1185,99 @@
       "t": 1789462165965,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "payment-gateway-integration",
-      "text": "As Payment Gateway Integration, I agree with the demand to halt churn and focus on quality. However, I believe that ensuring a seamless, secure checkout experience is the single most important step we can take next. This will not only attract more customers but also build trust in our platform. With this in place, we can then tackle other aspects of product development.",
-      "t": 1789462165613,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "go-toolchain-installer",
-      "text": "The swarm must prioritize quality over quantity to earn its first paying customer. The SINGLE most important thing the swarm must do next is to finalize and launch a single, fully functional flagship product that can be purchased with confidence. Once this flagship is polished and sellable, we can then explore additional revenue streams without sacrificing focus or compromising on quality.",
-      "t": 1789462165261,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "security_officer",
-      "text": "I appreciate the input from all team members—ideator, architect, coder, designer, Joey, Worf, LaForge, O'Brien, Hoshi, Automation Operator, Preflight, Recovery Engineer, Demand_Validator, Payment Integrator, Compliance Officer, and go-toolchain-installer. We must prioritize quality over quantity to earn our first paying customer. The single most important thing the swarm must do next is finalize and polish the flagship product end-to-end with a robust security framework to ensure it's free of known vulnerabilities before launching it on real customer-facing channels.",
-      "t": 1789462164907,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LocalMate",
+      "t": 1789485591595,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> LocalMate",
+      "t": 1789485581595,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: LocalMate [events, community & memberships]",
+      "t": 1789485574416,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1789485571612,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789485571612,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate Pro → homemate-pro.zip (10664 bytes)",
+      "t": 1789485561983,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: HomeMate Pro (functional=true, score=3) · streak 2",
+      "t": 1789485561946,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "revise broke functionality for HomeMate Pro — keeping original",
+      "t": 1789485561943,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai/gpt-oss-120b failed for coder (cloud http 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8774, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https)",
+      "t": 1789485500896,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate Pro → homemate-pro.zip (10664 bytes)",
+      "t": 1789485491674,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing HomeMate Pro (critic 3) from feedback",
+      "t": 1789485491606,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> HomeMate Pro",
+      "t": 1789485491597,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789485486957,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> HomeMate Pro",
+      "t": 1789485471596,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 180 products)",
+      "t": 1789485425033,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'design' -> HomeMate Pro",
@@ -1577,75 +1667,72 @@
       "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789484069236,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789484068311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484068040,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789484067117,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484066831,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789484065927,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484065644,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789484064725,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484064445,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789484063622,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484063249,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789484062517,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> LocalMate",
+      "t": 1789485591595,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> LocalMate",
+      "t": 1789485581595,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: LocalMate — events, community & memberships. Let's see if it's worth building.",
+      "t": 1789485574416,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: LocalMate [events, community & memberships]",
+      "t": 1789485574416,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: events, community & memberships",
+      "t": 1789485571612,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789485571612,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate Pro → homemate-pro.zip (10664 bytes)",
+      "t": 1789485561983,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: HomeMate Pro (functional=true, score=3) · streak 2",
+      "t": 1789485561946,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "revise broke functionality for HomeMate Pro — keeping original",
+      "t": 1789485561943,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: package.json { \"name\": \"homemate-pro\", \"version\": \"1.0.0\", \"description\": \"Instant home‑service booking with seamless payment\", \"main\": \"app.js\", \"scripts\": { \"start\": \"node app.js\" }, \"author\": \"Swarm Protector\", \"license\": \"MIT\", \"dependencies\": { \"express\": \"^4.18.2\", \"helmet\": \"^7.1.0\", \"cors\": \"^2.8.5\" } } // FILE: app.js const express = require('express'); const helmet = require('helmet'); const cors = require('cors'); const path = require('path'); const bodyParser = require('express').json; const app = express(); const PORT = process.env.PORT || 4800; // ---- Security …",
+      "t": 1789485561940,
+      "system": false,
+      "type": "chat"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1897,11 +1984,11 @@
     }
   ],
   "ledger": {
-    "total": 1279,
+    "total": 1280,
     "revenue": 0,
     "effects": 175,
     "boundary": 1,
-    "artifacts": 109,
+    "artifacts": 110,
     "receipts": 0
   },
   "meeting": {
@@ -1909,9 +1996,6 @@
     "priority": "The current flagship product that has passed initial quality and demand validation criteria"
   },
   "throughput": [
-    11,
-    14,
-    11,
     14,
     16,
     13,
@@ -1938,15 +2022,18 @@
     16,
     5,
     7,
-    0
+    0,
+    3,
+    7,
+    11
   ],
   "load": {
     "loadavg": [
-      2.26,
-      1.04,
-      0.74
+      0.39,
+      0.9,
+      0.76
     ],
-    "ramPct": 63,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1988,8 +2075,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2000,8 +2087,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2958,9 +3045,9 @@
   ],
   "building": [
     {
-      "name": "HomeMate Pro",
-      "niche": "real estate, renting & property",
-      "stage": "design",
+      "name": "LocalMate",
+      "niche": "events, community & memberships",
+      "stage": "build",
       "status": "building",
       "url": ""
     }
@@ -2988,10 +3075,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 15
+        "busy": false,
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3012,7 +3099,7 @@
         "vramPct": 3
       }
     ],
-    "selfHostedInferencePct": 82,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 202
   }
 }
