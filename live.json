@@ -1,5 +1,5 @@
 {
-  "generated": 1789442033747,
+  "generated": 1789442037051,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: qwenai21labs entering verification code from inbox",
+      "t": 1789442036135,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider gemini",
+      "t": 1789442035285,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789442035284,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789442035283,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789442034498,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789442034168,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for preflight (The operation was aborted due to timeout) — falling to external/free",
+      "t": 1789442033971,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (1 notes updated)",
       "t": 1789440877621,
       "type": "vault"
@@ -1625,51 +1667,52 @@
       "text": "keyhunter: cohere step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
       "t": 1789440548413,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "bounty scout: 3 eligible task card(s) (Algora)",
-      "t": 1789440540661,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cohere (https://cohere.com/signup)",
-      "t": 1789440531846,
+      "text": "keyhunter: qwenai21labs entering verification code from inbox",
+      "t": 1789442036135,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: ai21labs entering verification code from inbox",
-      "t": 1789440528680,
+      "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider gemini",
+      "t": 1789442035285,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789440525040,
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789442035284,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789440502912,
+      "text": "self-heal: disabled provider groq",
+      "t": 1789442035283,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: ai21labs needs email verification — reading inbox",
-      "t": 1789440502338,
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789442034498,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: ai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789440502312,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789442034168,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for preflight (The operation was aborted due to timeout) — falling to external/free",
+      "t": 1789442033971,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1933,13 +1976,13 @@
     "priority": "the current flagship product"
   },
   "throughput": [
-    15,
-    28,
-    10,
+    18,
+    25,
+    11,
     16,
-    14,
     13,
-    15,
+    16,
+    12,
     8,
     8,
     23,
@@ -1962,15 +2005,15 @@
     0,
     0,
     0,
-    0
+    10
   ],
   "load": {
     "loadavg": [
-      161.32,
-      175.33,
-      130.94
+      149.04,
+      172.56,
+      130.28
     ],
-    "ramPct": 87,
+    "ramPct": 92,
     "cpus": 12
   },
   "brain": {
@@ -1984,8 +2027,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2040,7 +2083,7 @@
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
@@ -2081,8 +2124,6 @@
       }
     },
     "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
       "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
@@ -3035,7 +3076,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 41,
+        "utilPct": 69,
         "vramPct": 77
       },
       {
