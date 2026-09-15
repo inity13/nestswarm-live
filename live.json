@@ -1,5 +1,5 @@
 {
-  "generated": 1789472820681,
+  "generated": 1789473000746,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789472989864,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789472979877,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789472823832,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789472643493,
       "type": "event"
@@ -1649,27 +1667,22 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789466701593,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789466655100,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789472989864,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789466655100,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789466655100,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789472979877,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1935,9 +1948,6 @@
   "throughput": [
     1,
     0,
-    2,
-    1,
-    0,
     0,
     1,
     0,
@@ -1962,15 +1972,18 @@
     0,
     2,
     1,
-    0
+    0,
+    4,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      1.81,
-      0.83,
-      0.46
+      2,
+      1.29,
+      0.7
     ],
-    "ramPct": 66,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2008,11 +2021,11 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2024,7 +2037,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -3028,10 +3041,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 89,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
