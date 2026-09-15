@@ -1,5 +1,5 @@
 {
-  "generated": 1789487762603,
+  "generated": 1789487942617,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789487785086,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789487785086,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789487785085,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789487785084,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789487785084,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789487764907,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "vault: synced (2 notes updated)",
       "t": 1789487641190,
       "type": "vault"
@@ -1592,24 +1628,6 @@
       "text": "NOT LISTED — failed quality gate: FamilySyncer (functional=true, score=3) · streak 1",
       "t": 1789487119498,
       "type": "listed"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged FamilySyncer → familysyncer.zip (8838 bytes)",
-      "t": 1789487061717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revise-before-reject: repairing FamilySyncer (critic 3) from feedback",
-      "t": 1789487061673,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'list' -> FamilySyncer",
-      "t": 1789487061668,
-      "type": "building"
     }
   ],
   "recent": [],
@@ -1880,9 +1898,6 @@
     "priority": "The current flagship product that has passed initial quality and demand validation criteria"
   },
   "throughput": [
-    0,
-    0,
-    16,
     5,
     13,
     4,
@@ -1909,15 +1924,18 @@
     0,
     3,
     0,
+    0,
+    7,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.93,
-      1.06
+      0.06,
+      0.54,
+      0.88
     ],
-    "ramPct": 81,
+    "ramPct": 80,
     "cpus": 12
   },
   "brain": {
@@ -1931,7 +1949,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
         "tier": "free"
       },
       "distributor": {
@@ -2027,12 +2045,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2982,7 +2995,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 77
       },
       {
