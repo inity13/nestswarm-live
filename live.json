@@ -1,5 +1,5 @@
 {
-  "generated": 1789494243142,
+  "generated": 1789494423196,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1182,6 +1182,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789494245700,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789494065753,
       "type": "event"
     },
@@ -1652,12 +1658,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789487585177,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789487461748,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1929,9 +1929,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1957,15 +1954,18 @@
     0,
     1,
     0,
+    0,
+    2,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.3,
-      0.12,
-      0.1
+      2,
+      0.8,
+      0.35
     ],
-    "ramPct": 53,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1995,8 +1995,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "researcher": {
         "model": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -3023,10 +3023,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 10,
-        "vramPct": 15
+        "utilPct": 28,
+        "vramPct": 89
       },
       {
         "alias": "GPU-Node-2",
