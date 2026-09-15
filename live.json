@@ -1,5 +1,5 @@
 {
-  "generated": 1789486502651,
+  "generated": 1789486682628,
   "status": "running",
   "stats": {
     "products": 182,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": true,
+      "active": false,
       "last": {
-        "text": "```markdown The file app.js has this syntax error: [path] <code> ^ SyntaxError: Unexpected",
-        "t": 1789486486491
+        "text": "// FILE: app.js const http = require(\"http\"); const fs = require(\"fs\"); const path = requi",
+        "t": 1789486521989
       }
     },
     {
@@ -50,10 +50,10 @@
       "color": "#ff6bd0",
       "avatar": "avatars/monica.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The product must have a user-friendly, modern, and responsive design that effectively comm",
-        "t": 1789486168721
+        "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
+        "t": 1789486647883
       }
     },
     {
@@ -343,6 +343,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Monica",
+      "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>PrivyGuard — Secure Your Data</title> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <style> body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 0; } header { background: #111827; padding: 24px 40px; border-bottom: 1px solid #1f2937; display: flex; justify-content: space-between; align-items: center; } header h1 { margin: 0; font-size: 36px; color: #38bdf8; } header p { margin: 6px 0 0; color: …",
+      "t": 1789486647883,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require(\"http\"); const fs = require(\"fs\"); const path = require(\"path\"); const crypto = require(\"crypto\"); const url = require(\"url\"); const querystring = require(\"querystring\"); const PORT = process.env.PORT || 4800; // --- Encryption helpers (AES-256-GCM, real crypto) --- function encryptText(plainText, passphrase) { const salt = crypto.randomBytes(16); const key = crypto.scryptSync(passphrase, salt, 32); const iv = crypto.randomBytes(12); const cipher = crypto.createCipheriv(\"aes-256-gcm\", key, iv); const encrypted = Buffer.concat([cipher.update(plainText, …",
+      "t": 1789486521989,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "```markdown The file app.js has this syntax error: [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader: The file app.js has this syntax error: unrecognized tag: 'mark' ``````markdown // FILE: app.js <code> <code> ```",
@@ -1168,23 +1182,57 @@
       "t": 1789484294564,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "Our focus must shift from counting products to proving demand: we need data‑driven validation of a single high‑value niche before allocating any development resources. The team must stop launching ideas without market research and instead conduct at least three quantifiable willingness‑to‑pay tests (surveys, pre‑sales, or paid ads) for the chosen niche before any code is written.",
-      "t": 1789484294210,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "The catalog's 178/20 split reveals a system that prizes initiation over delivery, and the 4.7 avg critic score is a vanity metric uncorrelated with revenue. We are confusing activity with progress. Every unlisted product must be formally retired or proven to accept payments within the next 30 days, and no new product may be started until the backlog falls below 30 with verified revenue potential.",
-      "t": 1789484293505,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> PrivyGuard",
+      "t": 1789486651653,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for PrivyGuard",
+      "t": 1789486647886,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> PrivyGuard",
+      "t": 1789486541641,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for PrivyGuard",
+      "t": 1789486533873,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> PrivyGuard",
+      "t": 1789486531636,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789486521992,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789486521989,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 182 products)",
+      "t": 1789486505541,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "EXTREME elevation: build for PrivyGuard is stuck (attempt 2) — trying a stronger model",
@@ -1616,112 +1664,27 @@
       "text": "coder produced a functional build (2 files, node)",
       "t": 1789485628382,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 181 products)",
-      "t": 1789485605327,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> LocalMate",
-      "t": 1789485591595,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'spec' -> LocalMate",
-      "t": 1789485581595,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "ideated: LocalMate [events, community & memberships]",
-      "t": 1789485574416,
-      "type": "ideated"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: events, community & memberships",
-      "t": 1789485571612,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'idea'",
-      "t": 1789485571612,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "packaged HomeMate Pro → homemate-pro.zip (10664 bytes)",
-      "t": 1789485561983,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "NOT LISTED — failed quality gate: HomeMate Pro (functional=true, score=3) · streak 2",
-      "t": 1789485561946,
-      "type": "listed"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "EXTREME elevation: build for PrivyGuard is stuck (attempt 2) — trying a stronger model",
-      "t": 1789486491629,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> PrivyGuard",
-      "t": 1789486491628,
+      "text": "stage 'package' -> PrivyGuard",
+      "t": 1789486651653,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "syntax fail (attempt 2): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789486486512,
+      "text": "designer improved UI for PrivyGuard",
+      "t": 1789486647886,
       "type": "event"
     },
     {
-      "who": "Scotty",
-      "text": "```markdown The file app.js has this syntax error: [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader: The file app.js has this syntax error: unrecognized tag: 'mark' ``````markdown // FILE: app.js <code> <code> ```",
-      "t": 1789486486491,
+      "who": "Monica",
+      "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>PrivyGuard — Secure Your Data</title> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <style> body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 0; } header { background: #111827; padding: 24px 40px; border-bottom: 1px solid #1f2937; display: flex; justify-content: space-between; align-items: center; } header h1 { margin: 0; font-size: 36px; color: #38bdf8; } header p { margin: 6px 0 0; color: …",
+      "t": 1789486647883,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> PrivyGuard",
-      "t": 1789486441618,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (4 notes updated)",
-      "t": 1789486441093,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789486441079,
-      "type": "event"
-    },
-    {
-      "who": "coder",
-      "text": "Build done for PrivyGuard — 2 files, working node app. Handing off to test.",
-      "t": 1789486434553,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789486434553,
-      "type": "event"
     }
   ],
   "capabilities": [
@@ -1771,7 +1734,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 22×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 23×"
     },
     {
       "name": "Shared memory",
@@ -1988,9 +1951,6 @@
   },
   "throughput": [
     1,
-    4,
-    5,
-    1,
     0,
     4,
     10,
@@ -2016,15 +1976,18 @@
     4,
     3,
     5,
+    4,
+    7,
+    1,
     4
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.4,
-      0.6
+      2.15,
+      1.24,
+      0.88
     ],
-    "ramPct": 89,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -2066,8 +2029,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "claude-sonnet-5",
+        "tier": "extreme"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3038,7 +3001,7 @@
     {
       "name": "PrivyGuard",
       "niche": "privacy, security & personal data",
-      "stage": "build",
+      "stage": "package",
       "status": "building",
       "url": ""
     }
@@ -3068,7 +3031,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 11,
         "vramPct": 77
       },
       {
