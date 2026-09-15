@@ -1,5 +1,5 @@
 {
-  "generated": 1789484882540,
+  "generated": 1789485062444,
   "status": "running",
   "stats": {
     "products": 179,
@@ -38,10 +38,10 @@
       "color": "#ffb454",
       "avatar": "avatars/scotty.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
-        "t": 1789484770662
+        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
+        "t": 1789485058893
       }
     },
     {
@@ -346,6 +346,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); function handleRequest(req, res) { const parsedUrl = url.parse(req.url, true); const pathname = parsedUrl.pathname; // API: create booking if (pathname === '/api/book' && req.method === 'POST') { let body = ''; req.on('data', chunk => { body += chunk.toString(); }); req.on('end', () => { try { const data = JSON.parse(body); if (!data.service || !data.datetime || …",
+      "t": 1789485058893,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "coder",
       "text": "Build done for HomeMate — 2 files, working node app. Handing off to test.",
@@ -1178,16 +1185,33 @@
       "t": 1789462159975,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Worf",
-      "text": "The UI mockup and a secure checkout are spot‑on; however, we must stop polishing peripheral ideas until the payment flow is live. The single next action: lock down the Stripe integration, test end‑to‑end, and push the checkout to production.",
-      "t": 1789462159623,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HomeMate",
+      "t": 1789485061549,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789485058896,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider nvidia/nemotron-3.5-lightning-30b-a3b failed for coder (The operation was aborted due to timeout)",
+      "t": 1789485021604,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 179 products)",
+      "t": 1789484885235,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "free provider openai/gpt-oss-120b failed for coder (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6800, Requested 2161. Please try again in 7.2075s. Need more tokens? Upgrade to Dev Tier today at https://con)",
@@ -1613,43 +1637,32 @@
       "text": "keyhunter: elevenlabs step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789483979509,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789483978627,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789483955653,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789483954776,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "free provider openai/gpt-oss-120b failed for coder (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6800, Requested 2161. Please try again in 7.2075s. Need more tokens? Upgrade to Dev Tier today at https://con)",
-      "t": 1789484841585,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> HomeMate",
-      "t": 1789484841527,
+      "text": "stage 'test' -> HomeMate",
+      "t": 1789485061549,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
-      "t": 1789484841420,
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789485058896,
+      "type": "event"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); function handleRequest(req, res) { const parsedUrl = url.parse(req.url, true); const pathname = parsedUrl.pathname; // API: create booking if (pathname === '/api/book' && req.method === 'POST') { let body = ''; req.on('data', chunk => { body += chunk.toString(); }); req.on('end', () => { try { const data = JSON.parse(body); if (!data.service || !data.datetime || …",
+      "t": 1789485058893,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider nvidia/nemotron-3.5-lightning-30b-a3b failed for coder (The operation was aborted due to timeout)",
+      "t": 1789485021604,
       "type": "event"
     }
   ],
@@ -1919,9 +1932,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     19,
     21,
     11,
@@ -1945,13 +1955,16 @@
     0,
     1,
     4,
-    5
+    5,
+    1,
+    0,
+    4
   ],
   "load": {
     "loadavg": [
       0.02,
-      0.31,
-      0.63
+      0.17,
+      0.51
     ],
     "ramPct": 81,
     "cpus": 12
@@ -1995,7 +2008,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
         "tier": "free"
       },
       "designer": {
@@ -2967,7 +2980,7 @@
     {
       "name": "HomeMate",
       "niche": "freelancers & solopreneurs",
-      "stage": "build",
+      "stage": "test",
       "status": "building",
       "url": ""
     }
@@ -2997,7 +3010,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 8,
+        "utilPct": 9,
         "vramPct": 77
       },
       {
