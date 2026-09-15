@@ -1,5 +1,5 @@
 {
-  "generated": 1789467239154,
+  "generated": 1789467419190,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789467316622,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3400MB free)",
+      "t": 1789467316621,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789467242111,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789467061656,
       "type": "event"
@@ -1649,24 +1667,6 @@
       "text": "keyhunter: qwen step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789462323871,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789462301030,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenelevenlabs step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN.\"}",
-      "t": 1789462300386,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwen (https://qwen.ai/signup)",
-      "t": 1789462300386,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1937,9 +1937,6 @@
     2,
     0,
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1962,15 +1959,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.11,
-      0.14
+      0.27,
+      0.27,
+      0.2
     ],
-    "ramPct": 56,
+    "ramPct": 57,
     "cpus": 12
   },
   "brain": {
@@ -3030,8 +3030,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
-        "vramPct": 79
+        "utilPct": 9,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -3046,10 +3046,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 15,
-        "vramPct": 3
+        "utilPct": 0,
+        "vramPct": 5
       }
     ],
     "selfHostedInferencePct": 82,
