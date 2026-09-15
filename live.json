@@ -1,5 +1,5 @@
 {
-  "generated": 1789473180789,
+  "generated": 1789473360860,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789473228957,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2584MB free)",
+      "t": 1789473228956,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789473183277,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789473003182,
       "type": "event"
@@ -1649,24 +1667,6 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (3400MB free)",
       "t": 1789467316621,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789467242111,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789467061656,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789466881948,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1941,9 +1941,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     1,
     0,
@@ -1962,15 +1959,18 @@
     3,
     3,
     3,
-    3
+    3,
+    5,
+    11,
+    10
   ],
   "load": {
     "loadavg": [
-      1.75,
-      1.42,
-      0.86
+      2.29,
+      1.83,
+      1.12
     ],
-    "ramPct": 66,
+    "ramPct": 78,
     "cpus": 12
   },
   "brain": {
@@ -3030,8 +3030,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 1,
-        "vramPct": 18
+        "utilPct": 72,
+        "vramPct": 80
       },
       {
         "alias": "GPU-Node-2",
@@ -3046,9 +3046,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 33,
+        "utilPct": 0,
         "vramPct": 3
       }
     ],
