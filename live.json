@@ -1,5 +1,5 @@
 {
-  "generated": 1789458237283,
+  "generated": 1789458417056,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789458416091,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789458312824,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2094MB free)",
+      "t": 1789458312822,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789458239937,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789458059819,
       "type": "event"
@@ -1643,33 +1667,16 @@
       "text": "meeting actions taken: focus niche: optional; paused new builds (strategic focus — board decision, no auto-expiry)",
       "t": 1789451810388,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789451758882,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789451623229,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3389MB free)",
-      "t": 1789451623227,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789451578472,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789458416091,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1934,9 +1941,6 @@
   },
   "throughput": [
     1,
-    2,
-    2,
-    1,
     0,
     0,
     1,
@@ -1962,15 +1966,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    2,
+    1
   ],
   "load": {
     "loadavg": [
-      0.19,
-      0.16,
-      0.18
+      0.41,
+      0.25,
+      0.21
     ],
-    "ramPct": 66,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -3029,9 +3036,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 16
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
@@ -3048,7 +3055,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 12,
+        "utilPct": 3,
         "vramPct": 92
       }
     ],
