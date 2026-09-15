@@ -1,5 +1,5 @@
 {
-  "generated": 1789484702378,
+  "generated": 1789484882540,
   "status": "running",
   "stats": {
     "products": 179,
@@ -40,8 +40,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "I’ll agree that we must stop inflating the catalog and focus on delivering a polished, rev",
-        "t": 1789484300903
+        "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path ",
+        "t": 1789484770662
       }
     },
     {
@@ -346,6 +346,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "coder",
+      "text": "Build done for HomeMate — 2 files, working node app. Handing off to test.",
+      "t": 1789484770664,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js <code> const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const qs = require('querystring'); const port = process.env.PORT || 4800; const indexHtml = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8'); function handleBook(req, res) { let body = ''; req.on('data', chunk => body += chunk); req.on('end', () => { const parsed = qs.parse(body); const { provider, date, time, name } = parsed; if (!provider || !date || !time) { res.writeHead(400, { 'Content-Type': 'application/json' }); res.end(JSON.stringify({ …",
+      "t": 1789484770662,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "ideator",
       "text": "New concept on the table: HomeMate — freelancers & solopreneurs. Let's see if it's worth building.",
@@ -1171,23 +1185,51 @@
       "t": 1789462159623,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Data",
-      "text": "I agree that we finally have a viable UI mockup and a clear payment‑gateway outline, but the endless chatter about trends and discount hunting is irrelevant until we lock in a single, validated demand and a concrete checkout flow; the next step is to run a minimal‑viable‑price test on the highest‑scoring product idea and secure a working Stripe integration before any further polishing.",
-      "t": 1789462159270,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Chandler",
-      "text": "I appreciate the input from all of you—ideator, architect, coder, designer, Joey, Quark, Worf, Hoshi, O'Brien, Automation Operator, and others. We’ve heard a lot of great points about prioritizing quality, focusing on a single flagship product, and ensuring our approach is secure and compliant. However, I must push back slightly on the idea that we can focus solely on polishing one product while disregarding potential new revenue streams. While it's important to refine what we have, we should also be open to exploring other markets and services that could complement our flagship offering and …",
-      "t": 1789462158918,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "free provider openai/gpt-oss-120b failed for coder (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6800, Requested 2161. Please try again in 7.2075s. Need more tokens? Upgrade to Dev Tier today at https://con)",
+      "t": 1789484841585,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> HomeMate",
+      "t": 1789484841527,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789484841420,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789484772010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HomeMate",
+      "t": 1789484771520,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789484770664,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 179 products)",
+      "t": 1789484705185,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "vault: synced (6 notes updated)",
@@ -1589,49 +1631,25 @@
       "text": "registrar: Millo step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789483954776,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789483932296,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789483931414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789483911465,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 4 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789483908690,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789483907818,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "vault: synced (6 notes updated)",
-      "t": 1789484641065,
-      "type": "vault"
+      "text": "free provider openai/gpt-oss-120b failed for coder (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6800, Requested 2161. Please try again in 7.2075s. Need more tokens? Upgrade to Dev Tier today at https://con)",
+      "t": 1789484841585,
+      "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789484641020,
+      "text": "stage 'build' -> HomeMate",
+      "t": 1789484841527,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "syntax fail (attempt 1): [path] <code> ^ SyntaxError: Unexpected token '<' at wrapSafe (node:internal/modules/cjs/loader:1743:18) at checkSyntax (node:internal/main/check_syntax:76:3) Node.js v24.14.0",
+      "t": 1789484841420,
       "type": "event"
     }
   ],
@@ -1899,9 +1917,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1927,15 +1942,18 @@
     0,
     3,
     2,
-    0
+    0,
+    1,
+    4,
+    5
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.54,
-      0.76
+      0.02,
+      0.31,
+      0.63
     ],
-    "ramPct": 82,
+    "ramPct": 81,
     "cpus": 12
   },
   "brain": {
@@ -1977,8 +1995,8 @@
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
