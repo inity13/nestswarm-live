@@ -1,5 +1,5 @@
 {
-  "generated": 1789472640963,
+  "generated": 1789472820681,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1191,6 +1191,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789472643493,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789472463029,
       "type": "event"
     },
@@ -1661,12 +1667,6 @@
       "text": "self-heal: already disabled: groq (no-op)",
       "t": 1789466655100,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789466655100,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1934,9 +1934,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     2,
     1,
@@ -1962,15 +1959,18 @@
     0,
     1,
     0,
+    0,
+    2,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.31,
-      0.24,
-      0.23
+      1.81,
+      0.83,
+      0.46
     ],
-    "ramPct": 61,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2000,7 +2000,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "researcher": {
@@ -3028,10 +3028,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "utilPct": 89,
+        "vramPct": 92
       },
       {
         "alias": "GPU-Node-2",
