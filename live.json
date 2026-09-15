@@ -1,5 +1,5 @@
 {
-  "generated": 1789499103642,
+  "generated": 1789499283616,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1187,6 +1187,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789499283161,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789499106473,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789498926050,
       "type": "event"
@@ -1652,21 +1664,16 @@
       "text": "model bench: skipping deepseek-r1:8b — low RAM (2957MB free)",
       "t": 1789492519133,
       "type": "bench"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789492445733,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789492265322,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789499283161,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1936,9 +1943,6 @@
   "throughput": [
     1,
     0,
-    2,
-    1,
-    0,
     0,
     1,
     0,
@@ -1963,15 +1967,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.21,
-      0.2
+      0.74,
+      0.34,
+      0.24
     ],
-    "ramPct": 79,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -3066,9 +3073,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 8,
-        "vramPct": 49
+        "warm": false,
+        "utilPct": 9,
+        "vramPct": 18
       },
       {
         "alias": "GPU-Node-2",
