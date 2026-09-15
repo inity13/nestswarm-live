@@ -1,5 +1,5 @@
 {
-  "generated": 1789449235651,
+  "generated": 1789449415597,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1187,6 +1187,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789449324419,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789449314420,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789449310576,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3322MB free)",
+      "t": 1789449310573,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789449238126,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789449057890,
       "type": "event"
@@ -1634,36 +1664,6 @@
       "text": "self-heal complete: 2 fix(es) — disabled provider groq; disabled provider gemini",
       "t": 1789442035285,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789442035284,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789442035283,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
-      "t": 1789442034498,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789442034168,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for preflight (The operation was aborted due to timeout) — falling to external/free",
-      "t": 1789442033971,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1930,9 +1930,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    6,
-    0,
     1,
     0,
     0,
@@ -1959,15 +1956,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    4,
     0
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.12,
-      0.14
+      0.11,
+      0.16,
+      0.15
     ],
-    "ramPct": 49,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -3026,9 +3026,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 17
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
