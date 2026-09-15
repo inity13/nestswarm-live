@@ -1,5 +1,5 @@
 {
-  "generated": 1789470119857,
+  "generated": 1789470300391,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789470259140,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789470251807,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789470249145,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789470239060,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789470122501,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789469942695,
       "type": "event"
@@ -1637,39 +1667,34 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789464900915,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789464854854,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789470259140,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789464854854,
+      "t": 1789470251807,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789464854854,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789470249145,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789464854854,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789464854854,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789470239060,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1934,9 +1959,6 @@
   },
   "throughput": [
     1,
-    3,
-    7,
-    1,
     0,
     0,
     1,
@@ -1962,15 +1984,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    4
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.15,
-      0.16
+      0.58,
+      0.34,
+      0.23
     ],
-    "ramPct": 72,
+    "ramPct": 74,
     "cpus": 12
   },
   "brain": {
@@ -1984,7 +2009,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -3030,8 +3055,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
-        "vramPct": 49
+        "utilPct": 10,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
