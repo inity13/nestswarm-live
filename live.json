@@ -1,5 +1,5 @@
 {
-  "generated": 1789447435270,
+  "generated": 1789447615326,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1187,6 +1187,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1789447535198,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789447531623,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789447510569,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3254MB free)",
+      "t": 1789447510568,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789447504078,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789447494079,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789447490178,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789447437532,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789447257811,
       "type": "event"
@@ -1616,57 +1664,22 @@
       "text": "keyhunter: qwenai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
       "t": 1789440861633,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Paddle step 6 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789440861238,
+      "text": "conductor returned no valid plan",
+      "t": 1789447535198,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789440860503,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789440860030,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789440858899,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789440858465,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. This could be due to too much traffic or a configura",
-      "t": 1789440857636,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenai21labs (https://ai21labs.com/signup)",
-      "t": 1789440857636,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789440856914,
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789447531623,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1930,9 +1943,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    2,
-    0,
     1,
     0,
     0,
@@ -1959,15 +1969,18 @@
     0,
     1,
     0,
+    0,
+    3,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      0.09,
-      0.07,
-      0.45
+      0.2,
+      0.15,
+      0.41
     ],
-    "ramPct": 50,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -2078,6 +2091,8 @@
       }
     },
     "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
       "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
@@ -3029,9 +3044,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 8,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
