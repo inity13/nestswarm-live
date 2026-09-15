@@ -1,5 +1,5 @@
 {
-  "generated": 1789433077839,
+  "generated": 1789433257923,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789433147901,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2628MB free)",
+      "t": 1789433147900,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
+      "t": 1789433090165,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789433087600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789433087600,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: API keys for Stripe or approval of MoR fallback",
+      "t": 1789433087599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789433080111,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789433080012,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789433070008,
       "type": "event"
@@ -1535,46 +1583,9 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789427676803,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789427609740,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "council: 1 quality demands recorded for TaskMate AI",
-      "t": 1789427607460,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789427606562,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789427606562,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789427606562,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789433070008,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1838,9 +1849,6 @@
     "priority": "the current flagship product"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1867,15 +1875,18 @@
     0,
     1,
     0,
-    1
+    1,
+    8,
+    2,
+    0
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.07,
-      0.16
+      0.4,
+      0.42,
+      0.29
     ],
-    "ramPct": 60,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -1986,7 +1997,9 @@
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2937,9 +2950,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 11,
-        "vramPct": 15
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
