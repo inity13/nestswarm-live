@@ -1,5 +1,5 @@
 {
-  "generated": 1789440098422,
+  "generated": 1789440278433,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789440277241,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 100m ago) — skip",
+      "t": 1789440277223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 100m ago) — skip",
+      "t": 1789440277223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789440277223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 174 products with flags, 1 with high-severity findings",
+      "t": 1789440277207,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789440101023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789439920835,
       "type": "event"
@@ -1631,45 +1667,40 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789433080111,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789433080012,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789433070008,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789432900071,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789432720151,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789432540009,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789432360153,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789440277241,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 100m ago) — skip",
+      "t": 1789440277223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 100m ago) — skip",
+      "t": 1789440277223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789440277223,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 174 products with flags, 1 with high-severity findings",
+      "t": 1789440277207,
+      "type": "security"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1933,9 +1964,6 @@
     "priority": "the current flagship product"
   },
   "throughput": [
-    1,
-    0,
-    0,
     4,
     1,
     0,
@@ -1962,15 +1990,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.13,
-      0.13
+      0.3,
+      0.18,
+      0.14
     ],
-    "ramPct": 57,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2080,7 +2111,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3028,7 +3062,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
         "utilPct": 9,
         "vramPct": 15
