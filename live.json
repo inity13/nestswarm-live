@@ -1,5 +1,5 @@
 {
-  "generated": 1789488842671,
+  "generated": 1789489022858,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789488916712,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2771MB free)",
+      "t": 1789488916709,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789488845455,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789488665379,
       "type": "event"
@@ -1640,18 +1658,6 @@
       "text": "stage 'idea'",
       "t": 1789487144735,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "new build started (ideating) — niche: AI & automation utilities",
-      "t": 1789487144732,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "researcher brief: AI-generated adaptive mnemonic stories for language vocabulary retention (willingness: medium) — 3 tool ideas",
-      "t": 1789487144511,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1922,9 +1928,6 @@
     "priority": "The current flagship product that has passed initial quality and demand validation criteria"
   },
   "throughput": [
-    12,
-    25,
-    19,
     8,
     23,
     39,
@@ -1951,15 +1954,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.15,
+      0.23,
+      0.25,
       0.39
     ],
-    "ramPct": 54,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -3018,9 +3024,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 15
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
