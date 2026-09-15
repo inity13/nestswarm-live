@@ -1,5 +1,5 @@
 {
-  "generated": 1789473000746,
+  "generated": 1789473180789,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789473003182,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789472989864,
       "type": "event"
@@ -1661,28 +1667,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789466881948,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789466701593,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789472989864,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789472979877,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1957,9 +1944,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     1,
     0,
@@ -1975,15 +1959,18 @@
     0,
     4,
     1,
+    3,
+    3,
+    3,
     3
   ],
   "load": {
     "loadavg": [
-      2,
-      1.29,
-      0.7
+      1.75,
+      1.42,
+      0.86
     ],
-    "ramPct": 68,
+    "ramPct": 66,
     "cpus": 12
   },
   "brain": {
@@ -2017,7 +2004,7 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "polisher": {
@@ -3041,9 +3028,9 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 1,
         "vramPct": 18
       },
       {
@@ -3059,10 +3046,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 2
+        "utilPct": 33,
+        "vramPct": 3
       }
     ],
     "selfHostedInferencePct": 82,
