@@ -1,5 +1,5 @@
 {
-  "generated": 1789454816474,
+  "generated": 1789454996448,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789454819010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789454785361,
       "type": "event"
@@ -1661,52 +1667,9 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789448034712,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789447977658,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789454785361,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789454784587,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2234MB free)",
-      "t": 1789454784585,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789454775363,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: geminiai — queued for key hunter",
-      "t": 1789454750343,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: novitaai — queued for key hunter",
-      "t": 1789454750342,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1981,9 +1944,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     1,
     0,
@@ -1999,15 +1959,18 @@
     0,
     9,
     7,
-    4
+    4,
+    1,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.99,
-      0.52,
-      0.3
+      0.16,
+      0.34,
+      0.26
     ],
-    "ramPct": 73,
+    "ramPct": 76,
     "cpus": 12
   },
   "brain": {
@@ -3072,26 +3035,25 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 10,
         "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
-        "gpu": "RTX 5090 Laptop",
-        "vramGb": 24,
+        "gpu": null,
+        "vramGb": null,
         "status": "offline",
         "can": [
           "browser",
           "coding",
-          "gpu",
           "llm",
           "python",
           "vision"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 12,
-        "vramPct": 92
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 0
       }
     ],
     "selfHostedInferencePct": 82,
