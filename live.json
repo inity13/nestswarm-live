@@ -1,5 +1,5 @@
 {
-  "generated": 1789451215838,
+  "generated": 1789451395901,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1187,6 +1187,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789451218272,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789451144786,
       "type": "event"
@@ -1658,28 +1664,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789443296890,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789443117299,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789451144786,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789451134717,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1953,9 +1940,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1972,15 +1956,18 @@
     0,
     2,
     3,
-    0
+    0,
+    2,
+    2,
+    1
   ],
   "load": {
     "loadavg": [
-      2.12,
-      0.9,
-      0.38
+      1.81,
+      1.28,
+      0.63
     ],
-    "ramPct": 54,
+    "ramPct": 53,
     "cpus": 12
   },
   "brain": {
@@ -2022,8 +2009,8 @@
         "tier": "free"
       },
       "coder": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2034,8 +2021,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3038,10 +3025,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 75
+        "utilPct": 0,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
