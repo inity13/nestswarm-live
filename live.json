@@ -1,5 +1,5 @@
 {
-  "generated": 1789451395901,
+  "generated": 1789451575826,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1188,6 +1188,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789451398351,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789451218272,
       "type": "event"
     },
@@ -1658,12 +1664,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789443476992,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789443296890,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1937,9 +1937,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1959,15 +1956,18 @@
     0,
     2,
     2,
-    1
+    1,
+    2,
+    3,
+    3
   ],
   "load": {
     "loadavg": [
-      1.81,
-      1.28,
-      0.63
+      1.62,
+      1.31,
+      0.76
     ],
-    "ramPct": 53,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -2001,12 +2001,12 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "polisher": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "coder": {
         "model": "deepseek-r1:8b",
@@ -3025,10 +3025,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 19
+        "utilPct": 1,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
