@@ -1,5 +1,5 @@
 {
-  "generated": 1789432897816,
+  "generated": 1789433077839,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789433070008,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789432900071,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789432720151,
       "type": "event"
@@ -1538,18 +1550,6 @@
     },
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789427606562,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789427606562,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "self-heal: already disabled: nvidia (no-op)",
       "t": 1789427606562,
       "type": "event"
@@ -1567,7 +1567,14 @@
       "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789433070008,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1831,9 +1838,6 @@
     "priority": "the current flagship product"
   },
   "throughput": [
-    1,
-    0,
-    2,
     3,
     0,
     0,
@@ -1860,15 +1864,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.02,
+      0.1,
       0.07,
-      0.18
+      0.16
     ],
-    "ramPct": 61,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -1978,7 +1985,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -2928,7 +2938,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 9,
+        "utilPct": 11,
         "vramPct": 15
       },
       {
