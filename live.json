@@ -1,5 +1,5 @@
 {
-  "generated": 1789451035815,
+  "generated": 1789451215838,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1187,6 +1187,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789451144786,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789451134717,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789451038039,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789450858155,
       "type": "event"
@@ -1646,27 +1664,22 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789443117299,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789442953381,
+      "t": 1789451144786,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789442943381,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789442936856,
+      "t": 1789451134717,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1931,9 +1944,6 @@
   },
   "throughput": [
     1,
-    4,
-    0,
-    1,
     0,
     0,
     1,
@@ -1959,15 +1969,18 @@
     0,
     1,
     0,
+    0,
+    2,
+    3,
     0
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.07,
-      0.07
+      2.12,
+      0.9,
+      0.38
     ],
-    "ramPct": 50,
+    "ramPct": 54,
     "cpus": 12
   },
   "brain": {
@@ -1997,8 +2010,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "researcher": {
         "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
@@ -3025,10 +3038,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 10,
-        "vramPct": 18
+        "utilPct": 29,
+        "vramPct": 75
       },
       {
         "alias": "GPU-Node-2",
