@@ -1,5 +1,5 @@
 {
-  "generated": 1789508645105,
+  "generated": 1789508826438,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789508720230,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3245MB free)",
+      "t": 1789508720228,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789508647432,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789508467381,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "keyhunter: attempting fireworksai (https://www.fireworksaichat.com/signup)",
       "t": 1789505342614,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789505340630,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1789505338741,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs entering verification code from inbox",
-      "t": 1789505335267,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1929,9 +1929,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1957,15 +1954,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0,
-      0.04,
-      0.09
+      0.25,
+      0.24,
+      0.16
     ],
-    "ramPct": 50,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -3060,9 +3060,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
