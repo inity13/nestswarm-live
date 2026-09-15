@@ -1,5 +1,5 @@
 {
-  "generated": 1789476241369,
+  "generated": 1789476421475,
   "status": "running",
   "stats": {
     "products": 178,
@@ -1190,6 +1190,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789476329925,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2479MB free)",
+      "t": 1789476329922,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
+      "t": 1789476301033,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: API keys for Stripe or approval of MoR fallback",
+      "t": 1789476295100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789476295100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789476295100,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
+      "t": 1789476243900,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
       "t": 1789476063697,
       "type": "event"
@@ -1625,48 +1667,6 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789469127067,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2810MB free)",
-      "t": 1789469127066,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789469100892,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789469100455,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1789469092668,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/85 channels active · 0 new discovered",
-      "t": 1789469089732,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 operational improvement(s) recommended",
-      "t": 1789469087604,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789469087538,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1934,9 +1934,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     1,
     2,
@@ -1962,15 +1959,18 @@
     0,
     1,
     0,
+    0,
+    6,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.21,
-      0.27
+      0.39,
+      0.3,
+      0.29
     ],
-    "ramPct": 59,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -2080,7 +2080,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3029,9 +3034,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
