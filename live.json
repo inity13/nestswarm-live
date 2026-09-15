@@ -1,5 +1,5 @@
 {
-  "generated": 1789492443106,
+  "generated": 1789492623056,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789492519135,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2957MB free)",
+      "t": 1789492519133,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789492445733,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789492265322,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "launcher: skipping dev.to for MnemonicMate (no live URL)",
       "t": 1789487401682,
       "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launcher: shipped MnemonicMate to https://github.com/inity13/[private-repo] (private)",
-      "t": 1789487401343,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "launch-discipline: MnemonicMate plateaued at 0/8 after 1 polish passes — accepting best effort and proceeding to launch.",
-      "t": 1789487391735,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider openai/gpt-oss-120b failed for conductor (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5611, Requested 5324. Please try again in 22.0125s. Need more tokens? Upgrade to Dev Tier today at https://co)",
-      "t": 1789487391524,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1928,9 +1928,6 @@
     "priority": "The current flagship product that has passed initial quality and demand validation criteria"
   },
   "throughput": [
-    8,
-    2,
-    0,
     1,
     0,
     0,
@@ -1957,15 +1954,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.09,
-      0.12
+      0.29,
+      0.27,
+      0.18
     ],
-    "ramPct": 61,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -3026,7 +3026,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 77
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
