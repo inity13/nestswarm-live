@@ -1,5 +1,5 @@
 {
-  "generated": 1789490642886,
+  "generated": 1789490822902,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789490731726,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2785MB free)",
+      "t": 1789490731724,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789490697513,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789490697469,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill stripe-live-readiness-validation",
+      "t": 1789490697340,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: stripe-live-readiness-validation",
+      "t": 1789490697339,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of MoR fallback for live payments",
+      "t": 1789490697337,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
+      "t": 1789490687522,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789490645412,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789490465314,
       "type": "event"
@@ -1604,60 +1658,6 @@
       "text": "stage 'list' -> MnemonicMate",
       "t": 1789487321730,
       "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'package' -> MnemonicMate",
-      "t": 1789487301732,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "designer improved UI for MnemonicMate",
-      "t": 1789487296042,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'design' -> MnemonicMate",
-      "t": 1789487251730,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "tests passed for MnemonicMate",
-      "t": 1789487244060,
-      "type": "test"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'test' -> MnemonicMate",
-      "t": 1789487241730,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789487236076,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789487225275,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "stage 'build' -> MnemonicMate",
-      "t": 1789487211686,
-      "type": "building"
-    },
-    {
-      "who": "swarm",
-      "text": "coder output incomplete (attempt 1)",
-      "t": 1789487202383,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1912,7 +1912,7 @@
     },
     {
       "name": "stripe-live-readiness-validation",
-      "desc": "Check Stripe account status, webhook endpoints, and live mode readiness before enabling paid product builds."
+      "desc": "Ensures the swarm can move from sandbox to live Stripe checkout."
     }
   ],
   "ledger": {
@@ -1929,9 +1929,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1957,15 +1954,18 @@
     0,
     1,
     0,
+    0,
+    8,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0,
-      0.03,
-      0.11
+      0.43,
+      0.3,
+      0.2
     ],
-    "ramPct": 54,
+    "ramPct": 65,
     "cpus": 12
   },
   "brain": {
@@ -1979,8 +1979,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2075,7 +2075,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3024,9 +3029,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 8,
-        "vramPct": 15
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
@@ -3047,7 +3052,7 @@
         "vramPct": 3
       }
     ],
-    "selfHostedInferencePct": 81,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 202
   }
 }
