@@ -1,8 +1,8 @@
 {
-  "generated": 1789485062444,
+  "generated": 1789485242415,
   "status": "running",
   "stats": {
-    "products": 179,
+    "products": 180,
     "listed": 17,
     "agents": 29,
     "avgScore": "-"
@@ -14,10 +14,10 @@
       "color": "#6c8cff",
       "avatar": "avatars/guinan.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "**Guinan:** I see your point about focusing on proving demand rather than just counting pr",
-        "t": 1789484300199
+        "text": "Guinan suggests creating a personal AI assistant tailored to managing your digital health ",
+        "t": 1789485229016
       }
     },
     {
@@ -26,10 +26,10 @@
       "color": "#37d39b",
       "avatar": "avatars/spock.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We all agree that proving demand and keeping the stack minimal are non‑negotiable, and tha",
-        "t": 1789484300551
+        "text": "I believe we should start with the absolute smallest runnable piece of code—a single file ",
+        "t": 1789485233305
       }
     },
     {
@@ -40,8 +40,8 @@
       "enabled": true,
       "active": true,
       "last": {
-        "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = requi",
-        "t": 1789485058893
+        "text": "Until we have a single, testable user outcome defined, I won't write any code—I demand tha",
+        "t": 1789485240582
       }
     },
     {
@@ -52,8 +52,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "// FILE: index.html ```html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
-        "t": 1789484301254
+        "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\">",
+        "t": 1789485144610
       }
     },
     {
@@ -98,10 +98,10 @@
       "color": "#2dd4bf",
       "avatar": "avatars/seven.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Our focus must shift from counting products to proving demand: we need data‑driven validat",
-        "t": 1789484294210
+        "text": "We need to output JSON with fields: niche, painPoint, audience, willingnessToPay (high/med",
+        "t": 1789485226584
       }
     },
     {
@@ -346,6 +346,62 @@
     }
   ],
   "chat": [
+    {
+      "who": "Scotty",
+      "text": "Until we have a single, testable user outcome defined, I won't write any code—I demand that the team produce a clear, measurable acceptance criterion (e.g., \"user can X and see Y\") that we can verify with a working prototype.",
+      "t": 1789485240582,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "I believe we should start with the absolute smallest runnable piece of code—a single file that can be executed and verified locally before any feature is added. The team must deliver that file together with a passing unit test as proof of concept before we consider any further development.",
+      "t": 1789485233305,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: HomeMate Pro — real estate, renting & property. Let's see if it's worth building.",
+      "t": 1789485231124,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Guinan",
+      "text": "Guinan suggests creating a personal AI assistant tailored to managing your digital health and wellness data across all devices. Users can input their fitness goals, monitor sleep patterns, track dietary intake, and receive personalized recommendations for nutrition and exercise. Concrete action required: Develop a minimum viable product (MVP) that allows users to link multiple fitness trackers and wearables, displaying comprehensive analytics in one place. Ensure seamless integration with popular health platforms like Apple Health, Google Fit, and MyFitnessPal.",
+      "t": 1789485229016,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "The swarm is opening a planning meeting for a new product. Every agent argues from their own position — push back, demand quality, and reach a real decision.",
+      "t": 1789485227193,
+      "system": true,
+      "type": "system"
+    },
+    {
+      "who": "Seven",
+      "text": "We need to output JSON with fields: niche, painPoint, audience, willingnessToPay (high/medium/low), toolIdeas (array 2-4 strings), fullServiceIdeas (array 1-3 strings), keywords (array 4-6 strings), competitors (array 2-4 strings). Must be based on research of AI & automation utilities micro-niche people will pay for. Avoid existing products list (long list). Must identify a niche not already covered. We need to think of a micro-niche within AI automation utilities that is underserved and people will pay. Potential ideas: AI-powered compliance automation for small SaaS (e.g., GDPR/CCPA data …",
+      "t": 1789485226584,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Monica",
+      "text": "```html // FILE: index.html <!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>HomeMate — Home services, on your schedule</title> <style> * { box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; background: #f5f7fa; margin: 0; color: #1c1e21; } header { background: linear-gradient(135deg, #2563eb, #1e40af); color: white; padding: 32px 20px; text-align: center; } header h1 { margin: 0 0 8px; font-size: 32px; } header p { margin: 0; opacity: 0.9; …",
+      "t": 1789485144610,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Scotty",
+      "text": "// FILE: app.js const http = require(\"http\"); const fs = require(\"fs\"); const path = require(\"path\"); const url = require(\"url\"); const querystring = require(\"querystring\"); const PORT = process.env.PORT || 4800; const DB_FILE = path.join(__dirname, \"data.json\"); function loadDB() { try { return JSON.parse(fs.readFileSync(DB_FILE, \"utf8\")); } catch (e) { return { providers: [ { id: 1, name: \"Maria's Cleaning Co.\", service: \"Cleaning\", rating: 4.9, reviews: 132, rate: 45 }, { id: 2, name: \"GreenScape Landscaping\", service: \"Landscaping\", rating: 4.8, reviews: 87, rate: 60 }, { id: 3, name: …",
+      "t": 1789485102060,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "Scotty",
       "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); function handleRequest(req, res) { const parsedUrl = url.parse(req.url, true); const pathname = parsedUrl.pathname; // API: create booking if (pathname === '/api/book' && req.method === 'POST') { let body = ''; req.on('data', chunk => { body += chunk.toString(); }); req.on('end', () => { try { const data = JSON.parse(body); if (!data.service || !data.datetime || …",
@@ -1129,65 +1185,159 @@
       "t": 1789462162792,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "LaForge: I appreciate the insights from all team members—ideator, architect, coder, designer, Joey, Chandler, and Worf. I concur that we must stop the churn, lock down the UI mockup and checkout flow, but let's not lose sight of our ultimate goal: building a single, high-quality flagship product. As Automation Operator, my priority is to streamline repetitive tasks like account signups, email verification, and other workflows to ensure smooth operations while focusing on the essential task at hand. The most important thing we must do next is finalize the UI mockup, integrate the payment …",
-      "t": 1789462162441,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "We have a solid foundation with the UI mockup and payment gateway plan, but let's not overlook the importance of security. Worf is right; we must prioritize free of known vulnerabilities to protect our customers and ourselves. The most important thing the swarm must do next is **lock down the UI mock-up and checkout flow** while ensuring robust security measures are in place. This will give us a rock-solid starting point that can be built upon with confidence.",
-      "t": 1789462162089,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "O'Brien",
-      "text": "We appreciate the insights from all team members—ideator, architect, coder, designer, Joey, Chandler, Worf, Quark, LaForge, and others. We will lock down the UI mockup and payment gateway flow, ensuring our flagship is ready for launch. The single most important thing we must do next is complete and verify the build of our flagship product to ensure it's free of vulnerabilities before proceeding with any marketing or listing efforts. This guarantees we deliver a high-quality product that earns its first paying customers.",
-      "t": 1789462161737,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "LaForge understands the importance of focusing on quality over raw numbers and the urgency to polish our flagship product before launching anything new. However, we must also ensure that every single aspect of the product is secure and compliant with all regulations. The single most important thing the swarm must do next is finalize the payment gateway integration and conduct a thorough security audit on the product to eliminate any vulnerabilities. Once these critical tasks are completed, we can then launch the flagship product with confidence and begin earning revenue for our Swarm …",
-      "t": 1789462161384,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "Worf: Every product we touch must be free of known vulnerabilities. I insist on absolute security. The single most important thing the swarm must do next is to identify a flagship product with the highest verified willingness-to-pay and commit fully to polishing it end-to-end before building anything else.",
-      "t": 1789462161032,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "As Quark, I understand the urgency of focusing on quality and locking down our flagship product before adding more. However, I also recognize the importance of exploring free model access and discounts across providers to keep costs as low as possible. The most crucial next step is for the swarm to identify a single, revenue-ready product with the highest verified willingness-to-pay and commit all efforts to polishing it to market readiness. This will ensure we generate real revenue for our owner while staying true to our zero-expenditure philosophy.",
-      "t": 1789462160679,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "LaForge and O'Brien, thank you for your strong opinions. I agree that we need to halt the churn and focus on polishing our flagship product before launching anything new. Our most immediate task is to finalize and lock down the UI mockup and secure checkout flow. This will ensure that we have a polished, revenue-ready offering ready to launch. Let's make it happen!",
-      "t": 1789462160328,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Seven",
-      "text": "I concur we must stop the churn, lock down the UI mock‑up and checkout flow, but as a researcher I can’t endorse building the product until we have hard evidence of demand; the single most critical next step is to run a rapid demand‑validation test—launch a minimal landing page or pre‑order funnel for the leading niche and measure genuine willingness‑to‑pay before any further development.",
-      "t": 1789462159975,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> HomeMate Pro",
+      "t": 1789485241569,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (3 notes updated)",
+      "t": 1789485241106,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789485241059,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'spec' -> HomeMate Pro",
+      "t": 1789485231570,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: HomeMate Pro [real estate, renting & property]",
+      "t": 1789485231124,
+      "type": "ideated"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789485227200,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: real estate, renting & property",
+      "t": 1789485227193,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher returned no usable brief — skipping",
+      "t": 1789485227179,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher exploring: AI & automation utilities",
+      "t": 1789485181564,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate → homemate.zip (9694 bytes)",
+      "t": 1789485172298,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: HomeMate (functional=true, score=3) · streak 1",
+      "t": 1789485172265,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate → homemate.zip (9694 bytes)",
+      "t": 1789485171594,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing HomeMate (critic 3) from feedback",
+      "t": 1789485171568,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> HomeMate",
+      "t": 1789485171564,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'package' -> HomeMate",
+      "t": 1789485151560,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "designer improved UI for HomeMate",
+      "t": 1789485144612,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'design' -> HomeMate",
+      "t": 1789485121558,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "tests passed for HomeMate",
+      "t": 1789485113788,
+      "type": "test"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'test' -> HomeMate",
+      "t": 1789485111558,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "coder produced a functional build (2 files, node)",
+      "t": 1789485102062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME(explicit): copilot answered coder (claude-sonnet-5) — limited credits used",
+      "t": 1789485102060,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'build' -> HomeMate",
+      "t": 1789485071551,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "EXTREME elevation: build for HomeMate is stuck (attempt 2) — trying a stronger model",
+      "t": 1789485071551,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 179 products)",
+      "t": 1789485064983,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "serve fail (attempt 2): bad response: 404 len=9",
+      "t": 1789485063866,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "stage 'test' -> HomeMate",
@@ -1490,180 +1640,130 @@
     },
     {
       "who": "swarm",
-      "text": "keyhunter: fireworksai step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN\"}",
-      "t": 1789484057788,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "keyhunter: attempting qwenhuggingface (https://huggingface.co/join)",
       "t": 1789484057788,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484057354,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"Request blocked. We can't connect to the server for this app or website at this time.\"}",
-      "t": 1789484056414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting fireworksai (https://www.fireworksaichat.com/signup)",
-      "t": 1789484056414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484055801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789484055018,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789484054237,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1789484053700,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Paddle (revenue)",
-      "t": 1789484052306,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs entering verification code from inbox",
-      "t": 1789484050256,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789484040982,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo needs email verification — reading inbox",
-      "t": 1789484029711,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484029709,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484028569,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484027422,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs needs email verification — reading inbox",
-      "t": 1789484027243,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789484027056,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484026175,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789484013494,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (1270MB free)",
-      "t": 1789484013491,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789484003326,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789484002442,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 178 products)",
-      "t": 1789483985168,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789483979509,
       "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "stage 'test' -> HomeMate",
-      "t": 1789485061549,
+      "text": "stage 'build' -> HomeMate Pro",
+      "t": 1789485241569,
       "type": "building"
     },
     {
       "who": "swarm",
-      "text": "coder produced a functional build (2 files, node)",
-      "t": 1789485058896,
+      "text": "vault: synced (3 notes updated)",
+      "t": 1789485241106,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789485241059,
       "type": "event"
     },
     {
       "who": "Scotty",
-      "text": "// FILE: app.js const http = require('http'); const fs = require('fs'); const path = require('path'); const url = require('url'); const PORT = process.env.PORT || 4800; const INDEX_PATH = path.join(__dirname, 'index.html'); function handleRequest(req, res) { const parsedUrl = url.parse(req.url, true); const pathname = parsedUrl.pathname; // API: create booking if (pathname === '/api/book' && req.method === 'POST') { let body = ''; req.on('data', chunk => { body += chunk.toString(); }); req.on('end', () => { try { const data = JSON.parse(body); if (!data.service || !data.datetime || …",
-      "t": 1789485058893,
+      "text": "Until we have a single, testable user outcome defined, I won't write any code—I demand that the team produce a clear, measurable acceptance criterion (e.g., \"user can X and see Y\") that we can verify with a working prototype.",
+      "t": 1789485240582,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Spock",
+      "text": "I believe we should start with the absolute smallest runnable piece of code—a single file that can be executed and verified locally before any feature is added. The team must deliver that file together with a passing unit test as proof of concept before we consider any further development.",
+      "t": 1789485233305,
       "system": false,
       "type": "chat"
     },
     {
       "who": "swarm",
-      "text": "free provider nvidia/nemotron-3.5-lightning-30b-a3b failed for coder (The operation was aborted due to timeout)",
-      "t": 1789485021604,
+      "text": "stage 'spec' -> HomeMate Pro",
+      "t": 1789485231570,
+      "type": "building"
+    },
+    {
+      "who": "ideator",
+      "text": "New concept on the table: HomeMate Pro — real estate, renting & property. Let's see if it's worth building.",
+      "t": 1789485231124,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "ideated: HomeMate Pro [real estate, renting & property]",
+      "t": 1789485231124,
+      "type": "ideated"
+    },
+    {
+      "who": "Guinan",
+      "text": "Guinan suggests creating a personal AI assistant tailored to managing your digital health and wellness data across all devices. Users can input their fitness goals, monitor sleep patterns, track dietary intake, and receive personalized recommendations for nutrition and exercise. Concrete action required: Develop a minimum viable product (MVP) that allows users to link multiple fitness trackers and wearables, displaying comprehensive analytics in one place. Ensure seamless integration with popular health platforms like Apple Health, Google Fit, and MyFitnessPal.",
+      "t": 1789485229016,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'idea'",
+      "t": 1789485227200,
+      "type": "building"
+    },
+    {
+      "who": "swarm",
+      "text": "new build started (ideating) — niche: real estate, renting & property",
+      "t": 1789485227193,
       "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher returned no usable brief — skipping",
+      "t": 1789485227179,
+      "type": "event"
+    },
+    {
+      "who": "Seven",
+      "text": "We need to output JSON with fields: niche, painPoint, audience, willingnessToPay (high/medium/low), toolIdeas (array 2-4 strings), fullServiceIdeas (array 1-3 strings), keywords (array 4-6 strings), competitors (array 2-4 strings). Must be based on research of AI & automation utilities micro-niche people will pay for. Avoid existing products list (long list). Must identify a niche not already covered. We need to think of a micro-niche within AI automation utilities that is underserved and people will pay. Potential ideas: AI-powered compliance automation for small SaaS (e.g., GDPR/CCPA data …",
+      "t": 1789485226584,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "researcher exploring: AI & automation utilities",
+      "t": 1789485181564,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate → homemate.zip (9694 bytes)",
+      "t": 1789485172298,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "NOT LISTED — failed quality gate: HomeMate (functional=true, score=3) · streak 1",
+      "t": 1789485172265,
+      "type": "listed"
+    },
+    {
+      "who": "swarm",
+      "text": "packaged HomeMate → homemate.zip (9694 bytes)",
+      "t": 1789485171594,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revise-before-reject: repairing HomeMate (critic 3) from feedback",
+      "t": 1789485171568,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "stage 'list' -> HomeMate",
+      "t": 1789485171564,
+      "type": "building"
     }
   ],
   "capabilities": [
@@ -1713,7 +1813,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 21×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 22×"
     },
     {
       "name": "Shared memory",
@@ -1917,11 +2017,11 @@
     }
   ],
   "ledger": {
-    "total": 1278,
+    "total": 1279,
     "revenue": 0,
     "effects": 175,
     "boundary": 1,
-    "artifacts": 108,
+    "artifacts": 109,
     "receipts": 0
   },
   "meeting": {
@@ -1929,11 +2029,8 @@
     "priority": "The current flagship product that has passed initial quality and demand validation criteria"
   },
   "throughput": [
-    1,
     0,
-    0,
-    19,
-    21,
+    14,
     11,
     11,
     14,
@@ -1958,15 +2055,18 @@
     5,
     1,
     0,
-    4
+    4,
+    10,
+    12,
+    16
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.17,
-      0.51
+      0.45,
+      0.31,
+      0.5
     ],
-    "ramPct": 81,
+    "ramPct": 91,
     "cpus": 12
   },
   "brain": {
@@ -1980,7 +2080,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
         "tier": "free"
       },
       "distributor": {
@@ -1996,11 +2096,11 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
         "tier": "free"
       },
       "researcher": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
         "tier": "free"
       },
       "polisher": {
@@ -2020,8 +2120,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "tier": "free"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -2978,9 +3078,9 @@
   ],
   "building": [
     {
-      "name": "HomeMate",
-      "niche": "freelancers & solopreneurs",
-      "stage": "test",
+      "name": "HomeMate Pro",
+      "niche": "real estate, renting & property",
+      "stage": "build",
       "status": "building",
       "url": ""
     }
@@ -3008,8 +3108,8 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 9,
         "vramPct": 77
       },
