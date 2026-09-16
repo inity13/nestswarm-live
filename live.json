@@ -1,5 +1,5 @@
 {
-  "generated": 1789553649299,
+  "generated": 1789553829306,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789553724646,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3307MB free)",
+      "t": 1789553724644,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789553652148,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789553471816,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "keyhunter: attempting qwenai21labs (https://ai21labs.com/signup)",
       "t": 1789548565905,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789548565163,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: fireworksai step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN error.\"}",
-      "t": 1789548562694,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenhuggingface (https://huggingface.co/join)",
-      "t": 1789548562694,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1928,9 +1928,6 @@
     "priority": "AI‑powered resume optimizer for freelancers (the highest‑scoring niche in the vault)."
   },
   "throughput": [
-    1,
-    2,
-    0,
     2,
     1,
     0,
@@ -1957,15 +1954,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.05,
-      0.07
+      0.17,
+      0.17,
+      0.12
     ],
-    "ramPct": 50,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -3060,9 +3060,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 17
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
