@@ -1,5 +1,5 @@
 {
-  "generated": 1789520525810,
+  "generated": 1789520705827,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789520656974,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789520644167,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789520528286,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789520348173,
       "type": "event"
@@ -1640,27 +1658,22 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789513507867,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789513328094,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789520656974,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789513148087,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789512968508,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789520644167,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1934,9 +1947,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1957,15 +1967,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.12,
-      0.18
+      0.28,
+      0.17,
+      0.19
     ],
-    "ramPct": 67,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1979,7 +1992,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -3061,8 +3074,8 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
-        "vramPct": 47
+        "utilPct": 8,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
