@@ -1,5 +1,5 @@
 {
-  "generated": 1789530246970,
+  "generated": 1789530426744,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789530322102,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3258MB free)",
+      "t": 1789530322100,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789530249445,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789530246831,
       "type": "event"
@@ -1640,40 +1658,9 @@
       "text": "registrar: Millo step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789527116036,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 7 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789527115436,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789527112807,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 6 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789527112196,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789530246831,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789530236835,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1942,9 +1929,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1970,15 +1954,18 @@
     0,
     1,
     0,
-    2
+    1,
+    2,
+    2,
+    0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.08,
-      0.1
+      0.23,
+      0.18,
+      0.13
     ],
-    "ramPct": 50,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -3078,9 +3065,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 18
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
