@@ -1,5 +1,5 @@
 {
-  "generated": 1789587856522,
+  "generated": 1789588036311,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789587927611,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2332MB free)",
+      "t": 1789587927609,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789587865684,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789587858937,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789587855685,
       "type": "event"
@@ -1634,40 +1658,9 @@
       "text": "meeting actions taken: focus niche: AI health coaching; polished the weakest product; marketed the top product",
       "t": 1789582114959,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "no product available to polish",
-      "t": 1789582114956,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789582099341,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789582098817,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789581918333,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789587855685,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1940,9 +1933,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1968,15 +1958,18 @@
     0,
     1,
     0,
-    1
+    1,
+    2,
+    2,
+    0
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.19,
-      0.2
+      0.81,
+      0.44,
+      0.3
     ],
-    "ramPct": 64,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -3071,9 +3064,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
