@@ -1,5 +1,5 @@
 {
-  "generated": 1789555989537,
+  "generated": 1789556169531,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789556055802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789556055802,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789556055801,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789556055800,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789556055799,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789556054804,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789556047704,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789555992345,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "distributor: 5/5 channels reachable",
       "t": 1789555903783,
       "type": "launch"
@@ -1610,64 +1658,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789549331493,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789549152112,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789548971848,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789548848415,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789548848415,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789548848414,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789548848413,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789548848413,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789548848412,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789555903783,
-      "type": "launch"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1942,9 +1935,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1964,13 +1954,16 @@
     8,
     1,
     3,
+    0,
+    2,
+    7,
     0
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.32,
-      0.21
+      0.06,
+      0.24,
+      0.2
     ],
     "ramPct": 75,
     "cpus": 12
@@ -1986,7 +1979,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "distributor": {
@@ -2082,12 +2075,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
