@@ -1,5 +1,5 @@
 {
-  "generated": 1789573455427,
+  "generated": 1789573635556,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789573530638,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3249MB free)",
+      "t": 1789573530636,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789573457908,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789573304415,
       "type": "event"
@@ -1628,18 +1646,6 @@
       "text": "registrar: registering Product Hunt (revenue)",
       "t": 1789570737038,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwen step 4 -> {\"action\":\"clickText\",\"text\":\"Try Qwen Studio\"}",
-      "t": 1789570711127,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for critic (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789570710340,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1915,43 +1921,43 @@
   },
   "throughput": [
     1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
     2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    3,
-    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.19,
-      8.21
+      0.1,
+      0.2,
+      6.79
     ],
-    "ramPct": 50,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -3046,9 +3052,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 18
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
