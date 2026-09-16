@@ -1,5 +1,5 @@
 {
-  "generated": 1789537448004,
+  "generated": 1789537627984,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789537528148,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789537518142,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789537450227,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789537270004,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789530846571,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
-      "t": 1789530845581,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789530845128,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789530789285,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1928,44 +1928,44 @@
     "priority": ""
   },
   "throughput": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
     3,
-    2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    2,
-    1,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.11,
-      0.09
+      1.9,
+      0.81,
+      0.36
     ],
-    "ramPct": 49,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -1995,8 +1995,8 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "researcher": {
         "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
@@ -3059,10 +3059,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "utilPct": 16,
+        "vramPct": 76
       },
       {
         "alias": "GPU-Node-2",
