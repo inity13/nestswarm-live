@@ -1,5 +1,5 @@
 {
-  "generated": 1789527726545,
+  "generated": 1789527906699,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: model gemini-flash-latest not found",
+      "t": 1789527889676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: model openai/gpt-oss-120b not found",
+      "t": 1789527889676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 2 fix(es) — model gemini-flash-latest not found; model openai/gpt-oss-120b not found",
+      "t": 1789527889676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789527844860,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789527728665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789527549021,
       "type": "event"
@@ -1586,27 +1616,34 @@
       "text": "registrar: Substack needs email verification — reading inbox",
       "t": 1789526981131,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789526981129,
+      "text": "self-heal: model gemini-flash-latest not found",
+      "t": 1789527889676,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: cohere step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789526980563,
+      "text": "self-heal: model openai/gpt-oss-120b not found",
+      "t": 1789527889676,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789526978326,
+      "text": "self-heal complete: 2 fix(es) — model gemini-flash-latest not found; model openai/gpt-oss-120b not found",
+      "t": 1789527889676,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789527844860,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1882,9 +1919,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     17,
     25,
@@ -1903,13 +1937,16 @@
     12,
     7,
     0,
-    2
+    2,
+    1,
+    1,
+    4
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.62,
-      0.78
+      0.11,
+      0.42,
+      0.68
     ],
     "ramPct": 74,
     "cpus": 12
