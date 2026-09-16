@@ -1,5 +1,5 @@
 {
-  "generated": 1789555809471,
+  "generated": 1789555989537,
   "status": "running",
   "stats": {
     "products": 184,
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Absolutely, everyone has valid points. We need to stop churning raw product counts and foc",
-        "t": 1789548578930
+        "text": "Explain why: Gumroad isGumroad is ideal for launching MnemonicMate because it offers a str",
+        "t": 1789555887865
       }
     },
     {
@@ -337,6 +337,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "Explain why: Gumroad isGumroad is ideal for launching MnemonicMate because it offers a straightforward, user-friendly platform with built-in analytics that helps track sales and subscriptions. Additionally, Gumroad supports one-time purchases and recurring payments, making it suitable for both freemium and subscription-based models like MnemonicMate's AI and automation utilities. PrivyGuard would be best suited for Lemon Squeezy, as its advanced security features and compliance options align well with the privacy-focused nature of PrivyGuard. Lemon Squeezy also offers a wide range of pricing …",
+      "t": 1789555887865,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: AI‑powered resume optimizer for freelancers; marketed the top product",
@@ -1169,16 +1176,27 @@
       "t": 1789527560019,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "LaForge",
-      "text": "As LaForge, my stance is clear: nothing is done until it is published and generating revenue for the Swarm Protector. We need to focus on one flagship product that meets a real-world need, with exceptional quality and marketing that attracts paying customers. To improve, the team must prioritize identifying and launching a single product that excels, rather than continuing to build multiple products without clear direction or market validation. The current approach is unsustainable, and we risk wasting resources on projects that may never see the light of day. Let’s pick one, polish it until …",
-      "t": 1789527559667,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789555903783,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
+      "t": 1789555883793,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789555811812,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
@@ -1640,74 +1658,14 @@
       "text": "self-heal: already disabled: mistral (no-op)",
       "t": 1789548848412,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789548847266,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789548801345,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3286MB free)",
-      "t": 1789548801343,
-      "type": "bench"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
-      "t": 1789555808198,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789555808198,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789555808198,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1789555806671,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789555795403,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789555791384,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789555730132,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789555720133,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789555903783,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1987,9 +1945,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -2006,15 +1961,18 @@
     0,
     1,
     2,
-    8
+    8,
+    1,
+    3,
+    0
   ],
   "load": {
     "loadavg": [
-      0.77,
-      0.41,
-      0.22
+      0.2,
+      0.32,
+      0.21
     ],
-    "ramPct": 61,
+    "ramPct": 75,
     "cpus": 12
   },
   "brain": {
@@ -2032,7 +1990,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "github_researcher": {
@@ -3115,7 +3073,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 0,
+        "utilPct": 10,
         "vramPct": 79
       },
       {
@@ -3131,10 +3089,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 94
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
+        "vramPct": 80
       }
     ],
     "selfHostedInferencePct": 80,
