@@ -1,5 +1,5 @@
 {
-  "generated": 1789537627984,
+  "generated": 1789537807997,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789537630544,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789537528148,
       "type": "event"
@@ -1652,12 +1658,6 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789530846572,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789530846571,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1937,9 +1937,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     2,
     1,
     0,
@@ -1957,15 +1954,18 @@
     0,
     2,
     3,
-    0
+    0,
+    4,
+    1,
+    1
   ],
   "load": {
     "loadavg": [
-      1.9,
-      0.81,
-      0.36
+      1.6,
+      1.12,
+      0.56
     ],
-    "ramPct": 51,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -2003,11 +2003,11 @@
         "tier": "free"
       },
       "polisher": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2019,8 +2019,8 @@
         "tier": "local"
       },
       "critic": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "marketer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3059,10 +3059,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 16,
-        "vramPct": 76
+        "utilPct": 0,
+        "vramPct": 17
       },
       {
         "alias": "GPU-Node-2",
