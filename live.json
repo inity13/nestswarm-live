@@ -1,5 +1,5 @@
 {
-  "generated": 1789599197201,
+  "generated": 1789599377182,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789599199699,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
       "t": 1789599082929,
       "type": "event"
@@ -1652,12 +1658,6 @@
       "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789592781870,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789592780945,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1936,9 +1936,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1961,15 +1958,18 @@
     0,
     2,
     1,
+    0,
+    2,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.17,
       0.23,
+      0.22,
       0.18
     ],
-    "ramPct": 72,
+    "ramPct": 68,
     "cpus": 12
   },
   "brain": {
@@ -1983,8 +1983,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "tier": "free"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3070,7 +3070,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 8,
+        "utilPct": 10,
         "vramPct": 47
       },
       {
@@ -3092,7 +3092,7 @@
         "vramPct": 91
       }
     ],
-    "selfHostedInferencePct": 82,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 202
   }
 }
