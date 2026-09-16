@@ -1,5 +1,5 @@
 {
-  "generated": 1789562830476,
+  "generated": 1789563010668,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,78 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789563001040,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 4 operational improvement(s) recommended",
+      "t": 1789562834893,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789562834851,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: revenue-signal-tracking",
+      "t": 1789562834748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor removed finops (No demonstrated value and operational overhead)",
+      "t": 1789562834748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-first-build-gate",
+      "t": 1789562834748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill stripe-owner-onboarding",
+      "t": 1789562834748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill revenue-signal-tracking",
+      "t": 1789562834748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: stripe-owner-onboarding",
+      "t": 1789562834746,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-first-build-gate",
+      "t": 1789562834744,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789562834741,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789562832911,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789562724911,
       "type": "bench"
@@ -1586,81 +1658,16 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789556172152,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789556055802,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789556055802,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789556055801,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789556055800,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789556055799,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789556054804,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789556047704,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789555992345,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789555903783,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789555883793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789555811812,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
-      "t": 1789555808198,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789563001040,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1804,7 +1811,7 @@
     },
     {
       "name": "stripe-owner-onboarding",
-      "desc": "Guides owner through providing Stripe keys or approving MoR fallback"
+      "desc": "Guides owner through providing Stripe keys or approving MoR fallback."
     },
     {
       "name": "stripe-sandbox-checkout",
@@ -1913,6 +1920,10 @@
     {
       "name": "stripe-live-readiness-validation",
       "desc": "Ensures the swarm can move from sandbox to live Stripe checkout."
+    },
+    {
+      "name": "revenue-signal-tracking",
+      "desc": "Track listed products by revenue signal, not only critic score."
     }
   ],
   "ledger": {
@@ -1930,9 +1941,6 @@
   "throughput": [
     1,
     0,
-    2,
-    1,
-    0,
     0,
     1,
     0,
@@ -1957,15 +1965,18 @@
     0,
     2,
     2,
-    0
+    0,
+    12,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.21,
-      0.18
+      0.22,
+      0.26,
+      0.2
     ],
-    "ramPct": 74,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -3066,7 +3077,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 11,
+        "utilPct": 9,
         "vramPct": 49
       },
       {
@@ -3082,8 +3093,8 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 0,
         "vramPct": 94
       }
