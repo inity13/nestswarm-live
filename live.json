@@ -1,5 +1,5 @@
 {
-  "generated": 1789569851307,
+  "generated": 1789570031421,
   "status": "running",
   "stats": {
     "products": 184,
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Worf reports that our systems show several critical vulnerabilities across various product",
-        "t": 1789559661892
+        "text": "**Security Assessment for MTN1 Build (pmtn1ex5zetvr)** **Real Risks Ranked by Severity:** ",
+        "t": 1789569907100
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I agree we need to stop the 184‑product flood and focus on a single flagship; the next cri",
-        "t": 1789559662245
+        "text": "Explain why: 1) Gumroad: ready account, checkout, digitalGumroad: ready account, checkout,",
+        "t": 1789569991534
       }
     },
     {
@@ -337,6 +337,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "Explain why: 1) Gumroad: ready account, checkout, digitalGumroad: ready account, checkout, digital 2) dev.to: strong community presence, easy to set up, organic reach 3) Product Hunt: high visibility for new products, potential viral launch These channels offer a combination of immediate results through Gumroad's direct sales platform, long-term engagement through the dev.to developer community, and broader exposure through Product Hunt.",
+      "t": 1789569991534,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build (pmtn1ex5zetvr)** **Real Risks Ranked by Severity:** 1. **XSS Risk from InnerHTML Assignment** - **Severity:** High - **Description:** The use of `innerHTML` without proper sanitization exposes the application to Cross-Site Scripting (XSS) attacks. - **Fix:** Implement a robust sanitization function or library to escape any user-provided input before assigning it to `innerHTML`. 2. **Unsafe Dependency** - **Severity:** Medium - **Description:** The build uses an unsafe dependency that could be exploited by attackers. - **Fix:** Update the dependency to its …",
+      "t": 1789569907100,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
@@ -1162,23 +1176,123 @@
       "t": 1789538201539,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "As Demand Validator Aric, I believe that understanding customer intent and willingness to pay is crucial before proceeding with any product builds. We need to conduct more thorough market research and focus groups to pinpoint our target audience and the features they are most interested in. To address this, I propose that we allocate 20% of our next sprint to conducting detailed market research and creating buyer personas. This will help us make informed decisions about which products to develop and how to price them effectively. Let's do this right.",
-      "t": 1789538201187,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "Recovery Engineer K'Vor: I see a critical need for an audit of our current toolchain to identify and mitigate vulnerabilities. We cannot afford to overlook security at this stage. Demand: The team must conduct a comprehensive security audit and prioritize fixing any identified issues before moving forward with new product development or scaling existing offerings.",
-      "t": 1789538200834,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789570004895,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789569972412,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2010MB free)",
+      "t": 1789569972411,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/91 channels active · 0 new discovered",
+      "t": 1789569963173,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789569936127,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789569932991,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, openrouter) · 0 zen free models",
+      "t": 1789569923397,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: 4 eligible task card(s) (Algora)",
+      "t": 1789569917674,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai/gpt-oss-120b failed for researcher (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6718, Requested 2770. Please try again in 11.16s. Need more tokens? Upgrade to Dev Tier today at https://cons)",
+      "t": 1789569896929,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789569893638,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 108m ago) — skip",
+      "t": 1789569893638,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting ai21labs (https://ai21labs.com/signup)",
+      "t": 1789569893638,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 108m ago) — skip",
+      "t": 1789569893637,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789569892477,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 108m ago) — skip",
+      "t": 1789569892473,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 108m ago) — skip",
+      "t": 1789569892473,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789569892473,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 180 products with flags, 1 with high-severity findings",
+      "t": 1789569892449,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789569853850,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
@@ -1544,123 +1658,41 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789563733575,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789563553004,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider groq; disabled provider nvidia; disabled provider openrouter; disabled provider gemini",
-      "t": 1789563429475,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789563429472,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789563429471,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789563429471,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789563429470,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (The operation was aborted due to timeout)",
-      "t": 1789563428478,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789563373225,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789563248446,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789563193403,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789563013232,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789563011048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789563001040,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 4 operational improvement(s) recommended",
-      "t": 1789562834893,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789562834851,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: revenue-signal-tracking",
-      "t": 1789562834748,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor removed finops (No demonstrated value and operational overhead)",
-      "t": 1789562834748,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-first-build-gate",
-      "t": 1789562834748,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill stripe-owner-onboarding",
-      "t": 1789562834748,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789570004895,
+      "type": "launch"
+    },
+    {
+      "who": "LaForge",
+      "text": "Explain why: 1) Gumroad: ready account, checkout, digitalGumroad: ready account, checkout, digital 2) dev.to: strong community presence, easy to set up, organic reach 3) Product Hunt: high visibility for new products, potential viral launch These channels offer a combination of immediate results through Gumroad's direct sales platform, long-term engagement through the dev.to developer community, and broader exposure through Product Hunt.",
+      "t": 1789569991534,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789569972412,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2010MB free)",
+      "t": 1789569972411,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/91 channels active · 0 new discovered",
+      "t": 1789569963173,
+      "type": "scout"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1708,7 +1740,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 26×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 27×"
     },
     {
       "name": "Shared memory",
@@ -1920,7 +1952,7 @@
     }
   ],
   "ledger": {
-    "total": 1305,
+    "total": 1314,
     "revenue": 0,
     "effects": 178,
     "boundary": 1,
@@ -1933,9 +1965,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     2,
@@ -1961,21 +1990,24 @@
     0,
     1,
     0,
-    0
+    0,
+    18,
+    9,
+    4
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.2,
-      0.19
+      0.93,
+      0.61,
+      0.36
     ],
-    "ramPct": 62,
+    "ramPct": 80,
     "cpus": 12
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -1991,7 +2023,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
@@ -2003,7 +2035,7 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "polisher": {
@@ -2079,7 +2111,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3064,9 +3101,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 17
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -3081,10 +3118,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 2
+        "utilPct": 8,
+        "vramPct": 93
       }
     ],
     "selfHostedInferencePct": 81,
