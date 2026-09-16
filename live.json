@@ -1,5 +1,5 @@
 {
-  "generated": 1789591456468,
+  "generated": 1789591636493,
   "status": "running",
   "stats": {
     "products": 184,
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "**Security Sentinel Worf:** You're all right that we need to stop churning out generic hea",
-        "t": 1789581794514
+        "text": "**Security Assessment:** 1. **XSS Risk (High Severity):** - **Risk:** The innerHTML assign",
+        "t": 1789591507739
       }
     },
     {
@@ -337,6 +337,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment:** 1. **XSS Risk (High Severity):** - **Risk:** The innerHTML assignment in MTN1 is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. - **Fix:** Implement proper sanitization of all user inputs before assigning them to innerHTML. 2. **Child Process Creation (Medium Severity):** - **Risk:** Spawning child processes can lead to resource leaks and potential security vulnerabilities if not managed correctly. - **Fix:** Ensure that all child processes are properly managed, with mechanisms in place for graceful termination and error handling. 3. …",
+      "t": 1789591507739,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "**Gumroad** – Fast, low‑friction checkout with built‑in analytics; it’s already seeded in the swarm’s accounts and supports the $19.99‑$99 price range perfectly. **Product Hunt** – Immediate visibility to early‑adopter tech buyers who love new tools; a single launch post can drive a surge of trial sign‑ups and feedback loops. **dev.to** – A developer‑centric community where we can publish tutorials, use‑case stories, andpublish tutorials, use-case stories, and share exclusive offers to attract developers interested in automation, security, events, operations, travel planning, and remote work …",
@@ -1169,16 +1176,117 @@
       "t": 1789559658367,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "payment-gateway-integration",
-      "text": "As the Payment Gateway Integration Specialist (Gates), I see a critical need for our swarm to focus on delivering a seamless and secure payment experience. The current chaos in output must give way to a single flagship product that can handle all major payment gateways with ease. The team must prioritize building out a robust, user-friendly payment system that not only integrates seamlessly but also handles high-volume transactions efficiently. This requires a dedicated effort to streamline the process and ensure reliability before expanding our portfolio further.",
-      "t": 1789559658016,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789591597338,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2194MB free)",
+      "t": 1789591597337,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789591558428,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789591532969,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789591505953,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789591504497,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789591495952,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 113m ago) — skip",
+      "t": 1789591494854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789591494854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 113m ago) — skip",
+      "t": 1789591494854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting ai21labs (https://ai21labs.com/signup)",
+      "t": 1789591494854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: no candidates found",
+      "t": 1789591494572,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789591493622,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 113m ago) — skip",
+      "t": 1789591493619,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 113m ago) — skip",
+      "t": 1789591493619,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789591493619,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 180 products with flags, 1 with high-severity findings",
+      "t": 1789591493595,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789591458816,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
@@ -1550,117 +1658,28 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789585125590,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789591597338,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789584978532,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2194MB free)",
+      "t": 1789591597337,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789584799890,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789584687516,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789584687515,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789584687515,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789584687514,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789584687513,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789584686629,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789584675131,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789584618694,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 2 operational improvement(s) recommended",
-      "t": 1789584618655,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
-      "t": 1789584618542,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789584618542,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789584618542,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/91 channels active · 0 new discovered",
-      "t": 1789584615972,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "node nest-node-5090 failed (fetch failed) — trying nest-node-core",
-      "t": 1789584604159,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789584594122,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789584594121,
+      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789591558428,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1708,7 +1727,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 27×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 28×"
     },
     {
       "name": "Shared memory",
@@ -1932,9 +1951,6 @@
     "priority": "a premium, subscription-based AI coaching platform"
   },
   "throughput": [
-    3,
-    2,
-    0,
     1,
     0,
     0,
@@ -1961,15 +1977,18 @@
     0,
     1,
     0,
-    0
+    0,
+    18,
+    4,
+    2
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.16,
-      0.17
+      0.73,
+      0.56,
+      0.33
     ],
-    "ramPct": 60,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -1987,7 +2006,7 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -1999,7 +2018,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -2011,7 +2030,7 @@
         "tier": "local"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
@@ -2079,7 +2098,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3064,9 +3088,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -3081,10 +3105,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 0
+        "utilPct": 6,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 81,
