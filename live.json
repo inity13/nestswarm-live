@@ -1,5 +1,5 @@
 {
-  "generated": 1789577055668,
+  "generated": 1789577235799,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789577128206,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3182MB free)",
+      "t": 1789577128205,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789577100038,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789577058185,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789576944772,
       "type": "event"
@@ -1634,30 +1658,6 @@
       "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Allow all\"}",
       "t": 1789570903536,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789570887316,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789570863043,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Allow all\"}",
-      "t": 1789570862328,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789570823300,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1933,9 +1933,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1961,15 +1958,18 @@
     0,
     2,
     1,
+    0,
+    2,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.08,
+      0.12,
+      0.14,
       0.26
     ],
-    "ramPct": 51,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -2079,7 +2079,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3064,9 +3069,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -3081,10 +3086,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 0
+        "utilPct": 3,
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 81,
