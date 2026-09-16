@@ -1,5 +1,5 @@
 {
-  "generated": 1789584256255,
+  "generated": 1789584436237,
   "status": "running",
   "stats": {
     "products": 184,
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Everyone is right that we must stop splashing around and commit to a single, subscription‑",
-        "t": 1789581794866
+        "text": "**Gumroad** – Fast, low‑friction checkout with built‑in analytics; it’s already seeded in ",
+        "t": 1789584344991
       }
     },
     {
@@ -337,6 +337,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "**Gumroad** – Fast, low‑friction checkout with built‑in analytics; it’s already seeded in the swarm’s accounts and supports the $19.99‑$99 price range perfectly. **Product Hunt** – Immediate visibility to early‑adopter tech buyers who love new tools; a single launch post can drive a surge of trial sign‑ups and feedback loops. **dev.to** – A developer‑centric community where we can publish tutorials, use‑case stories, andpublish tutorials, use-case stories, and share exclusive offers to attract developers interested in automation, security, events, operations, travel planning, and remote work …",
+      "t": 1789584344991,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: AI health coaching; polished the weakest product; marketed the top product",
@@ -1169,16 +1176,45 @@
       "t": 1789559658016,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "go-toolchain-installer",
-      "text": "I’m the go‑toolchain installer, and I see the swarm’s energy split across 184 unfinished projects like a fragmented network of unfinished circuits; our build nodes are under‑utilized and constantly re‑configuring for each half‑finished idea. I demand we lock the entire team onto a single flagship product, commit to a fully automated, reproducible CI/CD pipeline that provisions the Go toolchain once per environment, and use that pipeline to deliver a working checkout for that flagship before any new idea is pursued.",
-      "t": 1789559657663,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789584383143,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2599MB free)",
+      "t": 1789584383141,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789584360843,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789584319488,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789584302614,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789584258612,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
@@ -1622,56 +1658,26 @@
       "text": "self-heal: disabled provider groq",
       "t": 1789577480511,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789577479494,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789577475002,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789577419226,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 operational improvement(s) recommended",
-      "t": 1789577408415,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
-      "t": 1789577408304,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789577408304,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789584225492,
-      "type": "event"
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789584383143,
+      "type": "bench"
     },
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789584215492,
-      "type": "event"
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2599MB free)",
+      "t": 1789584383141,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789584360843,
+      "type": "launch"
     }
   ],
   "capabilities": [
@@ -1946,9 +1952,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1974,15 +1977,18 @@
     0,
     1,
     0,
+    2,
+    2,
+    4,
     2
   ],
   "load": {
     "loadavg": [
-      0.15,
-      0.08,
-      0.08
+      0.88,
+      0.49,
+      0.24
     ],
-    "ramPct": 50,
+    "ramPct": 70,
     "cpus": 12
   },
   "brain": {
@@ -2092,7 +2098,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3077,9 +3088,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 7,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
@@ -3094,10 +3105,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 0
+        "vramPct": 91
       }
     ],
     "selfHostedInferencePct": 81,
