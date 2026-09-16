@@ -1,5 +1,5 @@
 {
-  "generated": 1789531326861,
+  "generated": 1789531506873,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789531458877,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789531445205,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789531329288,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789531156963,
       "type": "event"
@@ -1640,27 +1658,22 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789527188867,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: elevenlabs step 1 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789527170090,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789531458877,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: elevenlabs step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up\"}",
-      "t": 1789527167990,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Paddle (revenue)",
-      "t": 1789527155710,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789531445205,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1936,9 +1949,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     1,
     2,
@@ -1957,15 +1967,18 @@
     0,
     3,
     0,
-    0
+    0,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.07,
-      0.08
+      0.17,
+      0.13,
+      0.1
     ],
-    "ramPct": 59,
+    "ramPct": 58,
     "cpus": 12
   },
   "brain": {
@@ -1979,7 +1992,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -3062,7 +3075,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 9,
-        "vramPct": 49
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
@@ -3083,7 +3096,7 @@
         "vramPct": 3
       }
     ],
-    "selfHostedInferencePct": 81,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 202
   }
 }
