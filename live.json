@@ -1,5 +1,5 @@
 {
-  "generated": 1789616168665,
+  "generated": 1789616172670,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "keyhunter: elevenlabs entering verification code from inbox",
+      "t": 1789616171648,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789616169321,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for go-toolchain-installer (The operation was aborted due to timeout) — falling to external/free",
+      "t": 1789616168889,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "registrar: Millo needs email verification — reading inbox",
       "t": 1789613697645,
       "type": "event"
@@ -1640,27 +1658,28 @@
       "text": "conductor: team is well-sized — no changes",
       "t": 1789613115985,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789613115985,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for architect (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
-      "t": 1789613108964,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789613100763,
-      "type": "scout"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: elevenlabs entering verification code from inbox",
+      "t": 1789616171648,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789616169321,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for go-toolchain-installer (The operation was aborted due to timeout) — falling to external/free",
+      "t": 1789616168889,
+      "type": "event"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1961,15 +1980,15 @@
     0,
     0,
     0,
-    0
+    4
   ],
   "load": {
     "loadavg": [
-      194.17,
-      193.86,
-      171.83
+      179.27,
+      190.77,
+      170.95
     ],
-    "ramPct": 88,
+    "ramPct": 77,
     "cpus": 12
   },
   "brain": {
@@ -2067,7 +2086,7 @@
         "tier": "local"
       },
       "go-toolchain-installer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "payment-gateway-integration": {
