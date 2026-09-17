@@ -1,5 +1,5 @@
 {
-  "generated": 1789623910390,
+  "generated": 1789624090430,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1182,6 +1182,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789623913207,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789623732948,
       "type": "event"
     },
@@ -1652,12 +1658,6 @@
       "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
       "t": 1789616769953,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789616769952,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1936,9 +1936,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1961,15 +1958,18 @@
     0,
     1,
     0,
-    1
+    1,
+    6,
+    15,
+    7
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.13,
-      0.15
+      2.2,
+      1.08,
+      0.52
     ],
-    "ramPct": 58,
+    "ramPct": 50,
     "cpus": 12
   },
   "brain": {
@@ -1999,19 +1999,19 @@
         "tier": "local"
       },
       "architect": {
-        "model": "gemini-flash-latest",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "polisher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2023,7 +2023,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -3063,10 +3063,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 10,
-        "vramPct": 16
+        "utilPct": 69,
+        "vramPct": 78
       },
       {
         "alias": "GPU-Node-2",
