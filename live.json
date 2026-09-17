@@ -1,5 +1,5 @@
 {
-  "generated": 1789620129980,
+  "generated": 1789620309848,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789620309480,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789620309375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789620309375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789620309375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789620300863,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789620132450,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789619952180,
       "type": "event"
@@ -1622,45 +1658,40 @@
       "text": "registrar: Paddle needs email verification — reading inbox",
       "t": 1789616299434,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789616299433,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789616297231,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs needs email verification — reading inbox",
-      "t": 1789616294247,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789616294222,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789616293944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789616292137,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789620309480,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789620309375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789620309375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789620309375,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789620300863,
+      "type": "scout"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1938,9 +1969,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1961,13 +1989,16 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.21,
-      2.56
+      0.45,
+      0.25,
+      2.15
     ],
     "ramPct": 61,
     "cpus": 12
@@ -1983,7 +2014,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -2079,7 +2110,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3063,10 +3099,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 10,
-        "vramPct": 47
+        "busy": true,
+        "warm": false,
+        "utilPct": 52,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
