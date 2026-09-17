@@ -1,5 +1,5 @@
 {
-  "generated": 1789643174051,
+  "generated": 1789643354125,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789643207807,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (1972MB free)",
+      "t": 1789643207806,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789643176572,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789642996350,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789636335012,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789636201933,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789636191935,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789636155467,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1932,9 +1932,6 @@
     "priority": ""
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     2,
     0,
@@ -1961,15 +1958,18 @@
     0,
     1,
     0,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.22,
-      0.19
+      0.29,
+      0.37,
+      0.26
     ],
-    "ramPct": 66,
+    "ramPct": 74,
     "cpus": 12
   },
   "brain": {
@@ -3070,9 +3070,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 9,
-        "vramPct": 17
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
