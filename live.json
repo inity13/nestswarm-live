@@ -1,5 +1,5 @@
 {
-  "generated": 1789688162911,
+  "generated": 1789688343118,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789688212690,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (1880MB free)",
+      "t": 1789688212687,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789688182966,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789688172966,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789688165597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789687985370,
       "type": "event"
@@ -1637,36 +1667,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789681324421,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789681144944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789681013247,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3084MB free)",
-      "t": 1789681013246,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789680964887,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789680902162,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1941,9 +1941,6 @@
     "priority": "Task‑automation web app for freelancers (single‑file Node.js solution)"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1970,15 +1967,18 @@
     0,
     1,
     0,
+    0,
+    5,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.19,
-      0.23,
-      0.19
+      0.27,
+      0.36,
+      0.26
     ],
-    "ramPct": 65,
+    "ramPct": 76,
     "cpus": 12
   },
   "brain": {
@@ -3097,9 +3097,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 16
+        "warm": true,
+        "utilPct": 9,
+        "vramPct": 48
       },
       {
         "alias": "GPU-Node-2",
