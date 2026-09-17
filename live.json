@@ -1,5 +1,5 @@
 {
-  "generated": 1789664379196,
+  "generated": 1789664559274,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789664518695,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789664508697,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789664417847,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789664416541,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789664381583,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789664201756,
       "type": "event"
@@ -1628,39 +1658,22 @@
       "text": "keyhunter: qwenai21labs entering verification code from inbox",
       "t": 1789657682471,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs needs email verification — reading inbox",
-      "t": 1789657659105,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789664518695,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789657659059,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789657657032,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789657654829,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789657653136,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789664508697,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1933,9 +1946,6 @@
   },
   "throughput": [
     1,
-    2,
-    0,
-    1,
     0,
     0,
     1,
@@ -1961,15 +1971,18 @@
     0,
     1,
     0,
-    0
+    0,
+    4,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      0,
-      0.02,
-      0.13
+      0.31,
+      0.17,
+      0.17
     ],
-    "ramPct": 62,
+    "ramPct": 63,
     "cpus": 12
   },
   "brain": {
@@ -1983,7 +1996,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
