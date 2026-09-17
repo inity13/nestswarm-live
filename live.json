@@ -1,5 +1,5 @@
 {
-  "generated": 1789639573531,
+  "generated": 1789639753610,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789639612725,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3161MB free)",
+      "t": 1789639612719,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789639576128,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789639395710,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "keyhunter: cohere step 8 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
       "t": 1789634786654,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789634784856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 7 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789634784268,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 7 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789634782558,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1932,44 +1932,44 @@
     "priority": ""
   },
   "throughput": [
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
     3,
-    0,
-    0,
-    2,
-    1,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
     0,
     0
   ],
   "load": {
     "loadavg": [
-      0.13,
-      0.08,
-      0.08
+      0.19,
+      0.23,
+      0.15
     ],
-    "ramPct": 53,
+    "ramPct": 60,
     "cpus": 12
   },
   "brain": {
@@ -3064,9 +3064,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
