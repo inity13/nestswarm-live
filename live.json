@@ -1,5 +1,5 @@
 {
-  "generated": 1789637773151,
+  "generated": 1789637953185,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789637808669,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2989MB free)",
+      "t": 1789637808668,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789637775737,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789637595248,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789634772511,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in\"}",
-      "t": 1789634771740,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789634771481,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1789634771477,
-      "type": "vault"
     }
   ],
   "recent": [],
@@ -1935,9 +1935,6 @@
     3,
     0,
     0,
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1960,16 +1957,19 @@
     0,
     0,
     1,
+    0,
+    0,
+    3,
     0,
     0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.06,
-      0.1
+      0.52,
+      0.33,
+      0.2
     ],
-    "ramPct": 54,
+    "ramPct": 61,
     "cpus": 12
   },
   "brain": {
@@ -3064,9 +3064,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 17
+        "warm": true,
+        "utilPct": 11,
+        "vramPct": 49
       },
       {
         "alias": "GPU-Node-2",
