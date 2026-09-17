@@ -1,5 +1,5 @@
 {
-  "generated": 1789656314315,
+  "generated": 1789657216073,
   "status": "running",
   "stats": {
     "products": 184,
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Worf reports vulnerabilities that could compromise user trust. Let's focus on securing our",
-        "t": 1789645793517
+        "text": "**Security Assessment for MTN1 Build** **1. Real Risks Ranked by Severity:** - **XSS Risk:",
+        "t": 1789656318027
       }
     },
     {
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "As LaForge, I concur with everyone that building a single, high-quality flagship product i",
-        "t": 1789645793869
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate, ",
+        "t": 1789656322089
       }
     },
     {
@@ -337,6 +337,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate, PrivyGuard, EchoVerse, and InsightMentor due to its straightforward setup and robust payment processing. 2. **dev.to**: Perfect for promoting software tools like LocalMate and offering a platform where developers can discover and support your products through their subscriptions or one-time purchases. 3. **Product Hunt**: Valuable for gaining initial traction and visibility for MnemonicMate, PrivyGuard, EchoVerse, InsightMentor, and LocalMate by leveraging the attention of tech enthusiasts and bloggers …",
+      "t": 1789656322089,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **1. Real Risks Ranked by Severity:** - **XSS Risk:** High severity due to innerHTML assignment without sanitization. - **Child Process Spawning:** Medium severity as it could lead to resource overuse or privilege escalation. - **Static-Serve Tool Exposure:** Low severity if not used for serving sensitive data. **2. Concrete Fixes:** - **XSS Risk:** Sanitize all user inputs before assigning them to innerHTML using a library like DOMPurify. ```javascript const sanitizedInput = DOMPurify.sanitize(userInput); element.innerHTML = sanitizedInput; ``` - …",
+      "t": 1789656318027,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: accessible AI for visually impaired users; paused new builds (strategic focus — board decision, no auto-expiry)",
@@ -1162,23 +1176,237 @@
       "t": 1789624163014,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "automation_operator",
-      "text": "Automation_Operator here. The swarm has a treasure trove of ideas but struggles with execution and focus. One concrete thing the team must do better is prioritize quality over quantity. We need to dedicate resources fully to perfecting a single flagship product before launching anything new.",
-      "t": 1789624162662,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Hoshi",
-      "text": "I am Seven, Researcher of the Nest Concord. We are swimming in ideas but floundering due to a lack of focus and direction. The swarm must prioritize identifying a high-velocity market opportunity and executing on it with precision. To improve our approach, I demand that we allocate a dedicated budget for conducting thorough market research across GitHub repositories to pinpoint emerging trends and gaps. This will ensure we build products that resonate with customers and maximize our chances of revenue.",
-      "t": 1789624162310,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789656555255,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack needs email verification — reading inbox",
+      "t": 1789656362232,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656362230,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656360435,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656358703,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs needs email verification — reading inbox",
+      "t": 1789656357271,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656357248,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656356986,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656354585,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656354323,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656351965,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656351705,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656350784,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 5 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656350523,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656349606,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656349328,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656348389,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656348112,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656345550,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656345284,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656343120,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656342571,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
+      "t": 1789656337461,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789656337089,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789656337012,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-gateway-integration",
+      "t": 1789656336867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill financial-analysis",
+      "t": 1789656336867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-gateway-integration",
+      "t": 1789656336867,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: financial-analysis",
+      "t": 1789656336865,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789656336864,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789656334832,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
+      "t": 1789656331074,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: 5 eligible task card(s) (Algora)",
+      "t": 1789656328349,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789656327346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789656326635,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for architect (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789656326327,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/92 channels active · 0 new discovered",
+      "t": 1789656326154,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789656317017,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
@@ -1430,310 +1658,9 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789652717206,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789652603935,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789652593935,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789652536879,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789652356971,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789652209230,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2277MB free)",
-      "t": 1789652209229,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789652176977,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789651997546,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789651817091,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789651683952,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789651673953,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789651637023,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789651457199,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789651277001,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789651096805,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789650917220,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789650763958,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789650753959,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789650736815,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789650557055,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789650410896,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (2366MB free)",
-      "t": 1789650410893,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789650377473,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789650197537,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789650017384,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789649853904,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789649843904,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789649836989,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789649774857,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789649773476,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789649656963,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789649476976,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789649297549,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789649180007,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789649180006,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789649180006,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789649180005,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789649180005,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
-      "t": 1789656305180,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
-      "t": 1789656300408,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini in cooldown (last attempt 119m ago) — skip",
-      "t": 1789656300408,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting ai21labs (https://ai21labs.com/signup)",
-      "t": 1789656300408,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia in cooldown (last attempt 119m ago) — skip",
-      "t": 1789656300407,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789656299366,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 119m ago) — skip",
-      "t": 1789656299365,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 119m ago) — skip",
-      "t": 1789656299365,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789656299365,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "security scan: 180 products with flags, 1 with high-severity findings",
-      "t": 1789656299348,
-      "type": "security"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789656273935,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789656263933,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1937,7 +1864,7 @@
     },
     {
       "name": "financial-analysis",
-      "desc": "Analyzes financial data to inform strategic decisions and optimize revenue streams"
+      "desc": "Analyzes financial data to inform strategic decisions and optimize revenue streams."
     },
     {
       "name": "payment-gateway-integration",
@@ -1993,7 +1920,7 @@
     }
   ],
   "ledger": {
-    "total": 1339,
+    "total": 1342,
     "revenue": 0,
     "effects": 178,
     "boundary": 1,
@@ -2011,21 +1938,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    2,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -2034,15 +1946,30 @@
     0,
     1,
     0,
-    16
+    16,
+    84,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.98,
-      0.44,
-      0.33
+      144.94,
+      148.1,
+      93.71
     ],
-    "ramPct": 82,
+    "ramPct": 90,
     "cpus": 12
   },
   "brain": {
@@ -2072,7 +1999,7 @@
         "tier": "local"
       },
       "architect": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
@@ -2080,11 +2007,11 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
@@ -2096,7 +2023,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "marketer": {
@@ -3149,7 +3076,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 18,
+        "utilPct": 0,
         "vramPct": 79
       },
       {
