@@ -1,5 +1,5 @@
 {
-  "generated": 1789648934384,
+  "generated": 1789649114349,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789649114213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789649114108,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789649114108,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789649114107,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789648943829,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789648936953,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789648933827,
       "type": "event"
@@ -1622,49 +1658,31 @@
       "text": "conductor created skill stripe-live-readiness-validation",
       "t": 1789641930672,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: stripe-live-readiness-validation",
-      "t": 1789641930671,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments.",
-      "t": 1789641930664,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789641929312,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1789641925563,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/92 channels active · 1 new discovered",
-      "t": 1789641921345,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue: queued OpenCollective with Global Reach for account acquisition",
-      "t": 1789641921344,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789648933827,
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789649114213,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789649114108,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789649114108,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789649114107,
       "type": "event"
     }
   ],
@@ -1950,9 +1968,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     1,
     0,
@@ -1968,15 +1983,18 @@
     0,
     1,
     0,
-    1
+    1,
+    2,
+    0,
+    5
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.32,
-      0.32
+      0.43,
+      0.3,
+      0.3
     ],
-    "ramPct": 73,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -2086,7 +2104,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3076,10 +3097,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 49
+        "busy": true,
+        "warm": false,
+        "utilPct": 89,
+        "vramPct": 79
       },
       {
         "alias": "GPU-Node-2",
