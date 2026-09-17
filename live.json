@@ -1,5 +1,5 @@
 {
-  "generated": 1789605857714,
+  "generated": 1789606037757,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789605944465,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2515MB free)",
+      "t": 1789605944464,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789605908278,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789605908169,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789605908169,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789605908169,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789605897534,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789605860352,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789605680356,
       "type": "event"
@@ -1610,54 +1658,6 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789598776657,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 3 optimizations",
-      "t": 1789598737588,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/91 channels active · 0 new discovered",
-      "t": 1789598730543,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789598725914,
-      "type": "launch"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 operational improvement(s) recommended",
-      "t": 1789598714535,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
-      "t": 1789598714421,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789598714421,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789598714421,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789598702219,
-      "type": "scout"
     }
   ],
   "recent": [],
@@ -1932,9 +1932,6 @@
     "priority": "AI-powered content optimization for businesses"
   },
   "throughput": [
-    1,
-    2,
-    1,
     2,
     0,
     0,
@@ -1961,15 +1958,18 @@
     0,
     1,
     0,
+    0,
+    7,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.18,
-      0.25
+      0.3,
+      0.36,
+      0.31
     ],
-    "ramPct": 61,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -2079,7 +2079,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3064,9 +3069,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 9,
-        "vramPct": 15
+        "warm": true,
+        "utilPct": 10,
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
