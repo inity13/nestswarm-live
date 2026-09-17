@@ -1,5 +1,5 @@
 {
-  "generated": 1789606217807,
+  "generated": 1789606397836,
   "status": "running",
   "stats": {
     "products": 184,
@@ -337,6 +337,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Picard",
+      "text": "```json { \"actions\": [ { \"type\": \"request_owner\", \"name\": \"free_providers\", \"text\": \"All active free providers (gemini, groq, nvidia, openrouter) failed simultaneously and 0```json { \"actions\": [ { \"type\": \"request_owner\", \"name\": \"free_providers\", \"text\": \"All active free providers (gemini, groq, nvidia, openrouter) failed simultaneously and no free models are currently enabled. Please verify the API credentials for each, update or replace them, or disable the providers until valid keys are supplied.\" } ] } ```",
+      "t": 1789606284258,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: AI-powered content optimization for businesses",
@@ -1169,16 +1176,27 @@
       "t": 1789581789582,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "As Demand Validator, I firmly believe we should focus on building a premium, subscription-based AI coaching platform that delivers personalized health advice and actionable insights. To maximize our chances of success, the team must prioritize conducting thorough market research to better understand customer needs and preferences in this space. This will help us tailor our offering more closely to what potential buyers are truly looking for, thereby increasing our likelihood of achieving both high-quality reviews and a steady stream of paying customers.",
-      "t": 1789581789230,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789606282826,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789606276489,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789606220205,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
@@ -1640,24 +1658,6 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789599075887,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789599019432,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789598839535,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789598786649,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1941,9 +1941,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1961,15 +1958,18 @@
     0,
     3,
     0,
+    0,
+    2,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.28,
-      0.29
+      0.09,
+      0.18,
+      0.24
     ],
-    "ramPct": 70,
+    "ramPct": 69,
     "cpus": 12
   },
   "brain": {
@@ -1983,8 +1983,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3070,7 +3070,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 9,
+        "utilPct": 8,
         "vramPct": 47
       },
       {
