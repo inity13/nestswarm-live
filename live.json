@@ -1,5 +1,5 @@
 {
-  "generated": 1789671579613,
+  "generated": 1789671759613,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789671618294,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789671616873,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789671582116,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789671402342,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "model bench: coder→default, light→default (gauntlet-gated)",
       "t": 1789664814160,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: skipping deepseek-r1:8b — low RAM (3115MB free)",
-      "t": 1789664814159,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789664741713,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789664561724,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1932,9 +1932,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1961,15 +1958,18 @@
     0,
     1,
     0,
+    0,
+    4,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.2,
-      0.19
+      0.17,
+      0.17,
+      0.18
     ],
-    "ramPct": 78,
+    "ramPct": 83,
     "cpus": 12
   },
   "brain": {
@@ -1983,7 +1983,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
