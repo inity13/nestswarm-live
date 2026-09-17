@@ -1,5 +1,5 @@
 {
-  "generated": 1789617969635,
+  "generated": 1789618149669,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,36 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (3245MB free)",
+      "t": 1789618004438,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789618004438,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789617998688,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789617988689,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789617972163,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789617792296,
       "type": "event"
@@ -1628,36 +1658,6 @@
       "text": "keyhunter: qwenhuggingface step 0 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. We might be experiencing too much traffic or a confi",
       "t": 1789616204950,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenai21labs (https://ai21labs.com/signup)",
-      "t": 1789616204950,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789616204262,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: fireworksai step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN.\"}",
-      "t": 1789616201844,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting qwenhuggingface (https://huggingface.co/join)",
-      "t": 1789616201844,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 0 -> {\"action\":\"clickText\",\"text\":\"Get started\"}",
-      "t": 1789616201337,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1932,9 +1932,6 @@
     "priority": "Personalized productivity tool for remote workers"
   },
   "throughput": [
-    31,
-    26,
-    26,
     19,
     6,
     7,
@@ -1961,15 +1958,18 @@
     0,
     1,
     0,
+    0,
+    5,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.58,
-      25.04
+      0.24,
+      0.49,
+      20.69
     ],
-    "ramPct": 51,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -3064,9 +3064,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 10,
-        "vramPct": 15
+        "vramPct": 47
       },
       {
         "alias": "GPU-Node-2",
