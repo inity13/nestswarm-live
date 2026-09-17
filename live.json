@@ -1,5 +1,5 @@
 {
-  "generated": 1789649654476,
+  "generated": 1789649834444,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789649774857,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789649773476,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789649656963,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789649476976,
       "type": "event"
@@ -1640,27 +1658,22 @@
       "text": "self-heal: disabled provider openrouter",
       "t": 1789642574211,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789642574209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789642573483,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789649774857,
       "type": "event"
     },
     {
       "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789642573231,
+      "t": 1789649773476,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1934,9 +1947,6 @@
   "throughput": [
     1,
     0,
-    2,
-    1,
-    0,
     0,
     1,
     0,
@@ -1961,15 +1971,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.08,
-      0.18,
-      0.24
+      0.12,
+      0.13,
+      0.2
     ],
-    "ramPct": 70,
+    "ramPct": 72,
     "cpus": 12
   },
   "brain": {
@@ -1983,7 +1996,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
@@ -3071,7 +3084,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 79
       },
       {
