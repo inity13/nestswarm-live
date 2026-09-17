@@ -1,5 +1,5 @@
 {
-  "generated": 1789659339053,
+  "generated": 1789659519037,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1181,6 +1181,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789659410017,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: skipping deepseek-r1:8b — low RAM (2916MB free)",
+      "t": 1789659410015,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789659341451,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789659161573,
       "type": "event"
@@ -1640,24 +1658,6 @@
       "text": "keyhunter: elevenlabs step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789657231648,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789657230275,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 0 -> {\"action\":\"fail\",\"reason\":\"404 error, page not found.\"}",
-      "t": 1789657229635,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting elevenlabs (https://elevenlabs.io/pricing)",
-      "t": 1789657229635,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1932,9 +1932,6 @@
     "priority": ""
   },
   "throughput": [
-    39,
-    43,
-    7,
     3,
     9,
     0,
@@ -1961,15 +1958,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    2,
     0
   ],
   "load": {
     "loadavg": [
-      0.14,
-      0.39,
-      14.53
+      0.11,
+      0.33,
+      12.01
     ],
-    "ramPct": 51,
+    "ramPct": 62,
     "cpus": 12
   },
   "brain": {
@@ -3070,9 +3070,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 10,
-        "vramPct": 18
+        "warm": true,
+        "utilPct": 8,
+        "vramPct": 50
       },
       {
         "alias": "GPU-Node-2",
