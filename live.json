@@ -1,5 +1,5 @@
 {
-  "generated": 1789688702988,
+  "generated": 1789688883025,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1191,6 +1191,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789688705573,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789688525786,
       "type": "event"
     },
@@ -1661,12 +1667,6 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789681802252,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789681684642,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1943,9 +1943,6 @@
   "throughput": [
     1,
     0,
-    0,
-    1,
-    0,
     1,
     2,
     0,
@@ -1970,15 +1967,18 @@
     0,
     1,
     0,
-    0
+    0,
+    4,
+    4,
+    18
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.23,
-      0.23
+      3.01,
+      1.54,
+      0.74
     ],
-    "ramPct": 67,
+    "ramPct": 71,
     "cpus": 12
   },
   "brain": {
@@ -2008,19 +2008,19 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "polisher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2032,7 +2032,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -2084,6 +2084,10 @@
         "tier": "local"
       },
       "compliance-officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "financial-analysis": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
@@ -3098,8 +3102,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 6,
-        "vramPct": 16
+        "utilPct": 100,
+        "vramPct": 90
       },
       {
         "alias": "GPU-Node-2",
