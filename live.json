@@ -1,5 +1,5 @@
 {
-  "generated": 1789692123338,
+  "generated": 1789692303429,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1194,6 +1194,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789692125659,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789691946070,
       "type": "event"
     },
@@ -1664,12 +1670,6 @@
       "text": "revenue scout: 4/95 channels active · 0 new discovered",
       "t": 1789685109164,
       "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
-      "t": 1789685106527,
-      "type": "scout"
     }
   ],
   "recent": [],
@@ -1950,9 +1950,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.31,
-      0.3
+      0.19,
+      0.25,
+      0.27
     ],
-    "ramPct": 75,
+    "ramPct": 64,
     "cpus": 12
   },
   "brain": {
@@ -2095,7 +2095,10 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3104,9 +3107,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 48
+        "warm": false,
+        "utilPct": 7,
+        "vramPct": 16
       },
       {
         "alias": "GPU-Node-2",
