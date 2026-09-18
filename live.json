@@ -1,5 +1,5 @@
 {
-  "generated": 1789707244687,
+  "generated": 1789707424782,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789707295269,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789707285270,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789707246943,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789707067154,
       "type": "event"
@@ -1652,24 +1670,6 @@
       "text": "self-heal: model openai/gpt-oss-120b not found",
       "t": 1789699824629,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: model gemini-flash-latest not found",
-      "t": 1789699824629,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: model nvidia/nemotron-3.5-lightning-30b-a3b not found",
-      "t": 1789699824629,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: model nvidia/nemotron-3-super-120b-a12b:free not found",
-      "t": 1789699824629,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1944,9 +1944,6 @@
     "priority": "the current flagship product (the top candidate in the pipeline)"
   },
   "throughput": [
-    3,
-    0,
-    0,
     1,
     0,
     0,
@@ -1973,15 +1970,18 @@
     7,
     1,
     0,
+    0,
+    3,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.1,
+      0.23,
       0.13,
       0.1
     ],
-    "ramPct": 59,
+    "ramPct": 51,
     "cpus": 12
   },
   "brain": {
@@ -3104,9 +3104,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 9,
-        "vramPct": 50
+        "warm": false,
+        "utilPct": 7,
+        "vramPct": 19
       },
       {
         "alias": "GPU-Node-2",
