@@ -1,5 +1,5 @@
 {
-  "generated": 1789706704679,
+  "generated": 1789706884682,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1789706709658,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789706707110,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789706706881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, nvidia) · 0 zen free models",
+      "t": 1789706704938,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789706527034,
       "type": "event"
@@ -1646,30 +1670,6 @@
       "text": "keyhunter: qwenai21labs step 9 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
       "t": 1789699641057,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle needs email verification — reading inbox",
-      "t": 1789699640778,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789699640776,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwenai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789699639856,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789699639574,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1950,9 +1950,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1972,16 +1969,19 @@
     0,
     0,
     1,
+    0,
+    0,
+    5,
     0,
     0
   ],
   "load": {
     "loadavg": [
-      0.28,
-      0.12,
+      0.09,
+      0.11,
       0.09
     ],
-    "ramPct": 60,
+    "ramPct": 59,
     "cpus": 12
   },
   "brain": {
@@ -1995,8 +1995,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       },
       "distributor": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3110,7 +3110,7 @@
         ],
         "busy": false,
         "warm": true,
-        "utilPct": 10,
+        "utilPct": 9,
         "vramPct": 50
       },
       {
