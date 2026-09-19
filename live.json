@@ -1,5 +1,5 @@
 {
-  "generated": 1789822480718,
+  "generated": 1789822660781,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789822636819,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789822636819,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789822636819,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/95 channels active · 0 new discovered",
+      "t": 1789822635273,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
+      "t": 1789822600858,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789822600854,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789822482856,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789822472116,
       "type": "event"
@@ -1628,68 +1670,44 @@
       "text": "conductor: 1 operational improvement(s) recommended",
       "t": 1789815427270,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789815427126,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789815427126,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments.",
-      "t": 1789815427125,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789815400209,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789815283326,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789815191909,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789815181903,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789822472116,
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789822636819,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789822462122,
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789822636819,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
-      "t": 1789822394801,
-      "type": "bench"
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789822636819,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/95 channels active · 0 new discovered",
+      "t": 1789822635273,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
+      "t": 1789822600858,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
+      "t": 1789822600854,
+      "type": "event"
     }
   ],
   "capabilities": [
@@ -1974,9 +1992,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     2,
     1,
     0,
@@ -1992,13 +2007,16 @@
     0,
     6,
     1,
-    2
+    2,
+    1,
+    0,
+    8
   ],
   "load": {
     "loadavg": [
-      0.46,
-      0.4,
-      0.18
+      0.5,
+      0.41,
+      0.22
     ],
     "ramPct": 23,
     "cpus": 8
@@ -2034,7 +2052,7 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -2098,7 +2116,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -3118,7 +3136,7 @@
         "busy": false,
         "warm": true,
         "utilPct": 0,
-        "vramPct": 77
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
@@ -3133,13 +3151,13 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 8,
+        "busy": false,
+        "warm": true,
+        "utilPct": 6,
         "vramPct": 92
       }
     ],
-    "selfHostedInferencePct": 80,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 202
   }
 }
