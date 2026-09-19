@@ -1,5 +1,5 @@
 {
-  "generated": 1789840300772,
+  "generated": 1789840480804,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1194,6 +1194,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789840302958,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789840123543,
       "type": "event"
     },
@@ -1664,12 +1670,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789833463066,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789833392372,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1945,9 +1945,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     2,
     1,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
-    0
+    0,
+    3,
+    0,
+    4
   ],
   "load": {
     "loadavg": [
-      0.4,
-      0.27,
-      0.21
+      1.41,
+      0.89,
+      0.47
     ],
-    "ramPct": 20,
+    "ramPct": 18,
     "cpus": 8
   },
   "brain": {
@@ -1991,11 +1991,11 @@
         "tier": "local"
       },
       "architect": {
-        "model": "gemini-flash-latest",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2007,7 +2007,7 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "polisher": {
@@ -3091,9 +3091,9 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 4,
         "vramPct": 10
       },
       {
