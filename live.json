@@ -1,5 +1,5 @@
 {
-  "generated": 1789822300687,
+  "generated": 1789822480718,
   "status": "running",
   "stats": {
     "products": 184,
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "Thus: \"I agree catalog churn hurts and we must focus on one polished flagship, but we can'",
-        "t": 1789818964847
+        "text": "**1. Product Hunt** – A launch‑day hub for early adopters who love discovering new tech to",
+        "t": 1789822311629
       }
     },
     {
@@ -349,6 +349,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "**1. Product Hunt** – A launch‑day hub for early adopters who love discovering new tech tools. It gives instant visibility to the AI‑utility and privacy‑focused products, fuels word‑of‑mouth, and offers built‑in metrics to gauge initial traction. **2. GitHub** – The natural home for code‑centric offerings; a repository with a README, issues, and a “Buy” button (via GitHub Marketplace or a simple purchase link) builds credibility and lets users verify the product’s quality before paying. **3. Gumroad** – A low‑friction checkout platform that handles payment, licensing, and instant delivery, …",
+      "t": 1789822311629,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: AI productivity assistant for freelancers; resumed new builds (board decision); marketed the top product",
@@ -1181,16 +1188,51 @@
       "t": 1789699823215,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Joey",
-      "text": "Hi everyone, I'm Joey, your Marketing Lead. Let’s break this down: My Position: We need to stop counting half-finished ideas and ship a single flagship product that meets the highest standards of quality and customer satisfaction. The SINGLE most important thing the swarm must do next is: Focus on refining and launching a single flagship product before embarking on any new ventures.",
-      "t": 1789699822862,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789822472116,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789822462122,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789822394801,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789822325109,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789822319512,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789822316277,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789822303177,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
@@ -1628,51 +1670,28 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789815181903,
       "type": "event"
+    }
+  ],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789822472116,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789822462122,
+      "type": "event"
     },
     {
       "who": "swarm",
       "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
-      "t": 1789815181340,
+      "t": 1789822394801,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
-      "t": 1789815118301,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789815102980,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789814922943,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789814743718,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789814563166,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789814383746,
-      "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1720,7 +1739,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 1×"
     },
     {
       "name": "Shared memory",
@@ -1945,9 +1964,6 @@
   },
   "throughput": [
     1,
-    1,
-    2,
-    1,
     0,
     0,
     1,
@@ -1973,15 +1989,18 @@
     0,
     1,
     0,
-    0
+    0,
+    6,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0,
-      0,
-      0.01
+      0.46,
+      0.4,
+      0.18
     ],
-    "ramPct": 10,
+    "ramPct": 23,
     "cpus": 8
   },
   "brain": {
@@ -2039,7 +2058,7 @@
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "automation_operator": {
@@ -2083,7 +2102,12 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3092,9 +3116,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3111,11 +3135,11 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 1
+        "utilPct": 8,
+        "vramPct": 92
       }
     ],
-    "selfHostedInferencePct": 79,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 202
   }
 }
