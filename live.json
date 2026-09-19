@@ -1,5 +1,5 @@
 {
-  "generated": 1789843900771,
+  "generated": 1789844080797,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789844067232,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789843939055,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback",
+      "t": 1789843938926,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789843938926,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789843938926,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789843919072,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789843902998,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789843723046,
       "type": "event"
@@ -1628,51 +1670,16 @@
       "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
       "t": 1789836804126,
       "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: googlegemini — queued for key hunter",
-      "t": 1789836745944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cloudflareworkersai — queued for key hunter",
-      "t": 1789836745944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: cohere — queued for key hunter",
-      "t": 1789836745944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout discovered key-gated free provider: huggingfaceinferenceapi — queued for key hunter",
-      "t": 1789836745944,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
-      "t": 1789836731989,
-      "type": "trending"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/95 channels active · 0 new discovered",
-      "t": 1789836727764,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "distributor: 5/5 channels reachable",
-      "t": 1789836723690,
-      "type": "launch"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789844067232,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1946,9 +1953,6 @@
   "throughput": [
     1,
     0,
-    1,
-    1,
-    0,
     0,
     3,
     0,
@@ -1973,15 +1977,18 @@
     0,
     1,
     0,
-    0
+    0,
+    7,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.16,
-      0.16,
-      0.21
+      1.09,
+      0.66,
+      0.41
     ],
-    "ramPct": 15,
+    "ramPct": 18,
     "cpus": 8
   },
   "brain": {
@@ -2084,7 +2091,9 @@
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3095,9 +3104,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
