@@ -1,5 +1,5 @@
 {
-  "generated": 1789858300966,
+  "generated": 1789858480840,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789858370317,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789858312245,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789858312199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-gateway-integration",
+      "t": 1789858312139,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-gateway-integration",
+      "t": 1789858312138,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789858312135,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789858305321,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789858303376,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789858123787,
       "type": "event"
@@ -1622,54 +1670,6 @@
       "text": "keyhunter: cohere needs email verification — reading inbox",
       "t": 1789851490836,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789851490820,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789851482033,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789851481310,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789851472376,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: cohere step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789851471691,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: resumed new builds (board decision); polished the weakest product",
-      "t": 1789851468711,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "no product available to polish",
-      "t": 1789851468710,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789851463047,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1945,9 +1945,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
+    0,
+    8,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.18,
-      0.07,
-      0.05
+      0.33,
+      0.3,
+      0.15
     ],
-    "ramPct": 10,
+    "ramPct": 13,
     "cpus": 8
   },
   "brain": {
@@ -2079,12 +2079,14 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3101,9 +3103,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3124,7 +3126,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 81,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 202
   }
 }
