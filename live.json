@@ -1,5 +1,5 @@
 {
-  "generated": 1789829500719,
+  "generated": 1789829680754,
   "status": "running",
   "stats": {
     "products": 184,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "I concur we must halt catalog churn and channel resources into a single flagship, but I ca",
-        "t": 1789818964493
+        "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**:",
+        "t": 1789829600189
       }
     },
     {
@@ -349,6 +349,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: InnerHTML assignment without sanitization. 2. **Child Process Spawning**: Potential for privilege escalation or resource misuse. 3. **Static-Serve Tool Exposure**: Possible exposure of sensitive files. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all innerHTML assignments using a library like DOMPurify. ```javascript const clean = DOMPurify.sanitize(dirty); document.getElementById('myDiv').innerHTML = clean; ``` 2. **Child Process Spawning Fix**: Use `child_process.execFile` instead of …",
+      "t": 1789829600189,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "LaForge",
       "text": "**1. Product Hunt** – A launch‑day hub for early adopters who love discovering new tech tools. It gives instant visibility to the AI‑utility and privacy‑focused products, fuels word‑of‑mouth, and offers built‑in metrics to gauge initial traction. **2. GitHub** – The natural home for code‑centric offerings; a repository with a README, issues, and a “Buy” button (via GitHub Marketplace or a simple purchase link) builds credibility and lets users verify the product’s quality before paying. **3. Gumroad** – A low‑friction checkout platform that handles payment, licensing, and instant delivery, …",
@@ -1181,16 +1188,237 @@
       "t": 1789699823568,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "Guinan, architect, coder, and designer are right to emphasize quality over quantity. Inflating our product count masks real progress; we need to focus on launching a single flagship product that sells. The most critical step moving forward is for the swarm to **halt all new development** until we have concrete, quality-focused initiatives in place. This allows us to polish our current flagship and ensure it's SELLABLE before expanding our portfolio.",
-      "t": 1789699823215,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "registrar: registering Creator Monetization Platforms (revenue)",
+      "t": 1789829671078,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: registering Product Hunt (revenue)",
+      "t": 1789829669547,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai entering verification code from inbox",
+      "t": 1789829665846,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack needs email verification — reading inbox",
+      "t": 1789829646044,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789829646043,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829644149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai needs email verification — reading inbox",
+      "t": 1789829642503,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829642483,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829642136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829640636,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829640328,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829638047,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829637710,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829636312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829635964,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829633215,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 5 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829632631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 4 -> {\"action\":\"clickText\",\"text\":\"Login with Email\"}",
+      "t": 1789829621094,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829620628,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829610346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 3 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
+      "t": 1789829610062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829608322,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
+      "t": 1789829608035,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829606029,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
+      "t": 1789829605421,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789829604433,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789829604320,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789829604320,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789829604309,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829601566,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789829601062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789829521570,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789829502957,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789829501258,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 110m ago) — skip",
+      "t": 1789829501258,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
+      "t": 1789829501258,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 110m ago) — skip",
+      "t": 1789829501257,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: no candidates found",
+      "t": 1789829500752,
+      "type": "scout"
+    },
     {
       "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
@@ -1442,266 +1670,201 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789825003064,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789824823597,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789824643107,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789824462899,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789824292154,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789824282992,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789824282156,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
-      "t": 1789824202836,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789824103198,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789823922859,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789823743204,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: gemini (no-op)",
-      "t": 1789823656567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: mistral (no-op)",
-      "t": 1789823656567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: groq (no-op)",
-      "t": 1789823656567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789823656567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789823656567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: deepinfra (no-op)",
-      "t": 1789823656567,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789823563061,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789823499725,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789823383671,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789823382138,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789823372139,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789823203429,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789823022908,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789822917086,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789822917085,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789822917084,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789822917083,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789822917045,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789822915956,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789822899737,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789822843477,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789822663116,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
-      "t": 1789822636819,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789822636819,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789822636819,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "revenue scout: 4/95 channels active · 0 new discovered",
-      "t": 1789822635273,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for researcher (fetch failed) — falling to external/free",
-      "t": 1789822600858,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "compute-node route failed for conductor (fetch failed) — falling to external/free",
-      "t": 1789822600854,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789829499814,
+      "text": "registrar: registering Creator Monetization Platforms (revenue)",
+      "t": 1789829671078,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789829499811,
+      "text": "registrar: registering Product Hunt (revenue)",
+      "t": 1789829669547,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
-      "t": 1789829499810,
+      "text": "keyhunter: novitaai entering verification code from inbox",
+      "t": 1789829665846,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
-      "t": 1789829499809,
+      "text": "registrar: Substack needs email verification — reading inbox",
+      "t": 1789829646044,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "security scan: 180 products with flags, 1 with high-severity findings",
-      "t": 1789829499796,
-      "type": "security"
+      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789829646043,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829644149,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai needs email verification — reading inbox",
+      "t": 1789829642503,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829642483,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829642136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 8 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829640636,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 8 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829640328,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 7 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829638047,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 7 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829637710,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 6 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829636312,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 6 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829635964,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 5 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789829633215,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 5 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829632631,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 4 -> {\"action\":\"clickText\",\"text\":\"Login with Email\"}",
+      "t": 1789829621094,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 4 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829620628,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829610346,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 3 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
+      "t": 1789829610062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829608322,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
+      "t": 1789829608035,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829606029,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
+      "t": 1789829605421,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 operational improvement(s) recommended",
+      "t": 1789829604433,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789829604320,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789829604320,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789829604309,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
+      "t": 1789829601566,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789829601062,
+      "type": "event"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: InnerHTML assignment without sanitization. 2. **Child Process Spawning**: Potential for privilege escalation or resource misuse. 3. **Static-Serve Tool Exposure**: Possible exposure of sensitive files. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all innerHTML assignments using a library like DOMPurify. ```javascript const clean = DOMPurify.sanitize(dirty); document.getElementById('myDiv').innerHTML = clean; ``` 2. **Child Process Spawning Fix**: Use `child_process.execFile` instead of …",
+      "t": 1789829600189,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1751,7 +1914,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 1×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 2×"
     },
     {
       "name": "Shared memory",
@@ -1975,9 +2138,6 @@
     "priority": "AI‑powered productivity assistant for freelancers (high‑willingness‑to‑pay niche)."
   },
   "throughput": [
-    1,
-    0,
-    1,
     3,
     0,
     0,
@@ -2004,53 +2164,56 @@
     0,
     1,
     0,
-    5
+    6,
+    6,
+    31,
+    43
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.17,
-      0.18
+      1.35,
+      0.78,
+      0.42
     ],
-    "ramPct": 16,
+    "ramPct": 12,
     "cpus": 8
   },
   "brain": {
     "active": {
       "ideator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "publisher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "polisher": {
-        "model": "openai/gpt-oss-120b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "researcher": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "marketer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "scout": {
@@ -2058,15 +2221,15 @@
         "tier": "local"
       },
       "security": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
@@ -2074,23 +2237,23 @@
         "tier": "local"
       },
       "automation_operator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "preflight": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "recovery_engineer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "demand_validator": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "compliance_officer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security_officer": {
@@ -2110,12 +2273,15 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -3148,7 +3314,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 78,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 202
   }
 }
