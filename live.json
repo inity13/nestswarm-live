@@ -1,5 +1,5 @@
 {
-  "generated": 1789851641174,
+  "generated": 1789851821241,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789851701254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789851701254,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789851701253,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789851701253,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789851701252,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1789851700053,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789851699745,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789851682307,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789851643936,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789851593709,
       "type": "event"
@@ -1610,52 +1664,9 @@
       "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1789851299717,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789851297270,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789851293829,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai needs email verification — reading inbox",
-      "t": 1789851293479,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 9 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789851293421,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789851593709,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789851583715,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: huggingfaceinferenceapi step 1 -> {\"action\":\"fail\",\"reason\":\"The request was blocked by Hugging Face. They may have detected automated access attempts.\"}",
-      "t": 1789851562723,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1937,9 +1948,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     1,
     1,
     1,
@@ -1953,18 +1961,21 @@
     38,
     54,
     61,
-    38,
-    24,
+    40,
+    22,
     7,
-    2
+    2,
+    4,
+    6,
+    0
   ],
   "load": {
     "loadavg": [
-      2.22,
-      2.17,
-      1.21
+      0.22,
+      1.28,
+      1.04
     ],
-    "ramPct": 9,
+    "ramPct": 11,
     "cpus": 8
   },
   "brain": {
@@ -2066,12 +2077,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3086,9 +3092,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 11
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
