@@ -1,5 +1,5 @@
 {
-  "generated": 1789823560725,
+  "generated": 1789823740694,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789823563061,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789823499725,
       "type": "event"
@@ -1628,55 +1670,43 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789817803171,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789817623417,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789817443481,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789817263294,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789817083094,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789817011925,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789817001926,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
-      "t": 1789816963914,
-      "type": "bench"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789823499725,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: mistral (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: groq (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: nvidia (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: openrouter (no-op)",
+      "t": 1789823656567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: already disabled: deepinfra (no-op)",
+      "t": 1789823656567,
       "type": "event"
     }
   ],
@@ -1957,9 +1987,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     6,
     1,
     2,
@@ -1980,15 +2007,18 @@
     1,
     2,
     1,
+    0,
+    1,
+    7,
     0
   ],
   "load": {
     "loadavg": [
-      0.2,
-      0.14,
-      0.15
+      0.08,
+      0.11,
+      0.13
     ],
-    "ramPct": 17,
+    "ramPct": 18,
     "cpus": 8
   },
   "brain": {
@@ -2086,7 +2116,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       }
     },
@@ -3116,9 +3146,9 @@
           "python",
           "vision"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 14,
+        "busy": false,
+        "warm": true,
+        "utilPct": 0,
         "vramPct": 92
       }
     ],
