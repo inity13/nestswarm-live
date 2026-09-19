@@ -1,5 +1,5 @@
 {
-  "generated": 1789815640819,
+  "generated": 1789815820743,
   "status": "running",
   "stats": {
     "products": 184,
@@ -349,6 +349,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "Picard",
+      "text": "```json { \"actions\": [ { \"type\": \"disable_provider\", \"name\": \"nvidia\" } ] } ```",
+      "t": 1789815707975,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "owner",
       "text": "Owner directive received: \"start mining cryptos on the 5090 node, set up a wallet and a miner on a pool, email the swarm protector the wallet credentials etc once done\"",
@@ -1181,16 +1188,33 @@
       "t": 1789689002310,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Sentinel",
-      "text": "I, Worf, Security Sentinel, acknowledge the importance of quality over quantity but also recognize that security is paramount. The single most important thing the Nest Concord must do next is to finalize and launch a flagship product that meets our rigorous security standards before expanding or introducing new offerings.",
-      "t": 1789689001957,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider nvidia",
+      "t": 1789815707983,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789815707982,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789815699725,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789815643338,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
@@ -1646,30 +1670,6 @@
       "text": "meeting actions taken: focus niche: email-automation-SMB; resumed new builds (board decision); marketed the top product",
       "t": 1789808296803,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Product Hunt (revenue)",
-      "t": 1789808291793,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai entering verification code from inbox",
-      "t": 1789808289279,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack needs email verification — reading inbox",
-      "t": 1789808268865,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Technology\"}",
-      "t": 1789808268860,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1948,9 +1948,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     2,
     0,
     1,
@@ -1973,15 +1970,18 @@
     5,
     1,
     0,
+    0,
+    2,
+    3,
     0
   ],
   "load": {
     "loadavg": [
+      0,
       0.08,
-      0.16,
-      0.09
+      0.08
     ],
-    "ramPct": 13,
+    "ramPct": 10,
     "cpus": 8
   },
   "brain": {
@@ -2079,14 +2079,13 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       }
     },
     "free": [
       "gemini-flash-latest",
       "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3097,9 +3096,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 72
+        "vramPct": 10
       },
       {
         "alias": "GPU-Node-2",
@@ -3120,7 +3119,7 @@
         "vramPct": 92
       }
     ],
-    "selfHostedInferencePct": 79,
+    "selfHostedInferencePct": 78,
     "jobsProcessed": 202
   }
 }
