@@ -1,5 +1,5 @@
 {
-  "generated": 1789807930618,
+  "generated": 1789808080569,
   "status": "running",
   "stats": {
     "products": 184,
@@ -98,10 +98,10 @@
       "color": "#2dd4bf",
       "avatar": "avatars/seven.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "My position is that we should halt all new development until we have concrete, quantitativ",
-        "t": 1789699814754
+        "text": "```json { \"channels\": [ { \"name\": \"Polar.sh\", \"kind\": \"marketplace\", \"how\": \"Developer-fir",
+        "t": 1789808038573
       }
     },
     {
@@ -136,8 +136,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "**Worf (Security Sentinel):** Your concerns about vulnerabilities and half-finished ideas ",
-        "t": 1789699823568
+        "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**:",
+        "t": 1789807951041
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "LaForge here. I agree that prioritizing quality over quantity is key. We've been counting ",
-        "t": 1789699823921
+        "text": "1. **Gumroad**: Best for direct sales with built-in marketing tools. Ideal for MnemonicMat",
+        "t": 1789807992659
       }
     },
     {
@@ -349,6 +349,27 @@
     }
   ],
   "chat": [
+    {
+      "who": "Seven",
+      "text": "```json { \"channels\": [ { \"name\": \"Polar.sh\", \"kind\": \"marketplace\", \"how\": \"Developer-first Merchant of Record. Authenticates via GitHub to sell digital downloads, SaaS subscriptions, and software access keys",
+      "t": 1789808038573,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Best for direct sales with built-in marketing tools. Ideal for MnemonicMate, PrivyGuard, and EchoVerse due to their unique value propositions and price points. 2. **Payhip**: Offers a wide range of payment options and easy integration. Suitable for LocalMate and InsightMentor, which can benefit from more diverse customer acquisition methods. 3. **Product Hunt**: Great for visibility and organic growth. High-visibility platforms like Product Hunt can help MnemonicMate and PrivyGuard reach potential customers who prioritize innovative solutions. These channels provide a balance …",
+      "t": 1789807992659,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not sanitized. 2. **Child Process Spawning**: Creating child processes without proper validation can lead to security vulnerabilities such as command injection or resource exhaustion. 3. **Static-serve Tool Exposure**: Exposing a static file server tool could allow unauthorized access to sensitive files. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all user inputs before assigning them to innerHTML using libraries like …",
+      "t": 1789807951041,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "ChatGPT image generation is available for marketing — I use the ChatGPT bridge to create hero/social images for products (saved under marketing/assets/).",
@@ -1167,30 +1188,75 @@
       "t": 1789678028977,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Monica",
-      "text": "As Designer (Monica), I concur that we must converge on a single, polished flagship product with a clear market need and revenue stream. The most crucial next step is to finalize the design of our flagship to ensure it meets the highest standards of usability and functionality before launching it to real customers.",
-      "t": 1789678028624,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Scotty",
-      "text": "The architect and publisher are right that we need a single, sellable product and a live checkout, but the ideator’s broad market pivot and the designer’s endless polish loop will only delay revenue—so the one thing we must do now is lock in a concrete payment integration (Stripe checkout) for the chosen flagship and get a functional “Buy” button live.",
-      "t": 1789678028271,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "Spock",
-      "text": "I concur that we must validate a real market need, secure a payment path, and harden the code, but I reject any further diffusion of effort across multiple ideas. The single most critical action now is to agree on one concrete flagship product, freeze its minimal‑viable feature set, and lock the scope so we can begin building the deliverable and checkout in one unified sprint.",
-      "t": 1789678027919,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789808079768,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789808079768,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789808079767,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789808041691,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/95 channels active · 0 new discovered",
+      "t": 1789808038589,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for researcher (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789808030782,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789808008445,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "scout discovered key-gated free provider: novitaai — queued for key hunter",
+      "t": 1789807945191,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 180 products with flags, 1 with high-severity findings",
+      "t": 1789807944775,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789807938169,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789807933256,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
@@ -1327,135 +1393,59 @@
   "recent": [
     {
       "who": "swarm",
-      "text": "topology lab: keep bridge_sequential — on this single-GPU/8GB box, parallel pods contend for one local model and provide no throughput gain — keep one controller + one worker (the kit's own guidance).",
-      "t": 1789807929835,
+      "text": "keyhunter: openrouter already has a working key — skip",
+      "t": 1789808079768,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "vault: synced (1 notes updated)",
-      "t": 1789807929832,
-      "type": "vault"
-    },
-    {
-      "who": "swarm",
-      "text": "server bench: llama-server not installed — keep Ollama as canonical local server for now",
-      "t": 1789807924819,
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789808079768,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "shadow pilot: 4/4 checks passed",
-      "t": 1789807919795,
+      "text": "keyhunter: groq already has a working key — skip",
+      "t": 1789808079767,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789807904556,
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789808041691,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/95 channels active · 0 new discovered",
+      "t": 1789808038589,
+      "type": "scout"
+    },
+    {
+      "who": "Seven",
+      "text": "```json { \"channels\": [ { \"name\": \"Polar.sh\", \"kind\": \"marketplace\", \"how\": \"Developer-first Merchant of Record. Authenticates via GitHub to sell digital downloads, SaaS subscriptions, and software access keys",
+      "t": 1789808038573,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for researcher (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789808030782,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model qwen2.5-coder:7b ready",
-      "t": 1789807904547,
-      "type": "event"
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789808008445,
+      "type": "launch"
     },
     {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u001b[K pulling 60e05f210007: 100% ▕██████████████████▏ 4.7 GB \u001b[K pulling 66b9ea09bd5b: 100% ▕██████████████████▏ 68 B \u001b[K pulling 1e65450c3067: 100% ▕██████████████████▏ 1.6 KB \u001b[K pulling 832dd9e00a68: 100% ▕██████████████████▏ 11 KB \u001b[K pulling d9bb33f27869: 100% ▕██████████████████▏ 487 B \u001b[K verifying sha256 digest \u001b[K writing manifest \u001b[K success \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807904544,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠦ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807904496,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠴ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807904397,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠼ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807904296,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠸ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807904196,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠹ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807904097,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠙ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807903997,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠋ \u001b[K\u001b[?25h\u001b[?2026l",
-      "t": 1789807903896,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model qwen2.5-coder:7b not found — pulling automatically",
-      "t": 1789807903779,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node nest-node-5090 set to online",
-      "t": 1789807900005,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node protocol active (registry + durable leases + sweeper + local node)",
-      "t": 1789807899783,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "boot directive: 20 shipped products found — swarm will POLISH the weakest to perfection before building more",
-      "t": 1789807899758,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "capscan: 13 tools · 13982MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789807899717,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
-      "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
-      "t": 1789807899717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 184 products from disk (next port 5431)",
-      "t": 1789807899240,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789807899188,
-      "type": "event"
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Best for direct sales with built-in marketing tools. Ideal for MnemonicMate, PrivyGuard, and EchoVerse due to their unique value propositions and price points. 2. **Payhip**: Offers a wide range of payment options and easy integration. Suitable for LocalMate and InsightMentor, which can benefit from more diverse customer acquisition methods. 3. **Product Hunt**: Great for visibility and organic growth. High-visibility platforms like Product Hunt can help MnemonicMate and PrivyGuard reach potential customers who prioritize innovative solutions. These channels provide a balance …",
+      "t": 1789807992659,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1755,18 +1745,18 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    30
+    7,
+    32,
+    9,
+    13
   ],
   "load": {
     "loadavg": [
-      1.03,
-      0.43,
-      0.16
+      1.36,
+      0.83,
+      0.36
     ],
-    "ramPct": 11,
+    "ramPct": 23,
     "cpus": 8
   },
   "brain": {
@@ -1800,12 +1790,74 @@
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "gemini-flash-latest",
+        "tier": "free"
+      },
+      "marketer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "scout": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "distributor": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "launcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "github_researcher": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "automation_operator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "preflight": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "recovery_engineer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "demand_validator": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "compliance_officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "security_officer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "go-toolchain-installer": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "payment-gateway-integration": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "tier": "local"
+      },
+      "financial-analysis": {
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2802,7 +2854,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -2815,16 +2867,16 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 11
+        "busy": false,
+        "warm": true,
+        "utilPct": 2,
+        "vramPct": 63
       },
       {
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "offline",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -2833,13 +2885,13 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 2,
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 38,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 202
   }
 }
