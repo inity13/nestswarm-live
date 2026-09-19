@@ -1,5 +1,5 @@
 {
-  "generated": 1789861900822,
+  "generated": 1789862080776,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1194,6 +1194,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789861902984,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789861723092,
       "type": "event"
     },
@@ -1664,12 +1670,6 @@
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789854313760,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789854163106,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1945,9 +1945,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
-    0
+    0,
+    3,
+    4,
+    2
   ],
   "load": {
     "loadavg": [
-      0,
-      0,
-      0
+      1.59,
+      0.78,
+      0.31
     ],
-    "ramPct": 10,
+    "ramPct": 9,
     "cpus": 8
   },
   "brain": {
@@ -1991,11 +1991,11 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "designer": {
@@ -2007,15 +2007,15 @@
         "tier": "local"
       },
       "critic": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "polisher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -3099,7 +3099,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
+        "utilPct": 88,
         "vramPct": 10
       },
       {
@@ -3121,7 +3121,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 80,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 202
   }
 }
