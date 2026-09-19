@@ -1,5 +1,5 @@
 {
-  "generated": 1789808440975,
+  "generated": 1789808621131,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789808501262,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789808501262,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789808501261,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789808501261,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789808501260,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1789808499810,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789808499719,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789808443363,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "meeting actions taken: focus niche: email-automation-SMB; resumed new builds (board decision); marketed the top product",
       "t": 1789808296803,
       "type": "event"
@@ -1595,26 +1643,8 @@
     },
     {
       "who": "swarm",
-      "text": "capscan: 13 tools · 13982MB RAM · gpu NVIDIA GeForce RTX 3060 Ti, 8192 MiB · build [node, python, static, cli, template, exe, go, rust]",
-      "t": 1789807899717,
-      "type": "cap"
-    },
-    {
-      "who": "swarm",
       "text": "gmail ready: [email] — swarm will use it for registrations, marketing signups & free hosting",
       "t": 1789807899717,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "reconciled 184 products from disk (next port 5431)",
-      "t": 1789807899240,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "swarm controller on http://[ip]:4747 (private, interface-bound)",
-      "t": 1789807899188,
       "type": "event"
     }
   ],
@@ -1907,9 +1937,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     7,
     32,
     9,
@@ -1919,15 +1946,18 @@
     59,
     18,
     0,
+    0,
+    3,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      0.39,
-      1.33,
-      0.82
+      0.33,
+      0.82,
+      0.7
     ],
-    "ramPct": 23,
+    "ramPct": 9,
     "cpus": 8
   },
   "brain": {
@@ -2029,12 +2059,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3043,9 +3068,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 73
+        "vramPct": 11
       },
       {
         "alias": "GPU-Node-2",
