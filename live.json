@@ -1,5 +1,5 @@
 {
-  "generated": 1789834900799,
+  "generated": 1789835080782,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1789834955468,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789834903396,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789834723148,
       "type": "event"
@@ -1658,18 +1670,6 @@
       "text": "registrar: Millo step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789829698548,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789829696181,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"fail\",\"reason\":\"Access Denied - Unable to access the signup page.\"}",
-      "t": 1789829692801,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1945,9 +1945,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     2,
     0,
     1,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
+    0,
+    2,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.01,
-      0.03,
-      0.06
+      0.1,
+      0.16,
+      0.11
     ],
-    "ramPct": 10,
+    "ramPct": 13,
     "cpus": 8
   },
   "brain": {
@@ -3092,9 +3092,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
