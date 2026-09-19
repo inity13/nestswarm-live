@@ -1,5 +1,5 @@
 {
-  "generated": 1789851100808,
+  "generated": 1789851280915,
   "status": "running",
   "stats": {
     "products": 184,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "Worf (Security Sentinel): As we navigate our journey to deliver value through a single fla",
-        "t": 1789840961892
+        "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**:",
+        "t": 1789851223781
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "LaForge (Distributor): Guinan is correct to emphasize that building a single flagship prod",
-        "t": 1789840962244
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate a",
+        "t": 1789851226892
       }
     },
     {
@@ -349,6 +349,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate and PrivyGuard. It offers an easy checkout process and is great for reaching a targeted audience interested in AI tools and privacy/security. 2. **Dev.to**: Perfect for launching InsightMentor, as it's a popular platform for developers and tech enthusiasts who would be interested in travel planning, remote work, and personal development tools. Dev.to also provides built-in analytics to track performance. 3. **Payhip**: Suitable for LocalMate and EchoVerse, offering a flexible pricing model with …",
+      "t": 1789851226892,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. 2. **Child Process Creation**: Spawning child processes can lead to security vulnerabilities, especially if the processes are not properly managed or secured. 3. **Static Serve Tool Exposure**: Using a static serve tool without proper configuration exposes sensitive files and directories. **Concrete Fixes:** 1. **XSS Risk Fix**: Sanitize all user inputs before using them in innerHTML …",
+      "t": 1789851223781,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: paused new builds (strategic focus — board decision, no auto-expiry); focus niche: Premium software tool for data analysis; polished the weakest product",
@@ -1174,23 +1188,147 @@
       "t": 1789818959554,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "compliance_officer",
-      "text": "We must make compliance the first gate before any revenue engine runs, ensuring the flagship meets all privacy, consumer‑protection, and payment‑security laws. The team must implement a formal compliance audit process—mandatory privacy impact assessment, data‑handling review, and PCI‑DSS / GDPR validation—before moving the product to a live checkout.",
-      "t": 1789818959202,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "I see us at a crossroads with an overcrowded catalog and subpar reception from critics. To reverse this trajectory, we need to focus on delivering a single flagship product that customers actually want and will pay for. **Demand better customer validation:** Before committing resources to any new projects, I demand that we conduct thorough market research and validate the genuine intent and willingness to pay of potential customers for each build candidate. This step is crucial to ensure that every dollar we invest moves us closer to our goal of generating revenue and building a strong, loyal …",
-      "t": 1789818958849,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851279755,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 3 -> {\"action\":\"clickText\",\"text\":\"Accept all\"}",
+      "t": 1789851279198,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851264201,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
+      "t": 1789851263688,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851258394,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
+      "t": 1789851250077,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789851246897,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789851241330,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789851240202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789851240202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789851240202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/96 channels active · 1 new discovered",
+      "t": 1789851236525,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue: queued RapidAPI Marketplace Integration for account acquisition",
+      "t": 1789851236517,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851230383,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for architect (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789851229894,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789851227493,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, openrouter) · 0 zen free models",
+      "t": 1789851118271,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "bounty scout: 5 eligible task card(s) (Algora)",
+      "t": 1789851109203,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789851103050,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia in cooldown (last attempt 110m ago) — skip",
+      "t": 1789851101040,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789851101040,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini in cooldown (last attempt 110m ago) — skip",
+      "t": 1789851101040,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
+      "t": 1789851101040,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "registrar: registering Substack (revenue)",
@@ -1532,176 +1670,118 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789845099743,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789844983487,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789844803360,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789844622809,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789844504144,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789844504143,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789844504142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789844504142,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider gemini",
-      "t": 1789844504141,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
-      "t": 1789844503190,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789844499745,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789844443441,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789844313452,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789844303454,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789844262938,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789844083332,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789844067232,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 operational improvement(s) recommended",
-      "t": 1789843939055,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback",
-      "t": 1789843938926,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: team is well-sized — no changes",
-      "t": 1789843938926,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: 1 request(s) logged for the Swarm Protector",
-      "t": 1789843938926,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
-      "t": 1789843919072,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789843902998,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789843723046,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789851099821,
+      "text": "registrar: Substack step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851279755,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
-      "t": 1789851099819,
+      "text": "keyhunter: novitaai step 3 -> {\"action\":\"clickText\",\"text\":\"Accept all\"}",
+      "t": 1789851279198,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
-      "t": 1789851099819,
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851264201,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789851099819,
+      "text": "keyhunter: novitaai step 2 -> {\"action\":\"clickText\",\"text\":\"Privacy Policy\"}",
+      "t": 1789851263688,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "security scan: 180 products with flags, 1 with high-severity findings",
-      "t": 1789851099796,
-      "type": "security"
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851258394,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 1 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
+      "t": 1789851250077,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789851246897,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789851241330,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys or approval of Merchant-of-Record fallback for live payments",
+      "t": 1789851240202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789851240202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789851240202,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/96 channels active · 1 new discovered",
+      "t": 1789851236525,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue: queued RapidAPI Marketplace Integration for account acquisition",
+      "t": 1789851236517,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789851230383,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for architect (cloud http 429: [{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e)",
+      "t": 1789851229894,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
+      "t": 1789851227493,
+      "type": "event"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate and PrivyGuard. It offers an easy checkout process and is great for reaching a targeted audience interested in AI tools and privacy/security. 2. **Dev.to**: Perfect for launching InsightMentor, as it's a popular platform for developers and tech enthusiasts who would be interested in travel planning, remote work, and personal development tools. Dev.to also provides built-in analytics to track performance. 3. **Payhip**: Suitable for LocalMate and EchoVerse, offering a flexible pricing model with …",
+      "t": 1789851226892,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. 2. **Child Process Creation**: Spawning child processes can lead to security vulnerabilities, especially if the processes are not properly managed or secured. 3. **Static Serve Tool Exposure**: Using a static serve tool without proper configuration exposes sensitive files and directories. **Concrete Fixes:** 1. **XSS Risk Fix**: Sanitize all user inputs before using them in innerHTML …",
+      "t": 1789851223781,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1751,7 +1831,7 @@
     },
     {
       "name": "GitHub Copilot",
-      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 2×"
+      "desc": "Copilot models (Opus/Sonnet/GPT-5.1) via OpenCode auth · used 3×"
     },
     {
       "name": "Shared memory",
@@ -1963,7 +2043,7 @@
     }
   ],
   "ledger": {
-    "total": 1366,
+    "total": 1377,
     "revenue": 0,
     "effects": 179,
     "boundary": 1,
@@ -1975,9 +2055,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    0,
     1,
     1,
     0,
@@ -2004,15 +2081,18 @@
     0,
     1,
     0,
-    5
+    5,
+    13,
+    0,
+    38
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.11,
-      0.23
+      1.61,
+      0.78,
+      0.47
     ],
-    "ramPct": 17,
+    "ramPct": 24,
     "cpus": 8
   },
   "brain": {
@@ -2022,11 +2102,11 @@
         "tier": "local"
       },
       "architect": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "coder": {
-        "model": "deepseek-r1:8b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
@@ -2038,15 +2118,15 @@
         "tier": "local"
       },
       "critic": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "marketer": {
@@ -2115,7 +2195,10 @@
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -2124,7 +2207,7 @@
     }
   },
   "revenue": {
-    "total": 95,
+    "total": 96,
     "active": 4,
     "byKind": {
       "crypto": {
@@ -2156,7 +2239,7 @@
         "active": 0
       },
       "api-revenue": {
-        "total": 5,
+        "total": 6,
         "active": 0
       },
       "sponsorship": {
@@ -2746,6 +2829,12 @@
         "kind": "bounty",
         "active": false,
         "captcha": false
+      },
+      {
+        "name": "RapidAPI Marketplace Integration",
+        "kind": "api-revenue",
+        "active": false,
+        "captcha": false
       }
     ]
   },
@@ -3126,8 +3215,8 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 10
+        "utilPct": 94,
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
@@ -3148,7 +3237,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 79,
+    "selfHostedInferencePct": 77,
     "jobsProcessed": 202
   }
 }
