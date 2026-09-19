@@ -1,5 +1,5 @@
 {
-  "generated": 1789810060575,
+  "generated": 1789810240737,
   "status": "running",
   "stats": {
     "products": 184,
@@ -349,6 +349,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "owner",
+      "text": "Owner directive received: \"start mining cryptos on the 5090 node, set up a wallet and a miner on a pool, email the swarm protector the wallet credentials etc once done\"",
+      "t": 1789810222065,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: email-automation-SMB; resumed new builds (board decision); marketed the top product",
@@ -1181,16 +1188,21 @@
       "t": 1789689001957,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "Quark",
-      "text": "Understood, Team. Let's refine our strategy to ensure we're focusing on quality over quantity. The most critical next step is to finalize and polish our flagship product until it’s ready for launch. This involves deepening its features, enhancing user experience, and ensuring it stands out in the market. Only then can we move forward with securing customers and generating revenue. Moving forward, let's concentrate all efforts on perfecting our current product before embarking on new ventures.",
-      "t": 1789689001605,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "owner command: start mining cryptos on the 5090 node, set up a wallet and a miner on a pool, em",
+      "t": 1789810222062,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789810063111,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
@@ -1634,21 +1646,16 @@
       "text": "shadow pilot: 4/4 checks passed",
       "t": 1789807919795,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789807904556,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model qwen2.5-coder:7b ready",
-      "t": 1789807904547,
+      "text": "owner command: start mining cryptos on the 5090 node, set up a wallet and a miner on a pool, em",
+      "t": 1789810222062,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1920,9 +1927,6 @@
     "priority": "Automated email‑inbox triage tool for small businesses"
   },
   "throughput": [
-    18,
-    0,
-    0,
     3,
     6,
     0,
@@ -1949,15 +1953,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0,
-      0.1,
-      0.19
+      0.02,
+      0.07,
+      0.16
     ],
-    "ramPct": 13,
+    "ramPct": 9,
     "cpus": 8
   },
   "brain": {
@@ -3068,9 +3075,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 78
+        "vramPct": 10
       },
       {
         "alias": "GPU-Node-2",
@@ -3085,10 +3092,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
-        "warm": true,
+        "busy": true,
+        "warm": false,
         "utilPct": 0,
-        "vramPct": 78
+        "vramPct": 2
       }
     ],
     "selfHostedInferencePct": 80,
