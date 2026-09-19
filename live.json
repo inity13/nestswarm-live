@@ -1,5 +1,5 @@
 {
-  "generated": 1789844980808,
+  "generated": 1789845160762,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789845099743,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789844983487,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789844803360,
       "type": "event"
@@ -1658,21 +1670,16 @@
       "text": "self-heal: already disabled: groq (no-op)",
       "t": 1789837304034,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: already disabled: nvidia (no-op)",
-      "t": 1789837304034,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: already disabled: openrouter (no-op)",
-      "t": 1789837304034,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789845099743,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1944,9 +1951,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    0,
     3,
     0,
     0,
@@ -1973,15 +1977,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.35,
-      0.24,
-      0.24
+      1.2,
+      0.49,
+      0.32
     ],
-    "ramPct": 13,
+    "ramPct": 14,
     "cpus": 8
   },
   "brain": {
@@ -3092,9 +3099,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 10
+        "warm": true,
+        "utilPct": 2,
+        "vramPct": 62
       },
       {
         "alias": "GPU-Node-2",
