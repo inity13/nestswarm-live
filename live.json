@@ -1,5 +1,5 @@
 {
-  "generated": 1789929834120,
+  "generated": 1789930018678,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1194,6 +1194,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789929836567,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789929650903,
       "type": "event"
     },
@@ -1664,12 +1670,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789920453181,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789920268902,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1949,9 +1949,6 @@
   },
   "throughput": [
     0,
-    1,
-    1,
-    0,
     0,
     1,
     0,
@@ -1977,15 +1974,18 @@
     1,
     0,
     0,
-    0
+    1,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.1,
-      0.15,
-      0.17
+      1.26,
+      0.85,
+      0.45
     ],
-    "ramPct": 20,
+    "ramPct": 22,
     "cpus": 8
   },
   "brain": {
@@ -1995,12 +1995,12 @@
         "tier": "local"
       },
       "architect": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       },
       "coder": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "deepseek-r1:8b",
+        "tier": "local"
       },
       "designer": {
         "model": "node/nest-node-core/qwen2.5-coder:7b",
@@ -3103,7 +3103,7 @@
         ],
         "busy": true,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 1,
         "vramPct": 10
       },
       {
@@ -3125,7 +3125,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 78,
+    "selfHostedInferencePct": 77,
     "jobsProcessed": 202
   }
 }
