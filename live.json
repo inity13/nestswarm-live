@@ -1,5 +1,5 @@
 {
-  "generated": 1789897712350,
+  "generated": 1789897892349,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789897775627,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — disabled provider nvidia",
+      "t": 1789897775627,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789897771597,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789897714619,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "conductor returned no valid plan",
       "t": 1789897677555,
       "type": "event"
@@ -1601,61 +1625,12 @@
     },
     {
       "who": "swarm",
-      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
-      "t": 1789897352536,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: gemini already has a working key — skip",
-      "t": 1789897352536,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
       "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
       "t": 1789897352536,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: nvidia already has a working key — skip",
-      "t": 1789897352535,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: openrouter already has a working key — skip",
-      "t": 1789897351635,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789897351635,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "conductor returned no valid plan",
-      "t": 1789897677555,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "free provider nvidia/nemotron-3.5-lightning-30b-a3b failed for conductor (The operation was aborted due to timeout)",
-      "t": 1789897651784,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "bounty scout: 5 eligible task card(s) (Algora)",
-      "t": 1789897647728,
-      "type": "scout"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1944,9 +1919,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     6,
     11,
     10,
@@ -1956,15 +1928,18 @@
     48,
     50,
     11,
-    4
+    4,
+    2,
+    3,
+    0
   ],
   "load": {
     "loadavg": [
-      0.24,
-      0.83,
-      0.56
+      0.08,
+      0.5,
+      0.48
     ],
-    "ramPct": 22,
+    "ramPct": 10,
     "cpus": 8
   },
   "brain": {
@@ -2068,7 +2043,6 @@
     },
     "free": [
       "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3085,9 +3059,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": true,
-        "utilPct": 1,
-        "vramPct": 72
+        "warm": false,
+        "utilPct": 2,
+        "vramPct": 10
       },
       {
         "alias": "GPU-Node-2",
