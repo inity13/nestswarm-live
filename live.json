@@ -1,5 +1,5 @@
 {
-  "generated": 1789941265446,
+  "generated": 1789941445642,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,60 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789941344695,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789941325151,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789941325151,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789941325145,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789941325140,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789941325140,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "vault: synced (1 notes updated)",
+      "t": 1789941324452,
+      "type": "vault"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789941324028,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789941268184,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "keyhunter: replika entering verification code from inbox",
       "t": 1789941195679,
       "type": "event"
@@ -1598,52 +1652,9 @@
       "text": "registrar: Substack step 11 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
       "t": 1789940947710,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789940945887,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai needs email verification — reading inbox",
-      "t": 1789940943654,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: novitaai step 9 -> {\"action\":\"clickText\",\"text\":\"Login with Email\"}",
-      "t": 1789940943626,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Substack step 9 -> {\"action\":\"clickText\",\"text\":\"Sign in with Google\"}",
-      "t": 1789940943401,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "keyhunter: replika entering verification code from inbox",
-      "t": 1789941195679,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle needs email verification — reading inbox",
-      "t": 1789941188207,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 11 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789941188204,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1936,9 +1947,6 @@
     0,
     1,
     0,
-    0,
-    1,
-    0,
     5,
     13,
     0,
@@ -1948,15 +1956,18 @@
     46,
     36,
     9,
+    0,
+    9,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      2.19,
-      2.16,
-      1.36
+      0.45,
+      1.53,
+      1.27
     ],
-    "ramPct": 9,
+    "ramPct": 11,
     "cpus": 8
   },
   "brain": {
@@ -2058,12 +2069,7 @@
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3078,9 +3084,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 11
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
