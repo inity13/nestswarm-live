@@ -1,5 +1,5 @@
 {
-  "generated": 1789872520797,
+  "generated": 1789872700799,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789872699824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
+      "t": 1789872699821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789872699821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1789872699820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 180 products with flags, 1 with high-severity findings",
+      "t": 1789872699807,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789872699751,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789872524199,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789872523277,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "focus cooldown elapsed — resuming new builds",
       "t": 1789872514201,
       "type": "event"
@@ -1622,61 +1670,43 @@
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
       "t": 1789867064073,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789867054074,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789866943478,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789866763301,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 2 fix(es) — requested owner: Please provide an API key for the ai21labs free provider.; requested owner: Please provide an API key for the alpacaai free provider.",
-      "t": 1789866708433,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Please provide an API key for the ai21labs free provider.",
-      "t": 1789866708432,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Please provide an API key for the alpacaai free provider.",
-      "t": 1789866708432,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Please provide an API key for the alpacaai free provider.",
-      "t": 1789866707155,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789866707155,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789872514201,
+      "text": "registrar: registering Substack (revenue)",
+      "t": 1789872699824,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
+      "t": 1789872699821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
+      "t": 1789872699821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
+      "t": 1789872699820,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "security scan: 180 products with flags, 1 with high-severity findings",
+      "t": 1789872699807,
+      "type": "security"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789872699751,
       "type": "event"
     }
   ],
@@ -1951,9 +1981,6 @@
     "priority": "the current flagship intelligent chatbot"
   },
   "throughput": [
-    1,
-    0,
-    1,
     4,
     0,
     1,
@@ -1980,15 +2007,18 @@
     0,
     1,
     0,
-    1
+    1,
+    2,
+    0,
+    6
   ],
   "load": {
     "loadavg": [
-      0.07,
-      0.14,
-      0.23
+      0.36,
+      0.16,
+      0.21
     ],
-    "ramPct": 11,
+    "ramPct": 15,
     "cpus": 8
   },
   "brain": {
@@ -2090,7 +2120,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3104,7 +3136,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
         "utilPct": 0,
         "vramPct": 10
