@@ -1,5 +1,5 @@
 {
-  "generated": 1789882781027,
+  "generated": 1789882961120,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: requested owner: Please provide an API key for the ai21labs free provider.",
+      "t": 1789882905821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Please provide an API key for the ai21labs free provider.",
+      "t": 1789882905821,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789882899752,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789882783174,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789882603200,
       "type": "event"
@@ -1646,33 +1670,28 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789878099751,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789877985518,
+      "text": "self-heal: requested owner: Please provide an API key for the ai21labs free provider.",
+      "t": 1789882905821,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789877975519,
+      "text": "self-heal complete: 1 fix(es) — requested owner: Please provide an API key for the ai21labs free provider.",
+      "t": 1789882905821,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789877923690,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789877744056,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789882899752,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1945,9 +1964,6 @@
   },
   "throughput": [
     1,
-    1,
-    3,
-    1,
     0,
     0,
     1,
@@ -1973,15 +1989,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    3
   ],
   "load": {
     "loadavg": [
-      0.22,
-      0.2,
-      0.27
+      0.34,
+      0.27,
+      0.28
     ],
-    "ramPct": 17,
+    "ramPct": 20,
     "cpus": 8
   },
   "brain": {
@@ -3098,9 +3117,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
