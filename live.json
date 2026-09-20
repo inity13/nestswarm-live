@@ -1,5 +1,5 @@
 {
-  "generated": 1789927984247,
+  "generated": 1789928169440,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789928129169,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789927986731,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789927801369,
       "type": "event"
@@ -1658,21 +1670,16 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789919351944,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 9 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789919351931,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 8 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789919350302,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789928129169,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1948,9 +1955,6 @@
     "priority": "Designated flagship product with verified end-to-end checkout and customer-facing launch assets"
   },
   "throughput": [
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1977,15 +1981,18 @@
     1,
     0,
     0,
-    0
+    1,
+    0,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.11,
-      0.13,
-      0.12
+      1.02,
+      0.64,
+      0.32
     ],
-    "ramPct": 18,
+    "ramPct": 24,
     "cpus": 8
   },
   "brain": {
@@ -3102,9 +3109,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
