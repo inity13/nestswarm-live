@@ -1,5 +1,5 @@
 {
-  "generated": 1789944325424,
+  "generated": 1789944505471,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789944391696,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789944327621,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789944147661,
       "type": "event"
@@ -1658,18 +1670,6 @@
       "text": "keyhunter: elevenlabs step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789940989645,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789940989245,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789940986747,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1949,9 +1949,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1977,15 +1974,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.05,
-      0.1
+      0.21,
+      0.3,
+      0.19
     ],
-    "ramPct": 10,
+    "ramPct": 13,
     "cpus": 8
   },
   "brain": {
@@ -3102,9 +3102,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
