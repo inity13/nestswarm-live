@@ -1,5 +1,5 @@
 {
-  "generated": 1789904372776,
+  "generated": 1789904552549,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1789904438425,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789904374875,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 4 free providers live (groq, openrouter, nvidia, gemini) · 0 zen free models",
+      "t": 1789904374782,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor returned no valid plan",
+      "t": 1789904374638,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789904194673,
       "type": "event"
@@ -1646,30 +1670,6 @@
       "text": "registrar: Millo step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789897524703,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789897523571,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Millo step 0 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789897521993,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Creator Monetization Platforms step 0 -> {\"action\":\"fail\",\"reason\":\"Access denied. Unable to proceed.\"}",
-      "t": 1789897520770,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: registering Millo (revenue)",
-      "t": 1789897520770,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1945,9 +1945,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
+    0,
+    4,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.03,
-      0.06
+      0.2,
+      0.26,
+      0.15
     ],
-    "ramPct": 11,
+    "ramPct": 17,
     "cpus": 8
   },
   "brain": {
@@ -2079,12 +2079,14 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3-super-120b-a12b:free",
-        "tier": "free"
+        "model": "openai/gpt-oss-120b",
+        "tier": "local"
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3101,9 +3103,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 2,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3124,7 +3126,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 81,
+    "selfHostedInferencePct": 80,
     "jobsProcessed": 202
   }
 }
