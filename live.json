@@ -1,6 +1,6 @@
 {
-  "generated": 1789884400896,
-  "status": "running",
+  "generated": 1789884581038,
+  "status": "passive",
   "stats": {
     "products": 184,
     "listed": 20,
@@ -349,6 +349,13 @@
     }
   ],
   "chat": [
+    {
+      "who": "swarm",
+      "text": "🧘 Passive mode ON — idle; ask me anything here or via the dashboard.",
+      "t": 1789884515723,
+      "system": true,
+      "type": "system"
+    },
     {
       "who": "LaForge",
       "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate, PrivyGuard, LocalMate, EchoVerse, and InsightMentor. It offers robust features including flexible pricing plans, custom landing pages, and built-in marketing tools to help drive traffic. 2. **GitHub**: Perfect for launching documentation, tutorials, and developer-focused content related to the swarm's products, particularly useful for PrivyGuard (privacy, security & personal data) and MnemonicMate (AI & automation utilities). It also serves as a platform for showcasing code snippets and project examples …",
@@ -1181,16 +1188,27 @@
       "t": 1789851457388,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "payment-gateway-integration",
-      "text": "Our flagship product should integrate industry-standard payment gateways for secure and efficient transactions. The team must prioritize user-friendly integration and quick testing to ensure a smooth launch.",
-      "t": 1789851457034,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "passive mode ON — swarm idle, listening for questions",
+      "t": 1789884515723,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789884459882,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789884403134,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "focus mode: 20 products listed — polishing, marketing & distributing",
@@ -1652,37 +1670,13 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789879723190,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789879543731,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789879362922,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: requested owner: Please provide an API key for the ai21labs free provider.",
-      "t": 1789879304476,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789884356243,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789884346822,
+      "text": "passive mode ON — swarm idle, listening for questions",
+      "t": 1789884515723,
       "type": "event"
     }
   ],
@@ -1958,9 +1952,6 @@
   },
   "throughput": [
     1,
-    0,
-    0,
-    1,
     1,
     3,
     1,
@@ -1986,15 +1977,18 @@
     1,
     2,
     1,
-    3
+    3,
+    3,
+    4,
+    11
   ],
   "load": {
     "loadavg": [
-      3.74,
-      2.34,
-      1.46
+      2.68,
+      2.25,
+      1.56
     ],
-    "ramPct": 14,
+    "ramPct": 17,
     "cpus": 8
   },
   "brain": {
@@ -3110,10 +3104,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
-        "utilPct": 93,
-        "vramPct": 77
+        "busy": false,
+        "warm": true,
+        "utilPct": 1,
+        "vramPct": 68
       },
       {
         "alias": "GPU-Node-2",
