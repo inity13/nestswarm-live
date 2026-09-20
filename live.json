@@ -1,5 +1,5 @@
 {
-  "generated": 1789883860966,
+  "generated": 1789884042100,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1194,6 +1194,12 @@
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789883863549,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789883683340,
       "type": "event"
     },
@@ -1664,12 +1670,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789878825156,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: Please provide an API key for the ai21labs free provider.",
-      "t": 1789878722974,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1944,9 +1944,6 @@
     "priority": "Micro‑SaaS platform for small business owners that combines financial tracking, inventory management, and customer engagement on a tight budget."
   },
   "throughput": [
-    1,
-    0,
-    0,
     2,
     3,
     0,
@@ -1973,15 +1970,18 @@
     1,
     3,
     1,
-    0
+    0,
+    2,
+    0,
+    2
   ],
   "load": {
     "loadavg": [
-      1.32,
-      1.11,
-      0.65
+      2.31,
+      1.75,
+      0.99
     ],
-    "ramPct": 17,
+    "ramPct": 18,
     "cpus": 8
   },
   "brain": {
@@ -2011,11 +2011,11 @@
         "tier": "local"
       },
       "polisher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "deepseek-r1:8b",
         "tier": "local"
       },
       "researcher": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       },
       "marketer": {
@@ -3097,10 +3097,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 5,
-        "vramPct": 68
+        "busy": true,
+        "warm": false,
+        "utilPct": 0,
+        "vramPct": 62
       },
       {
         "alias": "GPU-Node-2",
