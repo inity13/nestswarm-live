@@ -1,5 +1,5 @@
 {
-  "generated": 1789878640893,
+  "generated": 1789878820925,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Please provide an API key for the ai21labs free provider.",
+      "t": 1789878722974,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: requested owner: Please provide an API key for the ai21labs free provider.",
+      "t": 1789878722973,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789878699752,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789878643404,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789878462920,
       "type": "event"
@@ -1646,30 +1670,6 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789873299756,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: replicate entering verification code from inbox",
-      "t": 1789873248622,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789873245341,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: replicate needs email verification — reading inbox",
-      "t": 1789873224728,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: replicate step 9 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789873224722,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1944,9 +1944,6 @@
     "priority": "Micro‑SaaS platform for small business owners that combines financial tracking, inventory management, and customer engagement on a tight budget."
   },
   "throughput": [
-    2,
-    3,
-    0,
     3,
     0,
     0,
@@ -1973,15 +1970,18 @@
     0,
     1,
     0,
+    0,
+    2,
+    3,
     0
   ],
   "load": {
     "loadavg": [
-      0.03,
-      0.14,
-      0.14
+      0.19,
+      0.19,
+      0.16
     ],
-    "ramPct": 9,
+    "ramPct": 11,
     "cpus": 8
   },
   "brain": {
@@ -3098,9 +3098,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
