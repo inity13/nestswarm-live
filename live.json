@@ -1,5 +1,5 @@
 {
-  "generated": 1789947879906,
+  "generated": 1789947925420,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,12 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789947924034,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite error: The operation was aborted due to timeout",
       "t": 1789947760449,
       "type": "event"
@@ -1664,15 +1670,16 @@
       "text": "registrar: registering Paddle (revenue)",
       "t": 1789941074809,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
-      "t": 1789941068226,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789947924034,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1975,17 +1982,17 @@
     1,
     0,
     0,
-    0,
     1,
-    0
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0,
-      0.02,
+      0.08,
+      0.04,
       0.03
     ],
-    "ramPct": 8,
+    "ramPct": 10,
     "cpus": 8
   },
   "brain": {
@@ -2087,7 +2094,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3103,7 +3112,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 2,
         "vramPct": 10
       },
       {
