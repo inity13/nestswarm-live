@@ -1,5 +1,5 @@
 {
-  "generated": 1789883320828,
+  "generated": 1789883500871,
   "status": "running",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,30 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789883499752,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789883445748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789883435748,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789883323297,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789883143831,
       "type": "event"
@@ -1646,33 +1670,28 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789878462920,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789878283169,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789883499752,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
-      "t": 1789878169177,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 1 fix(es) — requested owner: Please provide an API key for the ai21labs free provider.",
-      "t": 1789878108220,
+      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
+      "t": 1789883445748,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "self-heal: requested owner: Please provide an API key for the ai21labs free provider.",
-      "t": 1789878108219,
+      "text": "focus cooldown elapsed — resuming new builds",
+      "t": 1789883435748,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1944,9 +1963,6 @@
     "priority": "Micro‑SaaS platform for small business owners that combines financial tracking, inventory management, and customer engagement on a tight budget."
   },
   "throughput": [
-    1,
-    2,
-    1,
     4,
     1,
     0,
@@ -1973,15 +1989,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.05,
-      0.15,
-      0.22
+      0.36,
+      0.18,
+      0.21
     ],
-    "ramPct": 15,
+    "ramPct": 18,
     "cpus": 8
   },
   "brain": {
@@ -3097,7 +3116,7 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
         "utilPct": 0,
         "vramPct": 10
