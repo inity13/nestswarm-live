@@ -1,5 +1,5 @@
 {
-  "generated": 1789886920871,
+  "generated": 1789887100880,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789887099752,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789886923286,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789886743371,
       "type": "event"
@@ -1658,21 +1670,16 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789880803914,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "focus mode: 20 products listed — polishing, marketing & distributing",
-      "t": 1789880715679,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "focus cooldown elapsed — resuming new builds",
-      "t": 1789880705680,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789887099752,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1944,9 +1951,6 @@
     "priority": ""
   },
   "throughput": [
-    1,
-    0,
-    1,
     4,
     0,
     1,
@@ -1973,15 +1977,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    0,
+    1
   ],
   "load": {
     "loadavg": [
-      0.12,
-      0.18,
-      0.39
+      0.37,
+      0.26,
+      0.37
     ],
-    "ramPct": 12,
+    "ramPct": 14,
     "cpus": 8
   },
   "brain": {
@@ -2083,7 +2090,9 @@
         "tier": "local"
       }
     },
-    "free": [],
+    "free": [
+      "openai/gpt-oss-120b"
+    ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
