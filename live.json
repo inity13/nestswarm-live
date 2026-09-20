@@ -1,5 +1,5 @@
 {
-  "generated": 1789892500889,
+  "generated": 1789892681081,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1193,6 +1193,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: requested owner: Please provide an API key for the free provider 'qweninferenceapialpha' so it can be activated.",
+      "t": 1789892512489,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal complete: 1 fix(es) — requested owner: Please provide an API key for the free provider 'qweninferenceapialpha' so it can be activated.",
+      "t": 1789892512489,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789892503255,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789892499755,
       "type": "event"
@@ -1652,34 +1670,9 @@
       "text": "self-heal: diagnosing recent errors with the best model",
       "t": 1789887099752,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789886923286,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789886743371,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789886563230,
-      "type": "event"
     }
   ],
-  "recent": [
-    {
-      "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789892499755,
-      "type": "event"
-    }
-  ],
+  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1951,9 +1944,6 @@
     "priority": ""
   },
   "throughput": [
-    4,
-    0,
-    0,
     1,
     1,
     0,
@@ -1980,15 +1970,18 @@
     0,
     1,
     0,
-    1
+    1,
+    4,
+    0,
+    0
   ],
   "load": {
     "loadavg": [
-      0.32,
-      0.27,
-      0.41
+      2.25,
+      1.01,
+      0.66
     ],
-    "ramPct": 15,
+    "ramPct": 18,
     "cpus": 8
   },
   "brain": {
@@ -3105,9 +3098,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 0,
-        "vramPct": 10
+        "warm": true,
+        "utilPct": 1,
+        "vramPct": 68
       },
       {
         "alias": "GPU-Node-2",
