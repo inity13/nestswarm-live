@@ -1,5 +1,5 @@
 {
-  "generated": 1789991672125,
+  "generated": 1789991852130,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,54 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
+      "t": 1789991730881,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider openrouter",
+      "t": 1789991730880,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider groq",
+      "t": 1789991730879,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider nvidia",
+      "t": 1789991730879,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: disabled provider gemini",
+      "t": 1789991730878,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for conductor (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789991729664,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789991724599,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789991675561,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789991495447,
       "type": "event"
@@ -1619,54 +1667,6 @@
       "text": "keyhunter: ai21labs step 8 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
       "t": 1789984806639,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 7 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984805606,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 6 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984804570,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 5 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984803530,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789984798892,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 4 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984792722,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 3 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984779500,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 2 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984710141,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs step 1 -> {\"action\":\"clickText\",\"text\":\"Accept All Cookies\"}",
-      "t": 1789984655427,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1967,9 +1967,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     6,
     1,
     0,
@@ -1978,13 +1975,16 @@
     0,
     1,
     0,
+    0,
+    9,
+    0,
     0
   ],
   "load": {
     "loadavg": [
-      0.02,
-      0.15,
-      0.17
+      0.1,
+      0.11,
+      0.14
     ],
     "ramPct": 9,
     "cpus": 8
@@ -2084,16 +2084,11 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       }
     },
-    "free": [
-      "gemini-flash-latest",
-      "openai/gpt-oss-120b",
-      "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "nvidia/nemotron-3-super-120b-a12b:free"
-    ],
+    "free": [],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
       "listed": 20,
@@ -3109,7 +3104,7 @@
         ],
         "busy": false,
         "warm": false,
-        "utilPct": 3,
+        "utilPct": 2,
         "vramPct": 10
       },
       {
