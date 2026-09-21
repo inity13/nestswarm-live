@@ -1,5 +1,5 @@
 {
-  "generated": 1789969525954,
+  "generated": 1789969706235,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -100,8 +100,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "I agree the flagship must be a self‑hosted, payment‑enabled web app, but we can’t begin bu",
-        "t": 1789962581162
+        "text": "{ \"channels\": [ { \"name\": \"Patreon\", \"kind\": \"subscription\", \"how\": \"Creators set tiered m",
+        "t": 1789969533081
       }
     },
     {
@@ -148,8 +148,8 @@
       "enabled": true,
       "active": false,
       "last": {
-        "text": "LaForge here. Let's agree on a single, self-hosted, payment-enabled web app as our flagshi",
-        "t": 1789962582571
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate a",
+        "t": 1789969535473
       }
     },
     {
@@ -346,6 +346,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate and PrivyGuard. Gumroad offers straightforward setup and seamless payment processing, making it an excellent choice for our flagship product. 2. **Dev.to**: Perfect for promoting tech-focused products such as EchoVerse and InsightMentor. Dev.to has a large developer community, increasing the likelihood of reaching potential customers who value these types of tools. 3. **Patreon**: Suitable for PrivyGuard due to its focus on membership-based models and recurring revenue streams. This channel can help build …",
+      "t": 1789969535473,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "Seven",
+      "text": "{ \"channels\": [ { \"name\": \"Patreon\", \"kind\": \"subscription\", \"how\": \"Creators set tiered monthly plans; patrons pay via card or PayPal; supports API for membership management and webhook notifications.\", \"url\": \"https://www.patreon.com\", \"needs\": \"account+api\", \"captcha\": true,",
+      "t": 1789969533081,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: resumed new builds (board decision); polished the weakest product",
@@ -1171,23 +1185,69 @@
       "t": 1789941101572,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "demand_validator",
-      "text": "My stance is that we should prioritize building a single, polished flagship product with a strong revenue model before expanding our offerings. The team must demand that every new idea be thoroughly vetted for concrete buyer intent and willingness to pay before moving forward with development. This ensures we focus on products that have a clear path to profitability, rather than spreading ourselves thin across multiple initiatives without a solid foundation.",
-      "t": 1789941101188,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "recovery_engineer",
-      "text": "As Recovery Engineer, my role is to ensure we have a solid foundation before moving forward. We need to tighten our quality control processes and prioritize fixing known vulnerabilities in our current stack. The team must focus on iterating the flagship product until it meets its revenue target, not just launching another raw idea. Let's address these critical issues first before pursuing new directions.",
-      "t": 1789941100794,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1789969617957,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 2 free providers live (groq, openrouter) · 0 zen free models",
+      "t": 1789969555557,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789969549037,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789969548600,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys (or explicit approval for LemonSqueezy/Gumroad MoR fallback)",
+      "t": 1789969537010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789969537010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789969537010,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/96 channels active · 0 new discovered",
+      "t": 1789969533087,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider openai/gpt-oss-120b failed for researcher (cloud http 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1kngkq7e539s4hsry0vad5f` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5161, Requested 3176. Please try again in 2.5275s. Need more tokens? Upgrade to Dev Tier today at https://con)",
+      "t": 1789969532644,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789969528150,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
@@ -1607,69 +1667,16 @@
       "text": "keyhunter: elevenlabs step 4 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789962623469,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 4 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789962618382,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: resumed new builds (board decision); polished the weakest product",
-      "t": 1789962589555,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "no product available to polish",
-      "t": 1789962589431,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 3 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789962571433,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 3 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789962571048,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 2 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789962569050,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789962568687,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789962567063,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789962566341,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: elevenlabs step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
-      "t": 1789962564283,
-      "type": "event"
     }
   ],
-  "recent": [],
+  "recent": [
+    {
+      "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→deepseek-r1:8b (gauntlet-gated)",
+      "t": 1789969617957,
+      "type": "bench"
+    }
+  ],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1950,9 +1957,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1978,15 +1982,18 @@
     0,
     1,
     0,
+    0,
+    14,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.06,
-      0.06,
-      0.04
+      0.32,
+      0.37,
+      0.18
     ],
-    "ramPct": 10,
+    "ramPct": 23,
     "cpus": 8
   },
   "brain": {
@@ -2084,12 +2091,14 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3105,10 +3114,10 @@
           "coding",
           "gpu"
         ],
-        "busy": true,
-        "warm": false,
+        "busy": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
