@@ -1,5 +1,5 @@
 {
-  "generated": 1789987532126,
+  "generated": 1789987712212,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789987599470,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789987534706,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789987354489,
       "type": "event"
@@ -1655,18 +1667,6 @@
       "text": "registrar: Paddle step 5 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
       "t": 1789984376698,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: replika step 4 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789984376445,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: replika step 3 -> {\"action\":\"type\",\"selector\":\"input[name='email']\",\"value\":\"[email]\"}",
-      "t": 1789984361944,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1950,9 +1950,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1978,15 +1975,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.23,
-      0.12,
-      0.19
+      0.35,
+      0.45,
+      0.33
     ],
-    "ramPct": 10,
+    "ramPct": 13,
     "cpus": 8
   },
   "brain": {
@@ -3103,9 +3103,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
