@@ -1,5 +1,5 @@
 {
-  "generated": 1789991132119,
+  "generated": 1789991313202,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,42 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
+      "t": 1789991220412,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789991143693,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys (or explicit approval for LemonSqueezy/Gumroad MoR fallback)",
+      "t": 1789991135426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789991135426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789991135426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789991134665,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789990955204,
       "type": "event"
@@ -1631,42 +1667,6 @@
       "text": "keyhunter: ai21labs step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
       "t": 1789984573965,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: qwen step 0 -> {\"action\":\"fail\",\"reason\":\"The site cannot be reached. DNS_PROBE_FINISHED_NXDOMAIN.\"}",
-      "t": 1789984560311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: attempting ai21labs (https://ai21labs.com/signup)",
-      "t": 1789984560311,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal complete: 4 fix(es) — disabled provider gemini; disabled provider groq; disabled provider nvidia; disabled provider openrouter",
-      "t": 1789984525804,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider openrouter",
-      "t": 1789984525803,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider nvidia",
-      "t": 1789984525755,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "self-heal: disabled provider groq",
-      "t": 1789984525752,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1950,9 +1950,6 @@
   },
   "throughput": [
     1,
-    1,
-    0,
-    1,
     0,
     0,
     1,
@@ -1978,15 +1975,18 @@
     0,
     1,
     0,
+    0,
+    6,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.74,
-      0.21,
-      0.12
+      0.39,
+      0.46,
+      0.25
     ],
-    "ramPct": 11,
+    "ramPct": 13,
     "cpus": 8
   },
   "brain": {
@@ -2084,12 +2084,14 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -3106,9 +3108,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 10
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3129,7 +3131,7 @@
         "vramPct": 1
       }
     ],
-    "selfHostedInferencePct": 82,
+    "selfHostedInferencePct": 81,
     "jobsProcessed": 202
   }
 }
