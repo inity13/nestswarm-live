@@ -1,5 +1,5 @@
 {
-  "generated": 1789976726031,
+  "generated": 1789976914370,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,48 @@
   "events": [
     {
       "who": "swarm",
+      "text": "conductor: 2 operational improvement(s) recommended",
+      "t": 1789976795391,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789976795300,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill payment-link-metadata-propagation",
+      "t": 1789976795141,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor created skill: payment-link-metadata-propagation",
+      "t": 1789976795140,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys (or explicit approval for LemonSqueezy/Gumroad MoR fallback)",
+      "t": 1789976795136,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789976745927,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789976728382,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789976549563,
       "type": "event"
@@ -1625,48 +1667,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789967908537,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→deepseek-r1:8b, light→default (gauntlet-gated)",
-      "t": 1789967799826,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789967728500,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789967548412,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789967369360,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789967188986,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789967008380,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789966828306,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1917,7 +1917,7 @@
     },
     {
       "name": "payment-link-metadata-propagation",
-      "desc": "Ensures product_id propagates from Price metadata to checkout sessions for fulfillment tracking"
+      "desc": "Ensures product_id propagates from Price metadata to checkout sessions for fulfillment tracking."
     },
     {
       "name": "stripe-live-readiness-validation",
@@ -1949,11 +1949,7 @@
     "priority": "A high-demand niche with proven buyer interest and clear path to monetization"
   },
   "throughput": [
-    5,
-    0,
-    0,
-    2,
-    0,
+    1,
     0,
     1,
     0,
@@ -1978,15 +1974,19 @@
     0,
     1,
     0,
+    0,
+    1,
+    1,
+    6,
     0
   ],
   "load": {
     "loadavg": [
-      0.69,
-      0.23,
-      0.25
+      3.59,
+      1.26,
+      0.63
     ],
-    "ramPct": 14,
+    "ramPct": 15,
     "cpus": 8
   },
   "brain": {
@@ -2084,12 +2084,15 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
     "free": [
-      "openai/gpt-oss-120b"
+      "gemini-flash-latest",
+      "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
     "cap": {
@@ -3105,9 +3108,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
-        "utilPct": 2,
-        "vramPct": 10
+        "warm": true,
+        "utilPct": 5,
+        "vramPct": 41
       },
       {
         "alias": "GPU-Node-2",
