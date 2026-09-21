@@ -1,5 +1,5 @@
 {
-  "generated": 1789973306283,
+  "generated": 1789973486103,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "model bench: coder→default, light→default (gauntlet-gated)",
+      "t": 1789973367087,
+      "type": "bench"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789973309426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789973128837,
       "type": "event"
@@ -1655,18 +1667,6 @@
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789963409175,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789963228299,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789963048082,
-      "type": "event"
     }
   ],
   "recent": [],
@@ -1959,9 +1959,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     1,
     0,
     1,
@@ -1978,15 +1975,18 @@
     0,
     2,
     0,
-    0
+    0,
+    2,
+    2,
+    1
   ],
   "load": {
     "loadavg": [
-      1.41,
-      0.84,
-      0.46
+      0.62,
+      0.95,
+      0.59
     ],
-    "ramPct": 20,
+    "ramPct": 17,
     "cpus": 8
   },
   "brain": {
@@ -1996,15 +1996,15 @@
         "tier": "local"
       },
       "architect": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "coder": {
-        "model": "openai/gpt-oss-120b",
+        "model": "node/nest-node-5090/qwen3-coder:30b",
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-core/qwen2.5-coder:7b",
+        "model": "node/nest-node-5090/gpt-oss:20b",
         "tier": "local"
       },
       "security": {
@@ -3102,10 +3102,10 @@
           "coding",
           "gpu"
         ],
-        "busy": false,
-        "warm": true,
-        "utilPct": 3,
-        "vramPct": 68
+        "busy": true,
+        "warm": false,
+        "utilPct": 1,
+        "vramPct": 77
       },
       {
         "alias": "GPU-Node-2",
@@ -3120,10 +3120,10 @@
           "python",
           "vision"
         ],
-        "busy": true,
+        "busy": false,
         "warm": false,
-        "utilPct": 29,
-        "vramPct": 92
+        "utilPct": 0,
+        "vramPct": 2
       }
     ],
     "selfHostedInferencePct": 79,
