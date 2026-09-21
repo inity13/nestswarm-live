@@ -1,5 +1,5 @@
 {
-  "generated": 1789970606650,
+  "generated": 1789970785980,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789970746094,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789970724530,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789970609324,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789970428513,
       "type": "event"
@@ -1649,27 +1667,22 @@
       "text": "keyhunter: attempting huggingfaceinferenceapi (https://huggingface.co/join)",
       "t": 1789962696266,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "keyhunter: elevenlabs entering verification code from inbox",
-      "t": 1789962691280,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789970746094,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789962688109,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "registrar: Paddle step 10 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
-      "t": 1789962677006,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789970724530,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1958,9 +1971,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     14,
     1,
     0,
@@ -1978,15 +1988,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0.26,
-      0.23,
-      0.19
+      0.33,
+      0.29,
+      0.21
     ],
-    "ramPct": 16,
+    "ramPct": 22,
     "cpus": 8
   },
   "brain": {
@@ -2084,8 +2097,8 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-        "tier": "free"
+        "model": "qwen2.5-coder:7b",
+        "tier": "local"
       }
     },
     "free": [],
@@ -3103,9 +3116,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 2,
-        "vramPct": 10
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
