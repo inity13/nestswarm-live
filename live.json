@@ -1,5 +1,5 @@
 {
-  "generated": 1789992212191,
+  "generated": 1789992392167,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,24 @@
   "events": [
     {
       "who": "swarm",
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789992334207,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789992324598,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789992214673,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789992035220,
       "type": "event"
@@ -1649,27 +1667,22 @@
       "text": "keyhunter: attempting deepseek (https://www.deepseek.com/en/signup.html)",
       "t": 1789984836134,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789984834578,
+      "text": "self-heal: already disabled: gemini (no-op)",
+      "t": 1789992334207,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: ai21labs entering verification code from inbox",
-      "t": 1789984832949,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "keyhunter: ai21labs needs email verification — reading inbox",
-      "t": 1789984807692,
+      "text": "self-heal: diagnosing recent errors with the best model",
+      "t": 1789992324598,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1958,9 +1971,6 @@
     1,
     0,
     0,
-    1,
-    0,
-    0,
     6,
     1,
     0,
@@ -1978,15 +1988,18 @@
     0,
     1,
     0,
-    0
+    0,
+    1,
+    1,
+    2
   ],
   "load": {
     "loadavg": [
-      0,
-      0.02,
-      0.08
+      0.22,
+      0.11,
+      0.1
     ],
-    "ramPct": 9,
+    "ramPct": 12,
     "cpus": 8
   },
   "brain": {
@@ -2084,7 +2097,7 @@
         "tier": "local"
       },
       "conductor": {
-        "model": "openai/gpt-oss-120b",
+        "model": "qwen2.5-coder:7b",
         "tier": "local"
       }
     },
@@ -3103,9 +3116,9 @@
           "gpu"
         ],
         "busy": false,
-        "warm": false,
+        "warm": true,
         "utilPct": 3,
-        "vramPct": 10
+        "vramPct": 72
       },
       {
         "alias": "GPU-Node-2",
