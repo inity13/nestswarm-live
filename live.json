@@ -1,5 +1,5 @@
 {
-  "generated": 1789983930744,
+  "generated": 1789984112863,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -134,10 +134,10 @@
       "color": "#22d3ee",
       "avatar": "avatars/sentinel.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "The swarm must adopt a single, immutable definition of “ship-ready” that includes rigorous",
-        "t": 1789974873001
+        "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**:",
+        "t": 1789984068992
       }
     },
     {
@@ -146,10 +146,10 @@
       "color": "#00e5ff",
       "avatar": "avatars/laforge.svg",
       "enabled": true,
-      "active": false,
+      "active": true,
       "last": {
-        "text": "We all agree that churn stops and quality takes precedence, but “sellable” still feels fuz",
-        "t": 1789974873354
+        "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate, ",
+        "t": 1789984059259
       }
     },
     {
@@ -346,6 +346,20 @@
     }
   ],
   "chat": [
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. 2. **Unsafe Child Processes**: Spawning child processes without proper validation or sanitization can lead to security vulnerabilities. 3. **Static-serve Tool Exposure**: Exposing a static-serve tool without proper authentication and access controls can allow unauthorized access. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all user inputs before using them in innerHTML assignments. Use …",
+      "t": 1789984068992,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate, PrivyGuard, LocalMate, EchoVerse, and InsightMentor. It offers a simple setup and robust analytics. 2. **dev.to**: Perfect for reaching tech-savvy users interested in AI, automation, security, community building, small business operations, and travel planning. dev.to has a large audience that values educational content and practical tools. 3. **GitHub**: Suitable for launching LocalMate, as it's a natural fit for a tool designed to enhance community engagement and membership management. GitHub also …",
+      "t": 1789984059259,
+      "system": false,
+      "type": "chat"
+    },
     {
       "who": "swarm",
       "text": "Meeting actions executed: focus niche: AI-powered content summarization for remote teams; paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
@@ -1171,23 +1185,123 @@
       "t": 1789951996668,
       "system": false,
       "type": "chat"
-    },
-    {
-      "who": "payment-gateway-integration",
-      "text": "We need to integrate payment gateways for secure and efficient transactions. The team must agree on a single flagship product and focus all efforts on polishing and launching it before moving forward with new initiatives.",
-      "t": 1789951996308,
-      "system": false,
-      "type": "chat"
-    },
-    {
-      "who": "security_officer",
-      "text": "My position as Security Officer is that we need to ensure the safety and integrity of our operations at all times. One concrete thing the team must do better is implement a more rigorous security audit process for new products before they are launched. This will help prevent vulnerabilities from reaching customers and protect their data.",
-      "t": 1789951995947,
-      "system": false,
-      "type": "chat"
     }
   ],
   "events": [
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789984099428,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789984098742,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
+      "t": 1789984095070,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789984094673,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys (or explicit approval for LemonSqueezy/Gumroad MoR fallback)",
+      "t": 1789984090406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789984090406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789984090406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/96 channels active · 0 new discovered",
+      "t": 1789984088182,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789984077569,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789984074973,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789984074023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789984074023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: gemini already has a working key — skip",
+      "t": 1789984074023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
+      "t": 1789984074023,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789984071041,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1789984070951,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: cerebras step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789984070429,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
+      "t": 1789983945130,
+      "type": "scout"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789983933844,
+      "type": "event"
+    },
     {
       "who": "swarm",
       "text": "bounty scout: no candidates found",
@@ -1553,158 +1667,124 @@
       "text": "conductor: 1 request(s) logged for the Swarm Protector",
       "t": 1789976795300,
       "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill payment-link-metadata-propagation",
-      "t": 1789976795141,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor created skill: payment-link-metadata-propagation",
-      "t": 1789976795140,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "conductor: dropping already-satisfied request: Stripe live API keys (or explicit approval for LemonSqueezy/Gumroad MoR fallback)",
-      "t": 1789976795136,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "scout: 3 free providers live (groq, openrouter, gemini) · 0 zen free models",
-      "t": 1789976745927,
-      "type": "scout"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789976728382,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789976549563,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789976368702,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789976188718,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789976009070,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789975828980,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789975651147,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789975468820,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789975288902,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "model bench: coder→default, light→default (gauntlet-gated)",
-      "t": 1789975117045,
-      "type": "bench"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789975108337,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "hybrid: node nest-node-5090 set to disabled",
-      "t": 1789974961347,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "meeting actions taken: focus niche: AI-powered content summarization for remote teams; paused new builds (strategic focus — board decision, no auto-expiry); marketed the top product",
-      "t": 1789974957164,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789974929167,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789974748572,
-      "type": "event"
     }
   ],
   "recent": [
     {
       "who": "swarm",
-      "text": "bounty scout: no candidates found",
-      "t": 1789983925830,
+      "text": "keyhunter: novitaai step 1 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789984099428,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 2 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789984098742,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: novitaai step 0 -> {\"action\":\"clickText\",\"text\":\"Get Started\"}",
+      "t": 1789984095070,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 1 -> {\"action\":\"clickText\",\"text\":\"Sign up with Google\"}",
+      "t": 1789984094673,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: dropping already-satisfied request: Stripe live API keys (or explicit approval for LemonSqueezy/Gumroad MoR fallback)",
+      "t": 1789984090406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: team is well-sized — no changes",
+      "t": 1789984090406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "conductor: 1 request(s) logged for the Swarm Protector",
+      "t": 1789984090406,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "revenue scout: 4/96 channels active · 0 new discovered",
+      "t": 1789984088182,
       "type": "scout"
     },
     {
       "who": "swarm",
-      "text": "registrar: registering Substack (revenue)",
-      "t": 1789983924600,
+      "text": "gh-researcher: 20 trending repos → 2 product ideas, 2 optimizations",
+      "t": 1789984077569,
+      "type": "trending"
+    },
+    {
+      "who": "swarm",
+      "text": "distributor: 5/5 channels reachable",
+      "t": 1789984074973,
+      "type": "launch"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: nvidia already has a working key — skip",
+      "t": 1789984074023,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: openrouter in cooldown (last attempt 110m ago) — skip",
-      "t": 1789983924599,
+      "text": "keyhunter: deepinfra parked (key valid but inference needs positive balance (402) — no free models) — skip",
+      "t": 1789984074023,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: attempting cerebras (https://cloud.cerebras.ai)",
-      "t": 1789983924599,
+      "text": "keyhunter: gemini already has a working key — skip",
+      "t": 1789984074023,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "keyhunter: groq in cooldown (last attempt 110m ago) — skip",
-      "t": 1789983924598,
+      "text": "keyhunter: attempting novitaai (https://novita.ai/signup)",
+      "t": 1789984074023,
       "type": "event"
     },
     {
       "who": "swarm",
-      "text": "security scan: 180 products with flags, 1 with high-severity findings",
-      "t": 1789983924594,
-      "type": "security"
+      "text": "free provider gemini-flash-latest failed for coder (cloud http 503: [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } } ])",
+      "t": 1789984071041,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "registrar: Substack step 0 -> {\"action\":\"clickText\",\"text\":\"Create account\"}",
+      "t": 1789984070951,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "keyhunter: cerebras step 0 -> {\"action\":\"type\",\"selector\":\"#email\",\"value\":\"[email]\"}",
+      "t": 1789984070429,
+      "type": "event"
+    },
+    {
+      "who": "Sentinel",
+      "text": "**Security Assessment for MTN1 Build** **Real Risks Ranked by Severity:** 1. **XSS Risk**: The innerHTML assignment is vulnerable to Cross-Site Scripting (XSS) if user input is not properly sanitized. 2. **Unsafe Child Processes**: Spawning child processes without proper validation or sanitization can lead to security vulnerabilities. 3. **Static-serve Tool Exposure**: Exposing a static-serve tool without proper authentication and access controls can allow unauthorized access. **Concrete Fixes:** 1. **XSS Fix**: Sanitize all user inputs before using them in innerHTML assignments. Use …",
+      "t": 1789984068992,
+      "system": false,
+      "type": "chat"
+    },
+    {
+      "who": "LaForge",
+      "text": "1. **Gumroad**: Ideal for direct-to-consumer sales of digital products like MnemonicMate, PrivyGuard, LocalMate, EchoVerse, and InsightMentor. It offers a simple setup and robust analytics. 2. **dev.to**: Perfect for reaching tech-savvy users interested in AI, automation, security, community building, small business operations, and travel planning. dev.to has a large audience that values educational content and practical tools. 3. **GitHub**: Suitable for launching LocalMate, as it's a natural fit for a tool designed to enhance community engagement and membership management. GitHub also …",
+      "t": 1789984059259,
+      "system": false,
+      "type": "chat"
     }
   ],
   "capabilities": [
@@ -1990,9 +2070,6 @@
     0,
     0,
     1,
-    0,
-    0,
-    1,
     1,
     0,
     1,
@@ -2015,13 +2092,16 @@
     0,
     1,
     0,
-    6
+    6,
+    2,
+    0,
+    36
   ],
   "load": {
     "loadavg": [
-      0.46,
-      0.25,
-      0.4
+      4.41,
+      2.02,
+      1.06
     ],
     "ramPct": 21,
     "cpus": 8
@@ -2033,15 +2113,15 @@
         "tier": "local"
       },
       "architect": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
-        "tier": "local"
+        "model": "gemini-flash-latest",
+        "tier": "free"
       },
       "coder": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "designer": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "security": {
@@ -2057,15 +2137,15 @@
         "tier": "local"
       },
       "critic": {
-        "model": "qwen2.5-coder:7b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "polisher": {
-        "model": "deepseek-r1:8b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "researcher": {
-        "model": "node/nest-node-5090/qwen3-coder:30b",
+        "model": "openai/gpt-oss-120b",
         "tier": "local"
       },
       "marketer": {
@@ -2073,11 +2153,11 @@
         "tier": "local"
       },
       "distributor": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "github_researcher": {
-        "model": "node/nest-node-5090/gpt-oss:20b",
+        "model": "node/nest-node-core/qwen2.5-coder:7b",
         "tier": "local"
       },
       "launcher": {
@@ -2126,7 +2206,9 @@
       }
     },
     "free": [
+      "gemini-flash-latest",
       "openai/gpt-oss-120b",
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
       "nvidia/nemotron-3-super-120b-a12b:free"
     ],
     "posture": "free-first · paid reserved for extreme",
@@ -2176,11 +2258,11 @@
         "active": 0
       },
       "other": {
-        "total": 7,
+        "total": 6,
         "active": 0
       },
       "grant": {
-        "total": 6,
+        "total": 7,
         "active": 0
       },
       "affiliate": {
@@ -2587,7 +2669,7 @@
       },
       {
         "name": "Nest Concord Grant Writing Service",
-        "kind": "other",
+        "kind": "grant",
         "active": false,
         "captcha": false
       },
@@ -3145,7 +3227,7 @@
         "busy": true,
         "warm": false,
         "utilPct": 0,
-        "vramPct": 10
+        "vramPct": 63
       },
       {
         "alias": "GPU-Node-2",
@@ -3166,7 +3248,7 @@
         "vramPct": 0
       }
     ],
-    "selfHostedInferencePct": 80,
+    "selfHostedInferencePct": 79,
     "jobsProcessed": 202
   }
 }
