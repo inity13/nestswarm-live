@@ -1,5 +1,5 @@
 {
-  "generated": 1789972225984,
+  "generated": 1789972406157,
   "status": "passive",
   "stats": {
     "products": 184,
@@ -1190,6 +1190,18 @@
   "events": [
     {
       "who": "swarm",
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
+      "t": 1789972338906,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
+      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
+      "t": 1789972228426,
+      "type": "event"
+    },
+    {
+      "who": "swarm",
       "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
       "t": 1789972048969,
       "type": "event"
@@ -1655,21 +1667,16 @@
       "text": "self-heal: disabled provider gemini",
       "t": 1789962925524,
       "type": "event"
-    },
+    }
+  ],
+  "recent": [
     {
       "who": "swarm",
-      "text": "self-heal: diagnosing recent errors with the best model",
-      "t": 1789962924528,
-      "type": "event"
-    },
-    {
-      "who": "swarm",
-      "text": "publicsite: live at https://inity13.github.io/nestswarm-live/ (120 chat lines, 184 products)",
-      "t": 1789962868469,
+      "text": "hybrid: node registered nest-node-5090 (online) caps=[browser,coding,cuda,gpu,llm,python,vision]",
+      "t": 1789972338906,
       "type": "event"
     }
   ],
-  "recent": [],
   "capabilities": [
     {
       "name": "Multi-model routing",
@@ -1950,9 +1957,6 @@
   },
   "throughput": [
     1,
-    0,
-    0,
-    1,
     1,
     2,
     1,
@@ -1978,15 +1982,18 @@
     0,
     1,
     0,
+    0,
+    1,
+    1,
     0
   ],
   "load": {
     "loadavg": [
-      0.17,
-      0.23,
-      0.27
+      0.13,
+      0.19,
+      0.25
     ],
-    "ramPct": 17,
+    "ramPct": 16,
     "cpus": 8
   },
   "brain": {
@@ -3089,7 +3096,7 @@
     "mcp"
   ],
   "fleet": {
-    "online": 1,
+    "online": 2,
     "total": 2,
     "nodes": [
       {
@@ -3111,7 +3118,7 @@
         "alias": "GPU-Node-2",
         "gpu": "RTX 5090 Laptop",
         "vramGb": 24,
-        "status": "offline",
+        "status": "online",
         "can": [
           "browser",
           "coding",
@@ -3120,10 +3127,10 @@
           "python",
           "vision"
         ],
-        "busy": false,
+        "busy": true,
         "warm": false,
-        "utilPct": 0,
-        "vramPct": 1
+        "utilPct": 85,
+        "vramPct": 77
       }
     ],
     "selfHostedInferencePct": 79,
